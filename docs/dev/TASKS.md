@@ -4,14 +4,15 @@ Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout
 
 ## Hosted tracking
 
-Mode: maintained GitHub tracking in [pchemguy/Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004). The eligible phase 1 label, native milestones 1.1–1.3 and task issues T-001–T-009 are projected. Milestones remain open; task issue closure follows verified durable completion. Reconcile the eligible maintained scope before execution and lifecycle transitions; hosted state never establishes completion. Phase 2 projection waits for phase 1 completion, review, verified integration into main and publication.
+Mode: maintained GitHub tracking in [pchemguy/Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004). The eligible phase 1 label, native milestones 1.1–1.3 and task issues T-001–T-009 are projected. Milestone 1.1 is verified complete and closed; milestones 1.2 and 1.3 remain open. Task issue closure follows verified durable completion. Reconcile the eligible maintained scope before execution and lifecycle transitions; hosted state never establishes completion. Phase 2 projection waits for phase 1 completion, review, verified integration into main and publication.
 
 Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`; activation baseline: `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`. The tracking checkpoint at `d009899e39790c39be32ae77e7fe8294bf60d04c` preceded implementation. The milestone 1.1 checkpoint below pauses on this branch without phase integration.
 
 ## Phase 1 — Named-file utility
 
 - [ ] Phase 1 — Named-file utility
-    - [ ] Milestone 1.1 — Named-file counting MVP
+    - [x] Milestone 1.1 — Named-file counting MVP
+        Completion evidence (2026-10-04): all T-001–T-004 results/status/report committed and published; independent unit 14/integration 6 tests, code review and normal/BOM/dash demo satisfy PLAN 1.1 exits. Issues #1–#4 verified closed with completed reason; milestone #1 read back closed with 0 open/4 closed issues. Phase 1 remains incomplete; this checkpoint pauses without integration.
         - [x] T-001 — Establish immutable statistics and pure text counting
             Scope: textstats/core.py, initial public facade, tests/unit/ discovery packages and semantic/value tests. Depends on: reviewed preparation inputs.
             Outcome: direct TextStats/count_text imports, immutable nonnegative fields and exact BOM/CRLF/CR/LF/Unicode-word semantics (S-1/S-2).
