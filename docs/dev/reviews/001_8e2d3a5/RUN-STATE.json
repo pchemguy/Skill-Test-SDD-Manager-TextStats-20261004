@@ -45,7 +45,23 @@
     "runs/A-006/1/JOURNAL.md",
     "runs/A-006/1/independent-assessment/ASSESSMENT.json",
     "runs/A-006/2/REQUEST.md",
-    "runs/A-006/2/CONTINUATION.json"
+    "runs/A-006/2/CONTINUATION.json",
+    "runs/A-020/1/REQUEST.md",
+    "runs/A-020/1/INJECTION.json"
   ],
-  "updated_at": "2026-10-04T20:09:54.130852+00:00"
+  "updated_at": "2026-10-04T20:09:54.130852+00:00",
+  "case_results": [
+    {
+      "case_id": "A-006",
+      "attempt": 2,
+      "status": "Running",
+      "reason": "Independent final assessment after completePhase1"
+    },
+    {
+      "case_id": "A-020",
+      "attempt": 1,
+      "status": "Running",
+      "reason": "Independent local-only preservation trial from A003retainedobjects"
+    }
+  ]
 }

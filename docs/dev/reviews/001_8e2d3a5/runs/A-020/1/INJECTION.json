@@ -1,0 +1,22 @@
+{
+  "source_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "worktree": "/workspace/scratch/textstats-preservation-worktree-20261004",
+  "branch": "trial/a020-preservation",
+  "local_only": true,
+  "shared_repository_worktree": true,
+  "clone_created": false,
+  "index_entry": "100644 e67b2942395976ee170f73df244934e7f3f1ab77 0\tnotes/local-retained.txt\n",
+  "staged_sha256": "2277c4156d3b0459bea6b09ca06d307ac62a494d4914d8c27cf4413708d31b72",
+  "worktree_sha256": "4970aa122bf10f99fa0a9d57d6d6a5395f274dc4e5e4d6b06f5a7e78f238e83d",
+  "untracked_sha256": "b6a8002f014da482385075e3fb010603833a60f168f685861439ed7717e5afe4",
+  "files": {
+    "notes/local-retained.txt": "retained staged version\nuncommitted local addition\n",
+    "notes/untracked-retained.txt": "retained untracked bytes\n"
+  },
+  "authorization": "Isolated supported local preservation trial within full acceptance scope; no GitHub mutation/push/integration",
+  "staged_contents": "retained staged version\n",
+  "file_modes": {
+    "notes/local-retained.txt": 420,
+    "notes/untracked-retained.txt": 420
+  }
+}

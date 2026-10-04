@@ -1,0 +1,34 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-003",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "merge_parents": [
+          "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+        ]
+      },
+      "local_checkout": "/workspace/scratch/textstats-preservation-worktree-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/1-named-file-utility",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "4334fd5419bf92d479a39a2cdb207f2758fd82c9",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Use existing isolated worktree /workspace/scratch/textstats-preservation-worktree-20261004 on trial/a020-preservation atd009899e39790c39be32ae77e7fe8294bf60d04c, forked from retained tracked preparation checkpoint. Complete only T-001 as local-only task work and commit it, then stop. Explicit scope: no push, no integration, no hosted writes or live issue/milestone reconciliation. Retain current trial branch; do not check out or alter shared main/phase branches. The shared main ref belongs the separate positive workflow; it is not this trial target. Governing product docs/TASKS at this checkout are the selected local authorities. Product AGENTS and pinned textstats-run-resources/plugin/skills019eb35 apply. Existing notes/local-retained.txt has both staged and unstaged work; notes/untracked-retained.txt is untracked, outside selected task ownership. Keep all unrelated repository work. No clones or credential/helper inspection/exposure; no /pyenv edits. Human standing repository/workflow grant and current Resume authorize this supported local test within scope; local-only limits govern even though authentication exists."
+  }
+}

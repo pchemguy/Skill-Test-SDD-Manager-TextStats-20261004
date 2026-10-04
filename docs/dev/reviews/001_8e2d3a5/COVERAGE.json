@@ -149,8 +149,15 @@
       "attempts": []
     },
     "A-020": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "consumer": "fresh context in existing repository worktree; local-only",
+          "injection": "runs/A-020/1/INJECTION.json"
+        }
+      ]
     },
     "A-021": {
       "status": "Pending",
