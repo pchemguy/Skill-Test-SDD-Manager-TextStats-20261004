@@ -20,5 +20,6 @@
   "reached_at": "2026-10-04T16:46:56.691236+00:00",
   "independent_assessment": "runs/A-006/1/independent-assessment/ASSESSMENT.json",
   "pending_effects": [],
-  "publication": "Pending evidence checkpoint push; product checkpoint independently published"
+  "publication": "Published and independently read back on established evidence branch",
+  "evidence_commit": "698b177570c72ef75b6e39fe580fef0a9a537af9"
 }

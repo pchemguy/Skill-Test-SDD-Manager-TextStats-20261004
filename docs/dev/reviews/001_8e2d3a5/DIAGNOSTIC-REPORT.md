@@ -128,3 +128,5 @@ Independent partial A-006 helper reports duplicate task ownership because recurs
 | A-027 | Pending |
 
 A-006 Blocked denotes intentional human suspension, not a completed phase or product defect. Next permitted action is to remain stopped; explicit resume continues T-009. No pending product/provider effect.
+
+Suspension evidence698b177570c72ef75b6e39fe580fef0a9a537af9 is published and live ref verified. Productdec4ca and main4c275cc also read back unchanged; product worktree/index clean. All workers finished, no new workflow work authorized during suspension.

@@ -5,7 +5,7 @@
   "case_id": "A-006",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "T-008 and milestone1.2 complete/published; independent partial assessment finalized; user suspension reached",
+  "last_completed_action": "Suspension reached; independent partial assessment and recovery evidence published and live refs verified",
   "pending_operation": null,
   "next_action": "Remain suspended. On explicit resume, reconcile phase dec4ca/main4c275cc and retained evidence, continue same A-006 with T-009 then full Phase1 verification/integration; no replay of completed tasks.",
   "checkpoint_refs": {
@@ -19,7 +19,8 @@
     "merge_parents": [
       "3256b953383f9c8218e62a4c051d73e3ccd081bf"
     ],
-    "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
+    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
+    "evidence_commit": "698b177570c72ef75b6e39fe580fef0a9a537af9"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -40,5 +41,5 @@
     "runs/A-006/1/JOURNAL.md",
     "runs/A-006/1/independent-assessment/ASSESSMENT.json"
   ],
-  "updated_at": "2026-10-04T16:46:56.691123+00:00"
+  "updated_at": "2026-10-04T16:48:30.782153+00:00"
 }
