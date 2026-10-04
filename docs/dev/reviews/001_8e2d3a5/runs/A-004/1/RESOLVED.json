@@ -1,0 +1,34 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-003",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "merge_parents": [
+          "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+        ]
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/1-named-file-utility",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "2d1382065de64043719c1b85e95122732add8e0a",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Product checkout /workspace/scratch/textstats-live-20261004 is clean on phase/1-named-file-utility at published d009899e39790c39be32ae77e7fe8294bf60d04c; main remains 4c275cc46fc0163c9e1e50871d3cc33c4c38567e. Follow product AGENTS and pinned package textstats-run-resources/plugin/skills. Scoped implementation commits/pushes and maintained GitHub tracking are authorized in pchemguy/Skill-Test-SDD-Manager-TextStats-20261004. Existing Git authentication and GitHub connector tools work. Repository-scoped protected API transport: python /workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py METHOD RESOURCE [EXISTING_NONSECRET_BODY_JSON_FILE]. Do not inspect credential stores, helper source, or expose secrets. The transport omits issue bodies; use connector reads if needed. Preserve unrelated material. Implement only the requested first task and stop after durable completion. Record actual commands/status and loaded instruction paths/hashes in RESULT.md at /workspace/scratch/textstats-live-harness-20261004/consumer-handoffs/A-004/RESULT.md; this path is an output destination only."
+  }
+}
