@@ -38,3 +38,23 @@ class FileApiTests(unittest.TestCase):
                         self.assertEqual((out.getvalue(), err.getvalue()), ("", ""))
             path.write_bytes("\ufeff".encode())
             self.assertEqual(textstats.count_file(path, strip_bom=False), textstats.TextStats(1, 1))
+
+class FileFailureIntegrationTests(unittest.TestCase):
+    def test_real_missing_directory_and_malformed_files_are_silent_and_unchanged(self):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            bad = root / "bad.txt"
+            original = b"valid first line\r\n\xef\xbb\xbf\xff"
+            bad.write_bytes(original)
+            for strip_bom in (True, False):
+                for path, exception in [(root / "absent", FileNotFoundError),
+                                        (root, OSError), (bad, UnicodeDecodeError)]:
+                    with self.subTest(path=path, strip_bom=strip_bom):
+                        out, err = io.StringIO(), io.StringIO()
+                        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                            with self.assertRaises(exception):
+                                textstats.count_file(path, strip_bom=strip_bom)
+                        self.assertEqual((out.getvalue(), err.getvalue()), ("", ""))
+                        self.assertEqual(bad.read_bytes(), original)
