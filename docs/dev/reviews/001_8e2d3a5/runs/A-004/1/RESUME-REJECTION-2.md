@@ -1,0 +1,5 @@
+# Rejected hosting continuation and no-bypass boundary
+
+After the current resume instruction, the coordinator read sdd-manage/references/revision-authorization.md and independently observed issue #1 still open. It supplied the actual designated-repository/GO/current-resume scope and exact public-link payload/destination to the same operation channel. Platform approval rejected the POST again, saying the resume instruction did not explicitly authorize that payload and destination. No comment/closure effect was reported.
+
+The coordinator then began preparing an isolated local A-020 fixture from actual A-003 baseline d009899. Preparation created a local bare remote and clone only; no sentinel injection, consumer dispatch, task implementation or new test result occurred. The user immediately instructed that bypass was not allowed. That trial is stopped and remains Pending; its unused fixture is not acceptance evidence. No independent-case advancement, alternate transport or further hosting retry follows. Main acceptance remains at A-004 issue #1 evidence/closure.
