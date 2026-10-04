@@ -1,13 +1,5 @@
-# Suspended live acceptance checkpoint
+# Live acceptance resumed
 
-User requested gradual suspension at2026-10-04T16:36:42Z while T-008 report commit3256b95 push was already in progress. Only that active task and its existing issue/milestone reconciliation completed afterward. No new tasks/cases/agents started.
+Explicit Resume consumed reached SUSPENSION-20261004-163642; original stop/evidence retained. Same A006 attempt2 fresh continuation starts from independently readback clean phase dec4ca107a8f0e2f878f580c88fd33303f570c01/main4c275cc46fc0163c9e1e50871d3cc33c4c38567e. Complete T009 and Phase1 review/integration; no prior task replay. Consumer stops beforePhase2; coordinator advances only after independent published A006 prerequisite.
 
-Clean product phase/1-named-file-utility is published atdec4ca107a8f0e2f878f580c88fd33303f570c01; main remains4c275cc46fc0163c9e1e50871d3cc33c4c38567e. T-001–T-008 complete, issues1–8 completed, delivery milestones1/2closed. T-009/issue9/final review milestone3open; no phase report/merge/Phase2 activation. No pending/unknown write or dirty product/index state.
-
-Independent A-006 partial assessment: full case Blocked solely at the explicit user stopping boundary; reachedmilestone1.2 verified with assistance.17unit/9integration, fullAPI/baseline diagnostics, examples and independent extracteddistribution pass. All111 pinnedfiles equal immutableGit019eb35. Original document-runner failures/corrections and CHK-002 generatedignoredTASKS ownership falsepositive retained; no fullphase acceptance claim. A-005 prior assisted recheck/originalBlocked retained.
-
-Remain suspended. On explicit resume reconcile current refs/hosted identities and this reached one-shot suspension, continue the SAME A-006 with T-009 dedicated phase review/report and final review milestone closure, then full Phase1 prospective/merged verification and explicittwo-parent main integration/publication. Do not replay preparation/T001–T008, silently pass blockedcriteria or start Phase2 before its prerequisite checkpoint.
-
-Use existing checkout; no clones, credential exposure or platform bypass. Retain actual designatedrepository/GO/scopedcredential grant and standing instruction to state existing authority. Read revision-authorization before authority decisions. Package stays pinned019eb354cf0921ebd6056e6579763ac33d0baec2; source0.14.4/proposals remain separate. Broadfs/nativecomplete transcript/installedclient limits remain. Published evidence branch contains current reports, command/raw capture provenance and observed source distribution archive; clean product objects are already published. Credentials intentionally excluded.
-
-Evidence checkpoint698b177570c72ef75b6e39fe580fef0a9a537af9 independently read back on revision/001_8e2d3a5-live-acceptance alongside exact product/main refs. All required clean-stop recovery/report/assessment objects are published. The metadata receipt commit may follow this content checkpoint.
+Existing repository/scoped grant, pinned019eb35, no clones/bypass/credential exposure. Original attempt1 partialBlocked and CHK002 retained. Current handoff: runs/A006/2/REQUEST.md (actual path runs/A-006/2/REQUEST.md).

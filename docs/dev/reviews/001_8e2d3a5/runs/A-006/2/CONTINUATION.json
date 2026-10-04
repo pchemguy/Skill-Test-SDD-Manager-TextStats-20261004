@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "instruction": "Resume",
+  "recorded_at": "2026-10-04T20:09:54.130716+00:00",
+  "consumed_stop": "SUSPENSION-20261004-163642.json",
+  "previous_assessment": "runs/A-006/1/independent-assessment/ASSESSMENT.json",
+  "verified_product": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+  "verified_main": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+  "verified_evidence": "4334fd5419bf92d479a39a2cdb207f2758fd82c9",
+  "next_action": "Same A-006 T009/fullphase completion; no prior work replay"
+}

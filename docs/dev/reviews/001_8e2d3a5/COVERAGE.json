@@ -72,7 +72,7 @@
       ]
     },
     "A-006": {
-      "status": "Blocked",
+      "status": "Running",
       "attempts": [
         {
           "attempt": 1,
@@ -81,6 +81,12 @@
           "assisted": true,
           "assessment": "runs/A-006/1/independent-assessment/ASSESSMENT.json",
           "reason": "User-directed suspension after T-008; milestone1.2 independently verified, fullphase review/integration intentionally unstarted"
+        },
+        {
+          "attempt": 2,
+          "status": "Running",
+          "consumer": "fresh continuation context",
+          "reason": "Explicit Resume consumes reached suspension; preserves attempt1 partialBlocked assessment"
         }
       ]
     },
