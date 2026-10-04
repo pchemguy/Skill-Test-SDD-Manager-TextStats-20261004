@@ -22,7 +22,7 @@ Preserved original attempts, exact requests and independent results; published p
 
 Accepted source amendment: reviews end at the report commit; publication is owned by the coordinating/execution workflow. Full workflows include prescribed pushes and active maintained hosting under existing human authority. Pushes do not invoke review skills or an added permission-review stage. Platform-enforced controls cannot be disabled by plugin text.
 
-Current state: suspended after independent partial A-006 assessment. Remain stopped; next explicit continuation resumes T009 and fullphase integration on the existing product checkout. A-005 evidence is published; do not replay completed milestone1.1. Source package remains pinned unchanged. Installed-client and interruption coverage remain separate gaps. Exact current state: RUN-STATE.json / RESUME.md; original historical report: DIAGNOSTIC-PROGRESS-HISTORY.md. Earlier suspension records remain historical and the explicit resume consumed that boundary.
+Current state: explicit Resume consumed the verified suspension. Same A-006 attempt2 fresh continuation is executing T009/fullphase review/integration from retaineddec4ca; no prior work replay. Independent final assessment/publication gates later cases. A-005 evidence is published; do not replay completed milestone1.1. Source package remains pinned unchanged. Installed-client and interruption coverage remain separate gaps. Exact current state: RUN-STATE.json / RESUME.md; original historical report: DIAGNOSTIC-PROGRESS-HISTORY.md. Earlier suspension records remain historical and the explicit resume consumed that boundary.
 
 ## PUB-001 — Publication routing and redundant approval requests
 
@@ -130,3 +130,9 @@ Independent partial A-006 helper reports duplicate task ownership because recurs
 A-006 Blocked denotes intentional human suspension, not a completed phase or product defect. Next permitted action is to remain stopped; explicit resume continues T-009. No pending product/provider effect.
 
 Suspension evidence698b177570c72ef75b6e39fe580fef0a9a537af9 is published and live ref verified. Productdec4ca and main4c275cc also read back unchanged; product worktree/index clean. All workers finished, no new workflow work authorized during suspension.
+
+## Resume after partial A-006 suspension
+
+Explicit Resume reconciled clean local/live phase dec4ca, main4c275cc and evidence4334fd5; milestones1/2 closed, issue9/finalmilestone3open. Reached suspension consumed, original record/partialBlocked assessment retained. Fresh consumer received only ordinary continuation/currentstate/pinnedskills in runs/A-006/2/REQUEST.md. Same A006 continues; package remains immutable.
+
+CHK-002 proposed inventory correction is implemented only as a disclosed checker variant under runs/A-006/2/checker-variant. It guards originalhelperSHA and replaces default candidates with Gittracked/nonignoreduntracked paths, preserving explicitdocumentadditions and all other checks. Disposable no-remote/no-clone regression fixtures exclude ignoredgeneratedcopy and reject tracked/untracked/explicit-child duplicateowners. These are checker tests, not live acceptance. Independent adjudication and final actualstate recheck remain pending; originalfailedhelper is retained.

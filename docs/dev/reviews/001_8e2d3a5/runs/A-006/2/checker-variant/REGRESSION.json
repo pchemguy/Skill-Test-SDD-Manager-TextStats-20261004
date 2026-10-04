@@ -1,0 +1,23 @@
+{
+  "status": "Passed",
+  "kind": "checker regression only",
+  "live_acceptance": false,
+  "checks": [
+    {
+      "scenario": "ignored generated duplicate",
+      "result": "one authoritative owner"
+    },
+    {
+      "scenario": "untracked duplicate",
+      "result": "duplicate_task_ownership"
+    },
+    {
+      "scenario": "tracked duplicate",
+      "result": "duplicate_task_ownership"
+    },
+    {
+      "scenario": "explicit additive child duplicate",
+      "result": "duplicate_task_ownership"
+    }
+  ]
+}
