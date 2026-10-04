@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "case_id": "A-006",
+  "attempt": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "reason": "Explicit human-directed gradual suspension after active T-008 prevents remaining dedicated phase review and phase integration. Intentional pause is not a defect.",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+    "merge_parents": [
+      "3256b953383f9c8218e62a4c051d73e3ccd081bf"
+    ]
+  },
+  "reached_boundary": {
+    "milestone": "1.2",
+    "status": "Passed",
+    "assisted": true,
+    "report_commit": "3256b953383f9c8218e62a4c051d73e3ccd081bf",
+    "reconciliation_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+    "issues_completed": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "milestone_number": 2,
+    "milestone_state": "closed",
+    "open_issues": 0,
+    "closed_issues": 4
+  },
+  "independent_checks": {
+    "unit_tests": 17,
+    "integration_tests": 9,
+    "skips": 0,
+    "runtime": "Python 3.12.14",
+    "api_literals": "Passed",
+    "baseline_literals": "Passed",
+    "extracted_distribution_literals": "Passed",
+    "documentation_examples_and_links": "Passed with known tarfile deprecation warning retained",
+    "pinned_package_git_objects_and_disk_hashes": "111 equal to019eb354cf0921ebd6056e6579763ac33d0baec2",
+    "product_clean": true,
+    "live_phase_ref_contains_checkpoint": true,
+    "main_unchanged": true,
+    "active_owners": "17 unique IDs in sole tracked docs/dev/TASKS.md",
+    "phase2_tasks_unchanged": true,
+    "phase2_hosted_objects_absent": true
+  },
+  "full_case_pending": [
+    "T-009 phase code review/checks and dedicated PHASE-REPORT.md",
+    "issue9 and milestone3 closure",
+    "complete phase parent exit assessment",
+    "prospective merged-state required checks",
+    "two-parent main integration",
+    "merged-state checks and live publication containment"
+  ],
+  "deterministic_helper": {
+    "artifact": "PARTIAL-DETERMINISTIC-ASSESSMENT.json",
+    "status": "Checks failed",
+    "full_A006_contract_run": false,
+    "note": "Bounded partial contract only; all literal/head/publication checks passed; generated distribution copy falsely counted as active owner. Original helper failure retained."
+  },
+  "findings": [
+    {
+      "id": "CHK-002",
+      "attribution": "Checker",
+      "confidence": "confirmed",
+      "expected": "Executable task ownership considers active product owners, excluding generated source-archive copies.",
+      "observed": "root.rglob includes ignored dist/extracted/docs/dev/TASKS.md and sole tracked docs/dev/TASKS.md, reporting duplicate_task_ownership.",
+      "evidence": [
+        "FINAL-STATE.json",
+        "ACTIVE-OWNERS-INDEPENDENT.json",
+        "PARTIAL-DETERMINISTIC-ASSESSMENT.json"
+      ],
+      "proposal": "Bound automatic ownership discovery to tracked or eligible non-generated active documents, with explicit active untracked owner support; exclude ignored distribution/extraction output.",
+      "objective_recheck": "Later separately authorized harness test: active tracked TASKS plus ignored extracted duplicate must pass, while genuine duplicate active roots must still fail.",
+      "repair_performed": false
+    }
+  ],
+  "assistance": [
+    {
+      "artifact": "INTERVENTION-COMMAND011-FEEDBACK.json",
+      "description": "Assessor flagged retained command011 doc AssertionError masked by shell exit0; parent forwarded concrete observed failure. Original failure retained. Consumer corrected example/evidence claim and published7939e1c before T008."
+    }
+  ],
+  "limits": [
+    "Fresh consumer received ordinary request/current state/pinned skills; broad shared filesystem exposes assessor assets so strict filesystem isolation cannot be certified.",
+    "Structured consumer command observations and journal are retained; no complete native session transcript is available.",
+    "Python3.12.14 executed;3.11 compatibility inspected only.",
+    "No full phase, prospective/merged or two-parent integration acceptance is claimed."
+  ],
+  "next_authorized_action": "Remain suspended. On explicit continuation reconcile actual state, then T-009 and full phase gate; do not activate Phase2.",
+  "evidence_publication": "Assessor artifacts local pending coordinator evidence-branch publication",
+  "assessed_at": "2026-10-04T16:45:49.914527+00:00"
+}

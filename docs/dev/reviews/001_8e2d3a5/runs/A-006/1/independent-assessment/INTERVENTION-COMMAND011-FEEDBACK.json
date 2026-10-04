@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-10-04T16:35:12.302747+00:00",
+  "actor": "coordinator",
+  "kind": "visible retained evidence feedback",
+  "observation": "command-011 reports README/document script AssertionError after successful focused and regression tests while shell exit_code is 0. Assessor notified parent, and parent supplied consumer this concrete observed failure before completion.",
+  "expected_literals_supplied": false,
+  "effect_on_correction": "pending final chronology examination",
+  "original_attempt_preserved": true
+}

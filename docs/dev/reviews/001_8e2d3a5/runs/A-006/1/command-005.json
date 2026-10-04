@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-04T16:30:05.766Z",
+  "cmd": "git rev-parse HEAD\npython - <<'PY'\nimport json\nfrom pathlib import Path\nPath('/tmp/textstats-a006-comment5.json').write_text(json.dumps({'body':'T-005 verified on phase/1-named-file-utility at 386c140. Unit 16 and integration 7 tests pass without skips; real/injected open/read/decode/close failures, API silence, strict UTF-8, unchanged input and owned-handle closure covered. See docs/dev/TASKS.md completion evidence.'}))\nPath('/tmp/textstats-a006-close.json').write_text(json.dumps({'state':'closed','state_reason':'completed'}))\nPY\npython .git/textstats-hosting-curl.py GET issues/5\npython .git/textstats-hosting-curl.py POST issues/5/comments /tmp/textstats-a006-comment5.json\npython .git/textstats-hosting-curl.py PATCH issues/5 /tmp/textstats-a006-close.json\npython .git/textstats-hosting-curl.py GET issues/5",
+  "chunk_id": "c18ad0",
+  "wall_time_seconds": 10.000233888,
+  "session_id": 36492,
+  "original_token_count": 421,
+  "output": "386c140a85a1451d48276bae6063a3db98307710\n{\"transport\": \"curl\", \"http_status\": 200, \"result\": {\"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/5\", \"id\": 5700125215, \"number\": 5, \"title\": \"[T-005] Harden named-file API failure and resource behavior\", \"labels\": [{\"id\": 12538641934, \"name\": \"sdd-phase-1-Named-file-utility\", \"color\": \"1d76db\", \"description_sha256\": \"1d10e5e13dcb525725652cbd824d6dc4ba7d45e53a176d6d5435804d013cdef3\"}], \"state\": \"open\", \"milestone\": {\"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/2\", \"id\": 18303258, \"number\": 2, \"title\": \"sdd-1.2-Reliable-documented-distribution\", \"description_sha256\": \"7d4093d70123814e0eb04004430ed765d07a18dc49082ef56ac160e5b225b914\", \"open_issues\": 4, \"closed_issues\": 0, \"state\": \"open\"}, \"state_reason\": null}}\n"
+}

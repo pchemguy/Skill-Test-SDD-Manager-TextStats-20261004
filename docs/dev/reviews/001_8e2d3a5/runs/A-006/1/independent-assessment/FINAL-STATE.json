@@ -1,0 +1,116 @@
+{
+  "observed_at": "2026-10-04T16:44:30.623682+00:00",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "rev-parse",
+        "HEAD",
+        "main"
+      ],
+      "returncode": 0,
+      "stdout": "dec4ca107a8f0e2f878f580c88fd33303f570c01\n4c275cc46fc0163c9e1e50871d3cc33c4c38567e\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "show",
+        "-s",
+        "--format=%H %P",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "dec4ca107a8f0e2f878f580c88fd33303f570c01 3256b953383f9c8218e62a4c051d73e3ccd081bf\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "ls-files",
+        "*TASKS.md"
+      ],
+      "returncode": 0,
+      "stdout": "docs/dev/TASKS.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "check-ignore",
+        "dist/extracted/docs/dev/TASKS.md"
+      ],
+      "returncode": 0,
+      "stdout": "dist/extracted/docs/dev/TASKS.md\n",
+      "stderr": ""
+    }
+  ],
+  "phase2_task_subtree_unchanged": true,
+  "phase_report_exists": false,
+  "active_task_root": "docs/dev/TASKS.md",
+  "generated_ignored_copy": "dist/extracted/docs/dev/TASKS.md",
+  "task_root_sha256": "20ba4b983444f43ffe8fefea3779676559036b8d36bb135bc36fc1c7ad6db649",
+  "consumer_evidence_hashes": {
+    "command-013.json": "7cfef327f6f3df3bc7e04cabb04b57586c9740b1d2e587112ee1730765e1dbeb",
+    "command-012.json": "b1fc810ddff5189b8b00ebf32cf8ff086ebd310cf39d0a0e52ff07da8d98c359",
+    "hosting-005-completion.json": "de961ddf4d015922f2656d0d3c625558ed842b0b3fee156899a48d1f2f46adfa",
+    "command-015.json": "ef2a411a0512042ea87be067f0366c9cc8cbe2aebace797f55f3ce18f98531e3",
+    "RESOLVED.json": "0167627ebf6340e547b0353f8a263bb86ab0948792433c9968f6618ee59f951b",
+    "command-005.json": "e607b434fc36ec1c1150e2b3eb44dfc050fc14bcb8ea5eab8f043dd9b1e9b621",
+    "provider-issue-7-initial.json": "2114e7a7fbbe7fbf99ada0ef839366d47111da02f22b9a1974ebdc074d7cd401",
+    "provider-issue-8-initial.json": "c891f1df18800572efb996f5e2a53133d5182ce03724fecd88c33097111fc058",
+    "task008-push-readback.json": "b8a9c4f52a755a80d8cae36800624fcaa879cf2a4f0d7e930c890804902423b5",
+    "provider-issue-6-initial.json": "f414fac65b1ba0cc16a85242c09dfd18389cefcf63d9db8a9f3614b897496d44",
+    "command-006.json": "feb2024515d606d6b37668afea9cf0000bc6b3091c01f25153ca41c54dfcb548",
+    "task006-push-readback.json": "3e2a172fcf841840b85ac4bfb593c77555dafaf1e43f07b8d3ae208eeeda8807",
+    "RUN-STATE.json": "d82785b8621cfb647ac73c69109e72033fa2fe86b8ad2e22018d38038786efd5",
+    "hosting008-final-readback.json": "a52257562fa05f6c789e3b76159521d413c7395354ea7ae2ac2679324779f638",
+    "command-017.json": "e05626557a3e33061dd7599d27e11663195feab980bf4394779442b962efa27a",
+    "suspension-final-hosted-readback.json": "25553a33919a6fcf26828e98e78dfc1e9c89b3a8b6ed704fa2d79d3f28f65dc7",
+    "suspension-push-readback.json": "4a6b835b3b5a7546d73b3c6e914e94631e4833848984b8582b6f68439e86116c",
+    "command-002.json": "2b386c9e852e61669cfb5c17e23a50bb4b08ebb8ef75350feac98159499b2977",
+    "command-004.json": "09059dfefa5c240115e854188ac8af4ac4447e0d751835e2b3854f94fa6c68df",
+    "command-007.json": "f9d79ca1cb6913573c217b7b7e1575f6cf03682bbe6d9c28abb9de82bdd706ba",
+    "command-003.json": "1259ee5f047067931d42eda8ae16c574563d49d945022fad0aba0f27219924de",
+    "hosting008-part2.json": "8cb0eccd0c256f86a8c65180d6152789b8a870228e33647ff2353003258cf414",
+    "command-008.json": "d73ca1cf949ed549283bb93c1e35723959e0bc2b34b1181177c3a208748a0559",
+    "hosting006-completion.json": "cab2d0ceb7b473b4670307c740a4fda31fa979a12e51bc932f2d44a0526b0f0c",
+    "command-016.json": "2ae3308f353e47bf630270685bfc17fe42db2751d042427d830015cfdd10a52b",
+    "command-009.json": "9e6d31dfd26687e46a84b698982ca9837316fad01a91b2eef7b543216373bd42",
+    "task007-correction-push-readback.json": "c9ea1c0990e03962013e34aa239b7e67655f154c6c5d08982eb606ff31ed0e49",
+    "provider-issue-9-initial.json": "ebfcd9020537d3bd11c0ef65a6c00f777942bb391be1b77d9f7e943c1e8cae85",
+    "provider-issue-5-initial.json": "c9197f93b1339f920f71d51625551b77738eb5c9bdb70e2bdbde2948ec922c9a",
+    "REQUEST.md": "73889c2233c33830c9a9632454e24911b1b9de1f292111ba49c8e6bb3e03fe1a",
+    "task007-push-readback.json": "4b6f882677d014e99bb8e5580fa4c2dc2b13948c31b283651c44532723f2b311",
+    "CONSUMER-RESULT.md": "68f00345f183e3ecbac80f6fd9f17e047d040b2990086d603ebdddda8f923b4c",
+    "command-018.json": "6f73f651c86d77800a6a69671a50113a430b2134dbefd773acd9b44743564d99",
+    "command-010.json": "ebe95f3fcdbaa5cd23e754458e4d8765fe7ed86f0800698100dd99bba6016069",
+    "command-014.json": "6d98bdb150e4150bb97bb6e0b88c6efcd75ab1b6d5daa9f1635ffcb73dd5e376",
+    "command-001.json": "d42d500f08a1f1edf98e510be69363c21ea8d594243647775f44dde4fa668842",
+    "JOURNAL.md": "40a4379047641033422d82d5c31f091c663ed8b8b2c4a6c3319ace5bd1359f13",
+    "command-019.json": "1ee81a73c218191afd7539230230d4ed851586f4287650c121f76d6cacb54ad7",
+    "hosting007-completion.json": "53642cc0513505fad2fcbe35d8e1d88216eeb40992faf9a178d75963eca29b2f",
+    "command-011.json": "9582bb21cddf6dd64d95ad24987bb30f86f9f0e8d8329a8b1d8777969cf741b9",
+    "command-004-completion.json": "1d4c7f266b7f92d458c1dad6d95587dd49da25f1437d509495c5520f8c598cb1"
+  }
+}

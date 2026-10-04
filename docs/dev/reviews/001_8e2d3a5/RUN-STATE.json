@@ -4,24 +4,20 @@
   "phase": "P2",
   "case_id": "A-006",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "A-005 independent recheck evidence published and live ref verified",
-  "pending_operation": {
-    "kind": "task",
-    "status": "in_progress",
-    "description": "A-006 complete Phase1 consumer workflow"
-  },
-  "next_action": "Observe consumer completion then independent assessment",
+  "role": "coordinator",
+  "last_completed_action": "T-008 and milestone1.2 complete/published; independent partial assessment finalized; user suspension reached",
+  "pending_operation": null,
+  "next_action": "Remain suspended. On explicit resume, reconcile phase dec4ca/main4c275cc and retained evidence, continue same A-006 with T-009 then full Phase1 verification/integration; no replay of completed tasks.",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
-    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "product_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
     "integration_branch": "main",
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "remote": "origin",
     "remote_ref": "refs/heads/phase/1-named-file-utility",
-    "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "remote_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
     "merge_parents": [
-      "fc3a0ec10728310988a7c29258b582096a53fe28"
+      "3256b953383f9c8218e62a4c051d73e3ccd081bf"
     ],
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
   },
@@ -38,7 +34,11 @@
     "runs/A-004/1/LOCAL-TASK-COMMIT.bundle",
     "runs/A-005/1/CONSUMER-RESULT.md",
     "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json",
-    "runs/A-005/1/rechecks/1/INTERVENTION.md"
+    "runs/A-005/1/rechecks/1/INTERVENTION.md",
+    "SUSPENSION-20261004-163642.json",
+    "runs/A-006/1/CONSUMER-RESULT.md",
+    "runs/A-006/1/JOURNAL.md",
+    "runs/A-006/1/independent-assessment/ASSESSMENT.json"
   ],
-  "updated_at": "2026-10-04T16:25:16.697922+00:00"
+  "updated_at": "2026-10-04T16:46:56.691123+00:00"
 }

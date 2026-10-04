@@ -6,7 +6,7 @@ Pinned source: 019eb354cf0921ebd6056e6579763ac33d0baec2. Dedicated repository: h
 
 A-001 passed reviewed preparation/disclosure/attribution; A-002 passed read-only selection; A-003 passed eligible Phase 1 tracking with assistance (one managed phase label, three milestones, nine task issues, repeat reconciliation without duplicates). A-025 passed the synthetic credential-readiness refusal/preservation check. A-014 remains Blocked: prerequisite refusal/segmentation worked, but cross-phase execution was not demonstrated.
 
-A-004 T-001 pure text counting/immutable value passes independent 12-test unit discovery and separate literal/source checks. Its exact commit 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 is published on the phase branch, main unchanged. Completion comment and issue #1 closure now independently pass Revision2; A-004 is Passed with assistance. Initial and Revision1 Blocked results remain retained. A-005 subsequently completed milestone1.1: 14 unit and 6 integration checks, literal API/success/options and hosted lifecycle pass. Original frozen assessment was Blocked by CHK-001; independently adjudicated milestone-scoped recheck Passed with assistance. Published product159c662 and evidence7a6e988. A-006 is now executing remaining Phase1 tasksT005–T009; main remains unchanged at dispatch.
+A-004 T-001 pure text counting/immutable value passes independent 12-test unit discovery and separate literal/source checks. Its exact commit 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 is published on the phase branch, main unchanged. Completion comment and issue #1 closure now independently pass Revision2; A-004 is Passed with assistance. Initial and Revision1 Blocked results remain retained. A-005 subsequently completed milestone1.1: 14 unit and 6 integration checks, literal API/success/options and hosted lifecycle pass. Original frozen assessment was Blocked by CHK-001; independently adjudicated milestone-scoped recheck Passed with assistance. Published product159c662 and evidence7a6e988. A-006 completed T005–T008/milestone1.2, then stopped under the explicit user suspension. Full case remains Blocked at the human boundary; T009/integration unstarted, main unchanged.
 
 ## Observed issues and limits
 
@@ -22,7 +22,7 @@ Preserved original attempts, exact requests and independent results; published p
 
 Accepted source amendment: reviews end at the report commit; publication is owned by the coordinating/execution workflow. Full workflows include prescribed pushes and active maintained hosting under existing human authority. Pushes do not invoke review skills or an added permission-review stage. Platform-enforced controls cannot be disabled by plugin text.
 
-Current acceptance action: observe A-006 Phase1 completion on the existing product checkout, then independently assess full diagnostics/docs/distribution, hosting and two-parent integration. A-005 evidence is published; do not replay completed milestone1.1. Source package remains pinned unchanged. Installed-client and interruption coverage remain separate gaps. Exact current state: RUN-STATE.json / RESUME.md; original historical report: DIAGNOSTIC-PROGRESS-HISTORY.md. Earlier suspension records remain historical and the explicit resume consumed that boundary.
+Current state: suspended after independent partial A-006 assessment. Remain stopped; next explicit continuation resumes T009 and fullphase integration on the existing product checkout. A-005 evidence is published; do not replay completed milestone1.1. Source package remains pinned unchanged. Installed-client and interruption coverage remain separate gaps. Exact current state: RUN-STATE.json / RESUME.md; original historical report: DIAGNOSTIC-PROGRESS-HISTORY.md. Earlier suspension records remain historical and the explicit resume consumed that boundary.
 
 ## PUB-001 — Publication routing and redundant approval requests
 
@@ -84,3 +84,47 @@ The concrete proposal now includes normative first-request authorization and pus
 Original independent A-005 assessment is Blocked, with all other literal/API, lifecycle/publication and 111 pinned-file checks passing. Frozen scenario explicitly assigns failure handling to milestone1.2; accepted PLAN/TASKS agree. A-005 nevertheless copied the full-phase A-006 baseline with missing/decode traceback/source diagnostics. Coordinator recorded a separately identified milestone1.1 checker variant retaining all other expectations; original contract/captures/assessment remain unchanged. Independent scope adjudication and sensitivity recheck are in progress. No product or source repair and no frozen-contract pass are claimed. The two diagnostics stay mandatory for A-006. Evidence: runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json and runs/A-005/1/rechecks/1/INTERVENTION.md.
 
 CHK-001 recheck: independently Passed with assistance. Exact variant comparison confirms only the two stage-ineligible CLI rows changed; actual observations were preserved. Wrong success count and wrong usage status each fail the corrected checker. Full A-006 diagnostics remain unchanged. Product159c662/main4c275cc/live containment and all111 immutable package files independently reverified. Original frozen outcome remains Blocked/Checks failed. Canonical recheck: runs/A-005/1/rechecks/1/ASSESSMENT.json.
+
+## A-006 — User-directed partial suspension
+
+The consumer completed T-005 through T-008 and milestone1.2. User requested gradual suspension during the already-created T-008 report commit3256b95 push; only that task's existing publication/issue/milestone reconciliation was finished. No new task/case/agent was started afterward. Clean phase checkpointdec4ca107a8f0e2f878f580c88fd33303f570c01 is published, main remains4c275cc46fc0163c9e1e50871d3cc33c4c38567e. Issues5–8 completed; milestone2 closed0open4closed. T-009/issue9/milestone3 and full Phase1 integration remain unstarted. A-006 full-phase acceptance is intentionally unfinished, not a completed phase or observed integration defect. Independent partial assessment finalized: reachedmilestone1.2 verified with assistance; A-006 Blocked under explicit user suspension.17unit/9integration and fullAPI/baseline/extracteddistribution/docs independently pass;111 immutablefiles match. Canonical assessment: runs/A-006/1/independent-assessment/ASSESSMENT.json.
+
+A006-E01: T-007's initial example-pass assertion overstated the doc-runner evidence: a temporary-cwd invocation and archive-extraction warning assertion failed. Original failures retained; correction7939e1c and successful reruns persisted before T-008. Coordinator supplied the observed failed-assertion feedback; assistance is disclosed. No confirmed pinned-plugin cause is established from this consumer verification overstatement.
+
+## CHK-002 — Generated distribution task list counted as owner
+
+Independent partial A-006 helper reports duplicate task ownership because recursive root scanning includes an ignored generated dist/extracted/docs/dev/TASKS.md from the README distribution example. Git tracked/ignore inspection independently distinguishes that generated artifact from the sole tracked docs/dev/TASKS.md owner. Other literal/API/baseline/distribution/ref/publication checks pass. Original helper failure is retained; no generated-file removal or checker rewrite is performed during suspension. Proposed harness repair: scope owner discovery to authoritative task-list paths and exclude generated distribution/ignored artifacts, with regression coverage that still detects a genuine duplicate executable owner. This is a checker finding, not evidence of duplicate product execution ownership or a confirmed pinned-plugin defect.
+
+## Coverage at suspension
+
+| Case | Status |
+| --- | --- |
+| A-001 | Passed |
+| A-002 | Passed |
+| A-003 | Passed |
+| A-004 | Passed |
+| A-005 | Passed |
+| A-006 | Blocked |
+| A-007 | Pending |
+| A-008 | Pending |
+| A-009 | Pending |
+| A-010 | Pending |
+| A-011 | Pending |
+| A-012 | Pending |
+| A-013 | Pending |
+| A-014 | Blocked |
+| A-015 | Pending |
+| A-016 | Pending |
+| A-017 | Pending |
+| A-018 | Pending |
+| A-019 | Pending |
+| A-020 | Pending |
+| A-021 | Pending |
+| A-022 | Pending |
+| A-023 | Pending |
+| A-024 | Pending |
+| A-025 | Passed |
+| A-026 | Pending |
+| A-027 | Pending |
+
+A-006 Blocked denotes intentional human suspension, not a completed phase or product defect. Next permitted action is to remain stopped; explicit resume continues T-009. No pending product/provider effect.
