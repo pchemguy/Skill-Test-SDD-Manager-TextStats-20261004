@@ -1,21 +1,22 @@
 # TextStats executable task hierarchy
 
-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. These are planned tasks: none is implemented, verified or complete. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
+Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001 is implemented and verified below; the remaining tasks are planned and incomplete. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
 
 ## Hosted tracking
 
-Mode: maintained GitHub tracking in [pchemguy/Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004). The eligible phase 1 label, native milestones 1.1–1.3 and task issues T-001–T-009 are open. Reconcile the eligible maintained scope before execution and lifecycle transitions; hosted state never establishes completion. Phase 2 projection waits for phase 1 completion, review, verified integration into main and publication.
+Mode: maintained GitHub tracking in [pchemguy/Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004). The eligible phase 1 label, native milestones 1.1–1.3 and task issues T-001–T-009 are projected. Milestones remain open; task issue closure follows verified durable completion. Reconcile the eligible maintained scope before execution and lifecycle transitions; hosted state never establishes completion. Phase 2 projection waits for phase 1 completion, review, verified integration into main and publication.
 
-Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`; activation baseline: `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`. This tracking checkpoint stops before implementation, with every task unchecked and no phase integration.
+Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`; activation baseline: `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`. The tracking checkpoint at `d009899e39790c39be32ae77e7fe8294bf60d04c` preceded implementation. The T-001 checkpoint below pauses on this branch without phase integration.
 
 ## Phase 1 — Named-file utility
 
 - [ ] Phase 1 — Named-file utility
     - [ ] Milestone 1.1 — Named-file counting MVP
-        - [ ] T-001 — Establish immutable statistics and pure text counting
+        - [x] T-001 — Establish immutable statistics and pure text counting
             Scope: textstats/core.py, initial public facade, tests/unit/ discovery packages and semantic/value tests. Depends on: reviewed preparation inputs.
             Outcome: direct TextStats/count_text imports, immutable nonnegative fields and exact BOM/CRLF/CR/LF/Unicode-word semantics (S-1/S-2).
             Evidence: nonempty unit discovery; all SPEC sample rows, retained/interior/double BOM, silence and immutability/nonnegative checks. Keep pure core independent of acquisition/process state.
+            Completion evidence (2026-10-04, Python 3.12.14, phase/1-named-file-utility; task-owned diff from d009899): `PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v` passed 12 tests with no skips. All 11 SPEC sample rows, 5 additional terminator boundaries, 7 Unicode whitespace separators, 7 BOM interactions, signature/default, silence, input preservation, frozen fields and invalid/zero counts are covered. RED observed missing TextStats export (1 failure), invalid counts (11 failing subtests), missing count_text export (1 failure), and unimplemented semantics (28 failing subtests); each became GREEN after its corresponding implementation. A separate acceptance discovery/run and direct public-import example passed; `git diff --check` was clean. Core inspection confirms only standard-library dataclass dependency and no acquisition/process behavior. Module/API docstrings reviewed; README capability statement aligned. Issue uniquely resolved as pchemguy/Skill-Test-SDD-Manager-TextStats-20261004#1 by exact title and task marker. No T-002 work, integration tests, CLI, distribution or milestone/phase review is claimed.
         - [ ] T-002 — Integrate strict UTF-8 named-file API
             Scope: textstats/io.py, facade exports, focused unit/file integration checks and tests/integration/ discovery packages. Depends on: T-001.
             Outcome: count_file supports str/PathLike, preserves input terminators, delegates counts and closes its success-path owned handle (S-3 success).
