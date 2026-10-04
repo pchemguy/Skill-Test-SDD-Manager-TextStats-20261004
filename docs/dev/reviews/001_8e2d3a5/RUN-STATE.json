@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
-  "phase": "P1",
-  "case_id": "A-002",
+  "phase": "P4",
+  "case_id": "A-014",
   "attempt": 1,
   "role": "consumer",
   "last_completed_action": "Verified prerequisites and prepared exact consumer handoff",
   "pending_operation": {
     "kind": "task",
     "status": "in_progress",
-    "description": "A-002 ordinary consumer request"
+    "description": "A-014 ordinary consumer request"
   },
   "next_action": "Observe consumer completion/trigger then independent assessment",
   "checkpoint_refs": {
