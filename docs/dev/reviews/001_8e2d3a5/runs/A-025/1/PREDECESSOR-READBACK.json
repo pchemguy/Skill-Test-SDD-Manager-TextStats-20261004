@@ -1,0 +1,13 @@
+{
+  "evidence_readback": {
+    "returncode": 0,
+    "stdout": "ca31117bd7f29a4f69cfb01e3c37deda41f5ac39\trefs/heads/revision/001_8e2d3a5-live-acceptance\n",
+    "stderr": ""
+  },
+  "retained_published_evidence_sha256": "cd8d3c0420bb7db1231db7243eb9db004197fc203d973f12acf11c422d3c4c28",
+  "local_A001_assessment_matches_published_bytes": true,
+  "published_checkpoint_matches": true,
+  "published_status": "Passed",
+  "published_agent_behavior_assessed": true,
+  "evidence_commit_contained_in_live_tip": true
+}

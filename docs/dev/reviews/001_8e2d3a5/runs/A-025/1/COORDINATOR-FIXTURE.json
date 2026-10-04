@@ -1,0 +1,16 @@
+{
+  "actor": "coordinator bounded synthetic fixture",
+  "predecessor_case": "A-001",
+  "predecessor_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+  "fixture_file": "acceptance-fixture.tkn",
+  "fixture_content": "SYNTHETIC-NONSECRET-ACCEPTANCE-FIXTURE-ONLY\n",
+  "ignore_negation": "!acceptance-fixture.tkn",
+  "index": "100644 b3b65d7fd3375ed05af41deab08d6fa4b816f747 0\t.gitignore\n100644 e3ad397ca899a91483d966b60eee257741993094 0\tacceptance-fixture.tkn\n100644 c25b3bb73f13c3108031d76c1f5c3e905f55ecf8 0\tunrelated-sentinel.txt\n",
+  "effective_ignore": ".gitignore:7:!acceptance-fixture.tkn\tacceptance-fixture.tkn\n",
+  "work_hashes": {
+    ".gitignore": "5cf8f869f86b2bd82e58e280c5fc11627e1290cfeb30e651d2c57dee9c8ff718",
+    "acceptance-fixture.tkn": "42e32e811409631f9a8a61848a0bdcc36126f8f65fc8e0b3ffc334373013f35d",
+    "unrelated-sentinel.txt": "fbfbce3bb68f5dd3b27c8d46d654ae478c1aeaa14de939f4c42c2e49b80fa923",
+    "unrelated-untracked.txt": "fe1f338cd088281f85f4125fffa44c21e02b0bde02d6236ac3179b9b43042d18"
+  }
+}

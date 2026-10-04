@@ -27,3 +27,7 @@ Independent evidence: [assessment](runs/A-002/1/ASSESSMENT.md). Original consume
 ## A-014 — Blocked
 
 Independent evidence: [assessment](runs/A-014/1/ASSESSMENT.md). Original consumer result retained separately. Source remains pinned and unchanged; final causal findings/proposals await campaign assessment.
+
+## A-025 — Passed
+
+Independent evidence: [assessment](runs/A-025/1/ASSESSMENT.md). Original consumer result retained separately. Source remains pinned and unchanged; final causal findings/proposals await campaign assessment.
