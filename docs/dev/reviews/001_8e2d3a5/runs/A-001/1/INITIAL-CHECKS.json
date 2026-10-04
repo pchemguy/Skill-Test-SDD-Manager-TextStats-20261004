@@ -1,0 +1,16 @@
+{
+  "plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "files_checked": 111,
+  "package_mismatches": [],
+  "first_sdd_commit": "6058ef0968052786d38f4b10887c09f82a51b157",
+  "bootstrap": {
+    "AI_DISCLOSURE.md": {
+      "exact_bytes": true,
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    "SDD-MANAGER.md": {
+      "exact_bytes": true,
+      "sha256": "07947f37a7a69fdfe45331d51e46d21267297e9fc547c84448949e711469403b"
+    }
+  }
+}

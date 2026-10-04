@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "run_id": "001_8e2d3a5",
-  "phase": "P1",
+  "run_id": "textstats-live-20261004",
+  "phase": "P0",
   "case_id": "A-001",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Independent A-001 assessment: Passed",
+  "role": "assessor",
+  "last_completed_action": "Independent committed source/document/task checks",
   "pending_operation": null,
-  "next_action": "Select next eligible catalog case within full authorized scope",
+  "next_action": "Assess preparation lifecycle and publication",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
@@ -18,11 +18,11 @@
     "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "merge_parents": [
       "d0087ff75e485cab832a28d6b501150eaf2ed249"
-    ],
-    "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
+    ]
   },
   "evidence_paths": [
-    "CAPABILITIES.json",
-    "P0-PREPARE.json"
+    "INITIAL-CHECKS.json",
+    "SOURCE-COMPARISON.json",
+    "COMMITTED-OBSERVATIONS.json"
   ]
 }

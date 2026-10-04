@@ -15,3 +15,7 @@ Prepared bounded infrastructure; preserved README; pinned source/harness; recove
 ## Proposed plugin changes
 
 None established at P0; consumer testing has not yet occurred. Full coverage remains pending.
+
+## A-001 — Passed
+
+Independent evidence: [assessment](runs/A-001/1/ASSESSMENT.md). Original consumer result retained separately. Source remains pinned and unchanged; final causal findings/proposals await campaign assessment.
