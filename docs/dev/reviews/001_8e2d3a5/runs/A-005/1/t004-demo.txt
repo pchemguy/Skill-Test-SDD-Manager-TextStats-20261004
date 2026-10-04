@@ -1,0 +1,9 @@
+Named-file demo: normal.txt dash-prefixed relative filename; options []
+CLI 0 'lines=2 words=3\n' ''
+API TextStats(lines=2, words=3)
+Named-file demo: bom.txt dash-prefixed relative filename; options []
+CLI 0 'lines=1 words=0\n' ''
+API TextStats(lines=1, words=0)
+Named-file demo: bom-kept.txt dash-prefixed relative filename; options ['--keep-bom']
+CLI 0 'lines=1 words=1\n' ''
+API TextStats(lines=1, words=1)

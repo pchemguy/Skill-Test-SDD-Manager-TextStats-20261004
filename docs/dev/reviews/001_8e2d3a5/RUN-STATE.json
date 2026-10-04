@@ -4,24 +4,24 @@
   "phase": "P2",
   "case_id": "A-005",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Verified prerequisites and prepared exact consumer handoff",
+  "role": "coordinator",
+  "last_completed_action": "A-005 independently Passed with disclosed checker correction; original Blocked retained",
   "pending_operation": {
-    "kind": "task",
-    "status": "in_progress",
-    "description": "A-005 ordinary consumer request"
+    "kind": "push",
+    "status": "pending",
+    "description": "Publish A-005 evidence and assessment before dependent case"
   },
-  "next_action": "Observe consumer completion/trigger then independent assessment",
+  "next_action": "Verify evidence publication then dispatch A-006",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
-    "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "integration_branch": "main",
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "remote": "origin",
     "remote_ref": "refs/heads/phase/1-named-file-utility",
-    "remote_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "merge_parents": [
-      "d009899e39790c39be32ae77e7fe8294bf60d04c"
+      "fc3a0ec10728310988a7c29258b582096a53fe28"
     ],
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
   },
@@ -35,7 +35,10 @@
     "suspension-recovery/CREDENTIAL-TRIAL.json",
     "RECOVERY-PUBLICATION.json",
     "runs/A-004/1/ASSESSMENT.json",
-    "runs/A-004/1/LOCAL-TASK-COMMIT.bundle"
+    "runs/A-004/1/LOCAL-TASK-COMMIT.bundle",
+    "runs/A-005/1/CONSUMER-RESULT.md",
+    "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json",
+    "runs/A-005/1/rechecks/1/INTERVENTION.md"
   ],
-  "updated_at": "2026-10-04T15:53:00.038600+00:00"
+  "updated_at": "2026-10-04T16:23:59.965122+00:00"
 }

@@ -1,0 +1,12 @@
+README.md
+docs/dev/TASKS.md
+docs/dev/reports/phases/1/1.1.md
+tests/integration/__init__.py
+tests/integration/test_cli.py
+tests/integration/test_file_api.py
+tests/unit/test_cli.py
+tests/unit/test_file_api.py
+textstats/__init__.py
+textstats/__main__.py
+textstats/cli.py
+textstats/io.py

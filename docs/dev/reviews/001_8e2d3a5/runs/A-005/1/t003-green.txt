@@ -1,0 +1,10 @@
+test_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok
+test_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok
+test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok
+test_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok
+test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.415s
+
+OK

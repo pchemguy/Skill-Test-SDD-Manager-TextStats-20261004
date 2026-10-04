@@ -1,0 +1,67 @@
+{
+  "issues": [
+    {
+      "number": 1,
+      "marker": true,
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-10-04T15:48:08Z",
+      "comments": [
+        "T-001 completion: https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/commit/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76\n\nCommitted task and check evidence: https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/blob/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76/docs/dev/TASKS.md"
+      ]
+    },
+    {
+      "number": 2,
+      "marker": true,
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-10-04T15:58:46Z",
+      "comments": [
+        "T-002 complete on phase/1-named-file-utility at 299670cbf19022fce5b12a8df1099857f1322ffb, pushed and remote verified. Test-first missing-export failures became green; independent unit discovery 13 and integration 2 tests pass. Real UTF-8 str/Path/BOM/terminator cases, silence, unchanged bytes and owned success-handle closure verified. TASKS completion committed with implementation; milestone/phase completion remains separate."
+      ]
+    },
+    {
+      "number": 3,
+      "marker": true,
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-10-04T16:01:22Z",
+      "comments": [
+        "T-003 complete on phase/1-named-file-utility at f2260a280b80fbbceb912594943a69c6075dcf07, pushed and remote verified. Missing module/adapter RED became GREEN. Independent unit discovery 14 and integration 6 tests pass; exact text stdout/status/stderr, BOM, dash-prefixed paths with --, help and invalid usage before acquisition verified. Normal/BOM/dash demonstration passed; TASKS status committed. Diagnostic hardening and later formats/sources remain separately scheduled."
+      ]
+    },
+    {
+      "number": 4,
+      "marker": true,
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-10-04T16:04:07Z",
+      "comments": [
+        "T-004 milestone 1.1 review complete on phase/1-named-file-utility at 7bfadcb685e1cc313e2b9baab4deddd0f34c1832, pushed and remote verified. Report: docs/dev/reports/phases/1/1.1.md. All delivered modules/tests reviewed; no in-scope findings or TODOs. Fresh unit 14/integration 6 tests and normal/BOM/dash API/module demonstration pass, help and diff check pass. PLAN 1.1 exits satisfied; phase 1/reliability/distribution remain incomplete. TASKS status committed."
+      ]
+    }
+  ],
+  "milestone": {
+    "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/1",
+    "id": 18303256,
+    "number": 1,
+    "title": "sdd-1.1-Named-file-counting-MVP",
+    "description": "Scope: immutable public value, count_text/count_file, exact text/BOM semantics, named-file UTF-8 success, and useful module CLI with one input, help, --keep-bom and -- handling. API and CLI agree on counts. Establish real, discoverable unit/integration checks alongside the slice. Included contracts: S-1/S-2, S-3 success and owned success-handle lifecycle, S-4 success/help/option validation. Required failure hardening and release documentation/distribution conclude in 1.2; JSON and stdin conclude in phase 2.\n\nPrerequisite: reviewed preparation inputs and Python 3.11+. Exit: users can count a named UTF-8 file through the public API and actual module entry; exact stdout/stderr/status, path forms, BOM and terminator examples pass; input is unchanged. Final milestone code review, relevant tests, blocker repairs and committed report are mandatory. Demonstrate a normal file, a BOM file and a dash-prefixed filename. This informs the human's continue/amend/simplify/stop decision about usefulness and command syntax; routine authorized work needs no renewed approval.\n\nSources: docs/dev/PLAN.md; docs/dev/TASKS.md. Planned work; no task is implemented.",
+    "open_issues": 0,
+    "closed_issues": 4,
+    "state": "closed"
+  },
+  "publication": {
+    "argv": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main",
+      "refs/heads/phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e\trefs/heads/main\n159c662e06405b1fbf696e8e9d9d5d47024187be\trefs/heads/phase/1-named-file-utility\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,5 @@
+159c662 Reconcile verified milestone 1.1 completion and pause (T-004)
+fc3a0ec Clarify binary-mode review evidence for milestone 1.1 (T-004)
+7bfadcb Review and report named-file MVP milestone 1.1 (T-004)
+f2260a2 Deliver useful named-file module CLI (T-003)
+299670c Integrate strict UTF-8 named-file API (T-002)

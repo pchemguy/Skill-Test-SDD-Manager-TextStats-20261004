@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-005",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent scoped capture and lifecycle assessment",
+  "pending_operation": null,
+  "next_action": "Retain failed contract and await coordinator disposition",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "merge_parents": [
+      "fc3a0ec10728310988a7c29258b582096a53fe28"
+    ]
+  },
+  "evidence_paths": [
+    "API.json",
+    "BASELINE.json",
+    "INDEPENDENT-COMMANDS.json"
+  ]
+}

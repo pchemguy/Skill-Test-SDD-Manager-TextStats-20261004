@@ -1,0 +1,32 @@
+test_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... FAIL
+test_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... FAIL
+test_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... FAIL
+
+======================================================================
+FAIL: test_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_file_api.py", line 12, in test_success_closes_owned_handle
+    self.assertTrue(hasattr(textstats, "count_file"), "count_file public export missing")
+AssertionError: False is not true : count_file public export missing
+
+======================================================================
+FAIL: test_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_file_api.py", line 15, in test_public_export_and_signature
+    self.assertTrue(hasattr(textstats, "count_file"), "count_file public export missing")
+AssertionError: False is not true : count_file public export missing
+
+======================================================================
+FAIL: test_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_file_api.py", line 22, in test_real_files_paths_bom_terminators_and_silence
+    self.assertTrue(hasattr(textstats, "count_file"), "count_file public export missing")
+AssertionError: False is not true : count_file public export missing
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=3)

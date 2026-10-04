@@ -1,0 +1,235 @@
+test_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... FAIL
+test_help (tests.integration.test_cli.ModuleCliTests.test_help) ... FAIL
+test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... 
+  test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=()) ... FAIL
+  test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=('one', 'two')) ... FAIL
+  test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=('--unknown', 'one')) ... FAIL
+  test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=('--json', 'one')) ... FAIL
+test_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... FAIL
+test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... 
+  test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'alpha beta\r\ngamma\r') ... FAIL
+  test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'') ... FAIL
+  test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'caf\xc3\xa9\xe2\x80\xa8tea\n') ... FAIL
+  test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'\xef\xbb\xbf\n') ... FAIL
+  test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'\xef\xbb\xbf\xef\xbb\xbf') ... FAIL
+
+======================================================================
+FAIL: test_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_cli.py", line 12, in test_usage_errors_and_help_never_acquire
+    self.assertIsNotNone(importlib.util.find_spec("textstats.cli"), "command adapter missing")
+AssertionError: unexpectedly None : command adapter missing
+
+======================================================================
+FAIL: test_help (tests.integration.test_cli.ModuleCliTests.test_help)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 46, in test_help
+    self.assertEqual((run.returncode, run.stderr), (0, ""))
+AssertionError: Tuples differ: (1, "/opt/codex/runtimes/codex-primary-run[128 chars]d\n") != (0, '')
+
+First differing element 0:
+1
+0
+
++ (0, '')
+- (1,
+-  '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No '
+-  "module named textstats.__main__; 'textstats' is a package and cannot be "
+-  'directly executed\n')
+
+======================================================================
+FAIL: test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=())
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 54, in test_invalid_invocations
+    self.assertEqual((run.returncode, run.stdout), (2, ""))
+AssertionError: Tuples differ: (1, '') != (2, '')
+
+First differing element 0:
+1
+2
+
+- (1, '')
+?  ^
+
++ (2, '')
+?  ^
+
+
+======================================================================
+FAIL: test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=('one', 'two'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 54, in test_invalid_invocations
+    self.assertEqual((run.returncode, run.stdout), (2, ""))
+AssertionError: Tuples differ: (1, '') != (2, '')
+
+First differing element 0:
+1
+2
+
+- (1, '')
+?  ^
+
++ (2, '')
+?  ^
+
+
+======================================================================
+FAIL: test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=('--unknown', 'one'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 54, in test_invalid_invocations
+    self.assertEqual((run.returncode, run.stdout), (2, ""))
+AssertionError: Tuples differ: (1, '') != (2, '')
+
+First differing element 0:
+1
+2
+
+- (1, '')
+?  ^
+
++ (2, '')
+?  ^
+
+
+======================================================================
+FAIL: test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) (args=('--json', 'one'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 54, in test_invalid_invocations
+    self.assertEqual((run.returncode, run.stdout), (2, ""))
+AssertionError: Tuples differ: (1, '') != (2, '')
+
+First differing element 0:
+1
+2
+
+- (1, '')
+?  ^
+
++ (2, '')
+?  ^
+
+
+======================================================================
+FAIL: test_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 41, in test_keep_bom_and_dash_prefixed_filename
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, output, ""))
+AssertionError: Tuples differ: (1, '', "/opt/codex/runtimes/codex-primary[132 chars]d\n") != (0, 'lines=1 words=0\n', '')
+
+First differing element 0:
+1
+0
+
++ (0, 'lines=1 words=0\n', '')
+- (1,
+-  '',
+-  '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No '
+-  "module named textstats.__main__; 'textstats' is a package and cannot be "
+-  'directly executed\n')
+
+======================================================================
+FAIL: test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'alpha beta\r\ngamma\r')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 27, in test_named_files_counts_and_api_agreement
+    self.assertEqual((run.returncode, run.stdout, run.stderr),
+AssertionError: Tuples differ: (1, '', "/opt/codex/runtimes/codex-primary[132 chars]d\n") != (0, 'lines=2 words=3\n', '')
+
+First differing element 0:
+1
+0
+
++ (0, 'lines=2 words=3\n', '')
+- (1,
+-  '',
+-  '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No '
+-  "module named textstats.__main__; 'textstats' is a package and cannot be "
+-  'directly executed\n')
+
+======================================================================
+FAIL: test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 27, in test_named_files_counts_and_api_agreement
+    self.assertEqual((run.returncode, run.stdout, run.stderr),
+AssertionError: Tuples differ: (1, '', "/opt/codex/runtimes/codex-primary[132 chars]d\n") != (0, 'lines=0 words=0\n', '')
+
+First differing element 0:
+1
+0
+
++ (0, 'lines=0 words=0\n', '')
+- (1,
+-  '',
+-  '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No '
+-  "module named textstats.__main__; 'textstats' is a package and cannot be "
+-  'directly executed\n')
+
+======================================================================
+FAIL: test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'caf\xc3\xa9\xe2\x80\xa8tea\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 27, in test_named_files_counts_and_api_agreement
+    self.assertEqual((run.returncode, run.stdout, run.stderr),
+AssertionError: Tuples differ: (1, '', "/opt/codex/runtimes/codex-primary[132 chars]d\n") != (0, 'lines=1 words=2\n', '')
+
+First differing element 0:
+1
+0
+
++ (0, 'lines=1 words=2\n', '')
+- (1,
+-  '',
+-  '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No '
+-  "module named textstats.__main__; 'textstats' is a package and cannot be "
+-  'directly executed\n')
+
+======================================================================
+FAIL: test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'\xef\xbb\xbf\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 27, in test_named_files_counts_and_api_agreement
+    self.assertEqual((run.returncode, run.stdout, run.stderr),
+AssertionError: Tuples differ: (1, '', "/opt/codex/runtimes/codex-primary[132 chars]d\n") != (0, 'lines=1 words=0\n', '')
+
+First differing element 0:
+1
+0
+
++ (0, 'lines=1 words=0\n', '')
+- (1,
+-  '',
+-  '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No '
+-  "module named textstats.__main__; 'textstats' is a package and cannot be "
+-  'directly executed\n')
+
+======================================================================
+FAIL: test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) (data=b'\xef\xbb\xbf\xef\xbb\xbf')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_cli.py", line 27, in test_named_files_counts_and_api_agreement
+    self.assertEqual((run.returncode, run.stdout, run.stderr),
+AssertionError: Tuples differ: (1, '', "/opt/codex/runtimes/codex-primary[132 chars]d\n") != (0, 'lines=1 words=1\n', '')
+
+First differing element 0:
+1
+0
+
++ (0, 'lines=1 words=1\n', '')
+- (1,
+-  '',
+-  '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No '
+-  "module named textstats.__main__; 'textstats' is a package and cannot be "
+-  'directly executed\n')
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.321s
+
+FAILED (failures=12)

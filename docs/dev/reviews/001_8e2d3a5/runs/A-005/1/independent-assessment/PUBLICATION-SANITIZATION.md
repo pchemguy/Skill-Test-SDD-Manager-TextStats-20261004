@@ -1,0 +1,1 @@
+Connector publication copies omit provider body text and duplicated content blocks, retaining body hashes, commit/evidence links and metadata. Original private assessor captures remain unchanged. This sanitation does not alter product effects or assessment findings.

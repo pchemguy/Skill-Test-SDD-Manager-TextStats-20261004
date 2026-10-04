@@ -1,0 +1,11 @@
+test_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok
+test_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok
+test_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok
+test_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok
+test_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok
+test_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.420s
+
+OK

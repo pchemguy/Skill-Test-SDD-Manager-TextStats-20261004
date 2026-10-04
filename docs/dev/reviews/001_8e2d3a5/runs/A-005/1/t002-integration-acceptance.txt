@@ -1,0 +1,7 @@
+test_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok
+test_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.004s
+
+OK

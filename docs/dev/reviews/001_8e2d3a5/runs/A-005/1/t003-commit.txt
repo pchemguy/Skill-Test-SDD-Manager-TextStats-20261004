@@ -1,0 +1,6 @@
+[phase/1-named-file-utility f2260a2] Deliver useful named-file module CLI (T-003)
+ 6 files changed, 115 insertions(+), 2 deletions(-)
+ create mode 100644 tests/integration/test_cli.py
+ create mode 100644 tests/unit/test_cli.py
+ create mode 100644 textstats/__main__.py
+ create mode 100644 textstats/cli.py
