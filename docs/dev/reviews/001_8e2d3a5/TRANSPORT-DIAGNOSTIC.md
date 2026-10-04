@@ -8,7 +8,9 @@ The coordinator generalized that one observed failure into an assertion that dir
 
 ## Effect on the run
 
-A-003's first attempt stopped without hosted writes under the coordinator-supplied transport constraint and actual missing connector methods. It remains retained as Blocked; it is not evidence of a plugin defect. The user-directed client probe restored an available path without browser fallback. A separately recorded fresh consumer retry will execute the requested projection/reconciliation using existing connector tools and the scoped curl transport.
+A-003's first attempt stopped without hosted writes under the coordinator-supplied transport constraint and actual missing connector methods. It remains retained as Blocked; it is not evidence of a plugin defect. The user-directed client probe restored an available path without browser fallback. A separately recorded fresh consumer retry completed native projection and a second reconciliation using existing connector tools and the scoped curl transport. Independent acceptance assessment is pending at this report update; the consumer's completion claim alone does not establish a pass.
+
+The retry also exposed an adapter-usage clarification: the optional request-body argument is a non-secret JSON file path. An initial inline JSON argument failed with FileNotFoundError before any HTTP request. The consumer reobserved hosted state, used a file path, and continued. This intervention is retained separately from the original API-access misdiagnosis.
 
 ## Actions and safeguards
 
