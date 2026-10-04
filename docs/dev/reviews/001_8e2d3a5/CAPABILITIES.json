@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "git": "git version 2.51.1",
+  "loading": "explicit pinned skill source",
+  "separate_consumer_and_assessor_contexts": true,
+  "filesystem_isolation_certified": false,
+  "installed_client_execution": "Not run: no observed installation/activation facility",
+  "github_connector_metadata": "observed",
+  "git_publication": "observed after credential recovery",
+  "repository_scoped_rest_transport": "available for operations absent from connector",
+  "protected_credentials": "supplied and recovered after explicit Git authentication failure; excluded from evidence"
+}

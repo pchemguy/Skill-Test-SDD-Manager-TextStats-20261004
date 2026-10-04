@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "cases": {
+    "A-001": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-002": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-003": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-004": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-005": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-006": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-007": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-008": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-009": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-010": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-011": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-012": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-013": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-014": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-015": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-016": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-017": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-018": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-019": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-020": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-021": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-022": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-023": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-024": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-025": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-026": {
+      "status": "Pending",
+      "attempts": []
+    },
+    "A-027": {
+      "status": "Pending",
+      "attempts": []
+    }
+  }
+}

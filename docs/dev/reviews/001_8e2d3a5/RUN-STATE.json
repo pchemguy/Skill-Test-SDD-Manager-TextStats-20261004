@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "run_id": "001_8e2d3a5",
+  "phase": "P0",
+  "case_id": null,
+  "attempt": 1,
+  "role": "coordinator",
+  "last_completed_action": "Published pinned infrastructure on main and verified containment",
+  "pending_operation": null,
+  "next_action": "Dispatch A-001 preparation from published baseline, then independent assessment",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "8e2d3a57af36bc42d73f2118542a8f2608bab6ae",
+    "integration_branch": "main",
+    "integration_commit": "8e2d3a57af36bc42d73f2118542a8f2608bab6ae",
+    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main"
+  },
+  "evidence_paths": [
+    "CAPABILITIES.json",
+    "P0-PREPARE.json"
+  ]
+}
