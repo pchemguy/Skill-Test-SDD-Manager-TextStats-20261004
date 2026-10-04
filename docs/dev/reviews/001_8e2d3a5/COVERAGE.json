@@ -72,8 +72,14 @@
       ]
     },
     "A-006": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "consumer": "fresh explicit-source context"
+        }
+      ]
     },
     "A-007": {
       "status": "Pending",
