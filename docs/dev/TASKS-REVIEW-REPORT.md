@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready. Owner assessment: sdd-tasks, 2026-10-04. Reviewed root TASKS; no focused children or active feature task list. Current PLAN/SPEC/design identities and upstream reports were checked before derivation. No confirmed issue or material open decision remains. This prepares 17 unchecked executable tasks; it neither selects a range nor activates hosted tracking or implements production code.
+State: Ready. Owner assessment: sdd-tasks, 2026-10-04. Reviewed root TASKS; no focused children or active feature task list. Current PLAN/SPEC/design identities and upstream reports were checked before derivation. No confirmed issue or material open decision remains. This prepares 17 unchecked executable tasks. The current metadata recheck below records separately authorized maintained hosted tracking; no task range is implemented and no production code is delivered.
 
 Reviewed and governing states:
 
@@ -38,3 +38,9 @@ Manually mapped each PLAN outcome/exit to task scope, dependency and concrete ev
 Each delivery milestone ends with explicit code review/testing/repair/report work; final phase review depends on delivery milestone completion/closure, not itself. Review tasks have lifecycle-compliant report paths; T-017 includes final TODO aggregation. Nonzero product discovery, strict decoding, owned/borrowed resource checks, useful human demonstrations and checkout-independent extracted source invocation have executable coverage. Phase integration/publication gates and partial-range pause are preserved. Future range is excluded while the source-independent seam is maintained.
 
 No findings or correction cycle. Preparation stops with all tasks unchecked and no hosted projection.
+
+## Revision 1 — Hosted tracking metadata recheck
+
+Owner assessment: sdd-tasks, 2026-10-04. No finding or correction to the accepted decomposition. The tracking workflow replaces the historical “No hosted objects are active” sentence with maintained mode and phase 1 context. Reviewed TASKS.md SHA-256: `1622d35a0bb4a61034e2b92fa52ed986f99cb54c96b49ff4087155af308df208`.
+
+Compared every phase, milestone and task entry against the initial reviewed source at `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`: hierarchy, scope, dependency, acceptance, prescribed checks and completion checkboxes are byte-for-byte unchanged. All other reviewed/governing inputs retain the hashes above. Counts, grouped PLAN/SPEC coverage and original no-finding assessment remain equivalent. Readiness: Ready for eligible phase 1 projection/implementation only when separately authorized; tracking metadata is not task completion. All 17 tasks remain unchecked. No product tests were run.
