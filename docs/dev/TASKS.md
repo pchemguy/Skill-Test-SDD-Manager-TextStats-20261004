@@ -1,6 +1,6 @@
 # TextStats executable task hierarchy
 
-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-009 are implemented and verified below; Phase 2 tasks remain planned and incomplete. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
+Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-009 are implemented and verified below; Phase 2 tasks remain planned and incomplete. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Phase 2 is activated on phase/2-output-and-source-extensions; JSON milestone2.1 is selected, with stdin and final review incomplete. Future range implementation is separately requested and has no executable owner here.
 
 ## Hosted tracking
 
@@ -65,10 +65,11 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
 
 - [ ] Phase 2 — Output and source extensions
     - [ ] Milestone 2.1 — JSON output
-        - [ ] T-010 — Add JSON rendering with preserved named-file behavior
+        - [x] T-010 — Add JSON rendering with preserved named-file behavior
             Scope: textstats/cli.py and unit/integration format checks. Depends on: T-009 and verified/published full phase 1 integration.
             Outcome: --json emits only integer lines/words plus newline, equal to text counts; compose --keep-bom in either order and preserve statuses/errors (S-5).
             Evidence: parse actual module output for normal/empty/BOM/terminator files, exact text default regressions, key/type checks, useful failures and stdout atomicity; demonstrate script consumption. Stdin remains scheduled in 2.2.
+            Completion evidence (2026-10-04): focused RED `PYTHONDONTWRITEBYTECODE=1 python -m unittest tests.integration.test_cli.JsonModuleTests -v` observed 30 behavioral failures (unknown --json exits2); GREEN passed2 tests after command-adapter JSON rendering. Independent unit17/integration11 pass, no skips. Seven real-byte fixtures cover ordinary/empty/terminator/Unicode/BOM/double-BOM, JSON only integer lines/words and one object/newline, both BOM option orders, exact retained text outputs/dash paths and unchanged inputs. Real missing/directory/malformed JSON failures and injected permission/read/decode errors retain status1, identifying stderr and empty stdout; invalid JSON usage acquires nothing. API/core/io remain unchanged; module docstring reviewed. Separate script-consumption demo parses counts2/3. Phase1 unknown-option regressions now use --jsn, since --json is delivered. Issue#10 exact title/body marker verified; Phase2 label12541856034, milestones#4/#5/#6 and all issues#10–#17 read back before tests. Baseline59debb649545125dd3aa00377ea115451b594271; target main; no stdin or phase integration.
         - [ ] T-011 — Document and verify the JSON distribution boundary
             Scope: docs/module.md, README.md and tests/integration extracted-source checks. Depends on: T-010.
             Outcome: runnable JSON examples, accurate delivered option documentation and extracted-package text/JSON acceptance (S-7 at 2.1).

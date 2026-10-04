@@ -67,7 +67,7 @@ class SourceDistributionTests(unittest.TestCase):
             self.assertEqual((help_run.returncode, help_run.stderr), (0, ""))
             self.assertIn("--keep-bom", help_run.stdout)
             for arguments, status in [(("missing.txt",), 1), ((), 2),
-                                      (("--json", "sample.txt"), 2)]:
+                                      (("--jsn", "sample.txt"), 2)]:
                 run = invoke(*arguments)
                 self.assertEqual((run.returncode, run.stdout), (status, ""))
                 self.assertTrue(run.stderr)

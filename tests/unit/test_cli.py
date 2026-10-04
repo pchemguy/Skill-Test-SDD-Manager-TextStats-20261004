@@ -12,7 +12,8 @@ class CliValidationTests(unittest.TestCase):
         self.assertIsNotNone(importlib.util.find_spec("textstats.cli"), "command adapter missing")
         from textstats.cli import main
         for args, code in [([], 2), (["one", "two"], 2), (["--unknown", "one"], 2),
-                           (["--keep-bom"], 2), (["--help"], 0)]:
+                           (["--keep-bom"], 2), (["--json"], 2), (["--json", "one", "two"], 2),
+                           (["--json", "--unknown", "one"], 2), (["--help"], 0)]:
             with self.subTest(args=args):
                 with patch("textstats.cli.count_file", side_effect=AssertionError("acquired")) as acquire:
                     with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
@@ -27,7 +28,8 @@ class CliFailureTests(unittest.TestCase):
         errors = [FileNotFoundError("missing"), PermissionError("denied"),
                   OSError("read failed"), UnicodeDecodeError("utf-8", b"\xff", 0, 1, "invalid byte")]
         for error in errors:
-            for options in ([], ["--keep-bom"]):
+            for options in ([], ["--keep-bom"], ["--json"],
+                            ["--json", "--keep-bom"], ["--keep-bom", "--json"]):
                 with self.subTest(error=type(error), options=options):
                     out, err = io.StringIO(), io.StringIO()
                     with patch("textstats.cli.count_file", side_effect=error):
