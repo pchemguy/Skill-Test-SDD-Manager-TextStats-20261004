@@ -1,0 +1,29 @@
+[
+  {
+    "command": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "/workspace/scratch/textstats-preservation-worktree-20261004",
+      "diff",
+      "--check"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "/workspace/scratch/textstats-preservation-worktree-20261004",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

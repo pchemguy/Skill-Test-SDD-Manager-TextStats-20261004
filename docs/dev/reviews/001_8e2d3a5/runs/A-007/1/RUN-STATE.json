@@ -64,9 +64,8 @@
     {
       "case_id": "A-020",
       "attempt": 1,
-      "status": "Passed",
-      "reason": "Independent local-only preservation trial from A003retainedobjects",
-      "assessment_path": "runs/A-020/1/independent-assessment/ASSESSMENT.json"
+      "status": "Running",
+      "reason": "Independent local-only preservation trial from A003retainedobjects"
     },
     {
       "case_id": "A-007",

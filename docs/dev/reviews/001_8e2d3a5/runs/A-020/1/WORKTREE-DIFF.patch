@@ -1,0 +1,7 @@
+diff --git a/notes/local-retained.txt b/notes/local-retained.txt
+index e67b294..98bba36 100644
+--- a/notes/local-retained.txt
++++ b/notes/local-retained.txt
+@@ -1 +1,2 @@
+ retained staged version
++uncommitted local addition

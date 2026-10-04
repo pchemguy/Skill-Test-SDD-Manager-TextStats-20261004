@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "test_repository": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git",
+  "plugin_revision": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "source_mode": "committed",
+  "scope": {
+    "cases": [
+      "A-020"
+    ]
+  },
+  "stop_after": null,
+  "profile": "local-only",
+  "local_checkout": "/workspace/scratch/textstats-preservation-worktree-20261004"
+}

@@ -1,0 +1,430 @@
+test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) ... 
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(1.5, 0)) ... ERROR
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, 1.5)) ... ERROR
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=('1', 0)) ... ERROR
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, '1')) ... ERROR
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(None, 0)) ... ERROR
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, None)) ... ERROR
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(True, 0)) ... ERROR
+  test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, True)) ... ERROR
+test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) ... 
+  test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) (lines=-1, words=0) ... ERROR
+  test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) (lines=0, words=-1) ... ERROR
+  test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) (lines=-2, words=-3) ... ERROR
+test_value_is_immutable (tests.unit.test_core.StatisticsValueTests.test_value_is_immutable) ... ERROR
+test_api_is_silent_and_bom_option_is_keyword_only (tests.unit.test_core.TextSemanticsTests.test_api_is_silent_and_bom_option_is_keyword_only) ... ERROR
+test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) ... 
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='a \ufeff b', strip=True) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff alpha', strip=True) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff alpha', strip=False) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff\ufeff alpha', strip=True) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff\n', strip=True) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff\n', strip=False) ... ERROR
+test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) ... 
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r\n') ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r') ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r\n\r\n') ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r\n\rX') ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='a\x0bb\x0cc\x85d\u2029e') ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='a\xa0b\u2003c') ... ERROR
+test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) ... 
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha beta', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\n', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\n', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\r\nbeta\rgamma\n', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\n\n', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text=' \t', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\u2028beta', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\ufeff', strip=True) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\ufeff', strip=False) ... ERROR
+  test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\ufeff\ufeff', strip=True) ... ERROR
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(1.5, 0))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, 1.5))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=('1', 0))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, '1'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(None, 0))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, None))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(True, 0))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) (fields=(0, True))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 90, in test_fields_are_integers
+    TextStats(*fields)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) (lines=-1, words=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 83, in test_negative_fields_are_rejected
+    TextStats(lines, words)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) (lines=0, words=-1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 83, in test_negative_fields_are_rejected
+    TextStats(lines, words)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) (lines=-2, words=-3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 83, in test_negative_fields_are_rejected
+    TextStats(lines, words)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_value_is_immutable (tests.unit.test_core.StatisticsValueTests.test_value_is_immutable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 70, in test_value_is_immutable
+    value = TextStats(2, 3)
+            ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_api_is_silent_and_bom_option_is_keyword_only (tests.unit.test_core.TextSemanticsTests.test_api_is_silent_and_bom_option_is_keyword_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 56, in test_api_is_silent_and_bom_option_is_keyword_only
+    TextStats(0, 0)
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 7, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='a \ufeff b', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 50, in test_bom_policy_preserves_interior_and_second_bom
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff alpha', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 50, in test_bom_policy_preserves_interior_and_second_bom
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff alpha', strip=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 50, in test_bom_policy_preserves_interior_and_second_bom
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff\ufeff alpha', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 50, in test_bom_policy_preserves_interior_and_second_bom
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff\n', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 50, in test_bom_policy_preserves_interior_and_second_bom
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) (text='\ufeff\n', strip=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 50, in test_bom_policy_preserves_interior_and_second_bom
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 39, in test_only_cr_and_lf_terminate_lines
+    result = count_text(text)
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 39, in test_only_cr_and_lf_terminate_lines
+    result = count_text(text)
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r\n\r\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 39, in test_only_cr_and_lf_terminate_lines
+    result = count_text(text)
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='\r\n\rX')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 39, in test_only_cr_and_lf_terminate_lines
+    result = count_text(text)
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='a\x0bb\x0cc\x85d\u2029e')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 39, in test_only_cr_and_lf_terminate_lines
+    result = count_text(text)
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) (text='a\xa0b\u2003c')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 39, in test_only_cr_and_lf_terminate_lines
+    result = count_text(text)
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha beta', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\n', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\n', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\r\nbeta\rgamma\n', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\n\n', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text=' \t', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='alpha\u2028beta', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\ufeff', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\ufeff', strip=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) (text='\ufeff\ufeff', strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/tests/unit/test_core.py", line 29, in test_spec_samples
+    result = count_text(text, strip_bom=strip)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-preservation-worktree-20261004/textstats/core.py", line 12, in count_text
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+FAILED (errors=36)

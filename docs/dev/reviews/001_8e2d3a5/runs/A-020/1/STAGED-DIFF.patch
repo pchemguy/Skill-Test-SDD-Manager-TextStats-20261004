@@ -1,0 +1,7 @@
+diff --git a/notes/local-retained.txt b/notes/local-retained.txt
+new file mode 100644
+index 0000000..e67b294
+--- /dev/null
++++ b/notes/local-retained.txt
+@@ -0,0 +1 @@
++retained staged version

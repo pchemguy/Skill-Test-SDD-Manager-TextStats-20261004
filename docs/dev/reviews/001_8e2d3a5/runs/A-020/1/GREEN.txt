@@ -1,0 +1,12 @@
+test_fields_are_integers (tests.unit.test_core.StatisticsValueTests.test_fields_are_integers) ... ok
+test_negative_fields_are_rejected (tests.unit.test_core.StatisticsValueTests.test_negative_fields_are_rejected) ... ok
+test_value_is_immutable (tests.unit.test_core.StatisticsValueTests.test_value_is_immutable) ... ok
+test_api_is_silent_and_bom_option_is_keyword_only (tests.unit.test_core.TextSemanticsTests.test_api_is_silent_and_bom_option_is_keyword_only) ... ok
+test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.TextSemanticsTests.test_bom_policy_preserves_interior_and_second_bom) ... ok
+test_only_cr_and_lf_terminate_lines (tests.unit.test_core.TextSemanticsTests.test_only_cr_and_lf_terminate_lines) ... ok
+test_spec_samples (tests.unit.test_core.TextSemanticsTests.test_spec_samples) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

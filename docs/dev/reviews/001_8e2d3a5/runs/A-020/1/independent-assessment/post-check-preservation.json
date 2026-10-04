@@ -1,0 +1,18 @@
+{
+  "head": "5719983f2d11266dba58bc8b149505c2519df4cb",
+  "status": "AM notes/local-retained.txt\n?? notes/untracked-retained.txt\n",
+  "sentinels": {
+    "notes/local-retained.txt": {
+      "sha256": "4970aa122bf10f99fa0a9d57d6d6a5395f274dc4e5e4d6b06f5a7e78f238e83d",
+      "mode": 420,
+      "index": "100644 e67b2942395976ee170f73df244934e7f3f1ab77 0\tnotes/local-retained.txt\n",
+      "staged_sha256": "2277c4156d3b0459bea6b09ca06d307ac62a494d4914d8c27cf4413708d31b72"
+    },
+    "notes/untracked-retained.txt": {
+      "sha256": "b6a8002f014da482385075e3fb010603833a60f168f685861439ed7717e5afe4",
+      "mode": 420,
+      "index": ""
+    }
+  },
+  "checks_left_state_unchanged": true
+}
