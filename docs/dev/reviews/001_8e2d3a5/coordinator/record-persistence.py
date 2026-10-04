@@ -63,6 +63,7 @@ elif args.action=='publish':
  result=ROOT/'consumer-handoffs'/case/'RESULT.md'
  if result.exists():shutil.copy2(result,dest/'CONSUMER-RESULT.md')
  state=json.loads((REC/'RUN-STATE.json').read_text());state.update(phase=entry['phase'],case_id=case,attempt=args.attempt,role='coordinator',last_completed_action=f'Independent {case} assessment: '+assessment['status'],next_action='Select next eligible catalog case within full authorized scope',pending_operation=None)
+ if (ROOT/'STOP-AFTER-CURRENT.json').exists():state['next_action']=json.loads((ROOT/'STOP-AFTER-CURRENT.json').read_text())['next_action']
  state['checkpoint_refs']=assessment['checkpoint_refs']|{'evidence_branch':BRANCH,'remote':'origin','remote_ref':'refs/heads/'+assessment['checkpoint_refs']['product_branch']}
  save(REC/'RUN-STATE.json',state)
  cov=json.loads((REC/'COVERAGE.json').read_text());cov['cases'][case]={'status':assessment['status'],'attempts':[{'attempt':args.attempt,'status':assessment['status'],'assessment':str((dest/'ASSESSMENT.json').relative_to(REC))}]};save(REC/'COVERAGE.json',cov)

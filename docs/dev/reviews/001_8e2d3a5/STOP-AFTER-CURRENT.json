@@ -1,0 +1,10 @@
+{
+  "requested_at": "2026-10-04T14:27:49+03:00",
+  "instruction": "Do not start new cases/tasks/subagents. Complete current work and suspend.",
+  "active_cases": [
+    "A-002",
+    "A-014",
+    "A-025"
+  ],
+  "next_action": "Complete only already active assessments, publish records and requested suspension; start no new case, task or agent."
+}

@@ -1,28 +1,35 @@
 {
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
-  "phase": "P4",
-  "case_id": "A-025",
+  "phase": "P1",
+  "case_id": null,
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Independent A-025 assessment: Passed",
+  "last_completed_action": "Completed active consumer/assessment work: A-001/A-002/A-025 Passed, A-014 Blocked; all case records published",
   "pending_operation": null,
-  "next_action": "Complete only already active assessments, publish records and requested suspension; start no new case, task or agent.",
+  "next_action": "Suspended by user. Await explicit resume; reconcile actual product/evidence/hosted state, then prepare a fresh A-003 handoff. Start no work while suspended.",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "integration_branch": "main",
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
+    "evidence_commit": "967f95a2c47ca92b23ef1bdae6ee7eff7eb4ba54",
     "remote": "origin",
     "remote_ref": "refs/heads/main",
     "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "merge_parents": [
       "d0087ff75e485cab832a28d6b501150eaf2ed249"
-    ],
-    "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
+    ]
   },
   "evidence_paths": [
-    "CAPABILITIES.json",
-    "P0-PREPARE.json"
-  ]
+    "INPUTS.json",
+    "STOP-AFTER-CURRENT.json",
+    "COVERAGE.json",
+    "SUSPENSION.md",
+    "DIAGNOSTIC-REPORT.md",
+    "FIXTURE-DETACHMENT.json",
+    "suspension-recovery/CREDENTIAL-TRIAL.json"
+  ],
+  "updated_at": "2026-10-04T11:37:42.177857+00:00"
 }

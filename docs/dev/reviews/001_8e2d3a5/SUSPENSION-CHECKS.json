@@ -1,0 +1,16 @@
+{
+  "observed_at_utc": "2026-10-04T11:39:29.507689+00:00",
+  "checkpoint_schema": "Passed",
+  "recovery_manifest_sha256": "d6a3c748ed5cfed05552df85ae605a2e56bc2c5db0744a9d0a3860ffd31fe1e3",
+  "recovery_artifact_hash_count": 260,
+  "recovery_artifact_hashes": "Passed",
+  "product_clean": true,
+  "product_head": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+  "source_head_unchanged": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "tracked_source_working_changes": false,
+  "hosted_issues": 0,
+  "hosted_milestones": 0,
+  "assigned_consumers_and_assessors": "Completed per native collaboration inventory; no running worker",
+  "authored_record_whitespace_check": "Scoped cached diff check excludes exact raw recovery artifacts; preserved raw bytes checked by SHA-256",
+  "protected_prefix_scan": "No recognizable credential value in authored textual evidence"
+}
