@@ -27,3 +27,5 @@ No plugin implementation change is proposed from the acceptance behaviors evalua
 On explicit resume, reconcile this checkpoint and execute A-003, then remaining eligible cases with independently assessed/published prerequisites. Retain A-014's blocked attempt and retry cross-phase execution only from genuine ready task state with a safe isolated publication context. Use a supported isolated consumer runtime for isolation certification and an observed installed-client facility for separate discovery/activation acceptance. Do not treat source-loading or local support tests as those outcomes.
 
 Exact dispositions: [COVERAGE.json](COVERAGE.json). Per-case assessments: [A-001](runs/A-001/1/ASSESSMENT.md), [A-002](runs/A-002/1/ASSESSMENT.md), [A-014](runs/A-014/1/ASSESSMENT.md), [A-025](runs/A-025/1/ASSESSMENT.md). Original progressive report is retained in DIAGNOSTIC-PROGRESS-HISTORY.md. Safe continuation: [SUSPENSION.md](SUSPENSION.md).
+
+Publication verification and recoverable artifact hashes: [RECOVERY-PUBLICATION.json](RECOVERY-PUBLICATION.json). No pending publication or hosted write remains.

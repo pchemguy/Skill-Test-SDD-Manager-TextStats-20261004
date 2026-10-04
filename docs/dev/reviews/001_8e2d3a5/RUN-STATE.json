@@ -5,7 +5,7 @@
   "case_id": null,
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Completed active consumer/assessment work: A-001/A-002/A-025 Passed, A-014 Blocked; all case records published",
+  "last_completed_action": "Active work completed; suspension and exact recovery artifacts published and verified; no worker remains active",
   "pending_operation": null,
   "next_action": "Suspended by user. Await explicit resume; reconcile actual product/evidence/hosted state, then prepare a fresh A-003 handoff. Start no work while suspended.",
   "checkpoint_refs": {
@@ -14,7 +14,7 @@
     "integration_branch": "main",
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "967f95a2c47ca92b23ef1bdae6ee7eff7eb4ba54",
+    "evidence_commit": "0872a6c381401b6a0c0b64df10eaae06f0a4f675",
     "remote": "origin",
     "remote_ref": "refs/heads/main",
     "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
@@ -29,7 +29,8 @@
     "SUSPENSION.md",
     "DIAGNOSTIC-REPORT.md",
     "FIXTURE-DETACHMENT.json",
-    "suspension-recovery/CREDENTIAL-TRIAL.json"
+    "suspension-recovery/CREDENTIAL-TRIAL.json",
+    "RECOVERY-PUBLICATION.json"
   ],
   "updated_at": "2026-10-04T11:37:42.177857+00:00"
 }
