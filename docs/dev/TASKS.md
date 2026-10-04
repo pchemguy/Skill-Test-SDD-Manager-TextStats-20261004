@@ -1,6 +1,6 @@
 # TextStats executable task hierarchy
 
-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-009 are implemented and verified below; Phase 2 tasks remain planned and incomplete. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Phase 2 is activated on phase/2-output-and-source-extensions; JSON milestone2.1 is selected, with stdin and final review incomplete. Future range implementation is separately requested and has no executable owner here.
+Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-012 are implemented and verified below; remaining Phase 2 tasks are planned and incomplete. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Phase 2 is activated on phase/2-output-and-source-extensions; JSON milestone2.1 is selected, with stdin and final review incomplete. Future range implementation is separately requested and has no executable owner here.
 
 ## Hosted tracking
 
@@ -64,7 +64,8 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
 ## Phase 2 — Output and source extensions
 
 - [ ] Phase 2 — Output and source extensions
-    - [ ] Milestone 2.1 — JSON output
+    - [x] Milestone 2.1 — JSON output
+        Completion evidence (2026-10-04): T-010–T-012 implementation/tests/docs/report/status normally published on phase/2-output-and-source-extensions. Report ebecf1de74985acd3a9be62423c0a12e349b6586, independent unit17/integration11, public examples/extracted-source checks and distinct code review satisfy PLAN2.1. Issues#10/#11/#12 read back closed/completed with exact markers and evidence comments; exact native milestone#4 membership contains only these3 issues, closed with0 open/3 closed. Phase2 remains unchecked and milestones2.2/2.3/T-013–T-017 remain incomplete. Pause before stdin; no integration into main59debb649545125dd3aa00377ea115451b594271.
         - [x] T-010 — Add JSON rendering with preserved named-file behavior
             Scope: textstats/cli.py and unit/integration format checks. Depends on: T-009 and verified/published full phase 1 integration.
             Outcome: --json emits only integer lines/words plus newline, equal to text counts; compose --keep-bom in either order and preserve statuses/errors (S-5).
