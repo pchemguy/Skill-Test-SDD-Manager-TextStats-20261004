@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-004",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent local task, remote/provider and source verification",
+  "pending_operation": {
+    "kind": "push",
+    "status": "blocked",
+    "description": "Exact phase-ref push rejected by automatic approval review",
+    "identity": {
+      "repository": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
+      "ref": "refs/heads/phase/1-named-file-utility",
+      "commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+      "task_id": "T-001",
+      "issue_number": 1
+    }
+  },
+  "next_action": "Resolve exact publication approval before existing commit push and issue closure; no dependent progression",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "merge_parents": [
+      "d009899e39790c39be32ae77e7fe8294bf60d04c"
+    ]
+  },
+  "evidence_paths": [
+    "INDEPENDENT-COMMANDS.json",
+    "CONNECTOR-ISSUE-1.json"
+  ]
+}

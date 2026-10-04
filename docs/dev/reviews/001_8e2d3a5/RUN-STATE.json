@@ -4,24 +4,24 @@
   "phase": "P2",
   "case_id": "A-004",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Verified prerequisites and prepared exact consumer handoff",
+  "role": "coordinator",
+  "last_completed_action": "Independent A-004 assessment: Blocked; local T-001 verified, push and issue closure pending",
   "pending_operation": {
-    "kind": "task",
-    "status": "in_progress",
-    "description": "A-004 ordinary consumer request"
+    "kind": "push",
+    "status": "blocked",
+    "description": "Publish retained T-001 commit 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 to origin phase/1-named-file-utility; platform requires explicit authorization"
   },
-  "next_action": "Observe consumer completion/trigger then independent assessment",
+  "next_action": "Obtain explicit publication authorization; publish retained task commit, verify containment, close issue with evidence, independently recheck before A-005",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
-    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
     "integration_branch": "main",
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "remote": "origin",
     "remote_ref": "refs/heads/phase/1-named-file-utility",
     "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
     "merge_parents": [
-      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+      "d009899e39790c39be32ae77e7fe8294bf60d04c"
     ],
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
   },
@@ -33,7 +33,9 @@
     "DIAGNOSTIC-REPORT.md",
     "FIXTURE-DETACHMENT.json",
     "suspension-recovery/CREDENTIAL-TRIAL.json",
-    "RECOVERY-PUBLICATION.json"
+    "RECOVERY-PUBLICATION.json",
+    "runs/A-004/1/ASSESSMENT.json",
+    "runs/A-004/1/LOCAL-TASK-COMMIT.bundle"
   ],
-  "updated_at": "2026-10-04T14:15:27.322420+00:00"
+  "updated_at": "2026-10-04T15:10:51.457868+00:00"
 }

@@ -1,0 +1,7 @@
+{
+  "sha256": "3f2879c81f3c4a136f03cf414063f793fbdd0637941a4e4a065661114ea7b18a",
+  "path": "LOCAL-TASK-COMMIT.bundle",
+  "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+  "required_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "publication": "local only"
+}

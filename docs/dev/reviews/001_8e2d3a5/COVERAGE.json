@@ -41,12 +41,14 @@
       "transport_recovery": "TRANSPORT-DIAGNOSTIC.md"
     },
     "A-004": {
-      "status": "Running",
+      "status": "Blocked",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
-          "consumer": "fresh explicit-source context"
+          "status": "Blocked",
+          "consumer": "fresh explicit-source context",
+          "assessment": "runs/A-004/1/ASSESSMENT.json",
+          "reason": "Exact task publication rejected by platform; local commit retained"
         }
       ]
     },

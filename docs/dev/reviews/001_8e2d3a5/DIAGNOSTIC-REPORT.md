@@ -43,3 +43,7 @@ The coordinator incorrectly generalized one Python transport policy-error result
 ## A-003 — Passed
 
 Independent evidence: [assessment](runs/A-003/2/ASSESSMENT.md). Original consumer result retained separately. Source remains pinned and unchanged; final causal findings/proposals await campaign assessment.
+
+## A-004 — Blocked at task publication
+
+Resumed interrupted dispatch in a fresh consumer. T-001 was implemented and locally committed as 9b24dbd; independent 12-test unit run and additional literal/source checks pass. Exact phase push was rejected by platform automatic approval despite supplied human scope context. Remote phase remains d009899, main unchanged, issue #1 open. No later task started. [Independent assessment](runs/A-004/1/ASSESSMENT.md) retains local checks, publication failure, interface assistance and transcript/isolation/capture limitations. Recovery bundle and assessment are local pending evidence publication. No pinned-plugin repair or confirmed source defect is established by this environment blocker.
