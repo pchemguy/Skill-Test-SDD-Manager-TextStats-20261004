@@ -16,7 +16,7 @@ Native complete consumer transcripts, strict filesystem isolation and installed-
 
 ## Actions taken
 
-Preserved original attempts, exact requests and independent results; published preparation/tracking evidence and existing T-001 completion commit after interruption. Maintained main and later tasks unchanged. User explicitly requested a separate plugin source update for PUB-001; revision 020_019eb35 in pchemguy/Skill-SDD-Manager is implementing that policy without modifying this pinned acceptance package. No source change retroactively passes a case.
+Preserved original attempts, exact requests and independent results; published preparation/tracking evidence and existing T-001 completion commit after interruption. Maintained main and later tasks unchanged. User explicitly requested a separate plugin source update for PUB-001; revision 020_019eb35 in pchemguy/Skill-SDD-Manager implemented the publication ownership policy in v0.14.4 without modifying this pinned acceptance package. No source change retroactively passes a case.
 
 ## Plugin change and remaining work
 
@@ -67,7 +67,7 @@ The later no-clones/proceed-with-blocker instruction was supplied with the exact
 
 ## PUB-001 resolved pending hosting operation
 
-Following the user's explicit token/scope confirmation, the same normal operation channel accepted the authorization context: comment5981759898 HTTP201 and owned issue1 closure HTTP200. No alternate channel/clone/bypass was used. Earlier attempts remain retained. Context combines actual human instruction, established repository/payload scope and supplied repository credential grant. Independent final recheck is pending; no later task starts before its published gate.
+Following the user's explicit token/scope confirmation, the same normal operation channel accepted the authorization context: comment5981759898 HTTP201 and owned issue1 closure HTTP200. No alternate channel/clone/bypass was used. Earlier attempts remain retained. Context combines actual human instruction, established repository/payload scope and supplied repository credential grant. Independent recheck 2 passed with coordinator assistance recorded; its published checkpoint preceded the A-005 dispatch. Original blocked results remain retained.
 
 ## PUB-001 specific source amendment proposal
 
@@ -76,3 +76,5 @@ The user requested clear plugin amendments following successful authorization-co
 ## A-004 — Passed with assistance
 
 Independent current [Revision2 assessment](runs/A-004/1/rechecks/2/ASSESSMENT.md) verifies exact published commit, completion comment, issue closure, unchanged source/main and incomplete phase. Initial and Revision1 Blocked results remain retained.
+
+The concrete proposal now includes normative first-request authorization and push-ownership text. The original designated-repository/workflow/token grant must be evaluated before requesting interactive repetition; the later repeated confirmation is historical assistance, not an amended prerequisite. Source v0.14.4 already establishes the review-at-commit boundary and direct workflow publication. P-001 through P-006 specify the remaining mandatory loading, scoped-grant, context, handoff and rejection-test amendments. These additions remain proposed, not installed or live-validated.
