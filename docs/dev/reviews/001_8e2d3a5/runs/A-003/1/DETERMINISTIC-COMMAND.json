@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+    "--inputs",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-003/1/INPUTS.json",
+    "--run-state",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-003/1/RUN-STATE.json",
+    "--contract",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-003.json",
+    "--output",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-003/1/DETERMINISTIC-ASSESSMENT.json"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

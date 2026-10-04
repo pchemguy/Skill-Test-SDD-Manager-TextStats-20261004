@@ -22,14 +22,15 @@
       ]
     },
     "A-003": {
-      "status": "Running",
+      "status": "Blocked",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
-          "consumer": "fresh explicit-source context"
+          "status": "Blocked",
+          "assessment": "runs/A-003/1/ASSESSMENT-REVISION-1.json"
         }
-      ]
+      ],
+      "transport_recovery": "TRANSPORT-DIAGNOSTIC.md"
     },
     "A-004": {
       "status": "Pending",

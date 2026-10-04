@@ -4,27 +4,22 @@
   "phase": "P1",
   "case_id": "A-003",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Verified prerequisites and prepared exact consumer handoff",
-  "pending_operation": {
-    "kind": "task",
-    "status": "in_progress",
-    "description": "A-003 ordinary consumer request"
-  },
-  "next_action": "Observe consumer completion/trigger then independent assessment",
+  "role": "coordinator",
+  "last_completed_action": "Assessed A-003 attempt1 Blocked; corrected stale review; user-directed curl probe and protected native reads succeeded",
+  "pending_operation": null,
+  "next_action": "Dispatch fresh A-003 attempt2 using restored scoped curl transport; retain attempt1 and all interventions",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "integration_branch": "main",
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
-    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "93444c078eb22624a209f2dad77cc80d8cf2013b",
     "remote": "origin",
     "remote_ref": "refs/heads/main",
     "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "merge_parents": [
       "d0087ff75e485cab832a28d6b501150eaf2ed249"
-    ]
+    ],
+    "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -36,5 +31,5 @@
     "suspension-recovery/CREDENTIAL-TRIAL.json",
     "RECOVERY-PUBLICATION.json"
   ],
-  "updated_at": "2026-10-04T13:53:23.880851+00:00"
+  "updated_at": "2026-10-04T14:13:08.958530+00:00"
 }

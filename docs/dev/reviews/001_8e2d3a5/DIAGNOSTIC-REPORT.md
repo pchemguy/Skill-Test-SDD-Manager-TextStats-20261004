@@ -1,4 +1,4 @@
-# Live acceptance diagnostic report — suspended
+# Live acceptance diagnostic report — resumed
 
 User-requested checkpoint, not completed full acceptance. Pinned source: 019eb354cf0921ebd6056e6579763ac33d0baec2. Dedicated repository: https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.
 
@@ -29,3 +29,13 @@ On explicit resume, reconcile this checkpoint and execute A-003, then remaining 
 Exact dispositions: [COVERAGE.json](COVERAGE.json). Per-case assessments: [A-001](runs/A-001/1/ASSESSMENT.md), [A-002](runs/A-002/1/ASSESSMENT.md), [A-014](runs/A-014/1/ASSESSMENT.md), [A-025](runs/A-025/1/ASSESSMENT.md). Original progressive report is retained in DIAGNOSTIC-PROGRESS-HISTORY.md. Safe continuation: [SUSPENSION.md](SUSPENSION.md).
 
 Publication verification and recoverable artifact hashes: [RECOVERY-PUBLICATION.json](RECOVERY-PUBLICATION.json). No pending publication or hosted write remains.
+
+## A-003 — Blocked
+
+Independent evidence: [assessment](runs/A-003/1/ASSESSMENT.md). Original consumer result retained separately. Source remains pinned and unchanged; final causal findings/proposals await campaign assessment.
+
+## Resume and transport recovery
+
+The reached user suspension was consumed by explicit resumption; its records remain historical. A-003 attempt1 is Blocked under supplied transport constraints; no hosted mutation occurred. Completed Phase1 proposal is valid; current assessment is [Revision1](runs/A-003/1/ASSESSMENT-REVISION-1.md). The initial stale proposal finding is withdrawn and preserved in review history.
+
+The coordinator incorrectly generalized one Python transport policy-error result to all direct API access. User-directed curl public and protected native-parent reads returned HTTP200, restoring a usable transport. No browser fallback, token replacement or pinned plugin change was needed. Underlying Python failure remains undiagnosed. Exact facts, effects, actions and bounded diagnostic recommendation: [TRANSPORT-DIAGNOSTIC.md](TRANSPORT-DIAGNOSTIC.md). A fresh recorded consumer retry is next; initial outcome is not erased.

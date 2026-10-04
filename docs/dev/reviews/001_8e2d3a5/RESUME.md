@@ -1,3 +1,3 @@
-# Resumed live acceptance
+# Live acceptance continuation
 
-The user resumed the reached suspension on2026-10-04. Original stop and assessments remain retained. RESUME-RECONCILIATION.json records actual identity/ref/package checks and API transport limitation. Original full campaign scope remains active. Next A-003; no preparation replay. Preserve trial sentinel staged/unstaged state. A-014 retry awaits genuine prerequisites and safe isolated publication.
+Run resumed. A-003 attempt1 Blocked is retained with authoritative assessment revision1. User-directed curl reads succeeded; broader API-unavailable claim withdrawn. See TRANSPORT-DIAGNOSTIC.md. Next fresh attempt2 of A-003; parent/issue inventory must be reobserved before any write. No product implementation yet; main remains4c275cc. Original full scope active; A-014 retry later requires genuine prerequisites.

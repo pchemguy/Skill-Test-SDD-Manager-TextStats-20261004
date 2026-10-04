@@ -1,0 +1,233 @@
+{
+  "observed_at": "2026-10-04T14:03:26.484851+00:00",
+  "retained_RESULT_sha256": "ab45359a34c6c56b95c8eceb6c6c4baa48725b397c251a516bed80065dfc2854",
+  "completed_original_RESULT_sha256": "ab45359a34c6c56b95c8eceb6c6c4baa48725b397c251a516bed80065dfc2854",
+  "retained_original_equal": true,
+  "initial_assessment_bytes_preserved": {
+    "ASSESSMENT.md": "dd09390132368cf103505d5ce0466b5e2f557a5e9f62b64af7a6a28c444df7fd",
+    "ASSESSMENT.json": "7c3cdbd03ae32d31796492220766cf317e31ef44d8d02024e954a826995598d9",
+    "PROPOSAL-CHECK.json": "fd94cdd0ac2aae1e81606f31008f3b0786fb652bdd2db72752667454f8bd067a"
+  },
+  "source_hashes": {
+    "TASKS.md": "2e0af38698b5edf3911265da98815790143e2e5c1500b3bc04148ead2b9a8454",
+    "PLAN.md": "8ff3ef53f126a79987490f28ad2f554842630c096c13f441111b55d796279bb8"
+  },
+  "issue_count": 9,
+  "native_milestone_count": 3,
+  "issues": [
+    {
+      "id": "T-001",
+      "title": "[T-001] Establish immutable statistics and pure text counting",
+      "expected_title": "[T-001] Establish immutable statistics and pure text counting",
+      "title_matches": true,
+      "parent": "sdd-1.1-Named-file-counting-MVP",
+      "expected_parent": "sdd-1.1-Named-file-counting-MVP",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-002",
+      "title": "[T-002] Integrate strict UTF-8 named-file API",
+      "expected_title": "[T-002] Integrate strict UTF-8 named-file API",
+      "title_matches": true,
+      "parent": "sdd-1.1-Named-file-counting-MVP",
+      "expected_parent": "sdd-1.1-Named-file-counting-MVP",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-003",
+      "title": "[T-003] Deliver the useful named-file module CLI",
+      "expected_title": "[T-003] Deliver the useful named-file module CLI",
+      "title_matches": true,
+      "parent": "sdd-1.1-Named-file-counting-MVP",
+      "expected_parent": "sdd-1.1-Named-file-counting-MVP",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-004",
+      "title": "[T-004] Review, test and report milestone 1.1",
+      "expected_title": "[T-004] Review, test and report milestone 1.1",
+      "title_matches": true,
+      "parent": "sdd-1.1-Named-file-counting-MVP",
+      "expected_parent": "sdd-1.1-Named-file-counting-MVP",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-005",
+      "title": "[T-005] Harden named-file API failure and resource behavior",
+      "expected_title": "[T-005] Harden named-file API failure and resource behavior",
+      "title_matches": true,
+      "parent": "sdd-1.2-Reliable-documented-distribution",
+      "expected_parent": "sdd-1.2-Reliable-documented-distribution",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-006",
+      "title": "[T-006] Complete CLI diagnostics and public documentation",
+      "expected_title": "[T-006] Complete CLI diagnostics and public documentation",
+      "title_matches": true,
+      "parent": "sdd-1.2-Reliable-documented-distribution",
+      "expected_parent": "sdd-1.2-Reliable-documented-distribution",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-007",
+      "title": "[T-007] Establish isolated source-distribution acceptance",
+      "expected_title": "[T-007] Establish isolated source-distribution acceptance",
+      "title_matches": true,
+      "parent": "sdd-1.2-Reliable-documented-distribution",
+      "expected_parent": "sdd-1.2-Reliable-documented-distribution",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-008",
+      "title": "[T-008] Review, test and report milestone 1.2",
+      "expected_title": "[T-008] Review, test and report milestone 1.2",
+      "title_matches": true,
+      "parent": "sdd-1.2-Reliable-documented-distribution",
+      "expected_parent": "sdd-1.2-Reliable-documented-distribution",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    },
+    {
+      "id": "T-009",
+      "title": "[T-009] Review, test and report phase 1",
+      "expected_title": "[T-009] Review, test and report phase 1",
+      "title_matches": true,
+      "parent": "sdd-1.3-Phase-1-review",
+      "expected_parent": "sdd-1.3-Phase-1-review",
+      "parent_matches": true,
+      "phase_label": "sdd-phase-1-Named-file-utility",
+      "scope_body_nonempty": true,
+      "scope_body_exact_normalized_TASKS_match": true,
+      "exact_open_marker_count": 1,
+      "exact_close_marker_count": 1,
+      "state_open": true
+    }
+  ],
+  "milestones": [
+    {
+      "id": "1.1",
+      "title": "sdd-1.1-Named-file-counting-MVP",
+      "expected_title": "sdd-1.1-Named-file-counting-MVP",
+      "title_matches": true,
+      "description_exact_normalized_PLAN_match": true,
+      "state_open": true
+    },
+    {
+      "id": "1.2",
+      "title": "sdd-1.2-Reliable-documented-distribution",
+      "expected_title": "sdd-1.2-Reliable-documented-distribution",
+      "title_matches": true,
+      "description_exact_normalized_PLAN_match": true,
+      "state_open": true
+    },
+    {
+      "id": "1.3",
+      "title": "sdd-1.3-Phase-1-review",
+      "expected_title": "sdd-1.3-Phase-1-review",
+      "title_matches": true,
+      "description_exact_normalized_PLAN_match": true,
+      "state_open": true
+    }
+  ],
+  "actual_git_commands": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "show",
+        "-s",
+        "--format=%P",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "d0087ff75e485cab832a28d6b501150eaf2ed249\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-live-20261004",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "returncode": 0,
+      "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e\trefs/heads/main\n",
+      "stderr": ""
+    }
+  ]
+}
