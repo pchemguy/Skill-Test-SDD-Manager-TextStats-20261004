@@ -1,12 +1,12 @@
 # TextStats executable task hierarchy
 
-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001 is implemented and verified below; the remaining tasks are planned and incomplete. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
+Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-004 are implemented and verified below; the remaining tasks are planned and incomplete. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
 
 ## Hosted tracking
 
 Mode: maintained GitHub tracking in [pchemguy/Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004). The eligible phase 1 label, native milestones 1.1–1.3 and task issues T-001–T-009 are projected. Milestones remain open; task issue closure follows verified durable completion. Reconcile the eligible maintained scope before execution and lifecycle transitions; hosted state never establishes completion. Phase 2 projection waits for phase 1 completion, review, verified integration into main and publication.
 
-Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`; activation baseline: `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`. The tracking checkpoint at `d009899e39790c39be32ae77e7fe8294bf60d04c` preceded implementation. The T-001 checkpoint below pauses on this branch without phase integration.
+Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`; activation baseline: `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`. The tracking checkpoint at `d009899e39790c39be32ae77e7fe8294bf60d04c` preceded implementation. The milestone 1.1 checkpoint below pauses on this branch without phase integration.
 
 ## Phase 1 — Named-file utility
 
@@ -27,9 +27,10 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
             Outcome: one named input, --keep-bom, -- dash filenames and help; exact text output and option validation before acquisition (S-4 success/options).
             Evidence: actual python -m textstats invocation, stdout/status/stderr assertions, API/CLI agreement, missing/extra/unknown option rejection and no input read on usage errors; demonstrate ordinary/BOM/dash filenames. Keep later JSON/stdin delivery absent from this task.
             Completion evidence (2026-10-04): focused RED observed missing command adapter and absent actual module-entry behavior (12 assertion/subtest failures across 5 tests), then GREEN passed all 5. Independent unit discovery passed 14 tests; integration passed 6, no skips. Actual subprocess checks establish exact stdout/stderr/status, ordinary/empty/Unicode/mixed-terminator/BOM cases, API agreement, --keep-bom and -- dash paths; invalid usage/help never acquire input. A separate normal/BOM/dash demonstration and README/module docstring review passed; diff check clean. Issue #3 exact title/body marker confirmed. Diagnostic hardening remains T-006; no JSON/stdin or release acceptance claimed.
-        - [ ] T-004 — Review, test and report milestone 1.1
+        - [x] T-004 — Review, test and report milestone 1.1
             Depends on: T-001, T-002, T-003. Scope: delivered core, file API, facade and module CLI; relevant nonempty product suites and MVP demonstration.
             Evidence: actual code review, milestone exits/regressions, blocker repairs and committed/pushed report. Report: docs/dev/reports/phases/1/1.1.md. Record TODO or None and the usability decision evidence. No product completion inferred from workflow fixtures.
+            Completion evidence (2026-10-04): [milestone review report](reports/phases/1/1.1.md) assesses all delivered modules and test coverage at f2260a2; no in-scope findings or TODOs. Fresh independent product discovery passed unit 14/integration 6 tests, no skips; direct normal/BOM/dash API/module demonstration and help passed, diff check clean. PLAN 1.1 exits verified; reliability/distribution and full phase acceptance remain unclaimed. Issue #4 exact title/body marker confirmed.
     - [ ] Milestone 1.2 — Reliable documented distribution
         - [ ] T-005 — Harden named-file API failure and resource behavior
             Scope: textstats/io.py and focused unit/integration failures. Depends on: T-004.
