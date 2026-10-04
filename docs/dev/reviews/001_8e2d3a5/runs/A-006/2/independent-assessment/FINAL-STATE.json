@@ -1,0 +1,83 @@
+{
+  "records": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "ls-files",
+        "*TASKS.md"
+      ],
+      "returncode": 0,
+      "stdout": "docs/dev/TASKS.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "check-ignore",
+        "dist/extracted/docs/dev/TASKS.md"
+      ],
+      "returncode": 0,
+      "stdout": "dist/extracted/docs/dev/TASKS.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "diff",
+        "--name-status",
+        "b398e258cefc03dbc47630b83967db961a376eae",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "M\tdocs/dev/reports/phases/1/PHASE-REPORT.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "diff",
+        "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "HEAD",
+        "--",
+        "AGENTS.md",
+        "textstats-run-resources",
+        "docs/dev/PROJECT.md",
+        "docs/dev/ARCHITECTURE.md",
+        "docs/dev/DECOMPOSITION.md",
+        "docs/dev/SPEC.md",
+        "docs/dev/PLAN.md",
+        "docs/dev/layout.md"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "phase2_task_subtree_unchanged": true,
+  "phase_report_sha256": "56cbe118a8ed5cf052ffaf16e20d31b9055f1bbcdcfc1747944a3b3b68b144c9",
+  "phase_report_exists": true,
+  "active_tasks": {
+    "T-001_through_T-009": "completed",
+    "T-010_through_T-017": "unchecked"
+  }
+}

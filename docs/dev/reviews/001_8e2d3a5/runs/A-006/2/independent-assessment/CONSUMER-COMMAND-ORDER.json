@@ -1,0 +1,212 @@
+{
+  "source": "Retained structured journal, not a complete native transcript",
+  "journal_sha256": "30a649729f31bd446b2897fa9130b9fcfa6dd42c929f26485e8abb0c21a845ec",
+  "commands": [
+    {
+      "sequence": 0,
+      "command": "python .git/textstats-hosting-curl.py GET 'milestones?state=all&per_page=100'\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 1,
+      "command": "python .git/textstats-hosting-curl.py GET 'issues?state=all&per_page=100'\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 2,
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 3,
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/integration -t . -v\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 4,
+      "command": "git diff --check\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 5,
+      "command": "PYTHONDONTWRITEBYTECODE=1 python - <<'PY'\nfrom pathlib import Path\nimport os,re,subprocess,sys,tempfile,tarfile\nfrom textstats import TextStats,count_text\nassert count_text('alpha beta\\r\\ngamma\\r')==TextStats(2,3)\nfor doc in ('README.md','docs/api.md','docs/module.md'):\n text=Path(doc).read_text()\n for code in re.findall(r'```python\\n(.*?)```',text,re.S):exec(code,{})\n for target in re.findall(r'\\]\\(([^)]+)\\)',text):\n  if not target.startswith(('http','app:')):assert (Path(doc).parent/target).exists(),target\nroot=Path.cwd()\nenv={k:v for k,v in os.environ.items() if k not in ('PYTHONPATH','PYTHONHOME','PYTHONSTARTUP')}\nenv.update(PYTHONNOUSERSITE='1',PYTHONDONTWRITEBYTECODE='1')\nwith tempfile.TemporaryDirectory() as d:\n p=Path(d)\n def run(cwd,*args):return subprocess.run([sys.executable,'-m','textstats',*args],cwd=cwd,env=env,text=True,capture_output=True)\n def check(cwd,args,status,out=None):\n  r=run(cwd,*args);assert r.returncode==status,(args,r)\n  if out is not None:assert r.stdout==out,(args,r.stdout)\n  if status==0:assert not r.stderr,r.stderr\n  else:assert r.stderr and 'Traceback' not in r.stderr and not r.stdout\n for name,data,args,out in [('sample.txt',b'alpha beta\\ngamma\\n',[],'lines=2 words=3\\n'),('bom.txt',b'\\xef\\xbb\\xbf\\n',[],'lines=1 words=0\\n'),('bom.txt',b'\\xef\\xbb\\xbf\\n',['--keep-bom'],'lines=1 words=1\\n'),('-sample.txt',b'alpha\\n',['--'],'lines=1 words=1\\n')]:\n  path=p/name;path.write_bytes(data);check(root,[*args,str(path)],0,out);assert path.read_bytes()==data\n check(root,['--help'],0)\n check(root,[str(p/'nonexistent.txt')],1,'')\n bad=p/'bad.txt';bad.write_bytes(b'valid\\xff');check(root,[str(bad)],1,'');assert bad.read_bytes()==b'valid\\xff'\n b=subprocess.run(['make','dist',f'DIST_DIR={p}/dist'],capture_output=True,text=True);assert b.returncode==0,b.stderr\n extracted=p/'extracted';extracted.mkdir()\n with tarfile.open(p/'dist/textstats.tar.gz') as archive:archive.extractall(extracted,filter='data')\n identity=subprocess.run([sys.executable,'-c','import textstats;print(textstats.__file__)'],cwd=extracted,env=env,text=True,capture_output=True)\n assert Path(identity.stdout.strip()).resolve()==extracted/'textstats/__init__.py'\n check(extracted,['--help'],0)\n (extracted/'sample.txt').write_bytes(b'alpha beta\\ngamma\\n');check(extracted,['sample.txt'],0,'lines=2 words=3\\n')\nprint('PASS: README/API/module Python examples, local links, normal/BOM/keep-BOM/dash/help/failure demonstrations; isolated distribution identity and module counts.')\nPY\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 6,
+      "command": "git diff --stat main...HEAD && git log --oneline main..HEAD\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 7,
+      "command": "sha256sum docs/dev/PROJECT.md docs/dev/ARCHITECTURE.md docs/dev/DECOMPOSITION.md docs/dev/SPEC.md docs/dev/PLAN.md docs/dev/layout.md\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 8,
+      "command": "git diff 4c275cc -- textstats-run-resources AGENTS.md docs/dev/PROJECT.md docs/dev/SPEC.md docs/dev/PLAN.md docs/dev/ARCHITECTURE.md docs/dev/DECOMPOSITION.md docs/dev/layout.md\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 9,
+      "command": "sed -n '53,61p' docs/dev/TASKS.md\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 10,
+      "command": "git diff --check && git diff -- docs/dev/TASKS.md && git status --short\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 11,
+      "command": "git add docs/dev/TASKS.md docs/dev/reports/phases/1/PHASE-REPORT.md && git diff --cached --stat && git diff --cached --check\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 12,
+      "command": "git commit -m 'Review and report completed named-file phase (T-009)' -m 'Verify S-1 through S-4 and delivered S-7 with 17 unit and 9 integration tests, examples and isolated distribution. No findings. Closes #9.'\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 13,
+      "command": "git show --stat --oneline HEAD && git status --short\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 14,
+      "command": "git push origin phase/1-named-file-utility\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 15,
+      "command": "git ls-remote origin refs/heads/phase/1-named-file-utility\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 16,
+      "command": "python .git/textstats-hosting-curl.py GET issues/9\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 17,
+      "command": "python .git/textstats-hosting-curl.py POST issues/9/comments /workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/issue9-evidence.json\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 18,
+      "command": "python .git/textstats-hosting-curl.py PATCH issues/9 /workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/issue9-close.json\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 19,
+      "command": "python .git/textstats-hosting-curl.py GET issues/9\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 20,
+      "command": "python .git/textstats-hosting-curl.py GET 'issues?state=all&milestone=3&per_page=100'\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 21,
+      "command": "python .git/textstats-hosting-curl.py PATCH milestones/3 /workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/milestone3-close.json\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 22,
+      "command": "python .git/textstats-hosting-curl.py GET milestones/3\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 23,
+      "command": "git diff --check && git diff --stat && git diff -- docs/dev/TASKS.md\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 24,
+      "command": "git add docs/dev/TASKS.md docs/dev/reports/phases/1/PHASE-REPORT.md && git diff --cached --check && git commit -m 'Reconcile verified Phase 1 and final review closure (T-009)'\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 25,
+      "command": "git push origin phase/1-named-file-utility\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 26,
+      "command": "git ls-remote origin refs/heads/phase/1-named-file-utility refs/heads/main\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 27,
+      "command": "git fetch origin main && git rev-parse HEAD main origin/main && git status --short && git diff --stat main...HEAD\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 28,
+      "command": "git diff main...HEAD -- docs/dev/TASKS-REVIEW-REPORT.md .gitignore && git diff main...HEAD -- docs/dev/TASKS.md\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 29,
+      "command": "git merge-base --is-ancestor b398e258cefc03dbc47630b83967db961a376eae main\n",
+      "recorded_exit": 1
+    },
+    {
+      "sequence": 30,
+      "command": "git switch main && git merge --no-ff --no-commit b398e258cefc03dbc47630b83967db961a376eae\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 31,
+      "command": "git diff --cached --check && git status --short\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 32,
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 33,
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/integration -t . -v\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 34,
+      "command": "git add docs/dev/reports/phases/1/PHASE-REPORT.md && git diff --cached --check && git diff --cached --stat\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 35,
+      "command": "git commit -m 'Integrate verified Phase 1 named-file utility' -m 'Two-parent integration: target 4c275cc46fc0163c9e1e50871d3cc33c4c38567e; phase b398e258cefc03dbc47630b83967db961a376eae. No conflicts. Merged-state unit 17/integration 9 pass; whitespace check clean. T-001 through T-009 complete; issues 1-9 and milestones 1-3 closed. Stop before Phase 2.'\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 36,
+      "command": "git show --no-patch --format=fuller HEAD && git rev-list --parents -n 1 HEAD && git status --short\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 37,
+      "command": "git push origin main\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 38,
+      "command": "git ls-remote origin refs/heads/main refs/heads/phase/1-named-file-utility\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 39,
+      "command": "git merge-base --is-ancestor b398e258cefc03dbc47630b83967db961a376eae main && git diff --check && git status --short\n",
+      "recorded_exit": 0
+    },
+    {
+      "sequence": 40,
+      "command": "python .git/textstats-hosting-curl.py GET 'milestones?state=all&per_page=100'\n",
+      "recorded_exit": 0
+    }
+  ],
+  "independent_midflight_provider_evidence": "MIDFLIGHT-REVIEW-READBACK.json"
+}

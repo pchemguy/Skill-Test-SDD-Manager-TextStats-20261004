@@ -72,7 +72,7 @@
       ]
     },
     "A-006": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
@@ -84,9 +84,11 @@
         },
         {
           "attempt": 2,
-          "status": "Running",
+          "status": "Passed",
           "consumer": "fresh continuation context",
-          "reason": "Explicit Resume consumes reached suspension; preserves attempt1 partialBlocked assessment"
+          "reason": "CompletePhase1 independentlyverified; disclosedCHK002checker correction",
+          "assisted": true,
+          "assessment": "runs/A-006/2/independent-assessment/ASSESSMENT.json"
         }
       ]
     },

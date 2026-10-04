@@ -1,0 +1,26 @@
+{
+  "source": "independent authenticated connector fetch_issue and fetch_issue_comments; raw bodies never printed or retained",
+  "issue": {
+    "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/9",
+    "number": 9,
+    "title": "[T-009] Review, test and report phase 1",
+    "state": "closed",
+    "state_reason": "completed",
+    "closed_at": "2026-10-04T20:15:18Z",
+    "updated_at": "2026-10-04T20:15:18Z",
+    "body_sha256": "cd6690eea7a3184b305c806c671ed5a30621cf44f87a20327d21e1e17eccc9f8",
+    "task_marker": true,
+    "milestone": 3
+  },
+  "comments": [
+    {
+      "id": 5983966503,
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/9#issuecomment-5983966503",
+      "created_at": null,
+      "updated_at": null,
+      "body_sha256": "1c6fc048ad4221c651a9b29ed0c2579630af36217b2b9034fadab0c82a505cb1",
+      "report_commit_cb9d56": true,
+      "mentions_phase_report": true
+    }
+  ]
+}

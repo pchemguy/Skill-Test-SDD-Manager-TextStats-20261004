@@ -1,0 +1,235 @@
+[
+  {
+    "time": "2026-10-04T20:20:49.325237+00:00",
+    "argv": [
+      "python",
+      "--version"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "Python 3.12.14\n",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:49.327656+00:00",
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "main\n",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:49.330055+00:00",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD",
+      "phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "59debb649545125dd3aa00377ea115451b594271\nb398e258cefc03dbc47630b83967db961a376eae\n",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:49.332874+00:00",
+    "argv": [
+      "git",
+      "show",
+      "-s",
+      "--format=%H %P",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "59debb649545125dd3aa00377ea115451b594271 4c275cc46fc0163c9e1e50871d3cc33c4c38567e b398e258cefc03dbc47630b83967db961a376eae\n",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:49.336276+00:00",
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:54.726651+00:00",
+    "argv": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main",
+      "refs/heads/phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\nb398e258cefc03dbc47630b83967db961a376eae\trefs/heads/phase/1-named-file-utility\n",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:54.730336+00:00",
+    "argv": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "b398e258cefc03dbc47630b83967db961a376eae",
+      "main"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:54.733068+00:00",
+    "argv": [
+      "git",
+      "diff",
+      "--name-status",
+      "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "M\tdocs/dev/TASKS.md\nA\tdocs/dev/reports/phases/1/PHASE-REPORT.md\n",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:54.835819+00:00",
+    "argv": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_expected_errors_are_identified_and_atomic (tests.unit.test_cli.CliFailureTests.test_expected_errors_are_identified_and_atomic) ... ok\ntest_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok\ntest_fields_are_immutable (tests.unit.test_core.StatisticsTests.test_fields_are_immutable) ... ok\ntest_negative_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected) ... ok\ntest_noninteger_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_noninteger_counts_are_rejected) ... ok\ntest_public_statistics_value (tests.unit.test_core.StatisticsTests.test_public_statistics_value) ... ok\ntest_zero_counts_are_valid (tests.unit.test_core.StatisticsTests.test_zero_counts_are_valid) ... ok\ntest_api_is_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_api_is_silent_and_input_unchanged) ... ok\ntest_count_text_is_public (tests.unit.test_core.TextCountingTests.test_count_text_is_public) ... ok\ntest_default_bom_policy_and_keyword_only_option (tests.unit.test_core.TextCountingTests.test_default_bom_policy_and_keyword_only_option) ... ok\ntest_only_one_initial_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_initial_bom_is_removed) ... ok\ntest_specification_samples (tests.unit.test_core.TextCountingTests.test_specification_samples) ... ok\ntest_terminator_boundaries (tests.unit.test_core.TextCountingTests.test_terminator_boundaries) ... ok\ntest_unicode_whitespace_is_not_a_line_terminator (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_is_not_a_line_terminator) ... ok\ntest_open_failure_is_silent_and_preserves_exception (tests.unit.test_file_api.FileFailureTests.test_open_failure_is_silent_and_preserves_exception) ... ok\ntest_read_decode_and_close_failure_are_atomic_and_close_owned_handle (tests.unit.test_file_api.FileFailureTests.test_read_decode_and_close_failure_are_atomic_and_close_owned_handle) ... ok\ntest_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.010s\n\nOK\n"
+  },
+  {
+    "time": "2026-10-04T20:20:56.110325+00:00",
+    "argv": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok\ntest_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok\ntest_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok\ntest_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok\ntest_expected_file_failures (tests.integration.test_cli.ModuleFailureTests.test_expected_file_failures) ... ok\ntest_extracted_package_public_docs_and_module_contract (tests.integration.test_distribution.SourceDistributionTests.test_extracted_package_public_docs_and_module_contract) ... ok\ntest_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok\ntest_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok\ntest_real_missing_directory_and_malformed_files_are_silent_and_unchanged (tests.integration.test_file_api.FileFailureIntegrationTests.test_real_missing_directory_and_malformed_files_are_silent_and_unchanged) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 1.206s\n\nOK\n"
+  },
+  {
+    "time": "2026-10-04T20:20:56.113236+00:00",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:56.245923+00:00",
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-20261004",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/ACTUAL-api.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/PROVENANCE-api.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:56.687886+00:00",
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-20261004",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/ACTUAL-baseline.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/PROVENANCE-baseline.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:56.738827+00:00",
+    "argv": [
+      "make",
+      "dist",
+      "DIST_DIR=/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/distribution-build"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "mkdir -p \"/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/distribution-build\"\npython -m tarfile -c \"/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/distribution-build/textstats.tar.gz\" textstats/*.py README.md Makefile AI_DISCLOSURE.md SDD-MANAGER.md docs tests/__init__.py tests/unit/*.py tests/integration/*.py\n",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:56.863152+00:00",
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/extracted",
+      "--suite",
+      "distribution",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/ACTUAL-distribution.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/PROVENANCE-distribution.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:20:56.898786+00:00",
+    "argv": [
+      "python",
+      "-c",
+      "import textstats; print(textstats.__file__)"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/extracted",
+    "returncode": 0,
+    "stdout": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/extracted/textstats/__init__.py\n",
+    "stderr": ""
+  }
+]

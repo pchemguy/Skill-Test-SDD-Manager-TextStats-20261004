@@ -4,27 +4,27 @@
   "phase": "P2",
   "case_id": "A-006",
   "attempt": 2,
-  "role": "consumer",
-  "last_completed_action": "Verified exact clean suspension refs and open T009/final milestone; consumed stop on explicit Resume",
+  "role": "coordinator",
+  "last_completed_action": "A006 attempt2 independentlyPassed completePhase1; originalpartialBlocked and checkerfailure retained",
   "pending_operation": {
-    "kind": "task",
+    "kind": "checkpoint",
     "status": "in_progress",
-    "description": "A-006 fresh continuation T009 and Phase1 integration"
+    "description": "Publish independentA006checkpoint beforeA007"
   },
-  "next_action": "Observe consumer completion then independent final A006 assessment",
+  "next_action": "Verify A006 evidencepublication then dispatchA007 JSON milestone; A020 independentassessment ongoing",
   "checkpoint_refs": {
-    "product_branch": "phase/1-named-file-utility",
-    "product_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+    "product_branch": "main",
+    "product_commit": "59debb649545125dd3aa00377ea115451b594271",
     "integration_branch": "main",
-    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
     "remote": "origin",
-    "remote_ref": "refs/heads/phase/1-named-file-utility",
-    "remote_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "59debb649545125dd3aa00377ea115451b594271",
     "merge_parents": [
-      "3256b953383f9c8218e62a4c051d73e3ccd081bf"
+      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+      "b398e258cefc03dbc47630b83967db961a376eae"
     ],
-    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "4334fd5419bf92d479a39a2cdb207f2758fd82c9"
+    "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -49,13 +49,15 @@
     "runs/A-020/1/REQUEST.md",
     "runs/A-020/1/INJECTION.json"
   ],
-  "updated_at": "2026-10-04T20:09:54.130852+00:00",
+  "updated_at": "2026-10-04T20:27:54.389183+00:00",
   "case_results": [
     {
       "case_id": "A-006",
       "attempt": 2,
-      "status": "Running",
-      "reason": "Independent final assessment after completePhase1"
+      "status": "Passed",
+      "reason": "Independent final assessment after completePhase1",
+      "assessment_path": "runs/A-006/2/independent-assessment/ASSESSMENT.json",
+      "assisted": true
     },
     {
       "case_id": "A-020",

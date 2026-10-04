@@ -1,0 +1,44 @@
+[
+  {
+    "time": "2026-10-04T20:22:26.121998+00:00",
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-006.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/ACTUAL-COMBINED.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/ORIGINAL-FULL-DETERMINISTIC-ASSESSMENT.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "",
+    "contract_sha256": "cd85b2355aaaee4027b73dc049397a15ecdffa1b787f460bfcae4c34efed322a"
+  },
+  {
+    "time": "2026-10-04T20:22:32.192687+00:00",
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/checker-variant/assess_git_owners.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-006.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/ACTUAL-COMBINED.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-2/VARIANT-FULL-DETERMINISTIC-ASSESSMENT.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "contract_sha256": "cd85b2355aaaee4027b73dc049397a15ecdffa1b787f460bfcae4c34efed322a"
+  }
+]

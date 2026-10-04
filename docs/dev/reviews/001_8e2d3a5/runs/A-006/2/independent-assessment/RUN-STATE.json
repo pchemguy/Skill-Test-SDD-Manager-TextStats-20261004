@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "run_id": "001_8e2d3a5",
+  "phase": "P2",
+  "case_id": "A-006",
+  "attempt": 2,
+  "role": "assessor",
+  "last_completed_action": "Independent full Phase1 integrated-state verification",
+  "pending_operation": null,
+  "next_action": "Stop before Phase2; coordinator publishes independent assessment before any dependent work",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "integration_branch": "main",
+    "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "merge_parents": [
+      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+      "b398e258cefc03dbc47630b83967db961a376eae"
+    ]
+  },
+  "evidence_paths": [
+    "INDEPENDENT-COMMANDS.json",
+    "FINAL-PROVIDER.json",
+    "PINNED-SOURCE-IDENTITY.json",
+    "CHECKER-VARIANT-INDEPENDENT-AUDIT.json"
+  ]
+}

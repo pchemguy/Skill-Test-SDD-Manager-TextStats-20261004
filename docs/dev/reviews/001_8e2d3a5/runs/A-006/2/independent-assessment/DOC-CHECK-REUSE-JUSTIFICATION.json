@@ -1,0 +1,58 @@
+{
+  "prior_checked_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+  "current_commit": "59debb649545125dd3aa00377ea115451b594271",
+  "reused_evidence": "REUSED-DOC-EXAMPLE-PROVENANCE.json",
+  "reason": "No production/test/public guide/build changes between independently checked prior frozen milestone and integrated current state; only TASKS and PHASE-REPORT changed. Original actual command outcomes retained, not rerun or invented. New unit/integration and literal/distribution captures execute current integrated state.",
+  "paths": [
+    {
+      "path": "README.md",
+      "unchanged": true,
+      "sha256": "1cc7f2efacfced3a2ab592490a2421381fc56c17ea83e092528a2af25aa776e1"
+    },
+    {
+      "path": "docs/api.md",
+      "unchanged": true,
+      "sha256": "53553dda156b5550a469aad89c3e318c40673df996f456277e168dd228af074f"
+    },
+    {
+      "path": "docs/module.md",
+      "unchanged": true,
+      "sha256": "febd644e4ae06f200c397bffc98c63c994968bb29791dcb38cc45de614e17cc5"
+    },
+    {
+      "path": "Makefile",
+      "unchanged": true,
+      "sha256": "d8973498f1d1ec5a264f79501105b1d099adb6f5b2d4fb591d970d4b54a216c1"
+    },
+    {
+      "path": "textstats/core.py",
+      "unchanged": true,
+      "sha256": "095f4c3ca52ad020b44926d36796539efb0c74327dfa13bf32fe38e3e6243062"
+    },
+    {
+      "path": "textstats/io.py",
+      "unchanged": true,
+      "sha256": "352c58364eeef6741977f1890fa0040794b8fe519edfdeccd457ab7ef78a5843"
+    },
+    {
+      "path": "textstats/cli.py",
+      "unchanged": true,
+      "sha256": "52531f929d0eebd342dd8bca41b4c0af261c498201fb8c7ad3a9ed405ace5e89"
+    },
+    {
+      "path": "tests/unit/test_file_api.py",
+      "unchanged": true,
+      "sha256": "a29a2427882928df0c02f2b18b6fa285016d3a9cabd208f11d8f75ef26433d9e"
+    },
+    {
+      "path": "tests/unit/test_cli.py",
+      "unchanged": true,
+      "sha256": "9333882dce3a91d0107ed408350dafb71fd3d05ce6373465f90208bbedb59c4f"
+    },
+    {
+      "path": "tests/integration/test_distribution.py",
+      "unchanged": true,
+      "sha256": "6f31a1fcfe85ac9b9947d608856a56ea246d766a14393d845e0df14e2e442887"
+    }
+  ]
+}
