@@ -1,0 +1,11 @@
+{
+  "original_core_sha256": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80",
+  "gitCandidates": [
+    "docs/dev/TASKS.md"
+  ],
+  "filesystemCandidates": [
+    "docs/dev/TASKS.md",
+    "dist/extracted/docs/dev/TASKS.md"
+  ],
+  "gitInventoryMeaning": "tracked index plus nonignored untracked; retains all actual product owners; removes ignored vendored/pyenv collateral only"
+}

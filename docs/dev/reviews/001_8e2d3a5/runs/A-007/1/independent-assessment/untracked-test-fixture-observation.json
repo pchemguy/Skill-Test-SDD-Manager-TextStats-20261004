@@ -1,0 +1,9 @@
+{
+  "path": "-json-9l969okj/sample.txt",
+  "size": 3,
+  "mtime": 1791146460.7541997,
+  "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+  "assessor_behavior_commands_executed_before_observation": false,
+  "source_location": "tests/integration/test_cli.py:87 TemporaryDirectory(prefix=-json-,dir=.)",
+  "cause": "unresolved; normal context manager expected to cleanup"
+}

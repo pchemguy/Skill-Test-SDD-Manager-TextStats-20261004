@@ -1,0 +1,388 @@
+[
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-20261004",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-baseline.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-baseline.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "python: can't open file '/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py': [Errno 2] No such file or directory\n"
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-20261004",
+      "--suite",
+      "json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-json.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-json.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "python: can't open file '/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py': [Errno 2] No such file or directory\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_expected_errors_are_identified_and_atomic (tests.unit.test_cli.CliFailureTests.test_expected_errors_are_identified_and_atomic) ... ok\ntest_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok\ntest_fields_are_immutable (tests.unit.test_core.StatisticsTests.test_fields_are_immutable) ... ok\ntest_negative_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected) ... ok\ntest_noninteger_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_noninteger_counts_are_rejected) ... ok\ntest_public_statistics_value (tests.unit.test_core.StatisticsTests.test_public_statistics_value) ... ok\ntest_zero_counts_are_valid (tests.unit.test_core.StatisticsTests.test_zero_counts_are_valid) ... ok\ntest_api_is_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_api_is_silent_and_input_unchanged) ... ok\ntest_count_text_is_public (tests.unit.test_core.TextCountingTests.test_count_text_is_public) ... ok\ntest_default_bom_policy_and_keyword_only_option (tests.unit.test_core.TextCountingTests.test_default_bom_policy_and_keyword_only_option) ... ok\ntest_only_one_initial_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_initial_bom_is_removed) ... ok\ntest_specification_samples (tests.unit.test_core.TextCountingTests.test_specification_samples) ... ok\ntest_terminator_boundaries (tests.unit.test_core.TextCountingTests.test_terminator_boundaries) ... ok\ntest_unicode_whitespace_is_not_a_line_terminator (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_is_not_a_line_terminator) ... ok\ntest_open_failure_is_silent_and_preserves_exception (tests.unit.test_file_api.FileFailureTests.test_open_failure_is_silent_and_preserves_exception) ... ok\ntest_read_decode_and_close_failure_are_atomic_and_close_owned_handle (tests.unit.test_file_api.FileFailureTests.test_read_decode_and_close_failure_are_atomic_and_close_owned_handle) ... ok\ntest_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.015s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_json_counts_types_bom_orders_and_text_default (tests.integration.test_cli.JsonModuleTests.test_json_counts_types_bom_orders_and_text_default) ... ok\ntest_json_errors_remain_atomic_and_identify_input (tests.integration.test_cli.JsonModuleTests.test_json_errors_remain_atomic_and_identify_input) ... ok\ntest_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok\ntest_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok\ntest_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok\ntest_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok\ntest_expected_file_failures (tests.integration.test_cli.ModuleFailureTests.test_expected_file_failures) ... ok\ntest_extracted_package_public_docs_and_module_contract (tests.integration.test_distribution.SourceDistributionTests.test_extracted_package_public_docs_and_module_contract) ... ok\ntest_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok\ntest_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok\ntest_real_missing_directory_and_malformed_files_are_silent_and_unchanged (tests.integration.test_file_api.FileFailureIntegrationTests.test_real_missing_directory_and_malformed_files_are_silent_and_unchanged) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 3.950s\n\nOK\n"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "make",
+      "dist",
+      "DIST_DIR=/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/build"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "mkdir -p \"/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/build\"\npython -m tarfile -c \"/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/build/textstats.tar.gz\" textstats/*.py README.md Makefile AI_DISCLOSURE.md SDD-MANAGER.md docs tests/__init__.py tests/unit/*.py tests/integration/*.py\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-extracted-baseline.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-extracted-baseline.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "python: can't open file '/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py': [Errno 2] No such file or directory\n"
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+      "--suite",
+      "json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-extracted-json.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-extracted-json.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "python: can't open file '/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py': [Errno 2] No such file or directory\n"
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+      "--suite",
+      "distribution",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-extracted-distribution.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-extracted-distribution.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "python: can't open file '/workspace/scratch/textstats-live-harness-20261004/harness/scripts/capture.py': [Errno 2] No such file or directory\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "textstats",
+      "-"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: '-': [Errno 2] No such file or directory: '-'\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "textstats",
+      "--json",
+      "-"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: '-': [Errno 2] No such file or directory: '-'\n"
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "ea97182d2d6a3984599238312a13e78d54d3221a\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "symbolic-ref",
+      "--short",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "phase/2-output-and-source-extensions\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "?? -json-9l969okj/\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main",
+      "refs/heads/phase/2-output-and-source-extensions"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\nea97182d2d6a3984599238312a13e78d54d3221a\trefs/heads/phase/2-output-and-source-extensions\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-20261004",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-baseline.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-baseline.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-20261004",
+      "--suite",
+      "json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-json.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-json.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-extracted-baseline.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-extracted-baseline.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+      "--suite",
+      "json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-extracted-json.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-extracted-json.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+      "--suite",
+      "distribution",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-extracted-distribution.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/provenance-extracted-distribution.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-007.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-combined.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/original-deterministic.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/checker-variant/assess_git_owners.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-007.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/actual-combined.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/variant-deterministic.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "textstats",
+      "--json",
+      "--keep-bom",
+      "assessor-bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+    "returncode": 0,
+    "stdout": "{\"lines\": 1, \"words\": 1}\n",
+    "stderr": "",
+    "expected": {
+      "lines": 1,
+      "words": 1
+    },
+    "pass": true
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "textstats",
+      "--keep-bom",
+      "--json",
+      "assessor-bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-007-1/extracted",
+    "returncode": 0,
+    "stdout": "{\"lines\": 1, \"words\": 1}\n",
+    "stderr": "",
+    "expected": {
+      "lines": 1,
+      "words": 1
+    },
+    "pass": true
+  }
+]

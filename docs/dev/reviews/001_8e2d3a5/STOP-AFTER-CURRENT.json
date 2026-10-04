@@ -1,10 +1,10 @@
 {
-  "requested_at": "2026-10-04T14:27:49+03:00",
-  "instruction": "Do not start new cases/tasks/subagents. Complete current work and suspend.",
+  "requested_at": "2026-10-04T23:45:22+03:00",
+  "instruction": "Suspend after sdd-2.1-JSON-output",
   "active_cases": [
-    "A-002",
-    "A-014",
-    "A-025"
+    "A-007"
   ],
-  "next_action": "Complete only already active assessments, publish records and requested suspension; start no new case, task or agent."
+  "boundary": "Milestone 2.1 JSON output; T-010\u2013T-012 only",
+  "next_action": "Remain stopped until explicit human resume",
+  "status": "suspended"
 }

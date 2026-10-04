@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "case_id": "A-007",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "assistance": [
+    "Disclosed CHK-002 owner-inventory variant; original duplicate-ownership failure retained separately",
+    "Assessor launcher path correction; original not-started commands retained separately; no product failure or helper failed-provenance artifact possible for nonexistent launcher"
+  ],
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "integration_branch": "main",
+    "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "ea97182d2d6a3984599238312a13e78d54d3221a"
+  },
+  "original_helper_status": "Checks failed",
+  "variant_helper_status": "Checks passed",
+  "literal_captures": "baseline/json pass in product and independently built/extracted archive; distribution entry pass",
+  "tests": {
+    "unit": 17,
+    "integration": 11,
+    "skips": 0,
+    "returncodes": [
+      0,
+      0
+    ]
+  },
+  "source": {
+    "commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+    "files": 111,
+    "disk_and_originalGit_equal": true
+  },
+  "lifecycle": {
+    "phase2_fork": "59debb649545125dd3aa00377ea115451b594271",
+    "main_unchanged": true,
+    "phase2_incomplete": true,
+    "stdin_unimplemented": true,
+    "all_phase2_objects_projected_before_first_RED_test": true,
+    "projection_last_issue_created_at": "2026-10-04T20:36:48Z",
+    "label_readback_at": "2026-10-04T20:37:06.158959+00:00",
+    "first_RED_test_at": "2026-10-04T20:38:01.605528+00:00",
+    "issues_completed": [
+      10,
+      11,
+      12
+    ],
+    "issues_open": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "milestone4_closed": true,
+    "milestones5_6_open": true,
+    "per_task_publication_before_closure": true,
+    "report_publication_before_review_issue_closure": true,
+    "review_issue_closure_before_milestone_closure": true
+  },
+  "cleanliness": {
+    "tracked_index_clean": true,
+    "whole_worktree_clean": false,
+    "preserved_untracked": "-json-9l969okj/sample.txt",
+    "new_test_residue_after_independent_suites": false,
+    "cause": "unresolved; no cleanup defect established"
+  },
+  "limits": [
+    "Native transcript unavailable: retained structured consumer journal plus independently captured facts, not complete native transcript",
+    "Broad shared filesystem exposes assessor resources: fresh dispatch intent only, no hard isolation certification",
+    "Initial assessor observation followed T010; projection-before-execution corroborated from live provider timestamps and retained journal, not an assessor pre-first-task snapshot",
+    "Runtime Python3.12.14 tested; no Python3.11 execution claim",
+    "Provider descriptions/bodies omitted from published artifacts; raw initial adapter descriptions appeared in assessor tool output, not published files"
+  ],
+  "startup_push": {
+    "initial_auto_review_rejection_retained": true,
+    "same_operation_supported_context_retry_succeeded": true,
+    "source_reference_line7_skips_ceremonial_push": true,
+    "consumer_overbroad_attribution_corrected_with_original_retained": true,
+    "finding": "unnecessary consumer operation plus platform restriction; no confirmed plugin defect"
+  },
+  "evidence_paths": [
+    "commands.json",
+    "actual-combined.json",
+    "original-deterministic.json",
+    "variant-deterministic.json",
+    "final-provider.json",
+    "issue-markers.json",
+    "provider-temporal-metadata.json",
+    "source-identity.json",
+    "owner-inventory-audit.json",
+    "untracked-test-fixture-observation.json"
+  ],
+  "updated_at": "2026-10-04T20:51:16.837961+00:00"
+}
