@@ -6,7 +6,7 @@ Pinned source: 019eb354cf0921ebd6056e6579763ac33d0baec2. Dedicated repository: h
 
 A-001 passed reviewed preparation/disclosure/attribution; A-002 passed read-only selection; A-003 passed eligible Phase 1 tracking with assistance (one managed phase label, three milestones, nine task issues, repeat reconciliation without duplicates). A-025 passed the synthetic credential-readiness refusal/preservation check. A-014 remains Blocked: prerequisite refusal/segmentation worked, but cross-phase execution was not demonstrated.
 
-A-004 T-001 pure text counting/immutable value passes independent 12-test unit discovery and separate literal/source checks. Its exact commit 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 is published on the phase branch, main unchanged. Associated issue closure remains blocked, so A-004 is not accepted as complete. No later task started.
+A-004 T-001 pure text counting/immutable value passes independent 12-test unit discovery and separate literal/source checks. Its exact commit 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 is published on the phase branch, main unchanged. Completion comment and issue #1 closure now independently pass Revision2; A-004 is Passed with assistance. Initial and Revision1 Blocked results remain retained. No later task started.
 
 ## Observed issues and limits
 
@@ -22,7 +22,7 @@ Preserved original attempts, exact requests and independent results; published p
 
 Accepted source amendment: reviews end at the report commit; publication is owned by the coordinating/execution workflow. Full workflows include prescribed pushes and active maintained hosting under existing human authority. Pushes do not invoke review skills or an added permission-review stage. Platform-enforced controls cannot be disabled by plugin text.
 
-Next acceptance action: reconcile the retained completion-comment denial and issue #1 state; complete authorized hosting when the execution facility permits, then append independent A-004 recheck and publish it before A-005. Do not reimplement T-001 or skip its hosting prerequisite. Installed-client and interruption coverage remain separate gaps. Exact current state: RUN-STATE.json / RESUME.md; original historical report: DIAGNOSTIC-PROGRESS-HISTORY.md. Earlier suspension records remain historical and the explicit resume consumed that boundary.
+Next acceptance action: publish the independent A-004 Revision2 recheck and proceed to A-005 on the existing product checkout. Do not reimplement T-001 or skip its hosting prerequisite. Installed-client and interruption coverage remain separate gaps. Exact current state: RUN-STATE.json / RESUME.md; original historical report: DIAGNOSTIC-PROGRESS-HISTORY.md. Earlier suspension records remain historical and the explicit resume consumed that boundary.
 
 ## PUB-001 — Publication routing and redundant approval requests
 
@@ -64,3 +64,15 @@ After the worker's detailed completion comment was denied, the coordinator attem
 The current resume supplied explicit operation context after re-reading revision-authorization; host rejection persisted. User prohibited bypass. An unused isolated A-020 local remote/clone was prepared, but no consumer or task started; A-020 remains Pending. No independent case is advanced around A-004. Exact record: runs/A-004/1/RESUME-REJECTION-2.md. Issue #1 evidence/closure remains the next operation.
 
 The later no-clones/proceed-with-blocker instruction was supplied with the exact operation after re-reading the authorization policy. Host denial still explicitly demanded payload/destination confirmation. No clone, alternative channel, comment, closure or later task followed. Existing human workflow authority remains distinct from host execution denial.
+
+## PUB-001 resolved pending hosting operation
+
+Following the user's explicit token/scope confirmation, the same normal operation channel accepted the authorization context: comment5981759898 HTTP201 and owned issue1 closure HTTP200. No alternate channel/clone/bypass was used. Earlier attempts remain retained. Context combines actual human instruction, established repository/payload scope and supplied repository credential grant. Independent final recheck is pending; no later task starts before its published gate.
+
+## PUB-001 specific source amendment proposal
+
+The user requested clear plugin amendments following successful authorization-context submission. [AUTHORIZATION-AMENDMENT-PROPOSAL.md](runs/A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md) defines six bounded actions: mandatory policy loading; explicit scoped user-supplied token grant semantics; a concrete operation-context format; coordinator/worker retention; rejection/retry classification; and real regression/forward-test scenarios. Targets current source0.14.4; no source change or revised-source acceptance is implied by this proposal. Current pinned acceptance package stays unchanged.
+
+## A-004 — Passed with assistance
+
+Independent current [Revision2 assessment](runs/A-004/1/rechecks/2/ASSESSMENT.md) verifies exact published commit, completion comment, issue closure, unchanged source/main and incomplete phase. Initial and Revision1 Blocked results remain retained.

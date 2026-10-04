@@ -1,0 +1,85 @@
+{
+  "captured_at": "2026-10-04T15:50:57.521897+00:00",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD",
+        "main"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76\n4c275cc46fc0163c9e1e50871d3cc33c4c38567e\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "-s",
+        "--format=%H %P",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 d009899e39790c39be32ae77e7fe8294bf60d04c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/phase/1-named-file-utility"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e\trefs/heads/main\n9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76\trefs/heads/phase/1-named-file-utility\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+        "GET",
+        "milestones/1"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "{\"transport\": \"curl\", \"http_status\": 200, \"result\": {\"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/1\", \"id\": 18303256, \"number\": 1, \"title\": \"sdd-1.1-Named-file-counting-MVP\", \"description\": \"Scope: immutable public value, count_text/count_file, exact text/BOM semantics, named-file UTF-8 success, and useful module CLI with one input, help, --keep-bom and -- handling. API and CLI agree on counts. Establish real, discoverable unit/integration checks alongside the slice. Included contracts: S-1/S-2, S-3 success and owned success-handle lifecycle, S-4 success/help/option validation. Required failure hardening and release documentation/distribution conclude in 1.2; JSON and stdin conclude in phase 2.\\n\\nPrerequisite: reviewed preparation inputs and Python 3.11+. Exit: users can count a named UTF-8 file through the public API and actual module entry; exact stdout/stderr/status, path forms, BOM and terminator examples pass; input is unchanged. Final milestone code review, relevant tests, blocker repairs and committed report are mandatory. Demonstrate a normal file, a BOM file and a dash-prefixed filename. This informs the human's continue/amend/simplify/stop decision about usefulness and command syntax; routine authorized work needs no renewed approval.\\n\\nSources: docs/dev/PLAN.md; docs/dev/TASKS.md. Planned work; no task is implemented.\", \"open_issues\": 3, \"closed_issues\": 1, \"state\": \"open\"}}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+        "--inputs",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-004-1-recheck-2/INPUTS.json",
+        "--run-state",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-004-1-recheck-2/RUN-STATE.json",
+        "--contract",
+        "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-004.json",
+        "--output",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-004-1-recheck-2/DETERMINISTIC-ASSESSMENT.json"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case_id": "A-004",
+  "attempt": 1,
+  "revision": 2,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "merge_parents": [
+      "d009899e39790c39be32ae77e7fe8294bf60d04c"
+    ]
+  },
+  "start_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "assessed_at": "2026-10-04T15:50:57.522466+00:00",
+  "previous_assessments": [
+    "../A-004-1/ASSESSMENT.json",
+    "../A-004-1-recheck/ASSESSMENT.json"
+  ],
+  "reason": "Published T-001 result retains independently passing product checks/current preparation and exact unchanged source. Exact hosted completion comment links published commit and committed check evidence; issue #1 closed completed. Phase incomplete/main unchanged. Current bounded case passes with parent-assisted publication/hosting; historical Blocked outcomes retained.",
+  "findings": {
+    "publication": "Clean product, local/live phase 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76; main local/live 4c275cc46fc0163c9e1e50871d3cc33c4c38567e unchanged.",
+    "acceptance": "All source hashes match initial independently tested state. Prior 12 no-skip unit tests, independent literals/immutability/errors/silence and QC equivalence reused; no unchanged test rerun.",
+    "hosting": "Issue #1 exact T-001 marker, closed completed, one completion comment id 5981759898. Its body identifies T-001 and exact published commit plus committed TASKS/check evidence link.",
+    "scope": "Only T-001 complete; later tasks and milestone/phase parents remain incomplete. Main integration and phase 2 not advanced.",
+    "deterministic": "Actual assess.py exit0 all3 passed; independently judged lifecycle establishes this assisted current Passed disposition."
+  },
+  "interventions": [
+    "Initial interrupted dispatch and adapter syntax clarification retained from initial assessment.",
+    "Parent published existing product/evidence after resumption clarification; Revision 1 hosted-comment rejection retained.",
+    "After new user confirmation of pending payload/destination authorization, parent used same normal protected transport for narrowed completion comment and completed closure. Parent hosting assistance retained; assessor made no external writes."
+  ],
+  "limitations": [
+    "Full native consumer transcript and strict filesystem isolation unavailable; no isolation certification. RED/GREEN is supported by consumer narrative/committed evidence, not independent raw causal command capture.",
+    "Current assisted lifecycle success does not erase original/revision1 Blocked outcomes, initial capture gap or transport failure.",
+    "Actor/authorization/review explanation retained from coordinator HOSTING-RESOLUTION; independent provider evidence establishes actual final state, not internal platform reasoning.",
+    "Focused QC follow-up fixtures not run; no broad phase/API/CLI acceptance claimed."
+  ],
+  "evidence_paths": [
+    "CONNECTOR-COMMENTS.json",
+    "CONNECTOR-ISSUE-1.json",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "HOSTING-RESOLUTION.md",
+    "INDEPENDENT-COMMANDS.json",
+    "INPUTS.json",
+    "NARROWER-HOSTING-ATTEMPT.md",
+    "RUN-STATE.json",
+    "SOURCE-IDENTITY-RECHECK.json",
+    "recheck.py"
+  ]
+}

@@ -41,15 +41,17 @@
       "transport_recovery": "TRANSPORT-DIAGNOSTIC.md"
     },
     "A-004": {
-      "status": "Blocked",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Blocked",
+          "status": "Passed",
           "consumer": "fresh explicit-source context",
           "assessment": "runs/A-004/1/ASSESSMENT.json",
-          "reason": "Publication now verified; hosted completion comment denied by platform, issue #1 remains open",
-          "current_assessment": "runs/A-004/1/rechecks/1/ASSESSMENT.json"
+          "reason": "Parent publication and hosted completion; explicit human scoped credential confirmation; independent Revision2 recheck passed",
+          "current_assessment": "runs/A-004/1/rechecks/2/ASSESSMENT.json",
+          "initial_status": "Blocked",
+          "assisted": true
         }
       ]
     },
