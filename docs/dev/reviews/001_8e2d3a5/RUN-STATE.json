@@ -2,12 +2,16 @@
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
   "phase": "P2",
-  "case_id": "A-004",
+  "case_id": "A-005",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Independent A-004 Revision2: Passed assisted; published T-001 and completed issue1 verified",
-  "pending_operation": null,
-  "next_action": "Publish A-004 final recheck and amendment proposal, then A-005 on existing product checkout",
+  "role": "consumer",
+  "last_completed_action": "Verified prerequisites and prepared exact consumer handoff",
+  "pending_operation": {
+    "kind": "task",
+    "status": "in_progress",
+    "description": "A-005 ordinary consumer request"
+  },
+  "next_action": "Observe consumer completion/trigger then independent assessment",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
     "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
