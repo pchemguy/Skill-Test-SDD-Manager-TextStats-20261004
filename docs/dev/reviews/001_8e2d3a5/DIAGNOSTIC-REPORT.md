@@ -62,3 +62,5 @@ After the worker's detailed completion comment was denied, the coordinator attem
 ## No-bypass boundary
 
 The current resume supplied explicit operation context after re-reading revision-authorization; host rejection persisted. User prohibited bypass. An unused isolated A-020 local remote/clone was prepared, but no consumer or task started; A-020 remains Pending. No independent case is advanced around A-004. Exact record: runs/A-004/1/RESUME-REJECTION-2.md. Issue #1 evidence/closure remains the next operation.
+
+The later no-clones/proceed-with-blocker instruction was supplied with the exact operation after re-reading the authorization policy. Host denial still explicitly demanded payload/destination confirmation. No clone, alternative channel, comment, closure or later task followed. Existing human workflow authority remains distinct from host execution denial.
