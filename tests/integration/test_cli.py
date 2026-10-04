@@ -54,3 +54,21 @@ class ModuleCliTests(unittest.TestCase):
                 self.assertEqual((run.returncode, run.stdout), (2, ""))
                 self.assertIn("usage:", run.stderr)
                 self.assertNotIn("Traceback", run.stderr)
+
+class ModuleFailureTests(unittest.TestCase):
+    invoke = ModuleCliTests.invoke
+
+    def test_expected_file_failures(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            bad = root / "bad.txt"
+            data = b"valid prefix\r\n\xff"
+            bad.write_bytes(data)
+            for options in ((), ("--keep-bom",)):
+                for path in (root / "missing", root, bad):
+                    with self.subTest(path=path, options=options):
+                        run = self.invoke(*options, path)
+                        self.assertEqual((run.returncode, run.stdout), (1, ""))
+                        self.assertIn(str(path), run.stderr)
+                        self.assertNotIn("Traceback", run.stderr)
+                        self.assertEqual(bad.read_bytes(), data)

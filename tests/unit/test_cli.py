@@ -20,3 +20,19 @@ class CliValidationTests(unittest.TestCase):
                             main(args)
                 self.assertEqual(result.exception.code, code)
                 acquire.assert_not_called()
+
+class CliFailureTests(unittest.TestCase):
+    def test_expected_errors_are_identified_and_atomic(self):
+        from textstats.cli import main
+        errors = [FileNotFoundError("missing"), PermissionError("denied"),
+                  OSError("read failed"), UnicodeDecodeError("utf-8", b"\xff", 0, 1, "invalid byte")]
+        for error in errors:
+            for options in ([], ["--keep-bom"]):
+                with self.subTest(error=type(error), options=options):
+                    out, err = io.StringIO(), io.StringIO()
+                    with patch("textstats.cli.count_file", side_effect=error):
+                        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                            result = main([*options, "input.txt"])
+                    self.assertEqual((result, out.getvalue()), (1, ""))
+                    self.assertIn("input.txt", err.getvalue())
+                    self.assertNotIn("Traceback", err.getvalue())

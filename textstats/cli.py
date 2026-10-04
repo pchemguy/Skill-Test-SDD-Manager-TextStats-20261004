@@ -1,6 +1,7 @@
 """Validate named-file arguments and render complete text counts."""
 
 import argparse
+import sys
 from collections.abc import Sequence
 
 from .io import count_file
@@ -13,16 +14,21 @@ def main(argv: Sequence[str] | None = None) -> int:
         argv: Explicit arguments, or None to use process arguments.
 
     Returns:
-        Zero after emitting exactly one line of successful text counts.
+        Zero after emitting exactly one line of successful text counts; one
+        for named-file read/decode failures, with a diagnostic on stderr.
 
-    Validation precedes acquisition. Expected acquisition-error diagnostics
-    are completed at the later reliability milestone.
+    Validation precedes acquisition. Expected OSError and UnicodeDecodeError
+    failures identify the input without emitting partial counts or a traceback.
     """
     parser = argparse.ArgumentParser(prog="textstats", allow_abbrev=False,
                                      description="Count lines and words in a UTF-8 file.")
     parser.add_argument("--keep-bom", action="store_true", help="retain a leading BOM")
     parser.add_argument("input", metavar="INPUT", help="named UTF-8 input file")
     args = parser.parse_args(argv)
-    stats = count_file(args.input, strip_bom=not args.keep_bom)
+    try:
+        stats = count_file(args.input, strip_bom=not args.keep_bom)
+    except (OSError, UnicodeDecodeError) as error:
+        print(f"textstats: {args.input!r}: {error}", file=sys.stderr)
+        return 1
     print(f"lines={stats.lines} words={stats.words}")
     return 0
