@@ -48,7 +48,8 @@
           "status": "Blocked",
           "consumer": "fresh explicit-source context",
           "assessment": "runs/A-004/1/ASSESSMENT.json",
-          "reason": "Exact task publication rejected by platform; local commit retained"
+          "reason": "Publication now verified; hosted completion comment denied by platform, issue #1 remains open",
+          "current_assessment": "runs/A-004/1/rechecks/1/ASSESSMENT.json"
         }
       ]
     },

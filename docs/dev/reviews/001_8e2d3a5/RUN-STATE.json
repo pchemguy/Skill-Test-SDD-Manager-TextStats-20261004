@@ -5,13 +5,13 @@
   "case_id": "A-004",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Independent A-004 assessment: Blocked; local T-001 verified, push and issue closure pending",
+  "last_completed_action": "Independent A-004 Revision 1: publication confirmed; associated hosting blocked",
   "pending_operation": {
-    "kind": "push",
+    "kind": "hosting",
     "status": "blocked",
-    "description": "Publish retained T-001 commit 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 to origin phase/1-named-file-utility; platform requires explicit authorization"
+    "description": "T-001 issue #1 completion evidence comment rejected by platform; issue remains open with zero comments"
   },
-  "next_action": "Obtain explicit publication authorization; publish retained task commit, verify containment, close issue with evidence, independently recheck before A-005",
+  "next_action": "Reconcile retained hosting denial; complete authorized issue #1 evidence/closure when host permits, append recheck and publish before A-005",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
     "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
@@ -19,7 +19,7 @@
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "remote": "origin",
     "remote_ref": "refs/heads/phase/1-named-file-utility",
-    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "remote_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
     "merge_parents": [
       "d009899e39790c39be32ae77e7fe8294bf60d04c"
     ],
@@ -37,5 +37,5 @@
     "runs/A-004/1/ASSESSMENT.json",
     "runs/A-004/1/LOCAL-TASK-COMMIT.bundle"
   ],
-  "updated_at": "2026-10-04T15:10:51.457868+00:00"
+  "updated_at": "2026-10-04T15:25:21.467878+00:00"
 }

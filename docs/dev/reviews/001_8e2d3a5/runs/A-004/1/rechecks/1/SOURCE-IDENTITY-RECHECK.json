@@ -1,0 +1,28 @@
+{
+  "source_matches_initial_independent_tested_state": true,
+  "actual_source_hashes": {
+    ".gitignore": "7be24958eae7b654e82499c66d3b4e94e06eacaa16f6c77dd2d7f564848a4134",
+    "AGENTS.md": "d7dabe4ba00c81bc17d15c6b2ef05c10beadc583a156776800d39f803592761e",
+    "AI_DISCLOSURE.md": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "README.md": "eff2356d8b0a7cb64d4aa267751caf976771b14aa3efc7baea86b5261f6f5ff6",
+    "SDD-MANAGER.md": "07947f37a7a69fdfe45331d51e46d21267297e9fc547c84448949e711469403b",
+    "docs/dev/ARCHITECTURE.md": "0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c",
+    "docs/dev/DECOMPOSITION.md": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "01f3041e8ccd688060ff51e0c7dd825475d44dfbcca73c31910bab038e231591",
+    "docs/dev/PLAN.md": "8ff3ef53f126a79987490f28ad2f554842630c096c13f441111b55d796279bb8",
+    "docs/dev/PROJECT.md": "85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "e4522d4a6d566d3dd6c7b208930547f152229ca3dd9a04028ce136a937a0df68",
+    "docs/dev/SPEC.md": "8cfd533f70463882dac3acf12930f17e22f5cd0d57266815fad02aae977c77eb",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "4bd958f8e0488b407bb04cb782644bd903770274d52aa5ec6360551892ca4bcc",
+    "docs/dev/TASKS.md": "3c9a71eb18fdb61bf5e054820174a65cb8f5bd8146c4f862cc42e4e5097a7d32",
+    "docs/dev/layout.md": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+    "tests/__init__.py": "df9ec8b0982a197e7a42498dac77fe2c1da1cae9c78d61ef6bfe3c824a3284bc",
+    "tests/unit/__init__.py": "1abbc648c46040ef747d835b19514d1dc0e1faae72a670cd5e2d6dfb35a27ed8",
+    "tests/unit/test_core.py": "1f7fb4327b419def6a12ccb233c63c22d37d23d5381e797b784e9e46e12bb07f",
+    "textstats/__init__.py": "b1cf395747d8f9ecfdad48ca29c448e93d7c85f47fabd676067c368b527927a2",
+    "textstats/core.py": "095f4c3ca52ad020b44926d36796539efb0c74327dfa13bf32fe38e3e6243062"
+  },
+  "pinned_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "pinned_hashes_match": true,
+  "pinned_file_count": 111
+}

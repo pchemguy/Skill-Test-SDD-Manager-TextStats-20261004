@@ -1,0 +1,73 @@
+{
+  "captured_at": "2026-10-04T15:23:11.801596+00:00",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD",
+        "main"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76\n4c275cc46fc0163c9e1e50871d3cc33c4c38567e\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "-s",
+        "--format=%H %P",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 d009899e39790c39be32ae77e7fe8294bf60d04c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/phase/1-named-file-utility"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e\trefs/heads/main\n9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76\trefs/heads/phase/1-named-file-utility\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+        "--inputs",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-004-1-recheck/INPUTS.json",
+        "--run-state",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-004-1-recheck/RUN-STATE.json",
+        "--contract",
+        "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-004.json",
+        "--output",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-004-1-recheck/DETERMINISTIC-ASSESSMENT.json"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

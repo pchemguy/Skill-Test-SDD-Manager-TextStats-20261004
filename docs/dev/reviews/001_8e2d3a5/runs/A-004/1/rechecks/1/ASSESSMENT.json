@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "case_id": "A-004",
+  "attempt": 1,
+  "revision": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "merge_parents": [
+      "d009899e39790c39be32ae77e7fe8294bf60d04c"
+    ]
+  },
+  "start_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "assessed_at": "2026-10-04T15:23:11.801921+00:00",
+  "previous_assessment": "../A-004-1/ASSESSMENT.json",
+  "reason": "Existing T-001 commit is now published with exact live phase-ref equality, unchanged tested source and main. Deterministic checks pass. Hosted completion comment was rejected; independently fetched issue #1 remains open with no comments. Lifecycle case remains Blocked.",
+  "findings": {
+    "publication": "Local/live phase commit 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76; main unchanged at 4c275cc46fc0163c9e1e50871d3cc33c4c38567e; clean worktree/index.",
+    "source": "All initial independently captured product hashes unchanged. Pinned package hashes all match source 019eb354cf0921ebd6056e6579763ac33d0baec2. Prior 12 tests and independent vectors remain valid; no rerun required.",
+    "deterministic": "Actual assess.py exit 0, all three ownership/head/publication checks pass. This does not confer case Passed.",
+    "hosting": "Connector full issue #1 remains open with exact T-001 marker, original brief, comments 0; separate comments fetch empty. Required completion evidence and closure absent.",
+    "scope": "No new commit/source edit or later-task work; prior phase incomplete/no integration findings unchanged."
+  },
+  "interventions": [
+    "Parent normally published existing product commit and retained evidence after user resumption clarified workflow publication authorization. This is assisted recovery, not consumer-only publication.",
+    "Consumer verified exact live publication then attempted normal completion comment before closure. Automatic approval review rejected POST issues/1/comments, citing missing explicit authorization for exact external disclosure. Consumer stopped without alternate write or premature closure."
+  ],
+  "limitations": [
+    "Initial Blocked assessment preserved unchanged. RED/GREEN remains consumer narrative-only; full native command transcript and strict filesystem isolation unavailable.",
+    "Recheck product/source/ref/read-only provider evidence only; no unchanged acceptance tests rerun or independent hosted writes.",
+    "Hosted rejection details originate in retained consumer continuation; actual no-effect/open state independently verified."
+  ],
+  "evidence_paths": [
+    "CONNECTOR-COMMENTS.json",
+    "CONNECTOR-ISSUE-1.json",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "INDEPENDENT-COMMANDS.json",
+    "INPUTS.json",
+    "PUBLICATION-CONTINUATION.md",
+    "RUN-STATE.json",
+    "SOURCE-IDENTITY-RECHECK.json",
+    "recheck.py"
+  ]
+}
