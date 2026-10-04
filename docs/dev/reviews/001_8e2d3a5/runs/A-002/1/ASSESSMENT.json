@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "case_id": "A-002",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "merge_parents": [
+      "d0087ff75e485cab832a28d6b501150eaf2ed249"
+    ]
+  },
+  "findings": [
+    "Selection exactly matches ordinary TASKS ownership: initially eligible T-001; next milestone 1.1 contains T-001 through T-004 including explicit review task. T-002 through T-004 are correctly conditional successors.",
+    "Current report identities match all 20 assertions. Root hierarchy/report conformance includes mandatory review exclusions, dependency and phase integration gates. No active feature owner or completed product task exists.",
+    "Actual checkout remains clean main at starting SHA; index/tracked workfiles agree with HEAD, no phase branch/ref or consumer commit exists. Read-only command journal is consistent with observed state; no product checks required or authorized.",
+    "All vendored package hashes match pinned source Git objects 019eb354cf0921ebd6056e6579763ac33d0baec2.",
+    "Independent authenticated ls-remote verifies exact origin/main publication at starting commit; consumer correctly limited its own publication claim to local tracking evidence."
+  ],
+  "evidence": [
+    "OBSERVATIONS.json",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "INPUTS.json",
+    "RUN-STATE.json",
+    "../../../consumer-handoffs/A-002/REQUEST.md",
+    "../../../consumer-handoffs/A-002/RESULT.md"
+  ],
+  "limits": [
+    "Broad filesystem exposure prevents strict consumer isolation certification.",
+    "Native full consumer transcript unavailable; no-test/no-push assertions additionally rely on retained command journal and observed no-action state, not complete process auditing.",
+    "This passes selection-only behavior, not implementation or cross-phase execution."
+  ],
+  "interventions": []
+}
