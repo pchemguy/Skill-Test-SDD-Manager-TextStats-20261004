@@ -44,3 +44,17 @@ python -m unittest discover -s tests/integration -t . -v
 ```
 
 Workflow fixtures under tests/workflows, when present, are separate from product acceptance.
+
+## Source distribution
+
+Build a standard-library source archive and extract it in an empty directory:
+
+```sh
+make dist
+mkdir -p dist/extracted
+python -m tarfile -e dist/textstats.tar.gz dist/extracted
+cd dist/extracted
+python -m textstats --help
+```
+
+The archive includes the package, public/development documentation and product tests. Generated dist output stays untracked. Integration discovery builds and extracts to a temporary directory, clears checkout import settings and verifies the extracted module's text/BOM/help/error behavior and import location. `make check` runs the two product suites independently.
