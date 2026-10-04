@@ -2,12 +2,16 @@
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
   "phase": "P1",
-  "case_id": "A-001",
+  "case_id": "A-002",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Independent A-001 assessment: Passed",
-  "pending_operation": null,
-  "next_action": "Select next eligible catalog case within full authorized scope",
+  "role": "consumer",
+  "last_completed_action": "Verified prerequisites and prepared exact consumer handoff",
+  "pending_operation": {
+    "kind": "task",
+    "status": "in_progress",
+    "description": "A-002 ordinary consumer request"
+  },
+  "next_action": "Observe consumer completion/trigger then independent assessment",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
