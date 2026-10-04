@@ -2,8 +2,14 @@
   "schema_version": 1,
   "cases": {
     "A-001": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "consumer": "fresh explicit-source context"
+        }
+      ]
     },
     "A-002": {
       "status": "Pending",

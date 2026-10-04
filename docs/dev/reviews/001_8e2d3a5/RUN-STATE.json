@@ -1,13 +1,17 @@
 {
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
-  "phase": "P0",
-  "case_id": null,
+  "phase": "P1",
+  "case_id": "A-001",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Published pinned infrastructure on main and verified containment",
-  "pending_operation": null,
-  "next_action": "Dispatch A-001 preparation from published baseline, then independent assessment",
+  "role": "consumer",
+  "last_completed_action": "Verified published P0 baseline and dispatched fresh A-001 consumer",
+  "pending_operation": {
+    "kind": "task",
+    "status": "in_progress",
+    "description": "A-001 document preparation only"
+  },
+  "next_action": "Observe consumer preparation completion then dispatch independent assessor",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "8e2d3a57af36bc42d73f2118542a8f2608bab6ae",
