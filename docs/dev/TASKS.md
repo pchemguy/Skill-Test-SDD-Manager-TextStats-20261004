@@ -1,6 +1,6 @@
 # TextStats executable task hierarchy
 
-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-008 are implemented and verified below; the remaining tasks are planned and incomplete. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
+Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-009 are implemented and verified below; Phase 2 tasks remain planned and incomplete. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
 
 ## Hosted tracking
 
@@ -54,9 +54,10 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
             Evidence: code review, independent nonempty product suites, diagnostic demonstration, extracted-source checks, blocker repair and committed/pushed report. Report: docs/dev/reports/phases/1/1.2.md. Carry prior TODO provenance and record release decision evidence.
             Completion evidence (2026-10-04): [milestone report](reports/phases/1/1.2.md) covers separate full implementation review at 7939e1c, fresh unit17/integration9 without skips, all public examples, useful normal/missing/malformed diagnostics and independent extracted-source invocation. Every PLAN1.2 exit verified; original T-007 runner/evidence failures and correction retained, no unresolved product finding/TODO. Python3.12.14 tested; no3.11 execution claim. Issue #8 exact title/marker confirmed; issue/milestone closure and local parent reconciliation follow report publication.
     - [ ] Milestone 1.3 — Phase 1 review
-        - [ ] T-009 — Review, test and report phase 1
+        - [x] T-009 — Review, test and report phase 1
             Depends on: milestones 1.1 and 1.2 complete/closed when tracking is active, including T-004/T-008. Scope: cross-component phase 1 S-1 through S-4 and delivered S-7.
             Evidence: phase code review, nonempty product suites, documented examples/distribution/regressions, blocker repairs and committed/pushed report with milestone TODO aggregation. Report: docs/dev/reports/phases/1/PHASE-REPORT.md. Complete phase exits before explicit phase-branch merge to main, merged-state verification and publication; a partial range pauses on its phase branch.
+            Completion evidence (2026-10-04): [phase review report](reports/phases/1/PHASE-REPORT.md) inspects all production/test/docs/build source at dec4ca1 against S-1–S-4 and delivered S-7; no findings or TODOs. Fresh independent unit17/integration9 passed with no skips; public Python examples/local links, exact normal/BOM/keep-BOM/dash/help/failure demonstrations and isolated extracted-source identity/counts passed. Diff check clean; prior RED/GREEN provenance retained with no new behavior change. #1–#8 exact title/marker and closed/completed state confirmed; milestones #1/#2 closed with zero open/four closed issues. #9 exact title/marker confirmed. Task report/status publication precedes #9/milestone3 closure and final parent/integration reconciliation; Phase2 remains unselected.
 
 ## Phase 2 — Output and source extensions
 
