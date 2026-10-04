@@ -1,0 +1,1 @@
+This is a dedicated SDD Manager plugin test repository. Follow the pinned skills in textstats-run-resources/plugin/skills. Product documents and implementation must be generated through the authorized consumer workflows. Credentials remain protected and outside evidence.
