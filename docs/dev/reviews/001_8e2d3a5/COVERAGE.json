@@ -22,7 +22,7 @@
       ]
     },
     "A-003": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
@@ -31,10 +31,11 @@
         },
         {
           "attempt": 2,
-          "status": "Running",
+          "status": "Passed",
           "assisted": true,
           "intervention": "User-directed curl probe/restored transport after coordinator overgeneralization",
-          "consumer": "fresh explicit-source context"
+          "consumer": "fresh explicit-source context",
+          "assessment": "runs/A-003/2/ASSESSMENT.json"
         }
       ],
       "transport_recovery": "TRANSPORT-DIAGNOSTIC.md"

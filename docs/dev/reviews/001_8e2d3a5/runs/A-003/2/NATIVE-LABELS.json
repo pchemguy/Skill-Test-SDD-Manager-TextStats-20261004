@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "python",
+    "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+    "GET",
+    "labels?per_page=100&page=1"
+  ],
+  "returncode": 0,
+  "stdout": "{\"transport\": \"curl\", \"http_status\": 200, \"result\": [{\"id\": 12533046396, \"name\": \"accessibility\", \"color\": \"f143ab\", \"description\": \"Barrier affecting people with disabilities\"}, {\"id\": 12533046376, \"name\": \"bug\", \"color\": \"d73a4a\", \"description\": \"Something isn't working\"}, {\"id\": 12533046410, \"name\": \"documentation\", \"color\": \"0075ca\", \"description\": \"Improvements or additions to documentation\"}, {\"id\": 12533046421, \"name\": \"duplicate\", \"color\": \"cfd3d7\", \"description\": \"This issue or pull request already exists\"}, {\"id\": 12533046441, \"name\": \"enhancement\", \"color\": \"a2eeef\", \"description\": \"New feature or request\"}, {\"id\": 12533046478, \"name\": \"good first issue\", \"color\": \"7057ff\", \"description\": \"Good for newcomers\"}, {\"id\": 12533046461, \"name\": \"help wanted\", \"color\": \"008672\", \"description\": \"Extra attention is needed\"}, {\"id\": 12533046502, \"name\": \"invalid\", \"color\": \"e4e669\", \"description\": \"This doesn't seem right\"}, {\"id\": 12533046521, \"name\": \"question\", \"color\": \"d876e3\", \"description\": \"Further information is requested\"}, {\"id\": 12538641934, \"name\": \"sdd-phase-1-Named-file-utility\", \"color\": \"1d76db\", \"description\": \"Phase 1: useful named-file counting, reliable documentation and distribution.\"}, {\"id\": 12533046540, \"name\": \"wontfix\", \"color\": \"ffffff\", \"description\": \"This will not be worked on\"}]}\n",
+  "stderr": "",
+  "observed_at": "2026-10-04T14:28:06.439757+00:00"
+}
