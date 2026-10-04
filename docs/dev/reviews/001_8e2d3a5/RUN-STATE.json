@@ -5,16 +5,16 @@
   "case_id": null,
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Active work completed; suspension and exact recovery artifacts published and verified; no worker remains active",
+  "last_completed_action": "Reconciled actual refs/package/product and consumed reached user suspension",
   "pending_operation": null,
-  "next_action": "Suspended by user. Await explicit resume; reconcile actual product/evidence/hosted state, then prepare a fresh A-003 handoff. Start no work while suspended.",
+  "next_action": "Prepare and dispatch fresh A-003 consumer within original full authorized scope",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "integration_branch": "main",
     "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "0872a6c381401b6a0c0b64df10eaae06f0a4f675",
+    "evidence_commit": "93444c078eb22624a209f2dad77cc80d8cf2013b",
     "remote": "origin",
     "remote_ref": "refs/heads/main",
     "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
@@ -32,5 +32,5 @@
     "suspension-recovery/CREDENTIAL-TRIAL.json",
     "RECOVERY-PUBLICATION.json"
   ],
-  "updated_at": "2026-10-04T11:37:42.177857+00:00"
+  "updated_at": "2026-10-04T13:53:23.880851+00:00"
 }
