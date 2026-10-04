@@ -3,11 +3,15 @@
   "run_id": "001_8e2d3a5",
   "phase": "P1",
   "case_id": "A-003",
-  "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Assessed A-003 attempt1 Blocked; corrected stale review; user-directed curl probe and protected native reads succeeded",
-  "pending_operation": null,
-  "next_action": "Dispatch fresh A-003 attempt2 using restored scoped curl transport; retain attempt1 and all interventions",
+  "attempt": 2,
+  "role": "consumer",
+  "last_completed_action": "Published attempt1 and diagnostic correction; authenticated curl native inventory reads succeeded",
+  "pending_operation": {
+    "kind": "api",
+    "status": "in_progress",
+    "description": "A-003 fresh tracking projection and repeat reconciliation through restored transport"
+  },
+  "next_action": "Observe actual consumer projection then independent assessment before dependent implementation",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
@@ -31,5 +35,5 @@
     "suspension-recovery/CREDENTIAL-TRIAL.json",
     "RECOVERY-PUBLICATION.json"
   ],
-  "updated_at": "2026-10-04T14:13:08.958530+00:00"
+  "updated_at": "2026-10-04T14:15:27.322420+00:00"
 }

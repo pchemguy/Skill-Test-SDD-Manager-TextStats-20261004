@@ -1,6 +1,6 @@
 # Live acceptance diagnostic report — resumed
 
-User-requested checkpoint, not completed full acceptance. Pinned source: 019eb354cf0921ebd6056e6579763ac33d0baec2. Dedicated repository: https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.
+Resumed run in progress; full acceptance remains incomplete. Pinned source: 019eb354cf0921ebd6056e6579763ac33d0baec2. Dedicated repository: https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.
 
 ## What testing demonstrated
 
@@ -14,7 +14,7 @@ A001-E01: the consumer's unqualified whitespace-check claim does not establish a
 
 The initial Git push lacked client credentials; repository-scoped protected recovery restored access. This was environment setup. A coordinator handoff renderer rejected a case-ID-containing checkout path; it was corrected before consumer dispatch and retained as an intervention. No consumer was coached or retried. Source package was not amended.
 
-Native complete transcripts, strict consumer filesystem isolation and installed-client acceptance were unavailable. The initial coordinator archive was removed from the ordinary checkout before consumers, but accessible Git history and broad filesystem permissions prevent isolation certification. No production API/CLI, implementation, hosted lifecycle, interruption recovery or complete cross-phase delivery has yet been accepted. Three cases Passed, one Blocked, 23 Pending; the user stopped further dispatch.
+Native complete transcripts, strict consumer filesystem isolation and installed-client acceptance were unavailable. The initial coordinator archive was removed from the ordinary checkout before consumers, but accessible Git history and broad filesystem permissions prevent isolation certification. No production API/CLI, implementation, hosted lifecycle, interruption recovery or complete cross-phase delivery has yet been accepted. At the completed first tracking attempt: three cases Passed, two Blocked, 22 Pending. The prior user stop was consumed by explicit resumption.
 
 ## Actions taken
 
@@ -24,7 +24,7 @@ Pinned and published bounded setup; preserved initial README; dispatched fresh c
 
 No plugin implementation change is proposed from the acceptance behaviors evaluated so far. Improve future evidence claims by stating exact whitespace-check command/range and distinguishing working-tree checks from committed-range checks; preserve required disclosure asset bytes.
 
-On explicit resume, reconcile this checkpoint and execute A-003, then remaining eligible cases with independently assessed/published prerequisites. Retain A-014's blocked attempt and retry cross-phase execution only from genuine ready task state with a safe isolated publication context. Use a supported isolated consumer runtime for isolation certification and an observed installed-client facility for separate discovery/activation acceptance. Do not treat source-loading or local support tests as those outcomes.
+Continue the recorded A-003 retry through the restored curl transport, then remaining eligible cases with independently assessed/published prerequisites. Retain A-014's blocked attempt and retry cross-phase execution only from genuine ready task state with a safe isolated publication context. Use a supported isolated consumer runtime for isolation certification and an observed installed-client facility for separate discovery/activation acceptance. Do not treat source-loading or local support tests as those outcomes.
 
 Exact dispositions: [COVERAGE.json](COVERAGE.json). Per-case assessments: [A-001](runs/A-001/1/ASSESSMENT.md), [A-002](runs/A-002/1/ASSESSMENT.md), [A-014](runs/A-014/1/ASSESSMENT.md), [A-025](runs/A-025/1/ASSESSMENT.md). Original progressive report is retained in DIAGNOSTIC-PROGRESS-HISTORY.md. Safe continuation: [SUSPENSION.md](SUSPENSION.md).
 
@@ -32,7 +32,7 @@ Publication verification and recoverable artifact hashes: [RECOVERY-PUBLICATION.
 
 ## A-003 — Blocked
 
-Independent evidence: [assessment](runs/A-003/1/ASSESSMENT.md). Original consumer result retained separately. Source remains pinned and unchanged; final causal findings/proposals await campaign assessment.
+Independent evidence: [current assessment](runs/A-003/1/ASSESSMENT-REVISION-1.md). Original consumer result retained separately. Source remains pinned and unchanged; final causal findings/proposals await campaign assessment.
 
 ## Resume and transport recovery
 

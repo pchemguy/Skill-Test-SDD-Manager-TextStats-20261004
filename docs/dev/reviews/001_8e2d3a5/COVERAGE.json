@@ -22,12 +22,19 @@
       ]
     },
     "A-003": {
-      "status": "Blocked",
+      "status": "Running",
       "attempts": [
         {
           "attempt": 1,
           "status": "Blocked",
           "assessment": "runs/A-003/1/ASSESSMENT-REVISION-1.json"
+        },
+        {
+          "attempt": 2,
+          "status": "Running",
+          "assisted": true,
+          "intervention": "User-directed curl probe/restored transport after coordinator overgeneralization",
+          "consumer": "fresh explicit-source context"
         }
       ],
       "transport_recovery": "TRANSPORT-DIAGNOSTIC.md"
