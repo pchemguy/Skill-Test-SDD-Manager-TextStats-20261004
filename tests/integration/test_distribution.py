@@ -32,7 +32,8 @@ class SourceDistributionTests(unittest.TestCase):
                 # The archive is produced locally from explicit project paths.
                 self.assertFalse(any(Path(name).is_absolute() or ".." in Path(name).parts
                                      for name in names))
-                source.extractall(extracted)
+                options = {"filter": "data"} if hasattr(tarfile, "data_filter") else {}
+                source.extractall(extracted, **options)
             environment = {key: value for key, value in os.environ.items()
                            if key not in ("PYTHONPATH", "PYTHONHOME", "PYTHONSTARTUP")}
             environment.update(PYTHONNOUSERSITE="1", PYTHONDONTWRITEBYTECODE="1")
