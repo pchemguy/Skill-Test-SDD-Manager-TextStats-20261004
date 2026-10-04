@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "run_id": "001_8e2d3a5",
-  "phase": "P4",
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
   "case_id": "A-014",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Independent A-014 assessment: Blocked",
+  "role": "assessor",
+  "last_completed_action": "Independent actual lifecycle checks",
   "pending_operation": null,
-  "next_action": "Complete only already active assessments, publish records and requested suspension; start no new case, task or agent.",
+  "next_action": "Publish assessment",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
@@ -18,11 +18,9 @@
     "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
     "merge_parents": [
       "d0087ff75e485cab832a28d6b501150eaf2ed249"
-    ],
-    "evidence_branch": "revision/001_8e2d3a5-live-acceptance"
+    ]
   },
   "evidence_paths": [
-    "CAPABILITIES.json",
-    "P0-PREPARE.json"
+    "OBSERVATIONS.json"
   ]
 }

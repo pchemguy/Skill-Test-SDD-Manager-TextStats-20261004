@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "case_id": "A-014",
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "merge_parents": [
+      "d0087ff75e485cab832a28d6b501150eaf2ed249"
+    ]
+  },
+  "findings": [
+    "Correct prerequisite refusal: actual T-002 depends on incomplete out-of-range T-001. All 17 tasks are unchecked, source/tests absent and only preparation commits exist. Consumer surfaced rather than executing T-001 or hiding core counting inside T-002.",
+    "Selection correctly segments actual nine-task range: phase 1 T-002 through T-009, then phase 2 T-010. Actual TASKS/PLAN require full phase 1 review/integration/publication before phase 2; consumer preserves that gate and partial phase 2 stopping boundary.",
+    "Cross-phase execution acceptance is unmet: no selected task ran, no phase branch/exits/merge/publication transition occurred. Local-only authorization independently prevents the required later publication. Correct refusal does not demonstrate successful phase transition.",
+    "Actual HEAD/branch/index/status match baseline exactly; tracked workfiles agree with index and no consumer phase ref or commit exists. All pinned package hashes and 20 QC source assertions remain current.",
+    "Live origin/main equals reached/starting prepared commit. A-001 published assessment bytes and checkpoint refs match retained independent assessment, and evidence commit is contained in live evidence branch."
+  ],
+  "evidence": [
+    "OBSERVATIONS.json",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "INPUTS.json",
+    "RUN-STATE.json",
+    "REQUEST.md",
+    "RESULT.md",
+    "BASELINE.json",
+    "PREDECESSOR-READBACK.json",
+    "FROZEN-SOURCE-HASHES.json",
+    "HANDOFF-INTERVENTION.md"
+  ],
+  "limits": [
+    "Broad filesystem exposure prevents strict consumer isolation certification.",
+    "Native full consumer transcript unavailable; command journals and independently observed state provide bounded evidence rather than complete process auditing.",
+    "No live hosted write, credential recovery, authentication or protected-channel transfer was exercised.",
+    "Coverage is actual prerequisite handling and selection segmentation only; sequential phase exit/integration/publication behavior remains unexecuted and Blocked."
+  ],
+  "interventions": [
+    "Coordinator initial handoff renderer rejected an assessor-case-ID checkout path before consumer dispatch; clone moved to neutral path, handoff corrected, then first consumer attempt ran. This was a setup intervention, not a consumer retry or product repair."
+  ],
+  "coverage": "Prerequisite refusal and actual phase segmentation; cross-phase execution blocked"
+}
