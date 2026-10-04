@@ -1,6 +1,7 @@
 """Run a source archive independently of checkout imports."""
 
 import os
+import json
 from pathlib import Path
 import subprocess
 import sys
@@ -63,18 +64,41 @@ class SourceDistributionTests(unittest.TestCase):
                     self.assertEqual((run.returncode, run.stdout, run.stderr),
                                      (0, expected, ""))
                     self.assertEqual(path.read_bytes(), data)
+                    formats = [("--json", *options)]
+                    if options:
+                        formats.append((*options, "--json"))
+                    for json_options in formats:
+                        json_run = invoke(*json_options, "sample.txt")
+                        self.assertEqual((json_run.returncode, json_run.stderr), (0, ""))
+                        self.assertEqual(len(json_run.stdout.splitlines()), 1)
+                        self.assertTrue(json_run.stdout.endswith("\n"))
+                        expected_counts = dict((k, int(v)) for k, v in
+                                               (part.split("=") for part in expected.split()))
+                        self.assertEqual(json.loads(json_run.stdout), expected_counts)
+                        self.assertTrue(all(type(v) is int for v in json.loads(json_run.stdout).values()))
+                        self.assertEqual(path.read_bytes(), data)
             help_run = invoke("--help")
             self.assertEqual((help_run.returncode, help_run.stderr), (0, ""))
             self.assertIn("--keep-bom", help_run.stdout)
+            self.assertIn("--json", help_run.stdout)
             for arguments, status in [(("missing.txt",), 1), ((), 2),
                                       (("--jsn", "sample.txt"), 2)]:
                 run = invoke(*arguments)
                 self.assertEqual((run.returncode, run.stdout), (status, ""))
                 self.assertTrue(run.stderr)
                 self.assertNotIn("Traceback", run.stderr)
+            missing_json = invoke("--json", "missing.txt")
+            self.assertEqual((missing_json.returncode, missing_json.stdout), (1, ""))
+            self.assertIn("missing.txt", missing_json.stderr)
             path.write_bytes(b"valid prefix\xff")
             run = invoke("sample.txt")
             self.assertEqual((run.returncode, run.stdout), (1, ""))
             self.assertIn("sample.txt", run.stderr)
             self.assertNotIn("Traceback", run.stderr)
             self.assertEqual(path.read_bytes(), b"valid prefix\xff")
+            for options in (("--json",), ("--json", "--keep-bom"), ("--keep-bom", "--json")):
+                bad_json = invoke(*options, "sample.txt")
+                self.assertEqual((bad_json.returncode, bad_json.stdout), (1, ""))
+                self.assertIn("sample.txt", bad_json.stderr)
+                self.assertNotIn("Traceback", bad_json.stderr)
+                self.assertEqual(path.read_bytes(), b"valid prefix\xff")
