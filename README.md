@@ -68,3 +68,21 @@ python -m textstats --help
 ```
 
 The archive includes the package, public/development documentation and product tests. Generated dist output stays untracked. Integration discovery builds and extracts to a temporary directory, clears checkout import settings and verifies the extracted module's text/JSON/BOM/help/error behavior and import location. `make check` runs the two product suites independently.
+
+## Named-file line ranges
+
+```sh
+printf 'alpha beta\nbeta\nlast two' > ranges.txt
+python -m textstats --lines 2:3 ranges.txt
+# lines=2 words=3
+python -m textstats --json --lines=2:3 ranges.txt
+# {"lines": 2, "words": 3}
+python -m textstats --lines 4:99 ranges.txt
+# lines=0 words=0
+python -m textstats --lines=2:1 ranges.txt
+# status 2; empty stdout; useful stderr; no file acquisition
+```
+
+`--lines START:END` and `--lines=START:END` select inclusive one-based logical lines of a named file. Endpoints must be positive ASCII decimals with START <= END; leading zeros and arbitrarily long endpoints are accepted. Missing/open endpoints, signs, whitespace, Unicode digits, zero, reversed bounds, extra colons and repeated range options are usage errors (status 2) before input is read. Selection intersects available lines; beyond EOF may yield empty counts. Only CRLF, CR and LF terminate lines, and original contents/terminators are preserved.
+
+The entire file is strictly decoded before selection, so bad UTF-8 after END still fails (status 1). Apply the default one-leading-BOM removal or `--keep-bom` once to complete text before line numbering. An interior BOM exposed at the selection start stays ordinary non-whitespace. `--lines`, `--json` and `--keep-bom` compose in either order before `--`. Text and JSON count the same selection. Public APIs always count the whole input; they have no range parameter. Stdin remains scheduled for milestone 2.2; stdin ranges are unsupported.
