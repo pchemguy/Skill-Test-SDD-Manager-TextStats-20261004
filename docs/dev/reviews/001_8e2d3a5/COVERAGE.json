@@ -295,19 +295,19 @@
       ]
     },
     "A-024": {
-      "status": "Running",
+      "status": "Blocked",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
-          "request": "runs/A-024/1/REQUEST.md",
-          "scope": "GET-only access classification variants"
-        },
-        {
-          "attempt": 2,
-          "status": "Running",
-          "request": "runs/A-024/2/REQUEST.md",
-          "scope": "rate-limit classification; original frozen before restored fresh readback"
+          "status": "Blocked",
+          "assessment": "runs/A-024/3/independent-assessment/ASSESSMENT.json",
+          "reason": "Three controlled metadata faults and fresh read continuations supported; native protected handoff/token eligibility unavailable",
+          "variants": [
+            "runs/A-024/1/independent-assessment/DENIAL-ORIGINAL-ASSESSMENT.json",
+            "runs/A-024/2/independent-assessment/RATE-LIMIT-ORIGINAL-ASSESSMENT.json",
+            "runs/A-024/3/independent-assessment/SESSION-ORIGINAL-ASSESSMENT.json"
+          ],
+          "partial_support": true
         }
       ]
     },

@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "case_id": "A-024",
+  "variant": "unavailable-session",
+  "continuation_outcome": "Supported bounded readback Passed after disclosed same-wrapper MODE restoration",
+  "independent_actual_readbacks": [
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-access-tools-20261005/tracking-access.py",
+        "GET",
+        "issues/4"
+      ],
+      "cwd": "/workspace/scratch/textstats-access-worktree-20261005",
+      "exit": 0,
+      "result": {
+        "transport": "curl",
+        "http_status": 200,
+        "result": {
+          "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/4",
+          "id": 5700124593,
+          "number": 4,
+          "title": "[T-004] Review, test and report milestone 1.1",
+          "state": "closed",
+          "state_reason": "completed"
+        }
+      },
+      "stderr_empty": true,
+      "stdout_sha256": "79bc0b705539d6dc0613332f8620836fc17657401754bb8110e26a596cb622a8"
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-access-tools-20261005/tracking-access.py",
+        "GET",
+        "milestones/1"
+      ],
+      "cwd": "/workspace/scratch/textstats-access-worktree-20261005",
+      "exit": 0,
+      "result": {
+        "transport": "curl",
+        "http_status": 200,
+        "result": {
+          "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/1",
+          "id": 18303256,
+          "number": 1,
+          "title": "sdd-1.1-Named-file-counting-MVP",
+          "open_issues": 0,
+          "closed_issues": 4,
+          "state": "closed"
+        }
+      },
+      "stderr_empty": true,
+      "stdout_sha256": "de8bfc7127521146518d09a514e79f70aa43095cef878710c87cbe3ada0c99e6"
+    }
+  ],
+  "head": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "branch": "trial/a024-tracking-access",
+  "clean": true,
+  "index_equal_start": true,
+  "tracked_hashes_equal_start": true,
+  "owners_equal_start": true,
+  "before_after_identical_product_state": true,
+  "consumer_continuation_events": [
+    {
+      "timestamp": "2026-10-05T13:25:14.451205+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:25:28.690189+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    }
+  ],
+  "independent_added_events": [
+    {
+      "timestamp": "2026-10-05T13:28:59.870500+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:29:08.254136+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "2026-10-05T08:16:40.990617+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "denial",
+      "sent": false,
+      "http_status": 403,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:24:14.597948+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:24:30.315616+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:26:35.565687+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:26:43.706132+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:30:02.629571+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "rate-limit",
+      "sent": false,
+      "http_status": 429,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:36:02.180609+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:36:16.728931+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:12:57.348940+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:13:04.146286+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:16:22.054215+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "unavailable-session",
+      "sent": false,
+      "http_status": null,
+      "exit_status": 2
+    },
+    {
+      "timestamp": "2026-10-05T13:25:14.451205+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:25:28.690189+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:28:59.870500+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:29:08.254136+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    }
+  ],
+  "loaded_hashes_match": true,
+  "pin_manifest_match": true,
+  "pin_file_count": 111,
+  "tracked_file_count": 143,
+  "restoration": {
+    "actor": "coordinator",
+    "timestamp": "2026-10-05T13:23:58.447461+00:00",
+    "previous_mode": "unavailable-session",
+    "mode": "restored",
+    "credentials_changed": false,
+    "effect": "same bounded GET wrapper now delegates existing protected adapter; no native credential/session restoration claimed",
+    "published_original_evidence_commit": "e8463fb0c8ff998be58883424ffacddd6f80796c"
+  },
+  "artifact_hashes": {
+    "3/continuation/REQUEST.md": "4f92e0fdf2f8cfc9f9e3febe185487ed4a692f963427975410679e2b40273301",
+    "3/continuation/JOURNAL.md": "cff91323493f91b64b7b31b0bc96ed1bd628518a5d6da0aae3864f8cdf999a10",
+    "3/continuation/CONSUMER-RESULT.md": "8180466fd8f339f06580acfb9152348cd809100061dbc450332766ea98f74f54",
+    "3/continuation/RESTORATION.json": "32427796a07804321fe7c306c51d57eda549b6aefadad1ecad5c1462ad3d6d67",
+    "3/independent-assessment/SESSION-ORIGINAL-ASSESSMENT.json": "e6be715130312068f659f90c1f8b0d709e5fcbb4b6f8bb2fc687965b01e9bc14"
+  },
+  "native_credential_restoration_claimed": false,
+  "limits": [
+    "Pre-send faults injected by disclosed wrapper; no live provider denial/rate limit/native credential expiration established.",
+    "MODE restored to existing protected adapter; native credential/session restoration not performed or verified.",
+    "Protected original helper/credentials remain uninspected; native protected handoff and eligible ignored/untracked token reuse not demonstrated.",
+    "Separate fresh consumer contexts without hard filesystem isolation; isolation-dependent certification unavailable.",
+    "Structured durable journals and facility timelines retained, without full native transcripts or native runtime interrupt evidence.",
+    "Frozen helper would invoke broad git ls-remote outside bounded authorization; Blocked and not executed.",
+    "Read-only metadata cannot establish product acceptance or milestone exit; no live remote/ref containment observation authorized."
+  ]
+}

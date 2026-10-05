@@ -3,23 +3,8 @@
   "active_cases": [
     {
       "case_id": "A-010",
-      "role": "fresh implementation consumer active; assessor waits for freeze",
+      "role": "fresh implementation consumer active; independent assessor waits for stop",
       "positive": true
-    },
-    {
-      "case_id": "A-017",
-      "role": "fresh task consumer and required-check observer",
-      "positive": false
-    },
-    {
-      "case_id": "A-024",
-      "role": "unavailable-session original frozen; independent capture",
-      "positive": false
-    },
-    {
-      "case_id": "A-019/A-023",
-      "role": "independent prerequisite eligibility only",
-      "positive": false
     }
   ],
   "new_work_allowed": "Remaining authorized full campaign; no active stop boundary",
@@ -29,10 +14,10 @@
     "state": "Resolved: exact local publication and independent Passed evidence retained"
   },
   "a024": {
-    "variant": "unavailable-session",
-    "status": "actual consumer firstGET exit2/httpnull; frozen",
-    "pending": "independent capture and publication before bounded facility restore",
-    "qualification": "controlled pre-send metadata only; native protected credential handoff eligibility unavailable"
+    "variant": "all three controlled classifications",
+    "status": "Independent final Blocked with partial support",
+    "pending": null,
+    "qualification": "Native protected handoff/token eligibility unverified; exact bounded restored readbacks complete, original faults retained"
   },
   "a010_projection": {
     "status": "Confirmed after new explicit human retry",

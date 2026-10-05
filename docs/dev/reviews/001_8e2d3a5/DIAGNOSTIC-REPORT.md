@@ -234,3 +234,7 @@ A019 is Blocked/Not run at its prescribed actual A005 assisted Passed milestone:
 ## A017 reached outcome
 
 After an actual consumer T001 production edit, an independently derived S1/S2 acceptance test was added and executed. It passed; no product defect or stronger expectation was injected. Original commit-hold evidence was published before the bounded hold was released. The same consumer committed81399c76355c2a9e3320bf77ddc3f297a8b6ba9a and published to the explicit local remote. Independent final checks pass12unit tests, clean index/worktree and111 unchanged pinned files. Ordinary task delivery passed, but A017 remains Blocked because no genuine failing required-check trigger, interruption or fresh recovery occurred.
+
+## A024 final access trial
+
+Permission denial403, rate-limit429 and unavailable-sessionexit2/httpnull were separate actual bounded consumer trials; each original stopped without token substitution and was independently captured/published before bounded facility restoration. Separate fresh continuations and independent exact reads confirmed the unchanged closed issue4/milestone1 state. All143 tracked files/index/owners and111 pinned files match the retained baseline. Final A024 remains Blocked with partial support because this metadata wrapper does not demonstrate native protected credential handoff or token eligibility; no native session replacement/restoration is claimed. Original broad-scope frozen helper remained blocked rather than running outside the exact two-read authorization.

@@ -21,7 +21,7 @@
     "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
     "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "2744e0539d068f0a33e4f85890d29c8c85558d03"
+    "evidence_commit": "020da39ee472ca2c79364a56f89993ecb8d96bc3"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -66,7 +66,7 @@
     "runs/A-010/2/REQUEST.md",
     "runs/A-010/2/HOSTED-BEFORE.json"
   ],
-  "updated_at": "2026-10-05T13:28:53.808195+00:00",
+  "updated_at": "2026-10-05T13:30:36.417515+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -170,6 +170,13 @@
       "status": "Blocked",
       "assessment_path": "runs/A-023/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
       "reason": "Safe isolated exact provider namespace unavailable; runtimeNotrun"
+    },
+    {
+      "case_id": "A-024",
+      "attempt": 1,
+      "status": "Blocked",
+      "assessment_path": "runs/A-024/3/independent-assessment/ASSESSMENT.json",
+      "reason": "Controlled fault/fresh readback supported; native credential handoff eligibility missing"
     }
   ]
 }
