@@ -5,7 +5,7 @@ Working branch: `feature/002_ea97182-line-ranges`. Integration target: `phase/2-
 
 Authorized delivery: implement named-file text/JSON selection, incorporate governing owners, project maintained tracking and integrate into the paused phase target after verification. Stop before stdin or later phase execution. T-012 is complete; T-013–T-017/stdin remain unfinished. Preserve their identities and current acceptance.
 
-Active sources: [FEATURE-SPEC](../../FEATURE-SPEC.md), [FEATURE-PLAN](../../FEATURE-PLAN.md), [FEATURE-TASKS](../../FEATURE-TASKS.md). Adjacent QC reports govern dependent use. Sources remain active at root until separately accepted incorporation/archive.
+Historical sources and adjacent preparation QC are archived here: [FEATURE-SPEC](FEATURE-SPEC.md), [FEATURE-PLAN](FEATURE-PLAN.md), [FEATURE-TASKS](FEATURE-TASKS.md). Main [PROJECT](../../PROJECT.md), [ARCHITECTURE](../../ARCHITECTURE.md), [DECOMPOSITION](../../DECOMPOSITION.md), [SPEC](../../SPEC.md), [PLAN](../../PLAN.md), [layout](../../layout.md) and sole executable [TASKS](../../TASKS.md) incorporate accepted range scope. Archived sources/checklists are historical, not current executable owners. [2.4 report](2.4.md), [feature phase review](PHASE-REPORT.md) and [feature implementation report](IMPLEMENTATION-REPORT.md) retain implementation provenance. Feature integration into paused phase2 is a separate verified/published transition; Phase2/stdin remains incomplete.
 
 ## Design decision
 

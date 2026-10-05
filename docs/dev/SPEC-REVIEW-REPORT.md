@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready for current SPEC.md conformance. Owner: sdd-specify, 2026-10-05. Revision 2 records current accepted owner identities, coverage and limits. Original gate observations are retained historical evidence. Implementation, hosted lifecycle and integration are separately assessed.
+State: Ready for current SPEC.md conformance. Owner: sdd-specify, 2026-10-05. Revision 3 records current accepted owner identities, coverage and limits. Original gate observations are retained historical evidence. Implementation, hosted lifecycle and integration are separately assessed.
 
 ## Original reviewed identities
 
@@ -73,3 +73,19 @@ Exact reviewed/governing SHA256:
 - `FEATURE-TASKS.md`: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
 
 Whitespace/local-link checks and complete selected-root consistency review passed. Original observations and identities retained above. Gate: Ready for current selected conformance; implementation/hosted closure/archive/merge remain separately assessed.
+
+## Revision 3 — Final range incorporation and archive conformance
+
+Selected complete main owner reassessment, 2026-10-05. Accepted contract/design scope unchanged; PLAN2.4 now refers to canonical S8/main QC, and TASKS references S8/main readiness with sole T018–T022 ownership. Historical feature sources and adjacent reports moved together into features/002_ea97182, with local links repaired; main roots are standalone intended descriptions. TASKS status/reassessment changes have implementation evidence in T021/T022 reports and do not alter task decomposition/dependencies. S1–S8 routes, delivery counts/rationale and boundary obligations from previous revisions remain applicable. Original findings/identities retained, no unresolved conformance finding. Main Phase2/stdin/final review remain incomplete.
+
+Exact current reviewed/governing SHA256:
+
+- `PROJECT.md`: `289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988`
+- `ARCHITECTURE.md`: `4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a`
+- `DECOMPOSITION.md`: `bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15`
+- `SPEC.md`: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- `PLAN.md`: `e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629`
+- `layout.md`: `abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32`
+- `TASKS.md`: `88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de`
+
+Full selected-root consistency, main/archive links, unique task ownership and whitespace checks passed. Gate: Ready for current main conformance; historical archived Ready does not govern dependent use. Feature implementation and published integration are assessed separately.

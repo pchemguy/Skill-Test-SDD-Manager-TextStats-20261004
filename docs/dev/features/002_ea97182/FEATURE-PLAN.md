@@ -1,6 +1,8 @@
+> Historical accepted feature source. Current governing behavior, strategy and executable progress are in main [SPEC](../../SPEC.md), [PLAN](../../PLAN.md) and [TASKS](../../TASKS.md). This snapshot is not an executable task owner.
+
 # Named-file line ranges delivery plan
 
-Active delta: [FEATURE-SPEC](FEATURE-SPEC.md), [package identity/design](features/002_ea97182/README.md). The reviewed specification is Ready. Preserve main [PLAN](PLAN.md) and [TASKS](TASKS.md): JSON2.1 is complete at T-012; stdin2.2 and main review2.3 remain incomplete. This feature reuses Phase2's identity with new feature-only milestone IDs2.4/2.5, allocated after existing2.1–2.3. Numerical order does not impose a stdin dependency. Feature progress measures only the delta and cannot complete Phase2.
+Active delta: [FEATURE-SPEC](FEATURE-SPEC.md), [package identity/design](README.md). The reviewed specification is Ready. Preserve main [PLAN](../../PLAN.md) and [TASKS](../../TASKS.md): JSON2.1 is complete at T-012; stdin2.2 and main review2.3 remain incomplete. This feature reuses Phase2's identity with new feature-only milestone IDs2.4/2.5, allocated after existing2.1–2.3. Numerical order does not impose a stdin dependency. Feature progress measures only the delta and cannot complete Phase2.
 
 ## Phase 2 — Output and source extensions
 
@@ -20,7 +22,7 @@ A full separately authorized feature implementation must incorporate accepted in
 
 ## Layout and integration constraints
 
-Reuse [layout](layout.md): core owns pure normalization/selection/counting; io owns complete named-file UTF-8 acquisition; cli owns validation, command composition, diagnostics and renderers. Private acquisition factoring may allow the command to obtain decoded text while count_file remains whole-input. The selected slice is counted with stripping disabled. Future stdin can call the same decoded-text seam; no borrowed source is acquired/delivered in this feature.
+Reuse [layout](../../layout.md): core owns pure normalization/selection/counting; io owns complete named-file UTF-8 acquisition; cli owns validation, command composition, diagnostics and renderers. Private acquisition factoring may allow the command to obtain decoded text while count_file remains whole-input. The selected slice is counted with stripping disabled. Future stdin can call the same decoded-text seam; no borrowed source is acquired/delivered in this feature.
 
 Pure/helper and parser/lifecycle checks belong under tests/unit; real file/module and isolated extraction checks under tests/integration. README/docs/module describe the feature; docs/api retains whole-input signatures. Existing Makefile archive includes updated package/docs with no workflow fixture substitution. Feature review reports reside under features/002_ea97182; preparation QC reports remain adjacent to active FEATURE roots. No new source home or main layout edit is required.
 

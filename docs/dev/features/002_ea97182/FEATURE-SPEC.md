@@ -1,6 +1,8 @@
+> Historical accepted feature source. Current governing behavior, strategy and executable progress are in main [SPEC](../../SPEC.md), [PLAN](../../PLAN.md) and [TASKS](../../TASKS.md). This snapshot is not an executable task owner.
+
 # Named-file line range specification
 
-Active scoped delta for [feature002_ea97182](features/002_ea97182/README.md), based on completed JSON milestone2.1/T-012. Extend main [SPEC](SPEC.md) S-4/S-5/S-7; preserve S-1–S-3 and unaffected S-4/S-5 behavior. S-6/stdin remains later main delivery, with source-independent compatibility required by [architecture](ARCHITECTURE.md). Public API stays whole-input: no new export or range parameter.
+Active scoped delta for [feature002_ea97182](README.md), based on completed JSON milestone2.1/T-012. Extend main [SPEC](../../SPEC.md) S-4/S-5/S-7; preserve S-1–S-3 and unaffected S-4/S-5 behavior. S-6/stdin remains later main delivery, with source-independent compatibility required by [architecture](../../ARCHITECTURE.md). Public API stays whole-input: no new export or range parameter.
 
 ## R-1 Invocation and validation
 

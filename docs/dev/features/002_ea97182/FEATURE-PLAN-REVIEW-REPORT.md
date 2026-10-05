@@ -1,3 +1,5 @@
+> Historical feature preparation QC. Original observations/identities are retained; main adjacent QC reports govern current use.
+
 # Range FEATURE-PLAN review report
 
 ## Current gate
