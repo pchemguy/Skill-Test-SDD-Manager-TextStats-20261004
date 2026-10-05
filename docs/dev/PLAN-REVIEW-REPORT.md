@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready for current PLAN.md conformance. Owner: sdd-plan, 2026-10-05. Revision 1 records current identities, coverage and limits. No confirmed unresolved preparation issue. Implementation completion is not established.
+State: Ready for current PLAN.md conformance. Owner: sdd-plan, 2026-10-05. Revision 2 records current accepted owner identities, coverage and limits. Original gate observations are retained historical evidence. Implementation, hosted lifecycle and integration are separately assessed.
 
 ## Retained original gate and identities (historical)
 
@@ -48,3 +48,28 @@ Exact reviewed/governing SHA256:
 - SPEC-REVIEW-REPORT.md: `93f0b8c602bde38ddcc5b8c1550475e12514c9cecd512b2c6e12b2d970c72534`
 - layout.md: `ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d`
 - FEATURE-PLAN.md: `fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c`
+
+## Revision 2 — Accepted governing-owner incorporation recheck
+
+Owner assessment: sdd-plan under sdd-integrate-feature correction ownership, 2026-10-05.
+
+Complete S-1–S-8 coverage: Phase1 1.1/1.2 whole-input/decode/errors/docs; 2.1 JSON, 2.2 later stdin, 2.4 named-file ranges, 2.3 full final review and 2.5 scoped feature review. Phase1 two delivery milestones retained because useful MVP then reliable distribution are cohesive bounded outcomes; excluded1.3 review. Phase2 three delivery milestones with two excluded review units2.3/2.5; no padding/fragmentation. Ranges depend on completed JSON, not stdin. Updated design/layout owners preserve physical dependency routing. All exits include code review/nonempty suites/docs/distribution; range completion cannot complete Phase2. No confirmed unresolved finding.
+
+Exact reviewed/governing SHA256:
+
+- `PROJECT.md`: `289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988`
+- `ARCHITECTURE.md`: `4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a`
+- `DECOMPOSITION.md`: `bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15`
+- `SPEC.md`: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- `PLAN.md`: `e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e`
+- `layout.md`: `abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32`
+- `TASKS.md`: `a513c7c51ce1a1f125f1fb737537381dbcc907f328b58b1026cced7f7d9a1dde`
+- `FEATURE-SPEC.md`: `e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed`
+- `FEATURE-PLAN.md`: `fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c`
+- `FEATURE-TASKS.md`: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
+
+Whitespace/local-link checks and complete selected-root consistency review passed. Original observations and identities retained above. Gate: Ready for current selected conformance; implementation/hosted closure/archive/merge remain separately assessed.
+
+Upstream gate identities at this recheck:
+
+- `SPEC-REVIEW-REPORT.md`: `acea3e8790c31bc3906af83039c4d68c1d1a114a3c2cbe8361fc886da0711cde`

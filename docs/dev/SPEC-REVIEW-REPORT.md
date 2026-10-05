@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready for selected SPEC/design conformance only. Owner assessment: sdd-specify, 2026-10-05, under sdd-integrate-feature correction ownership. Reviewed complete SPEC S-1–S-8, no focused children, against accepted PROJECT/design and accepted FEATURE-SPEC. Exact current identities and checks are in Revision 1. This is document evidence; range implementation, downstream planning/task readiness and whole-project completion are not established. Affected downstream use is blocked until separately authorized reassessment; see Revision 1.
+State: Ready for current SPEC.md conformance. Owner: sdd-specify, 2026-10-05. Revision 2 records current accepted owner identities, coverage and limits. Original gate observations are retained historical evidence. Implementation, hosted lifecycle and integration are separately assessed.
 
 ## Original reviewed identities
 
@@ -52,3 +52,24 @@ Assessment: accepted design already provides every structural owner/seam; PROJEC
 Outside selected scope: main PLAN excludes range allocation and PLAN-REVIEW-REPORT reviews the old SPEC; main TASKS/TASKS-REVIEW-REPORT consequently cannot establish complete expanded-main conformance. Their affected gates require authorized PLAN/TASKS reconciliation and owner rechecks before dependent execution/projection. FEATURE-SPEC's own R-1–R-4 content is unchanged, but its recorded main SPEC identity and feature PLAN/TASKS upstream equivalence need reassessment before dependent use; those reports are retained historical evidence, not a fresh gate for this main incorporation. Feature tasks T-018–T-022 remain the sole executable range owners, unchecked; no transfer or duplicate entry was made. Main T-013–T-017 remain incomplete. Existing checked tasks and milestone/phase evidence are preserved for their historical whole-input/JSON boundaries; expanded S-4/S-5/S-7 or whole-project acceptance claims (notably T-004/T-008/T-009/T-012 and their parents) need scope-aware reassessment in their owning lists/evidence before reuse as complete current acceptance. Those locations are outside scope, so no pending note or checkbox change is made here.
 
 The package README and feature PLAN/TASKS retain preparation-era incorporation boundary wording; their later continuation must account for this SPEC checkpoint and its QC without treating the entire package as incorporated. Active sources remain required by feature planning/tasks/links and unfinished implementation. Archival, task ownership transfer, hosted reparenting/projection and final feature-to-phase integration are deferred. This selected SPEC checkpoint may finish on the existing feature branch without claiming whole-project readiness or implementing ranges.
+
+## Revision 2 — Accepted governing-owner incorporation recheck
+
+Owner assessment: sdd-specify under sdd-integrate-feature correction ownership, 2026-10-05.
+
+S-1–S-3 whole-input API/value/decode/lifecycle map to facade/core/io; S-4/S-5/S-8 option validation, named-file ranges and formatting map to cli plus source-independent core/io seam. S-6 remains later borrowed stdin without ranges. S-7 maps tests/docs/build. Accepted design/PROJECT incorporation resolves stale future-range exclusions without new contract or public API. Every objective row/error/BOM obligation remains owned and assessable. No focused children or confirmed unresolved finding.
+
+Exact reviewed/governing SHA256:
+
+- `PROJECT.md`: `289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988`
+- `ARCHITECTURE.md`: `4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a`
+- `DECOMPOSITION.md`: `bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15`
+- `SPEC.md`: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- `PLAN.md`: `e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e`
+- `layout.md`: `abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32`
+- `TASKS.md`: `a513c7c51ce1a1f125f1fb737537381dbcc907f328b58b1026cced7f7d9a1dde`
+- `FEATURE-SPEC.md`: `e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed`
+- `FEATURE-PLAN.md`: `fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c`
+- `FEATURE-TASKS.md`: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
+
+Whitespace/local-link checks and complete selected-root consistency review passed. Original observations and identities retained above. Gate: Ready for current selected conformance; implementation/hosted closure/archive/merge remain separately assessed.

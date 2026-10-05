@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready for current FEATURE-SPEC.md conformance. Owner: sdd-specify, 2026-10-05. Revision 1 records current identities, coverage and limits. No confirmed unresolved preparation issue. Implementation completion is not established.
+State: Ready for current FEATURE-SPEC.md conformance. Owner: sdd-specify, 2026-10-05. Revision 2 records current accepted owner identities, coverage and limits. Original gate observations are retained historical evidence. Implementation, hosted lifecycle and integration are separately assessed.
 
 ## Initial review
 
@@ -37,3 +37,24 @@ Exact reviewed/governing SHA256:
 - PROJECT.md: `85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24`
 - ARCHITECTURE.md: `0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c`
 - DECOMPOSITION.md: `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`
+
+## Revision 2 — Accepted governing-owner incorporation recheck
+
+Owner assessment: sdd-specify under sdd-integrate-feature correction ownership, 2026-10-05.
+
+R1–R4 preserved exactly; current main S8 represents complete accepted selection behavior and affected S4/S5/S7. PROJECT/design/layout incorporation establishes canonical pure selection and private complete decode without public API changes. Feature contract remains accepted active source pending feature conclusion/archive. No confirmed unresolved finding.
+
+Exact reviewed/governing SHA256:
+
+- `PROJECT.md`: `289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988`
+- `ARCHITECTURE.md`: `4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a`
+- `DECOMPOSITION.md`: `bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15`
+- `SPEC.md`: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- `PLAN.md`: `e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e`
+- `layout.md`: `abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32`
+- `TASKS.md`: `a513c7c51ce1a1f125f1fb737537381dbcc907f328b58b1026cced7f7d9a1dde`
+- `FEATURE-SPEC.md`: `e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed`
+- `FEATURE-PLAN.md`: `fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c`
+- `FEATURE-TASKS.md`: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
+
+Whitespace/local-link checks and complete selected-root consistency review passed. Original observations and identities retained above. Gate: Ready for current selected conformance; implementation/hosted closure/archive/merge remain separately assessed.

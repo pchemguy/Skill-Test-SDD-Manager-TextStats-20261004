@@ -1,6 +1,6 @@
 # TextStats executable task hierarchy
 
-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-012 are implemented and verified below; remaining Phase 2 tasks, including T-018–T-022 ranges, are planned and incomplete. Range tasks are owned only here; feature snapshots are not executable lists. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Phase 2 is activated on phase/2-output-and-source-extensions; JSON milestone2.1 is selected, with stdin and final review incomplete. Future range implementation is separately requested and has no executable owner here.
+Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-012 are implemented and verified below; T-018–T-020 range delivery is implemented and verified below; range review and remaining Phase 2 tasks retain their recorded status. Range tasks are owned only here; feature snapshots are not executable lists. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Phase 2 is activated on phase/2-output-and-source-extensions; JSON milestone2.1 is selected, with stdin and final review incomplete. Range tasks T-018–T-022 have this list as their sole executable owner.
 
 ## Hosted tracking
 
@@ -109,7 +109,7 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
             Depends on: milestones 2.1, 2.2 and 2.4 complete/closed when tracking is active, including T-012/T-016. Scope: all main SPEC contracts, cross-source/format/BOM interactions and final exits.
             Evidence: phase code review, complete nonempty product suites, runnable docs, isolated extracted-source module checks, blocker repair and committed/pushed reports. Reports: docs/dev/reports/phases/2/PHASE-REPORT.md and docs/dev/reports/IMPLEMENTATION-REPORT.md. Aggregate unresolved admissible TODOs and solution/owner/provenance with resolution references; verify full-phase explicit integration, merged state and publication before claiming complete implementation.
 
-    - [ ] Milestone 2.4 — Named-file line ranges
+    - [x] Milestone 2.4 — Named-file line ranges
         - [x] T-018 — Establish normalized logical-line selection seam
             Depends on: T-012 and current feature preparation gates.
             Scope: textstats/core.py, textstats/io.py and tests/unit semantic/acquisition checks; preserve public facade.
@@ -128,11 +128,13 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
             Outcome: runnable named-file range examples, syntax/repetition/status/complete-decode/BOM rules and explicit stdin boundary; public API docs retain whole-input contract (R-4/S-7).
             Evidence: execute public examples/help, run independent nonempty product suites, clean archive extraction and actual extracted python -m textstats for both spellings/formats/BOM policies and representative usage/read/decode failures. Remove checkout import leakage, assert extracted package identity and unchanged input. Workflow fixtures remain separate.
             Completion evidence (2026-10-05): README/module named-file range examples, full syntax/repetition/status/decode/BOM/EOF rules and explicit stdin boundary added; API reviewed whole-input unchanged. Existing delivered behavior characterized, no production edit or manufactured RED. Extended isolated archive test passed with extracted import identity, both spellings/text/JSON/BOM orders, dash file and usage/read/late-decode errors; bytes unchanged. Independent unit21/integration13 passed, no skips; public fenced Python/shell examples executed in temporary directories with expected statuses, build/test blocks separately covered by suites. Diff check passed. #20 exact title/markers verified; hosted reconciliation pending unknown preHTTP adapter failure.
-        - [ ] T-021 — Review, test and report range milestone 2.4
+        Completion evidence (2026-10-05): T018–T021 implementation, separate code review, unit21/integration13, public examples/isolated source checks and all PLAN2.4 exits verified. [Range milestone report](features/002_ea97182/2.4.md) records current acceptance. Hosted report/issue/milestone transitions are separately observed after publication; Phase2 remains incomplete.
+        - [x] T-021 — Review, test and report range milestone 2.4
             Depends on: T-018, T-019, T-020.
             Scope: all named-file range behavior, helper/acquisition/CLI composition, API compatibility, docs/distribution and prior acceptance.
             Evidence: separate code review and focused/regression checks against all2.4 exits, useful demonstrations, required blocker repairs, TODO provenance and committed/pushed report. Reconcile issues and close2.4 only after all constituent issues are verified complete when tracking is active.
             Report: docs/dev/features/002_ea97182/2.4.md.
+            Completion evidence (2026-10-05): [milestone code review/testing report](features/002_ea97182/2.4.md), reviewed749a898 plus accepted owner/docstring-only changes; independent unit21/integration13 no skips, public examples/links/diff check pass. No in-scope finding/TODO. Governing-owner incorporation/QC Ready; issue#21 exact title/markers verified, closure follows commit/push.
     - [ ] Milestone 2.5 — Range feature review
         - [ ] T-022 — Review, test and report the named-file range feature
             Depends on: feature milestone2.4 complete/closed when tracking is active, including T-021.

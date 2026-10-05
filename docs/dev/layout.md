@@ -5,9 +5,9 @@ This maps intended [DECOMPOSITION.md](DECOMPOSITION.md) responsibilities. README
 | Location | Owner and contents |
 | --- | --- |
 | textstats/__init__.py | Public facade and direct exports; no CLI side effects |
-| textstats/core.py | Immutable statistics and pure text semantics |
-| textstats/io.py | Named-file bytes, strict decoding and owned resource lifecycle |
-| textstats/cli.py | Validation, source dispatch, borrowed stdin, output and process status |
+| textstats/core.py | Immutable statistics, pure BOM normalization/logical-line selection and text semantics |
+| textstats/io.py | Complete named-file bytes, strict decoding, private decoded-text acquisition and owned resource lifecycle |
+| textstats/cli.py | Range/option validation, source dispatch, later borrowed stdin, output and process status |
 | textstats/__main__.py | Minimal module entry delegating to CLI |
 | tests/__init__.py, tests/unit/__init__.py, tests/integration/__init__.py | Importable unittest discovery packages |
 | tests/unit/test_*.py | Nonempty semantic/API/lifecycle/adapter unit coverage |
@@ -24,7 +24,7 @@ This maps intended [DECOMPOSITION.md](DECOMPOSITION.md) responsibilities. README
 
 ## Placement and verification rules
 
-A flat root package makes python -m textstats runnable from the checkout and extracted source without installation. Imports flow facade → core/io, io → core, cli → core/io, module entry → cli. CLI validation/formatting stays outside core and public exports. Any future selection helper belongs with internal decoded-text processing, with no acquisition dependency or new public export.
+A flat root package makes python -m textstats runnable from the checkout and extracted source without installation. Imports flow facade → core/io, io → core, cli → core/io, module entry → cli. CLI validation/formatting stays outside core and public exports. Internal range selection belongs in core decoded-text processing, with no acquisition dependency or public export; cli owns syntax and composes it with complete io acquisition.
 
 Proposed unittest commands: python -m unittest discover -s tests/unit -t . and python -m unittest discover -s tests/integration -t .; workflow checks use their own explicit discovery invocation and counts. Product discovery packages and test modules must produce nonzero suites. Distribution checks create a temporary archive extraction, change to its root and invoke the extracted module with a clean import environment. The archive includes package sources, README and public docs, and excludes pinned workflow resources and generated archives. A Makefile using standard-library Python archive commands avoids runtime/build dependency additions.
 

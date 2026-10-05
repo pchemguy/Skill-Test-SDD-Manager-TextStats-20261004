@@ -1,4 +1,4 @@
-"""Validate named-file arguments and render complete text or JSON counts."""
+"""Validate named-file arguments and render whole-input or selected counts."""
 
 import argparse
 import json
@@ -7,7 +7,6 @@ from collections.abc import Sequence
 
 from .io import count_file, _read_text
 from .core import _normalize_text, _select_lines, count_text
-
 
 
 def _parse_range(value: str) -> tuple[str, str]:

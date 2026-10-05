@@ -10,9 +10,7 @@ Provide importable immutable statistics, public API/module documentation, a runn
 
 ## Boundaries
 
-This preparation defines the design, specification, delivery plan, physical layout and executable tasks. It stops before production implementation and hosted tracking. The authorized preparation checkpoint is main at `8e2d3a57af36bc42d73f2118542a8f2608bab6ae` in pchemguy/Skill-Test-SDD-Manager-TextStats-20261004, published through origin/main. No phase is activated by preparation.
-
-A separately requested line-range feature is outside the main delivery hierarchy. Its future constraints are recorded in design so that selection can share decoded-text semantics across named files and future stdin. No range API export or public API parameter is intended. Network services, GUI, encodings other than UTF-8, file mutation, plugins and performance guarantees for unbounded data are non-goals.
+Named-file line ranges are part of the delivery hierarchy alongside JSON output and later byte-based stdin. Range selection is a named-file CLI option; public APIs count whole input and expose no range parameter or additional export. Source-independent decoded-text selection shares semantics with future source acquisition. Stdin line ranges are unsupported. Network services, GUI, encodings other than UTF-8, file mutation, plugins and performance guarantees for unbounded data are non-goals.
 
 ## Decisions
 

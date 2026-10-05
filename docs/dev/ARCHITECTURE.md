@@ -14,8 +14,8 @@ A frozen value object plus functions gives a small public surface without an inh
 
 Decode complete bytes using strict UTF-8 before text processing. File reads preserve CR/LF terminators, avoiding universal-newline translation. Apply the BOM policy once at the boundary of text processing; the core operates on the resulting text. Keep formatting outside the counting core. These boundaries allow small integrated delivery increments while retaining a stable whole-input API.
 
-## Future range compatibility constraint
+## Named-file range selection
 
-A future CLI-only selection stage sits between complete decoding/BOM normalization and counting. It identifies only CRLF, CR and LF logical lines, preserves selected contents and terminators, and never applies BOM stripping again to a slice. Source-independent decoded-text processing supports named files and future stdin. Range syntax is validated before acquisition; no endpoint cap or locale-dependent digit parsing is appropriate. This seam does not authorize delivering ranges or stdin ahead of their separately selected scope.
+A CLI-only selection stage sits between complete decoding/BOM normalization and counting. It identifies only CRLF, CR and LF logical lines, preserves selected contents and terminators, and never applies BOM stripping again to a slice. Source-independent decoded-text processing supports named files and future stdin. Range syntax is validated before acquisition, including repetition and positive ordered ASCII decimals without an endpoint cap or interpreter conversion limit. Named-file acquisition exposes complete decoded text privately, while count_file retains its whole-input contract. The command selects normalized logical lines and counts the slice with BOM stripping disabled. Stdin acquisition remains a separate delivery; stdin ranges are unsupported.
 
 See [DECOMPOSITION.md](DECOMPOSITION.md) for component seams and [SPEC.md](SPEC.md) for observable contracts.
