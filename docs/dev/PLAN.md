@@ -1,6 +1,6 @@
 # TextStats delivery plan
 
-Deliver the complete [SPEC.md](SPEC.md) through a useful named-file MVP, reliable/documented release, then format and source extensions. [layout.md](layout.md) assigns physical ownership; TASKS derives executable units. No product capability is implemented by this preparation.
+Deliver the complete [SPEC.md](SPEC.md) through a useful named-file MVP, reliable/documented release, then format and source extensions. [layout.md](layout.md) assigns physical ownership; TASKS derives executable units.
 
 ## Phase 1 — Named-file utility
 
@@ -38,6 +38,20 @@ Exit: actual module subprocess accepts piped UTF-8 bytes independent of locale, 
 
 Dedicated single phase code review/testing/report outcome after both delivery milestones complete/close. Exit: complete main SPEC acceptance, cross-format/source/BOM regressions, nonempty suites, runnable documentation and extracted-source distribution checks pass; blockers repaired; prior findings retained; phase report and final implementation report aggregate unresolved admissible TODOs and resolution references. Explicit verified phase integration and publication conclude the authorized full implementation when separately requested.
 
+### Milestone 2.4 — Named-file line ranges
+
+Prerequisite: completed/published JSON milestone2.1/T-012 at the pinned paused baseline, current main SPEC/design QC and separately authorized implementation. No prerequisite on unfinished stdin or main final review; whole-input named-file text/JSON already works. Delivery retains the useful baseline while introducing a source-independent normalization/selection seam, then composing command validation/acquisition/rendering into a named-file slice. Pure helper work is a bounded prerequisite to the earliest usable changed CLI path, not a released skeleton.
+
+Scope: S-8 and retained S-1–S-5/S-7 at named-file boundary. Deliver grammar/repetition checks before input acquisition, complete decode before range selection, one BOM policy, preserved terminators, unbounded decimals, text/JSON and BOM option composition, EOF behavior and API/lifecycle compatibility. Checks accompany each behavioral increment. Complete user documentation and extracted-source acceptance before the milestone exit.
+
+Exit: actual module invocation counts selected named-file lines in text/JSON with exact stdout/status/stderr; supplied examples, ASCII/leading-zero/huge decimal/rejected syntax, malformed bytes after END, BOM/EOF/terminator boundaries pass. Default CLI, whole-input API and file lifecycle/unchanged input regress successfully. Independent nonempty product suites and clean extracted-source range invocation pass; README/module examples run. Required final milestone code review, relevant testing, blocker repairs and committed/pushed report establish all exits. Demonstrate 2:3, beyond-EOF and a rejected range without acquisition; this informs the human's continue/amend/simplify/stop decision about syntax and usefulness.
+
+### Milestone 2.5 — Range feature review
+
+Dedicated single feature-scoped phase review/testing/report outcome after delivery milestone2.4 completes/closes when tracking is active. Exit: cross-component range/API/BOM/format/decode/lifecycle/docs/distribution acceptance, prior finding disposition, blocker repair and committed/pushed feature phase report. Aggregate feature TODOs and final feature implementation report. This is not main milestone2.3/T-017 or a whole-project Phase2 completion claim.
+
+Range integration requires accepted main owners, unique task ownership and verified feature exits before an explicit merge into the paused phase target. Main stdin tasks remain incomplete. Full Phase 2 completion additionally requires 2.2/2.3; the scoped 2.5 review cannot complete Phase 2.
+
 ## Verification and sequencing
 
 Count product tests separately from workflow checks; zero-test discovery never passes. Unit evidence covers pure semantics and boundaries; integration evidence invokes actual module entry and public imports against real files/bytes. Distribution evidence runs extracted sources from an isolated working directory with no checkout-derived import path. Documentation examples are verified when delivered.
@@ -46,4 +60,4 @@ Use unittest discovery for each product suite. Required checks include API silen
 
 ## Scope and risk
 
-The two delivery milestones in each phase are intentionally cohesive: a small useful first outcome and a bounded retained-behavior extension/release outcome. The future range feature is separately requested and receives no main task allocation. Design preserves complete decoding and single BOM normalization before any future source-independent selection. Main API remains whole-input. Locale decoding, universal-newline translation, accidental second BOM stripping, borrowed-stream closure, checkout leakage into distribution checks and zero-test discovery are explicit verification risks. There are no unresolved material planning decisions.
+Phase 1 has two cohesive delivery milestones; Phase 2 has three delivery milestones (2.1, 2.2, 2.4), its main final review 2.3 and the scoped range review 2.5. Range delivery is independent of unfinished stdin; numeric milestone order does not impose a dependency. Design preserves complete decoding and single BOM normalization before source-independent selection. Main API remains whole-input. Locale decoding, universal-newline translation, accidental second BOM stripping, borrowed-stream closure, checkout leakage into distribution checks and zero-test discovery are explicit verification risks. There are no unresolved material planning decisions.

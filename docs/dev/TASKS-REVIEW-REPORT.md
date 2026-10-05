@@ -2,6 +2,10 @@
 
 ## Current gate
 
+State: Ready for current TASKS.md conformance. Owner: sdd-tasks, 2026-10-05. Revision 4 records current accepted owner identities, coverage and limits. Original gate observations are retained historical evidence. Implementation, hosted lifecycle and integration are separately assessed.
+
+## Retained original gate and identities (historical)
+
 State: Ready. Owner assessment: sdd-tasks, 2026-10-04. Reviewed root TASKS; no focused children or active feature task list. Current PLAN/SPEC/design identities and upstream reports were checked before derivation. No confirmed issue or material open decision remains. This prepares 17 unchecked executable tasks. The current metadata recheck below records separately authorized maintained hosted tracking; no task range is implemented and no production code is delivered.
 
 Reviewed and governing states:
@@ -44,3 +48,58 @@ No findings or correction cycle. Preparation stops with all tasks unchecked and 
 Owner assessment: sdd-tasks, 2026-10-04. No finding or correction to the accepted decomposition. The tracking workflow replaces the historical “No hosted objects are active” sentence with maintained mode and phase 1 context. Reviewed TASKS.md SHA-256: `1622d35a0bb4a61034e2b92fa52ed986f99cb54c96b49ff4087155af308df208`.
 
 Compared every phase, milestone and task entry against the initial reviewed source at `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`: hierarchy, scope, dependency, acceptance, prescribed checks and completion checkboxes are byte-for-byte unchanged. All other reviewed/governing inputs retain the hashes above. Counts, grouped PLAN/SPEC coverage and original no-finding assessment remain equivalent. Readiness: Ready for eligible phase 1 projection/implementation only when separately authorized; tracking metadata is not task completion. All 17 tasks remain unchecked. No product tests were run.
+
+## Revision 2 — Authorized range reconciliation recheck
+
+Transferred T-018–T-022 into Phase 2 once; retired independent source checklist in same change. Main IDs T-001–T-022 unique. Delivery task counts 1.1=3,1.2=3,2.1=2,2.2=3,2.4=3; excluded reviews T004/T008/T012/T016/T021 and final T009/T017/scoped T022. Retained two-task JSON outcome avoids trivial fragmentation; other groups have bounded seams, timely real command and docs/extraction acceptance. Dependencies preserve T012 baseline, no stdin dependency for ranges, and T017 requires main delivery completion including2.4. Checked historical review/parent claims explicitly retain reassessment pending. R1–R4 map T018–T022; all main routes remain covered. Four-space hierarchy, unique executable ownership, links and report lifecycle assessed. No completion inferred.
+
+Exact reviewed/governing SHA256:
+
+- TASKS.md: `558140529154e5ffdde1010b47a1dc6314be5cb286911cf6d81a9a5ae3512e62`
+- PLAN.md: `e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e`
+- PLAN-REVIEW-REPORT.md: `c816262a759b9c5e6701f939dd07053e181585d24a8115605c8f2594d24d62ca`
+- SPEC.md: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- layout.md: `ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d`
+- FEATURE-TASKS.md: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
+
+## Revision 3 — Accepted governing-owner incorporation recheck
+
+Owner assessment: sdd-tasks under sdd-integrate-feature correction ownership, 2026-10-05.
+
+T001–T022 unique, sole executable owner TASKS; FEATURE-TASKS pointer has zero checked executable tasks. Four-space hierarchy and stable dependency/report paths retained. Delivery counts1.1=3,1.2=3,2.1=2,2.2=3,2.4=3; excluded T004/T008/T009/T012/T016/T017/T021/T022. Two-task JSON group is bounded command+docs/extraction outcome, not trivial fragmentation. R1–R4/S8 map T018 helpers→T019 real command→T020 docs/extraction→T021/T022 review. All main contracts retain delivery routes. Progress entries are evidence, not conformance proof; T013–T017 and Phase2 remain unchecked. No scope/dependency changes in task delivery, no confirmed unresolved finding.
+
+Exact reviewed/governing SHA256:
+
+- `PROJECT.md`: `289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988`
+- `ARCHITECTURE.md`: `4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a`
+- `DECOMPOSITION.md`: `bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15`
+- `SPEC.md`: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- `PLAN.md`: `e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e`
+- `layout.md`: `abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32`
+- `TASKS.md`: `a513c7c51ce1a1f125f1fb737537381dbcc907f328b58b1026cced7f7d9a1dde`
+- `FEATURE-SPEC.md`: `e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed`
+- `FEATURE-PLAN.md`: `fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c`
+- `FEATURE-TASKS.md`: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
+
+Whitespace/local-link checks and complete selected-root consistency review passed. Original observations and identities retained above. Gate: Ready for current selected conformance; implementation/hosted closure/archive/merge remain separately assessed.
+
+Upstream gate identities at this recheck:
+
+- `SPEC-REVIEW-REPORT.md`: `acea3e8790c31bc3906af83039c4d68c1d1a114a3c2cbe8361fc886da0711cde`
+- `PLAN-REVIEW-REPORT.md`: `8b830a449363331db4931aa2684586b0caaeec28f3bf23263e301155a04403fe`
+
+## Revision 4 — Final range incorporation and archive conformance
+
+Selected complete main owner reassessment, 2026-10-05. Accepted contract/design scope unchanged; PLAN2.4 now refers to canonical S8/main QC, and TASKS references S8/main readiness with sole T018–T022 ownership. Historical feature sources and adjacent reports moved together into features/002_ea97182, with local links repaired; main roots are standalone intended descriptions. TASKS status/reassessment changes have implementation evidence in T021/T022 reports and do not alter task decomposition/dependencies. S1–S8 routes, delivery counts/rationale and boundary obligations from previous revisions remain applicable. Original findings/identities retained, no unresolved conformance finding. Main Phase2/stdin/final review remain incomplete.
+
+Exact current reviewed/governing SHA256:
+
+- `PROJECT.md`: `289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988`
+- `ARCHITECTURE.md`: `4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a`
+- `DECOMPOSITION.md`: `bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15`
+- `SPEC.md`: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- `PLAN.md`: `e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629`
+- `layout.md`: `abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32`
+- `TASKS.md`: `88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de`
+
+Full selected-root consistency, main/archive links, unique task ownership and whitespace checks passed. Gate: Ready for current main conformance; historical archived Ready does not govern dependent use. Feature implementation and published integration are assessed separately.

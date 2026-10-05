@@ -1,0 +1,11 @@
+# Named-file range implementation result
+
+Feature002_ea97182, T-018–T-022. Named-file `--lines START:END`/`--lines=START:END` selects inclusive logical lines in text or JSON, with unbounded positive ASCII endpoints, pre-acquisition syntax/repetition validation, full strict UTF-8 decoding, one BOM policy and preserved contents/terminators. Public APIs remain whole-input; no stdin or public range API is delivered.
+
+Task commits: T018905d7a851124235db27f4f5a553ee39729957a44; T0199ade315a9f6ded1fade6f457a504f5e07e58fba5; T020749a89844249d3b1c5ebb04c459d7e66bcb3ed2e; T0213f93cd40d90001ee7e4f54b36c764d1d5067b72e. T022 status/report/archive publication concludes this feature branch; Git identifies its commit by task ID. Separate feature and merged-state acceptance/publication are recorded in the phase report and explicit merge commit.
+
+[Milestone2.4](2.4.md) and [feature phase review](PHASE-REPORT.md) establish code review, independent unit21/integration13, examples, error/lifecycle/API regressions and isolated extracted-source acceptance. Main governing owners/QC and unique TASKS ownership are reconciled; historical sources/adjacent reports are retained here. Prior TASK-QC-1 is resolved in archived FEATURE-TASKS-REVIEW-REPORT Revision1. No unresolved implementation findings or deferred TODOs exist; TODO: None. No full-project implementation report is claimed.
+
+Initial hosted closure18 returned an unknown preHTTP exit2; scoped assisted same-adapter recovery and consumer readback confirmed completion, preserving the diagnostic limitation without inferring platform rejection. A later readonly19 transport failure was resolved by connector readback after successful adapter closure. Other writes remain through the established protected adapter; no credential/helper inspection or denied-write transport bypass.
+
+Integration target is paused phase/2-output-and-source-extensions at ea97182d2d6a3984599238312a13e78d54d3221a. Main59debb649545125dd3aa00377ea115451b594271 remains unchanged. Stop after verified explicit feature→phase2 merge publication, retaining incomplete stdin2.2/main review2.3/T013–T017 and Phase2 status. Unrelated untracked sample remains excluded and unchanged.

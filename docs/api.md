@@ -36,3 +36,5 @@ with TemporaryDirectory() as directory:
 ```
 
 See [module usage](module.md) for CLI diagnostics and process statuses.
+
+Named-file CLI `--lines` selection does not change these whole-input API signatures or semantics. No range API is exported.

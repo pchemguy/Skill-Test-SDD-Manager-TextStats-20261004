@@ -77,10 +77,51 @@ class SourceDistributionTests(unittest.TestCase):
                         self.assertEqual(json.loads(json_run.stdout), expected_counts)
                         self.assertTrue(all(type(v) is int for v in json.loads(json_run.stdout).values()))
                         self.assertEqual(path.read_bytes(), data)
+            path.write_bytes("\ufeffalpha beta\r\nbeta\n\ufefflast two".encode())
+            original = path.read_bytes()
+            for options, expected in [
+                (("--lines", "2:3"), "lines=2 words=3\n"),
+                (("--lines=4:99",), "lines=0 words=0\n"),
+                (("--lines=1:1",), "lines=1 words=2\n"),
+                (("--keep-bom", "--lines=1:1"), "lines=1 words=2\n"),
+            ]:
+                run = invoke(*options, "sample.txt")
+                self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, ""))
+                counts = dict((k, int(v)) for k, v in (part.split("=") for part in expected.split()))
+                for json_options in (("--json", *options), (*options, "--json")):
+                    run = invoke(*json_options, "sample.txt")
+                    self.assertEqual((run.returncode, run.stderr), (0, ""))
+                    self.assertEqual(json.loads(run.stdout), counts)
+                self.assertEqual(path.read_bytes(), original)
+            path.write_bytes("\ufeff\n".encode())
+            for options, words in [(("--lines=1:1",), 0),
+                                   (("--lines", "1:1", "--keep-bom"), 1)]:
+                run = invoke("--json", *options, "sample.txt")
+                self.assertEqual((run.returncode, run.stderr), (0, ""))
+                self.assertEqual(json.loads(run.stdout), {"lines": 1, "words": words})
+            for arguments, status in [(("--lines=2:1", "sample.txt"), 2),
+                                      (("--lines=1:1", "--lines", "1:1", "sample.txt"), 2),
+                                      (("--lines=1:1", "missing.txt"), 1)]:
+                run = invoke(*arguments)
+                self.assertEqual((run.returncode, run.stdout), (status, ""))
+                self.assertTrue(run.stderr)
+                self.assertNotIn("Traceback", run.stderr)
+            path.write_bytes(b"valid\nlate\xff")
+            run = invoke("--json", "--lines=1:1", "sample.txt")
+            self.assertEqual((run.returncode, run.stdout), (1, ""))
+            self.assertIn("sample.txt", run.stderr)
+            self.assertNotIn("Traceback", run.stderr)
+            self.assertEqual(path.read_bytes(), b"valid\nlate\xff")
+            path.write_bytes(b"alpha\n")
+            dash = extracted / "-sample.txt"
+            dash.write_bytes(b"alpha\n")
+            run = invoke("--lines=1:1", "--", "-sample.txt")
+            self.assertEqual((run.returncode, run.stdout, run.stderr), (0, "lines=1 words=1\n", ""))
             help_run = invoke("--help")
             self.assertEqual((help_run.returncode, help_run.stderr), (0, ""))
             self.assertIn("--keep-bom", help_run.stdout)
             self.assertIn("--json", help_run.stdout)
+            self.assertIn("--lines", help_run.stdout)
             for arguments, status in [(("missing.txt",), 1), ((), 2),
                                       (("--jsn", "sample.txt"), 2)]:
                 run = invoke(*arguments)
