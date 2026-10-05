@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-10-05T03:05:00.340697+00:00",
+  "product_root": "/workspace/scratch/textstats-verification-worktree-20261005",
+  "baseline_root": "/workspace/scratch/textstats-verification-baseline-20261005",
+  "head": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "branch": "refs/heads/trial/a026-verification",
+  "parents": [
+    "fc3a0ec10728310988a7c29258b582096a53fe28"
+  ],
+  "status": "",
+  "baseline_head": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "baseline_status": "",
+  "index_export_sha256": "ec22e066f99e823045386bf6911c70bc1297ea770e2fc4aaaef0ce6952881106",
+  "pre_freeze_index_export_sha256": "ec22e066f99e823045386bf6911c70bc1297ea770e2fc4aaaef0ce6952881106",
+  "index_matches_pre_freeze": true,
+  "index_matches_baseline": true,
+  "tracked_file_count": 143,
+  "tracked_bytes_equal_commit_and_baseline": true,
+  "trial_ref": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "local_only": true,
+  "native_full_transcript_available": false,
+  "hard_filesystem_isolation": false,
+  "before_snapshot_limit": "Assessor independently observed clean status, exact HEAD/branch and index-export digest before freeze; no separately retained full dispatch-time file/index binary snapshot. Clean unchanged commit and matching tracked bytes/baseline support bounded endpoint preservation, not complete mutation-history audit."
+}

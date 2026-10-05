@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Direct read-only frozen core.ownership inspection, nonempty executable collection and no duplicate owner."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "execution_mode": "Direct local ownership check; assess CLI not completed because its repository discovery attempted prohibited hosted access. This record is not CLI success."
+}

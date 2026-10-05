@@ -1,0 +1,60 @@
+{
+  "observed_at": "2026-10-05T03:12:14.621106+00:00",
+  "head": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "staged_owned_files": [
+    {
+      "path": "README.md",
+      "worktree_sha256": "a5c9f62b1b167b651186e0c9422001143f9b4cb6aaa8f8435957e8512f6e001f",
+      "stage_sha256": "a5c9f62b1b167b651186e0c9422001143f9b4cb6aaa8f8435957e8512f6e001f",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/dev/TASKS.md",
+      "worktree_sha256": "c6af14e0a593c5504c206166d15d7a8ef1dbcc6936093ecaaf7cd6b2eb71a6fb",
+      "stage_sha256": "c6af14e0a593c5504c206166d15d7a8ef1dbcc6936093ecaaf7cd6b2eb71a6fb",
+      "mode": "0o644"
+    },
+    {
+      "path": "tests/__init__.py",
+      "worktree_sha256": "e544cfe8c5530d704938107569891066f706429ef68cb8a1b996f99768516faf",
+      "stage_sha256": "e544cfe8c5530d704938107569891066f706429ef68cb8a1b996f99768516faf",
+      "mode": "0o644"
+    },
+    {
+      "path": "tests/unit/__init__.py",
+      "worktree_sha256": "00e6f3ba6e15bda89b8cd58d2c4c81101464da0da5b860b0ac2a3df150fc2721",
+      "stage_sha256": "00e6f3ba6e15bda89b8cd58d2c4c81101464da0da5b860b0ac2a3df150fc2721",
+      "mode": "0o644"
+    },
+    {
+      "path": "tests/unit/test_core.py",
+      "worktree_sha256": "c926935a3a16f59222526e274d5152962270278e3da160978763c56630708f51",
+      "stage_sha256": "c926935a3a16f59222526e274d5152962270278e3da160978763c56630708f51",
+      "mode": "0o644"
+    },
+    {
+      "path": "textstats/__init__.py",
+      "worktree_sha256": "fc6bfaa1ad737c5abce51579f8d39482996c49130c0aae1e314fd39c53b0884d",
+      "stage_sha256": "fc6bfaa1ad737c5abce51579f8d39482996c49130c0aae1e314fd39c53b0884d",
+      "mode": "0o644"
+    },
+    {
+      "path": "textstats/core.py",
+      "worktree_sha256": "4ecb2fd92815f1f68257b9a340318a89acdbce0c02fd660b9dbbbfd5d0f50a8b",
+      "stage_sha256": "4ecb2fd92815f1f68257b9a340318a89acdbce0c02fd660b9dbbbfd5d0f50a8b",
+      "mode": "0o644"
+    }
+  ],
+  "native_control": {
+    "agent_interrupt": "Succeeded, previous running",
+    "parent_native_session": "Unknown process id73783",
+    "targeted_hook_cwd_probe": "Permission denied",
+    "targeted_unique_hook_signal": "ProcessLookupError3 due process namespace; no signal succeeded, no escalation"
+  },
+  "hold_marker": {
+    "pid": 6,
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "created_at": 1791169695.4925742
+  },
+  "pending_effect": "Commit remains held; no completion/release/push or nexttask. Fresh continuation must wait actual command termination and verify unchanged pending index."
+}

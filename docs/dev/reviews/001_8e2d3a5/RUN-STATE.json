@@ -2,16 +2,16 @@
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
   "phase": "P3",
-  "case_id": "A-008",
+  "case_id": "A-009",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A-008 feature preparation independently Passed with disclosed checker/schema assistance",
+  "last_completed_action": "A-008 assessed/published; A-015 actual staged-work interrupted with exact exports; A-026 assessed Blocked",
   "pending_operation": {
     "kind": "checkpoint",
     "status": "in_progress",
-    "description": "Independent A-008 feature preparation assessment before dependent case"
+    "description": "Publish recovery exports before fresh A-015 continuation and selected A-009"
   },
-  "next_action": "Publish A-008 prerequisite then start selected SPEC incorporation; continue isolated staged-work trial",
+  "next_action": "Continue selected SPEC incorporation and fresh retained staged task after publication",
   "checkpoint_refs": {
     "product_branch": "feature/002_ea97182-line-ranges",
     "product_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c",
@@ -25,7 +25,7 @@
       "b398e258cefc03dbc47630b83967db961a376eae"
     ],
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "d06ab9edf475528817f4d25d367a262ec94da17a"
+    "evidence_commit": "20b27fa68805439a5f928bd7b4479c491b958f21"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -59,7 +59,7 @@
     "runs/A-008/1/independent-assessment/ASSESSMENT.json",
     "runs/A-015/1/independent-assessment/ASSESSMENT.json"
   ],
-  "updated_at": "2026-10-05T03:08:13.611589+00:00",
+  "updated_at": "2026-10-05T03:14:24.720295+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -89,6 +89,13 @@
       "status": "Passed",
       "assisted": true,
       "assessment_path": "runs/A-008/1/independent-assessment/ASSESSMENT.json"
+    },
+    {
+      "case_id": "A-026",
+      "attempt": 1,
+      "status": "Blocked",
+      "assessment_path": "runs/A-026/1/independent-assessment/ASSESSMENT.json",
+      "reason": "No actual pre-existing failing baseline; empty selection/no-mutation achieved separately; original helper hosted-read rejection retained"
     }
   ]
 }

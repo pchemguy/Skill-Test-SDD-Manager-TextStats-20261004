@@ -1,0 +1,35 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-005",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "merge_parents": [
+          "fc3a0ec10728310988a7c29258b582096a53fe28"
+        ]
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/1-named-file-utility",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "06c6f5dd82cbaad8d6588ff207af894885515031",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Existing local-only worktree /workspace/scratch/textstats-verification-worktree-20261005 on trial/a026-verification at actual milestone1.1 commit159c662e06405b1fbf696e8e9d9d5d47024187be, clean tracked/index/worktree at start. Pinned skills under textstats-run-resources/plugin/skills019eb354cf0921ebd6056e6579763ac33d0baec2. This is verification only: no source/task/status/branch/config/hosted mutation, no commit/push/integration or credential discovery; no clones or /pyenv execution/modification. Record results only in designated case evidence, preserve product state. Follow product AGENTS. Runtime commands must record actual interpreter and collection. Use only named case request and ordinary product skills/documents, not assessor/coordinator resources.",
+    "verification_commands": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -p acceptance_no_match_*.py -v; PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v; PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/integration -t . -v"
+  }
+}

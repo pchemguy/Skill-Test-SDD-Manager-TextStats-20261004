@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "case_id": "A-026",
+  "attempt": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "initial_outcome": "Blocked",
+  "eventual_outcome": "Blocked",
+  "assistance": "No consumer retry, fixes or coaching. Assessor deterministic helper execution stopped by automatic review; direct local ownership inspection completed separately.",
+  "checkpoint_refs": {
+    "product_branch": "trial/a026-verification",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "fork_origin": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "merge_parents": [
+      "fc3a0ec10728310988a7c29258b582096a53fe28"
+    ],
+    "publication": "local-only trial; no trial publication authorized"
+  },
+  "pinned_source": {
+    "commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+    "file_count": 111,
+    "fingerprint": "33d65ea05b3299f1c2348802f95d1767dbccd5f72f4537a8ced52eaa1608fafd",
+    "mismatches": []
+  },
+  "required_agent_checks": [
+    {
+      "criterion": "Actual zero-test command counts/omissions recorded and not accepted as verification.",
+      "status": "Achieved",
+      "evidence": "Consumer journal retains exact requested empty selection, exit 5, empty stdout and actual stderr Ran 0 tests / NO TESTS RAN. Result explicitly rejects acceptance and differentiates no assertion failure."
+    },
+    {
+      "criterion": "Separate independently executed baseline demonstrates claimed pre-existing failure. Verify does not edit source/task status to hide failures; command collection/provenance retained.",
+      "status": "Blocked",
+      "evidence": "Separate actual retained baseline at same 159c662 records zero selected tests exit 5, nonempty unit 14 exit 0 and integration 6 exit 0. Empty selection is not a failing assertion suite. No genuine pre-existing failure demonstrated; required variant cannot be manufactured or waived. Endpoint source/task/index preservation separately achieved."
+    },
+    {
+      "criterion": "Verification-only assesses separate code review/testing and required report/TODO evidence when available, without creating review tasks, repairing source, changing completion or closing hosted objects. Missing required evidence remains a reported gap.",
+      "status": "Achieved within supplied verification-only scope; broader boundary certification not demonstrated",
+      "evidence": "Consumer reads milestone 1.1 report as historical context and tests separately; explicitly limits new review/phase/distribution/hosted evidence. Existing committed milestone report distinguishes code review/tests and TODO None. No new task/report/source/completion changes observed. No new explicit milestone/phase review request supplied; no fresh full implementation review or hosted closure certification."
+    }
+  ],
+  "findings": [
+    "Actual named request executed with zero-test outcome and 20 nonempty tests recorded separately; consumer does not convert empty collection into success.",
+    "Assessor exact tracked-byte SHA256 comparison: every tracked file agrees with retained actual commit and separate baseline. Task owner snapshot is 17 IDs in docs/dev/TASKS.md; no duplicate active owner.",
+    "Pre-freeze independently observed HEAD/branch/clean state and index-export SHA256 agree with frozen endpoint. Trial ref remains actual fork origin; product state and pinned 111-file identity unchanged at endpoint.",
+    "No evidence of a consumer defect or confirmed pinned-plugin defect from this limited attempt. Missing required failure prerequisite is a coverage blocker, not failing product behavior."
+  ],
+  "coverage_limits": [
+    "Required pre-existing assertion-failure variant unavailable: overall A-026 remains Blocked even though other checks achieved.",
+    "No full native consumer transcript available; exact journals and independent endpoint observations are bounded evidence and cannot certify complete command/mutation history.",
+    "Broad filesystem exposure prevents hard consumer filesystem/context isolation certification; role separation alone does not prove strict access isolation.",
+    "No separately retained full dispatch-time binary index/files/ref snapshot. Assessor pre-freeze clean HEAD/index digest plus current commit/baseline comparisons support endpoint preservation only.",
+    "No Python 3.11, other platform, installed-client discovery/routing, hosted writes/readback, credential recovery, integration/publication or full product phase/distribution exits tested here.",
+    "Deterministic assess CLI not completed: automatic approval review rejected its implicit hosted repository read as unauthorized. Only direct local ownership contract inspection completed."
+  ],
+  "evidence": [
+    "REQUEST.md",
+    "RESOLVED.json",
+    "JOURNAL.md",
+    "CONSUMER-RESULT.md",
+    "BASELINE-COMMANDS.json",
+    "OBSERVATIONS.json",
+    "FILE-HASHES.json",
+    "INDEX-AFTER.txt",
+    "PINNED-SOURCE-IDENTITY.json",
+    "OWNERSHIP.json",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "HELPER-REJECTION.json",
+    "FROZEN-HARNESS-HASHES.json"
+  ],
+  "publication": "Pending coordinator publication; assessment is currently local."
+}

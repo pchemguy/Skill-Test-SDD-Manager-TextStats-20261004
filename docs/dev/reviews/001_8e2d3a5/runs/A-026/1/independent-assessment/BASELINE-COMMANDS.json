@@ -1,0 +1,58 @@
+{
+  "baseline": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "observed_at": "2026-10-05T02:54:36.723240+00:00",
+  "commands": [
+    {
+      "args": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/unit",
+        "-p",
+        "acceptance_no_match_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/textstats-verification-baseline-20261005",
+      "returncode": 5,
+      "stdout": "",
+      "stderr": "\n----------------------------------------------------------------------\nRan 0 tests in 0.000s\n\nNO TESTS RAN\n"
+    },
+    {
+      "args": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/unit",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/textstats-verification-baseline-20261005",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok\ntest_fields_are_immutable (tests.unit.test_core.StatisticsTests.test_fields_are_immutable) ... ok\ntest_negative_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected) ... ok\ntest_noninteger_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_noninteger_counts_are_rejected) ... ok\ntest_public_statistics_value (tests.unit.test_core.StatisticsTests.test_public_statistics_value) ... ok\ntest_zero_counts_are_valid (tests.unit.test_core.StatisticsTests.test_zero_counts_are_valid) ... ok\ntest_api_is_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_api_is_silent_and_input_unchanged) ... ok\ntest_count_text_is_public (tests.unit.test_core.TextCountingTests.test_count_text_is_public) ... ok\ntest_default_bom_policy_and_keyword_only_option (tests.unit.test_core.TextCountingTests.test_default_bom_policy_and_keyword_only_option) ... ok\ntest_only_one_initial_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_initial_bom_is_removed) ... ok\ntest_specification_samples (tests.unit.test_core.TextCountingTests.test_specification_samples) ... ok\ntest_terminator_boundaries (tests.unit.test_core.TextCountingTests.test_terminator_boundaries) ... ok\ntest_unicode_whitespace_is_not_a_line_terminator (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_is_not_a_line_terminator) ... ok\ntest_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.006s\n\nOK\n"
+    },
+    {
+      "args": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/integration",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/textstats-verification-baseline-20261005",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok\ntest_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok\ntest_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok\ntest_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok\ntest_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok\ntest_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.545s\n\nOK\n"
+    }
+  ],
+  "preexisting_failure_demonstrated": false
+}

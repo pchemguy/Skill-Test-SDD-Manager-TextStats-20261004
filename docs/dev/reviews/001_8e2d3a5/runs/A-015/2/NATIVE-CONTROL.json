@@ -1,0 +1,16 @@
+{
+  "native_session_id": 73783,
+  "tty": false,
+  "owner_context_write_stdin": "Ctrl-C through same native session",
+  "actual_result": {
+    "exit_code": 130,
+    "output": "",
+    "continuing_session": false
+  },
+  "observed_after": {
+    "head": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "index_lock_present": false,
+    "index_and_staged_diff_exactly_preserved": true
+  },
+  "parent_control_attempts": "Parent could not access agent session; /proc cwd denied and signal host-ID unavailable, retained in TRIGGER-RECOVERY.json. No escalation."
+}

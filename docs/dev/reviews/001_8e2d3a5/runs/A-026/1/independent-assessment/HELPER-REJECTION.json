@@ -1,0 +1,7 @@
+{
+  "status": "Blocked",
+  "action": "core.assessment ownership-only contract",
+  "reason": "Automatic approval review rejected hosted access attempted by repository discovery; verification request prohibits hosted access. No remote read retry or credentials operation. Local ownership inspected separately as unaffected work.",
+  "rejected_action_completed": false,
+  "exact_tool_rejection": "This action was rejected due to unacceptable risk.\nReason: The verification request explicitly prohibited hosted access, and the local-only command does not require a GitHub connection; this network access is therefore unauthorized despite no sensitive payload being evident.\nDo not bypass this rejection through a workaround or indirect execution. Continue with a safer alternative, or carry out checks to prove that the action is authorized or low risk before trying again. Complete unaffected work without asking for confirmation. Report anything that remains blocked, clarify why it was blocked by auto-review, inform the user of the risk and ask for approval."
+}
