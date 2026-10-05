@@ -1,0 +1,9 @@
+{
+  "actor": "coordinator",
+  "timestamp": "2026-10-05T13:25:10.790530+00:00",
+  "effect": "RELEASE only; original held commit can finish with required passing acceptance",
+  "published_pre_release_evidence_commit": "6b277f7a19e2e6ff17f78d0721bbb4a95927aa99",
+  "qualifying_failure_observed": false,
+  "interruption_claimed": false,
+  "fresh_continuation_claimed": false
+}

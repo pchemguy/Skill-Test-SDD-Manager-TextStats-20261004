@@ -239,8 +239,16 @@
       ]
     },
     "A-019": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-019/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+          "runtime_disposition": "Not run",
+          "reason": "The current assisted Passed A005 milestone checkpoint is usable but is an incomplete main phase. No authorized integration boundary at that exact checkpoint satisfies the pinned complete-phase integration gate; therefore the conflict/prospective-failure integration trial cannot lawfully start."
+        }
+      ]
     },
     "A-020": {
       "status": "Passed",
@@ -273,8 +281,16 @@
       "attempts": []
     },
     "A-023": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-023/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+          "runtime_disposition": "Not run",
+          "reason": "The assessed/published A003 actual tracked checkpoint is retained, but its hosted identities now belong to completed positive-campaign work. No safe isolated live provider namespace preserving the real project/task identities is demonstrated by the retained repository-scoped adapter or explicit facilities."
+        }
+      ]
     },
     "A-024": {
       "status": "Running",

@@ -1,0 +1,9 @@
+{
+  "actor": "coordinator",
+  "timestamp": "2026-10-05T13:23:58.447461+00:00",
+  "previous_mode": "unavailable-session",
+  "mode": "restored",
+  "credentials_changed": false,
+  "effect": "same bounded GET wrapper now delegates existing protected adapter; no native credential/session restoration claimed",
+  "published_original_evidence_commit": "e8463fb0c8ff998be58883424ffacddd6f80796c"
+}

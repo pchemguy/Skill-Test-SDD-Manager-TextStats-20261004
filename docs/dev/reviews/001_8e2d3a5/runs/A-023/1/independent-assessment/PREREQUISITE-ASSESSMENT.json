@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "attempt": 1,
+  "status": "Blocked",
+  "assessment_kind": "independent prerequisite and facility eligibility only",
+  "runtime_disposition": "Not run",
+  "agent_behavior_assessed": false,
+  "trigger_observed": false,
+  "assessed_at": "2026-10-05T13:23:43.347510+00:00",
+  "product_repository": "/workspace/scratch/textstats-live-20261004",
+  "pinned_plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "limitations": [
+    "Full native consumer transcript unavailable; this assessment does not infer runtime behavior from journals or static policy.",
+    "Hard filesystem isolation unavailable: shared broad filesystem exposes harness/assessor material; no strict isolation certification.",
+    "No consumer dispatched, provider write, conflict/test injection, clone/worktree setup, cleanup/reset, shared configuration/ref/source mutation or credential/helper-source inspection performed."
+  ],
+  "preservation": "Prescribed actual predecessor objects retained; trigger not run because eligibility is unavailable. Frozen package all111 files equal retained actual preparation-checkpoint bytes.",
+  "evidence_paths": [
+    "GIT-POLICY-EVIDENCE.json",
+    "PREREQUISITE-TASKS.md",
+    "PREREQUISITE-PUBLICATION.json",
+    "HOSTED-METADATA.json",
+    "HOSTED-ISSUES-RETRY.json"
+  ],
+  "case_id": "A-023",
+  "reason": "The assessed/published A003 actual tracked checkpoint is retained, but its hosted identities now belong to completed positive-campaign work. No safe isolated live provider namespace preserving the real project/task identities is demonstrated by the retained repository-scoped adapter or explicit facilities.",
+  "prerequisite": {
+    "case_id": "A-003",
+    "assessment": "runs/A-003/2/ASSESSMENT.json",
+    "status": "Passed",
+    "assisted": true,
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "product_branch": "phase/1-named-file-utility",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "assessment_published_bytes_verified": true
+  },
+  "findings": [
+    "Retained actual d009899 TASKS describes maintained designated repository, phase1 open projected T001\u2013T009 and milestones1.1\u20131.3; no implementation. Local Git fork can retain this historical local state, but does not fork GitHub provider objects.",
+    "Current protected GET readbacks independently confirm issues1\u20139 all closed/completed and milestones1\u20133 closed with0open and4/4/1closed constituent issues. Original phase1 and phase2 labels already exist.",
+    "First read-only issues list returned exit2/httpnull; separate retained retry returned200 with exact closed identities. This was a metadata read failure, not the A023 write/response-loss trigger.",
+    "Existing protected adapter is explicitly repository-scoped to the designated shared live repository. No advertised/observed disposable hosted namespace, alternate permitted actual destination with preserved identity bindings, snapshot/restore facility, or endpoint scoping for this case exists in the current handoff. Ordinary connector mutations are not hosted namespace isolation.",
+    "Pinned projection searches open and closed objects by exact stable task IDs, preserves parentage and reuses unique managed objects. Trial prefixes/new duplicate task markers would alter or collide with those identities, not isolate the same real backlog.",
+    "Reopening/editing closed original issues or milestones solely to recreate historical open A003 backlog would rewrite the maintained positive campaign without an accepted amendment invalidating acceptance. Already-closed matching states do not generate an actual closure request.",
+    "Required phase-projection variant also lacks eligible uncreated objects in the original phase1 namespace. Creating duplicates/future-phase objects or choosing later positive-phase work would bypass identity/phase gates or silently substitute the predecessor.",
+    "A transport wrapper capable of suppressing a response is insufficient without a safe actual isolated provider effect and exact live readback. A controlled local adapter/emulator cannot establish live GitHub success."
+  ],
+  "missing_facility": "Explicit safe isolated actual hosted namespace and response-loss/readback facility for task completion/backlog, eligible phase projection, and milestone closure while preserving established identities and positive objects.",
+  "next_permitted_action": "Keep A023 Blocked/Not run. Provision and independently validate a specifically authorized isolated live hosted setup with legitimate actual project identity binding before any variant; do not reopen/rewrite shared objects or fabricate provider success."
+}

@@ -226,3 +226,7 @@ This new explicit user statement resolved this operation review. It does not est
 ## Resume reconciliation 2026-10-05
 
 The explicit range tracking retry resolved the A010 hosting gate through the same protected adapter: two milestone and five issue creations returned201 and exact readbacks were verified. This does not erase the original two platform rejections or certify implementation. Fresh A010 attempt2 continues from89664adb. A021 remains Blocked for missing actual interruption trigger; selected incorporation itself passed independently. No frozen plugin modification is made.
+
+## Independent negative-case eligibility
+
+A019 is Blocked/Not run at its prescribed actual A005 assisted Passed milestone: phase1 is incomplete there and the pinned integration gate prevents a partial main-phase merge. A later completed A006 object was not substituted. The harness binding needs an eligible complete boundary in a separately accepted repair/new pin. A023 is Blocked/Not run: original A003 provider identities now belong to completed positive work, and no demonstrated safe isolated hosted namespace retains those exact identities for response-loss task/projection/milestone variants. No positive objects were reopened, duplicated or rewritten. These are prerequisite/facility coverage gaps, not observed plugin runtime failures.

@@ -1,0 +1,87 @@
+{
+  "observed_at": "2026-10-05T13:21:09.951187+00:00",
+  "objects": [
+    {
+      "args": [
+        "show",
+        "-s",
+        "--format=%H %P",
+        "159c662e06405b1fbf696e8e9d9d5d47024187be"
+      ],
+      "exit_code": 0,
+      "stdout": "159c662e06405b1fbf696e8e9d9d5d47024187be fc3a0ec10728310988a7c29258b582096a53fe28\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "show",
+        "-s",
+        "--format=%H %P",
+        "d009899e39790c39be32ae77e7fe8294bf60d04c"
+      ],
+      "exit_code": 0,
+      "stdout": "d009899e39790c39be32ae77e7fe8294bf60d04c 4c275cc46fc0163c9e1e50871d3cc33c4c38567e\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "show",
+        "-s",
+        "--format=%H %P",
+        "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+      ],
+      "exit_code": 0,
+      "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e d0087ff75e485cab832a28d6b501150eaf2ed249\n",
+      "stderr": ""
+    }
+  ],
+  "containment": [
+    {
+      "args": [
+        "merge-base",
+        "--is-ancestor",
+        "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "merge-base",
+        "--is-ancestor",
+        "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "refs": {
+    "args": [
+      "ls-remote",
+      "origin",
+      "refs/heads/main",
+      "refs/heads/phase/1-named-file-utility"
+    ],
+    "exit_code": 0,
+    "stdout": "59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\nb398e258cefc03dbc47630b83967db961a376eae\trefs/heads/phase/1-named-file-utility\n",
+    "stderr": ""
+  },
+  "policy_hashes": {
+    "skills/sdd-implement/SKILL.md": "ca32a423668d4749f0ec9c463f3ae597ba2e3def51eb3333912133f397e11df0",
+    "skills/sdd-manage/references/git-workflows.md": "2f712ad70cbfc187f91517d9d9a8799340439996850d5557bfa5c61de4ad8ac7",
+    "skills/sdd-manage/references/branch-management.md": "7f5fa93c685e8983efe72711f3ee6673dac6e9c6125406e23415a88e452dcb34",
+    "skills/sdd-conventions/references/backend-object-lifecycle.md": "8729f0f62f649509080018ebf43aa2f5e7f710939ed182494460c23a0d9a0685",
+    "skills/sdd-forge/references/github-projection.md": "7124759c2c3aa98d909d62b64db302d76d65ed35701ec22d47cc6a20a38d17a8",
+    "skills/sdd-forge/references/github-milestone-lifecycle.md": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0"
+  },
+  "frozen_package": {
+    "comparison_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "file_count": 111,
+    "all_equal": true,
+    "mismatches": []
+  }
+}
