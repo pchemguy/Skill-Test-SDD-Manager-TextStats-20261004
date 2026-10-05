@@ -2,7 +2,9 @@
 
 ## Current gate
 
-State: Ready. Owner assessment: sdd-specify, 2026-10-04. Root SPEC has no focused children. This is document/design conformance evidence, not product execution evidence. Governing input is the accepted preparation brief reflected in PROJECT, ARCHITECTURE and DECOMPOSITION.
+State: Ready for selected SPEC/design conformance only. Owner assessment: sdd-specify, 2026-10-05, under sdd-integrate-feature correction ownership. Reviewed complete SPEC S-1–S-8, no focused children, against accepted PROJECT/design and accepted FEATURE-SPEC. Exact current identities and checks are in Revision 1. This is document evidence; range implementation, downstream planning/task readiness and whole-project completion are not established. Affected downstream use is blocked until separately authorized reassessment; see Revision 1.
+
+## Original reviewed identities
 
 Reviewed and governing states:
 
@@ -24,3 +26,29 @@ Checks: compared the accepted brief with every S-1 through S-7 contract and desi
 | S-7 product exits | Verification/distribution component | Public docs, runnable README, nonempty separated suites and extracted-source entry specified |
 
 No findings. The future range contract is a source-independent design constraint, not an unrequested main delivery feature. Memory scaling is a documented scope tradeoff, not a claimed performance guarantee. No correction cycle occurred.
+
+## Revision 1 — Selected named-file range incorporation
+
+Scope: SPEC.md and this adjacent QC report only. Incorporation uses accepted FEATURE-SPEC R-1–R-4; all active feature sources and their reports remain in place. Existing review observations above are historical and retained.
+
+Exact reviewed/governing states (SHA-256):
+
+- SPEC.md: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`.
+- FEATURE-SPEC.md: `e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed`.
+- PROJECT.md: `85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24`.
+- ARCHITECTURE.md: `0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c`.
+- DECOMPOSITION.md: `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`.
+
+| Contract group | Accepted coverage / current result |
+| --- | --- |
+| S-1–S-3 | Immutable value, silent whole-input APIs, exact text/BOM semantics, complete strict UTF-8 decode and resource ownership unchanged |
+| S-4/S-5/S-8; R-1/R-3 | Command adapter owns one optional range, both spellings, unbounded positive ASCII decimals, repetition/invalid usage before acquisition, both renderers/BOM options, unchanged APIs/errors |
+| S-2/S-3/S-8; R-2 | Acquisition fully decodes before pure source-independent normalization/selection; preserved CRLF/CR/LF, EOF and exposed interior BOM have objective contracts |
+| S-6 | Borrowed binary stdin whole-input contract retained; named-file range acceptance makes no stdin range delivery claim |
+| S-7/S-8; R-4 | All supplied examples and edge/failure cases, runnable docs/help, independent nonempty product suites and extracted-source range invocation required |
+
+Assessment: accepted design already provides every structural owner/seam; PROJECT identifies ranges as separately requested rather than rejecting them. The selected request accepts their incorporation without moving them into the main delivery hierarchy. No design change or material unresolved behavioral decision is required. Read the full main root as a standalone intended contract, checked original S-1–S-7 preservation and R-1–R-4 coverage, format/error/lifecycle guarantees, absence of editing-history language, local links and objective acceptance. Removed the obsolete main range exclusion and integrated selection into S-4/S-5/S-7 plus canonical S-8. Editorial recheck removed implementation-stage language from the incorporated source prose. Whitespace, link, hash and selected-path checks passed; no product tests were run for this document-only checkpoint. No confirmed in-scope finding remains. SPEC gate: Ready.
+
+Outside selected scope: main PLAN excludes range allocation and PLAN-REVIEW-REPORT reviews the old SPEC; main TASKS/TASKS-REVIEW-REPORT consequently cannot establish complete expanded-main conformance. Their affected gates require authorized PLAN/TASKS reconciliation and owner rechecks before dependent execution/projection. FEATURE-SPEC's own R-1–R-4 content is unchanged, but its recorded main SPEC identity and feature PLAN/TASKS upstream equivalence need reassessment before dependent use; those reports are retained historical evidence, not a fresh gate for this main incorporation. Feature tasks T-018–T-022 remain the sole executable range owners, unchecked; no transfer or duplicate entry was made. Main T-013–T-017 remain incomplete. Existing checked tasks and milestone/phase evidence are preserved for their historical whole-input/JSON boundaries; expanded S-4/S-5/S-7 or whole-project acceptance claims (notably T-004/T-008/T-009/T-012 and their parents) need scope-aware reassessment in their owning lists/evidence before reuse as complete current acceptance. Those locations are outside scope, so no pending note or checkbox change is made here.
+
+The package README and feature PLAN/TASKS retain preparation-era incorporation boundary wording; their later continuation must account for this SPEC checkpoint and its QC without treating the entire package as incorporated. Active sources remain required by feature planning/tasks/links and unfinished implementation. Archival, task ownership transfer, hosted reparenting/projection and final feature-to-phase integration are deferred. This selected SPEC checkpoint may finish on the existing feature branch without claiming whole-project readiness or implementing ranges.
