@@ -22,5 +22,11 @@
     "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "destination_ref": "refs/heads/trial/a018-rejected-publication",
     "state": "actual rejection frozen; evidence publication pending before facility restoration/fresh continuation"
+  },
+  "a024": {
+    "variant": "denial",
+    "status": "original frozen and independently observed",
+    "pending": "publish before restore/freshcontinuation",
+    "qualification": "controlled pre-send metadata only; native protected credential handoff eligibility unavailable"
   }
 }
