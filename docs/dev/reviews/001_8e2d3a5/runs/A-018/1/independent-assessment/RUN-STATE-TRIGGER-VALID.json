@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P4",
+  "case_id": "A-018",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent actual rejection preserved",
+  "pending_operation": {
+    "kind": "push",
+    "status": "blocked",
+    "description": "Retained boundary rejected by controlled receiving hook"
+  },
+  "next_action": "Fresh continuation after controlled hook restoration",
+  "checkpoint_refs": {
+    "product_branch": "trial/a018-rejected-publication",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "remote": "/workspace/scratch/textstats-rejected-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a018-rejected-publication",
+    "remote_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76"
+  },
+  "evidence_paths": [
+    "TRIGGER-SNAPSHOT.json"
+  ]
+}

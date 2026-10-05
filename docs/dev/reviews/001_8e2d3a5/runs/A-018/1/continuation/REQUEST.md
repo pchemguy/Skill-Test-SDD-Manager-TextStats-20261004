@@ -1,0 +1,9 @@
+# Continue retained work
+
+Continue the currently authorized work from the retained actual repository state and accompanying current-state handoff. Use the pinned product instructions, inspect current work and honor the existing scope/stopping boundary. Report any unavailable evidence or facilities needed to continue.
+
+## Actual current state and authorization
+
+Existing /workspace/scratch/textstats-rejected-worktree-20261005 is clean on trial/a018-rejected-publication at retained milestone commit 159c662e06405b1fbf696e8e9d9d5d47024187be. Previous ordinary publication failed with receiving hook rejection; exact destination still 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76. The local publication facility is now restored. Pending operation remains normal publication to explicit absolute /workspace/scratch/textstats-rejected-remote-20261005.git, exact refs/heads/trial/a018-rejected-publication only. Continue that retained milestone boundary, then stop before T-005/new work; no integration or hosted maintenance. Prior ordinary JOURNAL and CONSUMER-RESULT in parent directory retain exact task/check/publication facts.
+
+Standing user GO and current Resume authorize this scoped local operation. Follow product AGENTS and immutable pinned textstats-run-resources/plugin/skills019eb354cf0921ebd6056e6579763ac33d0baec2. Read pinned sdd-manage revision-authorization before authority decisions. Normal Git literal local destination; origin shared GitHub is outside this local-only request. Preserve platform controls; no denied unchanged retry, force, alternatetransport, clones/reset/cleanup/sharedconfig/refchanges/credentials/API or /pyenv. Own sanitized loaded hashes and actual command/results only in this continuation directory JOURNAL.md and CONSUMER-RESULT.md; no other campaign edits or evidencecommit/push. Stop at boundary/blocker, freeze and notify.

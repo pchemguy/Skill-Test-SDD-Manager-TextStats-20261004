@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+    "--inputs",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/INPUTS.json",
+    "--run-state",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/RUN-STATE-TRIGGER.json",
+    "--contract",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-018.json",
+    "--output",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/ORIGINAL-HELPER-TRIGGER.json"
+  ],
+  "exit_code": 2,
+  "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"invalid_schema\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+  "stderr": ""
+}

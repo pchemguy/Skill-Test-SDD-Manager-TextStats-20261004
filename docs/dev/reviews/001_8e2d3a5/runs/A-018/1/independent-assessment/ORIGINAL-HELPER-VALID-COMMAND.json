@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+    "--inputs",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/INPUTS.json",
+    "--run-state",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/RUN-STATE-TRIGGER-VALID.json",
+    "--contract",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-018.json",
+    "--output",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/ORIGINAL-HELPER-TRIGGER-VALID.json"
+  ],
+  "exit_code": 2,
+  "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"repository_identity_mismatch\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+  "stderr": "",
+  "intervention": "Assessor first schema input had incorrect string pending_operation; retained and corrected to schema object in new artifact."
+}

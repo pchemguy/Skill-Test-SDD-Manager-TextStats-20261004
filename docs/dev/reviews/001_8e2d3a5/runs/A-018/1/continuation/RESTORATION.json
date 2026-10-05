@@ -1,0 +1,9 @@
+{
+  "actor": "coordinator",
+  "at": "2026-10-05T08:16:08.121307+00:00",
+  "actual_restore": "Renamed only exact bounded disposable update hook to update.rejected-fixture after original rejection freeze and independent trigger observation",
+  "original_hook_sha256": "e75bd289020356962c34ee81423b1a60a6a3aaea77ccbea3896211d5474a9f32",
+  "evidence_publication": "32bed851c73d48d5cd45b22d576b4f798fb527ea",
+  "product_or_ref_mutation": false,
+  "no_force": true
+}

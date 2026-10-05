@@ -1,0 +1,57 @@
+[
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/RUN-STATE-FINAL.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-018.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/ORIGINAL-HELPER-FINAL.json"
+    ],
+    "exit_code": 2,
+    "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"repository_identity_mismatch\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/local_url_assessment.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/RUN-STATE-FINAL.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-018.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/ADAPTED-HELPER-FINAL.json",
+      "--harness",
+      "/workspace/scratch/textstats-live-harness-20261004/harness"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"status\": \"Checks passed\", \"exit_code\": 0}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/local_url_assessment.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/WRONG-HEAD-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-018.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/SENSITIVITY-WRONG-HEAD.json",
+      "--harness",
+      "/workspace/scratch/textstats-live-harness-20261004/harness"
+    ],
+    "exit_code": 1,
+    "stdout": "{\"status\": \"Checks failed\", \"exit_code\": 1}\n",
+    "stderr": ""
+  }
+]

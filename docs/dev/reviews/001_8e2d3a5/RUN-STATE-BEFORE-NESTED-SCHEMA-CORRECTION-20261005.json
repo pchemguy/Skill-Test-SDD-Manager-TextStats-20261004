@@ -5,29 +5,23 @@
   "case_id": "A-010",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A018 fresh retained milestone publication independently Passed; A024 permission denial and restored exact readbacks independently observed",
+  "last_completed_action": "Published and read back A-016 final recovery evidence at dd0e7954ad15d336bdc9dc1b300e9ab7c8954753",
   "pending_operation": {
-    "kind": "api",
-    "status": "blocked",
-    "description": "A010 hosted range projection rejected twice by automatic review; no effects; independent local cases continue",
-    "identity": {
-      "repository": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
-      "branch": "feature/002_ea97182-line-ranges",
-      "commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
-      "endpoint": "POST /repos/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestones"
-    }
+    "kind": "task",
+    "status": "in_progress",
+    "description": "Fresh A-010 range feature delivery and selected incorporation"
   },
-  "next_action": "Finish independent local A021/A024 scopes; retain A010 until supported trusted authorization resolves exact rejected hosting payload",
+  "next_action": "Independent starting observation, then consumer execution and final assessment",
   "checkpoint_refs": {
     "product_branch": "feature/002_ea97182-line-ranges",
-    "product_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "product_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247",
     "integration_branch": "phase/2-output-and-source-extensions",
     "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
     "remote": "origin",
     "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
-    "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "remote_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "4c43f4449f1487bbd76e77e16162e1c17c7b3118"
+    "evidence_commit": "dd0e7954ad15d336bdc9dc1b300e9ab7c8954753"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -69,7 +63,7 @@
     "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json",
     "runs/A-010/1/REQUEST.md"
   ],
-  "updated_at": "2026-10-05T08:28:23.545824+00:00",
+  "updated_at": "2026-10-05T08:06:21.626274+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -125,19 +119,11 @@
       "case_id": "A-016",
       "attempt": 1,
       "status": "Passed",
-      "assessment_path": "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json",
+      "assessment_path": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
       "assisted": true,
       "first_attempt_status": "Blocked",
-      "reason": "Fresh local publication recovery independently assessed; original Blocked stop retained"
-    },
-    {
-      "case_id": "A-018",
-      "attempt": 1,
-      "status": "Passed",
-      "assisted": true,
-      "first_attempt_status": "Blocked",
-      "assessment_path": "runs/A-018/1/independent-assessment/ASSESSMENT.json",
-      "reason": "Genuine rejecting hook and fresh same-commit local publication recovery independently verified"
+      "reason": "Fresh local publication recovery independently assessed; original Blocked stop retained",
+      "current_assessment": "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json"
     }
   ]
 }

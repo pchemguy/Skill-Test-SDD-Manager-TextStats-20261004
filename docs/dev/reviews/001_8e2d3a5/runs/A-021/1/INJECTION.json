@@ -1,0 +1,12 @@
+{
+  "actor": "coordinator",
+  "actual_prerequisite": "A008 Passed published preparation5b61f65",
+  "worktree": "/workspace/scratch/textstats-transfer-worktree-20261005",
+  "branch": "trial/a021-dirty-transfer",
+  "head": "5b61f65bdbc1418a289633eb15b53ac190d68b2c",
+  "local_destination": "/workspace/scratch/textstats-transfer-remote-20261005.git",
+  "bounded_facility": "Command-local hooksPath via prescribed PATH Gitshim; first precommit holds after consumer edits/stages, no product change supplied by fixture. Trigger qualifies only if selected edit/move actual and another selected transfer pending.",
+  "hook_sha256": "b3cb45d6a4ab568dc3eb2436ed0172f6700dc3c95e8b8e35328fcbcef5940f74",
+  "shim_sha256": "5d3219974e9f0f52c0bf9d5c8ef999b0d154996dce4b7140bf7ad7e3b11b3639",
+  "restoration": "After actual trigger+owner-session cancellation+independent index/workfile export, create only RELEASE to restore future operations."
+}

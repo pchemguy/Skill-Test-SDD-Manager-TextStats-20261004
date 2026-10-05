@@ -203,13 +203,17 @@
       "attempts": []
     },
     "A-018": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
+          "status": "Passed",
           "request": "runs/A-018/1/REQUEST.md",
-          "scope": "disposable local-only rejected publication"
+          "scope": "disposable local-only rejected publication",
+          "initial_status": "Blocked",
+          "assisted": true,
+          "current_assessment": "runs/A-018/1/independent-assessment/ASSESSMENT.json",
+          "initial_assessment": "runs/A-018/1/rejected-attempt-assessment/ORIGINAL-ATTEMPT-ASSESSMENT.json"
         }
       ]
     },
@@ -231,8 +235,15 @@
       ]
     },
     "A-021": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "request": "runs/A-021/1/REQUEST.md",
+          "scope": "isolated local selected incorporation"
+        }
+      ]
     },
     "A-022": {
       "status": "Pending",

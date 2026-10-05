@@ -1,0 +1,112 @@
+{
+  "variant": "denial",
+  "continuation_outcome": "Supported bounded readback Passed after disclosed MODE restoration",
+  "independent_actual_readbacks": [
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-access-tools-20261005/tracking-access.py",
+        "GET",
+        "issues/4"
+      ],
+      "exit": 0,
+      "result": {
+        "transport": "curl",
+        "http_status": 200,
+        "result": {
+          "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/4",
+          "id": 5700124593,
+          "number": 4,
+          "title": "[T-004] Review, test and report milestone 1.1",
+          "state": "closed",
+          "state_reason": "completed"
+        }
+      },
+      "stderr_empty": true
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-access-tools-20261005/tracking-access.py",
+        "GET",
+        "milestones/1"
+      ],
+      "exit": 0,
+      "result": {
+        "transport": "curl",
+        "http_status": 200,
+        "result": {
+          "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/1",
+          "id": 18303256,
+          "number": 1,
+          "title": "sdd-1.1-Named-file-counting-MVP",
+          "open_issues": 0,
+          "closed_issues": 4,
+          "state": "closed"
+        }
+      },
+      "stderr_empty": true
+    }
+  ],
+  "head": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "clean": true,
+  "index_equal_start": true,
+  "tracked_hashes_equal_start": true,
+  "loaded_hashes_equal_start": true,
+  "events": [
+    {
+      "timestamp": "2026-10-05T08:16:40.990617+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "denial",
+      "sent": false,
+      "http_status": 403,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:24:14.597948+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:24:30.315616+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:26:35.565687+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T08:26:43.706132+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    }
+  ],
+  "consumer_artifact_hashes": {
+    "REQUEST.md": "e5ad4e1a62d2d6d0cc6d857c7f7b666709cb690e64568b47a343211ea269a27f",
+    "JOURNAL.md": "426371bf881c972a7da25700d0220e4c3b5bdb4dd5e0a4bd802a4cb1d491385a",
+    "CONSUMER-RESULT.md": "82dc329df9df61fc03db360476b94e5cb1323459251b2d33c44c17e1c87e1051"
+  },
+  "limits": [
+    "Original provider/session internals uninspected; safe wrapper delegation observed, not native credential handoff/eligible store verification.",
+    "Read-only metadata operation; no product/Git/API recovery mutation tested."
+  ]
+}
