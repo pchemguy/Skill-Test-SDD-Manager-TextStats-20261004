@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": "2026-10-05T08:16:40.990617+00:00",
+    "method": "GET",
+    "resource": "issues/4",
+    "mode": "denial",
+    "sent": false,
+    "http_status": 403,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T08:24:14.597948+00:00",
+    "method": "GET",
+    "resource": "issues/4",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T08:24:30.315616+00:00",
+    "method": "GET",
+    "resource": "milestones/1",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T08:26:35.565687+00:00",
+    "method": "GET",
+    "resource": "issues/4",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T08:26:43.706132+00:00",
+    "method": "GET",
+    "resource": "milestones/1",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T08:30:02.629571+00:00",
+    "method": "GET",
+    "resource": "issues/4",
+    "mode": "rate-limit",
+    "sent": false,
+    "http_status": 429,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T08:36:02.180609+00:00",
+    "method": "GET",
+    "resource": "issues/4",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T08:36:16.728931+00:00",
+    "method": "GET",
+    "resource": "milestones/1",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T13:12:57.348940+00:00",
+    "method": "GET",
+    "resource": "issues/4",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  },
+  {
+    "timestamp": "2026-10-05T13:13:04.146286+00:00",
+    "method": "GET",
+    "resource": "milestones/1",
+    "mode": "restored",
+    "sent": true,
+    "http_status": 200,
+    "exit_status": 0
+  }
+]
