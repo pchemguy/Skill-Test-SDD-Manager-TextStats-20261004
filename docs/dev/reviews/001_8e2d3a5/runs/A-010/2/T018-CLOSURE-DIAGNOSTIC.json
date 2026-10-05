@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-05T13:22:59.410230+00:00",
+  "actor": "coordinator bounded same-adapter diagnostic completion",
+  "human_authority": "Established full campaign GO and current Resume for same designated repository and prescribed task completion; scoped credential grant reused",
+  "context": "Published905d7a, 19unit/11integration pass, evidence comment5995267730; originalunknownpreHTTPerror retained; exact GET showedissue18open before this diagnostic request",
+  "command": [
+    "python",
+    "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+    "PATCH",
+    "issues/18",
+    "/tmp/a010-t018-closure-context.json"
+  ],
+  "payload_sha256": "6ddce1bc3948c912def56f7695e3c9f7eb6b2faa5f9447fbe8c2428e5d07db91",
+  "exit_code": 0,
+  "http_status": 200,
+  "envelope_keys": [
+    "http_status",
+    "result",
+    "transport"
+  ],
+  "metadata": {
+    "id": 5709579322,
+    "number": 18,
+    "state": "closed",
+    "state_reason": "completed"
+  },
+  "error_classification": {},
+  "safe_result_error": {},
+  "stderr_last_line": null,
+  "raw_stdout_sha256": "f0b5f650d07ef8b9f112a71cc77089479f4f24889a2704ca1017fee72b5a5b0a",
+  "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

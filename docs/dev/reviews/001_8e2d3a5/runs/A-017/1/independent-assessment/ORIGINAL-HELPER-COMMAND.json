@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+    "--inputs",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-017/1/independent-assessment/INPUTS.json",
+    "--run-state",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-017/1/independent-assessment/RUN-STATE.json",
+    "--contract",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-017.json",
+    "--output",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-017/1/independent-assessment/ORIGINAL-HELPER.json"
+  ],
+  "returncode": 2,
+  "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"repository_identity_mismatch\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+  "stderr": ""
+}

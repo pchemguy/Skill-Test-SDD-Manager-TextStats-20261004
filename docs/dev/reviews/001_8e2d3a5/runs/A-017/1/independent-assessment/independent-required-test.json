@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-05T13:21:18.613221+00:00",
+  "target": "/workspace/scratch/textstats-required-check-worktree-20261005/tests/unit/test_required_acceptance_a017.py",
+  "test_sha256": "de03b420289b565e60210a2be4ff58e4c133f3e668fdec7724edc56915d257dc",
+  "argv": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/unit",
+    "-p",
+    "test_required_acceptance_a017.py",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/textstats-required-check-worktree-20261005",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_required_literals_and_silence (test_required_acceptance_a017.RequiredT001Acceptance.test_required_literals_and_silence) ... ok\ntest_required_nonnegative_immutable_value (test_required_acceptance_a017.RequiredT001Acceptance.test_required_nonnegative_immutable_value) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK\n",
+  "post_status": "? tests/\n? textstats/\n"
+}

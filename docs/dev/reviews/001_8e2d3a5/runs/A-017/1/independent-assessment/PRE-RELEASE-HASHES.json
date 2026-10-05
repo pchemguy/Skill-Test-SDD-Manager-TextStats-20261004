@@ -1,0 +1,16 @@
+{
+  "RUN-STATE.json": "75f47a8a22a5096ca7880724917e197894aac6c2c4d67094635c0cbce3e51606",
+  "INPUTS.json": "d4314cc0f27e379e0d134fccce4e11c8ba2efa96bd886c200d73981ad6e10d73",
+  "COMMIT-HOLD-OBSERVATIONS.json": "bd5e5e9dfc9a97e55c3f6908ac7df9417d558cc20ddcbedffb2350e85aedfd84",
+  "independent-required-test.json": "87af58d98907250c6ad0836a543e97a7632318047672e3993166a9c202885fdf",
+  "ORIGINAL-HELPER-COMMAND.json": "a240ae7c4e6a5242242b2d5aa7759b3370af3d3815f7876ff6a872984035a82d",
+  "ASSESSMENT.md": "3ade52954e72bdd5ed9d1a918d6183694754bac40bfe7b1030050c50180fcfc1",
+  "required-test-source.py": "de03b420289b565e60210a2be4ff58e4c133f3e668fdec7724edc56915d257dc",
+  "ADAPTED-HELPER.json": "b0c4540b3b81cad3241d2df588ae6b5df65220e083d737e7ef7500eb51a9db77",
+  "first-owned-edit.json": "7832464a8e4f6315c63775b61d241b6189efe568a02d56f87ebb14b8d3c949aa",
+  "ASSESSMENT.json": "2da0834f75ac11bbe7dbc2164e79d7fedf94d1352aeb2660665cecc2c1286eee",
+  "required-test-provenance.md": "9f8889146ae911ac464771ee9149e779d4641da28e25528c5a9ccd25f3c434cf",
+  "baseline.json": "6519b72e96cbed6afc6d592989b54c96020496fce59ba442bec1c8dc3eb5a5ed",
+  "pre-injection.json": "3bd379a56f9d3ab200a85aedc443c008a94af27eced1cabd4069f94814f7bfd0",
+  "TRIGGER-ASSESSMENT.json": "f2b0865240afc4cf142db91876be80ed0b4c0c8dd114f084b616239f4da62c61"
+}
