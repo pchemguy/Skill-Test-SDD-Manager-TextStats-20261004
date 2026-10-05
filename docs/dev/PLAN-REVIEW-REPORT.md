@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready for current PLAN.md conformance. Owner: sdd-plan, 2026-10-05. Revision 3 records current accepted owner identities, coverage and limits. Original gate observations are retained historical evidence. Implementation, hosted lifecycle and integration are separately assessed.
+State: Ready for current text-only PLAN conformance. Owner: sdd-plan, 2026-10-05. Revision 4 records the removal amendment; historical evidence retained.
 
 ## Retained original gate and identities (historical)
 
@@ -89,3 +89,17 @@ Exact current reviewed/governing SHA256:
 - `TASKS.md`: `88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de`
 
 Full selected-root consistency, main/archive links, unique task ownership and whitespace checks passed. Gate: Ready for current main conformance; historical archived Ready does not govern dependent use. Feature implementation and published integration are assessed separately.
+
+## Revision 4 — JSON removal focused owner recheck
+
+Reviewed current roots directly against the selected human JSON-removal objective and retained counting/BOM/API/range/source boundaries. No focused children changed. Exact SHA256 identities:
+
+- PROJECT.md: `23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527`
+- ARCHITECTURE.md: `d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa`
+- DECOMPOSITION.md: `c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c`
+- SPEC.md: `2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3`
+- PLAN.md: `58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f`
+- TASKS.md: `537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47`
+- layout.md: `815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c`
+
+Coverage: S-1–S-4/S-7 through historical phase1 with amendment regression; S-5 retirement through this amendment; S-6/final S-7 through pending 2.2/2.3; S-8 through retained 2.4/2.5 reassessment. Layout owners unchanged. Phase1 retains two delivery milestones (cohesive MVP then failures/docs/distribution), excluding review1.3. Phase2 has two current delivery milestones2.2/2.4 plus retired2.1, excluding reviews2.3/2.5. The small count is justified by independent stdin and named-file selection outcomes; no quota padding or deferred usable path. Historical T-012 baseline dependencies remain explicit. No confirmed omission/overload; Ready for selected conformance.

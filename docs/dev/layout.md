@@ -14,7 +14,7 @@ This maps intended [DECOMPOSITION.md](DECOMPOSITION.md) responsibilities. README
 | tests/integration/test_*.py | Nonempty actual API/file/module subprocess and distribution coverage |
 | tests/workflows/ | Separate workflow fixtures; excluded from product acceptance counts |
 | docs/api.md | Public API signatures, exceptions, lifecycle and usage |
-| docs/module.md | Module CLI formats, option/source semantics and statuses |
+| docs/module.md | Module CLI text output, option/source semantics and statuses |
 | README.md | Preserve existing focus and SDD links; add runnable delivered product examples |
 | docs/dev/ | Governing product documents and adjacent preparation QC reports |
 | docs/dev/reports/phases/<id>/ | Later milestone and phase implementation review reports |
