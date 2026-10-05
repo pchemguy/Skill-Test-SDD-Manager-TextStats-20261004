@@ -4,6 +4,20 @@
 
 State: Ready for current PLAN.md conformance. Owner: sdd-plan, 2026-10-05. Revision 1 records current identities, coverage and limits. No confirmed unresolved preparation issue. Implementation completion is not established.
 
+## Retained original gate and identities (historical)
+
+State: Ready. Owner assessment: sdd-plan, 2026-10-04. Reviewed PLAN and layout; no focused children. SPEC/design readiness was checked against unchanged exact governing states. This review is document evidence; no product test was run and no implementation is claimed. TASKS derivation may proceed. No blockers or material open decisions.
+
+Reviewed and governing states:
+
+- PLAN.md: SHA-256 `8ff3ef53f126a79987490f28ad2f554842630c096c13f441111b55d796279bb8`.
+- layout.md: SHA-256 `ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d`.
+- SPEC.md: SHA-256 `8cfd533f70463882dac3acf12930f17e22f5cd0d57266815fad02aae977c77eb`.
+- SPEC-REVIEW-REPORT.md: SHA-256 `e4522d4a6d566d3dd6c7b208930547f152229ca3dd9a04028ce136a937a0df68`.
+- PROJECT.md: SHA-256 `85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24`.
+- ARCHITECTURE.md: SHA-256 `0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c`.
+- DECOMPOSITION.md: SHA-256 `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`.
+
 ## Initial review
 
 Compared every significant S-1 through S-7 contract with capability/exits, checked the earliest meaningful end-to-end named-file outcome, prerequisites, retained behavior, resource/error paths, documentation/distribution, code review/testing/report outcomes and component-to-path allocation. Layout was checked against existing repository ownership and design dependency direction.

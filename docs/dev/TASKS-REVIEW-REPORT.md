@@ -4,6 +4,22 @@
 
 State: Ready for current TASKS.md conformance. Owner: sdd-tasks, 2026-10-05. Revision 2 records current identities, coverage and limits. No confirmed unresolved preparation issue. Implementation completion is not established.
 
+## Retained original gate and identities (historical)
+
+State: Ready. Owner assessment: sdd-tasks, 2026-10-04. Reviewed root TASKS; no focused children or active feature task list. Current PLAN/SPEC/design identities and upstream reports were checked before derivation. No confirmed issue or material open decision remains. This prepares 17 unchecked executable tasks. The current metadata recheck below records separately authorized maintained hosted tracking; no task range is implemented and no production code is delivered.
+
+Reviewed and governing states:
+
+- TASKS.md: SHA-256 `2e0af38698b5edf3911265da98815790143e2e5c1500b3bc04148ead2b9a8454`.
+- PLAN.md: SHA-256 `8ff3ef53f126a79987490f28ad2f554842630c096c13f441111b55d796279bb8`.
+- layout.md: SHA-256 `ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d`.
+- PLAN-REVIEW-REPORT.md: SHA-256 `01f3041e8ccd688060ff51e0c7dd825475d44dfbcca73c31910bab038e231591`.
+- SPEC.md: SHA-256 `8cfd533f70463882dac3acf12930f17e22f5cd0d57266815fad02aae977c77eb`.
+- SPEC-REVIEW-REPORT.md: SHA-256 `e4522d4a6d566d3dd6c7b208930547f152229ca3dd9a04028ce136a937a0df68`.
+- PROJECT.md: SHA-256 `85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24`.
+- ARCHITECTURE.md: SHA-256 `0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c`.
+- DECOMPOSITION.md: SHA-256 `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`.
+
 ## Initial review
 
 Manually mapped each PLAN outcome/exit to task scope, dependency and concrete evidence; compared against SPEC and design/layout ownership. Programmatically checked 17 unique monotonic IDs, six milestone parent groups, exact four-space checklist levels, forward-safe task prerequisites, one phase heading/root per phase and no checked completion. Checked local links and required future report paths. Product tests were not run because no product implementation/tests exist.
@@ -41,7 +57,7 @@ Exact reviewed/governing SHA256:
 
 - TASKS.md: `558140529154e5ffdde1010b47a1dc6314be5cb286911cf6d81a9a5ae3512e62`
 - PLAN.md: `e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e`
-- PLAN-REVIEW-REPORT.md: `936a3b56466edaa921b77d19b2ab331661aea99dc72c54695271ab2ca93de704`
+- PLAN-REVIEW-REPORT.md: `c816262a759b9c5e6701f939dd07053e181585d24a8115605c8f2594d24d62ca`
 - SPEC.md: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
 - layout.md: `ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d`
 - FEATURE-TASKS.md: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
