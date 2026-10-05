@@ -5,7 +5,7 @@
   "case_id": "A-016",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "All active work stopped; A-009/A-015 Passed, A-016 partial Blocked, verified recovery bundles retained",
+  "last_completed_action": "Controlled suspension complete; published recovery checkpoint and remote readback verified",
   "pending_operation": {
     "kind": "push",
     "status": "interrupted",
@@ -32,7 +32,7 @@
       "b398e258cefc03dbc47630b83967db961a376eae"
     ],
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "20b27fa68805439a5f928bd7b4479c491b958f21"
+    "evidence_commit": "2595e3097bb43fe81f7d262bdebd0a1bfe7a04b5"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -69,9 +69,10 @@
     "SUSPENSION-20261005-032346.json",
     "runs/A-015/2/recovery/LOCAL-TASK-COMMIT.bundle",
     "runs/A-016/1/RECOVERY.json",
-    "runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle"
+    "runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle",
+    "SUSPENSION-PUBLICATION-20261005.json"
   ],
-  "updated_at": "2026-10-05T03:27:45.694526+00:00",
+  "updated_at": "2026-10-05T03:32:04.414600+00:00",
   "case_results": [
     {
       "case_id": "A-006",

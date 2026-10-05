@@ -15,5 +15,7 @@
     "A-020": "Local-only5719983, unrelated notes/index preserved, earlier recovery bundle retained"
   },
   "no_current_new_work": true,
-  "publication_status": "pending coordinator evidence push"
+  "publication_status": "verified",
+  "published_checkpoint": "2595e3097bb43fe81f7d262bdebd0a1bfe7a04b5",
+  "publication_receipt": "SUSPENSION-PUBLICATION-20261005.json"
 }

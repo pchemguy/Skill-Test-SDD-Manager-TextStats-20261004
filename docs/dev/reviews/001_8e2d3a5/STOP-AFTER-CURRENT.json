@@ -1,11 +1,11 @@
 {
   "instruction": "Perform controlled suspension",
   "requested_at": "2026-10-05T06:23:46+03:00",
-  "status": "suspended; evidence publication pending",
+  "status": "suspended; recovery checkpoint publication verified",
   "active_cases_at_request": [
     "A-009",
     "A-015",
     "A-016"
   ],
-  "next_action": "Finish only active assessments and recovery publication, then remain suspended; no new case/task/agent"
+  "next_action": "Remain suspended until explicit human Resume"
 }
