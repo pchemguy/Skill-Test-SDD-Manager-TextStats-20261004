@@ -2,23 +2,12 @@
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
   "phase": "P3",
-  "case_id": "A-016",
+  "case_id": "A-009",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "All active work stopped; A-009/A-015 Passed, A-016 partial Blocked, verified recovery bundles retained",
-  "pending_operation": {
-    "kind": "push",
-    "status": "interrupted",
-    "description": "A-016 retained local commit awaits fresh continuation after explicit Resume; native push cancelled",
-    "identity": {
-      "repository": "/workspace/scratch/textstats-unpublished-remote-20261005.git",
-      "branch": "trial/a016-publication-recovery",
-      "ref": "refs/heads/trial/a016-publication-recovery",
-      "commit": "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
-      "task_id": "T-001"
-    }
-  },
-  "next_action": "Remain suspended. On explicit Resume verify evidence and actual refs, then fresh A-016 retained publication continuation before new work",
+  "role": "assessor",
+  "last_completed_action": "A-009 consumer frozen; independent reached checkpoint observed",
+  "pending_operation": null,
+  "next_action": "Publish independent A-009 assessment before dependent work",
   "checkpoint_refs": {
     "product_branch": "feature/002_ea97182-line-ranges",
     "product_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247",
@@ -26,13 +15,7 @@
     "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
     "remote": "origin",
     "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
-    "remote_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247",
-    "merge_parents": [
-      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
-      "b398e258cefc03dbc47630b83967db961a376eae"
-    ],
-    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "20b27fa68805439a5f928bd7b4479c491b958f21"
+    "remote_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -64,14 +47,9 @@
     "CONTINUATION-20261005.json",
     "COORDINATION.json",
     "runs/A-008/1/independent-assessment/ASSESSMENT.json",
-    "runs/A-015/1/independent-assessment/ASSESSMENT.json",
-    "STOP-AFTER-JSON-CONSUMED-20261005.json",
-    "SUSPENSION-20261005-032346.json",
-    "runs/A-015/2/recovery/LOCAL-TASK-COMMIT.bundle",
-    "runs/A-016/1/RECOVERY.json",
-    "runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle"
+    "runs/A-015/1/independent-assessment/ASSESSMENT.json"
   ],
-  "updated_at": "2026-10-05T03:27:45.694526+00:00",
+  "updated_at": "2026-10-05T03:23:31.805063+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -108,27 +86,6 @@
       "status": "Blocked",
       "assessment_path": "runs/A-026/1/independent-assessment/ASSESSMENT.json",
       "reason": "No actual pre-existing failing baseline; empty selection/no-mutation achieved separately; original helper hosted-read rejection retained"
-    },
-    {
-      "case_id": "A-009",
-      "attempt": 1,
-      "status": "Passed",
-      "assessment_path": "runs/A-009/1/independent-assessment/ASSESSMENT.json",
-      "assisted": true
-    },
-    {
-      "case_id": "A-015",
-      "attempt": 2,
-      "status": "Passed",
-      "assessment_path": "runs/A-015/2/independent-assessment/ASSESSMENT.json",
-      "assisted": true
-    },
-    {
-      "case_id": "A-016",
-      "attempt": 1,
-      "status": "Blocked",
-      "assessment_path": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
-      "assisted": false
     }
   ]
 }

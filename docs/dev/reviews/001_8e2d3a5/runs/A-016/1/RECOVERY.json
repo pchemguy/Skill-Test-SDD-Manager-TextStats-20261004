@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-05T03:26:09.291121+00:00",
+  "head": "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
+  "branch": "trial/a016-publication-recovery",
+  "status_porcelain": "",
+  "native_cancel": {
+    "session_id": 51170,
+    "exit_code": 130,
+    "output": "",
+    "no_release": true
+  },
+  "publication_destination": "/workspace/scratch/textstats-unpublished-remote-20261005.git",
+  "remote_ref": "refs/heads/trial/a016-publication-recovery",
+  "remote_readback": "d009899e39790c39be32ae77e7fe8294bf60d04c\trefs/heads/trial/a016-publication-recovery",
+  "published": false,
+  "bare_storage_note": "Incoming object may exist in bare object store; destination ref lacks commit. Object presence alone is not publication.",
+  "controlled_facility": "pre-push hold remains configured; no RELEASE file; restore only upon authorized Resume after current readback",
+  "bundle": {
+    "path": "recovery/LOCAL-TASK-COMMIT.bundle",
+    "sha256": "6aa8446f99cd470aa17d28f29e2acd840780ab9c70a6e95e1a350139dadefab0",
+    "verify_returncode": 0,
+    "verify_stdout": "The bundle contains this ref:\na3e6ab199e06892bf53944ca96ccd26063e87bd8 refs/heads/trial/a016-publication-recovery\nThe bundle requires this ref:\nd009899e39790c39be32ae77e7fe8294bf60d04c \nThe bundle uses this hash algorithm: sha1\n",
+    "verify_stderr": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle is okay\n",
+    "prerequisite": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "prerequisite_in_published_main": true
+  },
+  "scope": "Local-only trial; task ref not pushed to live GitHub; coordinator bundle evidence publication separate"
+}

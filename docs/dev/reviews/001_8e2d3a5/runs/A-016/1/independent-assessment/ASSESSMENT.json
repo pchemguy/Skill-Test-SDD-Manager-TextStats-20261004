@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case_id": "A-016",
+  "attempt": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "checkpoint_refs": {
+    "product_branch": "trial/a016-publication-recovery",
+    "product_commit": "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
+    "remote": "/workspace/scratch/textstats-unpublished-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a016-publication-recovery",
+    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c"
+  },
+  "findings": [
+    "Achieved genuine trigger: independently observed actual consumer T-001 completion commit parented by real A-003 checkpoint, clean index/worktree, and exact local destination ref still at baseline. Commit object presence in bare storage does not establish publication; exact-ref ancestry returned 1.",
+    "Consumer journal retains actual test-first RED/GREEN commands, 10-test successful unit run and nonzero collection; committed TASKS marks only T-001 complete. Independent behavior reruns were intentionally not executed under user stop. Eight changed paths remain within T-001; T-002 remains unchecked and pinned resource tree is unchanged.",
+    "Consumer-owned native push session 51170 was cancelled by supported Ctrl-C with actual exit 130 according to retained journal. Post-cancel independent readback confirms retained commit, clean tree and unpublished destination. Injection remains configured without release.",
+    "Retained bundle independently verified with matching SHA-256 6aa8446f99cd470aa17d28f29e2acd840780ab9c70a6e95e1a350139dadefab0 and exact trial ref. Bundle requires actual baseline d009899e39790c39be32ae77e7fe8294bf60d04c. Exported index matches live index; staged/worktree patches are empty.",
+    "User requested controlled suspension before separate fresh continuation; publish-before-new-work recovery criterion is not exercised. Overall A-016 cannot pass at this stop."
+  ],
+  "evidence": [
+    "REQUEST.md",
+    "INJECTION.json",
+    "git-tool.py",
+    "pre-push.py",
+    "TRIGGER-OBSERVATIONS.json",
+    "STOP-OBSERVATIONS.json",
+    "RECOVERY-VERIFICATION.json"
+  ],
+  "limits": [
+    "Local disposable remote trial does not certify live GitHub publication or lifecycle.",
+    "Native complete transcript unavailable; consumer-authored journal and reported cancel result are retained and independently corroborated by durable state, but not a complete action transcript.",
+    "Broad shared filesystem exposure prevents strict isolation certification.",
+    "Separate fresh continuation and publish-before-new-selection/tests/edits are pending; no uncontrolled native termination or cross-machine reconstruction executed.",
+    "Deterministic helper and product behavior reruns Not run for user-requested suspension; no helper pass claimed."
+  ],
+  "interventions": [
+    "Coordinator-configured explicit local pre-push hold, activated only after consumer-created task commit.",
+    "User-requested controlled suspension: consumer cancelled only its own native push session; no facility release or fresh continuation."
+  ],
+  "coverage": "Actual unpublished-commit trigger and retained-state/export verification achieved; fresh publication recovery Blocked pending user Resume.",
+  "next_action": "On separately authorized Resume, reconcile exact destination and retained commit; coordinator restores only bounded publication hold and dispatches separate fresh ordinary continuation within T-001-only boundary."
+}

@@ -1,12 +1,11 @@
 {
-  "requested_at": "2026-10-04T23:45:22+03:00",
-  "instruction": "Suspend after sdd-2.1-JSON-output",
-  "active_cases": [
-    "A-007"
+  "instruction": "Perform controlled suspension",
+  "requested_at": "2026-10-05T06:23:46+03:00",
+  "status": "suspended; evidence publication pending",
+  "active_cases_at_request": [
+    "A-009",
+    "A-015",
+    "A-016"
   ],
-  "boundary": "Milestone 2.1 JSON output; T-010\u2013T-012 only",
-  "next_action": "Remain stopped until explicit human resume",
-  "status": "consumed",
-  "consumed_at": "2026-10-05T02:59:15.702095+00:00",
-  "consumed_by": "Explicit Resume, 2026-10-05"
+  "next_action": "Finish only active assessments and recovery publication, then remain suspended; no new case/task/agent"
 }

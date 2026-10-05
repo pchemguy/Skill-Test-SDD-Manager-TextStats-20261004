@@ -1,22 +1,8 @@
 {
-  "suspended": false,
-  "active_cases": [
-    {
-      "case_id": "A-008",
-      "role": "consumer",
-      "status": "Running"
-    },
-    {
-      "case_id": "A-015",
-      "role": "consumer",
-      "status": "Running",
-      "scope": "isolated local-remote staged-work trial"
-    },
-    {
-      "case_id": "A-026",
-      "role": "assessor",
-      "status": "Running",
-      "scope": "verification only; missing pre-existing-failure variant"
-    }
-  ]
+  "suspended": true,
+  "requested_instruction": "Perform controlled suspension",
+  "product_work_stopped": true,
+  "remaining_assessor": null,
+  "new_work_allowed": false,
+  "all_workers_stopped": true
 }

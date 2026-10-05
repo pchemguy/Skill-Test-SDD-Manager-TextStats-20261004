@@ -1,0 +1,11 @@
+{
+  "command": "Original shipped assess.py with retained INPUTS/RUN-STATE/A-015 contract",
+  "exit_code": 2,
+  "stdout": {
+    "schema_version": 1,
+    "status": "Blocked",
+    "cause": "repository_identity_mismatch",
+    "next_action": "Resolve the reported prerequisite before retrying."
+  },
+  "output_artifact_created": false
+}

@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-10-05T03:30:33.284647+00:00",
+  "trial_worktrees": [
+    {
+      "workspace": "/workspace/scratch/textstats-staged-worktree-20261005",
+      "head": "2dae60081452d72482bd431475d8f0b88d2d9d8c",
+      "branch": "trial/a015-staged-recovery",
+      "status_porcelain": "",
+      "index_lock_present": false
+    },
+    {
+      "workspace": "/workspace/scratch/textstats-unpublished-worktree-20261005",
+      "head": "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
+      "branch": "trial/a016-publication-recovery",
+      "status_porcelain": "",
+      "index_lock_present": false
+    }
+  ],
+  "positive_fixture_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+  "all_current_workers_completed": "Verified through collaboration.list_agents; only root coordinator running",
+  "positive_live_refs": {
+    "main": "59debb649545125dd3aa00377ea115451b594271",
+    "phase2": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "feature": "53da8a9dbbe9fccdc1fcc24fffec29079912a247"
+  }
+}

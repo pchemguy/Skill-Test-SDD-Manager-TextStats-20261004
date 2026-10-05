@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-10-05T03:26:43.520712+00:00",
+  "bundle_sha256": "6aa8446f99cd470aa17d28f29e2acd840780ab9c70a6e95e1a350139dadefab0",
+  "hash_matches_recovery": true,
+  "index_matches_actual": true,
+  "patches_empty": true,
+  "commands": [
+    {
+      "args": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-unpublished-worktree-20261005",
+        "bundle",
+        "verify",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle"
+      ],
+      "returncode": 0,
+      "stdout": "The bundle contains this ref:\na3e6ab199e06892bf53944ca96ccd26063e87bd8 refs/heads/trial/a016-publication-recovery\nThe bundle requires this ref:\nd009899e39790c39be32ae77e7fe8294bf60d04c \nThe bundle uses this hash algorithm: sha1\n",
+      "stderr": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle is okay\n"
+    },
+    {
+      "args": [
+        "git",
+        "bundle",
+        "list-heads",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle"
+      ],
+      "returncode": 0,
+      "stdout": "a3e6ab199e06892bf53944ca96ccd26063e87bd8 refs/heads/trial/a016-publication-recovery\n",
+      "stderr": ""
+    }
+  ],
+  "recovery_sha256": "b476edf04afd59e2c1b06bd01105b5e95eea535b10ea18ff2d1785c80dbbe1e4",
+  "portability_limit": "Bundle requires retained baseline d009899; no independent cross-machine restore executed."
+}

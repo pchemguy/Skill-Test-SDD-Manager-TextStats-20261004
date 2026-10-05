@@ -1,0 +1,94 @@
+{
+  "observed_at": "2026-10-05T03:24:20.196123+00:00",
+  "hold_marker": {
+    "pid": 9,
+    "cwd": "/workspace/scratch/textstats-unpublished-worktree-20261005",
+    "created_at": 1791170614.8581908
+  },
+  "commands": [
+    {
+      "args": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-unpublished-worktree-20261005",
+        "rev-list",
+        "--parents",
+        "-n",
+        "1",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "a3e6ab199e06892bf53944ca96ccd26063e87bd8 d009899e39790c39be32ae77e7fe8294bf60d04c\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-unpublished-worktree-20261005",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-unpublished-worktree-20261005",
+        "ls-remote",
+        "/workspace/scratch/textstats-unpublished-remote-20261005.git",
+        "refs/heads/trial/a016-publication-recovery"
+      ],
+      "returncode": 0,
+      "stdout": "d009899e39790c39be32ae77e7fe8294bf60d04c\trefs/heads/trial/a016-publication-recovery\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "--git-dir=/workspace/scratch/textstats-unpublished-remote-20261005.git",
+        "merge-base",
+        "--is-ancestor",
+        "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
+        "refs/heads/trial/a016-publication-recovery"
+      ],
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: Not a valid commit name a3e6ab199e06892bf53944ca96ccd26063e87bd8\n"
+    },
+    {
+      "args": [
+        "git",
+        "--git-dir=/workspace/scratch/textstats-unpublished-remote-20261005.git",
+        "cat-file",
+        "-e",
+        "a3e6ab199e06892bf53944ca96ccd26063e87bd8"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "-C",
+        "/workspace/scratch/textstats-unpublished-worktree-20261005",
+        "show",
+        "HEAD:docs/dev/TASKS.md"
+      ],
+      "returncode": 0,
+      "stdout": "# TextStats executable task hierarchy\n\nDerived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001 is verified locally; subsequent tasks remain planned and unchecked. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.\n\n## Hosted tracking\n\nMode: maintained GitHub tracking in [pchemguy/Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004). The eligible phase 1 label, native milestones 1.1\u20131.3 and task issues T-001\u2013T-009 are open. Reconcile the eligible maintained scope before execution and lifecycle transitions; hosted state never establishes completion. Phase 2 projection waits for phase 1 completion, review, verified integration into main and publication.\n\nPhase 1 working branch: `phase/1-named-file-utility`; integration target: `main`; activation baseline: `4c275cc46fc0163c9e1e50871d3cc33c4c38567e`. This tracking checkpoint stops before implementation, with every task unchecked and no phase integration.\n\n## Phase 1 \u2014 Named-file utility\n\n- [ ] Phase 1 \u2014 Named-file utility\n    - [ ] Milestone 1.1 \u2014 Named-file counting MVP\n        - [x] T-001 \u2014 Establish immutable statistics and pure text counting\n            Scope: textstats/core.py, initial public facade, tests/unit/ discovery packages and semantic/value tests. Depends on: reviewed preparation inputs.\n            Outcome: direct TextStats/count_text imports, immutable nonnegative fields and exact BOM/CRLF/CR/LF/Unicode-word semantics (S-1/S-2).\n            Evidence: nonempty unit discovery; all SPEC sample rows, retained/interior/double BOM, silence and immutability/nonnegative checks. Keep pure core independent of acquisition/process state.\n            Verified 2026-10-05 on authorized trial/a016-publication-recovery: Python 3.12.14; PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v passed 10 tests, independently collected 10. Public-interface RED collected 1 test and failed (exit 1); subsequent semantic/value RED collected 10 tests and failed 31 subcases (exit 1), without collection errors. All S-2 table rows, BOM policies/interior/double BOM, CRLF/CR/LF, other Unicode whitespace/separators, silent unchanged-text processing, keyword-only signature, immutable/nonnegative integer fields verified. Module/API docstrings and README examples checked; git diff --check passed. Hosted tracking inactive for this authorized range; literal local remote publication only. Scope stops before T-002; phase/milestone remain incomplete, no integration.\n        - [ ] T-002 \u2014 Integrate strict UTF-8 named-file API\n            Scope: textstats/io.py, facade exports, focused unit/file integration checks and tests/integration/ discovery packages. Depends on: T-001.\n            Outcome: count_file supports str/PathLike, preserves input terminators, delegates counts and closes its success-path owned handle (S-3 success).\n            Evidence: direct package API import/signatures; real temporary files for BOM/newline/empty/Unicode cases; unchanged input; silent calls and success-handle closure. Required failure-path hardening follows in T-005.\n        - [ ] T-003 \u2014 Deliver the useful named-file module CLI\n            Scope: textstats/cli.py, textstats/__main__.py and integration subprocess checks. Depends on: T-001, T-002.\n            Outcome: one named input, --keep-bom, -- dash filenames and help; exact text output and option validation before acquisition (S-4 success/options).\n            Evidence: actual python -m textstats invocation, stdout/status/stderr assertions, API/CLI agreement, missing/extra/unknown option rejection and no input read on usage errors; demonstrate ordinary/BOM/dash filenames. Keep later JSON/stdin delivery absent from this task.\n        - [ ] T-004 \u2014 Review, test and report milestone 1.1\n            Depends on: T-001, T-002, T-003. Scope: delivered core, file API, facade and module CLI; relevant nonempty product suites and MVP demonstration.\n            Evidence: actual code review, milestone exits/regressions, blocker repairs and committed/pushed report. Report: docs/dev/reports/phases/1/1.1.md. Record TODO or None and the usability decision evidence. No product completion inferred from workflow fixtures.\n    - [ ] Milestone 1.2 \u2014 Reliable documented distribution\n        - [ ] T-005 \u2014 Harden named-file API failure and resource behavior\n            Scope: textstats/io.py and focused unit/integration failures. Depends on: T-004.\n            Outcome: missing/unreadable files propagate OSError subclasses, strict bad-byte decoding raises UnicodeDecodeError, failure calls are silent, input unchanged, owned handles closed and no partial result (S-3).\n            Evidence: real missing/bad-byte files plus portable injected unreadable/read/close seams; both BOM policies; byte-for-byte preservation and owned-handle success/failure checks. Do not rely solely on permission bits under privileged execution.\n        - [ ] T-006 \u2014 Complete CLI diagnostics and public documentation\n            Scope: textstats/cli.py, docs/api.md, docs/module.md, README.md and relevant unit/integration checks. Depends on: T-005.\n            Outcome: useful input-identifying expected-error diagnostics, statuses 1/2, empty stdout/no traceback, retained help/options/success and documented runnable phase 1 API/module usage (S-4 and S-7 docs).\n            Evidence: actual module missing/read/decode failures, invalid invocation before acquisition, unchanged files; run documented API/help/text/BOM examples. Preserve original README content and SDD links.\n        - [ ] T-007 \u2014 Establish isolated source-distribution acceptance\n            Scope: Makefile, generated-output ignore rules and tests/integration distribution checks. Depends on: T-006.\n            Outcome: standard-library source archive includes importable package, README and public docs; generated dist/extractions stay untracked (S-7).\n            Evidence: build/extract to temporary root; invoke extracted python -m textstats with a clean import environment from that root; check exact named-file counts, --keep-bom, help and representative failure status. Independently discover nonzero unit/integration suites and run README examples. Keep workflow fixtures separate and pinned resources unchanged.\n        - [ ] T-008 \u2014 Review, test and report milestone 1.2\n            Depends on: T-005, T-006, T-007. Scope: API/CLI failures, lifecycle, docs/distribution and all phase 1 regressions.\n            Evidence: code review, independent nonempty product suites, diagnostic demonstration, extracted-source checks, blocker repair and committed/pushed report. Report: docs/dev/reports/phases/1/1.2.md. Carry prior TODO provenance and record release decision evidence.\n    - [ ] Milestone 1.3 \u2014 Phase 1 review\n        - [ ] T-009 \u2014 Review, test and report phase 1\n            Depends on: milestones 1.1 and 1.2 complete/closed when tracking is active, including T-004/T-008. Scope: cross-component phase 1 S-1 through S-4 and delivered S-7.\n            Evidence: phase code review, nonempty product suites, documented examples/distribution/regressions, blocker repairs and committed/pushed report with milestone TODO aggregation. Report: docs/dev/reports/phases/1/PHASE-REPORT.md. Complete phase exits before explicit phase-branch merge to main, merged-state verification and publication; a partial range pauses on its phase branch.\n\n## Phase 2 \u2014 Output and source extensions\n\n- [ ] Phase 2 \u2014 Output and source extensions\n    - [ ] Milestone 2.1 \u2014 JSON output\n        - [ ] T-010 \u2014 Add JSON rendering with preserved named-file behavior\n            Scope: textstats/cli.py and unit/integration format checks. Depends on: T-009 and verified/published full phase 1 integration.\n            Outcome: --json emits only integer lines/words plus newline, equal to text counts; compose --keep-bom in either order and preserve statuses/errors (S-5).\n            Evidence: parse actual module output for normal/empty/BOM/terminator files, exact text default regressions, key/type checks, useful failures and stdout atomicity; demonstrate script consumption. Stdin remains scheduled in 2.2.\n        - [ ] T-011 \u2014 Document and verify the JSON distribution boundary\n            Scope: docs/module.md, README.md and tests/integration extracted-source checks. Depends on: T-010.\n            Outcome: runnable JSON examples, accurate delivered option documentation and extracted-package text/JSON acceptance (S-7 at 2.1).\n            Evidence: run examples, nonzero unit/integration discovery and tests; invoke extracted source module for both formats/BOM policies and representative failures without checkout imports.\n        - [ ] T-012 \u2014 Review, test and report milestone 2.1\n            Depends on: T-010, T-011. Scope: format implementation, docs/distribution and retained phase 1 contracts.\n            Evidence: code review, focused/regression tests, demonstration, blocker repair and committed/pushed report with TODO provenance. Report: docs/dev/reports/phases/2/2.1.md.\n    - [ ] Milestone 2.2 \u2014 UTF-8 stdin and final release\n        - [ ] T-013 \u2014 Integrate borrowed binary stdin acquisition\n            Scope: textstats/cli.py and source/lifecycle unit/integration checks. Depends on: T-012.\n            Outcome: INPUT - reads bytes until EOF, strict UTF-8 independent of locale, never closes stdin; ./- remains a named-file path; formats/BOM policies share whole-input counting (S-6).\n            Evidence: actual subprocess piped ordinary/empty/non-ASCII/BOM bytes in both formats and non-UTF-8 locale settings; instrument borrowed stream lifetime and retained named-file behavior. Keep acquisition separate from decoded-text processing for future selection compatibility.\n        - [ ] T-014 \u2014 Complete stdin failure and interaction acceptance\n            Scope: textstats/cli.py and focused unit/integration checks. Depends on: T-013.\n            Outcome: read/decode failures identify stdin on stderr, exit 1, empty stdout, no traceback; invalid usage precedes acquisition, and complete decoded input governs all formats (S-4/S-6).\n            Evidence: malformed piped bytes, injected binary read failure, never-close checks, both-order --json/--keep-bom, source/format/terminator regressions and unchanged named files. No range option is delivered here.\n        - [ ] T-015 \u2014 Complete source documentation and final distribution checks\n            Scope: docs/api.md, docs/module.md, README.md and tests/integration distribution checks. Depends on: T-014.\n            Outcome: final runnable docs describe all delivered sources/formats, stdin UTF-8/error/lifetime rules and whole-input public API (S-7).\n            Evidence: execute documented examples; build/extract clean source archive; invoke extracted module for named-file/stdin, text/JSON, empty/BOM/non-ASCII and representative failures. Independently require nonempty passing unit/integration suites; report workflow checks separately.\n        - [ ] T-016 \u2014 Review, test and report milestone 2.2\n            Depends on: T-013, T-014, T-015. Scope: source acquisition, decoding, interactions, docs/distribution and all retained acceptance.\n            Evidence: code review, tests/regressions, piped source demonstration and diagnostics, blocker repairs, committed/pushed report and prior TODO disposition. Report: docs/dev/reports/phases/2/2.2.md.\n    - [ ] Milestone 2.3 \u2014 Phase 2 and final review\n        - [ ] T-017 \u2014 Review, test and report phase 2 and the complete product\n            Depends on: milestones 2.1 and 2.2 complete/closed when tracking is active, including T-012/T-016. Scope: all main SPEC contracts, cross-source/format/BOM interactions and final exits.\n            Evidence: phase code review, complete nonempty product suites, runnable docs, isolated extracted-source module checks, blocker repair and committed/pushed reports. Reports: docs/dev/reports/phases/2/PHASE-REPORT.md and docs/dev/reports/IMPLEMENTATION-REPORT.md. Aggregate unresolved admissible TODOs and solution/owner/provenance with resolution references; verify full-phase explicit integration, merged state and publication before claiming complete implementation.\n",
+      "stderr": ""
+    }
+  ],
+  "trigger": {
+    "real_task_commit": "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
+    "clean_index_worktree": true,
+    "remote_exact_ref_baseline": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "remote_ref_contains_new_commit": false
+  },
+  "checks_run_by_assessor": false
+}
