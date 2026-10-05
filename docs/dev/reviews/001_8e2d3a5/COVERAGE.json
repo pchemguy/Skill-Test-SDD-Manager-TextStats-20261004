@@ -131,7 +131,7 @@
       ]
     },
     "A-010": {
-      "status": "Blocked",
+      "status": "Pending",
       "attempts": [
         {
           "attempt": 1,
@@ -141,7 +141,13 @@
           "assessment": "runs/A-010/1/independent-assessment/ASSESSMENT.json",
           "reason": "Two automatic authorization review rejections before required hosted projection; preserved published document/owner checkpoint, no execution"
         }
-      ]
+      ],
+      "projection_recovery": {
+        "status": "Confirmed",
+        "human_request_at": "2026-10-05T12:22:21+03:00",
+        "evidence": "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
+        "remaining": "Range implementation and integration not started; original Blocked attempt retained"
+      }
     },
     "A-011": {
       "status": "Pending",

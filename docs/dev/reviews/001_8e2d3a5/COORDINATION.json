@@ -12,11 +12,11 @@
       "positive": false
     }
   ],
-  "new_work_allowed": "Only within remaining authorized campaign; reconcile pending A-016 publication first",
+  "new_work_allowed": "Remaining authorized campaign after current-state reconciliation; A010 hosting projection confirmed, implementation not started",
   "a018_pending_publication": {
     "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "destination_ref": "refs/heads/trial/a018-rejected-publication",
-    "state": "actual rejection frozen; evidence publication pending before facility restoration/fresh continuation"
+    "state": "Resolved: exact local publication and independent Passed evidence retained"
   },
   "a024": {
     "variant": "denial",
