@@ -1,0 +1,9 @@
+{
+  "actor": "coordinator",
+  "at": "2026-10-05T08:32:04.927537+00:00",
+  "independent_observation": "All selected owner/list/link edits observed together before first hold; report QC pending alone is insufficient for required dirty-transfer trigger",
+  "required_trigger": "actual selected edit/move while another selected transfer/link pending",
+  "status": "Blocked; not observed",
+  "facility_restore": "Create only RELEASE to detach bounded firstcommit hold; no product/ref/index modifications or interruption claimed",
+  "continuation": "Ordinary originally authorized selected incorporation may finish; no fresh-continuation pass claimed"
+}

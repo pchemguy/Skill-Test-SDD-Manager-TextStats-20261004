@@ -3,11 +3,15 @@
   "run_id": "001_8e2d3a5",
   "phase": "P3",
   "case_id": "A-010",
-  "attempt": 1,
+  "attempt": 2,
   "role": "coordinator",
-  "last_completed_action": "Explicit human retry created and verified range milestones2.4/2.5 and issuesT018\u2013T022 via same protected adapter",
-  "pending_operation": null,
-  "next_action": "Continue remaining authorized A010 implementation from published89664adb with confirmed projection; prior Blocked assessment remains historical",
+  "last_completed_action": "Live refs and all seven range tracking objects reconciled after current Resume",
+  "pending_operation": {
+    "kind": "task",
+    "status": "in_progress",
+    "description": "A010 fresh continuation, no implementation begun at checkpoint"
+  },
+  "next_action": "Fresh A010 assessor starting capture, then fresh consumer continuation from retained feature commit",
   "checkpoint_refs": {
     "product_branch": "feature/002_ea97182-line-ranges",
     "product_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
@@ -17,7 +21,7 @@
     "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
     "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "59370808d12f1d891935bf92e9b613a107b27738"
+    "evidence_commit": "cecd523b59ef39b5b05b2261cf8f624310561709"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -58,9 +62,11 @@
     "SUSPENSION-PUBLICATION-20261005.json",
     "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json",
     "runs/A-010/1/REQUEST.md",
-    "runs/A-010/1/projection-retry-20261005-092221/AFTER.json"
+    "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
+    "runs/A-010/2/REQUEST.md",
+    "runs/A-010/2/HOSTED-BEFORE.json"
   ],
-  "updated_at": "2026-10-05T09:30:42.555595+00:00",
+  "updated_at": "2026-10-05T13:11:20.516420+00:00",
   "case_results": [
     {
       "case_id": "A-006",

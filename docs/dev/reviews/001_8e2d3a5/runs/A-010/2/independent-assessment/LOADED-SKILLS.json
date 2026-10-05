@@ -1,0 +1,175 @@
+{
+  "role": "independent assessor",
+  "files": [
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "91eeed3179358cb50e908a24ef83a2de9cc46dca7bf833509654b4bd04c66791"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "1df6b1c7a972959a4b6fb5820ac2a8fbefe732b6abfdef1d52c319811777502f"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "b826b549817648a7ab0ce68f324b0d8158d4ede6b687e4034cb664306256cd3e"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md",
+      "sha256": "7f5fa93c685e8983efe72711f3ee6673dac6e9c6125406e23415a88e452dcb34"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md",
+      "sha256": "71228af38e0c333ae5ac5aa671d5df5370589dc131cca4ee336f28189fd46183"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md",
+      "sha256": "5d33060db46a9ddb1f0581944da960813bf9e548169bf73625d3e3d6a4c3a795"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "5f776622a41d2a9040b39c3800663532899d68bce10c204ce7564ed57a2c7f90"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/examples.md",
+      "sha256": "96eebdfe90f270cff46bdd4f69d596fd439acbb7d4ea8633e91772a74b1e5acd"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md",
+      "sha256": "2f712ad70cbfc187f91517d9d9a8799340439996850d5557bfa5c61de4ad8ac7"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md",
+      "sha256": "fad5b5c71c8b58e19b94f61f494e31901d5d5a2cc262ab72944dca17e1891559"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md",
+      "sha256": "01032399eb4422ac61a6b3934912ee8392f2b043a187459bd261dba6ddc4f7d5"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md",
+      "sha256": "df7f820cb4decccbc1d077ce80ded8b745b1a10c2d813b7011fa8c0dc16d6114"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/revision-authorization.md",
+      "sha256": "0f2db55e9bc50fe3f782c215884a52f8027e654367b8cf8bd6f8207215ca88df"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md",
+      "sha256": "8ca466b140717b3cd8a33ea5fb1b9aafa8aa4fd696c8bee2455ef3edcf1912c2"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-implement/SKILL.md",
+      "sha256": "ca32a423668d4749f0ec9c463f3ae597ba2e3def51eb3333912133f397e11df0"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md",
+      "sha256": "9cb68ab3573e670f71134f1a42ae61c254d31493f28d45b4d141c637fb0d7ac6"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md",
+      "sha256": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md",
+      "sha256": "fe986a81b9e0344340754775675280b55c851873c9a7dfdfc8c3835fb8dce373"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md",
+      "sha256": "0da734c6682c8088af89fb5da78474b78e65e3d7cf35deca83b2e86aace720b5"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md",
+      "sha256": "62bbe9725faada9934eea8ce29a6ab0bc40462747a1e49243c2d48331ca05bc9"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md",
+      "sha256": "52e311b66d7df21bea7f2c02463417d7219dabe844e2c98cafe03f0cb1aa7e30"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-verify/SKILL.md",
+      "sha256": "fe02f63973521e86fa68a5fd775d01ab41fe7a797d26d8ae59dfa05bb25152ac"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md",
+      "sha256": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md",
+      "sha256": "27a9bcf8babe88b0d72956a2774e5e45a5cfd3316d009c955f450a2ef8fb1b34"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md",
+      "sha256": "ad1dcdeca15cc67179f1923f74f044d4e6304dbf1195afff9f93dba885054a29"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md",
+      "sha256": "0d1297f0b6d03dfd429c9d8e0d912c841801b8207141651aca1f1a90fe9a12c6"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md",
+      "sha256": "f441da1bfc36aaedceec0cb18838dc5496ea70e198edfa1ba66027bcbc619f0a"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "sha256": "8729f0f62f649509080018ebf43aa2f5e7f710939ed182494460c23a0d9a0685"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md",
+      "sha256": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+      "sha256": "c108f60ddffee2665d759276b650a430fde1abad4361bafa20311b63f077429f"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md",
+      "sha256": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md",
+      "sha256": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md",
+      "sha256": "88ca8f7012e2e6255b4f8b0f41a2bf68b9fd3f5b3b205f7c7f7eda91f003f0bc"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md",
+      "sha256": "7192602affb35813b9ec052e87d3614b15098b779a8e1c104b1f723e1f6f531a"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-report/SKILL.md",
+      "sha256": "481bec03eb256c70cabfc55ea7adca1626b940fa115e879f82e9de368a335a63"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md",
+      "sha256": "e9ba5c14d03544c518b035f71c0725616e1a1dc28c004ba8e8b4d59aa5d87783"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md",
+      "sha256": "51ebff15a54a17b885cf7835474334da7e285823a0113e9c56ebd5bff4769597"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md",
+      "sha256": "1ed1bd98e8e78c0d22b049fa57843e87e4a740bd1415a7840b894493a7bffb46"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md",
+      "sha256": "fe09d71b27a70ef806898634c8bd7b32b12b0d425006e5b4c47a5b551e426e07"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-20261004/textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md",
+      "sha256": "f0c894eb233713f18cb48ac2a1f8ecea474c7891276f948443b8cc16462391fc"
+    }
+  ],
+  "limits": [
+    "Separate fresh assessor context; broad shared filesystem prevents hard isolation certification.",
+    "No full native transcript available.",
+    "No product changes or consumer coaching by assessor.",
+    "Original attempt 1 Blocked must be retained."
+  ]
+}

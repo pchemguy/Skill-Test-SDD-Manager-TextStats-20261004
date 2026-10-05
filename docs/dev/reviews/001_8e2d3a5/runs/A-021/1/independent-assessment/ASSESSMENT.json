@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "case_id": "A-021",
+  "attempt": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "consumer_first_attempt_status": "Passed for ordinary selected incorporation only",
+  "ordinary_selected_incorporation": "Passed",
+  "interruption_status": "Blocked: required actual partial transfer/link trigger not observed",
+  "fresh_continuation": "Not run: no genuine qualifying interruption",
+  "checkpoint_refs": {
+    "product_branch": "trial/a021-dirty-transfer",
+    "product_commit": "ddc3b875921b57557b714c20fcadb2a45707f1d3",
+    "remote": "/workspace/scratch/textstats-transfer-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a021-dirty-transfer",
+    "remote_commit": "ddc3b875921b57557b714c20fcadb2a45707f1d3"
+  },
+  "source_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "checks": [
+    {
+      "id": "actual-trigger",
+      "status": "Blocked",
+      "reason": "Independent watch observed selected roots, task transfer, retirement and package links already amended together before first hold. QC reports pending alone cannot establish another selected transfer/link pending. RELEASE detached planned hold before commit; no cancellation or fresh continuation claimed."
+    },
+    {
+      "id": "ordinary-ownership",
+      "status": "Passed",
+      "reason": "22unique executable task IDs all solely main TASKS-owned; transferred018\u2013022 unchecked. FEATURE-TASKS retains transfer/provenance record, no executable checklist. T001\u2013016 exact task bodies unchanged; T017 stable/unchecked with accepted range review dependencies. Phase2 remains unchecked."
+    },
+    {
+      "id": "scope-source-retention-history",
+      "status": "Passed",
+      "reason": "One single-parent scoped13-document commit; no source/tests/build/instructions/pin changes. Same002_ea97182 identity, three feature sources and adjacent reports retained at original roots; no archive or feature-completion claim. Feature report destinations2.4/PHASE/IMPLEMENTATION preserved. All current local links resolve."
+    },
+    {
+      "id": "document-qc",
+      "status": "Passed",
+      "reason": "Selected main SPEC/PLAN/TASKS rechecked against accepted inputs.28latest report referenced hashes match actual bytes. Reports only gain text; all original findings/current identity blocks retained as historical, revisions appended. S8/R1\u20134 complete-decode/BOM/grammar/EOF/API guarantees allocated to2.4/2.5;3delivery milestonesPhase2 exclude scoped/main reviews; delivery task counts3/3/2/3/3 exclude reviews with preserved narrow rationale. No padding, implementation or whole-phase readiness inferred."
+    },
+    {
+      "id": "local-publication-pin",
+      "status": "Passed",
+      "reason": "Independent HEAD and literal local bare refs/heads/trial/a021-dirty-transfer equalddc3b875921b57557b714c20fcadb2a45707f1d3; index/worktree clean, diff check exit0. All111pin hashes unchanged."
+    }
+  ],
+  "deterministic_original": {
+    "status": "Blocked",
+    "cause": "repository_identity_mismatch",
+    "exit_code": 2
+  },
+  "deterministic_variant": {
+    "status": "Checks passed",
+    "exit_code": 0,
+    "adapter": "Existing A016 local_url_assessment.py substitutes only in-memory core.repository metadata; coreSHA72ddbe9d guarded, actual remote_read/observe_git/ownership/original A021 contract unchanged."
+  },
+  "assistance_scope": "Coordinator fixture RELEASE detachment before commit; disclosed assessor-local Git URL identity adapter after original mismatch. No product/source repair or consumer coaching.",
+  "coverage_limits": [
+    "No qualifying partial trigger or fresh continuation; final ordinary incorporation cannot satisfy A021 interruption criteria.",
+    "Local-only publication; no hosted backend object lifecycle mutation/readback or full hosted acceptance claim.",
+    "No full native transcript; independent snapshots plus consumer journal retained.",
+    "No hard filesystem isolation certification.",
+    "No implementation tests: document incorporation only; source/test artifacts unchanged.",
+    "Assessment pending coordinator evidence publication."
+  ],
+  "evidence_paths": [
+    "START-STATE.json",
+    "PRE-COMMIT-OBSERVATION.json",
+    "FINAL-OBSERVATIONS.json",
+    "INPUTS.json",
+    "RUN-STATE.json",
+    "ORIGINAL-HELPER.json",
+    "ADAPTED-HELPER.json",
+    "ADAPTER-AUDIT.md",
+    "TRIGGER-NOT-OBSERVED.json"
+  ],
+  "finding_dispositions": {
+    "trigger": "Harness timing/facility coverage gap; not a confirmed plugin defect.",
+    "original-helper": "Configured origin identity differs from explicitly authorized local URL; retained mismatch and disclosed existing adapter.",
+    "plugin": "No confirmed SDD Manager defect established by ordinary selected incorporation."
+  }
+}

@@ -131,7 +131,7 @@
       ]
     },
     "A-010": {
-      "status": "Pending",
+      "status": "Running",
       "attempts": [
         {
           "attempt": 1,
@@ -140,6 +140,12 @@
           "request": "runs/A-010/1/REQUEST.md",
           "assessment": "runs/A-010/1/independent-assessment/ASSESSMENT.json",
           "reason": "Two automatic authorization review rejections before required hosted projection; preserved published document/owner checkpoint, no execution"
+        },
+        {
+          "attempt": 2,
+          "status": "Running",
+          "request": "runs/A-010/2/REQUEST.md",
+          "reason": "Projection confirmed; fresh implementation continuation"
         }
       ],
       "projection_recovery": {
@@ -243,13 +249,15 @@
       ]
     },
     "A-021": {
-      "status": "Running",
+      "status": "Blocked",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
+          "status": "Blocked",
           "request": "runs/A-021/1/REQUEST.md",
-          "scope": "isolated local selected incorporation"
+          "scope": "isolated local selected incorporation",
+          "assessment": "runs/A-021/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Required actual partial-transfer interruption trigger not observed; ordinary selected incorporation independently passed"
         }
       ]
     },

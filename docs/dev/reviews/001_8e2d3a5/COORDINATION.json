@@ -3,25 +3,25 @@
   "active_cases": [
     {
       "case_id": "A-010",
-      "role": "projection verified; implementation continuation pending",
+      "role": "fresh assessor starting capture; implementation continuation pending",
       "positive": true
     },
     {
       "case_id": "A-024",
-      "role": "assessor interrupted; final access variant unstarted",
+      "role": "fresh assessor rate-limit continuation reconciliation",
       "positive": false
     }
   ],
-  "new_work_allowed": "Remaining authorized campaign after current-state reconciliation; A010 hosting projection confirmed, implementation not started",
+  "new_work_allowed": "Remaining authorized full campaign; no active stop boundary",
   "a018_pending_publication": {
     "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "destination_ref": "refs/heads/trial/a018-rejected-publication",
     "state": "Resolved: exact local publication and independent Passed evidence retained"
   },
   "a024": {
-    "variant": "denial",
-    "status": "original frozen and independently observed",
-    "pending": "publish before restore/freshcontinuation",
+    "variant": "rate-limit",
+    "status": "fresh continuation complete; independent post-capture pending",
+    "pending": "publish independent capture before final unavailable-session variant",
     "qualification": "controlled pre-send metadata only; native protected credential handoff eligibility unavailable"
   },
   "a010_projection": {
