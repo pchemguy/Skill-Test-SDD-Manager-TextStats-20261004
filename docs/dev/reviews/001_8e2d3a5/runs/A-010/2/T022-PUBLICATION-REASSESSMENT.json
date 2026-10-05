@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-10-05T13:36:00.012192+00:00",
+  "actor": "coordinator same-Git supported reassessment",
+  "human_authority": [
+    "Full workflows must include pushes",
+    "Resume",
+    "Established designated repository/campaign and scoped credential grant for prescribed work"
+  ],
+  "policy": "textstats-run-resources/plugin/skills/sdd-manage/references/revision-authorization.md",
+  "initial_rejection": "command pushes source and documentation to github.com, an unverified external destination, and transcript does not provide explicit user authorization for that repository/data disclosure",
+  "local_commit": "d518cc23650018542e43d8fb5a63f44a4d283518",
+  "destination": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
+  "destination_ref": "refs/heads/feature/002_ea97182-line-ranges",
+  "before_remote": "3f93cd40d90001ee7e4f54b36c764d1d5067b72e",
+  "scope": "15 owned Markdown files conclude T022, archive accepted feature source/QC, reconcile owner reports/history; no source/package/token/unrelatedfixture edits in this commit",
+  "checks": "Consumer21unit/13integration, named-file range text/JSON/BOM/EOF/errors, publicexamples/extraction, local links/uniqueowners",
+  "reassessment": "Actual human standing instruction/currentResume plus exact observed repository/ref/commit/ownedscope/checks supplied in next supported tool operation context; no exemption, unchanged denied context or alternate transport",
+  "command": [
+    "git",
+    "-C",
+    "/workspace/scratch/textstats-live-20261004",
+    "push",
+    "origin",
+    "d518cc23650018542e43d8fb5a63f44a4d283518:refs/heads/feature/002_ea97182-line-ranges"
+  ],
+  "result": {
+    "exit_code": 0,
+    "remote_update": "3f93cd4..d518cc2"
+  },
+  "remote_readback": {
+    "exit_code": 0,
+    "ref": "refs/heads/feature/002_ea97182-line-ranges",
+    "commit": "d518cc23650018542e43d8fb5a63f44a4d283518"
+  },
+  "review_ownership": "source/document reviews end at commits; push belongs execution; automatic tool review external"
+}

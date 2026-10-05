@@ -5,23 +5,23 @@
   "case_id": "A-010",
   "attempt": 2,
   "role": "coordinator",
-  "last_completed_action": "A010 T018 commit905d7a published; fresh range CLI work and isolated A017/A024 trials active",
+  "last_completed_action": "A010 T022 same-Git publication reassessment succeeded and exact remote d518cc2 verified",
   "pending_operation": {
-    "kind": "task",
+    "kind": "merge",
     "status": "in_progress",
-    "description": "A010 accepted range CLI task underway; independent A017 required-check and A024 session trials active"
+    "description": "T022 hosting then explicit feature-to-pausedphase2 integration, no main phase completion"
   },
-  "next_action": "Continue actual selected consumers; independently freeze/assess each reached boundary before dependency advancement",
+  "next_action": "Consumer reconciles T022 hosted completion then feature integration into pausedphase2; independent assessment before A011",
   "checkpoint_refs": {
     "product_branch": "feature/002_ea97182-line-ranges",
-    "product_commit": "905d7a851124235db27f4f5a553ee39729957a44",
+    "product_commit": "d518cc23650018542e43d8fb5a63f44a4d283518",
     "integration_branch": "phase/2-output-and-source-extensions",
     "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
     "remote": "origin",
     "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
-    "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "remote_commit": "d518cc23650018542e43d8fb5a63f44a4d283518",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "020da39ee472ca2c79364a56f89993ecb8d96bc3"
+    "evidence_commit": "a4ecbaf28c2a7bea815d8fc3c310d2c2af4e7c81"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -66,7 +66,7 @@
     "runs/A-010/2/REQUEST.md",
     "runs/A-010/2/HOSTED-BEFORE.json"
   ],
-  "updated_at": "2026-10-05T13:30:36.417515+00:00",
+  "updated_at": "2026-10-05T13:38:02.538715+00:00",
   "case_results": [
     {
       "case_id": "A-006",
