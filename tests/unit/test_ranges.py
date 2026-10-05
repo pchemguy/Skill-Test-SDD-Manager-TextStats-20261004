@@ -41,3 +41,42 @@ class SelectionTests(unittest.TestCase):
                 self.assertEqual(count_file(path),TextStats(2,3))
             self.assertEqual((out.getvalue(),err.getvalue()),('',''))
             self.assertEqual(path.read_bytes(),data)
+
+class RangeValidationTests(unittest.TestCase):
+    def test_invalid_usage_before_either_acquisition(self):
+        from textstats.cli import main
+        huge='9'*5000
+        invalid=['','0:1','1:0','2:1','1:',' :2',':2','+1:2','-1:2','1: 2','1:2 ','١:2','1:２','1:2:3','1.0:2',huge+':1',huge+':'+('8'*5000)]
+        arguments=[['--lines='+value,'missing'] for value in invalid]
+        arguments += [['--lines'],['--lines','missing'],['--lines','1:2','--lines','2:3','missing'],
+                      ['--lines=1:2','--lines=2:3','missing'],['--lines','1:2','--lines=2:3','missing']]
+        for args in arguments:
+            with self.subTest(args=[a[:50] for a in args]):
+                out,err=io.StringIO(),io.StringIO()
+                with patch('textstats.cli.count_file',side_effect=AssertionError('acquired')) as whole,patch('textstats.io.open',side_effect=AssertionError('opened')) as opened:
+                    with contextlib.redirect_stdout(out),contextlib.redirect_stderr(err):
+                        with self.assertRaises(SystemExit) as result:main(args)
+                self.assertEqual(result.exception.code,2)
+                self.assertEqual(out.getvalue(),'')
+                self.assertTrue(err.getvalue())
+                self.assertNotIn('Traceback',err.getvalue())
+                whole.assert_not_called();opened.assert_not_called()
+
+class RangeResourceTests(unittest.TestCase):
+    def test_owned_handle_closes_on_range_success_and_failure(self):
+        from textstats.cli import main
+        for data,status in [(b'a\r\nb c\r',0),(b'a\nlate\xff',1)]:
+            handle=io.BytesIO(data)
+            out,err=io.StringIO(),io.StringIO()
+            with patch('textstats.io.open',return_value=handle):
+                with contextlib.redirect_stdout(out),contextlib.redirect_stderr(err):
+                    actual=main(['--lines=1:1','sample'])
+            self.assertEqual(actual,status)
+            self.assertTrue(handle.closed)
+            self.assertEqual(out.getvalue(),'lines=1 words=1\n' if status==0 else '')
+        for error in [PermissionError('denied'),OSError('read failed')]:
+            out,err=io.StringIO(),io.StringIO()
+            with patch('textstats.cli._read_text',side_effect=error):
+                with contextlib.redirect_stdout(out),contextlib.redirect_stderr(err):
+                    self.assertEqual(main(['--lines=1:1','sample']),1)
+            self.assertEqual(out.getvalue(),'');self.assertIn('sample',err.getvalue());self.assertNotIn('Traceback',err.getvalue())
