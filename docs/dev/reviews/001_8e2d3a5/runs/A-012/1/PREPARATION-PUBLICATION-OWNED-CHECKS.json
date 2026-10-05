@@ -1,0 +1,167 @@
+{
+  "commit": "b7a4a7e47f512e541b670d0c6f02b2bd5746afc2",
+  "paths": [
+    "docs/dev/ARCHITECTURE.md",
+    "docs/dev/DECOMPOSITION.md",
+    "docs/dev/PLAN-REVIEW-REPORT.md",
+    "docs/dev/PLAN.md",
+    "docs/dev/PROJECT.md",
+    "docs/dev/SPEC-REVIEW-REPORT.md",
+    "docs/dev/SPEC.md",
+    "docs/dev/TASKS-REVIEW-REPORT.md",
+    "docs/dev/TASKS.md",
+    "docs/dev/layout.md",
+    "docs/dev/reports/phases/2/revisions/003_0e47414/REVISION-REPORT.md"
+  ],
+  "qc_hashes": [
+    {
+      "report": "SPEC-REVIEW-REPORT.md",
+      "path": "PROJECT.md",
+      "expected": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+      "actual": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+      "match": true
+    },
+    {
+      "report": "SPEC-REVIEW-REPORT.md",
+      "path": "ARCHITECTURE.md",
+      "expected": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+      "actual": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+      "match": true
+    },
+    {
+      "report": "SPEC-REVIEW-REPORT.md",
+      "path": "DECOMPOSITION.md",
+      "expected": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+      "actual": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+      "match": true
+    },
+    {
+      "report": "SPEC-REVIEW-REPORT.md",
+      "path": "SPEC.md",
+      "expected": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+      "actual": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+      "match": true
+    },
+    {
+      "report": "SPEC-REVIEW-REPORT.md",
+      "path": "PLAN.md",
+      "expected": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+      "actual": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+      "match": true
+    },
+    {
+      "report": "SPEC-REVIEW-REPORT.md",
+      "path": "TASKS.md",
+      "expected": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+      "actual": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+      "match": true
+    },
+    {
+      "report": "SPEC-REVIEW-REPORT.md",
+      "path": "layout.md",
+      "expected": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+      "actual": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+      "match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT.md",
+      "path": "PROJECT.md",
+      "expected": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+      "actual": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+      "match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT.md",
+      "path": "ARCHITECTURE.md",
+      "expected": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+      "actual": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+      "match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT.md",
+      "path": "DECOMPOSITION.md",
+      "expected": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+      "actual": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+      "match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT.md",
+      "path": "SPEC.md",
+      "expected": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+      "actual": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+      "match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT.md",
+      "path": "PLAN.md",
+      "expected": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+      "actual": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+      "match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT.md",
+      "path": "TASKS.md",
+      "expected": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+      "actual": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+      "match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT.md",
+      "path": "layout.md",
+      "expected": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+      "actual": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+      "match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT.md",
+      "path": "PROJECT.md",
+      "expected": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+      "actual": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+      "match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT.md",
+      "path": "ARCHITECTURE.md",
+      "expected": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+      "actual": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+      "match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT.md",
+      "path": "DECOMPOSITION.md",
+      "expected": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+      "actual": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+      "match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT.md",
+      "path": "SPEC.md",
+      "expected": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+      "actual": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+      "match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT.md",
+      "path": "PLAN.md",
+      "expected": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+      "actual": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+      "match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT.md",
+      "path": "TASKS.md",
+      "expected": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+      "actual": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+      "match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT.md",
+      "path": "layout.md",
+      "expected": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+      "actual": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+      "match": true
+    }
+  ],
+  "committed_whitespace_native": "b058c9 exit0 git show --check",
+  "unstaged_test_changes": "Consumer reports two test-first edits before HOLD; excluded from exact prepared commit/push, retained uncommitted; premature advance disclosed."
+}

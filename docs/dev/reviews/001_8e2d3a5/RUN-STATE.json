@@ -5,27 +5,26 @@
   "case_id": "A-012",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A011 independent assessment published at a6df880 and exact ref verified",
+  "last_completed_action": "A012 prepared governing owners committed b7a4a7e and published after supported primary-context reassessment",
   "pending_operation": {
-    "kind": "checkpoint",
+    "kind": "task",
     "status": "in_progress",
-    "description": "A012 commanded JSON removal and paused-phase amendment integration"
+    "description": "Same A012 steering amendment behavioral/tests/docs work, before amendment completion/integration. Product dirty paths remain local, no remote-recovery completeness claim."
   },
   "next_action": "Fresh commanded JSON removal; stop consumer after amendment integration",
   "checkpoint_refs": {
-    "product_branch": "phase/2-output-and-source-extensions",
-    "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "product_branch": "revision/003_0e47414-remove-json",
+    "product_commit": "b7a4a7e47f512e541b670d0c6f02b2bd5746afc2",
     "integration_branch": "phase/2-output-and-source-extensions",
     "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "merge_parents": [
-      "ea97182d2d6a3984599238312a13e78d54d3221a",
-      "d518cc23650018542e43d8fb5a63f44a4d283518"
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac"
     ],
     "remote": "origin",
-    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
-    "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "remote_ref": "refs/heads/revision/003_0e47414-remove-json",
+    "remote_commit": "b7a4a7e47f512e541b670d0c6f02b2bd5746afc2",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "a6df880aa35405f2264795dcef1297462130847d"
+    "evidence_commit": "5effa5d010948e0a133d76af2f5d2ee861acfc82"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -73,7 +72,7 @@
     "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
     "STOP-CONSUMED-20261005-RESUME.json"
   ],
-  "updated_at": "2026-10-05T18:46:50.939134+00:00",
+  "updated_at": "2026-10-05T18:55:54.250855+00:00",
   "case_results": [
     {
       "case_id": "A-006",

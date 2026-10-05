@@ -27,7 +27,7 @@
     "remaining": "Evidence publication only"
   },
   "native_process_status": {
-    "workers": "stopped",
+    "workers": "Historical suspended contexts stopped; fresh A012 consumer active",
     "unknown_readonly_assessor_effects": [
       "original helper session51706 poll rejected",
       "earlier inline final-capture session identity discarded"
@@ -37,6 +37,22 @@
   "a022": {
     "status": "Independent Passed; local-only doctrial a25a954",
     "assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
-    "runtime_acceptance": "Pending; no trial implementation authorized/executed"
+    "runtime_acceptance": "Pending; no trial implementation authorized/executed",
+    "publication": "5effa5d010948e0a133d76af2f5d2ee861acfc82 exact live evidence ref verified"
+  },
+  "a012": {
+    "prep_publication": "Exact b7a4a7e verified after supported sameGit root context",
+    "active": "Same consumer behavioral/tests/docs work",
+    "local_dirty_observed_native": "7ab0d0 exit0",
+    "pending_paths": [
+      "README.md",
+      "docs/module.md",
+      "tests/integration/test_cli.py",
+      "tests/integration/test_distribution.py",
+      "tests/integration/test_ranges.py",
+      "tests/unit/test_cli.py",
+      "textstats/cli.py"
+    ],
+    "qualification": "These unfinished source files remain local; no remote-recoverable export completeness claim. Original two early edits before HOLD retained as process defect."
   }
 }

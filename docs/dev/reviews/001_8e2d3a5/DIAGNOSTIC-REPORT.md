@@ -270,3 +270,8 @@ The human Resume consumed the reached controlled suspension, retaining original 
 ## A022 isolated acceptance change — Passed
 
 [Independent assessment](runs/A-022/1/independent-assessment/ASSESSMENT.json) verifies actual checked T019 affected by revised Unicode Nd endpoint acceptance, preserved history/checkboxes and six pending reassessment notes, correct next-work orientation, current governing QC and local-only publication at a25a954. No source/test/public-doc implementation occurred; live phase remains independent. Frozen helper local identity mismatch retained; audited adapter passes original checks. Incidental metadata exposure, failed observation attempt and no hard isolation/full native transcript certification retained.
+
+
+## PUB005/PUB006 — A012 publication interventions
+
+Redundant startup push rejected; exact existing checkpoint publication established by readonly equality, no replay needed. New preparation b7a4a7e delegated push separately rejected for trusted human destination/payload authority. [Supported primary-context reassessment](runs/A-012/1/PREPARATION-PUBLICATION-REASSESSMENT.json) supplied retained actual human push/Resume/campaign scope, exact11owneddocs/21QC hashes/absent-ref readback; same ordinary Git push succeeded and exact ref verified. Original rejections retained. Consumer two test-first edits began before HOLD arrived while publication blocked; preserved outside pushed commit and process defect disclosed. No new production work authorized around that gate; continuation resumes only after resolved publication.
