@@ -1,0 +1,65 @@
+{
+  "status": "Verified read-only; no alternate writes",
+  "records": [
+    {
+      "task_id": "T-018",
+      "number": 18,
+      "title": "[T-018] Establish normalized logical-line selection seam",
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/18",
+      "state": "open",
+      "body_sha256": "e67b2242d64460dc6b45dfcb3354f2b1468f6e11826dabde846266d3ff0fef7c",
+      "opening_marker_count": 1,
+      "closing_marker_count": 1,
+      "brief_fields": true,
+      "accepted_source_link": true
+    },
+    {
+      "task_id": "T-019",
+      "number": 19,
+      "title": "[T-019] Integrate validated named-file range text and JSON commands",
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/19",
+      "state": "open",
+      "body_sha256": "695f57773741b9574f202529b1532325720ec1221db5861c9a5372e193b0f710",
+      "opening_marker_count": 1,
+      "closing_marker_count": 1,
+      "brief_fields": true,
+      "accepted_source_link": true
+    },
+    {
+      "task_id": "T-020",
+      "number": 20,
+      "title": "[T-020] Document ranges and verify extracted-source acceptance",
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/20",
+      "state": "open",
+      "body_sha256": "e04a6b728d3d7150d5fd0f4260b90eba3280bb2370e7adde55226c9428daa3b0",
+      "opening_marker_count": 1,
+      "closing_marker_count": 1,
+      "brief_fields": true,
+      "accepted_source_link": true
+    },
+    {
+      "task_id": "T-021",
+      "number": 21,
+      "title": "[T-021] Review, test and report range milestone 2.4",
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/21",
+      "state": "open",
+      "body_sha256": "379ff8949525bac352c9749b9d7c4da83ff570c47f0133cc2d6e294695851ab2",
+      "opening_marker_count": 1,
+      "closing_marker_count": 1,
+      "brief_fields": true,
+      "accepted_source_link": true
+    },
+    {
+      "task_id": "T-022",
+      "number": 22,
+      "title": "[T-022] Review, test and report the named-file range feature",
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/22",
+      "state": "open",
+      "body_sha256": "330bffa40929100624b3a178f511fc4bcdfd704e3192e4c805d0be3650789902",
+      "opening_marker_count": 1,
+      "closing_marker_count": 1,
+      "brief_fields": true,
+      "accepted_source_link": true
+    }
+  ]
+}

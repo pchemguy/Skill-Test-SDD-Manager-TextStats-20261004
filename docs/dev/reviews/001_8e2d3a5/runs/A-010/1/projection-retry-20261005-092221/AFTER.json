@@ -1,0 +1,157 @@
+{
+  "status": "Projection confirmed",
+  "source_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+  "milestones": [
+    {
+      "id": 18320787,
+      "number": 7,
+      "title": "sdd-2.4-Named-file-line-ranges",
+      "state": "open",
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/7",
+      "open_issues": 4,
+      "closed_issues": 0,
+      "description_sha256": "bc0c61055a561fc4be8d6ad8a3b09053709317e6fa6a5090cb1865f782f2448d"
+    },
+    {
+      "id": 18320791,
+      "number": 8,
+      "title": "sdd-2.5-Range-feature-review",
+      "state": "open",
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/8",
+      "open_issues": 1,
+      "closed_issues": 0,
+      "description_sha256": "e01865ae48b1225a303cae4e272823e485983ddad502fe038db34df04b6251fa"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "T-018",
+      "id": 5709579322,
+      "number": 18,
+      "title": "[T-018] Establish normalized logical-line selection seam",
+      "state": "open",
+      "state_reason": null,
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/18",
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ],
+      "milestone": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/7",
+        "open_issues": 4,
+        "closed_issues": 0,
+        "description_sha256": "bc0c61055a561fc4be8d6ad8a3b09053709317e6fa6a5090cb1865f782f2448d"
+      },
+      "body_sha256": "e67b2242d64460dc6b45dfcb3354f2b1468f6e11826dabde846266d3ff0fef7c",
+      "marker_verified": true,
+      "submitted_brief_matches": true
+    },
+    {
+      "task_id": "T-019",
+      "id": 5709580976,
+      "number": 19,
+      "title": "[T-019] Integrate validated named-file range text and JSON commands",
+      "state": "open",
+      "state_reason": null,
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/19",
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ],
+      "milestone": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/7",
+        "open_issues": 4,
+        "closed_issues": 0,
+        "description_sha256": "bc0c61055a561fc4be8d6ad8a3b09053709317e6fa6a5090cb1865f782f2448d"
+      },
+      "body_sha256": "695f57773741b9574f202529b1532325720ec1221db5861c9a5372e193b0f710",
+      "marker_verified": true,
+      "submitted_brief_matches": true
+    },
+    {
+      "task_id": "T-020",
+      "id": 5709582158,
+      "number": 20,
+      "title": "[T-020] Document ranges and verify extracted-source acceptance",
+      "state": "open",
+      "state_reason": null,
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/20",
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ],
+      "milestone": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/7",
+        "open_issues": 4,
+        "closed_issues": 0,
+        "description_sha256": "bc0c61055a561fc4be8d6ad8a3b09053709317e6fa6a5090cb1865f782f2448d"
+      },
+      "body_sha256": "e04a6b728d3d7150d5fd0f4260b90eba3280bb2370e7adde55226c9428daa3b0",
+      "marker_verified": true,
+      "submitted_brief_matches": true
+    },
+    {
+      "task_id": "T-021",
+      "id": 5709583581,
+      "number": 21,
+      "title": "[T-021] Review, test and report range milestone 2.4",
+      "state": "open",
+      "state_reason": null,
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/21",
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ],
+      "milestone": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/7",
+        "open_issues": 4,
+        "closed_issues": 0,
+        "description_sha256": "bc0c61055a561fc4be8d6ad8a3b09053709317e6fa6a5090cb1865f782f2448d"
+      },
+      "body_sha256": "379ff8949525bac352c9749b9d7c4da83ff570c47f0133cc2d6e294695851ab2",
+      "marker_verified": true,
+      "submitted_brief_matches": true
+    },
+    {
+      "task_id": "T-022",
+      "id": 5709585290,
+      "number": 22,
+      "title": "[T-022] Review, test and report the named-file range feature",
+      "state": "open",
+      "state_reason": null,
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/22",
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ],
+      "milestone": {
+        "id": 18320791,
+        "number": 8,
+        "title": "sdd-2.5-Range-feature-review",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/8",
+        "open_issues": 1,
+        "closed_issues": 0,
+        "description_sha256": "e01865ae48b1225a303cae4e272823e485983ddad502fe038db34df04b6251fa"
+      },
+      "body_sha256": "330bffa40929100624b3a178f511fc4bcdfd704e3192e4c805d0be3650789902",
+      "marker_verified": true,
+      "submitted_brief_matches": true
+    }
+  ],
+  "phase_label": "sdd-phase-2-Output-and-source-extensions",
+  "total_issues": 22,
+  "total_milestones": 8,
+  "verification_note": "Protected adapter omits issue bodies; initial final marker check stopped after all seven successful creations. Read-only GitHub connector verified exact markers and body SHA256 equals submitted payload; no write replay occurred."
+}

@@ -3,17 +3,12 @@
   "active_cases": [
     {
       "case_id": "A-010",
-      "role": "consumer implementation, assessor waiting",
+      "role": "projection verified; implementation continuation pending",
       "positive": true
     },
     {
-      "case_id": "A-018",
-      "role": "first genuine push rejection frozen; independent trigger observation",
-      "positive": false
-    },
-    {
       "case_id": "A-024",
-      "role": "bounded GET access facility initial observation",
+      "role": "assessor interrupted; final access variant unstarted",
       "positive": false
     }
   ],
@@ -28,5 +23,11 @@
     "status": "original frozen and independently observed",
     "pending": "publish before restore/freshcontinuation",
     "qualification": "controlled pre-send metadata only; native protected credential handoff eligibility unavailable"
+  },
+  "a010_projection": {
+    "status": "Confirmed after new explicit human retry",
+    "source_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "evidence": "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
+    "implementation_started": false
   }
 }

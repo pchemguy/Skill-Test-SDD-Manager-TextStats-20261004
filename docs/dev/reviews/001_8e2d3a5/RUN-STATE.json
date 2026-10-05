@@ -5,19 +5,9 @@
   "case_id": "A-010",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A018 fresh retained milestone publication independently Passed; A024 permission denial and restored exact readbacks independently observed",
-  "pending_operation": {
-    "kind": "api",
-    "status": "blocked",
-    "description": "A010 hosted range projection rejected twice by automatic review; no effects; independent local cases continue",
-    "identity": {
-      "repository": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
-      "branch": "feature/002_ea97182-line-ranges",
-      "commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
-      "endpoint": "POST /repos/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestones"
-    }
-  },
-  "next_action": "Finish independent local A021/A024 scopes; retain A010 until supported trusted authorization resolves exact rejected hosting payload",
+  "last_completed_action": "Explicit human retry created and verified range milestones2.4/2.5 and issuesT018\u2013T022 via same protected adapter",
+  "pending_operation": null,
+  "next_action": "Continue remaining authorized A010 implementation from published89664adb with confirmed projection; prior Blocked assessment remains historical",
   "checkpoint_refs": {
     "product_branch": "feature/002_ea97182-line-ranges",
     "product_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
@@ -67,9 +57,10 @@
     "runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle",
     "SUSPENSION-PUBLICATION-20261005.json",
     "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json",
-    "runs/A-010/1/REQUEST.md"
+    "runs/A-010/1/REQUEST.md",
+    "runs/A-010/1/projection-retry-20261005-092221/AFTER.json"
   ],
-  "updated_at": "2026-10-05T08:33:30.897634+00:00",
+  "updated_at": "2026-10-05T09:30:42.555595+00:00",
   "case_results": [
     {
       "case_id": "A-006",
