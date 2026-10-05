@@ -21,6 +21,10 @@ def count_file(path: str | os.PathLike[str], *, strip_bom: bool = True) -> TextS
 
     The owned binary handle closes before counting; no caller stream is owned.
     """
+    return count_text(_read_text(path), strip_bom=strip_bom)
+
+
+def _read_text(path: str | os.PathLike[str]) -> str:
+    """Decode complete named-file bytes strictly, closing the owned handle."""
     with open(path, "rb") as source:
-        text = source.read().decode("utf-8")
-    return count_text(text, strip_bom=strip_bom)
+        return source.read().decode("utf-8")

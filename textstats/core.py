@@ -1,6 +1,7 @@
 """Pure whole-input counting and its immutable statistics value."""
 
 from dataclasses import dataclass
+import re
 
 
 @dataclass(frozen=True)
@@ -42,11 +43,36 @@ def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
         lines, and trailing terminators add no phantom line. Words follow
         Python's Unicode whitespace splitting rules.
     """
-    if strip_bom and text.startswith("\ufeff"):
-        text = text[1:]
+    text = _normalize_text(text, strip_bom=strip_bom)
     # Normalizing CRLF first prevents its two characters counting twice.
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     lines = normalized.count("\n")
     if normalized and not normalized.endswith("\n"):
         lines += 1
     return TextStats(lines, len(text.split()))
+
+
+def _normalize_text(text: str, *, strip_bom: bool = True) -> str:
+    """Apply the whole decoded input's BOM policy exactly once."""
+    return text[1:] if strip_bom and text.startswith("\ufeff") else text
+
+
+def _select_lines(text: str, start: int, end: int) -> str:
+    """Select inclusive logical lines from already normalized decoded text.
+
+    Preserve contents and CRLF/CR/LF terminators. Unicode separators are
+    contents, and a trailing terminator does not create a phantom line.
+    """
+    selected = []
+    offset = 0
+    number = 1
+    for match in re.finditer(r"\r\n|\r|\n", text):
+        if start <= number <= end:
+            selected.append(text[offset:match.end()])
+        offset = match.end()
+        number += 1
+        if number > end:
+            return "".join(selected)
+    if offset < len(text) and start <= number <= end:
+        selected.append(text[offset:])
+    return "".join(selected)

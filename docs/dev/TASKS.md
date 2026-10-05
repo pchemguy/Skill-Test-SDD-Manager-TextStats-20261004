@@ -110,11 +110,12 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
             Evidence: phase code review, complete nonempty product suites, runnable docs, isolated extracted-source module checks, blocker repair and committed/pushed reports. Reports: docs/dev/reports/phases/2/PHASE-REPORT.md and docs/dev/reports/IMPLEMENTATION-REPORT.md. Aggregate unresolved admissible TODOs and solution/owner/provenance with resolution references; verify full-phase explicit integration, merged state and publication before claiming complete implementation.
 
     - [ ] Milestone 2.4 — Named-file line ranges
-        - [ ] T-018 — Establish normalized logical-line selection seam
+        - [x] T-018 — Establish normalized logical-line selection seam
             Depends on: T-012 and current feature preparation gates.
             Scope: textstats/core.py, textstats/io.py and tests/unit semantic/acquisition checks; preserve public facade.
             Outcome: source-independent selection consumes text after one BOM normalization, preserves CRLF/CR/LF contents/terminators and EOF semantics; private complete named-file decoding can feed it without altering count_file's whole-input signature or owned-handle lifecycle (R-2/R-3).
             Evidence: pure supplied selection examples, empty/final segments/Unicode separators/interior and double BOM; whole-input API signatures/exports/silence/counts, close-on-success/failure and unchanged bytes. Strict decoding remains complete before any selection. Default CLI stays useful while no range command is exposed yet.
+            Completion evidence (2026-10-05): focused selection RED ran 2 tests with 2 missing-seam assertion failures; GREEN independent unit19/integration11 passed, no skips. Supplied logical-line/BOM/Unicode/EOF rows preserve characters and terminators; whole-input facade/signature/silence/unchanged bytes and existing success/read/decode/close lifecycle regressions pass after private full-decode factoring. Default CLI unchanged. `git diff --check` passed. Issue #18 title/phase/milestone confirmed; protected metadata omits body marker, so prior projection marker verification in authorized request is retained rather than claimed freshly inspected.
         - [ ] T-019 — Integrate validated named-file range text and JSON commands
             Depends on: T-018.
             Scope: textstats/cli.py and tests/unit/test_cli.py plus tests/integration module/file checks.
