@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-022",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent changed-acceptance assessment",
+  "pending_operation": null,
+  "next_action": "Coordinator publish sanitized assessment",
+  "checkpoint_refs": {
+    "product_branch": "trial/a022-acceptance-change",
+    "product_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+    "integration_branch": "trial/a022-acceptance-change",
+    "integration_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+    "merge_parents": [
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+    ],
+    "remote": "/workspace/scratch/textstats-acceptance-change-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a022-acceptance-change",
+    "remote_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6"
+  },
+  "evidence_paths": [
+    "OBSERVATIONS.json"
+  ]
+}

@@ -1,8 +1,7 @@
 {
   "suspended": false,
   "active_cases": [
-    "A-011 assessment-only consumer",
-    "A-022 isolated acceptance-change consumer"
+    "A-012 commanded amendment consumer"
   ],
   "new_work_allowed": "Remaining full authorized campaign; dependent selection after independent published gates",
   "a018_pending_publication": {
@@ -34,5 +33,10 @@
       "earlier inline final-capture session identity discarded"
     ],
     "all_process_quiescence_verified": false
+  },
+  "a022": {
+    "status": "Independent Passed; local-only doctrial a25a954",
+    "assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+    "runtime_acceptance": "Pending; no trial implementation authorized/executed"
   }
 }

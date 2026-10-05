@@ -265,3 +265,8 @@ The human Resume consumed the reached controlled suspension, retaining original 
 ## A-011 independent boundary — 2026-10-05T18:44:09.200968+00:00
 
 [A-011 assessment](runs/A-011/1/independent-assessment/ASSESSMENT.json): **Passed**. Actual removal candidate scope and retained contracts are accurately assessed; no consumer governing/source/test edits, revision branch or resumed execution observed. Original ownership helper falsepositive is retained and independently resolved with the audited Git-visible-inventory assessor variant. Next: Publish A011 evidence, then separately dispatch assessed JSON removal and stop after amendment integration
+
+
+## A022 isolated acceptance change — Passed
+
+[Independent assessment](runs/A-022/1/independent-assessment/ASSESSMENT.json) verifies actual checked T019 affected by revised Unicode Nd endpoint acceptance, preserved history/checkboxes and six pending reassessment notes, correct next-work orientation, current governing QC and local-only publication at a25a954. No source/test/public-doc implementation occurred; live phase remains independent. Frozen helper local identity mismatch retained; audited adapter passes original checks. Incidental metadata exposure, failed observation attempt and no hard isolation/full native transcript certification retained.

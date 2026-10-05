@@ -1,0 +1,9 @@
+{
+  "commit": "a6df880aa35405f2264795dcef1297462130847d",
+  "push": "ordinary origin evidence ref success",
+  "native_push_session": 85585,
+  "owned_files": 27,
+  "manifest_hashes": "verified",
+  "staged_whitespace_check": "Emitted one extra EOF blank-line warning in retained CONSUMER-RESULT.md; individual diff-check exit not separately captured. Immutable assessment bytes retained; no claim this check passed.",
+  "effect": "Evidence-only publication; no source/test/product change"
+}

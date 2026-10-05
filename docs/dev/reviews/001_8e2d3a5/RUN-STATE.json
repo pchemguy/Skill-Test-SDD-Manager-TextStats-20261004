@@ -2,16 +2,16 @@
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
   "phase": "P3",
-  "case_id": "A-011",
+  "case_id": "A-012",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A-011 independently Passed; evidence publication pending",
+  "last_completed_action": "A011 independent assessment published at a6df880 and exact ref verified",
   "pending_operation": {
     "kind": "checkpoint",
     "status": "in_progress",
-    "description": "Publish independent A-011 evidence before next dependent work"
+    "description": "A012 commanded JSON removal and paused-phase amendment integration"
   },
-  "next_action": "Publish A011 evidence, then separately dispatch assessed JSON removal and stop after amendment integration",
+  "next_action": "Fresh commanded JSON removal; stop consumer after amendment integration",
   "checkpoint_refs": {
     "product_branch": "phase/2-output-and-source-extensions",
     "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
@@ -25,7 +25,7 @@
     "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
     "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "5027c2deb84abc4550dd967bc8719f740172120d"
+    "evidence_commit": "a6df880aa35405f2264795dcef1297462130847d"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -73,7 +73,7 @@
     "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
     "STOP-CONSUMED-20261005-RESUME.json"
   ],
-  "updated_at": "2026-10-05T18:44:09.200968+00:00",
+  "updated_at": "2026-10-05T18:46:50.939134+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -200,6 +200,14 @@
       "assessment_path": "runs/A-011/1/independent-assessment/ASSESSMENT.json",
       "reason": "Actual removal candidate scope and retained contracts are accurately assessed; no consumer governing/source/test edits, revision branch or resumed execution observed. Original ownership helper falsepositive is retained and independently resolved with the audited Git-visible-inventory assessor variant.",
       "assisted": false
+    },
+    {
+      "case_id": "A-022",
+      "attempt": 1,
+      "status": "Passed",
+      "assessment_path": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+      "reason": "Bounded isolated acceptance incorporation and next-work orientation; runtime acceptance remains pending; local checker adapter disclosed",
+      "assisted": true
     }
   ]
 }

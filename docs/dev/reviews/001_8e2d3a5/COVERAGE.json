@@ -175,8 +175,14 @@
       ]
     },
     "A-012": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "request": "runs/A-012/1/REQUEST.md"
+        }
+      ]
     },
     "A-013": {
       "status": "Pending",
@@ -294,13 +300,17 @@
       ]
     },
     "A-022": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
+          "status": "Passed",
           "request": "runs/A-022/1/REQUEST.md",
-          "scope": "isolated local-only document acceptance and orientation"
+          "scope": "isolated local-only document acceptance and orientation",
+          "assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+          "current_assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+          "assisted": true,
+          "reason": "Independent doc-only checked-acceptance reassessment/orientation passed; local identity checker adapter disclosed"
         }
       ]
     },

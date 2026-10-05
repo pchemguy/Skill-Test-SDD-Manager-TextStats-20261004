@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "case_id": "A-022",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "checkpoint_refs": {
+    "product_branch": "trial/a022-acceptance-change",
+    "product_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+    "integration_branch": "trial/a022-acceptance-change",
+    "integration_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+    "merge_parents": [
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+    ],
+    "remote": "/workspace/scratch/textstats-acceptance-change-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a022-acceptance-change",
+    "remote_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6"
+  },
+  "source_checkpoint": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+  "assessment_scope": "Bounded isolated local acceptance incorporation and next-work orientation; runtime implementation/reverification is pending and outside request. No hard filesystem isolation or complete native consumer session certification.",
+  "independent_agent_checks": [
+    {
+      "id": "changed-checked-owner",
+      "status": "Passed",
+      "evidence": "Baseline/current cli._parse_range rejects every character outside ASCII 0..9. T-019 checkbox was and remains checked. Revised S-8 names Nd decimal values/mixing/leading zeros, while T-019 existing CLI scope and ID own reassessment."
+    },
+    {
+      "id": "history-pending-reassessment",
+      "status": "Passed",
+      "evidence": "All checkbox lines unchanged; 22 unique task IDs; six durable pending notes at T-019–T-022 and parents 2.4/2.5. Historical task evidence preserved; milestone sentence updates current acceptance to historical ASCII acceptance without erasing observed evidence. Archived feature docs unchanged."
+    },
+    {
+      "id": "orientation-before-unchecked",
+      "status": "Passed",
+      "evidence": "Consumer result and current adjacent QC identify T-019 under sdd-implement before untouched T-013. No pending note cleared or checkbox changed. Runtime recheck is future authorized work, not claimed complete."
+    },
+    {
+      "id": "current-document-qc",
+      "status": "Passed",
+      "evidence": "Newest SPEC/PLAN/TASKS QC reports record concrete conformance coverage, rationale/count exclusions and limits. All 7/8/9 current reviewed/upstream hashes independently match. Scope remains S-8 and original component/task owners; Ready denotes documents only."
+    },
+    {
+      "id": "bounded-publication-preservation",
+      "status": "Passed",
+      "evidence": "Independent exact local ref readback matches trial HEAD. One parent baseline; no merge required. Eight owned documents only; production/tests/public docs/Makefile/frozen resources and archived feature docs unchanged; clean worktree; live Phase2 ref remains baseline; all 111 package hashes match."
+    }
+  ],
+  "deterministic_assessment": {
+    "original": "ORIGINAL-HELPER-RESULT.json",
+    "original_exit": 2,
+    "original_outcome": "Blocked: repository_identity_mismatch; no output artifact created",
+    "adapter": "LOCAL-URL-DETERMINISTIC-ASSESSMENT.json",
+    "adapter_exit": 0,
+    "adapter_outcome": "Checks passed",
+    "disclosure": "Audited retained A-015/2 local_url_assessment.py uses source-hash guard and in-memory core.repository identity metadata override for explicit local destination. Original helper/core/ownership/contract unchanged. No ignoreddist workaround or trial ownership change."
+  },
+  "publication": {
+    "product_status": "published-local-only",
+    "destination": "/workspace/scratch/textstats-acceptance-change-remote-20261005.git",
+    "ref": "refs/heads/trial/a022-acceptance-change",
+    "commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+    "assessor_status": "Prepared; coordinator publication pending",
+    "hosted_effects": "None performed by assessor; consumer retained local-only publication evidence."
+  },
+  "limitations": [
+    "Consumer has broad shared filesystem access; no hard isolation certification. Incidental HARNESS-SOURCE/SETUP commit-only metadata exposure disclosed in journal/result; no observed harness body usage.",
+    "JOURNAL.md includes 28 command sections and replayed observations plus loaded file contents; consumer-authored journal is not a full native session transcript. Native assessor tool results and structured subprocess outputs are evidence of bounded observations.",
+    "Assessor observation script attempt1 used wrong manifest key and failed before persisting command records; failed source/error preserved. Attempt2 fully retained command outputs; product untouched.",
+    "Current live A-011 read-only context may see shared trial branch ref; coordinator-created ref and isolated doc commit do not alter live phase2 tip. Hosted/current live acceptance not certified by this trial."
+  ],
+  "evidence_paths": [
+    "OBSERVATIONS.json",
+    "INDEPENDENT-COMMANDS.json",
+    "SUPPLEMENTAL-COMMANDS.json",
+    "ORIGINAL-HELPER-RESULT.json",
+    "LOCAL-URL-DETERMINISTIC-ASSESSMENT.json",
+    "INPUTS.json",
+    "RUN-STATE.json",
+    "observe.py",
+    "OBSERVATION-ATTEMPT1.py",
+    "OBSERVATION-ATTEMPT1-FAILURE.json"
+  ]
+}
