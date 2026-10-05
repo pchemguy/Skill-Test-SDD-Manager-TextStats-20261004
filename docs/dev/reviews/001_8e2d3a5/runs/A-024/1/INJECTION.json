@@ -1,0 +1,16 @@
+{
+  "actor": "coordinator",
+  "scope": "isolated access classification, GET-only existing maintained issue/milestone",
+  "product": "/workspace/scratch/textstats-access-worktree-20261005",
+  "checkpoint": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "facility": "/workspace/scratch/textstats-access-tools-20261005/tracking-access.py",
+  "wrapper_sha256": "850248b068b422ca67dff375ec1cba2d342a348ab007a85eb1809edfebc57b22",
+  "initial_mode": "denial",
+  "variants": [
+    "denial",
+    "rate-limit",
+    "unavailable-session"
+  ],
+  "restoration": "After each actual consumer-visible fault/freeze, change only bounded facility MODE to restored; fresh consumer same scope and protected existing adapter is reused. Original helper and credentials are never read/modified.",
+  "provider_state": "No writes permitted; response faults are controlled pre-send metadata, not claimed live provider denial."
+}

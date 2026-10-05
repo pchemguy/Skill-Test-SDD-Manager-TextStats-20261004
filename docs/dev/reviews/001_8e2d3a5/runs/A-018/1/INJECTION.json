@@ -1,0 +1,14 @@
+{
+  "actor": "coordinator",
+  "timestamp": "2026-10-05T08:08:03.077823+00:00",
+  "scope": "disposable local-only publication failure fixture, no positive destination change",
+  "actual_prerequisite": "A-005 independently assessed published milestone checkpoint",
+  "product": "/workspace/scratch/textstats-rejected-worktree-20261005",
+  "retained_head": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "local_destination": "/workspace/scratch/textstats-rejected-remote-20261005.git",
+  "ref": "refs/heads/trial/a018-rejected-publication",
+  "initial_destination": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+  "hook": "/workspace/scratch/textstats-rejected-remote-20261005.git/hooks/update",
+  "hook_sha256": "e75bd289020356962c34ee81423b1a60a6a3aaea77ccbea3896211d5474a9f32",
+  "restoration": "After actual rejection and independent trigger observation, preserve exact hook bytes then rename only disposable hooks/update to hooks/update.rejected-fixture. Do not force/reset/change product/ref; fresh continuation to same URL."
+}

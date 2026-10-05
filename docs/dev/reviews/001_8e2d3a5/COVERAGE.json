@@ -131,8 +131,15 @@
       ]
     },
     "A-010": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "consumer": "fresh explicit-source context",
+          "request": "runs/A-010/1/REQUEST.md"
+        }
+      ]
     },
     "A-011": {
       "status": "Pending",
@@ -196,8 +203,15 @@
       "attempts": []
     },
     "A-018": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "request": "runs/A-018/1/REQUEST.md",
+          "scope": "disposable local-only rejected publication"
+        }
+      ]
     },
     "A-019": {
       "status": "Pending",
@@ -229,8 +243,15 @@
       "attempts": []
     },
     "A-024": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "request": "runs/A-024/1/REQUEST.md",
+          "scope": "GET-only access classification variants"
+        }
+      ]
     },
     "A-025": {
       "status": "Passed",
