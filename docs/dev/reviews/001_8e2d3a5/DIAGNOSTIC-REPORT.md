@@ -158,3 +158,11 @@ A-007 independently passed with disclosed checker assistance: 17 unit and 11 int
 Tracked files/index are clean. The unexplained untracked BOM fixture `-json-9l969okj/sample.txt` remains preserved. Independent suites created no new residue; no cleanup defect or ownership is established. Full native audit and hard filesystem isolation remain unavailable. The campaign is suspended with nine Passed cases, one Blocked case and seventeen Pending cases; remaining cases are not claimed accepted.
 
 The authorization incident and specific plugin amendment proposal remain in this report and `runs/A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md`. The source under test remains immutable; separate v0.14.4 changes and proposals do not count as live acceptance of this pinned version. No new case, task or agent starts during suspension.
+
+## Resume on 2026-10-05
+
+Explicit Resume consumed the reached JSON milestone suspension. Independently observed local/live product phase `ea97182d2d6a3984599238312a13e78d54d3221a`, main `59debb649545125dd3aa00377ea115451b594271` and evidence `06c6f5dd82cbaad8d6588ff207af894885515031` match the retained checkpoint. Milestone #4 is closed; issues #10–#12 completed and #13–#17 remain open. The unknown BOM fixture remains unchanged and excluded. No clone or fresh setup replay occurred.
+
+A-008 prepares named-file line ranges from the paused Phase 2 checkpoint, with a fresh consumer and independent assessor. A-015 uses an existing-repository worktree from actual A-003 and a disposable bare local remote, with command-local Git configuration and a controlled pre-commit hold; only actual consumer staging/checklist/check evidence can establish its interruption trigger. Local transport recovery does not certify live GitHub recovery.
+
+A-026 independently observed zero selection (exit 5, zero tests), then a real baseline of 14 unit and 6 integration tests passing at actual A-005. Its fresh verification-only consumer reports the same counts and preserves product state. No pre-existing failing baseline is demonstrated; that required variant remains unavailable and cannot be converted into a pass. Independent assessment follows. Actual Python remains 3.12.14; Python 3.11 execution and installed-client activation remain untested.

@@ -2,12 +2,16 @@
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
   "phase": "P3",
-  "case_id": "A-007",
+  "case_id": "A-008",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A-007 independently passed with disclosed assistance; requested JSON suspension reached",
-  "pending_operation": null,
-  "next_action": "Remain suspended until explicit human resume",
+  "last_completed_action": "JSON suspension reconciled against live refs and hosted state; explicit Resume consumed stop",
+  "pending_operation": {
+    "kind": "preparation",
+    "status": "in_progress",
+    "description": "A-008 feature preparation"
+  },
+  "next_action": "Fresh feature preparation consumer then independent assessment",
   "checkpoint_refs": {
     "product_branch": "phase/2-output-and-source-extensions",
     "product_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
@@ -21,7 +25,7 @@
       "b398e258cefc03dbc47630b83967db961a376eae"
     ],
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "f9f697469cdf6f63fe887a408a06ca8689726c86"
+    "evidence_commit": "06c6f5dd82cbaad8d6588ff207af894885515031"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -51,7 +55,7 @@
     "SUSPENSION-JSON-2.1.md",
     "runs/A-007/1/independent-assessment/ASSESSMENT.json"
   ],
-  "updated_at": "2026-10-04T20:52:14.543928+00:00",
+  "updated_at": "2026-10-05T02:59:15.702095+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -76,5 +80,24 @@
       "assessment_path": "runs/A-007/1/independent-assessment/ASSESSMENT.json"
     }
   ],
-  "suspended": true
+  "suspended": false,
+  "active_cases": [
+    {
+      "case_id": "A-008",
+      "role": "consumer",
+      "status": "Running"
+    },
+    {
+      "case_id": "A-015",
+      "role": "consumer",
+      "status": "Running",
+      "scope": "isolated local-remote staged-work trial"
+    },
+    {
+      "case_id": "A-026",
+      "role": "assessor",
+      "status": "Running",
+      "scope": "verification only; missing pre-existing-failure variant"
+    }
+  ]
 }

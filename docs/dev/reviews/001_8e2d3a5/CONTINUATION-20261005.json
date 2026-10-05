@@ -1,0 +1,9 @@
+{
+  "instruction": "Resume",
+  "observed_at": "2026-10-05T02:52:05.998903+00:00",
+  "consumed_stop": "SUSPENSION-JSON-2.1.md",
+  "evidence_commit": "06c6f5dd82cbaad8d6588ff207af894885515031",
+  "product_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+  "preserved_fixture_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+  "next_case": "A-008"
+}
