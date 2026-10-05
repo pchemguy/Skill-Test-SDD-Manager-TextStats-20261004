@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "case_id": "A-010",
+  "attempt": 2,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "reason": "Human controlled suspension before remaining independent owner/helper, missing-case/lifetime and full documentation-example evidence; no complete case pass inferred. Most final product/lifecycle facts are independently established.",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "merge_parents": [
+      "ea97182d2d6a3984599238312a13e78d54d3221a",
+      "d518cc23650018542e43d8fb5a63f44a4d283518"
+    ],
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+  },
+  "independent_checks": [
+    {
+      "criterion": "literal behavior and regressions",
+      "status": "Passed",
+      "evidence": [
+        "LITERALS.json",
+        "DETERMINISTIC-ORIGINAL-REASSESSMENT.json"
+      ],
+      "detail": "All five API/baseline/JSON/ranges/ranges-JSON actual capture suites satisfy literal contract, including strict decode after END."
+    },
+    {
+      "criterion": "product test execution",
+      "status": "Passed",
+      "evidence": [
+        "PRODUCT-CHECK-COMMANDS.json"
+      ],
+      "detail": "Independent Python3.12 product unit21/integration13 both nonempty pass, no skips."
+    },
+    {
+      "criterion": "actual extracted source",
+      "status": "Passed",
+      "evidence": [
+        "DISTRIBUTION-PROVENANCE.json",
+        "EXTRACTED-distribution.json",
+        "EXTRACTED-ranges.json",
+        "EXTRACTED-ranges-json.json"
+      ],
+      "detail": "Actual make archive hash/extraction/import-origin retained; distribution/ranges/JSON captures complete. No independent expected distribution contract run; extracted ranges equal contract literals."
+    },
+    {
+      "criterion": "two-parent paused-phase integration and publication",
+      "status": "Passed",
+      "evidence": [
+        "FINAL.json",
+        "FINAL-GIT-COMMANDS.json"
+      ],
+      "detail": "Observed exact parent order ea97182 + d518cc2, actual phase branch HEAD0e474; live destination equality establishes publication. Main59debb6 remains live unchanged."
+    },
+    {
+      "criterion": "hosted identities and final closure",
+      "status": "Passed",
+      "evidence": [
+        "HOSTED-BEFORE-RETAINED.json",
+        "HOSTED-INDEPENDENT.json",
+        "HOSTED-INDEPENDENT-RETRY.json"
+      ],
+      "detail": "Same runtime issue18\u201322 IDs retained and completed; milestones7/8 closed 0open,4/1closed; actual membership list exactly18\u201321 and22. Original metadata reads7/19/list7 exit2/nullHTTP retained, bounded readonly retries HTTP200."
+    },
+    {
+      "criterion": "current main QC and adjacent archive",
+      "status": "Passed",
+      "evidence": [
+        "QC-OWNER-ARCHIVE.json",
+        "DOC-docs_dev_SPEC-REVIEW-REPORT.md",
+        "DOC-docs_dev_PLAN-REVIEW-REPORT.md",
+        "DOC-docs_dev_TASKS-REVIEW-REPORT.md"
+      ],
+      "detail": "Current latest reported governing/root hashes all equal actual bytes. Revised conformance covers S1\u2013S8, original observations retained, delivery count/excluded review rationale preserved. Source/QC archive pairs adjacent with repaired local links; main current readiness distinct from archived history."
+    },
+    {
+      "criterion": "task ownership",
+      "status": "Partially verified",
+      "evidence": [
+        "START.json",
+        "QC-OWNER-ARCHIVE.json",
+        "DETERMINISTIC-ORIGINAL-REASSESSMENT.json"
+      ],
+      "detail": "Literal main list has T001\u2013T022 once, T018\u2013T022 checked and T013\u2013T017 unchecked; archived feature pointer zero executable entries. Both lists retained. Frozen helper returns duplicate_task_ownership, likely generated ignored distribution discovery but cause has not been independently audited; no variant run."
+    },
+    {
+      "criterion": "committed implementation review reports",
+      "status": "Passed",
+      "evidence": [
+        "FINAL.json",
+        "DOC-docs_dev_features_002_ea97182_2.4.md",
+        "DOC-docs_dev_features_002_ea97182_PHASE-REPORT.md",
+        "DOC-docs_dev_features_002_ea97182_IMPLEMENTATION-REPORT.md"
+      ],
+      "detail": "Feature-prefix reports tracked at reached merge, separate code review/testing results and TODO None; independent inspection of actual production core/io/cli consistent with pure selection, full decode, one BOM, render-after-success and whole-input API. Main Phase2 remains incomplete."
+    },
+    {
+      "criterion": "source and unrelated preservation",
+      "status": "Passed",
+      "evidence": [
+        "START.json",
+        "FINAL.json"
+      ],
+      "detail": "All111 pinned source hashes unchanged; unrelated sample hash unchanged; observed final index/worktree clean except preserved untracked sample."
+    }
+  ],
+  "deterministic_result": "Checks failed",
+  "remaining_checks": [
+    "Independently audit frozen helper duplicate_task_ownership candidate paths against actual Git tracked/nonignored owner population; retain separately audited Git-owner variant if ignored generated TASKS is confirmed. Never edit frozen helper or remove generated consumer files.",
+    "Independent instrumented usage-before-read and owned-file closure/read-error/decode-error checks beyond consumer/product tests; product unit coverage ran but independently authored missing-case probe not yet run.",
+    "Independent execution/validation of all public documentation examples beyond product test and distribution capture; documentation source has been inspected, all-example independent command absent.",
+    "Finalize required_agent_checks and case verdict only after exact remaining evidence; preserve attempt1 Blocked and attempt2 assistance.",
+    "Resolve/cancel unknown older final-capture/original-helper process status without replay; no full native transcript or hard filesystem isolation certification."
+  ],
+  "limits": [
+    "Fresh independent assessor context, but shared broad filesystem prevents hard isolation certification.",
+    "No full native transcript; actual retained commands provide bounded evidence only.",
+    "Original attempt1 remains Blocked; attempt2 initial pre-resolution consumer result and coordinator interventions remain historical.",
+    "Original issue18 preHTTP PATCH failure reason lost; same-adapter coordinator diagnostic intervention preserved, independent final state verifies effect only.",
+    "T022 push rejection resolved by sameGit supported authority reassessment before reached publication; issue22 comment transport unknown reconciled by zero-comments readback then bounded retry (coordinator records, not independently recaptured chronology).",
+    "Assessor original helper polling auto-review rejection retained, supported same frozen-helper reassessment yielded actual Checks failed. Revision-authorization policy reading occurred after this reassessment; parent instruction ordering was not followed.",
+    "First final-capture orchestration discarded running-session identity; final completion/native status remains unknown, no corresponding success inferred.",
+    "Actual archived FEATURE-TASKS contains historical preparation-era active-source wording under an explicit historical banner and main-owner pointer; current governing sources and executable owner are clear."
+  ],
+  "suspended_at": "2026-10-05T13:51:45Z",
+  "observed_state_at": "2026-10-05T13:49:33.007463+00:00",
+  "native_sessions": {
+    "53101": "Finished exit0 sanitized readbacks",
+    "5863": "Finished exit0 product/distribution",
+    "9124": "Finished exit0 orchestration; inner assess exit1",
+    "12443": "Finished exit0 readonly retries",
+    "51706": "Poll rejected; original process/result unknown; no original output observed",
+    "earlier_final_capture": "Running identity discarded by output-only tool orchestration; completion unknown"
+  },
+  "no_product_mutation_by_assessor": true
+}

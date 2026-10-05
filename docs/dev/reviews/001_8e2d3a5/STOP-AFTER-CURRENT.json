@@ -1,12 +1,10 @@
 {
-  "instruction": "Perform controlled suspension",
-  "requested_at": "2026-10-05T06:23:46+03:00",
-  "status": "consumed by explicit Resume",
-  "active_cases_at_request": [
-    "A-009",
-    "A-015",
-    "A-016"
-  ],
-  "next_action": "Remain suspended until explicit human Resume",
-  "consumed_at": "2026-10-05T07:56:15.505355+00:00"
+  "instruction": "Perform conrolled suspension",
+  "normalized_instruction": "Perform controlled suspension",
+  "requested_at": "2026-10-05T16:51:45+03:00",
+  "status": "reached; dispatch suspended",
+  "reached_at": "2026-10-05T13:59:19.776352+00:00",
+  "boundary": "Published feature integration; unfinished independent A010 acceptance preserved",
+  "next_action": "Remain suspended until explicit human Resume; then reconcile exact state and finish existing assessment before dependent work",
+  "native_process_qualification": "Workers stopped. Two earlier read-only assessor subprocess effects are unknown; no safe identity/control retained. No full native process quiescence claim."
 }

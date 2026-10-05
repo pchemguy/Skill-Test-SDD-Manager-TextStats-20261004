@@ -5,27 +5,27 @@
   "case_id": "A-010",
   "attempt": 2,
   "role": "coordinator",
-  "last_completed_action": "Controlled suspension reached after published feature merge; independent A010 assessment and exact remaining gaps retained",
+  "last_completed_action": "A010 T022 same-Git publication reassessment succeeded and exact remote d518cc2 verified",
   "pending_operation": {
-    "kind": "checkpoint",
-    "status": "interrupted",
-    "description": "A010 final independent acceptance unfinished at human controlled suspension; ownership audit, independent missing-case/lifetime and all-document examples pending; two old readonly native effects uncertain"
+    "kind": "merge",
+    "status": "in_progress",
+    "description": "T022 hosting then explicit feature-to-pausedphase2 integration, no main phase completion"
   },
-  "next_action": "Remain suspended until explicit Resume; reobserve refs/artifacts, reconcile native uncertainty, then finish existing independent A010 assessment without repeating delivered implementation",
+  "next_action": "Consumer reconciles T022 hosted completion then feature integration into pausedphase2; independent assessment before A011",
   "checkpoint_refs": {
     "product_branch": "phase/2-output-and-source-extensions",
     "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "integration_branch": "phase/2-output-and-source-extensions",
     "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
-    "merge_parents": [
-      "ea97182d2d6a3984599238312a13e78d54d3221a",
-      "d518cc23650018542e43d8fb5a63f44a4d283518"
-    ],
     "remote": "origin",
     "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
     "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "07f93c8ae3357c3cce4108304d77c7dd5747b933"
+    "evidence_commit": "a4ecbaf28c2a7bea815d8fc3c310d2c2af4e7c81",
+    "merge_parents": [
+      "ea97182d2d6a3984599238312a13e78d54d3221a",
+      "d518cc23650018542e43d8fb5a63f44a4d283518"
+    ]
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -68,11 +68,9 @@
     "runs/A-010/1/REQUEST.md",
     "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
     "runs/A-010/2/REQUEST.md",
-    "runs/A-010/2/HOSTED-BEFORE.json",
-    "SUSPENSION-20261005-135145.json",
-    "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json"
+    "runs/A-010/2/HOSTED-BEFORE.json"
   ],
-  "updated_at": "2026-10-05T13:59:19.776352+00:00",
+  "updated_at": "2026-10-05T13:38:02.538715+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -183,14 +181,6 @@
       "status": "Blocked",
       "assessment_path": "runs/A-024/3/independent-assessment/ASSESSMENT.json",
       "reason": "Controlled fault/fresh readback supported; native credential handoff eligibility missing"
-    },
-    {
-      "case_id": "A-010",
-      "attempt": 2,
-      "status": "Blocked",
-      "assisted": true,
-      "assessment_path": "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
-      "reason": "Human controlled suspension before final independent checks; product feature delivery/integration published"
     }
   ]
 }

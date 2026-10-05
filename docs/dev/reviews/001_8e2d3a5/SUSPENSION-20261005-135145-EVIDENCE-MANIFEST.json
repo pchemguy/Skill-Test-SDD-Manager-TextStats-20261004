@@ -1,0 +1,355 @@
+{
+  "scope": "Completed sanitized artifacts frozen for suspension publication; no whole-native-process-quiescence claim",
+  "files": [
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/STOP-AFTER-CURRENT.json",
+      "bytes": 691,
+      "sha256": "9e114e5200c3611f1c27228e87e5baaac63c149f11ccc04a082ad9faf468907b"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/RUN-STATE.json",
+      "bytes": 7571,
+      "sha256": "34068af1471eb6bb8297189a5d7a2fefd151c9210461b944bf41cc7ea1d0708d"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/COVERAGE.json",
+      "bytes": 12006,
+      "sha256": "fd86401bd62df3a642fb73b933f99d48a0ab60f53f03188a4cb5da976566e968"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/COORDINATION.json",
+      "bytes": 1374,
+      "sha256": "8522f0982b8cf3bad047c1ce781315f66cd91357a7dc0c08d862e2d2120f0836"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/RESUME.md",
+      "bytes": 1784,
+      "sha256": "29d021a4aa50d5df8a529f5865a33c064ee90cdff388a7cb03ef479fbf65552e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/DIAGNOSTIC-REPORT.md",
+      "bytes": 44569,
+      "sha256": "4f94d1aeb78d4edb42e6d1cadf6be7066f377d94cff1c35a3a7ff052a4f944d7"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/SUSPENSION-20261005-135145.json",
+      "bytes": 20394,
+      "sha256": "c850a1813691b7e2e11a85ed44b0c77fdc2b7cff2cc6939ac6ef5225c81de10d"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/SUSPENSION-20261005-135145.md",
+      "bytes": 1784,
+      "sha256": "29d021a4aa50d5df8a529f5865a33c064ee90cdff388a7cb03ef479fbf65552e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/SUSPENSION-20261005-135145-PREVIOUS-STOP.json",
+      "bytes": 335,
+      "sha256": "44757a54e00059b4ac5857177488f169e2b5f2e4f648f22a0ff552578f0825ca"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_PHASE-REPORT.md",
+      "bytes": 4281,
+      "sha256": "de0900dd513199936f5e9726373ffbf2680b5ed66c666f9ec1a5cc4d2246152b"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/HOSTED-INDEPENDENT.json",
+      "bytes": 7143,
+      "sha256": "0418dad9c5e76b1cb3ec4e62ea085d37c1f6852085a51a7abe330d5f13c49b8b"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_FEATURE-PLAN-REVIEW-REPORT.md",
+      "bytes": 5497,
+      "sha256": "40bc5abdd0139d1b9c084dcdecfeb9940b3f4ad2bf7deca7bc9279b7432e3dd7"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/FINAL.json",
+      "bytes": 41966,
+      "sha256": "9a08d2c860bd72f222fe903fe20689fda1b47ea6ac08441f879d8b6fe56ffe28"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/PRODUCT-CHECK-COMMANDS.json",
+      "bytes": 8774,
+      "sha256": "b4d20581695ef1d67b304913bd5e3e479025b06c0a3f2e0f12dad38d79f68e6e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DISTRIBUTION-RETAINED-MANIFEST.json",
+      "bytes": 8360,
+      "sha256": "67ad5f1a27965bbc1b83a3877cd951584b1034c73c67ef9d82377be445dffe9f"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_PROJECT.md",
+      "bytes": 1831,
+      "sha256": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LITERAL-baseline.json",
+      "bytes": 1682,
+      "sha256": "20eda200cc8a34deabe50182c9bbf3e70ef46d2182e79981d54222d0a6432ad6"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.md",
+      "bytes": 3463,
+      "sha256": "657afe5b48d233fdca6a037943a4873b62343b49353806e122a913cab114909e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-COMMANDS-distribution.json",
+      "bytes": 2453,
+      "sha256": "e89b2b0ff66c7c96e2aa521168595a288242271d89e3d75fa0df03f2a10fe9b2"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DETERMINISTIC-ORIGINAL-REASSESSMENT.json",
+      "bytes": 2153,
+      "sha256": "6539eca0c00c39ebaf5755ac3fb8cb3ad5a3cdc577038a538443a7431b86b0b2"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_PLAN-REVIEW-REPORT.md",
+      "bytes": 8368,
+      "sha256": "7f7f8c8a0f061b4881c4ab909ab496c1a6c2cdbefbe9900a9be2c125e60a040c"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LITERAL-api.json",
+      "bytes": 2980,
+      "sha256": "f104844ccb8159b3dcb0d51056aa88b96ceb16b457bf58b18e2ab72abe4108ef"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_ARCHITECTURE.md",
+      "bytes": 2588,
+      "sha256": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_TASKS-REVIEW-REPORT.md",
+      "bytes": 10468,
+      "sha256": "b887f9be642365bea340b932bf68ac4864575f147b4b5e6e8898e34fc9fe72c5"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-COMMANDS-ranges.json",
+      "bytes": 33579,
+      "sha256": "66f1b6eaaeb538ef71c47fc59e53de136dbf879de8afcad2c03034077c9b7a8a"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-ranges-json.json",
+      "bytes": 541,
+      "sha256": "45a55c0423d7ad02d4837b27f41f6bb764dabaeff7ade9d402d2f85dd0117cdb"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/QC-OWNER-ARCHIVE.json",
+      "bytes": 8068,
+      "sha256": "5391762648f4d5476536aa27021b978ed48d1725aa97042cdd646cca1ac4e8be"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_FEATURE-TASKS-REVIEW-REPORT.md",
+      "bytes": 6180,
+      "sha256": "23c779b2effa874428e311dd11e74a4202ae90e0a57bc4f0baf0bb2fed09b958"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/COMMANDS-json.json",
+      "bytes": 3875,
+      "sha256": "dcb1e7faa28783668190a7d193037112a0f8c7eba4b55b8c18a8342e7a9c805d"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LITERALS.json",
+      "bytes": 10540,
+      "sha256": "c4b4e289676b077ec10072bc4d53952ec1114d60be830244a035cd01b5a47014"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_layout.md",
+      "bytes": 3261,
+      "sha256": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_SPEC.md",
+      "bytes": 10202,
+      "sha256": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-distribution.json",
+      "bytes": 238,
+      "sha256": "0751fe65c72dc99646dec991fda56b4e4bca0ff20c139f785d391a4485543abd"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_FEATURE-SPEC-REVIEW-REPORT.md",
+      "bytes": 4613,
+      "sha256": "ef039d1d5b3f5a3c2ecf73754b2873d1435b5264e63164d313360199f524a7e3"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/START-COMMANDS.json",
+      "bytes": 30162,
+      "sha256": "736abd661051d2b5a5dad5dd2b66a6d25db8b17e46dde51ad74d9723104a2635"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-COMMANDS-ranges-json.json",
+      "bytes": 3629,
+      "sha256": "4b0f7fb2773f33706accce73d7a4b25a702ead64fc26ee7cbd9c0189999e4687"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/COMMANDS-baseline.json",
+      "bytes": 10372,
+      "sha256": "65cd536fb7dd134675eca84f1d5d2fbc6043a894056a0d06fb7432f978af2ce7"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_FEATURE-SPEC.md",
+      "bytes": 4465,
+      "sha256": "3ea5af202942b72ac743c400a5cc810932d65e2e9f66e046b2911da5d511fe08"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
+      "bytes": 8237,
+      "sha256": "09f044b39c6743d00c0c7188c175978ec1b758a59e642e851cbe898919e0e2af"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/ASSESSOR-RUN-STATE.json",
+      "bytes": 6913,
+      "sha256": "20ba737304dda790033646d5c4f32c994091ff8132b6db2dad2bf77789d00e8a"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_FEATURE-PLAN.md",
+      "bytes": 5578,
+      "sha256": "f2deac1776918a83fadc5779db601c75ee81efa7a1e4ff6d87e96a8b0d2c6398"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/COMMANDS-ranges.json",
+      "bytes": 30444,
+      "sha256": "e766736da0da421009dc01347586ed5e3a459db9662a7aba38f80be5d08c10ab"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/FINAL-GIT-COMMANDS.json",
+      "bytes": 36790,
+      "sha256": "dd39520706eca16d2792cf710a4a3e8050f3cc41ac87d1beffe9e5c66a6c4980"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/COMMANDS-ranges-json.json",
+      "bytes": 3016,
+      "sha256": "a75049837ff0dbdb53cd6c37f3680b34c8ab51d15d219591e13d8ae29e0cdee5"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_IMPLEMENTATION-REPORT.md",
+      "bytes": 2207,
+      "sha256": "304d6a7007281a9b1d078bd97fa280feaf32c48bc286b2017038193e984df782"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LITERAL-json.json",
+      "bytes": 676,
+      "sha256": "29495c96f01839e089f05613a01d8b37ace51a8835638c65ae1dc3efc523dacf"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/ASSESSMENT.md",
+      "bytes": 3463,
+      "sha256": "657afe5b48d233fdca6a037943a4873b62343b49353806e122a913cab114909e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_TASKS.md",
+      "bytes": 37285,
+      "sha256": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LITERAL-ranges-json.json",
+      "bytes": 541,
+      "sha256": "45a55c0423d7ad02d4837b27f41f6bb764dabaeff7ade9d402d2f85dd0117cdb"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DISTRIBUTION-PROVENANCE.json",
+      "bytes": 525,
+      "sha256": "a6814d0cd53db83ac471cc4a7850abfbe8c2b0f93bb307f35dce679ef986296f"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LITERAL-ranges.json",
+      "bytes": 4845,
+      "sha256": "93deb51bf3deec14f99700716051391042ee3ed6b12ff69dfa832b3069ed439b"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_PLAN.md",
+      "bytes": 9128,
+      "sha256": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/ASSESSMENT.json",
+      "bytes": 8237,
+      "sha256": "09f044b39c6743d00c0c7188c175978ec1b758a59e642e851cbe898919e0e2af"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_DECOMPOSITION.md",
+      "bytes": 2756,
+      "sha256": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/HOSTED-INDEPENDENT-RETRY.json",
+      "bytes": 2626,
+      "sha256": "629c9b00f4b6b78d5313e357f1ef6f7aa99adb3d8d8266c585ae8e4c2e16e9f3"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DETERMINISTIC-REASSESSMENT-COMMAND.json",
+      "bytes": 1217,
+      "sha256": "34611d59ba0c65172751b3ba2a6af22324b7e71794100869c1433f098b7c1564"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/COMMANDS-api.json",
+      "bytes": 6209,
+      "sha256": "e3ea6eb411f03b900ac35e3f7e7775a1ac8388169ef3afa42f9b0a3c30bf9775"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_README.md",
+      "bytes": 2714,
+      "sha256": "d2dc7a1e1c1ae2dad047e3fa4def813999fadcc10677f98ab554168bc4167634"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_2.4.md",
+      "bytes": 4525,
+      "sha256": "630d94bf1e4d69368c329b05d2968b88ed3fd335301ffa1e00fd7c3db58ab3e1"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/HELPER-REJECTION.json",
+      "bytes": 2131,
+      "sha256": "45b1f286730bd55743278d485b4b403fdf4b566ecde729e3a6460a196caccf0e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-ranges.json",
+      "bytes": 4845,
+      "sha256": "93deb51bf3deec14f99700716051391042ee3ed6b12ff69dfa832b3069ed439b"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LOADED-SKILLS.json",
+      "bytes": 9962,
+      "sha256": "930e6a9d863aa140a6d2579f382a0ecced71e33bf94fe8f7ec4c3adc04b32453"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_SPEC-REVIEW-REPORT.md",
+      "bytes": 10044,
+      "sha256": "1d7e0ceebc9b832e354646bc1b3c64c72d16d8220a7ade862a0631ae438d6919"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DOC-docs_dev_features_002_ea97182_FEATURE-TASKS.md",
+      "bytes": 629,
+      "sha256": "5fa674945d145e00e76f0a90ae7a8f6ee0b701fa711ed89f2e35cd61117e16b0"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/FINAL-COMMANDS.json",
+      "bytes": 45925,
+      "sha256": "305af2d727676aa3c23e618e152cbdaae636399a3ac5ea2a5f77422382f556c9"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/HOSTED-BEFORE-RETAINED.json",
+      "bytes": 2061,
+      "sha256": "f47730262ec84dafb11b75358b5a28d008141205d9d361687a2e95745faec93f"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/START.json",
+      "bytes": 88802,
+      "sha256": "59d7b00db1ef84dee8743113bb3e955ff32e33ccbb7586afeba9b923d57dcf88"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/textstats.tar.gz",
+      "bytes": 64305,
+      "sha256": "743337eb12f322cc52f37da06ff24c68b219dddf3112ea09abda888a16bcfca4"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/1/OPERATION-REVIEW.md",
+      "bytes": 1725,
+      "sha256": "51ec6fe29d78e167ada5d7e3c84ee42829b0a70fba59a226016316e56c175967"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/1/PROPOSED-MILESTONE-2.4.json",
+      "bytes": 282,
+      "sha256": "3ae94ec493182ccadb20c0f1f6e29b862b82b8bd25a772589f2cc406a55e0bdd"
+    }
+  ]
+}

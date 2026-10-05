@@ -1,0 +1,240 @@
+{
+  "files": [
+    {
+      "path": "textstats.tar.gz",
+      "bytes": 64305,
+      "sha256": "743337eb12f322cc52f37da06ff24c68b219dddf3112ea09abda888a16bcfca4"
+    },
+    {
+      "path": "extracted/SDD-MANAGER.md",
+      "bytes": 689,
+      "sha256": "07947f37a7a69fdfe45331d51e46d21267297e9fc547c84448949e711469403b"
+    },
+    {
+      "path": "extracted/README.md",
+      "bytes": 4701,
+      "sha256": "69bcab8ae7d0aad2e4061dbd78c76106cc2c319f952500a2a87f70a81ee16636"
+    },
+    {
+      "path": "extracted/Makefile",
+      "bytes": 523,
+      "sha256": "d8973498f1d1ec5a264f79501105b1d099adb6f5b2d4fb591d970d4b54a216c1"
+    },
+    {
+      "path": "extracted/AI_DISCLOSURE.md",
+      "bytes": 1192,
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "path": "extracted/tests/__init__.py",
+      "bytes": 38,
+      "sha256": "df9ec8b0982a197e7a42498dac77fe2c1da1cae9c78d61ef6bfe3c824a3284bc"
+    },
+    {
+      "path": "extracted/docs/api.md",
+      "bytes": 2205,
+      "sha256": "0d056269a70aa6e6b6768d74a1ff045931e123245241d17308b32ad2f61aa785"
+    },
+    {
+      "path": "extracted/docs/module.md",
+      "bytes": 3751,
+      "sha256": "aceed32bcac843f1d784128f08e1198d2f06a08b81b4ef69e3a4bed0d32bd8f7"
+    },
+    {
+      "path": "extracted/textstats/__main__.py",
+      "bytes": 145,
+      "sha256": "0ac0f6e6d0c19a9a6b2d769ec6b73e349e62aa3783f12746e081bccab2eca11c"
+    },
+    {
+      "path": "extracted/textstats/core.py",
+      "bytes": 2729,
+      "sha256": "d2bd9bfd7c4b2f413d38a3429aec96c805971dc7775e8e124ccbd6f6da60c937"
+    },
+    {
+      "path": "extracted/textstats/io.py",
+      "bytes": 998,
+      "sha256": "840e420abf011fce8d571664d64ada1f1417c6a2c929bcaa31dd3cb7b5a026f0"
+    },
+    {
+      "path": "extracted/textstats/cli.py",
+      "bytes": 3293,
+      "sha256": "89856582e849bf17d31d363e85d22cc1440c561b20f3e7818901819fa41341a5"
+    },
+    {
+      "path": "extracted/textstats/__init__.py",
+      "bytes": 178,
+      "sha256": "99c2467ca9127789eb63bb0c852119ffe4b75a9c5df8d07bcc27e8f89730d937"
+    },
+    {
+      "path": "extracted/tests/unit/test_ranges.py",
+      "bytes": 4789,
+      "sha256": "0cb46659cc72f16deebc3213af3dd15a304ce460a6b425f10cab7ceec9a53071"
+    },
+    {
+      "path": "extracted/tests/unit/test_file_api.py",
+      "bytes": 2482,
+      "sha256": "a29a2427882928df0c02f2b18b6fa285016d3a9cabd208f11d8f75ef26433d9e"
+    },
+    {
+      "path": "extracted/tests/unit/test_core.py",
+      "bytes": 5128,
+      "sha256": "1f7fb4327b419def6a12ccb233c63c22d37d23d5381e797b784e9e46e12bb07f"
+    },
+    {
+      "path": "extracted/tests/unit/test_cli.py",
+      "bytes": 2202,
+      "sha256": "d310ba825dbf465c59686c0e7954223b5be461d191d81430fa4c905e7d658da1"
+    },
+    {
+      "path": "extracted/tests/unit/__init__.py",
+      "bytes": 42,
+      "sha256": "1abbc648c46040ef747d835b19514d1dc0e1faae72a670cd5e2d6dfb35a27ed8"
+    },
+    {
+      "path": "extracted/tests/integration/test_ranges.py",
+      "bytes": 3854,
+      "sha256": "9141b3775e67c75b77a8c8cc5f507be3632d3f6984afc92e2a87e8805e9641f8"
+    },
+    {
+      "path": "extracted/tests/integration/test_file_api.py",
+      "bytes": 3176,
+      "sha256": "529c874bf1472fa4dede38904d324403d38ef0978d5dcd616a09af3e83719476"
+    },
+    {
+      "path": "extracted/tests/integration/test_cli.py",
+      "bytes": 6164,
+      "sha256": "25a597a64eaafb379657dca2a01f6c164af8803eb3f342eec12e27c3dd0fcddd"
+    },
+    {
+      "path": "extracted/tests/integration/__init__.py",
+      "bytes": 58,
+      "sha256": "21ac3c5145688afdb4f775f2b9e20beb402ef443ea049bd6fdd0c20014a73945"
+    },
+    {
+      "path": "extracted/tests/integration/test_distribution.py",
+      "bytes": 8544,
+      "sha256": "1d27805fdd34a25fc114b59edf67a8137308b69db6ad9636e00ece14c942ac24"
+    },
+    {
+      "path": "extracted/docs/dev/SPEC-REVIEW-REPORT.md",
+      "bytes": 10044,
+      "sha256": "1d7e0ceebc9b832e354646bc1b3c64c72d16d8220a7ade862a0631ae438d6919"
+    },
+    {
+      "path": "extracted/docs/dev/ARCHITECTURE.md",
+      "bytes": 2588,
+      "sha256": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a"
+    },
+    {
+      "path": "extracted/docs/dev/DECOMPOSITION.md",
+      "bytes": 2756,
+      "sha256": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15"
+    },
+    {
+      "path": "extracted/docs/dev/TASKS-REVIEW-REPORT.md",
+      "bytes": 10468,
+      "sha256": "b887f9be642365bea340b932bf68ac4864575f147b4b5e6e8898e34fc9fe72c5"
+    },
+    {
+      "path": "extracted/docs/dev/PLAN-REVIEW-REPORT.md",
+      "bytes": 8368,
+      "sha256": "7f7f8c8a0f061b4881c4ab909ab496c1a6c2cdbefbe9900a9be2c125e60a040c"
+    },
+    {
+      "path": "extracted/docs/dev/TASKS.md",
+      "bytes": 37285,
+      "sha256": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de"
+    },
+    {
+      "path": "extracted/docs/dev/layout.md",
+      "bytes": 3261,
+      "sha256": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32"
+    },
+    {
+      "path": "extracted/docs/dev/PROJECT.md",
+      "bytes": 1831,
+      "sha256": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988"
+    },
+    {
+      "path": "extracted/docs/dev/SPEC.md",
+      "bytes": 10202,
+      "sha256": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d"
+    },
+    {
+      "path": "extracted/docs/dev/PLAN.md",
+      "bytes": 9128,
+      "sha256": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629"
+    },
+    {
+      "path": "extracted/docs/dev/reports/phases/1/1.1.md",
+      "bytes": 5809,
+      "sha256": "227a5a7e0eda7616bd95d7c7167ed3a71abb84458f87139197030de25ef39734"
+    },
+    {
+      "path": "extracted/docs/dev/reports/phases/1/PHASE-REPORT.md",
+      "bytes": 7351,
+      "sha256": "56cbe118a8ed5cf052ffaf16e20d31b9055f1bbcdcfc1747944a3b3b68b144c9"
+    },
+    {
+      "path": "extracted/docs/dev/reports/phases/1/1.2.md",
+      "bytes": 6263,
+      "sha256": "74e2848ec9a75ce51bee7b200a91fc60d6835dcd9b4da24649740f834e863c01"
+    },
+    {
+      "path": "extracted/docs/dev/reports/phases/2/2.1.md",
+      "bytes": 6457,
+      "sha256": "e40773707191e76e109a2b0a9a5eb922add616933bd7c0b4053321d7de6fc872"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+      "bytes": 5578,
+      "sha256": "f2deac1776918a83fadc5779db601c75ee81efa7a1e4ff6d87e96a8b0d2c6398"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md",
+      "bytes": 2207,
+      "sha256": "304d6a7007281a9b1d078bd97fa280feaf32c48bc286b2017038193e984df782"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/FEATURE-SPEC.md",
+      "bytes": 4465,
+      "sha256": "3ea5af202942b72ac743c400a5cc810932d65e2e9f66e046b2911da5d511fe08"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/PHASE-REPORT.md",
+      "bytes": 4281,
+      "sha256": "de0900dd513199936f5e9726373ffbf2680b5ed66c666f9ec1a5cc4d2246152b"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/README.md",
+      "bytes": 2714,
+      "sha256": "d2dc7a1e1c1ae2dad047e3fa4def813999fadcc10677f98ab554168bc4167634"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/2.4.md",
+      "bytes": 4525,
+      "sha256": "630d94bf1e4d69368c329b05d2968b88ed3fd335301ffa1e00fd7c3db58ab3e1"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/FEATURE-PLAN-REVIEW-REPORT.md",
+      "bytes": 5497,
+      "sha256": "40bc5abdd0139d1b9c084dcdecfeb9940b3f4ad2bf7deca7bc9279b7432e3dd7"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/FEATURE-TASKS.md",
+      "bytes": 629,
+      "sha256": "5fa674945d145e00e76f0a90ae7a8f6ee0b701fa711ed89f2e35cd61117e16b0"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/FEATURE-TASKS-REVIEW-REPORT.md",
+      "bytes": 6180,
+      "sha256": "23c779b2effa874428e311dd11e74a4202ae90e0a57bc4f0baf0bb2fed09b958"
+    },
+    {
+      "path": "extracted/docs/dev/features/002_ea97182/FEATURE-SPEC-REVIEW-REPORT.md",
+      "bytes": 4613,
+      "sha256": "ef039d1d5b3f5a3c2ecf73754b2873d1435b5264e63164d313360199f524a7e3"
+    }
+  ],
+  "retention": "Actual archive plus provenance/capture retained in Git evidence. Extracted source copy is reproducible from recorded archive; local generated copy preserved without cleanup and need not be staged."
+}

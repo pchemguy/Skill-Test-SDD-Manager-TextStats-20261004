@@ -1,0 +1,7 @@
+{
+  "archive": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/textstats.tar.gz",
+  "sha256": "743337eb12f322cc52f37da06ff24c68b219dddf3112ea09abda888a16bcfca4",
+  "extraction": "Python tarfile extractall(filter=data)",
+  "actual_import_root": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/extracted",
+  "head": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+}

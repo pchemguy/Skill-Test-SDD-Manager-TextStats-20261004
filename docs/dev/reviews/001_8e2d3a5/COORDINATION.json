@@ -1,13 +1,7 @@
 {
-  "suspended": false,
-  "active_cases": [
-    {
-      "case_id": "A-010",
-      "role": "consumer stopped at published feature integration; independent final assessor active",
-      "positive": true
-    }
-  ],
-  "new_work_allowed": "Remaining authorized full campaign; no active stop boundary",
+  "suspended": true,
+  "active_cases": [],
+  "new_work_allowed": "No new work until explicit human Resume",
   "a018_pending_publication": {
     "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "destination_ref": "refs/heads/trial/a018-rejected-publication",
@@ -24,5 +18,18 @@
     "source_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
     "evidence": "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
     "implementation_started": true
+  },
+  "stopped_case": {
+    "case_id": "A-010",
+    "attempt": 2,
+    "remaining": "Independent final acceptance only; implementation/hosting/feature integration complete"
+  },
+  "native_process_status": {
+    "workers": "stopped",
+    "unknown_readonly_assessor_effects": [
+      "original helper session51706 poll rejected",
+      "earlier inline final-capture session identity discarded"
+    ],
+    "all_process_quiescence_verified": false
   }
 }

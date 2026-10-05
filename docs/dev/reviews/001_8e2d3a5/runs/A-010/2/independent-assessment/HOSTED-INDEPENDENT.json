@@ -1,0 +1,227 @@
+[
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "milestones/7"
+    ],
+    "returncode": 2,
+    "http_status": null,
+    "transport": "curl",
+    "metadata": {},
+    "stdout_sha256": "8cf5e6a4c9f734a582c3a2dcd1fa7df4cde890a004b663e75533ed57e673cfd6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "milestones/8"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": {
+      "id": 18320791,
+      "number": 8,
+      "state": "closed",
+      "title": "sdd-2.5-Range-feature-review",
+      "open_issues": 0,
+      "closed_issues": 1,
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/8"
+    },
+    "stdout_sha256": "3f600ebb367d495101629a277c7d2509d46fdf2b17d7bdadb22a2d1ea0e76258",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues/18"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": {
+      "id": 5709579322,
+      "number": 18,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[T-018] Establish normalized logical-line selection seam",
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/18",
+      "milestone": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "closed"
+      },
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ]
+    },
+    "stdout_sha256": "34a1b4ef486df974316b2e7f81a6dd078b88ad1fac5ed341f3566c35577d60a9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues/19"
+    ],
+    "returncode": 2,
+    "http_status": null,
+    "transport": "curl",
+    "metadata": {},
+    "stdout_sha256": "8cf5e6a4c9f734a582c3a2dcd1fa7df4cde890a004b663e75533ed57e673cfd6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues/20"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": {
+      "id": 5709582158,
+      "number": 20,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[T-020] Document ranges and verify extracted-source acceptance",
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/20",
+      "milestone": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "closed"
+      },
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ]
+    },
+    "stdout_sha256": "0aa9df62452daa7faf08d69583b5057383fb4b975c63fb7dfeb073fe1d4565ba",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues/21"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": {
+      "id": 5709583581,
+      "number": 21,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[T-021] Review, test and report range milestone 2.4",
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/21",
+      "milestone": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "closed"
+      },
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ]
+    },
+    "stdout_sha256": "f8e64c5deaabe856ba6bdb243cf087a724bf46944920a68d501d8ac45786d94c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues/22"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": {
+      "id": 5709585290,
+      "number": 22,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[T-022] Review, test and report the named-file range feature",
+      "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/22",
+      "milestone": {
+        "id": 18320791,
+        "number": 8,
+        "title": "sdd-2.5-Range-feature-review",
+        "state": "closed"
+      },
+      "labels": [
+        "sdd-phase-2-Output-and-source-extensions"
+      ]
+    },
+    "stdout_sha256": "e0bc3de00f1c7ac7e2b37e9b02acf834b9af2765ba724590f22b5a4424a92062",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues?state=all&milestone=7&per_page=100"
+    ],
+    "returncode": 2,
+    "http_status": null,
+    "transport": "curl",
+    "metadata": {},
+    "stdout_sha256": "8cf5e6a4c9f734a582c3a2dcd1fa7df4cde890a004b663e75533ed57e673cfd6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues?state=all&milestone=8&per_page=100"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": [
+      {
+        "id": 5709585290,
+        "number": 22,
+        "state": "closed",
+        "state_reason": "completed",
+        "title": "[T-022] Review, test and report the named-file range feature",
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/22",
+        "milestone": {
+          "id": 18320791,
+          "number": 8,
+          "title": "sdd-2.5-Range-feature-review",
+          "state": "closed"
+        },
+        "labels": [
+          "sdd-phase-2-Output-and-source-extensions"
+        ]
+      }
+    ],
+    "stdout_sha256": "67925ff9a8872d917f45fa7e5be5d8dcbc61eac26f9fa3eb1cc7d618c490a51e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_description": "withheld"
+  }
+]
