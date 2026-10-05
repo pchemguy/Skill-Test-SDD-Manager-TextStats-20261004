@@ -1,7 +1,7 @@
 {
-  "suspended": true,
+  "suspended": false,
   "active_cases": [],
-  "new_work_allowed": "No new work until explicit human Resume",
+  "new_work_allowed": "Remaining full authorized campaign; dependent selection after independent published gates",
   "a018_pending_publication": {
     "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "destination_ref": "refs/heads/trial/a018-rejected-publication",
@@ -22,7 +22,7 @@
   "stopped_case": {
     "case_id": "A-010",
     "attempt": 2,
-    "remaining": "Independent final acceptance only; implementation/hosting/feature integration complete"
+    "remaining": "Evidence publication only"
   },
   "native_process_status": {
     "workers": "stopped",

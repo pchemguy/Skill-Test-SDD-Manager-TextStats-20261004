@@ -1,0 +1,590 @@
+[
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": ".gitignore\u0000AGENTS.md\u0000AI_DISCLOSURE.md\u0000Makefile\u0000README.md\u0000SDD-MANAGER.md\u0000docs/api.md\u0000docs/dev/ARCHITECTURE.md\u0000docs/dev/DECOMPOSITION.md\u0000docs/dev/PLAN-REVIEW-REPORT.md\u0000docs/dev/PLAN.md\u0000docs/dev/PROJECT.md\u0000docs/dev/SPEC-REVIEW-REPORT.md\u0000docs/dev/SPEC.md\u0000docs/dev/TASKS-REVIEW-REPORT.md\u0000docs/dev/TASKS.md\u0000docs/dev/features/002_ea97182/2.4.md\u0000docs/dev/features/002_ea97182/FEATURE-PLAN-REVIEW-REPORT.md\u0000docs/dev/features/002_ea97182/FEATURE-PLAN.md\u0000docs/dev/features/002_ea97182/FEATURE-SPEC-REVIEW-REPORT.md\u0000docs/dev/features/002_ea97182/FEATURE-SPEC.md\u0000docs/dev/features/002_ea97182/FEATURE-TASKS-REVIEW-REPORT.md\u0000docs/dev/features/002_ea97182/FEATURE-TASKS.md\u0000docs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md\u0000docs/dev/features/002_ea97182/PHASE-REPORT.md\u0000docs/dev/features/002_ea97182/README.md\u0000docs/dev/layout.md\u0000docs/dev/reports/phases/1/1.1.md\u0000docs/dev/reports/phases/1/1.2.md\u0000docs/dev/reports/phases/1/PHASE-REPORT.md\u0000docs/dev/reports/phases/2/2.1.md\u0000docs/module.md\u0000tests/__init__.py\u0000tests/integration/__init__.py\u0000tests/integration/test_cli.py\u0000tests/integration/test_distribution.py\u0000tests/integration/test_file_api.py\u0000tests/integration/test_ranges.py\u0000tests/unit/__init__.py\u0000tests/unit/test_cli.py\u0000tests/unit/test_core.py\u0000tests/unit/test_file_api.py\u0000tests/unit/test_ranges.py\u0000textstats-run-resources/HARNESS-SOURCE.json\u0000textstats-run-resources/PLUGIN-SOURCE.json\u0000textstats-run-resources/SETUP.md\u0000textstats-run-resources/plugin/.codex-plugin/plugin.json\u0000textstats-run-resources/plugin/assets/AI_DISCLOSURE.md\u0000textstats-run-resources/plugin/assets/SDD-MANAGER.md\u0000textstats-run-resources/plugin/assets/icon.svg\u0000textstats-run-resources/plugin/assets/logo.png\u0000textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md\u0000textstats-run-resources/plugin/skills/sdd-design/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-design/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-design/references/architecture.md\u0000textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md\u0000textstats-run-resources/plugin/skills/sdd-design/references/exploration.md\u0000textstats-run-resources/plugin/skills/sdd-docs/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md\u0000textstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md\u0000textstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md\u0000textstats-run-resources/plugin/skills/sdd-forge/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github.md\u0000textstats-run-resources/plugin/skills/sdd-implement/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md\u0000textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md\u0000textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md\u0000textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md\u0000textstats-run-resources/plugin/skills/sdd-manage/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/examples.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/revision-authorization.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md\u0000textstats-run-resources/plugin/skills/sdd-orient/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md\u0000textstats-run-resources/plugin/skills/sdd-plan/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md\u0000textstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md\u0000textstats-run-resources/plugin/skills/sdd-plan/references/review.md\u0000textstats-run-resources/plugin/skills/sdd-report/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-report/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md\u0000textstats-run-resources/plugin/skills/sdd-specify/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md\u0000textstats-run-resources/plugin/skills/sdd-specify/references/review.md\u0000textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md\u0000textstats-run-resources/plugin/skills/sdd-steer/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md\u0000textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md\u0000textstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/LICENSE\u0000textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md\u0000textstats-run-resources/plugin/skills/sdd-verify/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md\u0000textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md\u0000textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md\u0000textstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md\u0000textstats/__init__.py\u0000textstats/__main__.py\u0000textstats/cli.py\u0000textstats/core.py\u0000textstats/io.py\u0000",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "-z",
+      "--cached",
+      "--others",
+      "--exclude-standard"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "-json-9l969okj/sample.txt\u0000.gitignore\u0000AGENTS.md\u0000AI_DISCLOSURE.md\u0000Makefile\u0000README.md\u0000SDD-MANAGER.md\u0000docs/api.md\u0000docs/dev/ARCHITECTURE.md\u0000docs/dev/DECOMPOSITION.md\u0000docs/dev/PLAN-REVIEW-REPORT.md\u0000docs/dev/PLAN.md\u0000docs/dev/PROJECT.md\u0000docs/dev/SPEC-REVIEW-REPORT.md\u0000docs/dev/SPEC.md\u0000docs/dev/TASKS-REVIEW-REPORT.md\u0000docs/dev/TASKS.md\u0000docs/dev/features/002_ea97182/2.4.md\u0000docs/dev/features/002_ea97182/FEATURE-PLAN-REVIEW-REPORT.md\u0000docs/dev/features/002_ea97182/FEATURE-PLAN.md\u0000docs/dev/features/002_ea97182/FEATURE-SPEC-REVIEW-REPORT.md\u0000docs/dev/features/002_ea97182/FEATURE-SPEC.md\u0000docs/dev/features/002_ea97182/FEATURE-TASKS-REVIEW-REPORT.md\u0000docs/dev/features/002_ea97182/FEATURE-TASKS.md\u0000docs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md\u0000docs/dev/features/002_ea97182/PHASE-REPORT.md\u0000docs/dev/features/002_ea97182/README.md\u0000docs/dev/layout.md\u0000docs/dev/reports/phases/1/1.1.md\u0000docs/dev/reports/phases/1/1.2.md\u0000docs/dev/reports/phases/1/PHASE-REPORT.md\u0000docs/dev/reports/phases/2/2.1.md\u0000docs/module.md\u0000tests/__init__.py\u0000tests/integration/__init__.py\u0000tests/integration/test_cli.py\u0000tests/integration/test_distribution.py\u0000tests/integration/test_file_api.py\u0000tests/integration/test_ranges.py\u0000tests/unit/__init__.py\u0000tests/unit/test_cli.py\u0000tests/unit/test_core.py\u0000tests/unit/test_file_api.py\u0000tests/unit/test_ranges.py\u0000textstats-run-resources/HARNESS-SOURCE.json\u0000textstats-run-resources/PLUGIN-SOURCE.json\u0000textstats-run-resources/SETUP.md\u0000textstats-run-resources/plugin/.codex-plugin/plugin.json\u0000textstats-run-resources/plugin/assets/AI_DISCLOSURE.md\u0000textstats-run-resources/plugin/assets/SDD-MANAGER.md\u0000textstats-run-resources/plugin/assets/icon.svg\u0000textstats-run-resources/plugin/assets/logo.png\u0000textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md\u0000textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md\u0000textstats-run-resources/plugin/skills/sdd-design/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-design/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-design/references/architecture.md\u0000textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md\u0000textstats-run-resources/plugin/skills/sdd-design/references/exploration.md\u0000textstats-run-resources/plugin/skills/sdd-docs/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md\u0000textstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md\u0000textstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md\u0000textstats-run-resources/plugin/skills/sdd-forge/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md\u0000textstats-run-resources/plugin/skills/sdd-forge/references/github.md\u0000textstats-run-resources/plugin/skills/sdd-implement/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md\u0000textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md\u0000textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md\u0000textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md\u0000textstats-run-resources/plugin/skills/sdd-manage/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/examples.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/revision-authorization.md\u0000textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md\u0000textstats-run-resources/plugin/skills/sdd-orient/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md\u0000textstats-run-resources/plugin/skills/sdd-plan/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md\u0000textstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md\u0000textstats-run-resources/plugin/skills/sdd-plan/references/review.md\u0000textstats-run-resources/plugin/skills/sdd-report/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-report/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md\u0000textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md\u0000textstats-run-resources/plugin/skills/sdd-specify/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md\u0000textstats-run-resources/plugin/skills/sdd-specify/references/review.md\u0000textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md\u0000textstats-run-resources/plugin/skills/sdd-steer/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md\u0000textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md\u0000textstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md\u0000textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/LICENSE\u0000textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md\u0000textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md\u0000textstats-run-resources/plugin/skills/sdd-verify/SKILL.md\u0000textstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml\u0000textstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg\u0000textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md\u0000textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md\u0000textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md\u0000textstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md\u0000textstats/__init__.py\u0000textstats/__main__.py\u0000textstats/cli.py\u0000textstats/core.py\u0000textstats/io.py\u0000",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "check-ignore",
+      "-v",
+      "dist/extracted/docs/dev/TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": ".gitignore:6:dist/\tdist/extracted/docs/dev/TASKS.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "check-ignore",
+      "-v",
+      "docs/dev/TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "0e4741465c3e086d2ab95c5af73ca89371c16fac\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "main"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "59debb649545125dd3aa00377ea115451b594271\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD^1"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "ea97182d2d6a3984599238312a13e78d54d3221a\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD^2"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "d518cc23650018542e43d8fb5a63f44a4d283518\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "?? -json-9l969okj/\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-c",
+      "from textstats import TextStats, count_text\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(2, 3)\n"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf 'alpha beta\\ngamma\\n' > sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "{\"lines\": 2, \"words\": 3}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json sample.txt | python -c 'import json, sys; print(json.load(sys.stdin)[\"words\"])'"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --help"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --json             emit JSON counts\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf '\\357\\273\\277\\n' > bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=1 words=0\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --keep-bom bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json --keep-bom bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "{\"lines\": 1, \"words\": 1}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --keep-bom --json bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "{\"lines\": 1, \"words\": 1}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf 'alpha\\n' > ./-sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats -- -sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m unittest discover -s tests/unit -t . -v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_expected_errors_are_identified_and_atomic (tests.unit.test_cli.CliFailureTests.test_expected_errors_are_identified_and_atomic) ... ok\ntest_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok\ntest_fields_are_immutable (tests.unit.test_core.StatisticsTests.test_fields_are_immutable) ... ok\ntest_negative_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected) ... ok\ntest_noninteger_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_noninteger_counts_are_rejected) ... ok\ntest_public_statistics_value (tests.unit.test_core.StatisticsTests.test_public_statistics_value) ... ok\ntest_zero_counts_are_valid (tests.unit.test_core.StatisticsTests.test_zero_counts_are_valid) ... ok\ntest_api_is_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_api_is_silent_and_input_unchanged) ... ok\ntest_count_text_is_public (tests.unit.test_core.TextCountingTests.test_count_text_is_public) ... ok\ntest_default_bom_policy_and_keyword_only_option (tests.unit.test_core.TextCountingTests.test_default_bom_policy_and_keyword_only_option) ... ok\ntest_only_one_initial_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_initial_bom_is_removed) ... ok\ntest_specification_samples (tests.unit.test_core.TextCountingTests.test_specification_samples) ... ok\ntest_terminator_boundaries (tests.unit.test_core.TextCountingTests.test_terminator_boundaries) ... ok\ntest_unicode_whitespace_is_not_a_line_terminator (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_is_not_a_line_terminator) ... ok\ntest_open_failure_is_silent_and_preserves_exception (tests.unit.test_file_api.FileFailureTests.test_open_failure_is_silent_and_preserves_exception) ... ok\ntest_read_decode_and_close_failure_are_atomic_and_close_owned_handle (tests.unit.test_file_api.FileFailureTests.test_read_decode_and_close_failure_are_atomic_and_close_owned_handle) ... ok\ntest_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok\ntest_owned_handle_closes_on_range_success_and_failure (tests.unit.test_ranges.RangeResourceTests.test_owned_handle_closes_on_range_success_and_failure) ... ok\ntest_invalid_usage_before_either_acquisition (tests.unit.test_ranges.RangeValidationTests.test_invalid_usage_before_either_acquisition) ... ok\ntest_normalization_once_and_whole_api (tests.unit.test_ranges.SelectionTests.test_normalization_once_and_whole_api) ... ok\ntest_selection_contract (tests.unit.test_ranges.SelectionTests.test_selection_contract) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.025s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m unittest discover -s tests/integration -t . -v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_json_counts_types_bom_orders_and_text_default (tests.integration.test_cli.JsonModuleTests.test_json_counts_types_bom_orders_and_text_default) ... ok\ntest_json_errors_remain_atomic_and_identify_input (tests.integration.test_cli.JsonModuleTests.test_json_errors_remain_atomic_and_identify_input) ... ok\ntest_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok\ntest_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok\ntest_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok\ntest_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok\ntest_expected_file_failures (tests.integration.test_cli.ModuleFailureTests.test_expected_file_failures) ... ok\ntest_extracted_package_public_docs_and_module_contract (tests.integration.test_distribution.SourceDistributionTests.test_extracted_package_public_docs_and_module_contract) ... ok\ntest_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok\ntest_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok\ntest_real_missing_directory_and_malformed_files_are_silent_and_unchanged (tests.integration.test_file_api.FileFailureIntegrationTests.test_real_missing_directory_and_malformed_files_are_silent_and_unchanged) ... ok\ntest_huge_leading_zero_bom_dash_and_failures (tests.integration.test_ranges.RangeModuleTests.test_huge_leading_zero_bom_dash_and_failures) ... ok\ntest_supplied_rows_formats_spellings_and_order (tests.integration.test_ranges.RangeModuleTests.test_supplied_rows_formats_spellings_and_order) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 7.159s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "make dist"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "mkdir -p \"dist\"\npython -m tarfile -c \"dist/textstats.tar.gz\" textstats/*.py README.md Makefile AI_DISCLOSURE.md SDD-MANAGER.md docs tests/__init__.py tests/unit/*.py tests/integration/*.py\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "mkdir -p dist/extracted"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m tarfile -e dist/textstats.tar.gz dist/extracted"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tarfile.py:3026: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n  tf.extractall(path=curdir, filter=args.filter)\n"
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --help"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+    "returncode": 0,
+    "stdout": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --json             emit JSON counts\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 2:3 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json --lines=2:3 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+    "returncode": 0,
+    "stdout": "{\"lines\": 2, \"words\": 3}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 4:99 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+    "returncode": 0,
+    "stdout": "lines=0 words=0\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --lines=2:1 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n"
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-c",
+      "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(lines=2, words=3)\nassert count_text(\"\\ufeff\\n\", strip_bom=False) == TextStats(1, 1)\n"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-c",
+      "from pathlib import Path\nfrom tempfile import TemporaryDirectory\nfrom textstats import TextStats, count_file\n\nwith TemporaryDirectory() as directory:\n    path = Path(directory) / \"sample.txt\"\n    path.write_bytes(b\"alpha beta\\r\\ngamma\\r\")\n    assert count_file(path) == TextStats(2, 3)\n    assert path.read_bytes() == b\"alpha beta\\r\\ngamma\\r\"\n"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --help"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --json             emit JSON counts\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf 'alpha beta\\ngamma\\n' > sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf '\\357\\273\\277\\n' > bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=1 words=0\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --keep-bom bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf 'alpha\\n' > ./-sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats -- -sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json sample.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "{\"lines\": 2, \"words\": 3}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json sample.txt | python -c 'import json, sys; print(json.load(sys.stdin)[\"words\"])'"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json --keep-bom bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "{\"lines\": 1, \"words\": 1}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --keep-bom --json bom.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "{\"lines\": 1, \"words\": 1}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats nonexistent.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: 'nonexistent.txt': [Errno 2] No such file or directory: 'nonexistent.txt'\n"
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 2:3 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --json --lines=2:3 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "{\"lines\": 2, \"words\": 3}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 4:99 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 0,
+    "stdout": "lines=0 words=0\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "bash",
+      "-c",
+      "python -m textstats --lines=2:1 ranges.txt"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n"
+  }
+]

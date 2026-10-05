@@ -5,13 +5,13 @@
   "case_id": "A-010",
   "attempt": 2,
   "role": "coordinator",
-  "last_completed_action": "Controlled suspension reached after published feature merge; independent A010 assessment and exact remaining gaps retained",
+  "last_completed_action": "A010 independently Passed with assistance; remaining probes/docs/ownership audit complete",
   "pending_operation": {
     "kind": "checkpoint",
-    "status": "interrupted",
-    "description": "A010 final independent acceptance unfinished at human controlled suspension; ownership audit, independent missing-case/lifetime and all-document examples pending; two old readonly native effects uncertain"
+    "status": "in_progress",
+    "description": "Publish independently completed A010 assessment before dependent work"
   },
-  "next_action": "Remain suspended until explicit Resume; reobserve refs/artifacts, reconcile native uncertainty, then finish existing independent A010 assessment without repeating delivered implementation",
+  "next_action": "Publish A010 independent assessment; then fresh assessment-only JSON removal request",
   "checkpoint_refs": {
     "product_branch": "phase/2-output-and-source-extensions",
     "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
@@ -25,7 +25,7 @@
     "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
     "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "07f93c8ae3357c3cce4108304d77c7dd5747b933"
+    "evidence_commit": "dddadd025843b8b7b7f689f18652ea047238965e"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -70,9 +70,10 @@
     "runs/A-010/2/REQUEST.md",
     "runs/A-010/2/HOSTED-BEFORE.json",
     "SUSPENSION-20261005-135145.json",
-    "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json"
+    "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
+    "STOP-CONSUMED-20261005-RESUME.json"
   ],
-  "updated_at": "2026-10-05T13:59:19.776352+00:00",
+  "updated_at": "2026-10-05T18:33:55.336133+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -187,10 +188,10 @@
     {
       "case_id": "A-010",
       "attempt": 2,
-      "status": "Blocked",
+      "status": "Passed",
       "assisted": true,
-      "assessment_path": "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
-      "reason": "Human controlled suspension before final independent checks; product feature delivery/integration published"
+      "assessment_path": "runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+      "reason": "Independent continuation checks complete; original suspended assessment retained"
     }
   ]
 }

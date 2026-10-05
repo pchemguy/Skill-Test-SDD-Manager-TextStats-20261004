@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "case_id": "A-010",
+  "attempt": 2,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "reason": "All required lifecycle/behavior criteria independently established for unchanged published range feature; remaining probes, documentation examples and ownership cause audit complete. Historical blocked/suspended assessments retained.",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "merge_parents": [
+      "ea97182d2d6a3984599238312a13e78d54d3221a",
+      "d518cc23650018542e43d8fb5a63f44a4d283518"
+    ],
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+  },
+  "independent_checks": [
+    {
+      "criterion": "Range literal behavior and baseline/JSON regressions pass, including decode-after-END and usage-before-read.",
+      "status": "Passed",
+      "evidence": [
+        "checks-attempt2/INDEPENDENT-ACQUISITION-PROBES.json",
+        "../../independent-assessment/LITERALS.json"
+      ],
+      "detail": "Five retained unchanged-source literal suites plus independently authored invalid-usage/no-open and success/read/decode/owned-handle closure probes pass. Strict late decode fails atomically; public examples and extracted distribution/ranges contracts pass."
+    },
+    {
+      "criterion": "Transferred tasks retain runtime IDs/issues, have exactly one executable owner and both task lists participate. Eligible sources archive with valid links/history; needed sources preserved.",
+      "status": "Passed",
+      "evidence": [
+        "checks-attempt2/OWNERSHIP-CANDIDATE-AUDIT.json",
+        "DETERMINISTIC-GIT-OWNER-VARIANT.json",
+        "../../independent-assessment/QC-OWNER-ARCHIVE.json"
+      ],
+      "detail": "Main TASKS owns each T001\u2013T022 exactly once; transferred T018\u2013T022 checked, T013\u2013T017 remain incomplete. Archived feature list is an explicit zero-entry historical pointer. Frozen helper false positive is ignored dist/extracted TASKS; audited Git-inventory variant passes every deterministic check. Original failure retained. Both main and feature lists were inspected; stable issue18\u201322 identities preserved."
+    },
+    {
+      "criterion": "Two-parent feature integration targets paused phase 2, not integration branch.",
+      "status": "Passed",
+      "evidence": [
+        "checks-attempt2/SOURCE-REOBSERVATION.json",
+        "NATIVE-RESULTS.json",
+        "../../independent-assessment/FINAL-GIT-COMMANDS.json"
+      ],
+      "detail": "Exact two-parent feature integration is phase2 HEAD0e474 with parents ea97182 and d518cc2. Fresh live ls-remote equals phase2 commit and unchanged main59debb; no phase2\u2192main integration."
+    },
+    {
+      "criterion": "Feature review tasks produce committed reports under docs/dev/features/<actual-feature-id>/, with required review/testing, blocker repairs and issue/milestone closure consistent with the actual whole-project owner scope.",
+      "status": "Passed",
+      "evidence": [
+        "../../independent-assessment/HOSTED-INDEPENDENT.json",
+        "../../independent-assessment/HOSTED-INDEPENDENT-RETRY.json",
+        "../../independent-assessment/QC-OWNER-ARCHIVE.json"
+      ],
+      "detail": "Fresh continuation reinspection confirms tracked feature-prefix milestone, phase and implementation reports have separate code review/testing and TODO None. Unchanged tracked source hashes match retained final; retained independent sanitized readbacks establish same runtime issue18\u201322 IDs closed/completed, milestone7/8 closed with exact scope."
+    },
+    {
+      "criterion": "Material main-document/task incorporation receives affected QC reassessment; eligible selected feature QC reports archive beside corresponding sources with repaired in-scope links and retained original review identity. Historical feature Ready is not current main-document readiness; unselected source/report pairs remain active when required.",
+      "status": "Passed",
+      "evidence": [
+        "../../independent-assessment/QC-OWNER-ARCHIVE.json",
+        "../../independent-assessment/DOC-docs_dev_SPEC-REVIEW-REPORT.md",
+        "../../independent-assessment/DOC-docs_dev_PLAN-REVIEW-REPORT.md",
+        "../../independent-assessment/DOC-docs_dev_TASKS-REVIEW-REPORT.md"
+      ],
+      "detail": "Current main QC hashes match reached governing docs and cover incorporated S8; adjacent selected source/QC pairs retained with original review history and repaired links. Historical Ready is explicitly separate from current governing readiness; unimplemented stdin/main review remain owned and unchecked."
+    }
+  ],
+  "deterministic_original_result": "Checks failed",
+  "deterministic_variant_result": "Checks passed",
+  "remaining_checks": [],
+  "limits": [
+    "Fresh independent assessor context, but shared broad filesystem prevents hard isolation certification.",
+    "No full native transcript; actual retained commands provide bounded evidence only.",
+    "Original attempt1 remains Blocked; attempt2 initial pre-resolution consumer result and coordinator interventions remain historical.",
+    "Original issue18 preHTTP PATCH failure reason lost; same-adapter coordinator diagnostic intervention preserved, independent final state verifies effect only.",
+    "T022 push rejection resolved by sameGit supported authority reassessment before reached publication; issue22 comment transport unknown reconciled by zero-comments readback then bounded retry (coordinator records, not independently recaptured chronology).",
+    "Assessor original helper polling auto-review rejection retained, supported same frozen-helper reassessment yielded actual Checks failed. Revision-authorization policy reading occurred after this reassessment; parent instruction ordering was not followed.",
+    "First final-capture orchestration discarded running-session identity; final completion/native status remains unknown, no corresponding success inferred.",
+    "Actual archived FEATURE-TASKS contains historical preparation-era active-source wording under an explicit historical banner and main-owner pointer; current governing sources and executable owner are clear.",
+    "Continuation has no complete native transcript or hard filesystem isolation. Original native51706 handle later unavailable per coordinator reconciliation; original helper exit/output still unknown. Earlier final-capture session identity remains lost. No success inferred from either; separately completed captures/checks prove current result.",
+    "First continuation script failed while comparing pre-archive START tracked paths; three initial audit artifacts and full native failure retained. Corrected rerun compared reached FINAL population and exited0. First script prior subprocess inventory was not fully durably retained; second-run full subprocess records and native identity/completion retained.",
+    "Documentation examples executed in an exact tracked-file copy, with generated files retained locally and excluded from evidence publication; original product and unrelated sample preserved. Python3.12 exercised; no Python3.11 runtime certification.",
+    "Frozen deterministic original remains Checks failed (duplicate_task_ownership). Disclosed previously retained variant changes only owner candidate inventory; actual accepted product ownership independently inspected. Case Passed is assisted and not a claim original helper passed."
+  ],
+  "no_product_mutation_by_assessor": true,
+  "historical_uncertainty_is_not_current_check_evidence": true,
+  "evidence_publication": "Pending coordinator publication"
+}

@@ -131,7 +131,7 @@
       ]
     },
     "A-010": {
-      "status": "Blocked",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
@@ -143,19 +143,21 @@
         },
         {
           "attempt": 2,
-          "status": "Blocked",
+          "status": "Passed",
           "request": "runs/A-010/2/REQUEST.md",
-          "reason": "Controlled suspension while final independent acceptance checks remain",
+          "reason": "Fresh independent remaining checks Passed; ownership helper variant disclosed, historical suspension and authority assistance retained",
           "assessment": "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
           "product_delivery": "Published merge0e474146 into pausedphase2; no reimplementation pending",
-          "assisted": true
+          "assisted": true,
+          "current_assessment": "runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+          "initial_status": "Blocked"
         }
       ],
       "projection_recovery": {
         "status": "Confirmed",
         "human_request_at": "2026-10-05T12:22:21+03:00",
         "evidence": "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
-        "remaining": "Range implementation and integration not started; original Blocked attempt retained"
+        "remaining": "Resolved by published feature implementation/integration"
       }
     },
     "A-011": {

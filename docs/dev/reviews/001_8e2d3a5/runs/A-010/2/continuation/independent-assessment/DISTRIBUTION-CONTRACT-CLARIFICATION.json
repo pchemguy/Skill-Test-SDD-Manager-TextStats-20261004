@@ -1,0 +1,23 @@
+{
+  "status": "Passed",
+  "actual": [
+    {
+      "name": "extracted-entry",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "lines=1 words=2\n",
+      "unchanged": true
+    }
+  ],
+  "expected": [
+    {
+      "name": "extracted-entry",
+      "returncode": 0,
+      "stderr": "",
+      "unchanged": true,
+      "stdout": "lines=1 words=2\n"
+    }
+  ],
+  "equal": true,
+  "note": "The earlier generated evidence expected member inadvertently holds last loop ranges-json expectation; distribution_expected is correctly sourced distribution expectation, asserted equal to actual before write. This clarification retains original artifact unchanged."
+}

@@ -1,0 +1,6 @@
+{
+  "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/checker-variant/assess_git_owners.py",
+  "sha256": "10c4cce8ed9e275d0d36b207578ca8399104c818858d8364d490bb47020875c8",
+  "original_core_sha256": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80",
+  "difference": "Only candidate selection changes from filesystem rglob to git ls-files cached/others/exclude-standard; task parser, archive rules, deterministic contract and Git observation remain original. Original hash and exact source replacement guarded."
+}

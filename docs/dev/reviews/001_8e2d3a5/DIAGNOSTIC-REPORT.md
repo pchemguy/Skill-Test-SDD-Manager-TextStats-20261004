@@ -250,3 +250,13 @@ Automatic tool review rejected the consumer wait on T022 push, stating GitHub wa
 ## Controlled suspension at 16:51:45 Europe/Moscow
 
 Published feature merge0e474146 and all five issue/two milestone closures are retained; main remains59debb6. Independent A010 literal suites, unit21/integration13, extracted captures, QC/archive/report and closure facts pass. Whole case is Blocked pending remaining independent ownership audit/variant, usage/lifetime/error probes and all documentation examples. No dependent work was started; milestones2.2/2.3 remain pending. Two earlier read-only native subprocess effects are unknown; worker completion does not prove all native process quiescence. The assessor reassessed a rejected helper before loading revision-authorization, contrary to the human ordering requirement; this and initial handoff omission are process defects retained for correction, not platform approval evidence. No new authority reassessment occurs after the suspension request. Original rejection, unknown-error limits and supported publication recoveries remain preserved.
+
+
+## Explicit resume — 2026-10-05T18:30:35.122140+00:00
+
+The human Resume consumed the reached controlled suspension, retaining original stop evidence. Exact published product0e474146 and evidence dddadd0 were reobserved. A fresh independent assessor continuation read revision-authorization before any authority decision and is completing the remaining A010 acceptance gaps. Implementation, hosted closure and feature integration are not replayed. Known old native51706 handle is unavailable (Unknown process id); original result and lost inline-capture identity remain historical unknowns. Full process quiescence is not certified. Milestones2.2/2.3 remain pending for the separately dispatched stdin/final-phase request.
+
+
+## A010 independent continuation completed
+
+[A010 continuation assessment](runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json) is Passed with assistance. Thirteen independent acquisition/lifetime/error probes, all11 public documentation blocks, extracted distribution/range contracts and ownership audit passed. Frozen duplicate-owner failure is an ignored generated dist/extracted TASKS falsepositive; frozen source/checker untouched, separately audited Git-inventory variant passed nine checks. Original failures, suspension, authorization ordering defect and two historical native unknowns remain visible. No product work was replayed.

@@ -1,9 +1,3 @@
-# Controlled suspension — 2026-10-05 16:51:45 Europe/Moscow
+# Live acceptance resumed
 
-Workflow dispatch is suspended at the human request. Consumer and assessor are stopped; no dependent case was started. Two earlier read-only assessor subprocess outcomes remain unknown because native session identity/control was not retained. Full process quiescence is not certified.
-
-Product feature delivery is complete and published: paused phase2 at 0e4741465c3e086d2ab95c5af73ca89371c16fac, with parents ea97182d2d6a3984599238312a13e78d54d3221a and d518cc23650018542e43d8fb5a63f44a4d283518. Main remains59debb649545125dd3aa00377ea115451b594271. Issues18–22 and feature milestones7/8 are closed. Source pin111 files and unrelated sample are unchanged; tracked index/worktree are clean.
-
-A010 is Blocked pending independent acceptance, not pending implementation. Five literal suites, independent unit21/integration13, actual extracted captures, feature reports/QC/archive, hosted identities/closure and two-parent publication are retained. Remaining: audit ownership-helper duplicate and use only a separately audited variant if applicable; independent usage/lifetime/error probes and every public documentation example; reconcile old unknown read-only effects. Do not replay delivered tasks, commits, comments or feature merge.
-
-Milestones2.2/2.3 and T013–T017 remain unchecked/open. A011 JSON assessment, A012 focused removal, A013 explicit stdin/final-review resume, isolated A022 and final A027 have not started. After an explicit Resume, reconcile actual refs/files/index and evidence first, complete/publish A010 assessment, then select dependent work. No clones, resets, blanket cleanup or pinned-package changes. Read pinned revision-authorization before every authority decision; execution owns pushes.
+A010 independent assessment Passed with assistance at product0e474146. Original blocked/suspended records retained. Missing acquisition/lifetime/docs/distribution checks passed; ignored generated owner duplicate independently audited using separately retained variant. Pending: publish this evidence then dispatch assessment-only JSON removal. Milestones2.2/2.3 remain pending for explicit later phase resume. Historical unknown readonly native results remain disclosed; no full process quiescence claim.

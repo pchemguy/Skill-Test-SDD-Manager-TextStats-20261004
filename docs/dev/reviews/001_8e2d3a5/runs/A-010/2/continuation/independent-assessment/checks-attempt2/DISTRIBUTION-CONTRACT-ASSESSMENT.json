@@ -1,0 +1,50 @@
+{
+  "status": "Passed",
+  "expected_file": "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/expected.json",
+  "expected_sha256": "5c7646105a1c28f061ee1cf84bc41ac399d0bc90e2963c00e5754a89ac1534f7",
+  "actual_evidence": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-distribution.json",
+  "actual": [
+    {
+      "name": "extracted-entry",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "lines=1 words=2\n",
+      "unchanged": true
+    }
+  ],
+  "expected": [
+    {
+      "name": "json-range",
+      "returncode": 0,
+      "stderr": "",
+      "unchanged": true,
+      "json": {
+        "lines": 2,
+        "words": 3
+      },
+      "single_object_newline": true
+    },
+    {
+      "name": "range-json-order",
+      "returncode": 0,
+      "stderr": "",
+      "unchanged": true,
+      "json": {
+        "lines": 1,
+        "words": 2
+      },
+      "single_object_newline": true
+    }
+  ],
+  "distribution_expected": [
+    {
+      "name": "extracted-entry",
+      "returncode": 0,
+      "stderr": "",
+      "unchanged": true,
+      "stdout": "lines=1 words=2\n"
+    }
+  ],
+  "archive_sha256": "743337eb12f322cc52f37da06ff24c68b219dddf3112ea09abda888a16bcfca4",
+  "ranges_and_ranges_json_equal_contract": true
+}

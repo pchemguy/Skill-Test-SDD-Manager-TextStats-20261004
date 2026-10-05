@@ -1,0 +1,45 @@
+{
+  "first_failure": {
+    "chunk_id": "b0c064",
+    "wall_time_seconds": 0.039521021,
+    "exit_code": 1,
+    "original_token_count": 296,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/remaining_checks.py\", line 34, in <module>\n    all_hashes={k:sha(ROOT/k) for k in start['tracked_sha256']}\n                  ^^^^^^^^^^^\n  File \"/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/remaining_checks.py\", line 15, in <lambda>\n    sha=lambda p: hashlib.sha256(p.read_bytes()).hexdigest()\n                                 ^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1019, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/textstats-live-20261004/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md'\n"
+  },
+  "second_initial": {
+    "chunk_id": "345c5a",
+    "wall_time_seconds": 1.001619846,
+    "session_id": 68047,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "second_completion": {
+    "chunk_id": "15609c",
+    "wall_time_seconds": 2.816829277,
+    "exit_code": 0,
+    "original_token_count": 70,
+    "output": "{\"status\": \"Passed\", \"probe_count\": 13, \"doc_blocks\": 11, \"refs\": {\"HEAD\": \"0e4741465c3e086d2ab95c5af73ca89371c16fac\", \"main\": \"59debb649545125dd3aa00377ea115451b594271\", \"HEAD^1\": \"ea97182d2d6a3984599238312a13e78d54d3221a\", \"HEAD^2\": \"d518cc23650018542e43d8fb5a63f44a4d283518\"}}\n"
+  },
+  "variant_initial": {
+    "chunk_id": "e3e99e",
+    "wall_time_seconds": 1.001097512,
+    "session_id": 15986,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "variant_completion": {
+    "chunk_id": "91291a",
+    "wall_time_seconds": 5.001438681,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "live_refs_completion": {
+    "chunk_id": "42c108",
+    "wall_time_seconds": 5.000824373,
+    "exit_code": 0,
+    "original_token_count": 37,
+    "output": "59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\n0e4741465c3e086d2ab95c5af73ca89371c16fac\trefs/heads/phase/2-output-and-source-extensions\n"
+  },
+  "orchestration_error": "Second exec emitted full native session result then JavaScript output-expression TypeError; identity 68047 retained and actual wait completion exit0."
+}

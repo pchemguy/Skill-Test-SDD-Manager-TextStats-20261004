@@ -1,0 +1,27 @@
+{
+  "publish_relative_to": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment",
+  "files": [
+    "ASSESSMENT.json",
+    "ASSESSMENT.md",
+    "DETERMINISTIC-GIT-OWNER-VARIANT.json",
+    "DISTRIBUTION-CONTRACT-CLARIFICATION.json",
+    "DOCUMENTATION-WORKSPACE-MANIFEST.json",
+    "NATIVE-RESULTS.json",
+    "OWNERSHIP-CANDIDATE-AUDIT.json",
+    "VARIANT-AUDIT.json",
+    "checks-attempt2/COMMANDS.json",
+    "checks-attempt2/DISTRIBUTION-CONTRACT-ASSESSMENT.json",
+    "checks-attempt2/EXPECTED-SCHEMA.json",
+    "checks-attempt2/INDEPENDENT-ACQUISITION-PROBES.json",
+    "checks-attempt2/OWNERSHIP-CANDIDATE-AUDIT.json",
+    "checks-attempt2/PUBLIC-DOCUMENTATION-EXAMPLES.json",
+    "checks-attempt2/SOURCE-REOBSERVATION.json",
+    "checks-attempt2/VARIANT-AUDIT.json",
+    "remaining_checks.py",
+    "PUBLICATION-FILES.json"
+  ],
+  "exclude": [
+    "checks-attempt2/documentation-workspace/**"
+  ],
+  "note": "Leave reconstructable workspace retained locally and untracked; do not delete. No root coordinator files changed."
+}
