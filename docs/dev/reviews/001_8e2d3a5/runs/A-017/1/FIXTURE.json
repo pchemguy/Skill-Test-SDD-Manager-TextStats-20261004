@@ -1,0 +1,9 @@
+{
+  "actor": "coordinator",
+  "start_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "worktree": "/workspace/scratch/textstats-required-check-worktree-20261005",
+  "local_remote": "/workspace/scratch/textstats-required-check-remote-20261005.git",
+  "hook_effect": "precommit hold permits independent actual implementation observation; then runs literal contract acceptance if assessor adds test after owned implementation change",
+  "trigger_observed": false,
+  "timestamp": "2026-10-05T13:16:18.308705+00:00"
+}

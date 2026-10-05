@@ -3,12 +3,22 @@
   "active_cases": [
     {
       "case_id": "A-010",
-      "role": "fresh assessor starting capture; implementation continuation pending",
+      "role": "fresh implementation consumer active; assessor waits for freeze",
       "positive": true
     },
     {
+      "case_id": "A-017",
+      "role": "fresh task consumer and required-check observer",
+      "positive": false
+    },
+    {
       "case_id": "A-024",
-      "role": "fresh assessor rate-limit continuation reconciliation",
+      "role": "unavailable-session original frozen; independent capture",
+      "positive": false
+    },
+    {
+      "case_id": "A-019/A-023",
+      "role": "independent prerequisite eligibility only",
       "positive": false
     }
   ],
@@ -19,15 +29,15 @@
     "state": "Resolved: exact local publication and independent Passed evidence retained"
   },
   "a024": {
-    "variant": "rate-limit",
-    "status": "fresh continuation complete; independent post-capture pending",
-    "pending": "publish independent capture before final unavailable-session variant",
+    "variant": "unavailable-session",
+    "status": "actual consumer firstGET exit2/httpnull; frozen",
+    "pending": "independent capture and publication before bounded facility restore",
     "qualification": "controlled pre-send metadata only; native protected credential handoff eligibility unavailable"
   },
   "a010_projection": {
     "status": "Confirmed after new explicit human retry",
     "source_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
     "evidence": "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
-    "implementation_started": false
+    "implementation_started": true
   }
 }

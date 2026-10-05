@@ -5,23 +5,23 @@
   "case_id": "A-010",
   "attempt": 2,
   "role": "coordinator",
-  "last_completed_action": "Live refs and all seven range tracking objects reconciled after current Resume",
+  "last_completed_action": "A010 T018 commit905d7a published; fresh range CLI work and isolated A017/A024 trials active",
   "pending_operation": {
     "kind": "task",
     "status": "in_progress",
-    "description": "A010 fresh continuation, no implementation begun at checkpoint"
+    "description": "A010 accepted range CLI task underway; independent A017 required-check and A024 session trials active"
   },
-  "next_action": "Fresh A010 assessor starting capture, then fresh consumer continuation from retained feature commit",
+  "next_action": "Continue actual selected consumers; independently freeze/assess each reached boundary before dependency advancement",
   "checkpoint_refs": {
     "product_branch": "feature/002_ea97182-line-ranges",
-    "product_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "product_commit": "905d7a851124235db27f4f5a553ee39729957a44",
     "integration_branch": "phase/2-output-and-source-extensions",
     "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
     "remote": "origin",
     "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
     "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "cecd523b59ef39b5b05b2261cf8f624310561709"
+    "evidence_commit": "2744e0539d068f0a33e4f85890d29c8c85558d03"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -66,7 +66,7 @@
     "runs/A-010/2/REQUEST.md",
     "runs/A-010/2/HOSTED-BEFORE.json"
   ],
-  "updated_at": "2026-10-05T13:11:20.516420+00:00",
+  "updated_at": "2026-10-05T13:19:03.691620+00:00",
   "case_results": [
     {
       "case_id": "A-006",
