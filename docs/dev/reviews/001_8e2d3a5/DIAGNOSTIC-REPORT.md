@@ -230,3 +230,7 @@ The explicit range tracking retry resolved the A010 hosting gate through the sam
 ## Independent negative-case eligibility
 
 A019 is Blocked/Not run at its prescribed actual A005 assisted Passed milestone: phase1 is incomplete there and the pinned integration gate prevents a partial main-phase merge. A later completed A006 object was not substituted. The harness binding needs an eligible complete boundary in a separately accepted repair/new pin. A023 is Blocked/Not run: original A003 provider identities now belong to completed positive work, and no demonstrated safe isolated hosted namespace retains those exact identities for response-loss task/projection/milestone variants. No positive objects were reopened, duplicated or rewritten. These are prerequisite/facility coverage gaps, not observed plugin runtime failures.
+
+## A017 reached outcome
+
+After an actual consumer T001 production edit, an independently derived S1/S2 acceptance test was added and executed. It passed; no product defect or stronger expectation was injected. Original commit-hold evidence was published before the bounded hold was released. The same consumer committed81399c76355c2a9e3320bf77ddc3f297a8b6ba9a and published to the explicit local remote. Independent final checks pass12unit tests, clean index/worktree and111 unchanged pinned files. Ordinary task delivery passed, but A017 remains Blocked because no genuine failing required-check trigger, interruption or fresh recovery occurred.

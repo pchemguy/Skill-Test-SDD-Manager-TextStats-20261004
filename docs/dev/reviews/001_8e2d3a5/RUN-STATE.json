@@ -66,7 +66,7 @@
     "runs/A-010/2/REQUEST.md",
     "runs/A-010/2/HOSTED-BEFORE.json"
   ],
-  "updated_at": "2026-10-05T13:19:03.691620+00:00",
+  "updated_at": "2026-10-05T13:28:53.808195+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -142,6 +142,34 @@
       "status": "Blocked",
       "assessment_path": "runs/A-010/1/independent-assessment/ASSESSMENT.json",
       "reason": "Required hosted projection rejected twice by automatic review; no provider effects or implementation"
+    },
+    {
+      "case_id": "A-017",
+      "attempt": 1,
+      "status": "Blocked",
+      "assessment_path": "runs/A-017/1/independent-assessment/FINAL-ASSESSMENT.json",
+      "reason": "Valid requiredtest passed; missing genuine failure trigger"
+    },
+    {
+      "case_id": "A-019",
+      "attempt": 1,
+      "status": "Blocked",
+      "assessment_path": "runs/A-019/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+      "reason": "Prescribed A005 actual incompletephase integrationgate unmet; runtimeNotrun"
+    },
+    {
+      "case_id": "A-021",
+      "attempt": 1,
+      "status": "Blocked",
+      "assessment_path": "runs/A-021/1/independent-assessment/ASSESSMENT.json",
+      "reason": "Qualifying partialtransfer trigger not observed; ordinaryincorporation Passed"
+    },
+    {
+      "case_id": "A-023",
+      "attempt": 1,
+      "status": "Blocked",
+      "assessment_path": "runs/A-023/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+      "reason": "Safe isolated exact provider namespace unavailable; runtimeNotrun"
     }
   ]
 }

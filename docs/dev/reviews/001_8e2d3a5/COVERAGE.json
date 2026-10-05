@@ -213,13 +213,15 @@
       ]
     },
     "A-017": {
-      "status": "Running",
+      "status": "Blocked",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
-          "request": "runs/A-017/1/REQUEST.md",
-          "reason": "Isolated actual A003 task; genuine qualifying check failure not yet observed"
+          "status": "Blocked",
+          "assessment": "runs/A-017/1/independent-assessment/FINAL-ASSESSMENT.json",
+          "initial_assessment": "runs/A-017/1/independent-assessment/TRIGGER-ASSESSMENT.json",
+          "ordinary_task_result": "Passed",
+          "reason": "Required valid contract test passed; genuine failing check/interruption/fresh continuation not observed"
         }
       ]
     },
