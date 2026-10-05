@@ -99,7 +99,7 @@ Reviewed current roots directly against the selected human JSON-removal objectiv
 - DECOMPOSITION.md: `c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c`
 - SPEC.md: `2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3`
 - PLAN.md: `58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f`
-- TASKS.md: `537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47`
+- TASKS.md: `4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f`
 - layout.md: `815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c`
 
 S-1–S-3 map unchanged to facade/core/io; S-4/S-8 map text rendering and no-acquisition validation to cli plus decoded selection; reserved S-5 explicitly rejects --json while literal paths after -- remain valid. S-6 retains pending strict binary borrowed stdin, text/BOM and no stdin ranges; S-7 maps docs/tests/distribution. PROJECT/design agree, no serializer obligation remains. Complete retained objective rows/errors/lifecycle and dependency ownership inspected. No confirmed conformance finding; Ready for selected current conformance, not implementation acceptance.

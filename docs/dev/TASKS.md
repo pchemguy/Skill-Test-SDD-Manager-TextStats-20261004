@@ -69,7 +69,7 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
 
 ## Phase 2 — Output and source extensions
 
-Current scope: text output, named-file ranges and later binary stdin. S-5/JSON and milestone2.1/T-010–T-012 are retired completed history, not remaining work; stable IDs and original evidence are retained. T-013–T-017 remain unchecked. Current retained acceptance for T-019–T-022 and their parents is reassessed by [the JSON removal amendment](reports/phases/2/revisions/003_0e47414/REVISION-REPORT.md); original two-format counts are historical.
+Current scope: text output, named-file ranges and later binary stdin. S-5/JSON and milestone2.1/T-010–T-012 are retired completed history, not remaining work; stable IDs and original evidence are retained. T-013–T-017 remain unchecked. Current retained acceptance for T-019–T-022 and their parents is verified by [the JSON removal amendment](reports/phases/2/revisions/003_0e47414/REVISION-REPORT.md); original two-format counts are historical. Amendment verification (2026-10-05): meaningful RED6/GREEN3, independent unit22/integration13 without skips, isolated source identity/text/BOM/ranges/removed-option acceptance, all9 public runnable blocks/local links and direct production/test/docs review passed. Counting/API/resource and range acceptance remain complete; S-5 is retired history. Unimplemented stdin and final review remain pending.
 
 - [ ] Phase 2 — Output and source extensions
     - [x] Milestone 2.1 — Retired historical JSON output

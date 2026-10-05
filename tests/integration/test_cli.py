@@ -73,48 +73,48 @@ class ModuleFailureTests(unittest.TestCase):
                         self.assertNotIn("Traceback", run.stderr)
                         self.assertEqual(bad.read_bytes(), data)
 
-class JsonModuleTests(unittest.TestCase):
+class TextOnlyModuleTests(unittest.TestCase):
     invoke = ModuleCliTests.invoke
 
-    def test_json_counts_types_bom_orders_and_text_default(self):
-        import json
+    def test_retained_text_counts_and_bom_cases(self):
         cases = [(b"alpha beta\r\ngamma\r", (2, 3), (2, 3)),
                  (b"", (0, 0), (0, 0)), (b"alpha\n\n", (2, 1), (2, 1)),
                  ("café\u2028tea\n".encode(), (1, 2), (1, 2)),
                  ("\ufeff\n".encode(), (1, 0), (1, 1)),
                  ("\ufeff".encode(), (0, 0), (1, 1)),
                  ("\ufeff\ufeff".encode(), (1, 1), (1, 1))]
-        with tempfile.TemporaryDirectory(prefix="-json-", dir=".") as directory:
+        with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "sample.txt"
             for data, stripped, retained in cases:
                 path.write_bytes(data)
-                for options, counts in [(("--json",), stripped),
-                                        (("--json", "--keep-bom"), retained),
-                                        (("--keep-bom", "--json"), retained)]:
+                for options, counts in [((), stripped), (("--keep-bom",), retained)]:
                     with self.subTest(data=data, options=options):
-                        run = self.invoke(*options, "--", path)
-                        self.assertEqual((run.returncode, run.stderr), (0, ""))
-                        self.assertTrue(run.stdout.endswith("\n"))
-                        self.assertEqual(len(run.stdout.splitlines()), 1)
-                        value = json.loads(run.stdout)
-                        self.assertEqual(value, {"lines": counts[0], "words": counts[1]})
-                        self.assertEqual(set(value), {"lines", "words"})
-                        self.assertTrue(all(type(v) is int for v in value.values()))
-                        text = self.invoke(*[o for o in options if o != "--json"], "--", path)
-                        self.assertEqual((text.returncode, text.stdout, text.stderr),
+                        run = self.invoke(*options, path)
+                        self.assertEqual((run.returncode, run.stdout, run.stderr),
                                          (0, f"lines={counts[0]} words={counts[1]}\n", ""))
                         self.assertEqual(path.read_bytes(), data)
 
-    def test_json_errors_remain_atomic_and_identify_input(self):
+    def test_removed_option_and_literal_filename(self):
+        for options in (("--json",), ("--json", "--keep-bom"),
+                        ("--keep-bom", "--json"), ("--json", "--lines=1:1"),
+                        ("--lines", "1:1", "--json")):
+            run = self.invoke(*options, "missing")
+            self.assertEqual((run.returncode, run.stdout), (2, ""))
+            self.assertIn("--json", run.stderr)
+            self.assertNotIn("Traceback", run.stderr)
+        help_run = self.invoke("--help")
+        self.assertEqual(help_run.returncode, 0)
+        self.assertNotIn("--json", help_run.stdout)
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            bad = root / "bad.txt"
-            bad.write_bytes(b"valid prefix\xff")
-            for options in (("--json",), ("--json", "--keep-bom"), ("--keep-bom", "--json")):
-                for path in (root / "missing", root, bad):
-                    with self.subTest(path=path, options=options):
-                        run = self.invoke(*options, path)
-                        self.assertEqual((run.returncode, run.stdout), (1, ""))
-                        self.assertIn(str(path), run.stderr)
-                        self.assertNotIn("Traceback", run.stderr)
-            self.assertEqual(bad.read_bytes(), b"valid prefix\xff")
+            path = Path(directory) / "--json"
+            data = "\ufeffalpha beta\nlast".encode()
+            path.write_bytes(data)
+            environment = dict(__import__("os").environ)
+            environment["PYTHONPATH"] = str(Path.cwd())
+            for options, expected in [((), "lines=2 words=3\n"),
+                                      (("--lines=2:2",), "lines=1 words=1\n"),
+                                      (("--keep-bom",), "lines=2 words=3\n")]:
+                run = subprocess.run([sys.executable, "-m", "textstats", *options, "--", "--json"],
+                                     cwd=directory, env=environment, capture_output=True, text=True)
+                self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, ""))
+                self.assertEqual(path.read_bytes(), data)

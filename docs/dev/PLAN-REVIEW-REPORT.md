@@ -99,7 +99,7 @@ Reviewed current roots directly against the selected human JSON-removal objectiv
 - DECOMPOSITION.md: `c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c`
 - SPEC.md: `2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3`
 - PLAN.md: `58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f`
-- TASKS.md: `537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47`
+- TASKS.md: `4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f`
 - layout.md: `815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c`
 
 Coverage: S-1–S-4/S-7 through historical phase1 with amendment regression; S-5 retirement through this amendment; S-6/final S-7 through pending 2.2/2.3; S-8 through retained 2.4/2.5 reassessment. Layout owners unchanged. Phase1 retains two delivery milestones (cohesive MVP then failures/docs/distribution), excluding review1.3. Phase2 has two current delivery milestones2.2/2.4 plus retired2.1, excluding reviews2.3/2.5. The small count is justified by independent stdin and named-file selection outcomes; no quota padding or deferred usable path. Historical T-012 baseline dependencies remain explicit. No confirmed omission/overload; Ready for selected conformance.

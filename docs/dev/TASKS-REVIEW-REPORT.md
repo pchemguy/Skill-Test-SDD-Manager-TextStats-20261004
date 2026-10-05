@@ -113,7 +113,9 @@ Reviewed current roots directly against the selected human JSON-removal objectiv
 - DECOMPOSITION.md: `c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c`
 - SPEC.md: `2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3`
 - PLAN.md: `58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f`
-- TASKS.md: `537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47`
+- TASKS.md: `4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f`
 - layout.md: `815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c`
 
 Coverage: historical phase1 and2.1 identities/evidence preserved; T-018–T-022 retain named-file selection obligations, with amended text-only T-019/T-020 and reassessment report for T-021/T-022; pending T-013–T-015 retain stdin success/lifetime/failure/docs/distribution, T-016/T-017 retain required reviews. Counts:1.1=3 delivery + T004 review;1.2=3 + T008;2.1=2 retired historical + T012 review;2.2=3 + T016;2.4=3 + T021;1.3/2.3/2.5 one review each excluded. Historical2.1 small count reflects bounded rendering/docs work; no active empty delivery group. Checked identity uniqueness, hierarchy, dependencies and no duplicated executable feature list. No confirmed gap; Ready for selected conformance. Current completion reassessment is separate and pending verification.
+
+Completion-evidence-only currency recheck: TASKS scope, hierarchy, dependencies and decomposition are unchanged by observed unit22/integration13/demo/reassessment evidence; current hash above updated without a new conformance cycle. No new main task completed.

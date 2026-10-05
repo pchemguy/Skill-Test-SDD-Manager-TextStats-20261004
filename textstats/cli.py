@@ -1,7 +1,6 @@
 """Validate named-file arguments and render whole-input or selected counts."""
 
 import argparse
-import json
 import sys
 from collections.abc import Sequence
 
@@ -42,7 +41,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         argv: Explicit arguments, or None to use process arguments.
 
     Returns:
-        Zero after emitting exactly one line of successful text or JSON counts; one
+        Zero after emitting exactly one line of successful text counts; one
         for named-file read/decode failures, with a diagnostic on stderr.
 
     Validation precedes acquisition. Expected OSError and UnicodeDecodeError
@@ -50,7 +49,6 @@ def main(argv: Sequence[str] | None = None) -> int:
     """
     parser = argparse.ArgumentParser(prog="textstats", allow_abbrev=False,
                                      description="Count lines and words in a UTF-8 file.")
-    parser.add_argument("--json", action="store_true", help="emit JSON counts")
     parser.add_argument("--keep-bom", action="store_true", help="retain a leading BOM")
     parser.add_argument("--lines", type=_parse_range, action=_SingleRange,
                         metavar="START:END", help="select inclusive named-file logical lines")
@@ -66,8 +64,5 @@ def main(argv: Sequence[str] | None = None) -> int:
     except (OSError, UnicodeDecodeError) as error:
         print(f"textstats: {args.input!r}: {error}", file=sys.stderr)
         return 1
-    if args.json:
-        print(json.dumps({"lines": stats.lines, "words": stats.words}))
-    else:
-        print(f"lines={stats.lines} words={stats.words}")
+    print(f"lines={stats.lines} words={stats.words}")
     return 0
