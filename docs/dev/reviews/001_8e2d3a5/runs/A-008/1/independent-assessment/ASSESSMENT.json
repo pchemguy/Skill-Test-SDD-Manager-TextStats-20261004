@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "case_id": "A-008",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "consumer_first_attempt_status": "Passed",
+  "first_attempt_status": "Passed",
+  "assistance_scope": "Checker/input-schema only; no consumer coaching, retry, product or pinned source repair.",
+  "checkpoint_refs": {
+    "product_branch": "feature/002_ea97182-line-ranges",
+    "product_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "remote": "origin",
+    "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+    "remote_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c"
+  },
+  "source_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "checks": [
+    {
+      "id": "feature-identity-scope",
+      "status": "Passed",
+      "reason": "Reserved002_ea97182 matches feature branch/packageREADME full baseline/phase target; exactly7 new feature docs and no existing tracked artifact changes; original fixture unchanged."
+    },
+    {
+      "id": "first-derived-dependencies",
+      "status": "Passed",
+      "reason": "First persisted PLAN0b424729 and current TASKS start completedT012, explicitly exclude unfinishedT013\u201317/stdin; numerical2.4 ordering carries no implied dependency. Original preparation input separates named-file delivery and future stdin compatibility. First pre-correction TASKS observed only by retained hash, journal and appended finding."
+    },
+    {
+      "id": "reviews-and-ownership",
+      "status": "Passed",
+      "reason": "T018\u201320 delivery plus T021 milestone review;2.5 has soleT022 feature phase/final review. All unchecked;22unique actual task owners, reports use feature prefix; main2.3/T017 preserved. No source changes, merge, projection or implementation."
+    },
+    {
+      "id": "document-qc",
+      "status": "Passed",
+      "reason": "Three adjacent reports match22actual artifact/governing hashes.1delivery milestone fragmentation rationale and3delivery tasks exclude review units. TASK-QC-1 original finding preserved plus Revision1; acceptance correction directly follows no-cap and repeated-option input, no changed strategy. SPEC8fb78f precedes PLAN0b4247 precedes TASKS5b61f commit."
+    },
+    {
+      "id": "publication-and-provider",
+      "status": "Passed",
+      "reason": "Independent remote ref exact5b61f65; phaseea97182/main59debb unchanged. Provider HTTP200 inventories retain17existing issues,6milestones,12labels;T013\u201317 and2.2/2.3 open; no feature task/milestone/label projection. Dedicated PR endpoint unsupported; issue inventory supplied no added objects."
+    }
+  ],
+  "deterministic_original": "Checks failed: duplicate_task_ownership CHK002 after assessor-local schema normalization; original invalid_schema invocation retained.",
+  "deterministic_variant": "Checks passed using existing disclosed Git-owner inventory variant after original result.",
+  "coverage_limits": [
+    "No full native command transcript; consumer journal/retained Git and file observations bound chronology conclusions.",
+    "No hard filesystem isolation; fresh consumer context cannot certify inaccessible assessor assets.",
+    "First precorrection task draft retained by hash/description/finding rather than complete bytes.",
+    "No behavioral tests needed/run for preparation-only; no implementation acceptance claim.",
+    "Provider pulls endpoint unsupported; all issues readback retains existing17objects.",
+    "Assessment artifacts currently local pending coordinator evidence publication."
+  ],
+  "evidence_paths": [
+    "start-observation.json",
+    "FINAL-STATE.json",
+    "FIRST-DERIVATION.json",
+    "PINNED-SOURCE.json",
+    "INDEPENDENT-OWNERS.json",
+    "HELPER-COMMANDS.json",
+    "ORIGINAL-DETERMINISTIC.json",
+    "VARIANT-DETERMINISTIC.json",
+    "FINAL-PROVIDER.json",
+    "FINAL-PROVIDER-READBACK.json"
+  ],
+  "finding_dispositions": {
+    "CHK-002": "Confirmed checker false positive: recursively discovered ignored dist/extracted/docs/dev/TASKS.md;22actualowners unique.",
+    "assessor-input-schema": "Initial coordinator checkpoint had suspended/active_cases outside schema; assessor-only normalization retained in helper command evidence.",
+    "TASK-QC-1": "Consumer-owned preparation correction resolved within first attempt; no coordinator intervention.",
+    "plugin": "No confirmed SDD Manager defect established by A008."
+  }
+}

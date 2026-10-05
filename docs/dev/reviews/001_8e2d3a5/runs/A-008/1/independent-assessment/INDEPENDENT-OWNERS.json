@@ -1,0 +1,84 @@
+{
+  "candidate_command": [
+    "git",
+    "-C",
+    "/workspace/scratch/textstats-live-20261004",
+    "ls-files",
+    "--cached",
+    "--others",
+    "--exclude-standard",
+    "-z"
+  ],
+  "owners": {
+    "T-018": [
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "T-019": [
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "T-020": [
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "T-021": [
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "T-022": [
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "T-001": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-002": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-003": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-004": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-005": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-006": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-007": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-008": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-009": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-010": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-011": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-012": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-013": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-014": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-015": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-016": [
+      "docs/dev/TASKS.md"
+    ],
+    "T-017": [
+      "docs/dev/TASKS.md"
+    ]
+  },
+  "duplicate_actual_owners": {},
+  "excluded_generated_task_copies": [
+    "dist/extracted/docs/dev/TASKS.md"
+  ]
+}

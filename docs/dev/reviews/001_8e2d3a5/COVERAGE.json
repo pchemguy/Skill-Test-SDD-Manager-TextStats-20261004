@@ -106,12 +106,15 @@
       ]
     },
     "A-008": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
-          "consumer": "fresh explicit-source context"
+          "status": "Passed",
+          "consumer": "fresh explicit-source context",
+          "assisted": true,
+          "assessment": "runs/A-008/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Preparation independently verified; original ownership checker and schema failures retained"
         }
       ]
     },
@@ -150,8 +153,16 @@
       "attempts": [
         {
           "attempt": 1,
+          "status": "Blocked",
+          "consumer": "fresh local-only context in existing repository worktree",
+          "assessment": "runs/A-015/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Coordinator local Git tooling destination mismatch before actual staged-work trigger"
+        },
+        {
+          "attempt": 2,
           "status": "Running",
-          "consumer": "fresh local-only context in existing repository worktree"
+          "assisted": true,
+          "consumer": "fresh local-only context, explicit absolute local publication URL"
         }
       ]
     },
