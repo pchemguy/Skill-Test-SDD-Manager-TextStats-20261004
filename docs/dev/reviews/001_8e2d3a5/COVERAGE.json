@@ -131,13 +131,15 @@
       ]
     },
     "A-010": {
-      "status": "Running",
+      "status": "Blocked",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
+          "status": "Blocked",
           "consumer": "fresh explicit-source context",
-          "request": "runs/A-010/1/REQUEST.md"
+          "request": "runs/A-010/1/REQUEST.md",
+          "assessment": "runs/A-010/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Two automatic authorization review rejections before required hosted projection; preserved published document/owner checkpoint, no execution"
         }
       ]
     },
@@ -261,6 +263,12 @@
           "status": "Running",
           "request": "runs/A-024/1/REQUEST.md",
           "scope": "GET-only access classification variants"
+        },
+        {
+          "attempt": 2,
+          "status": "Running",
+          "request": "runs/A-024/2/REQUEST.md",
+          "scope": "rate-limit classification; original frozen before restored fresh readback"
         }
       ]
     },

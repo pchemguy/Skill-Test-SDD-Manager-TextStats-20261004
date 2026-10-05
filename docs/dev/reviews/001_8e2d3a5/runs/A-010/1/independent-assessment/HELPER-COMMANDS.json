@@ -1,0 +1,83 @@
+[
+  {
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-010.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/LITERAL-EVIDENCE-NOT-RUN.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/ORIGINAL-DETERMINISTIC.json"
+    ],
+    "returncode": 2,
+    "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"invalid_schema\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+    "stderr": "",
+    "literal_note": "No captures attempted: document-only checkpoint blocked before execution. Empty evidence intentionally preserves required unobserved literal failures."
+  },
+  {
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/RUN-STATE-VALID.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-010.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/LITERAL-EVIDENCE-NOT-RUN.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/ORIGINAL-DETERMINISTIC-VALID.json"
+    ],
+    "returncode": 2,
+    "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"invalid_schema\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+    "stderr": "",
+    "intervention": "Assessor-local copied checkpoint contained coordinator extra fields case_results/updated_at outside strict schema. Retained original rejection; filtered to schema keys in new checkpoint. No product change."
+  },
+  {
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/RUN-STATE-ASSESSOR.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-010.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/LITERAL-EVIDENCE-NOT-RUN.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/ORIGINAL-DETERMINISTIC-REACHED.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "",
+    "intervention": "Assessor-local copied case_results contained coordinator A016 current_assessment outside strict nested schema. Dropped unrelated historic results in new assessor checkpoint; actual reached refs unchanged. Retained both schema-rejection command results."
+  },
+  {
+    "argv": [
+      "python",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/checker-variant/assess_git_owners.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/RUN-STATE-ASSESSOR.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-010.json",
+      "--evidence",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/LITERAL-EVIDENCE-NOT-RUN.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-010-1/VARIANT-DETERMINISTIC.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "",
+    "variant_sha256": "10c4cce8ed9e275d0d36b207578ca8399104c818858d8364d490bb47020875c8",
+    "audit": "Only candidate discovery swaps root.rglob for git ls-files cached/others/exclude-standard; parser, history exclusion and substantive checks unchanged. Original result retained first."
+  }
+]
