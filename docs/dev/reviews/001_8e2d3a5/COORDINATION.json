@@ -3,7 +3,7 @@
   "active_cases": [
     {
       "case_id": "A-010",
-      "role": "fresh implementation consumer active; independent assessor waits for stop",
+      "role": "consumer stopped at published feature integration; independent final assessor active",
       "positive": true
     }
   ],

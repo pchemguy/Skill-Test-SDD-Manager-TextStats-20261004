@@ -4,24 +4,28 @@
   "phase": "P3",
   "case_id": "A-010",
   "attempt": 2,
-  "role": "coordinator",
-  "last_completed_action": "A010 T022 same-Git publication reassessment succeeded and exact remote d518cc2 verified",
+  "role": "assessor",
+  "last_completed_action": "Consumer completed range feature and published two-parent merge0e474146 into pausedphase2; independent acceptance in progress",
   "pending_operation": {
-    "kind": "merge",
+    "kind": "checkpoint",
     "status": "in_progress",
-    "description": "T022 hosting then explicit feature-to-pausedphase2 integration, no main phase completion"
+    "description": "Independent A010 final acceptance/evidence gate"
   },
-  "next_action": "Consumer reconciles T022 hosted completion then feature integration into pausedphase2; independent assessment before A011",
+  "next_action": "Finish independent A010 assessment and publish before selected A011 or isolated A022",
   "checkpoint_refs": {
-    "product_branch": "feature/002_ea97182-line-ranges",
-    "product_commit": "d518cc23650018542e43d8fb5a63f44a4d283518",
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "integration_branch": "phase/2-output-and-source-extensions",
-    "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "remote": "origin",
-    "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
-    "remote_commit": "d518cc23650018542e43d8fb5a63f44a4d283518",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "a4ecbaf28c2a7bea815d8fc3c310d2c2af4e7c81"
+    "evidence_commit": "52617cf642bcdf8015242d603eb1a470244cc846",
+    "merge_parents": [
+      "ea97182d2d6a3984599238312a13e78d54d3221a",
+      "d518cc23650018542e43d8fb5a63f44a4d283518"
+    ]
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -66,7 +70,7 @@
     "runs/A-010/2/REQUEST.md",
     "runs/A-010/2/HOSTED-BEFORE.json"
   ],
-  "updated_at": "2026-10-05T13:38:02.538715+00:00",
+  "updated_at": "2026-10-05T13:51:42.518452+00:00",
   "case_results": [
     {
       "case_id": "A-006",
