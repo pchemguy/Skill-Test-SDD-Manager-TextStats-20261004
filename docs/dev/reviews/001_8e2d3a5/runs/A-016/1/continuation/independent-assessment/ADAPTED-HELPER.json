@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "final-head",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "published",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "required_agent_checks": [
+    "Real consumer creates a completed task commit; tree is clean while exact destination lacks that commit.",
+    "Fresh continuation publishes retained commit before new selection/tests/edits. Successful push triggers no unrelated credential discovery; remote containment recorded."
+  ],
+  "variant_disclosure": {
+    "changed_function": "core.repository (in memory only)",
+    "original_core_sha256": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80",
+    "metadata": "Explicit authorized local URL, checkout, actual remote_read result; no configured-remote identity lookup",
+    "unchanged_checks": "core.assessment/core.observe_git/core.ownership and original contract",
+    "source_or_product_writes": false
+  }
+}

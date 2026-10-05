@@ -1,0 +1,5 @@
+# Local URL assessor adapter audit
+
+Original `core.py` SHA-256 is guarded as `72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80`. The adapter substitutes only `core.repository` in memory: explicit local destination/checkout identity, actual `core.remote_read` result, empty prior-run metadata and no integration target. Its checkpoint-derived metadata `head` is unused by A-016 checks: `core.observe_git` independently executes rev-parse HEAD and reads index/parents/ref publication. Original `core.assessment`, `core.ownership`, contract and Git observation implementations are unchanged. The finally block restores the function. No source/product/config/ref write occurs.
+
+Original helper identity mismatch is preserved in CHECK-COMMANDS.json and ORIGINAL-HELPER.json. ADAPTED-HELPER.json is only a disclosed deterministic variant; it cannot grade lifecycle behavior. Wrong checkpoint HEAD fails final-head; separate existing authorized local destination without the A-016 ref fails published. All sensitivity commands are read-only.

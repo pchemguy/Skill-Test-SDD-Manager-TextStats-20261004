@@ -1,8 +1,7 @@
 {
-  "suspended": true,
-  "requested_instruction": "Perform controlled suspension",
-  "product_work_stopped": true,
-  "remaining_assessor": null,
-  "new_work_allowed": false,
-  "all_workers_stopped": true
+  "suspended": false,
+  "active_cases": [
+    "A-016"
+  ],
+  "new_work_allowed": "Only within remaining authorized campaign; reconcile pending A-016 publication first"
 }

@@ -1,0 +1,1 @@
+Independent assessment directory copied without changing its bytes. Its original_attempt.path is relative to its original assessor directory; the published original assessment remains ../../independent-assessment/ASSESSMENT.json from this continuation directory. Original Blocked stop remains retained.

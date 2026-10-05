@@ -177,13 +177,17 @@
       ]
     },
     "A-016": {
-      "status": "Blocked",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Blocked",
+          "status": "Passed",
           "assessment": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
-          "reason": "User controlled suspension at genuine unpublished-commit trigger; fresh continuation unstarted"
+          "reason": "Fresh retained-commit local publication independently assessed; original controlled-suspension Blocked assessment preserved.",
+          "initial_status": "Blocked",
+          "initial_assessment": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
+          "assisted": true,
+          "current_assessment": "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json"
         }
       ]
     },

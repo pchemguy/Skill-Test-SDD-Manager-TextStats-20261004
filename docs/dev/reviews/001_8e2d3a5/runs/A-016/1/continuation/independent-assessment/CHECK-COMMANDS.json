@@ -1,0 +1,99 @@
+[
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-016.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/ORIGINAL-HELPER.json"
+    ],
+    "cwd": null,
+    "returncode": 2,
+    "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"repository_identity_mismatch\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/local_url_assessment.py",
+      "--harness",
+      "/workspace/scratch/textstats-live-harness-20261004/harness",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-016.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/ADAPTED-HELPER.json"
+    ],
+    "cwd": null,
+    "returncode": 0,
+    "stdout": "{\"status\": \"Checks passed\", \"exit_code\": 0}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/local_url_assessment.py",
+      "--harness",
+      "/workspace/scratch/textstats-live-harness-20261004/harness",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/WRONG-HEAD-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-016.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/SENSITIVITY-WRONG-HEAD.json"
+    ],
+    "cwd": null,
+    "returncode": 1,
+    "stdout": "{\"status\": \"Checks failed\", \"exit_code\": 1}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/local_url_assessment.py",
+      "--harness",
+      "/workspace/scratch/textstats-live-harness-20261004/harness",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-016.json",
+      "--observation-destination",
+      "/workspace/scratch/textstats-staged-remote-20261005.git",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-016-1-final/SENSITIVITY-WRONG-DESTINATION.json"
+    ],
+    "cwd": null,
+    "returncode": 1,
+    "stdout": "{\"status\": \"Checks failed\", \"exit_code\": 1}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-unpublished-worktree-20261005",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_fields_are_immutable (tests.unit.test_core.StatisticsValueTests.test_fields_are_immutable) ... ok\ntest_rejects_negative_fields (tests.unit.test_core.StatisticsValueTests.test_rejects_negative_fields) ... ok\ntest_requires_integer_fields (tests.unit.test_core.StatisticsValueTests.test_requires_integer_fields) ... ok\ntest_zero_and_positive_values (tests.unit.test_core.StatisticsValueTests.test_zero_and_positive_values) ... ok\ntest_keyword_only_bom_policy_and_default (tests.unit.test_core.TextCountingTests.test_keyword_only_bom_policy_and_default) ... ok\ntest_only_cr_lf_terminate_lines (tests.unit.test_core.TextCountingTests.test_only_cr_lf_terminate_lines) ... ok\ntest_retained_interior_and_double_bom (tests.unit.test_core.TextCountingTests.test_retained_interior_and_double_bom) ... ok\ntest_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_silent_and_input_unchanged) ... ok\ntest_spec_sample_rows (tests.unit.test_core.TextCountingTests.test_spec_sample_rows) ... ok\ntest_direct_imports (tests.unit.test_public.PublicAPITests.test_direct_imports) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.001s\n\nOK\n"
+  }
+]

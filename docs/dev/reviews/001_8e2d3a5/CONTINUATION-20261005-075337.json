@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-05T07:56:15.505355+00:00",
+  "human_instruction": "Resume, 2026-10-05 10:53:37 Europe/Moscow",
+  "previous_stop": "SUSPENSION-20261005-032346.json",
+  "published_evidence": "fcf1e78e1f26a43b7d7890bee403e51669180f05",
+  "head": "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
+  "destination_ref": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "index_export_exact": true,
+  "bundle_hash_verified": true,
+  "active_owned_hook_processes": 0,
+  "restoration": "Only configured local pre-push facility restored through RELEASE marker; no product/task/ref changes or push by coordinator"
+}
