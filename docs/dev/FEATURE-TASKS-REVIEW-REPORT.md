@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready. Owner: sdd-tasks, 2026-10-05. Current list has5 unchecked feature tasks,3 delivery tasks and2 excluded reviews. No remaining confirmed issue. Preparation is complete; implementation/selection/projection is not authorized by this report.
+State: Ready for current FEATURE-TASKS.md conformance. Owner: sdd-tasks, 2026-10-05. Revision 2 records current identities, coverage and limits. No confirmed unresolved preparation issue. Implementation completion is not established.
 
 ## Initial review
 
@@ -37,3 +37,14 @@ Corrected only T-019 evidence to explicitly require endpoints beyond interpreter
 - `TASKS.md` SHA256 `3523f6c900f776a0b1d90ce389295dc63650c9b54c5379121d6e85449a1fe9c1`.
 - `layout.md` SHA256 `ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d`.
 - `DECOMPOSITION.md` SHA256 `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`.
+
+## Revision 2 — Authorized range reconciliation recheck
+
+Feature task pointer has zero independently executable entries after authorized transfer. T018–T022 remain stable, unchecked and solely in main TASKS. Original five-task decomposition/evidence unchanged at receiving owner; current main QC governs execution. No duplicate task ownership or hidden completion. Historical preparation remains retained.
+
+Exact reviewed/governing SHA256:
+
+- FEATURE-TASKS.md: `327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8`
+- TASKS.md: `558140529154e5ffdde1010b47a1dc6314be5cb286911cf6d81a9a5ae3512e62`
+- TASKS-REVIEW-REPORT.md: `943f944fba9206b088c1a9c86f3ab7106700986ab9af00d8a1d38eab58d77a8a`
+- FEATURE-PLAN.md: `fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c`

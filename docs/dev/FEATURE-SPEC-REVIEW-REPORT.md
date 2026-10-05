@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready. Owner: sdd-specify, 2026-10-05. Preparation evidence only; no implementation/test claim. No focused children. No remaining blockers to feature planning.
+State: Ready for current FEATURE-SPEC.md conformance. Owner: sdd-specify, 2026-10-05. Revision 1 records current identities, coverage and limits. No confirmed unresolved preparation issue. Implementation completion is not established.
 
 ## Initial review
 
@@ -25,3 +25,15 @@ No confirmed finding or correction cycle. Structural ownership and directed depe
 - `DECOMPOSITION.md` SHA256 `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`.
 - `SPEC.md` SHA256 `8cfd533f70463882dac3acf12930f17e22f5cd0d57266815fad02aae977c77eb`.
 - `features/002_ea97182/README.md` SHA256 `a1b81bc6c130e03020d03591c751dd6cdc4251a348927f814aee52bb2999c86e`.
+
+## Revision 1 — Authorized range reconciliation recheck
+
+R-1–R-4 unchanged and exactly represented by S-8 plus S-4/S-5/S-7. Current main SPEC incorporation changes no feature behavior; design already owns parsing/acquisition/normalization/selection/rendering seams. All contract groups and no-public-API/stdin boundary reviewed; no correction required.
+
+Exact reviewed/governing SHA256:
+
+- FEATURE-SPEC.md: `e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed`
+- SPEC.md: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- PROJECT.md: `85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24`
+- ARCHITECTURE.md: `0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c`
+- DECOMPOSITION.md: `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`

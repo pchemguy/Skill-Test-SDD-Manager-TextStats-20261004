@@ -3,7 +3,7 @@
 Campaign: `002_ea97182`. Baseline: `ea97182d2d6a3984599238312a13e78d54d3221a`.
 Working branch: `feature/002_ea97182-line-ranges`. Integration target: `phase/2-output-and-source-extensions` in pchemguy/Skill-Test-SDD-Manager-TextStats-20261004. Main remains `59debb649545125dd3aa00377ea115451b594271`.
 
-Preparation only: define named-file text/JSON selection; stop before implementation, main-document incorporation, Git merge or hosted projection. T-012 is complete; T-013–T-017/stdin remain unfinished. Preserve their identities and current acceptance.
+Authorized delivery: implement named-file text/JSON selection, incorporate governing owners, project maintained tracking and integrate into the paused phase target after verification. Stop before stdin or later phase execution. T-012 is complete; T-013–T-017/stdin remain unfinished. Preserve their identities and current acceptance.
 
 Active sources: [FEATURE-SPEC](../../FEATURE-SPEC.md), [FEATURE-PLAN](../../FEATURE-PLAN.md), [FEATURE-TASKS](../../FEATURE-TASKS.md). Adjacent QC reports govern dependent use. Sources remain active at root until separately accepted incorporation/archive.
 

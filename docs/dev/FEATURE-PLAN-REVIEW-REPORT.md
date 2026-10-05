@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready. Owner: sdd-plan, 2026-10-05. Scope: FEATURE-PLAN, reused main layout and feature/main design/specification; no children. No blocker to FEATURE-TASKS derivation. Preparation-only, no product test claim.
+State: Ready for current FEATURE-PLAN.md conformance. Owner: sdd-plan, 2026-10-05. Revision 1 records current identities, coverage and limits. No confirmed unresolved preparation issue. Implementation completion is not established.
 
 ## Initial review
 
@@ -30,3 +30,15 @@ No confirmed issue or correction cycle. New phase numbering would incorrectly ga
 - `ARCHITECTURE.md` SHA256 `0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c`.
 - `DECOMPOSITION.md` SHA256 `d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d`.
 - `TASKS.md` SHA256 `3523f6c900f776a0b1d90ce389295dc63650c9b54c5379121d6e85449a1fe9c1`.
+
+## Revision 1 — Authorized range reconciliation recheck
+
+Feature 2.4/2.5 strategy remains equivalent against expanded SPEC and incorporated PLAN. Three delivery tasks plus milestone review and one scoped final review fit bounded named-file slice. No stdin dependency; no main phase completion claim. Main strategy contains both outcomes; accepted feature plan remains active until final archive.
+
+Exact reviewed/governing SHA256:
+
+- FEATURE-PLAN.md: `fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c`
+- SPEC.md: `fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d`
+- FEATURE-SPEC.md: `e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed`
+- PLAN.md: `e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e`
+- layout.md: `ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d`
