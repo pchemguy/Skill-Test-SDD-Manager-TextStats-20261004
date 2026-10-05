@@ -1,0 +1,35 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-010",
+      "status": "Passed",
+      "assessment_path": "../../../runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "merge_parents": [
+          "ea97182d2d6a3984599238312a13e78d54d3221a",
+          "d518cc23650018542e43d8fb5a63f44a4d283518"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "5027c2deb84abc4550dd967bc8719f740172120d",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Use existing product checkout /workspace/scratch/textstats-live-20261004, published phase/2-output-and-source-extensions at 0e4741465c3e086d2ab95c5af73ca89371c16fac. Main remains59debb649545125dd3aa00377ea115451b594271. The named-file range feature is incorporated and integrated into paused phase2; JSON currently remains implemented, stdin/final phase tasks remain pending. Inspect actual product authorities, code, tests and documentation. This request permits assessment only: report impacts and retained contracts without product writes, branches, commits, hosted mutation or task execution.\n\nFollow product AGENTS and immutable textstats-run-resources/plugin/skills pinned from019eb354cf0921ebd6056e6579763ac33d0baec2. Before authority decisions read pinned sdd-manage/references/revision-authorization.md. Actual human Resume continues the full scoped campaign in established pchemguy/Skill-Test-SDD-Manager-TextStats-20261004, while this selected request is assessment-only. Reviews end at commits where authorized; execution owns publication. Preserve all unrelated material, including untracked -json-9l969okj/sample.txt SHA256 f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5; product tracked tree/index are clean. No clones, reset, stash, blanket cleanup, forcepush, source/harness alteration or /pyenv work. Do not inspect credential/helper source or disclose provider bodies.\n\n"
+  }
+}

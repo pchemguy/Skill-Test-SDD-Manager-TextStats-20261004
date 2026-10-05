@@ -161,8 +161,18 @@
       }
     },
     "A-011": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "request": "runs/A-011/1/REQUEST.md",
+          "current_assessment": "runs/A-011/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-011/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Actual removal candidate scope and retained contracts are accurately assessed; no consumer governing/source/test edits, revision branch or resumed execution observed. Original ownership helper falsepositive is retained and independently resolved with the audited Git-visible-inventory assessor variant.",
+          "assisted": false
+        }
+      ]
     },
     "A-012": {
       "status": "Pending",
@@ -284,8 +294,15 @@
       ]
     },
     "A-022": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "request": "runs/A-022/1/REQUEST.md",
+          "scope": "isolated local-only document acceptance and orientation"
+        }
+      ]
     },
     "A-023": {
       "status": "Blocked",

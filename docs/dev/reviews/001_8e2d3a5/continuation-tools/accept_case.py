@@ -1,0 +1,12 @@
+"""Advance coordinator records from a separately retained independent assessment."""
+import pathlib,json,datetime,sys,importlib.util
+r=pathlib.Path(__file__).parents[1];case,attempt,relative,next_action=sys.argv[1:];a=json.loads((r/relative).read_text());attempt=int(attempt);now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+assert a['case_id']==case and a['agent_behavior_assessed'] is True and a['status'] in ['Passed','Failed','Blocked']
+def save(n,d):
+ p=r/n;t=p.with_suffix(p.suffix+'.tmp');t.write_text(json.dumps(d,indent=2)+'\n');t.replace(p)
+c=json.loads((r/'COVERAGE.json').read_text());v=c['cases'][case];v['status']=a['status'];found=[x for x in v['attempts'] if x['attempt']==attempt];assert len(found)==1;x=found[0];x.update(status=a['status'],current_assessment=relative,assessment=relative,reason=a.get('reason','Independent assessment'),assisted=a.get('assisted',False));save('COVERAGE.json',c)
+s=json.loads((r/'RUN-STATE.json').read_text());s.update(case_id=case,attempt=attempt,role='coordinator',last_completed_action=f'{case} independently {a["status"]}; evidence publication pending',next_action=next_action,updated_at=now);s['pending_operation']={'kind':'checkpoint','status':'in_progress','description':f'Publish independent {case} evidence before next dependent work'};s['checkpoint_refs'].update(a['checkpoint_refs']);s['case_results'].append({'case_id':case,'attempt':attempt,'status':a['status'],'assessment_path':relative,'reason':a.get('reason','Independent assessment'),'assisted':a.get('assisted',False)})
+h=pathlib.Path('/workspace/scratch/textstats-live-harness-20261004/harness');spec=importlib.util.spec_from_file_location('core',h/'scripts/core.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.validate(s,json.loads((h/'schemas/run-state.schema.json').read_text()));save('RUN-STATE.json',s)
+with (r/'DIAGNOSTIC-REPORT.md').open('a') as f:f.write(f'\n\n## {case} independent boundary — {now}\n\n[{case} assessment]({relative}): **{a["status"]}**. '+a.get('reason','Independent evidence retained')+' Next: '+next_action+'\n')
+(r/'RESUME.md').write_text(f'# Live acceptance\n\n{case} independently {a["status"]}; evidence publication pending.\n\nNext authorized action: {next_action}\n\nOriginal attempts, suspension and interventions retained. Execution owns pushes; frozen package remains unchanged. Historical native uncertainty and hard-isolation/full-transcript limits remain disclosed.\n')
+print(case,a['status'],'validated coordinator checkpoint')

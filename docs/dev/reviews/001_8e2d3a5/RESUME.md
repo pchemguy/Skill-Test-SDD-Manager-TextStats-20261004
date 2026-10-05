@@ -1,3 +1,7 @@
-# Live acceptance resumed
+# Live acceptance
 
-A010 independent assessment Passed with assistance at product0e474146. Original blocked/suspended records retained. Missing acquisition/lifetime/docs/distribution checks passed; ignored generated owner duplicate independently audited using separately retained variant. Pending: publish this evidence then dispatch assessment-only JSON removal. Milestones2.2/2.3 remain pending for explicit later phase resume. Historical unknown readonly native results remain disclosed; no full process quiescence claim.
+A-011 independently Passed; evidence publication pending.
+
+Next authorized action: Publish A011 evidence, then separately dispatch assessed JSON removal and stop after amendment integration
+
+Original attempts, suspension and interventions retained. Execution owns pushes; frozen package remains unchanged. Historical native uncertainty and hard-isolation/full-transcript limits remain disclosed.

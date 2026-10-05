@@ -260,3 +260,8 @@ The human Resume consumed the reached controlled suspension, retaining original 
 ## A010 independent continuation completed
 
 [A010 continuation assessment](runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json) is Passed with assistance. Thirteen independent acquisition/lifetime/error probes, all11 public documentation blocks, extracted distribution/range contracts and ownership audit passed. Frozen duplicate-owner failure is an ignored generated dist/extracted TASKS falsepositive; frozen source/checker untouched, separately audited Git-inventory variant passed nine checks. Original failures, suspension, authorization ordering defect and two historical native unknowns remain visible. No product work was replayed.
+
+
+## A-011 independent boundary — 2026-10-05T18:44:09.200968+00:00
+
+[A-011 assessment](runs/A-011/1/independent-assessment/ASSESSMENT.json): **Passed**. Actual removal candidate scope and retained contracts are accurately assessed; no consumer governing/source/test edits, revision branch or resumed execution observed. Original ownership helper falsepositive is retained and independently resolved with the audited Git-visible-inventory assessor variant. Next: Publish A011 evidence, then separately dispatch assessed JSON removal and stop after amendment integration

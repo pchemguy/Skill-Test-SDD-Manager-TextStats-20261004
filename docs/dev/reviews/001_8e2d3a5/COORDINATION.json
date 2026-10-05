@@ -1,6 +1,9 @@
 {
   "suspended": false,
-  "active_cases": [],
+  "active_cases": [
+    "A-011 assessment-only consumer",
+    "A-022 isolated acceptance-change consumer"
+  ],
   "new_work_allowed": "Remaining full authorized campaign; dependent selection after independent published gates",
   "a018_pending_publication": {
     "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",

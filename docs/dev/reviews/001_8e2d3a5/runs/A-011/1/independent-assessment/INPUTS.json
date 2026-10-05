@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "test_repository": "/workspace/scratch/textstats-live-20261004",
+  "local_checkout": "/workspace/scratch/textstats-live-20261004",
+  "profile": "full-github",
+  "scope": {
+    "cases": [
+      "A-011"
+    ]
+  }
+}
