@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready for current text-only TASKS conformance. Owner: sdd-tasks, 2026-10-05. Revision 5 records the removal amendment; historical evidence retained.
+State: Ready for current stdin/range conformance. Owner: sdd-tasks, 2026-10-06. Revision 6 records the explicit stdin clarification; historical evidence retained.
 
 ## Retained original gate and identities (historical)
 
@@ -119,3 +119,20 @@ Reviewed current roots directly against the selected human JSON-removal objectiv
 Coverage: historical phase1 and2.1 identities/evidence preserved; T-018–T-022 retain named-file selection obligations, with amended text-only T-019/T-020 and reassessment report for T-021/T-022; pending T-013–T-015 retain stdin success/lifetime/failure/docs/distribution, T-016/T-017 retain required reviews. Counts:1.1=3 delivery + T004 review;1.2=3 + T008;2.1=2 retired historical + T012 review;2.2=3 + T016;2.4=3 + T021;1.3/2.3/2.5 one review each excluded. Historical2.1 small count reflects bounded rendering/docs work; no active empty delivery group. Checked identity uniqueness, hierarchy, dependencies and no duplicated executable feature list. No confirmed gap; Ready for selected conformance. Current completion reassessment is separate and pending verification.
 
 Completion-evidence-only currency recheck: TASKS scope, hierarchy, dependencies and decomposition are unchanged by observed unit22/integration13/demo/reassessment evidence; current hash above updated without a new conformance cycle. No new main task completed.
+
+
+## Revision 6 — Explicit stdin range owner recheck
+
+Authorization: selected ordinary Resume phase2 request explicitly includes stdin range composition and affected governing readiness before production. Reviewed pending content against published baseline2c8f9ec3c888075be64149ac3d4751939802ee12; no focused children changed. Original findings/history retained.
+
+- PROJECT.md: SHA256 `dc75addf97077275bf19e204abb619a96dda8e8920e3926f036d56f165765d76`
+- ARCHITECTURE.md: SHA256 `825f564b53d48846275fe5ac34f7859eb644ba9869d9e2549a942026a19c9e45`
+- DECOMPOSITION.md: SHA256 `5d0947c7516e43a4f797b02a1367f5bfd81512fd07463262c6db4cf13cad65d6`
+- SPEC.md: SHA256 `f20f04c6aeb7755df7dfb245f40323e135dcc5fef9aa8aa590d7dbe7fe5319dd`
+- PLAN.md: SHA256 `6c8645948944d10073134936d3132abad83c0e53933d34df7da8a01d8156ab20`
+- layout.md: SHA256 `e11654ca67ea970828cb9fd1fceda385cfda2574c3290782596eb4d2d4b3006d`
+- TASKS.md: SHA256 `6cdf765649affb9a3030c86fe6b5aced369c237807a2c8c82ea706bbbcd4339b`
+
+T-013 provides byte stdin and successful shared selection; T-014 verifies error, validation and BOM interactions; T-015 covers public docs and isolated extraction; T-016 reviews2.2; T-017 reviews complete Phase2/final product after delivery closures. Delivery counts1.1=3,1.2=3,2.2=3,2.4=3; historical2.1=2 retained as bounded prior renderer/docs evidence; reviewsT004/T008/T012/T016/T021 excluded, final1.3/2.3/scoped2.5 each one review. Stable IDsT001–T022 occur once, hierarchy/dependencies/report destinations and no active feature duplicate inspected. No checked task is claimed newly complete.
+
+Located finding STDIN-QC-1: current owners excluded the explicitly accepted stdin range outcome. Coordinated owner correction updates PROJECT/design/SPEC/PLAN/layout/TASKS; affected upstream/downstream conformance reviewed in dependency order. Corrected and resolved. Exact diff, local links, IDs/hierarchy and whitespace checked. No unresolved confirmed finding; Ready for selected dependent execution after checkpoint publication. No production/test or implementation completion is claimed by this document review.

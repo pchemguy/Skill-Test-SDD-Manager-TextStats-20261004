@@ -1,6 +1,6 @@
 # TextStats executable task hierarchy
 
-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-012 are implemented and verified below; T-018–T-022 range implementation/review is verified below; remaining Phase 2 tasks retain their incomplete status. Range tasks are owned only here; feature snapshots are not executable lists. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Phase 2 is activated on phase/2-output-and-source-extensions; JSON milestone2.1 is selected, with stdin and final review incomplete. Range tasks T-018–T-022 have this list as their sole executable owner.
+Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001–T-012 are implemented and verified below; T-018–T-022 range implementation/review is verified below; remaining Phase 2 tasks retain their incomplete status. Range tasks are owned only here; feature snapshots are not executable lists. Maintained GitHub tracking is enabled for this repository; Phase 1 is implemented, reviewed and closed in maintained tracking. Phase 2 is activated on phase/2-output-and-source-extensions; Milestone2.1 is retired historical scope, with stdin and final review incomplete. Range tasks T-018–T-022 have this list as their sole executable owner.
 
 ## Hosted tracking
 
@@ -94,16 +94,16 @@ Current scope: text output, named-file ranges and later binary stdin. S-5/JSON a
     - [ ] Milestone 2.2 — UTF-8 stdin and final release
         - [ ] T-013 — Integrate borrowed binary stdin acquisition
             Scope: textstats/cli.py and source/lifecycle unit/integration checks. Depends on: historical T-012 baseline and accepted text-only amendment.
-            Outcome: INPUT - reads bytes until EOF, strict UTF-8 independent of locale, never closes stdin; ./- remains a named-file path; text output/BOM policies share whole-input counting (S-6).
-            Evidence: actual subprocess piped ordinary/empty/non-ASCII/BOM bytes in text output and non-UTF-8 locale settings; instrument borrowed stream lifetime and retained named-file behavior. Keep acquisition separate from decoded-text processing for future selection compatibility.
+            Outcome: INPUT - reads bytes until EOF, strict UTF-8 independent of locale, never closes stdin; ./- remains a named-file path; text output/BOM policies share counting and optional retained range selection (S-6/S-8), after complete strict decode and one BOM normalization.
+            Evidence: actual subprocess piped ordinary/empty/non-ASCII/BOM bytes in text output and non-UTF-8 locale settings; instrument borrowed stream lifetime and retained named-file behavior. Verify both range spellings, original terminators/EOF, interior/double BOM, huge ASCII endpoints and beyond-EOF counts through shared decoded-text processing.
         - [ ] T-014 — Complete stdin failure and interaction acceptance
             Scope: textstats/cli.py and focused unit/integration checks. Depends on: T-013.
             Outcome: read/decode failures identify stdin on stderr, exit 1, empty stdout, no traceback; invalid usage precedes acquisition, and complete decoded input governs text output (S-4/S-6).
-            Evidence: malformed piped bytes, injected binary read failure, never-close checks, --keep-bom, source/format/terminator regressions and unchanged named files. Retain named-file ranges; this task does not extend range selection to stdin.
+            Evidence: malformed piped bytes, injected binary read failure, never-close checks, --keep-bom, source/format/terminator regressions and unchanged named files. Retain named-file ranges and verify stdin range validation/repetition before acquisition, both BOM option orders and malformed bytes beyond END under S-8.
         - [ ] T-015 — Complete source documentation and final distribution checks
             Scope: docs/api.md, docs/module.md, README.md and tests/integration distribution checks. Depends on: T-014.
-            Outcome: final runnable docs describe all delivered sources and text output, stdin UTF-8/error/lifetime rules and whole-input public API (S-7).
-            Evidence: execute documented examples; build/extract clean source archive; invoke extracted module for named-file/stdin, text, empty/BOM/non-ASCII and representative failures. Independently require nonempty passing unit/integration suites; report workflow checks separately.
+            Outcome: final runnable docs describe all delivered sources and text output, stdin UTF-8/error/lifetime/range rules and whole-input public API (S-7/S-8).
+            Evidence: execute documented examples; build/extract clean source archive; invoke extracted module for named-file/stdin, both range spellings and BOM orders, text, empty/BOM/non-ASCII and representative usage/read/decode failures. Independently require nonempty passing unit/integration suites; report workflow checks separately.
         - [ ] T-016 — Review, test and report milestone 2.2
             Depends on: T-013, T-014, T-015. Scope: source acquisition, decoding, interactions, docs/distribution and all retained acceptance.
             Evidence: code review, tests/regressions, piped source demonstration and diagnostics, blocker repairs, committed/pushed report and prior TODO disposition. Report: docs/dev/reports/phases/2/2.2.md.

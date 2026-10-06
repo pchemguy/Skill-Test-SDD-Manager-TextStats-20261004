@@ -28,9 +28,9 @@ Stable milestone 2.1 and T-010–T-012 retain completed historical evidence; the
 
 ### Milestone 2.2 — UTF-8 stdin and final release
 
-Prerequisite: historical 2.1/T-012 baseline and accepted text-only amendment. Scope: INPUT -, binary stdin until EOF, locale-independent strict UTF-8, borrowed-handle lifecycle, empty/error inputs and text output and both BOM policies. Included contracts: S-6 and final S-7 with S-1–S-4 retained and S-5 retired. ./- addresses a literal file named -.
+Prerequisite: historical 2.1/T-012 baseline and accepted text-only amendment. Scope: INPUT -, binary stdin until EOF, locale-independent strict UTF-8, borrowed-handle lifecycle, empty/error inputs and text output and both BOM policies. Included contracts: S-6, stdin composition under S-8 and final S-7 with S-1–S-4 retained and S-5 retired. Selection uses the retained ASCII validation, full strict decode, single BOM normalization and original terminator/EOF rules. ./- addresses a literal file named -.
 
-Exit: actual module subprocess accepts piped UTF-8 bytes independent of locale, empty stdin and invalid bytes produce required outcomes; an injected read failure identifies stdin without partial stdout; borrowed stdin stays open; named-file behavior regresses successfully. Updated API/module/README docs and isolated extracted-source checks cover stdin/text. Final milestone code review/testing/repair/report is mandatory. Demonstrate piped text and error behavior to inform final release readiness.
+Exit: actual module subprocess accepts piped UTF-8 bytes independent of locale, empty stdin and invalid bytes produce required outcomes; an injected read failure identifies stdin without partial stdout; borrowed stdin stays open; named-file behavior regresses successfully. Both range spellings and BOM option orders, invalid/repeated ranges before acquisition, huge ASCII endpoints, beyond-EOF and malformed bytes after END pass for stdin. Updated API/module/README docs and isolated extracted-source checks cover stdin/text/ranges. Final milestone code review/testing/repair/report is mandatory. Demonstrate piped text and error behavior to inform final release readiness.
 
 ### Milestone 2.3 — Phase 2 and final review
 

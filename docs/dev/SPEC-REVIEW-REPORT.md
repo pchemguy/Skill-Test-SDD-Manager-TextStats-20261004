@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: Ready for current text-only SPEC conformance. Owner: sdd-specify, 2026-10-05. Revision 4 records the removal amendment; historical evidence retained.
+State: Ready for current stdin/range conformance. Owner: sdd-specify, 2026-10-06. Revision 5 records the explicit stdin clarification; historical evidence retained.
 
 ## Original reviewed identities
 
@@ -103,3 +103,20 @@ Reviewed current roots directly against the selected human JSON-removal objectiv
 - layout.md: `815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c`
 
 S-1–S-3 map unchanged to facade/core/io; S-4/S-8 map text rendering and no-acquisition validation to cli plus decoded selection; reserved S-5 explicitly rejects --json while literal paths after -- remain valid. S-6 retains pending strict binary borrowed stdin, text/BOM and no stdin ranges; S-7 maps docs/tests/distribution. PROJECT/design agree, no serializer obligation remains. Complete retained objective rows/errors/lifecycle and dependency ownership inspected. No confirmed conformance finding; Ready for selected current conformance, not implementation acceptance.
+
+
+## Revision 5 — Explicit stdin range owner recheck
+
+Authorization: selected ordinary Resume phase2 request explicitly includes stdin range composition and affected governing readiness before production. Reviewed pending content against published baseline2c8f9ec3c888075be64149ac3d4751939802ee12; no focused children changed. Original findings/history retained.
+
+- PROJECT.md: SHA256 `dc75addf97077275bf19e204abb619a96dda8e8920e3926f036d56f165765d76`
+- ARCHITECTURE.md: SHA256 `825f564b53d48846275fe5ac34f7859eb644ba9869d9e2549a942026a19c9e45`
+- DECOMPOSITION.md: SHA256 `5d0947c7516e43a4f797b02a1367f5bfd81512fd07463262c6db4cf13cad65d6`
+- SPEC.md: SHA256 `f20f04c6aeb7755df7dfb245f40323e135dcc5fef9aa8aa590d7dbe7fe5319dd`
+- PLAN.md: SHA256 `6c8645948944d10073134936d3132abad83c0e53933d34df7da8a01d8156ab20`
+- layout.md: SHA256 `e11654ca67ea970828cb9fd1fceda385cfda2574c3290782596eb4d2d4b3006d`
+- TASKS.md: SHA256 `6cdf765649affb9a3030c86fe6b5aced369c237807a2c8c82ea706bbbcd4339b`
+
+S-1–S-3 whole-input facade/core/io remain unchanged; S-4/S-5 retain exact text, usage-before-acquisition and JSON rejection. S-6/S-8 now jointly require borrowed byte stdin, strict complete decoding, shared ASCII validation, single BOM normalization, preserved terminators/EOF and stdin-identifying failure atomicity. S-7 allocates real subprocess, lifecycle and isolated archive evidence. PROJECT/design assign these guarantees to cli and existing pure decoded-text seams; no public API or extra component is introduced.
+
+Located finding STDIN-QC-1: current owners excluded the explicitly accepted stdin range outcome. Coordinated owner correction updates PROJECT/design/SPEC/PLAN/layout/TASKS; affected upstream/downstream conformance reviewed in dependency order. Corrected and resolved. Exact diff, local links, IDs/hierarchy and whitespace checked. No unresolved confirmed finding; Ready for selected dependent execution after checkpoint publication. No production/test or implementation completion is claimed by this document review.

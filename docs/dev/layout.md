@@ -7,7 +7,7 @@ This maps intended [DECOMPOSITION.md](DECOMPOSITION.md) responsibilities. README
 | textstats/__init__.py | Public facade and direct exports; no CLI side effects |
 | textstats/core.py | Immutable statistics, pure BOM normalization/logical-line selection and text semantics |
 | textstats/io.py | Complete named-file bytes, strict decoding, private decoded-text acquisition and owned resource lifecycle |
-| textstats/cli.py | Range/option validation, source dispatch, later borrowed stdin, output and process status |
+| textstats/cli.py | Range/option validation, source dispatch, borrowed binary stdin and shared selection, output and process status |
 | textstats/__main__.py | Minimal module entry delegating to CLI |
 | tests/__init__.py, tests/unit/__init__.py, tests/integration/__init__.py | Importable unittest discovery packages |
 | tests/unit/test_*.py | Nonempty semantic/API/lifecycle/adapter unit coverage |

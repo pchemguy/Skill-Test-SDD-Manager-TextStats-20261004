@@ -10,7 +10,7 @@ Provide importable immutable statistics, public API/module documentation, a runn
 
 ## Boundaries
 
-Named-file line ranges are part of the delivery hierarchy alongside later byte-based stdin. Range selection is a named-file CLI option; public APIs count whole input and expose no range parameter or additional export. Source-independent decoded-text selection shares semantics with future source acquisition. Stdin line ranges are unsupported. Network services, GUI, encodings other than UTF-8, file mutation, plugins and performance guarantees for unbounded data are non-goals.
+Named-file line ranges are part of the delivery hierarchy alongside byte-based stdin. Range selection is a CLI option for named files and stdin; public APIs count whole input and expose no range parameter or additional export. Source-independent decoded-text selection shares semantics across source acquisition. Stdin line ranges use the same complete decoding, single BOM normalization and preserved logical-line selection semantics as named files. Network services, GUI, encodings other than UTF-8, file mutation, plugins and performance guarantees for unbounded data are non-goals.
 
 ## Decisions
 
