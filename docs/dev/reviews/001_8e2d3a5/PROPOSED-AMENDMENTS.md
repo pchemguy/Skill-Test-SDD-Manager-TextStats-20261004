@@ -82,3 +82,57 @@ First implement the classification/reporting and capability preflight, then repa
 Rerun the affected required variants with fresh consumers and independent assessors. Execute optional extensions only when their declared facilities are available and selected. Publish required totals, optional executed totals, optional Not run totals, actual evidence classes and outstanding findings separately. Required acceptance may complete with optional coverage unavailable; the report must still state the narrower demonstrated scope.
 
 This batch proposes no TextStats production-code changes. Existing [authorization amendments](runs/A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md) and their [supplement](AUTHORIZATION-AMENDMENT-SUPPLEMENT.md) remain separate proposals; they are not withdrawn or implemented by this document.
+
+## Batch 2: final integration, host auto review and licensing
+
+This batch records the user's additional requirements. The final integration requirement applies prospectively. **The current live acceptance branch must remain unmerged until the user specifically requests its integration.** Adding these proposals does not grant that current merge instruction.
+
+### B2-001 — Finish live acceptance by integrating its evidence branch
+
+Update `acceptance/textstats/SETUP.md`, `EXECUTION.md`, `RECOVERY.md`, `DIAGNOSTICS.md`, A-027's guide/contract, coordinator checkpoint/reporting and related helper tests. A full live acceptance workflow must end by integrating its completed evidence branch into the established main integration branch, after publishing the final report and verifying its independent artifacts. The branch's role as an evidence branch does not exempt it from final integration.
+
+Inspect the complete branch difference, refresh and pin the actual main and evidence tips, preserve unrelated work, and create an explicit two-parent merge. Verify the prospective and committed result: retain current product source/tests/governing documents, frozen resource identities and immutable assessment payloads; resolve evidence links; reconcile campaign status and branch containment. Publish main and verify the exact destination. Retain the evidence branch. Never substitute a fast-forward, squash, force-push or an implicit pull-request operation.
+
+Avoid stale product rollback when the evidence branch descends from an older preparation checkpoint: assess the actual merged result, not merely its branch name or a clean worktree. Report product completion separately from evidence integration so the product's assessed merge remains identifiable even when main gains an evidence-only merge.
+
+Record verified parent identities, merged checks and publication. Do not declare the full workflow complete while final integration/publication remains pending. A scoped pause or actual integration blocker preserves the pending operation and branch; optional unavailable test scenarios do not independently prohibit evidence integration. Use ordinary execution ownership for merge and push, with the existing scoped human authority. Recovery must recognize an already-created merge or lost push response and finish the retained operation rather than merge again.
+
+Objective recheck: a complete campaign produces a published two-parent main merge containing final evidence without losing product changes. A current explicit unmerged boundary is respected. Recovery from a committed-but-unpublished final merge publishes the same commit once. Historical assessed product and evidence SHAs remain traceable.
+
+### B2-002 — Separate host auto review from plugin workflow definitions
+
+Revise `skills/sdd-manage/references/revision-authorization.md` and related Git, review, coordination and credential guidance; align the root README and any amendment records that would otherwise contradict the resulting policy. This proposal supersedes the explanation in P-004 and its extensions wherever that explanation separates pushes from workflows to avoid host review. Original reports remain historical evidence rather than being silently rewritten.
+
+Required wording and behavior:
+
+- Commits, prescribed pushes, eligible merges and target publication are parts of the complete workflows that require them. A reviewer may finish its assessment at the result/report commit; execution ownership of the subsequent push does not remove that push from the encompassing workflow.
+- ChatGPT's automatic approval reviewer is a separate host agent/control for operations crossing that host's sandbox or permission boundaries. It is not an SDD Manager skill or a plugin-defined development/code review. Comparable controls may exist in other clients.
+- The plugin does not select the host reviewer's triggering rules. Changing a workflow label or describing a push as outside the workflow does not resolve or disable host review. Remove instructions whose stated purpose is to evade a host review trigger through workflow reclassification.
+- Preserve the real user authorization, observed repository/destination, exact effect and relevant checks across handoffs. Use supported host channels when execution is rejected; retain exact reasons and pending work. A host rejection does not itself establish absent human workflow authorization, authentication failure or a plugin defect.
+- Retain the scoped authorization policy while its interaction with client settings is uncertain. Do not claim that credentials authorize arbitrary effects, that a README changes platform policy, or that a host rejection can be bypassed.
+
+Objective recheck: instructions consistently describe pushes as workflow steps while distinguishing development review from host auto review. Direct and delegated execution use the same actual scope and destination context. A host denial preserves completed work and does not trigger workflow reclassification, duplicate operations or unrelated credential replacement.
+
+### B2-003 — Add a dedicated README section for ChatGPT web permissions
+
+Add the following appropriately revised section to the plugin root README. Treat UI labels as client-dependent. This section is proposed documentation, not a claim that settings were changed or that Git push behavior was verified under them.
+
+#### Proposed README text: ChatGPT web permissions and automatic review
+
+SDD Manager's workflows include their prescribed commits, pushes and eligible integration. ChatGPT may independently review tool requests at host permission or sandbox boundaries through an automatic approval reviewer. That host review is separate from the plugin's development review and workflow definitions; other agent clients may apply comparable controls.
+
+In the ChatGPT web interface observed by the user on 2026-10-06, the controls appear under **Profile → Settings → Integrations → Cloud computer**, with **ChatGPT Work website approvals** and **Add website**. Other versions may present them under **Settings → Cloud browser**. Check the labels available in your client.
+
+The more narrowly scoped configuration described by the user is **Auto approve** as the default and a GitHub website exception set to **Always allow** through **Add website**. **Always allow** as the default applies to all websites rather than only GitHub. OpenAI documents that Auto approve lets ChatGPT review website access requests, whereas Always allow permits website access without that review; per-site permissions override the default.
+
+Website access settings are distinct from approval of consequential actions. Their effect on automatic review of shell Git pushes, protected tool calls or other sandbox crossings has not been established here. Do not promise that a website exception disables every host approval review. The plugin retains its scoped workflow-authorization guidance; whether a particular client setting changes the need to supply that context remains uncertain.
+
+Reference: [OpenAI — Using cloud browser in ChatGPT](https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt). The documented permission choices support the descriptions above; the user's longer settings path and its connection to shell auto review remain observations requiring verification in the relevant client.
+
+Objective recheck: the README distinguishes observed labels from documented behavior, scoped website exceptions from a global setting, and website access from action/tool approval. Verify the actual target UI and a bounded authorized operation before claiming a setting remedies the recorded shell-push rejection. Do not change the user's settings as part of documentation authoring.
+
+### B2-004 — Root MIT license in the plugin repository
+
+Add the standard MIT text at repository-root `LICENSE`, with `Copyright (c) 2026 PChemGuy`, matching the plugin manifest's author identity. Link it from the README. Preserve the existing `skills/sdd-tdd/LICENSE` and upstream attribution; a root license does not replace third-party notices. The user directly requested this repository metadata change separately from future harness and policy implementation.
+
+Objective recheck: the root text matches the standard MIT terms, the README link resolves, existing third-party license bytes are unchanged, and the scoped commit is published to the established plugin development branch. No current acceptance-branch merge is included in this action.
