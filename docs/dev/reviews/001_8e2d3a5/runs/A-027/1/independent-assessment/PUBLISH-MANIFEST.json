@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "attempt": 1,
+  "files": [
+    {
+      "path": "ASSESSMENT.json",
+      "bytes": 3919,
+      "sha256": "5f173831afcb9b4598698b15b7a18a7375c949ad51c1e0e2aadef70906df41c7"
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "bytes": 998,
+      "sha256": "67a40af48afe8ffdc2c93c8dcefed096014c2a6bf0b409ab7beb3c9d40180ac4"
+    },
+    {
+      "path": "FINAL-DIAGNOSTIC-REPORT.md",
+      "bytes": 21534,
+      "sha256": "f53caf374f37707783a588486085039b94acd1d3cf6d24a5575e3f14978553a8"
+    },
+    {
+      "path": "RECONCILIATION.json",
+      "bytes": 28011,
+      "sha256": "6a7afd010a440b3f7a9c9eadf55b67cf2db1fd594e8a3951dc19c5749be520f9"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 786,
+      "sha256": "fb1dc199d5e4a1efd6a845e165ff9d17e1ee9cf2f679864fbf54273f25320249"
+    },
+    {
+      "path": "reconcile.py",
+      "bytes": 2638,
+      "sha256": "1dc6bff1a26cc01cc9d5f7e72f849007b90881fbc7b4c17866a9415d1e452f02"
+    },
+    {
+      "path": "RETAINED-ATTEMPT-ASSESSMENTS.json",
+      "bytes": 21896,
+      "sha256": "4048f110f3c3fc0937245f17aace382d89470c78e5c4882f29a84c91e127a84b"
+    }
+  ],
+  "exclusions": "No generated workspace/archive/credential/provider prose; exact own assessor files only. Manifest excludes itself.",
+  "publication": "pending coordinator"
+}

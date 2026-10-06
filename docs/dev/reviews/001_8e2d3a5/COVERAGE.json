@@ -380,13 +380,16 @@
       ]
     },
     "A-027": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
+          "status": "Passed",
           "input": "runs/A-027/1/REQUEST.md",
-          "reason": "Independent earliercase audit active; final grading held for publishedA013gate"
+          "reason": "Fresh independent full-campaign reporting reconciliation satisfies A027 at exact reached main after independently verified published A013 gate. Campaign remains partial acceptance (20Passed/7Blocked); all initial failures, interventions and coverage limits retained. Prior A027 context usage loss and earlier campaign assistance disclosed.",
+          "current_assessment": "runs/A-027/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-027/1/independent-assessment/ASSESSMENT.json",
+          "assisted": true
         }
       ]
     }

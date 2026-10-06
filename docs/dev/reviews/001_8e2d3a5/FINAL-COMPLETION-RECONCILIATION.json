@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "stage": "final-report-prepublication",
+  "at": "2026-10-06T09:04:17.068298+00:00",
+  "manifest_sha256": "76fbe5766a3732588dc8dd70462b1194623e24b98d35acedf415fc3249a5c1a8",
+  "independent_payloads_verified": 7,
+  "progressive_history_sha256": "b3575256d0d9697ca9f18a3debfcf6bf4b0468002b39cbc7f3fc300975e3a079",
+  "coverage": {
+    "Passed": 20,
+    "Blocked": 7,
+    "Running": 0,
+    "Pending": 0
+  },
+  "all_visible_worker_contexts_completed": true,
+  "unknown_historical_readonly_effects_remain": true,
+  "product_or_hosted_edits_selected": false,
+  "publication": "pending exact destination verification"
+}
