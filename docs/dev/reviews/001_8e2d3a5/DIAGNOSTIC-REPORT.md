@@ -14,8 +14,6 @@ The user-requested [proposed amendments](PROPOSED-AMENDMENTS.md) define repairs 
 
 ## Identity, independent basis and publication
 
-[Batch 3 of the proposed amendments](PROPOSED-AMENDMENTS.md#batch-3-invocation-intent-outstanding-acceptance-and-coordinator-entry) reviews TextStats README/AGENTS invocation guidance. It replaces the ambiguous outstanding-follow-up framing with separate fresh full, existing-run continuation and targeted revised-source prompts, and specifies intent resolution before full-scope defaults. No README/AGENTS source change or acceptance rerun was performed by this proposal update.
-
 The same [amendments document](PROPOSED-AMENDMENTS.md#batch-2-final-integration-host-auto-review-and-licensing) now includes Batch 2: required final integration of live acceptance evidence into main, corrected separation of host auto review from plugin workflows, dedicated ChatGPT web permission guidance for the plugin README, and a root MIT license. Its policy correction supersedes proposals to reclassify pushes outside their encompassing workflows as a remedy for host review. The current acceptance branch remains unmerged until the user specifically requests that merge; this proposal update does not change historical assessments or the completed product.
 
 Run: `001_8e2d3a5`; designated repository: [Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004); full scope `{}`, profile `full-github`, no active stop_after in resolved INPUTS. The prior reached JSON/suspension boundaries and their consumption remain in campaign history. Evidence branch: `revision/001_8e2d3a5-live-acceptance`; remote: `origin`.
