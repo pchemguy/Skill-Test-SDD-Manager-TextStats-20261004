@@ -33,3 +33,50 @@ class StdinSuccessTests(unittest.TestCase):
                 self.assertEqual((status, out.getvalue(), err.getvalue()), (0, expected, ''))
                 self.assertFalse(stream.closed)
                 self.assertEqual(stream.tell(), len(data))
+
+
+class StdinFailureTests(unittest.TestCase):
+    def test_read_and_complete_decode_failures_are_atomic_and_borrowed(self):
+        class Unreadable(io.BytesIO):
+            def read(self, *args):
+                raise OSError('injected read failure')
+
+        for factory in (lambda: Unreadable(b'valid'), lambda: io.BytesIO(b'valid\nlate\xff')):
+            for options in ([], ['--keep-bom'], ['--lines=1:1'],
+                            ['--lines', '1:1', '--keep-bom'], ['--keep-bom', '--lines=1:1']):
+                with self.subTest(options=options):
+                    stream = factory()
+                    out, err = io.StringIO(), io.StringIO()
+                    with patch('textstats.cli.sys.stdin', SimpleNamespace(buffer=stream)), \
+                         contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                        status = main([*options, '-'])
+                    self.assertEqual((status, out.getvalue()), (1, ''))
+                    self.assertIn('stdin', err.getvalue())
+                    self.assertNotIn('Traceback', err.getvalue())
+                    self.assertFalse(stream.closed)
+
+    def test_invalid_usage_never_reads_either_source(self):
+        from unittest.mock import Mock
+        invalid = ['', ':1', '1:', '0:1', '1:0', '2:1', '-1:2', '+1:2', '1 :2',
+                   '1:2:3', '١:٢', '１:２', '1:2\n', '9'*5000 + ':1']
+        arguments = [['--lines=' + value, '-'] for value in invalid]
+        arguments += [['--lines', '1:1', '--lines=1:2', '-'],
+                      ['--lines=1:1', '--lines', '1:2', '-'],
+                      ['--lines', '1:1', '--lines', '1:2', '-'],
+                      ['--json', '-'], ['--lines=1:1', '--json', '-'],
+                      ['--unknown', '-'], ['-', 'extra'], ['--lines']]
+        for args in arguments:
+            with self.subTest(args=[arg[:60] for arg in args]):
+                stream = Mock()
+                stream.read.side_effect = AssertionError('stdin acquired before validation')
+                out, err = io.StringIO(), io.StringIO()
+                with patch('textstats.cli.sys.stdin', SimpleNamespace(buffer=stream)), \
+                     patch('textstats.cli.count_file') as count, patch('textstats.cli._read_text') as read, \
+                     contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                    with self.assertRaises(SystemExit) as result:
+                        main(args)
+                self.assertEqual((result.exception.code, out.getvalue()), (2, ''))
+                self.assertTrue(err.getvalue())
+                stream.read.assert_not_called()
+                count.assert_not_called()
+                read.assert_not_called()

@@ -40,3 +40,42 @@ class StdinModuleTests(unittest.TestCase):
                                  cwd=directory, env=environment, capture_output=True)
             self.assertEqual((run.returncode, run.stdout, run.stderr), (0, b'lines=1 words=2\n', b''))
             self.assertEqual(path.read_bytes(), original)
+
+    def test_complete_decode_failure_is_atomic_for_all_option_orders(self):
+        for options in ([], ['--keep-bom'], ['--lines=1:1'],
+                        ['--lines', '1:1', '--keep-bom'], ['--keep-bom', '--lines=1:1']):
+            run = self.invoke(b'valid\nlate\xff', *options)
+            self.assertEqual((run.returncode, run.stdout), (1, b''))
+            self.assertIn(b'stdin', run.stderr)
+            self.assertNotIn(b'Traceback', run.stderr)
+
+    def test_objective_selection_rows_and_option_orders(self):
+        rows = [('alpha beta\nbeta\nlast two', '2:3', (2, 3), (2, 3)),
+                ('alpha beta\nbeta\nlast two', '1:1', (1, 2), (1, 2)),
+                ('alpha beta\nbeta\nlast two', '4:99', (0, 0), (0, 0)),
+                ('a\n\n', '2:9', (1, 0), (1, 0)),
+                ('a\r\nb c\rd\n', '2:3', (2, 3), (2, 3)),
+                ('', '1:9', (0, 0), (0, 0)),
+                ('\ufeff', '1:1', (0, 0), (1, 1)),
+                ('\ufeff\ufeff', '1:1', (1, 1), (1, 1)),
+                ('a\n\ufeff\n', '2:2', (1, 1), (1, 1)),
+                ('a\u2028b\nlast', '1:1', (1, 2), (1, 2)),
+                ('a\nb c', '0002:0003', (1, 2), (1, 2)),
+                ('a\n', '9'*5000 + ':' + '9'*5000, (0, 0), (0, 0))]
+        for text, bounds, stripped, retained in rows:
+            for options, counts in [(['--lines', bounds], stripped),
+                                    (['--lines=' + bounds], stripped),
+                                    (['--keep-bom', '--lines', bounds], retained),
+                                    (['--lines=' + bounds, '--keep-bom'], retained)]:
+                with self.subTest(text=text, bounds=bounds[:60], options=options[0]):
+                    run = self.invoke(text.encode('utf-8'), *options)
+                    expected = f'lines={counts[0]} words={counts[1]}\n'.encode()
+                    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+
+    def test_stdin_usage_failures_have_no_success_output(self):
+        for options in (['--lines=1:0'], ['--lines=٢:٣'], ['--lines', '1:1', '--lines=2:3'],
+                        ['--json'], ['--lines=1:1', '--json'], ['--unknown']):
+            run = self.invoke(b'\xff', *options)
+            self.assertEqual((run.returncode, run.stdout), (2, b''))
+            self.assertTrue(run.stderr)
+            self.assertNotIn(b'Traceback', run.stderr)
