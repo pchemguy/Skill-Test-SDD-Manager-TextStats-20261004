@@ -1,4 +1,4 @@
-"""Expose the named-file command through python -m textstats."""
+"""Expose the named-file/stdin command through python -m textstats."""
 
 from .cli import main
 

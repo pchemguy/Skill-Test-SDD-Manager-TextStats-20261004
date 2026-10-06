@@ -36,3 +36,7 @@ with TemporaryDirectory() as directory:
 ```
 
 See [module usage](module.md) for CLI diagnostics and process statuses.
+
+CLI `--lines` selection for named files or stdin does not change these whole-input API signatures or semantics. No range API is exported.
+
+The module CLI alone interprets INPUT `-` as borrowed binary stdin. `count_file("-")` still addresses a named file, and both public counting functions always process the whole input. CLI stdin uses complete strict UTF-8 decoding independently of locale, one BOM policy and optional range selection; it never closes the borrowed stream.
