@@ -4,7 +4,7 @@ SDD Manager TextStats testing
 
 Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
 
-TextStats counts lines and words in strings and named UTF-8 files on Python 3.11+, using only the standard library. Its immutable results and silent API are described in the [API guide](docs/api.md); options, errors and statuses are in the [module guide](docs/module.md). Text output accepts named files and borrowed binary stdin (`INPUT -`). See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
+TextStats counts lines and words in strings, named UTF-8 files and stdin on Python 3.11+, using only the standard library. Its immutable results and silent API are described in the [API guide](docs/api.md); options, errors and statuses are in the [module guide](docs/module.md). Text output accepts named files and borrowed binary stdin (`INPUT -`). See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
 
 ## Quick start
 
@@ -61,7 +61,7 @@ python -m textstats --help
 
 The archive includes the package, public/development documentation and product tests. Generated dist output stays untracked. Integration discovery builds and extracts to a temporary directory, clears checkout import settings and verifies the extracted module's text/BOM/help/error behavior and import location. `make check` runs the two product suites independently.
 
-## Named-file line ranges
+## CLI line ranges
 
 ```sh
 printf 'alpha beta\nbeta\nlast two' > ranges.txt
@@ -72,9 +72,32 @@ python -m textstats --lines=2:3 ranges.txt
 python -m textstats --lines 4:99 ranges.txt
 # lines=0 words=0
 python -m textstats --lines=2:1 ranges.txt
-# status 2; empty stdout; useful stderr; no file acquisition
+# status 2; empty stdout; useful stderr; no input acquisition
 ```
 
 `--lines START:END` and `--lines=START:END` select inclusive one-based logical lines of a named file or stdin. Endpoints must be positive ASCII decimals with START <= END; leading zeros and arbitrarily long endpoints are accepted. Missing/open endpoints, signs, whitespace, Unicode digits, zero, reversed bounds, extra colons and repeated range options are usage errors (status 2) before input is read. Selection intersects available lines; beyond EOF may yield empty counts. Only CRLF, CR and LF terminate lines, and original contents/terminators are preserved.
 
 The entire input is strictly decoded before selection, so bad UTF-8 after END still fails (status 1). Apply the default one-leading-BOM removal or `--keep-bom` once to complete text before line numbering. An interior BOM exposed at the selection start stays ordinary non-whitespace. `--lines` and `--keep-bom` compose in either order before `--`. Public APIs always count the whole input; they have no range parameter. Stdin uses the same range grammar, complete decoding, single BOM policy and preserved logical-line semantics.
+
+
+## Binary stdin
+
+Use `-` to count stdin bytes through EOF. UTF-8 decoding is strict and independent of the process locale. Stdin is borrowed and remains open; `./-` names a literal file called `-`. Range syntax and both BOM policies apply after complete decoding. Invalid ranges are rejected before reading; malformed UTF-8 after the selected END still fails with status 1, stderr identifying stdin and empty stdout.
+
+```sh
+printf 'alpha beta\ngamma\n' | python -m textstats -
+# lines=2 words=3
+printf 'alpha beta\nbeta\nlast two' | python -m textstats --lines 2:3 -
+# lines=2 words=3
+printf 'alpha beta\nbeta\nlast two' | python -m textstats --lines=2:3 -
+# lines=2 words=3
+printf '\357\273\277\n' | python -m textstats --keep-bom --lines=1:1 -
+# lines=1 words=1
+printf '\357\273\277\n' | python -m textstats --lines 1:1 --keep-bom -
+# lines=1 words=1
+```
+
+```sh
+printf 'valid\nlate\377' | python -m textstats --lines=1:1 -
+# status 1; stderr identifies stdin; stdout is empty
+```

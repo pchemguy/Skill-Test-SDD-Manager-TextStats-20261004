@@ -49,6 +49,45 @@ class SourceDistributionTests(unittest.TestCase):
                                       cwd=extracted, env=environment,
                                       capture_output=True, text=True)
 
+            def invoke_bytes(data, *arguments):
+                locale_environment = dict(environment, LC_ALL="C", LANG="C", PYTHONUTF8="0",
+                                          PYTHONCOERCECLOCALE="0")
+                return subprocess.run([sys.executable, "-m", "textstats", *arguments],
+                                      input=data, cwd=extracted, env=locale_environment,
+                                      capture_output=True)
+
+            for data, options, expected in [
+                (b"", (), b"lines=0 words=0\n"),
+                (b"alpha beta\r\ngamma\r", (), b"lines=2 words=3\n"),
+                ("café\u2028tea\n".encode(), (), b"lines=1 words=2\n"),
+                ("\ufeff\n".encode(), (), b"lines=1 words=0\n"),
+                ("\ufeff\n".encode(), ("--keep-bom",), b"lines=1 words=1\n"),
+                (b"a\r\nb c\rd\n", ("--lines", "2:3"), b"lines=2 words=3\n"),
+                (b"a\r\nb c\rd\n", ("--lines=2:3",), b"lines=2 words=3\n"),
+                ("a\n\ufeff\n".encode(), ("--lines=2:2",), b"lines=1 words=1\n"),
+                ("\ufeff\n".encode(), ("--keep-bom", "--lines=1:1"), b"lines=1 words=1\n"),
+                ("\ufeff\n".encode(), ("--lines", "1:1", "--keep-bom"), b"lines=1 words=1\n"),
+                (b"a\n", ("--lines=4:99",), b"lines=0 words=0\n"),
+            ]:
+                with self.subTest(stdin=data, options=options):
+                    run = invoke_bytes(data, *options, "-")
+                    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b""))
+            for options, status in [((), 1), (("--lines=1:1",), 1),
+                                     (("--lines=2:1",), 2),
+                                     (("--lines", "1:1", "--lines=2:3"), 2),
+                                     (("--json",), 2)]:
+                run = invoke_bytes(b"valid\nlate\xff", *options, "-")
+                self.assertEqual((run.returncode, run.stdout), (status, b""))
+                self.assertTrue(run.stderr)
+                if status == 1:
+                    self.assertIn(b"stdin", run.stderr)
+                self.assertNotIn(b"Traceback", run.stderr)
+            literal_dash = extracted / "-"
+            literal_dash.write_bytes(b"file two\n")
+            run = invoke_bytes(b"stdin\n", "./-")
+            self.assertEqual((run.returncode, run.stdout, run.stderr), (0, b"lines=1 words=2\n", b""))
+            self.assertEqual(literal_dash.read_bytes(), b"file two\n")
+
             path = extracted / "sample.txt"
             for data, options, expected in [
                 (b"alpha beta\r\ngamma\r", (), "lines=2 words=3\n"),
