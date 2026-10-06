@@ -189,14 +189,16 @@
       ]
     },
     "A-013": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
+          "status": "Passed",
           "input": "runs/A-013/1/REQUEST.md",
           "assisted": true,
-          "reason": "Explicit later stdin-range input and primary execution publication handoff"
+          "reason": "All five independent lifecycle criteria and final product exits are satisfied by durable consumer/assessor/native/provider evidence at exact published merge; input, publication, checker and recovery assistance retained. Full filesystem/native context isolation and installed routing are not certified.",
+          "current_assessment": "runs/A-013/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-013/1/independent-assessment/ASSESSMENT.json"
         }
       ]
     },
@@ -378,8 +380,15 @@
       ]
     },
     "A-027": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "input": "runs/A-027/1/REQUEST.md",
+          "reason": "Independent earliercase audit active; final grading held for publishedA013gate"
+        }
+      ]
     }
   }
 }

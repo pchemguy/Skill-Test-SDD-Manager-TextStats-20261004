@@ -1,0 +1,332 @@
+[
+  {
+    "file": "FINAL-PHASE-LIFECYCLE-NATIVE.json",
+    "sha256": "606179a548b7cf9454229475de31924e6a7c14cab97c95ceb8da4d2436f6a958",
+    "native_results": [
+      {
+        "chunk_id": "f7f5c6",
+        "session_id": 1744
+      },
+      {
+        "chunk_id": "cb48ec",
+        "session_id": 1744
+      },
+      {
+        "chunk_id": "f58b64",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "e7f850",
+        "session_id": 54121
+      },
+      {
+        "chunk_id": "162ee5",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "ceb47d",
+        "session_id": 95020
+      },
+      {
+        "chunk_id": "c39930",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "ISSUE13-PUBLICATION-NATIVE.json",
+    "sha256": "f16c5f4489a56701c7f6fb7acb52b6dbcaa8b217f2b3e94c992844845d2c4764",
+    "native_results": [
+      {
+        "chunk_id": "783067",
+        "session_id": 89787
+      },
+      {
+        "chunk_id": "2f9781",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "3ddd45",
+        "session_id": 25184
+      },
+      {
+        "chunk_id": "a7e30a",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "ISSUE14-LIFECYCLE-NATIVE.json",
+    "sha256": "cc559f1301ce59e1b81ccd62ea9e024ac248e0d91512d1173033b58582475ef2",
+    "native_results": [
+      {
+        "chunk_id": "b0df6c",
+        "session_id": 82308
+      },
+      {
+        "chunk_id": "d24253",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "ISSUE15-LIFECYCLE-NATIVE.json",
+    "sha256": "ffa66d597e2f5399c491c83881ad88930041175905aea75fb3e77c8bfe45fc70",
+    "native_results": [
+      {
+        "chunk_id": "82db67",
+        "session_id": 19426
+      },
+      {
+        "chunk_id": "40f4ed",
+        "session_id": 19426
+      },
+      {
+        "chunk_id": "9b697b",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "MAIN-PUBLICATION-NATIVE.json",
+    "sha256": "0593c61828685e8bb098fe0380ee966114aa7cf88e914f7c27bea81b27d12429",
+    "native_results": [
+      {
+        "chunk_id": "93d6eb",
+        "session_id": 77149
+      },
+      {
+        "chunk_id": "571d05",
+        "session_id": 77149
+      },
+      {
+        "chunk_id": "68c85b",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "b4dedb",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "MILESTONE22-LIFECYCLE-NATIVE.json",
+    "sha256": "83392c5a23416ddb693142a76d33b97e3617e277a5d624ab77430506966920a9",
+    "native_results": [
+      {
+        "chunk_id": "e1abd1",
+        "session_id": 81015
+      },
+      {
+        "chunk_id": "b1c5e8",
+        "session_id": 81015
+      },
+      {
+        "chunk_id": "5eebd4",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "683f9e",
+        "session_id": 44841
+      },
+      {
+        "chunk_id": "ecfa17",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "f701d5",
+        "session_id": 41527
+      },
+      {
+        "chunk_id": "a950ba",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "PHASE-BOUNDARY-PUBLICATION-NATIVE.json",
+    "sha256": "536d7efd7617e542b401c88a084484cf5b215ed2bb7d303f55df9fff81c1f4b3",
+    "native_results": [
+      {
+        "chunk_id": "8a047d",
+        "session_id": 52204
+      },
+      {
+        "chunk_id": "fc0ad1",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "cfa216",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "PREPARATION-PUBLICATION-NATIVE.json",
+    "sha256": "104ff3aa848d26020a117786318948e097c52f652842c4343c4552f61080c616",
+    "native_results": [
+      {
+        "chunk_id": "3dd6c8",
+        "session_id": 79741
+      },
+      {
+        "chunk_id": "568fa3",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "d6ba8c",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "SCOPE-NATIVE-STRUCTURE-SUPPLEMENT.json",
+    "sha256": "76b94f829f220797db1c51893e8cd331fc5acd0f4892c8885113e57ddbb93b7b",
+    "native_results": [
+      {
+        "chunk_id": "f00e7c",
+        "session_id": 22255
+      },
+      {
+        "chunk_id": "fdea17",
+        "exit_code": 2
+      },
+      {
+        "chunk_id": "6e94df",
+        "session_id": 4979
+      },
+      {
+        "chunk_id": "3400fb",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "5339a6",
+        "session_id": 90865
+      }
+    ]
+  },
+  {
+    "file": "SCOPE-RECONCILIATION-NATIVE.json",
+    "sha256": "679cf5c02d6c872c54f38abba78adfa09318dc6a7b44df478d3917f97c5d6e2f",
+    "native_results": [
+      {
+        "chunk_id": "fdea17",
+        "exit_code": 2
+      },
+      {
+        "chunk_id": "03f4fa",
+        "session_id": 90865
+      },
+      {
+        "chunk_id": "095b20",
+        "session_id": 90865
+      },
+      {
+        "chunk_id": "3415d7",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "T013-PUBLICATION-NATIVE.json",
+    "sha256": "5c69859ea87d6b40790ae2d94841bad6d9cb6e75260fb31cf6f93be0d819a7fc",
+    "native_results": [
+      {
+        "chunk_id": "0c0d0e",
+        "session_id": 15813
+      },
+      {
+        "chunk_id": "0ea923",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "e47d7d",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "T014-PUBLICATION-NATIVE.json",
+    "sha256": "e57d67635f3cad7cf47eb80710a8ec39684398c09c6822a003d4f03937ea1567",
+    "native_results": [
+      {
+        "chunk_id": "7ff58b",
+        "session_id": 7627
+      },
+      {
+        "chunk_id": "f3fa91",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "ead288",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "206916",
+        "session_id": 70753
+      },
+      {
+        "chunk_id": "252eca",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "T015-PUBLICATION-NATIVE.json",
+    "sha256": "e0ebf8f30824c32254f74d5fffba2566a087a86008e808ff6003553ef98ecc30",
+    "native_results": [
+      {
+        "chunk_id": "b45d70",
+        "session_id": 92280
+      },
+      {
+        "chunk_id": "4c74da",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "9cca87",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "T016-PUBLICATION-NATIVE.json",
+    "sha256": "a2e8c68eb21d1339041dc009d59d1ec50df692014967f3116bf75f27ce02cc4a",
+    "native_results": [
+      {
+        "chunk_id": "4c6de2",
+        "session_id": 66274
+      },
+      {
+        "chunk_id": "a1ae62",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "93dbb2",
+        "exit_code": 0
+      }
+    ]
+  },
+  {
+    "file": "T017-PUBLICATION-NATIVE.json",
+    "sha256": "65455c1992a44d2047af39bf26fdb35a913796009c97d97eba49eec9ba3c85ce",
+    "native_results": [
+      {
+        "chunk_id": "7a16f8",
+        "session_id": 29726
+      },
+      {
+        "chunk_id": "6a441a",
+        "session_id": 29726
+      },
+      {
+        "chunk_id": "d03489",
+        "exit_code": 0
+      },
+      {
+        "chunk_id": "c2caac",
+        "exit_code": 0
+      }
+    ]
+  }
+]

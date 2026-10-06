@@ -1,0 +1,175 @@
+[
+  {
+    "source": "README.md",
+    "fence": 1,
+    "command": "from textstats import TextStats, count_text\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(2, 3)\n",
+    "expected_status": 0,
+    "expected_counts": [],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "source": "README.md",
+    "fence": 2,
+    "command": "printf 'alpha beta\\ngamma\\n' > sample.txt\npython -m textstats sample.txt\n# lines=2 words=3\npython -m textstats --help\nprintf '\\357\\273\\277\\n' > bom.txt\npython -m textstats bom.txt\n# lines=1 words=0\npython -m textstats --keep-bom bom.txt\n# lines=1 words=1\nprintf 'alpha\\n' > ./-sample.txt\npython -m textstats -- -sample.txt\n# lines=1 words=1\n",
+    "expected_status": 0,
+    "expected_counts": [
+      "lines=2 words=3",
+      "lines=1 words=0",
+      "lines=1 words=1",
+      "lines=1 words=1"
+    ],
+    "returncode": 0,
+    "stdout": "lines=2 words=3\nusage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in UTF-8 files or stdin.\n\npositional arguments:\n  INPUT              named UTF-8 input file, or - for stdin\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive logical lines\nlines=1 words=0\nlines=1 words=1\nlines=1 words=1\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "source": "README.md",
+    "fence": 4,
+    "command": "make dist\nmkdir -p dist/extracted\npython -m tarfile -e dist/textstats.tar.gz dist/extracted\ncd dist/extracted\npython -m textstats --help\n",
+    "expected_status": 0,
+    "expected_counts": [],
+    "returncode": 0,
+    "stdout": "mkdir -p \"dist\"\npython -m tarfile -c \"dist/textstats.tar.gz\" textstats/*.py README.md Makefile AI_DISCLOSURE.md SDD-MANAGER.md docs tests/__init__.py tests/unit/*.py tests/integration/*.py\nusage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in UTF-8 files or stdin.\n\npositional arguments:\n  INPUT              named UTF-8 input file, or - for stdin\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive logical lines\n",
+    "stderr": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tarfile.py:3026: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n  tf.extractall(path=curdir, filter=args.filter)\n",
+    "passed": true
+  },
+  {
+    "source": "README.md",
+    "fence": 5,
+    "command": "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt\npython -m textstats --lines 2:3 ranges.txt\n# lines=2 words=3\npython -m textstats --lines=2:3 ranges.txt\n# lines=2 words=3\npython -m textstats --lines 4:99 ranges.txt\n# lines=0 words=0\npython -m textstats --lines=2:1 ranges.txt\n# status 2; empty stdout; useful stderr; no input acquisition\n",
+    "expected_status": 2,
+    "expected_counts": [
+      "lines=2 words=3",
+      "lines=2 words=3",
+      "lines=0 words=0"
+    ],
+    "returncode": 2,
+    "stdout": "lines=2 words=3\nlines=2 words=3\nlines=0 words=0\n",
+    "stderr": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n",
+    "passed": true
+  },
+  {
+    "source": "README.md",
+    "fence": 6,
+    "command": "printf 'alpha beta\\ngamma\\n' | python -m textstats -\n# lines=2 words=3\nprintf 'alpha beta\\nbeta\\nlast two' | python -m textstats --lines 2:3 -\n# lines=2 words=3\nprintf 'alpha beta\\nbeta\\nlast two' | python -m textstats --lines=2:3 -\n# lines=2 words=3\nprintf '\\357\\273\\277\\n' | python -m textstats --keep-bom --lines=1:1 -\n# lines=1 words=1\nprintf '\\357\\273\\277\\n' | python -m textstats --lines 1:1 --keep-bom -\n# lines=1 words=1\n",
+    "expected_status": 0,
+    "expected_counts": [
+      "lines=2 words=3",
+      "lines=2 words=3",
+      "lines=2 words=3",
+      "lines=1 words=1",
+      "lines=1 words=1"
+    ],
+    "returncode": 0,
+    "stdout": "lines=2 words=3\nlines=2 words=3\nlines=2 words=3\nlines=1 words=1\nlines=1 words=1\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "source": "README.md",
+    "fence": 7,
+    "command": "printf 'valid\\nlate\\377' | python -m textstats --lines=1:1 -\n# status 1; stderr identifies stdin; stdout is empty\n",
+    "expected_status": 1,
+    "expected_counts": [],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: stdin: 'utf-8' codec can't decode byte 0xff in position 10: invalid start byte\n",
+    "passed": true
+  },
+  {
+    "source": "docs/module.md",
+    "fence": 1,
+    "command": "python -m textstats --help\nprintf 'alpha beta\\ngamma\\n' > sample.txt\npython -m textstats sample.txt\n# lines=2 words=3\nprintf '\\357\\273\\277\\n' > bom.txt\npython -m textstats bom.txt\n# lines=1 words=0\npython -m textstats --keep-bom bom.txt\n# lines=1 words=1\nprintf 'alpha\\n' > ./-sample.txt\npython -m textstats -- -sample.txt\n# lines=1 words=1\n",
+    "expected_status": 0,
+    "expected_counts": [
+      "lines=2 words=3",
+      "lines=1 words=0",
+      "lines=1 words=1",
+      "lines=1 words=1"
+    ],
+    "returncode": 0,
+    "stdout": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in UTF-8 files or stdin.\n\npositional arguments:\n  INPUT              named UTF-8 input file, or - for stdin\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive logical lines\nlines=2 words=3\nlines=1 words=0\nlines=1 words=1\nlines=1 words=1\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "source": "docs/module.md",
+    "fence": 2,
+    "command": "python -m textstats nonexistent.txt\n# status 1; stderr identifies nonexistent.txt; stdout is empty\n",
+    "expected_status": 1,
+    "expected_counts": [],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: 'nonexistent.txt': [Errno 2] No such file or directory: 'nonexistent.txt'\n",
+    "passed": true
+  },
+  {
+    "source": "docs/module.md",
+    "fence": 3,
+    "command": "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt\npython -m textstats --lines 2:3 ranges.txt\n# lines=2 words=3\npython -m textstats --lines=2:3 ranges.txt\n# lines=2 words=3\npython -m textstats --lines 4:99 ranges.txt\n# lines=0 words=0\npython -m textstats --lines=2:1 ranges.txt\n# status 2; empty stdout; useful stderr; no input acquisition\n",
+    "expected_status": 2,
+    "expected_counts": [
+      "lines=2 words=3",
+      "lines=2 words=3",
+      "lines=0 words=0"
+    ],
+    "returncode": 2,
+    "stdout": "lines=2 words=3\nlines=2 words=3\nlines=0 words=0\n",
+    "stderr": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n",
+    "passed": true
+  },
+  {
+    "source": "docs/module.md",
+    "fence": 4,
+    "command": "printf 'alpha beta\\ngamma\\n' | python -m textstats -\n# lines=2 words=3\nprintf 'alpha beta\\nbeta\\nlast two' | python -m textstats --lines 2:3 -\n# lines=2 words=3\nprintf 'alpha beta\\nbeta\\nlast two' | python -m textstats --lines=2:3 -\n# lines=2 words=3\nprintf '\\357\\273\\277\\n' | python -m textstats --keep-bom --lines=1:1 -\n# lines=1 words=1\nprintf '\\357\\273\\277\\n' | python -m textstats --lines 1:1 --keep-bom -\n# lines=1 words=1\n",
+    "expected_status": 0,
+    "expected_counts": [
+      "lines=2 words=3",
+      "lines=2 words=3",
+      "lines=2 words=3",
+      "lines=1 words=1",
+      "lines=1 words=1"
+    ],
+    "returncode": 0,
+    "stdout": "lines=2 words=3\nlines=2 words=3\nlines=2 words=3\nlines=1 words=1\nlines=1 words=1\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "source": "docs/module.md",
+    "fence": 5,
+    "command": "printf 'valid\\nlate\\377' | python -m textstats --lines=1:1 -\n# status 1; stderr identifies stdin; stdout is empty\n",
+    "expected_status": 1,
+    "expected_counts": [],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: stdin: 'utf-8' codec can't decode byte 0xff in position 10: invalid start byte\n",
+    "passed": true
+  },
+  {
+    "source": "docs/api.md",
+    "fence": 1,
+    "command": "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(lines=2, words=3)\nassert count_text(\"\\ufeff\\n\", strip_bom=False) == TextStats(1, 1)\n",
+    "expected_status": 0,
+    "expected_counts": [],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "source": "docs/api.md",
+    "fence": 2,
+    "command": "from pathlib import Path\nfrom tempfile import TemporaryDirectory\nfrom textstats import TextStats, count_file\n\nwith TemporaryDirectory() as directory:\n    path = Path(directory) / \"sample.txt\"\n    path.write_bytes(b\"alpha beta\\r\\ngamma\\r\")\n    assert count_file(path) == TextStats(2, 3)\n    assert path.read_bytes() == b\"alpha beta\\r\\ngamma\\r\"\n",
+    "expected_status": 0,
+    "expected_counts": [],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "passed": true
+  }
+]

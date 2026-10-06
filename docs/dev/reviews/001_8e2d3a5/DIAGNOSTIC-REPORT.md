@@ -307,3 +307,13 @@ A013 milestone2.2: T013–T016 individually verified/published and issueevidence
 ## A013 retained merge continuation after context loss
 
 Previous worker unavailable in liveinventory during human statusupdates. Readonly command interrupted by user retained as unknown readresult only; subsequentfe40a0 observes cleantrackedmain d3f206a two-parent59debb6/6006fee; exactremote d594a0 mainstill59debb6 andphase6006fee. OriginalJOURNAL endsatphaseboundary6006 and remains bytepreserved; previous worker message reported prospective45a18d/6f1239pass but their fullnative exports and committedcheck completion are absent. Fresh consumer continues committedverification/publication of retainedmerge, no repeatedmerge/implementation/hostedwrite. Native/hardFS/completenesslimits remain.
+
+
+## Final diagnostic resumption after runtime usage interruption
+
+A013 independentworker completed and retained literal/code/QC/hosted/lifecyclechecks but hitusage limit beforeASSESSMENT/manifest; A027worker failed beforewritingoutput. User resumed completion at2026-10-06. Native34c23f reverifiedmain d3f206a two-parent59debb6/6006fee exactremote, evidence226244c and cleantrackedstate. Fresh independentcontexts finishretainedassessment andfinalaudit; no repeatedproductimplementation/merge/hostedwrite. Runtime interruption is recorded as environment/evidencecompletion gap, not authorization rejection or confirmedplugindefect.
+
+
+## A-013 independent boundary — 2026-10-06T08:56:29.896209+00:00
+
+[A-013 assessment](runs/A-013/1/independent-assessment/ASSESSMENT.json): **Passed**. All five independent lifecycle criteria and final product exits are satisfied by durable consumer/assessor/native/provider evidence at exact published merge; input, publication, checker and recovery assistance retained. Full filesystem/native context isolation and installed routing are not certified. Next: Publish A013 acceptance then complete finalA027diagnostics and verifiedstop

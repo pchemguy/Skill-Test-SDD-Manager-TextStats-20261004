@@ -1,0 +1,457 @@
+[
+  {
+    "source": "README.md",
+    "target": "SDD-MANAGER.md",
+    "exists": true
+  },
+  {
+    "source": "README.md",
+    "target": "AI_DISCLOSURE.md",
+    "exists": true
+  },
+  {
+    "source": "README.md",
+    "target": "docs/api.md",
+    "exists": true
+  },
+  {
+    "source": "README.md",
+    "target": "docs/module.md",
+    "exists": true
+  },
+  {
+    "source": "README.md",
+    "target": "docs/dev/PROJECT.md",
+    "exists": true
+  },
+  {
+    "source": "README.md",
+    "target": "docs/dev/SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/api.md",
+    "target": "module.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/ARCHITECTURE.md",
+    "target": "PROJECT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/ARCHITECTURE.md",
+    "target": "DECOMPOSITION.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/ARCHITECTURE.md",
+    "target": "SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/DECOMPOSITION.md",
+    "target": "ARCHITECTURE.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/DECOMPOSITION.md",
+    "target": "SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/PLAN.md",
+    "target": "SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/PLAN.md",
+    "target": "layout.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/PROJECT.md",
+    "target": "SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/PROJECT.md",
+    "target": "ARCHITECTURE.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/PROJECT.md",
+    "target": "DECOMPOSITION.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/SPEC.md",
+    "target": "PROJECT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/SPEC.md",
+    "target": "DECOMPOSITION.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "layout.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "DECOMPOSITION.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "TASKS-REVIEW-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/1/1.1.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/1/1.2.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/1/PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/2/PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/IMPLEMENTATION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/2/revisions/003_0e47414/REVISION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/2/2.1.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/2/2.2.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/2/2.2.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/phases/2/PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "reports/IMPLEMENTATION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "features/002_ea97182/2.4.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "features/002_ea97182/2.4.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "features/002_ea97182/PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "features/002_ea97182/IMPLEMENTATION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "features/002_ea97182/README.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "features/002_ea97182/PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/TASKS.md",
+    "target": "features/002_ea97182/IMPLEMENTATION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "../../SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "../../PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "../../TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "FEATURE-SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "README.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "../../PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "../../TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-PLAN.md",
+    "target": "../../layout.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-SPEC.md",
+    "target": "../../SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-SPEC.md",
+    "target": "../../PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-SPEC.md",
+    "target": "../../TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-SPEC.md",
+    "target": "README.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-SPEC.md",
+    "target": "../../SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-SPEC.md",
+    "target": "../../ARCHITECTURE.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-TASKS.md",
+    "target": "../../SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-TASKS.md",
+    "target": "../../PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-TASKS.md",
+    "target": "../../TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-TASKS.md",
+    "target": "../../TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-TASKS.md",
+    "target": "FEATURE-PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/FEATURE-TASKS.md",
+    "target": "FEATURE-SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md",
+    "target": "2.4.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md",
+    "target": "PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/PHASE-REPORT.md",
+    "target": "IMPLEMENTATION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "FEATURE-SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "FEATURE-PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "FEATURE-TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../PROJECT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../ARCHITECTURE.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../DECOMPOSITION.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../layout.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "2.4.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "IMPLEMENTATION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../ARCHITECTURE.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/features/002_ea97182/README.md",
+    "target": "../../DECOMPOSITION.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/layout.md",
+    "target": "DECOMPOSITION.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/layout.md",
+    "target": "PLAN.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+    "target": "../TASKS.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+    "target": "../SPEC.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+    "target": "phases/2/PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+    "target": "phases/2/PHASE-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/reports/phases/1/PHASE-REPORT.md",
+    "target": "1.1.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/reports/phases/1/PHASE-REPORT.md",
+    "target": "1.2.md",
+    "exists": true
+  },
+  {
+    "source": "docs/dev/reports/phases/2/PHASE-REPORT.md",
+    "target": "../../IMPLEMENTATION-REPORT.md",
+    "exists": true
+  },
+  {
+    "source": "docs/module.md",
+    "target": "api.md",
+    "exists": true
+  },
+  {
+    "source": "docs/module.md",
+    "target": "../README.md",
+    "exists": true
+  }
+]
