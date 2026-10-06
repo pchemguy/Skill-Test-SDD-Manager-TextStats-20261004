@@ -1,0 +1,20 @@
+{
+  "before_after_equal_fields": [
+    "root",
+    "head",
+    "branch",
+    "status",
+    "index",
+    "files",
+    "ignored_paths_excluded"
+  ],
+  "before_after_different_fields": [
+    "observed_at",
+    "refs"
+  ],
+  "ref_diff": "--- \n+++ \n@@ -9,6 +9,7 @@\n refs/heads/trial/a018-rejected-publication 159c662e06405b1fbf696e8e9d9d5d47024187be\n refs/heads/trial/a020-preservation 5719983f2d11266dba58bc8b149505c2519df4cb\n refs/heads/trial/a021-dirty-transfer ddc3b875921b57557b714c20fcadb2a45707f1d3\n+refs/heads/trial/a022-acceptance-change 0e4741465c3e086d2ab95c5af73ca89371c16fac\n refs/heads/trial/a024-tracking-access 159c662e06405b1fbf696e8e9d9d5d47024187be\n refs/heads/trial/a026-verification 159c662e06405b1fbf696e8e9d9d5d47024187be\n refs/remotes/origin/HEAD 59debb649545125dd3aa00377ea115451b594271\n",
+  "visible_file_count": 163,
+  "live_files_equal_start": true,
+  "live_files_equal_after": true,
+  "sample_hash": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5"
+}

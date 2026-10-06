@@ -1,0 +1,163 @@
+diff --git a/README.md b/README.md
+index 8e3efb1..c35b40c 100644
+--- a/README.md
++++ b/README.md
+@@ -4,4 +4,4 @@ SDD Manager TextStats testing
+ 
+ Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
+ 
+-TextStats currently provides immutable `TextStats` values and pure `count_text` counting for Python 3.11+. The public `count_file(path, *, strip_bom=True)` API also counts named UTF-8 files without changing their bytes. The module CLI is planned in the next task. See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
++TextStats currently provides immutable `TextStats` values and pure `count_text` counting for Python 3.11+. The public `count_file(path, *, strip_bom=True)` API also counts named UTF-8 files without changing their bytes. Run `python -m textstats INPUT` for `lines=<N> words=<N>` output, `--keep-bom` to retain a leading BOM, or `--help` for syntax. Use `--` before a dash-prefixed filename. JSON, stdin, diagnostic hardening and release documentation are planned later. See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index 49105ff..5b8aa43 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -22,10 +22,11 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
+             Outcome: count_file supports str/PathLike, preserves input terminators, delegates counts and closes its success-path owned handle (S-3 success).
+             Evidence: direct package API import/signatures; real temporary files for BOM/newline/empty/Unicode cases; unchanged input; silent calls and success-handle closure. Required failure-path hardening follows in T-005.
+             Completion evidence (2026-10-04): focused test-first run observed 3 missing-export assertion failures before implementation, then 3 passing tests. Independent `PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v` passed 13 tests; integration discovery passed 2 tests. Real str/Path files, strict binary UTF-8 acquisition, BOM/terminator/Unicode cases, exact signatures, silence, unchanged bytes and owned success closure covered. Module/API docstrings and README capability reviewed; no failure-hardening acceptance is claimed. Issue #2 exact title/body marker uniquely confirmed; diff check clean.
+-        - [ ] T-003 — Deliver the useful named-file module CLI
++        - [x] T-003 — Deliver the useful named-file module CLI
+             Scope: textstats/cli.py, textstats/__main__.py and integration subprocess checks. Depends on: T-001, T-002.
+             Outcome: one named input, --keep-bom, -- dash filenames and help; exact text output and option validation before acquisition (S-4 success/options).
+             Evidence: actual python -m textstats invocation, stdout/status/stderr assertions, API/CLI agreement, missing/extra/unknown option rejection and no input read on usage errors; demonstrate ordinary/BOM/dash filenames. Keep later JSON/stdin delivery absent from this task.
++            Completion evidence (2026-10-04): focused RED observed missing command adapter and absent actual module-entry behavior (12 assertion/subtest failures across 5 tests), then GREEN passed all 5. Independent unit discovery passed 14 tests; integration passed 6, no skips. Actual subprocess checks establish exact stdout/stderr/status, ordinary/empty/Unicode/mixed-terminator/BOM cases, API agreement, --keep-bom and -- dash paths; invalid usage/help never acquire input. A separate normal/BOM/dash demonstration and README/module docstring review passed; diff check clean. Issue #3 exact title/body marker confirmed. Diagnostic hardening remains T-006; no JSON/stdin or release acceptance claimed.
+         - [ ] T-004 — Review, test and report milestone 1.1
+             Depends on: T-001, T-002, T-003. Scope: delivered core, file API, facade and module CLI; relevant nonempty product suites and MVP demonstration.
+             Evidence: actual code review, milestone exits/regressions, blocker repairs and committed/pushed report. Report: docs/dev/reports/phases/1/1.1.md. Record TODO or None and the usability decision evidence. No product completion inferred from workflow fixtures.
+diff --git a/tests/integration/test_cli.py b/tests/integration/test_cli.py
+new file mode 100644
+index 0000000..61abecc
+--- /dev/null
++++ b/tests/integration/test_cli.py
+@@ -0,0 +1,56 @@
++"""Exercise the actual module entry against real named inputs."""
++
++from pathlib import Path
++import subprocess
++import sys
++import tempfile
++import unittest
++
++from textstats import count_file
++
++
++class ModuleCliTests(unittest.TestCase):
++    def invoke(self, *args):
++        return subprocess.run([sys.executable, "-m", "textstats", *map(str, args)],
++                              capture_output=True, text=True)
++
++    def test_named_files_counts_and_api_agreement(self):
++        cases = [(b"alpha beta\r\ngamma\r", (2, 3)), (b"", (0, 0)),
++                 ("café\u2028tea\n".encode(), (1, 2)),
++                 ("\ufeff\n".encode(), (1, 0)), ("\ufeff\ufeff".encode(), (1, 1))]
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / "normal.txt"
++            for data, counts in cases:
++                with self.subTest(data=data):
++                    path.write_bytes(data)
++                    run = self.invoke(path)
++                    self.assertEqual((run.returncode, run.stdout, run.stderr),
++                                     (0, f"lines={counts[0]} words={counts[1]}\n", ""))
++                    self.assertEqual((count_file(path).lines, count_file(path).words), counts)
++                    self.assertEqual(path.read_bytes(), data)
++
++    def test_keep_bom_and_dash_prefixed_filename(self):
++        # A temporary relative path can begin with '-' to exercise '--'.
++        with tempfile.TemporaryDirectory(prefix="-textstats-", dir=".") as directory:
++            path = Path(directory) / "bom.txt"
++            data = "\ufeff\n".encode()
++            path.write_bytes(data)
++            for options, output in [((), "lines=1 words=0\n"),
++                                    (("--keep-bom",), "lines=1 words=1\n")]:
++                run = self.invoke(*options, "--", path)
++                self.assertEqual((run.returncode, run.stdout, run.stderr), (0, output, ""))
++            self.assertEqual(path.read_bytes(), data)
++
++    def test_help(self):
++        run = self.invoke("--help")
++        self.assertEqual((run.returncode, run.stderr), (0, ""))
++        for word in ("usage:", "INPUT", "--keep-bom"):
++            self.assertIn(word, run.stdout)
++
++    def test_invalid_invocations(self):
++        for args in [(), ("one", "two"), ("--unknown", "one"), ("--json", "one")]:
++            with self.subTest(args=args):
++                run = self.invoke(*args)
++                self.assertEqual((run.returncode, run.stdout), (2, ""))
++                self.assertIn("usage:", run.stderr)
++                self.assertNotIn("Traceback", run.stderr)
+diff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py
+new file mode 100644
+index 0000000..516c478
+--- /dev/null
++++ b/tests/unit/test_cli.py
+@@ -0,0 +1,22 @@
++"""Option validation must precede named-file acquisition."""
++
++import contextlib
++import importlib.util
++import io
++import unittest
++from unittest.mock import patch
++
++
++class CliValidationTests(unittest.TestCase):
++    def test_usage_errors_and_help_never_acquire(self):
++        self.assertIsNotNone(importlib.util.find_spec("textstats.cli"), "command adapter missing")
++        from textstats.cli import main
++        for args, code in [([], 2), (["one", "two"], 2), (["--unknown", "one"], 2),
++                           (["--keep-bom"], 2), (["--help"], 0)]:
++            with self.subTest(args=args):
++                with patch("textstats.cli.count_file", side_effect=AssertionError("acquired")) as acquire:
++                    with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
++                        with self.assertRaises(SystemExit) as result:
++                            main(args)
++                self.assertEqual(result.exception.code, code)
++                acquire.assert_not_called()
+diff --git a/textstats/__main__.py b/textstats/__main__.py
+new file mode 100644
+index 0000000..867fca3
+--- /dev/null
++++ b/textstats/__main__.py
+@@ -0,0 +1,6 @@
++"""Expose the named-file command through python -m textstats."""
++
++from .cli import main
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/textstats/cli.py b/textstats/cli.py
+new file mode 100644
+index 0000000..13b01a7
+--- /dev/null
++++ b/textstats/cli.py
+@@ -0,0 +1,28 @@
++"""Validate named-file arguments and render complete text counts."""
++
++import argparse
++from collections.abc import Sequence
++
++from .io import count_file
++
++
++def main(argv: Sequence[str] | None = None) -> int:
++    """Run the named-file CLI; argparse exits for help or invalid usage.
++
++    Args:
++        argv: Explicit arguments, or None to use process arguments.
++
++    Returns:
++        Zero after emitting exactly one line of successful text counts.
++
++    Validation precedes acquisition. Expected acquisition-error diagnostics
++    are completed at the later reliability milestone.
++    """
++    parser = argparse.ArgumentParser(prog="textstats", allow_abbrev=False,
++                                     description="Count lines and words in a UTF-8 file.")
++    parser.add_argument("--keep-bom", action="store_true", help="retain a leading BOM")
++    parser.add_argument("input", metavar="INPUT", help="named UTF-8 input file")
++    args = parser.parse_args(argv)
++    stats = count_file(args.input, strip_bom=not args.keep_bom)
++    print(f"lines={stats.lines} words={stats.words}")
++    return 0

@@ -1,0 +1,10 @@
+usage: textstats [-h] [--keep-bom] INPUT
+
+Count lines and words in a UTF-8 file.
+
+positional arguments:
+  INPUT       named UTF-8 input file
+
+options:
+  -h, --help  show this help message and exit
+  --keep-bom  retain a leading BOM

@@ -1,0 +1,984 @@
+{
+  "observed_at": "2026-10-05T18:42:06.690271+00:00",
+  "root": "/workspace/scratch/textstats-acceptance-change-worktree-20261005",
+  "head": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+  "branch": "trial/a022-acceptance-change",
+  "status": "",
+  "refs": "refs/heads/feature/002_ea97182-line-ranges d518cc23650018542e43d8fb5a63f44a4d283518\nrefs/heads/main 59debb649545125dd3aa00377ea115451b594271\nrefs/heads/phase/1-named-file-utility b398e258cefc03dbc47630b83967db961a376eae\nrefs/heads/phase/2-output-and-source-extensions 0e4741465c3e086d2ab95c5af73ca89371c16fac\nrefs/heads/revision/001_8e2d3a5-live-acceptance 5027c2deb84abc4550dd967bc8719f740172120d\nrefs/heads/trial/a015-staged-recovery 2dae60081452d72482bd431475d8f0b88d2d9d8c\nrefs/heads/trial/a016-publication-recovery a3e6ab199e06892bf53944ca96ccd26063e87bd8\nrefs/heads/trial/a017-required-check 81399c76355c2a9e3320bf77ddc3f297a8b6ba9a\nrefs/heads/trial/a018-rejected-publication 159c662e06405b1fbf696e8e9d9d5d47024187be\nrefs/heads/trial/a020-preservation 5719983f2d11266dba58bc8b149505c2519df4cb\nrefs/heads/trial/a021-dirty-transfer ddc3b875921b57557b714c20fcadb2a45707f1d3\nrefs/heads/trial/a022-acceptance-change a25a954fcba1978a62be0f7aa14fe103388e41b6\nrefs/heads/trial/a024-tracking-access 159c662e06405b1fbf696e8e9d9d5d47024187be\nrefs/heads/trial/a026-verification 159c662e06405b1fbf696e8e9d9d5d47024187be\nrefs/remotes/origin/HEAD 59debb649545125dd3aa00377ea115451b594271\nrefs/remotes/origin/feature/002_ea97182-line-ranges d518cc23650018542e43d8fb5a63f44a4d283518\nrefs/remotes/origin/main 59debb649545125dd3aa00377ea115451b594271\nrefs/remotes/origin/phase/1-named-file-utility b398e258cefc03dbc47630b83967db961a376eae\nrefs/remotes/origin/phase/2-output-and-source-extensions 0e4741465c3e086d2ab95c5af73ca89371c16fac\nrefs/remotes/origin/revision/001_8e2d3a5-live-acceptance 5027c2deb84abc4550dd967bc8719f740172120d\n",
+  "index": "100644 ac5e008b95fc4878b6ce218fa061975e13b082fd 0\t.gitignore\n100644 396ae7aa1cb1b8cd8e62e7f29eaa76e794536b16 0\tAGENTS.md\n100644 7bb22d266be8343e620d007d703facc143173db6 0\tAI_DISCLOSURE.md\n100644 8306061d225c5d1483a098884495e6fa76e7d8fd 0\tMakefile\n100644 049b5d3de56e127ba36a6cc694153eae89f3b657 0\tREADME.md\n100644 70ff481ef2cac6fc8677fc2b684cee25fb60daef 0\tSDD-MANAGER.md\n100644 22f99c09414b677bb0fae965857fcabe30fac9d4 0\tdocs/api.md\n100644 333c671257571866eb429d520203bf4cd33d1945 0\tdocs/dev/ARCHITECTURE.md\n100644 b7d4e8cb102c849e5b397e0e249c2b7f51d5a216 0\tdocs/dev/DECOMPOSITION.md\n100644 642205eab83158bf1d3473c1d63cd590f673960c 0\tdocs/dev/PLAN-REVIEW-REPORT.md\n100644 efa05a8a2513c82946ce7cd2fb23f72c92f68ad0 0\tdocs/dev/PLAN.md\n100644 e314170d2e1a5f1e13212409dcf4e8288f970a43 0\tdocs/dev/PROJECT.md\n100644 0873897e81952fc3b7b65747105bed886d1122e2 0\tdocs/dev/SPEC-REVIEW-REPORT.md\n100644 7186355bf3913ceaedfe2ef9f2274b42794965c5 0\tdocs/dev/SPEC.md\n100644 af9a75a5aae66d7e935fb91fbef84acfcd1faaba 0\tdocs/dev/TASKS-REVIEW-REPORT.md\n100644 2d0fb28d8d1af84770a122ad0edc627c077a4d0b 0\tdocs/dev/TASKS.md\n100644 5df9f8683f7087e5965276c726593bf736b56f42 0\tdocs/dev/features/002_ea97182/2.4.md\n100644 b02bb37b47728636d1800947831d06836c3d2f41 0\tdocs/dev/features/002_ea97182/FEATURE-PLAN-REVIEW-REPORT.md\n100644 c899cb16a2fbd91c672c909f94413480d7febaaf 0\tdocs/dev/features/002_ea97182/FEATURE-PLAN.md\n100644 c5941aae55532213ea457d9e8ec1f77429e57a49 0\tdocs/dev/features/002_ea97182/FEATURE-SPEC-REVIEW-REPORT.md\n100644 8e956e9c61c1561950274a486b3554537f3b9bcc 0\tdocs/dev/features/002_ea97182/FEATURE-SPEC.md\n100644 e42f620bef3c09fc27f42baf2939a428251fc992 0\tdocs/dev/features/002_ea97182/FEATURE-TASKS-REVIEW-REPORT.md\n100644 2537d919827769e9f389050dc75862d678b337ca 0\tdocs/dev/features/002_ea97182/FEATURE-TASKS.md\n100644 eaf023fde1fac1b01a3ed1374c7221e539493dd2 0\tdocs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md\n100644 e82a1eb2d5a7ae66af9b00f58b2bd020757ebbfb 0\tdocs/dev/features/002_ea97182/PHASE-REPORT.md\n100644 b9c1c140b2163f50ab6fd39ffd71b55e7e471b54 0\tdocs/dev/features/002_ea97182/README.md\n100644 5f9a67e439a9e86ca479798c01fc4cd154c43efa 0\tdocs/dev/layout.md\n100644 84d6165186704723a7e10a032eb3bb9488211e59 0\tdocs/dev/reports/phases/1/1.1.md\n100644 7417ce1f203b713397f999aa809e7763897bbead 0\tdocs/dev/reports/phases/1/1.2.md\n100644 60890ddbcefae53ddf559da8b1cd9487a03e41b4 0\tdocs/dev/reports/phases/1/PHASE-REPORT.md\n100644 0bdc5fc91d8b77bfc3d4eb189a099879e59803da 0\tdocs/dev/reports/phases/2/2.1.md\n100644 efc9a571df8387a12ded3ad208756a819dd7a709 0\tdocs/module.md\n100644 57ef77c6721196adff1a2a33b3f475f5f13046ca 0\ttests/__init__.py\n100644 e9e1c22347cfc508c80225c9bcaf1dd09147ad38 0\ttests/integration/__init__.py\n100644 513ef2c0a03f89bf3a516e53cbfe6974fa8baac3 0\ttests/integration/test_cli.py\n100644 579abbc944f2862ecfc21bd3a82217c5866c2601 0\ttests/integration/test_distribution.py\n100644 9ad534977bda7b3447103ddd4529e70dd3150c50 0\ttests/integration/test_file_api.py\n100644 90d5799279656dc10db113147176d2835725c128 0\ttests/integration/test_ranges.py\n100644 7033855b26bed230d36a78c7705d51adbc8f6afe 0\ttests/unit/__init__.py\n100644 1410a9da9ae2001a062dc538fd3bd533ce81abfb 0\ttests/unit/test_cli.py\n100644 18b92e643d89c532df19fb1c9fcf4943a7f64deb 0\ttests/unit/test_core.py\n100644 8c107c54c4668180da090d930871c81f3145bdd0 0\ttests/unit/test_file_api.py\n100644 97373116429a5fd94fd9a3fed0daf7012a45c106 0\ttests/unit/test_ranges.py\n100644 502c5092ea28994b6de81a52727733e7b46844b4 0\ttextstats-run-resources/HARNESS-SOURCE.json\n100644 ef9916827e555da910b7d77106ef804024ad202d 0\ttextstats-run-resources/PLUGIN-SOURCE.json\n100644 92dbdc7983eea277c652a6a927653c641a11c14d 0\ttextstats-run-resources/SETUP.md\n100644 0c03dcb8b64b47cda0d686036a68bac917f33ebe 0\ttextstats-run-resources/plugin/.codex-plugin/plugin.json\n100644 7bb22d266be8343e620d007d703facc143173db6 0\ttextstats-run-resources/plugin/assets/AI_DISCLOSURE.md\n100644 70ff481ef2cac6fc8677fc2b684cee25fb60daef 0\ttextstats-run-resources/plugin/assets/SDD-MANAGER.md\n100644 941ce649607a77b261727d0c1ce22d026fd82dcf 0\ttextstats-run-resources/plugin/assets/icon.svg\n100644 61f676b6266e5920b48c64667528c287a97e195e 0\ttextstats-run-resources/plugin/assets/logo.png\n100644 46c73a67d37ba87c6d38e2f8c1b57b597297334f 0\ttextstats-run-resources/plugin/skills/sdd-conventions/SKILL.md\n100644 3dab3d4e4dec031943d046ed7a549437b25436f0 0\ttextstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml\n100644 b20df81eb3b391b2e33d2fd8c4e20369b23f7e58 0\ttextstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg\n100644 210d4f3f73a3fa7a92493cc706dd33c259278225 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md\n100644 bd08ea06432f318cedf17cc3108a58af8f15ea96 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md\n100644 2681de1d85ef905c782591de973c7794e6c7b716 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md\n100644 d9153f92334f277209f1fd5396d3d7904dc03212 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md\n100644 a2c4d3aa3fa75b612dceb5dc5302d8e6b9dde527 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md\n100644 ef70cc89c8b7ca94026000ea3f84aef66da623c0 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md\n100644 72bd0a4cca48de252d99a5e8a03039ba2c5a196f 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md\n100644 83954a6c35dea68c39623c0f71516fd448156aa0 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md\n100644 35307ff980dbeb391080784e1e82db3da2247bfc 0\ttextstats-run-resources/plugin/skills/sdd-design/SKILL.md\n100644 d12f28e77909eec0b3e092597f9dcf7db49b5f08 0\ttextstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml\n100644 c6ba99d4568e4f7d75ffbfa0701ad42013bc0547 0\ttextstats-run-resources/plugin/skills/sdd-design/assets/icon.svg\n100644 b42c762672d3737fdfe6f8a333519c87e29cc7ac 0\ttextstats-run-resources/plugin/skills/sdd-design/references/architecture.md\n100644 9022f08d8b7ebffdb5044c42d189fa0c92c4cec2 0\ttextstats-run-resources/plugin/skills/sdd-design/references/decomposition.md\n100644 8e175ccd1cab5f4d26b6e9619714345a328ee616 0\ttextstats-run-resources/plugin/skills/sdd-design/references/exploration.md\n100644 591219654979a2448051372a1ea1c749d111c8e3 0\ttextstats-run-resources/plugin/skills/sdd-docs/SKILL.md\n100644 23cbd5cdf2cf538927601a230c18638bb4f53e34 0\ttextstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml\n100644 abcfcf450057db9ddd954ff1ec2b4e629ba0f4c0 0\ttextstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg\n100644 0713c467356ec152d3777e4d4e3874ac6d2e6ade 0\ttextstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md\n100644 967db07f8c27204f7b4bf89531536b678bf6bca0 0\ttextstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md\n100644 a2f0a03d0f60e83412a277916a57d61f139cbac7 0\ttextstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md\n100644 6a1dfc9294dd03a37c17089688671c1f2042f5d3 0\ttextstats-run-resources/plugin/skills/sdd-forge/SKILL.md\n100644 407f60ea3b3e7544e988e3fc87bf4123b44d2ae9 0\ttextstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml\n100644 fd3590b54b4be1fe8e79e8ab0c8d36250c51ca4e 0\ttextstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg\n100644 5b629ebb94a6bab80d89ceabc3672a55c4676e9c 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md\n100644 36ee6189110d2319b46b8be35524285275982822 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md\n100644 d5dd25cfde0171fe194097f6790125fd624d837c 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md\n100644 49961fe2ae21d1654510ae3a98f395bf0bb59dd5 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github.md\n100644 98f26163fc1c089403bc141178b48ff55f00a2d1 0\ttextstats-run-resources/plugin/skills/sdd-implement/SKILL.md\n100644 f50ba4ba0abbb5e08a0c451ab1705a4802dbe2ec 0\ttextstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml\n100644 8a2f97389aa0d69489783422c2e55eb302251d17 0\ttextstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg\n100644 e59bffc408e59cedb578af18978c95b3d3044f6d 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md\n100644 81402919f16d38b021bed35d47ccfd570018d154 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md\n100644 04326da73d74d6295f45c162de9ea5184faa8b40 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md\n100644 094b545c566887cb684534fa9aeb3ad0ff6c4053 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md\n100644 86f3d13f6cb549f5a27908429727eeeb84e0eee4 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md\n100644 7d00c608c710962ad7c6737b325cd98875dd22f4 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml\n100644 46ba7ac9d910129ee3a41a1a85a5bd3f15b86444 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg\n100644 2f0c2ca9732b8101c68c402a0b8f32d3550f7451 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md\n100644 1cb0e931404b98d36be8947f34c6d3eeee6d3355 0\ttextstats-run-resources/plugin/skills/sdd-manage/SKILL.md\n100644 1f2b46444ad69cbfdf7aac5829245bc2a2615291 0\ttextstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml\n100644 830c3ac25b2b88cf62b89ac70179ce41498192e7 0\ttextstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg\n100644 280f89afbe5b4310b8b5b33f15b0dc2e5d49889e 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md\n100644 cd8dbde6c93ab833e12648630377fdb2891d51b7 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/coordination.md\n100644 7ab8222a7f88b346d4886fd9db0db18a9a3e236a 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/credentials.md\n100644 6e015acde26b79788c8b16f5f7ddf7ec68dd4cc0 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md\n100644 32ffa24050a91583ecb503004dba3581cf3ae56b 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/examples.md\n100644 ba66d5179212b13ec5aee456f50c083c6c86b603 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md\n100644 a61a0266d9c888f5e97b0fbe6d7227cc47882974 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md\n100644 bbe15e4509a0a1342c52b42fb30547c4bec95b49 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md\n100644 2222e292ceca42288e9b11a0444b3f58f6cba98e 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md\n100644 64083e7e8f86cf450998d27aec0e0763a3c3e98a 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/revision-authorization.md\n100644 021aa0d890803da7cb15bb67ee85c8ca36930446 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/workflows.md\n100644 3e4f6f530b16a98a929e1214af43de8a63014854 0\ttextstats-run-resources/plugin/skills/sdd-orient/SKILL.md\n100644 ed158258a6b466566be64ddfe4a28e177185cf37 0\ttextstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml\n100644 60d6d107bf8e1ee9650ecb11b7dc174465a3919f 0\ttextstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg\n100644 bc57f54f26fb32256bf990505cbb8ccd41f3c993 0\ttextstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md\n100644 a0b0a554de481041b02222b23d77a8dcb4187536 0\ttextstats-run-resources/plugin/skills/sdd-plan/SKILL.md\n100644 68ea6836b1b490fe9a997dcc7a8cb3fc75af8668 0\ttextstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml\n100644 92a571408af0b8c438081e783280bac1278b4773 0\ttextstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg\n100644 98c0ebe4010999635b7254c4505e916c2a19f2d1 0\ttextstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md\n100644 c053601aaf4e376d979cb4d2604a66574669a734 0\ttextstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md\n100644 a29741b77f54e1c9445b6b75ae998ce7dd94a6a5 0\ttextstats-run-resources/plugin/skills/sdd-plan/references/review.md\n100644 c7a51b468d800c87517f0203cf00f78fb50362f7 0\ttextstats-run-resources/plugin/skills/sdd-report/SKILL.md\n100644 37c258a151f148267b16005872902f5c1042550d 0\ttextstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml\n100644 f2a15209df0860b1e5cd7e5bb40c44bc78890c9a 0\ttextstats-run-resources/plugin/skills/sdd-report/assets/icon.svg\n100644 debd442879e6433f49ed62ee42813b0c894297f1 0\ttextstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md\n100644 ad9c9926734d7c10908e63885fa8abfc28fb2c55 0\ttextstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md\n100644 5a2312c7747647093afaaad12a09149bf6f40e8f 0\ttextstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md\n100644 426772b0a9df2486951e2a67364d2b96ae7f8dc7 0\ttextstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md\n100644 b40f8fdac2d66598e43adb64ac3c80a6317733fa 0\ttextstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md\n100644 cac0f7b277506608631252e26ab508a6bb6c8300 0\ttextstats-run-resources/plugin/skills/sdd-specify/SKILL.md\n100644 d1cc2a459af4ea4493e3662fc15b8db377f2ad95 0\ttextstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml\n100644 c9cff07dd41a60d33692bb536d18aa6980a4149a 0\ttextstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg\n100644 64239362c0273e70b058af5ef8f6e4d8a795959e 0\ttextstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md\n100644 4acdee0c44c9d2a49261e25aadc1445c085e833d 0\ttextstats-run-resources/plugin/skills/sdd-specify/references/review.md\n100644 0ff7852868752f668d1a963fe5809c85000ea0f8 0\ttextstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md\n100644 64d5a6f45e1e20baab77fbd495c0b0d04adf5c50 0\ttextstats-run-resources/plugin/skills/sdd-steer/SKILL.md\n100644 b53d7801ae392cdb6c1e64deb220f4f61e828099 0\ttextstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml\n100644 d577273d6ba5619d1374fcae56bdb8dcd29d7b6b 0\ttextstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg\n100644 1377a56a0a21580f686e2962604d553850d8c211 0\ttextstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md\n100644 424bed26bfe8a228eea5cac8028e77d9c2ee2e63 0\ttextstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md\n100644 a1121d50f1fefba18909521b3fcc83bd931035be 0\ttextstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md\n100644 76c3b45a6a8ceb6a51d203ec463509270f90c3ad 0\ttextstats-run-resources/plugin/skills/sdd-tasks/SKILL.md\n100644 e90fa5ecd4bbce3e7799b0d933367ea0144f2dcf 0\ttextstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml\n100644 8fe415c8e30e2bf394aea248036c9ec766e1bcb6 0\ttextstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg\n100644 a9fc420f41b01d4e101b30bcbd632ece624a4c8f 0\ttextstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md\n100644 cea681b5930de76765d8ea32b05bb6d036cdbf9e 0\ttextstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md\n100644 71536c513e8a13b490fa8329f69640ff9056deab 0\ttextstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md\n100644 abf0390320aa14406af7a520b9b0739fdda9bf08 0\ttextstats-run-resources/plugin/skills/sdd-tdd/LICENSE\n100644 151f6da539937c70ff8ed0b82038c932513efd6a 0\ttextstats-run-resources/plugin/skills/sdd-tdd/SKILL.md\n100644 eb937f2c8becb535ca4c455bbbcb93bf4b317aef 0\ttextstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml\n100644 99a80528d2c95c83e41598b14f19c5ace9b83e3a 0\ttextstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg\n100644 92ce970bebdc920135a1bbe713f35d6a313d9c19 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md\n100644 25d1066475bd341e565c89ab13817bcbf7e8cf61 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md\n100644 20772b47c30d2a804401b4f97bb3db9a949da8bf 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md\n100644 e9f9afb71e88da8e2a810c2646e346ab5dc34ab2 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md\n100644 5f4fd43f962315a6f93fcb6b082d8b0c48c6d5aa 0\ttextstats-run-resources/plugin/skills/sdd-verify/SKILL.md\n100644 af341267164ded2e20f01c137c1d23aac0e66e5e 0\ttextstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml\n100644 b1f8167826407e756ba11cd9f5870b8d494101fa 0\ttextstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg\n100644 1101e288fdfd3f37e3083e49a5a3546424984b40 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md\n100644 35317466922373f996021c4ffe765ca3dd0b905a 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md\n100644 d17bfa503a0dc8e97395a7ee024eda87fa7d4873 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md\n100644 e40ddb56009ca0c26090d3384197eefb4b86b589 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md\n100644 6096cf628779ae0c4e29a8a58fe0a68a8354a03f 0\ttextstats/__init__.py\n100644 867fca33fc1cad908f2c89bbb794a2ca87e5da47 0\ttextstats/__main__.py\n100644 6423e247d8af047c5dfb100fd5457b35e2e2ed21 0\ttextstats/cli.py\n100644 64e37f8ae87c8af99b9140ce6b3d770559b8fa67 0\ttextstats/core.py\n100644 eb21eeb0cc518b1fd8314194270498c2246d7866 0\ttextstats/io.py\n",
+  "files": {
+    ".gitignore": {
+      "sha256": "bd7073366ebd7dd412a841283575565dd401e8e661bca6f203a76478422e384b",
+      "bytes": 43,
+      "mode": 420,
+      "symlink": false
+    },
+    "AGENTS.md": {
+      "sha256": "d7dabe4ba00c81bc17d15c6b2ef05c10beadc583a156776800d39f803592761e",
+      "bytes": 272,
+      "mode": 420,
+      "symlink": false
+    },
+    "AI_DISCLOSURE.md": {
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "bytes": 1192,
+      "mode": 420,
+      "symlink": false
+    },
+    "Makefile": {
+      "sha256": "d8973498f1d1ec5a264f79501105b1d099adb6f5b2d4fb591d970d4b54a216c1",
+      "bytes": 523,
+      "mode": 420,
+      "symlink": false
+    },
+    "README.md": {
+      "sha256": "69bcab8ae7d0aad2e4061dbd78c76106cc2c319f952500a2a87f70a81ee16636",
+      "bytes": 4701,
+      "mode": 420,
+      "symlink": false
+    },
+    "SDD-MANAGER.md": {
+      "sha256": "07947f37a7a69fdfe45331d51e46d21267297e9fc547c84448949e711469403b",
+      "bytes": 689,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/api.md": {
+      "sha256": "0d056269a70aa6e6b6768d74a1ff045931e123245241d17308b32ad2f61aa785",
+      "bytes": 2205,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/ARCHITECTURE.md": {
+      "sha256": "36d791fca787c60328cec8fa0742201a48ab5a6862ded6707c4c7ce3bd809505",
+      "bytes": 2609,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/DECOMPOSITION.md": {
+      "sha256": "4f2faa1123b65e7c83909d3d4e5a6d310b4210809975ef9e5be013b25ed59a8c",
+      "bytes": 2776,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/PLAN-REVIEW-REPORT.md": {
+      "sha256": "2132c2fd328d4b79d019bbda5b6f8500286c8db659c0338cbebdae59adc13ef3",
+      "bytes": 11443,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/PLAN.md": {
+      "sha256": "a9b95ee565598935497fd0fbefd0fc19459b66c67443358544285d86b9fdea58",
+      "bytes": 9184,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/PROJECT.md": {
+      "sha256": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988",
+      "bytes": 1831,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/SPEC-REVIEW-REPORT.md": {
+      "sha256": "1e1e340f2bd79d2aeff48ced35e317920bf38445cb9fa76f8c79ca1143e137ef",
+      "bytes": 12979,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/SPEC.md": {
+      "sha256": "9e58d8f5debc1ddb830fa63ed5860804df06954a38187ccb157200be7db1660b",
+      "bytes": 10694,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "9c8b3ff302d556a3a9afbb6538438d1abe9daa29790287774ecfc38203718f26",
+      "bytes": 13906,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "d00709492e31f9019a4da6fff98906940b05e2f6a91bca58cb14038c366193db",
+      "bytes": 41860,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/2.4.md": {
+      "sha256": "630d94bf1e4d69368c329b05d2968b88ed3fd335301ffa1e00fd7c3db58ab3e1",
+      "bytes": 4525,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/FEATURE-PLAN-REVIEW-REPORT.md": {
+      "sha256": "40bc5abdd0139d1b9c084dcdecfeb9940b3f4ad2bf7deca7bc9279b7432e3dd7",
+      "bytes": 5497,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/FEATURE-PLAN.md": {
+      "sha256": "f2deac1776918a83fadc5779db601c75ee81efa7a1e4ff6d87e96a8b0d2c6398",
+      "bytes": 5578,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/FEATURE-SPEC-REVIEW-REPORT.md": {
+      "sha256": "ef039d1d5b3f5a3c2ecf73754b2873d1435b5264e63164d313360199f524a7e3",
+      "bytes": 4613,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/FEATURE-SPEC.md": {
+      "sha256": "3ea5af202942b72ac743c400a5cc810932d65e2e9f66e046b2911da5d511fe08",
+      "bytes": 4465,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/FEATURE-TASKS-REVIEW-REPORT.md": {
+      "sha256": "23c779b2effa874428e311dd11e74a4202ae90e0a57bc4f0baf0bb2fed09b958",
+      "bytes": 6180,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/FEATURE-TASKS.md": {
+      "sha256": "5fa674945d145e00e76f0a90ae7a8f6ee0b701fa711ed89f2e35cd61117e16b0",
+      "bytes": 629,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md": {
+      "sha256": "304d6a7007281a9b1d078bd97fa280feaf32c48bc286b2017038193e984df782",
+      "bytes": 2207,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/PHASE-REPORT.md": {
+      "sha256": "de0900dd513199936f5e9726373ffbf2680b5ed66c666f9ec1a5cc4d2246152b",
+      "bytes": 4281,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/features/002_ea97182/README.md": {
+      "sha256": "d2dc7a1e1c1ae2dad047e3fa4def813999fadcc10677f98ab554168bc4167634",
+      "bytes": 2714,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/layout.md": {
+      "sha256": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32",
+      "bytes": 3261,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/reports/phases/1/1.1.md": {
+      "sha256": "227a5a7e0eda7616bd95d7c7167ed3a71abb84458f87139197030de25ef39734",
+      "bytes": 5809,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/reports/phases/1/1.2.md": {
+      "sha256": "74e2848ec9a75ce51bee7b200a91fc60d6835dcd9b4da24649740f834e863c01",
+      "bytes": 6263,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/reports/phases/1/PHASE-REPORT.md": {
+      "sha256": "56cbe118a8ed5cf052ffaf16e20d31b9055f1bbcdcfc1747944a3b3b68b144c9",
+      "bytes": 7351,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/dev/reports/phases/2/2.1.md": {
+      "sha256": "e40773707191e76e109a2b0a9a5eb922add616933bd7c0b4053321d7de6fc872",
+      "bytes": 6457,
+      "mode": 420,
+      "symlink": false
+    },
+    "docs/module.md": {
+      "sha256": "aceed32bcac843f1d784128f08e1198d2f06a08b81b4ef69e3a4bed0d32bd8f7",
+      "bytes": 3751,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/__init__.py": {
+      "sha256": "df9ec8b0982a197e7a42498dac77fe2c1da1cae9c78d61ef6bfe3c824a3284bc",
+      "bytes": 38,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/integration/__init__.py": {
+      "sha256": "21ac3c5145688afdb4f775f2b9e20beb402ef443ea049bd6fdd0c20014a73945",
+      "bytes": 58,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/integration/test_cli.py": {
+      "sha256": "25a597a64eaafb379657dca2a01f6c164af8803eb3f342eec12e27c3dd0fcddd",
+      "bytes": 6164,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/integration/test_distribution.py": {
+      "sha256": "1d27805fdd34a25fc114b59edf67a8137308b69db6ad9636e00ece14c942ac24",
+      "bytes": 8544,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/integration/test_file_api.py": {
+      "sha256": "529c874bf1472fa4dede38904d324403d38ef0978d5dcd616a09af3e83719476",
+      "bytes": 3176,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/integration/test_ranges.py": {
+      "sha256": "9141b3775e67c75b77a8c8cc5f507be3632d3f6984afc92e2a87e8805e9641f8",
+      "bytes": 3854,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/unit/__init__.py": {
+      "sha256": "1abbc648c46040ef747d835b19514d1dc0e1faae72a670cd5e2d6dfb35a27ed8",
+      "bytes": 42,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/unit/test_cli.py": {
+      "sha256": "d310ba825dbf465c59686c0e7954223b5be461d191d81430fa4c905e7d658da1",
+      "bytes": 2202,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/unit/test_core.py": {
+      "sha256": "1f7fb4327b419def6a12ccb233c63c22d37d23d5381e797b784e9e46e12bb07f",
+      "bytes": 5128,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/unit/test_file_api.py": {
+      "sha256": "a29a2427882928df0c02f2b18b6fa285016d3a9cabd208f11d8f75ef26433d9e",
+      "bytes": 2482,
+      "mode": 420,
+      "symlink": false
+    },
+    "tests/unit/test_ranges.py": {
+      "sha256": "0cb46659cc72f16deebc3213af3dd15a304ce460a6b425f10cab7ceec9a53071",
+      "bytes": 4789,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/HARNESS-SOURCE.json": {
+      "sha256": "1db0ff6e056173e6fbf61460e916f660b2bfecacac3d752c6c08f99b10fd1332",
+      "bytes": 11456,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/PLUGIN-SOURCE.json": {
+      "sha256": "dc9a100b8eda35f908b0cbbb4b6dc4d4b449d07723bf9ae8d52868c773bacea2",
+      "bytes": 20011,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/SETUP.md": {
+      "sha256": "be3cccdb0651898e3b99785b8cfaf25da876ebec7c38799ea4b0c1c700f4ccc8",
+      "bytes": 343,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/.codex-plugin/plugin.json": {
+      "sha256": "eeb08ba49f7c8d58c0af38057411475a89a6d4a1536b850230a716232b7083df",
+      "bytes": 1836,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/assets/AI_DISCLOSURE.md": {
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "bytes": 1192,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/assets/SDD-MANAGER.md": {
+      "sha256": "07947f37a7a69fdfe45331d51e46d21267297e9fc547c84448949e711469403b",
+      "bytes": 689,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/assets/icon.svg": {
+      "sha256": "78e8e4a4c1225f96d4f2d6577736ecf431cdc8be09730e3cb063f3ed6436fb87",
+      "bytes": 547,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/assets/logo.png": {
+      "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+      "bytes": 14257,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md": {
+      "sha256": "f441da1bfc36aaedceec0cb18838dc5496ea70e198edfa1ba66027bcbc619f0a",
+      "bytes": 3029,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml": {
+      "sha256": "3afb66258ca9ee5f7e35b0986ac130e34a4a73c4d5c41b1c7de94e19133e4cea",
+      "bytes": 505,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg": {
+      "sha256": "5702cda32d79bc28857dedfe0f9811d382d8b2e4c46d1ac571d8114aabd279a4",
+      "bytes": 570,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md": {
+      "sha256": "8729f0f62f649509080018ebf43aa2f5e7f710939ed182494460c23a0d9a0685",
+      "bytes": 8516,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md": {
+      "sha256": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448",
+      "bytes": 1597,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": {
+      "sha256": "c108f60ddffee2665d759276b650a430fde1abad4361bafa20311b63f077429f",
+      "bytes": 13099,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md": {
+      "sha256": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324",
+      "bytes": 2971,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md": {
+      "sha256": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283",
+      "bytes": 2201,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md": {
+      "sha256": "88ca8f7012e2e6255b4f8b0f41a2bf68b9fd3f5b3b205f7c7f7eda91f003f0bc",
+      "bytes": 3916,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md": {
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+      "bytes": 4120,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md": {
+      "sha256": "7192602affb35813b9ec052e87d3614b15098b779a8e1c104b1f723e1f6f531a",
+      "bytes": 4223,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/SKILL.md": {
+      "sha256": "bacf686f53b4f2e1a759624ddd70ae34cd6b55ed51c3dd5e1a6624eb0ea028aa",
+      "bytes": 3668,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml": {
+      "sha256": "102d11e8960f1f7af69bfcbacbe71defad289b9c368d11a610fb6b19e61dd3b6",
+      "bytes": 412,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/assets/icon.svg": {
+      "sha256": "98c55eb98b3e3702037698739b96fb550da2223bf733fb576650d0a4c5504864",
+      "bytes": 562,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/references/architecture.md": {
+      "sha256": "329327e9cadf2637289dcad8808faa0a31c7e386223accb91366b897ef64339b",
+      "bytes": 3789,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md": {
+      "sha256": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf",
+      "bytes": 3720,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/references/exploration.md": {
+      "sha256": "54d5b0262975a3a4981deb5717ca7cb0e87817cd54b2a51e10d6d6fa7eb1d209",
+      "bytes": 2575,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/SKILL.md": {
+      "sha256": "561a9f9935357e3cb82e3110868571632f3b3a01ad4ddebc654232086d33f659",
+      "bytes": 3328,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml": {
+      "sha256": "9715602c3bdcd14d41e6e99e24edb32389499e0ec96b0aad5cdf4b30b187de15",
+      "bytes": 471,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg": {
+      "sha256": "69e272ee97e9957387f8ca8b51bec3d3d176c33e6bf6b20d2bff5b3536f507e2",
+      "bytes": 587,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md": {
+      "sha256": "95312201830c2006a68661142cdbc2fcd313282f2b318a0bceee6ef854990d82",
+      "bytes": 2856,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md": {
+      "sha256": "2c678bfc1facfdb4ba0b470c96137454cd68fc3518c53227f9e9bd09a7bcb39a",
+      "bytes": 2252,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md": {
+      "sha256": "82115d3d727ecde42593782cc161c8923299303fc1439eff3b4a14c8aab52cf4",
+      "bytes": 2390,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/SKILL.md": {
+      "sha256": "21cba41d7d64fc54206dc981fab665b16b7b868e4fe1c75769048a59b294b9b4",
+      "bytes": 3699,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml": {
+      "sha256": "303dd1fd13c645d36bac324e76198629bb567a245a360955e447612487aa1ca3",
+      "bytes": 392,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg": {
+      "sha256": "ca997d09da83d706126f43dc2ace19c00ee9036ae67dcce225e688a09d398d33",
+      "bytes": 579,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md": {
+      "sha256": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+      "bytes": 4746,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md": {
+      "sha256": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0",
+      "bytes": 3722,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md": {
+      "sha256": "7124759c2c3aa98d909d62b64db302d76d65ed35701ec22d47cc6a20a38d17a8",
+      "bytes": 5641,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github.md": {
+      "sha256": "a3aaa97b52374db1b21e8e0fc2a8b87d8462e8703cad1336008cf990bb0e9770",
+      "bytes": 9185,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md": {
+      "sha256": "ca32a423668d4749f0ec9c463f3ae597ba2e3def51eb3333912133f397e11df0",
+      "bytes": 5424,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml": {
+      "sha256": "438f0f659f42428e943046f75e10eb5b21384802baf3ce8eb010b9598d00cb7b",
+      "bytes": 620,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg": {
+      "sha256": "4fd314a8f182561a13fbf6fe062e4aee5fd0e0330dccd9943ec14aa5dab34c48",
+      "bytes": 588,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md": {
+      "sha256": "9cb68ab3573e670f71134f1a42ae61c254d31493f28d45b4d141c637fb0d7ac6",
+      "bytes": 9068,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md": {
+      "sha256": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+      "bytes": 3619,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md": {
+      "sha256": "fe986a81b9e0344340754775675280b55c851873c9a7dfdfc8c3835fb8dce373",
+      "bytes": 6531,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md": {
+      "sha256": "0da734c6682c8088af89fb5da78474b78e65e3d7cf35deca83b2e86aace720b5",
+      "bytes": 3096,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md": {
+      "sha256": "62bbe9725faada9934eea8ce29a6ab0bc40462747a1e49243c2d48331ca05bc9",
+      "bytes": 3457,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml": {
+      "sha256": "48018ed1de138598f6be61e916b701638234e2d0e570ed42d39760e0f4de8392",
+      "bytes": 459,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg": {
+      "sha256": "9b68ea07e6b5916efa646ad8f639cb1872523bb40630043a317cc862440dc006",
+      "bytes": 591,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md": {
+      "sha256": "52e311b66d7df21bea7f2c02463417d7219dabe844e2c98cafe03f0cb1aa7e30",
+      "bytes": 12544,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": {
+      "sha256": "b826b549817648a7ab0ce68f324b0d8158d4ede6b687e4034cb664306256cd3e",
+      "bytes": 5387,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml": {
+      "sha256": "c3d318cf2a1074db8bc3c956109b12b1a3399c3835eded7bbac57f9ee7f5a778",
+      "bytes": 524,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg": {
+      "sha256": "d263da0cf62afe30dec52294f51c33a0d522b25c44049224a2274037e8ace44d",
+      "bytes": 590,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md": {
+      "sha256": "7f5fa93c685e8983efe72711f3ee6673dac6e9c6125406e23415a88e452dcb34",
+      "bytes": 5826,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md": {
+      "sha256": "71228af38e0c333ae5ac5aa671d5df5370589dc131cca4ee336f28189fd46183",
+      "bytes": 6717,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md": {
+      "sha256": "5d33060db46a9ddb1f0581944da960813bf9e548169bf73625d3e3d6a4c3a795",
+      "bytes": 5471,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": {
+      "sha256": "5f776622a41d2a9040b39c3800663532899d68bce10c204ce7564ed57a2c7f90",
+      "bytes": 5076,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/examples.md": {
+      "sha256": "96eebdfe90f270cff46bdd4f69d596fd439acbb7d4ea8633e91772a74b1e5acd",
+      "bytes": 8591,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md": {
+      "sha256": "2f712ad70cbfc187f91517d9d9a8799340439996850d5557bfa5c61de4ad8ac7",
+      "bytes": 6623,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md": {
+      "sha256": "fad5b5c71c8b58e19b94f61f494e31901d5d5a2cc262ab72944dca17e1891559",
+      "bytes": 2659,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md": {
+      "sha256": "01032399eb4422ac61a6b3934912ee8392f2b043a187459bd261dba6ddc4f7d5",
+      "bytes": 5546,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md": {
+      "sha256": "df7f820cb4decccbc1d077ce80ded8b745b1a10c2d813b7011fa8c0dc16d6114",
+      "bytes": 6240,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/revision-authorization.md": {
+      "sha256": "0f2db55e9bc50fe3f782c215884a52f8027e654367b8cf8bd6f8207215ca88df",
+      "bytes": 5052,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md": {
+      "sha256": "8ca466b140717b3cd8a33ea5fb1b9aafa8aa4fd696c8bee2455ef3edcf1912c2",
+      "bytes": 12569,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": {
+      "sha256": "91eeed3179358cb50e908a24ef83a2de9cc46dca7bf833509654b4bd04c66791",
+      "bytes": 3326,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml": {
+      "sha256": "36dbb7990b7f504c1fa4b614651ad26431ab6af5a623be8250b780ce156667c9",
+      "bytes": 491,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg": {
+      "sha256": "ef235e59b6a56e0d21629b3b6c1b2ca9cc97cd678d02bcb31b0e2f7bc11bf1f2",
+      "bytes": 571,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md": {
+      "sha256": "1df6b1c7a972959a4b6fb5820ac2a8fbefe732b6abfdef1d52c319811777502f",
+      "bytes": 9069,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md": {
+      "sha256": "816cc68dc8322ec0a9a1fb6c2bd1a1da648ed0447ca48037d0804e0e847ad2d3",
+      "bytes": 3654,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml": {
+      "sha256": "8672b642e8c5ae2114cd839af1152435c7da485b4a25c3dd62d15c78d124ac98",
+      "bytes": 371,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg": {
+      "sha256": "44568c513e736771f4dde159c1903c6da19a774474ce65aeb8992dd694706659",
+      "bytes": 590,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md": {
+      "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+      "bytes": 6939,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md": {
+      "sha256": "14f3ef1e83e8d810b6fd65857aa5b63edbe28ad24982ab639f31210d4e984dd5",
+      "bytes": 3109,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/references/review.md": {
+      "sha256": "3500dd799e477807deee44e9e4a436626f22b8ce8bf91f1c7b8d3e1aa065c931",
+      "bytes": 3867,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/SKILL.md": {
+      "sha256": "481bec03eb256c70cabfc55ea7adca1626b940fa115e879f82e9de368a335a63",
+      "bytes": 3055,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml": {
+      "sha256": "bfe1a84a61bf154a5cb846d41b10d73e88a596044d21e6d1f151d1dc78ae221c",
+      "bytes": 454,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/assets/icon.svg": {
+      "sha256": "aca30e96cbe5d44d759da47cc1db33c87dce1d04bf77142feac8475eecbab074",
+      "bytes": 580,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md": {
+      "sha256": "e9ba5c14d03544c518b035f71c0725616e1a1dc28c004ba8e8b4d59aa5d87783",
+      "bytes": 8993,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md": {
+      "sha256": "51ebff15a54a17b885cf7835474334da7e285823a0113e9c56ebd5bff4769597",
+      "bytes": 4270,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md": {
+      "sha256": "1ed1bd98e8e78c0d22b049fa57843e87e4a740bd1415a7840b894493a7bffb46",
+      "bytes": 5925,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md": {
+      "sha256": "fe09d71b27a70ef806898634c8bd7b32b12b0d425006e5b4c47a5b551e426e07",
+      "bytes": 4090,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md": {
+      "sha256": "f0c894eb233713f18cb48ac2a1f8ecea474c7891276f948443b8cc16462391fc",
+      "bytes": 5368,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/SKILL.md": {
+      "sha256": "7b2fc98175350c9a5385e779cccaf93a7207ac429d4b3302b2c88b1dbd395fa9",
+      "bytes": 3007,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml": {
+      "sha256": "c61e7eb38f097029d947314b441959b17aae2303440a52022cd386d78171e6b5",
+      "bytes": 387,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg": {
+      "sha256": "ebeaf7c64a2fb958088765c46c48e8269625f03ddccefec9dc7b76ff7379f2ad",
+      "bytes": 591,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md": {
+      "sha256": "74ad9a214189fa094c48acfd6c1daacb4eef43fe64ea18946ff5e6628a3be94c",
+      "bytes": 2220,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/references/review.md": {
+      "sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+      "bytes": 3962,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md": {
+      "sha256": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd",
+      "bytes": 4546,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/SKILL.md": {
+      "sha256": "fcd5c2ea4a6eb877ceadadc7211e82f7d9abf1e76a4d8f1b381b369d9b286162",
+      "bytes": 4515,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml": {
+      "sha256": "421038f108a077de64e16c95011ed4f6bff87d47e16c53894bbcc0dc581cc4ae",
+      "bytes": 592,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg": {
+      "sha256": "b9d353ce223194b53f52a4853ed1cc9468718ed0ee57074b5988a309f54d14d1",
+      "bytes": 551,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md": {
+      "sha256": "c185174fd72625f51a151bb6085140e9599f848e26f461d1131c87f2865d0cac",
+      "bytes": 3900,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md": {
+      "sha256": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+      "bytes": 3139,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md": {
+      "sha256": "1905da31e42fc0ab565fe67fe789e43be426787710bf58e500dc11bf1b8e2b4a",
+      "bytes": 6173,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md": {
+      "sha256": "c669a4c270f8c7ffedaff6cc456c0dbaf7a24020bb4830357f32d0e8883cc800",
+      "bytes": 3510,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml": {
+      "sha256": "60b43614f445a40f3d52d21869962189bdfe0252461317a6712a55d176797aa2",
+      "bytes": 338,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg": {
+      "sha256": "dad3203c0386ce1a697600ae82fc1e03f530111626192018df24dd7c5ac69eb0",
+      "bytes": 599,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md": {
+      "sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+      "bytes": 3731,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md": {
+      "sha256": "32be8fbaa5e67e807d7c7f7be964c56ab7f65bd6398784606090fcdd9e40a912",
+      "bytes": 2291,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md": {
+      "sha256": "2d232e7e314dd2ccbe3eed3a16c0ec9e06ca56f5c5d3f58756fe902b95f56711",
+      "bytes": 7132,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/LICENSE": {
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "bytes": 1070,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md": {
+      "sha256": "adc0c2c0f7bc3cc7612dfc781ee8681289b1542aae8eba0bb6d99361a3a903ed",
+      "bytes": 3151,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml": {
+      "sha256": "f0049fe541cbffe331d4ccb9e903ed49bb96f1011cefecd1ced49fbd1bd19da4",
+      "bytes": 480,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg": {
+      "sha256": "37e86ed29c77f13846f9c315627c5e139d1348d7eed26eef2ff94354c334239f",
+      "bytes": 574,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md": {
+      "sha256": "e8d797ba50e555d53500516e85f8b624f7ed11f5a7534e39220f2a74141e3d96",
+      "bytes": 3693,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md": {
+      "sha256": "2ed2ba4a226e88a6dfd0dce41bc5f3f4f56942e28b7d032b5bb936c5ff268880",
+      "bytes": 2601,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md": {
+      "sha256": "668d85251c25027ac1494c9bb89367fa3c1885c23424e3987d02f7fd0b02ca33",
+      "bytes": 1278,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md": {
+      "sha256": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+      "bytes": 4076,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/SKILL.md": {
+      "sha256": "fe02f63973521e86fa68a5fd775d01ab41fe7a797d26d8ae59dfa05bb25152ac",
+      "bytes": 3763,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml": {
+      "sha256": "3176532ba151974e4f6186c589a9e8ba59247367629ace97788cf70e1bdfe40a",
+      "bytes": 544,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg": {
+      "sha256": "60c4fbc478c5c5569c7db40ee7d2b90c061fb8e0b7a2274ec8757cbcadc6c837",
+      "bytes": 563,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md": {
+      "sha256": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0",
+      "bytes": 2497,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md": {
+      "sha256": "27a9bcf8babe88b0d72956a2774e5e45a5cfd3316d009c955f450a2ef8fb1b34",
+      "bytes": 2752,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md": {
+      "sha256": "ad1dcdeca15cc67179f1923f74f044d4e6304dbf1195afff9f93dba885054a29",
+      "bytes": 4396,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md": {
+      "sha256": "0d1297f0b6d03dfd429c9d8e0d912c841801b8207141651aca1f1a90fe9a12c6",
+      "bytes": 2625,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats/__init__.py": {
+      "sha256": "99c2467ca9127789eb63bb0c852119ffe4b75a9c5df8d07bcc27e8f89730d937",
+      "bytes": 178,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats/__main__.py": {
+      "sha256": "0ac0f6e6d0c19a9a6b2d769ec6b73e349e62aa3783f12746e081bccab2eca11c",
+      "bytes": 145,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats/cli.py": {
+      "sha256": "89856582e849bf17d31d363e85d22cc1440c561b20f3e7818901819fa41341a5",
+      "bytes": 3293,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats/core.py": {
+      "sha256": "d2bd9bfd7c4b2f413d38a3429aec96c805971dc7775e8e124ccbd6f6da60c937",
+      "bytes": 2729,
+      "mode": 420,
+      "symlink": false
+    },
+    "textstats/io.py": {
+      "sha256": "840e420abf011fce8d571664d64ada1f1417c6a2c929bcaa31dd3cb7b5a026f0",
+      "bytes": 998,
+      "mode": 420,
+      "symlink": false
+    }
+  },
+  "ignored_paths_excluded": true
+}

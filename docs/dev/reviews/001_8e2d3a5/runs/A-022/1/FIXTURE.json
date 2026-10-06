@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-10-05T18:36:23.171807+00:00",
+  "kind": "isolated existing repository worktree and new local bare remote; no clone",
+  "source_checkpoint": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+  "local_branch": "trial/a022-acceptance-change",
+  "local_destination": "/workspace/scratch/textstats-acceptance-change-remote-20261005.git",
+  "baseline_publication": "Exact source seeded to local trial ref; no product/hosted mutation"
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "case_id": "A-013",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "reason": "All five independent lifecycle criteria and final product exits are satisfied by durable consumer/assessor/native/provider evidence at exact published merge; input, publication, checker and recovery assistance retained. Full filesystem/native context isolation and installed routing are not certified.",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
+    "integration_branch": "main",
+    "integration_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
+    "merge_parents": [
+      "59debb649545125dd3aa00377ea115451b594271",
+      "6006fee487829299353525fa85afb035c155d865"
+    ],
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81"
+  },
+  "source": {
+    "commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+    "fingerprint": "33d65ea05b3299f1c2348802f95d1767dbccd5f72f4537a8ced52eaa1608fafd",
+    "file_count": 111,
+    "mismatches": []
+  },
+  "required_agent_checks": [
+    {
+      "id": "amended-selection",
+      "status": "Passed",
+      "reason": "Startup JOURNAL native83abf6/905db9 and current owners show T-013\u2013T-017 selection on amended Phase 2; historical T-010\u2013T-012 remain retired. Governing correction 40a1923 published before ac1acf0 production. No third phase or trial integration.",
+      "evidence": [
+        "../REQUEST.md",
+        "../START-SNAPSHOT.json",
+        "../JOURNAL.md",
+        "LIFECYCLE-COMMITS.json",
+        "QC-CURRENCY-RESOLUTION.json"
+      ]
+    },
+    {
+      "id": "literal-and-final-exits",
+      "status": "Passed",
+      "reason": "Exact independently expected API/baseline/ranges/removal/stdin/extracted distribution literals match observations and complete raw provenance. Retained make check completes 25 unit and 18 integration tests; eight extra borrowed-stdin/read-error/no-acquisition/locale probes and 13 public fences pass. Archive hash and all 52 member hashes match current committed product; 91 links under independent regex pass (consumer policy counted 93).",
+      "evidence": [
+        "COMMAND-RESULTS.json",
+        "LITERALS.json",
+        "INDEPENDENT-STDIN.json",
+        "DOC-EXAMPLES.json",
+        "LOCAL-LINKS.json",
+        "DISTRIBUTION-MANIFEST.json",
+        "FINALIZATION-NATIVE.json"
+      ]
+    },
+    {
+      "id": "phase-integration-order",
+      "status": "Passed",
+      "reason": "Per-task publication receipts precede advancement; e4d8fb8 final review publication and issue17/milestone6 closed readbacks precede 6006fee completed parent and d3f206a explicit two-parent merge. Retained prospective/merged checks and fresh continuation checks complete before ordinary target publication. Fresh exact remote main/phase agree; no new phase selected.",
+      "evidence": [
+        "../T013-PUBLICATION-NATIVE.json",
+        "../T015-PUBLICATION-NATIVE.json",
+        "../T017-PUBLICATION-NATIVE.json",
+        "../FINAL-PHASE-LIFECYCLE-NATIVE.json",
+        "../PHASE-BOUNDARY-PUBLICATION-NATIVE.json",
+        "../CONTINUATION-JOURNAL.md",
+        "../MAIN-PUBLICATION-NATIVE.json",
+        "FINALIZATION-NATIVE.json"
+      ]
+    },
+    {
+      "id": "final-review-hosted-and-todo",
+      "status": "Passed",
+      "reason": "Distinct T-017/2.3 final review and committed docs/dev/reports/phases/2/PHASE-REPORT.md supply separate code review/full product acceptance; IMPLEMENTATION-REPORT.md aggregates prior provenance and explicitly records TODO None, with historical corrected findings retained. Connector readback verifies 22 closed unique managed issues and all eight milestones closed; issues13\u201317 preserve exact authored body and exactly one matching comment each. Exact native membership permits review issue/milestone closure before integration.",
+      "evidence": [
+        "CONNECTOR-READBACK.json",
+        "LIVE-HOSTED.json",
+        "../FINAL-PHASE-LIFECYCLE-NATIVE.json",
+        "../ROOT-MILESTONE6-CLOSED-READBACK.json",
+        "LIFECYCLE-COMMITS.json"
+      ]
+    },
+    {
+      "id": "preparation-qc-currency",
+      "status": "Passed",
+      "reason": "Latest owning SPEC/PLAN/TASKS reviews address explicit later stdin-range clarification in upstream order before production; published governing40a1923 hash identities match. Current governing contracts are unchanged; TASKS differences are status/evidence only with 22 unique checked owners and equivalent contracts/dependencies. Readiness relies on semantic review and independent final exits.",
+      "evidence": [
+        "QC-IDENTITIES.json",
+        "QC-CURRENCY-RESOLUTION.json",
+        "../PREPARATION-PUBLICATION-NATIVE.json",
+        "LIFECYCLE-COMMITS.json",
+        "FINALIZATION-NATIVE.json"
+      ]
+    }
+  ],
+  "assistance": [
+    {
+      "kind": "input",
+      "evidence": "../INPUT-CLARIFICATION.json",
+      "description": "Explicit later stdin range composition clarified the originally derived unsupported stdin-range boundary before consumer production; assisted acceptance does not retrospectively grade the earlier unclarified input."
+    },
+    {
+      "kind": "primary-execution",
+      "evidence": "../REQUEST.md",
+      "description": "Concrete verified Git/hosted effects handed to primary for the same ordinary Git/protected adapter publication under standing human scope; receipt/readback gates retained. No platform bypass or unchanged denied retry observed."
+    },
+    {
+      "kind": "environment-recovery",
+      "evidence": "../ROOT-ISSUE14-SCOPE.json",
+      "description": "Initial scope14 transport failure/no HTTP retained, exact unapplied readback then bounded same-adapter success. Stale milestone aggregate resolved with exact closed member readbacks before closure."
+    },
+    {
+      "kind": "context-recovery",
+      "evidence": "../CONTINUATION-JOURNAL.md",
+      "description": "Consumer context lost after local main merge; fresh continuation reverified retained committed merge and published it without duplicate merge/task/hosted effects. Original JOURNAL ends at6006fee and remains unchanged."
+    },
+    {
+      "kind": "checker",
+      "evidence": "original-final-deterministic.json",
+      "description": "Original recursive ownership helper counted ignored extracted evidence copies as duplicate owners. Original failure retained; audited A006 Git-inventory variant excludes ignored generated copies and final 10/10 deterministic checks pass. Independent ownership/QC evidence corroborates."
+    }
+  ],
+  "first_attempt": "Assisted completion; original transport/checker failures and context interruption preserved, not an unassisted pass.",
+  "coverage_limits": [
+    "Independent context finalization uses retained independent captures; no native full-filesystem isolation certification.",
+    "Explicit pinned-source execution; automatic installed-plugin discovery/routing/activation not exercised.",
+    "Python3.12.14 executed; Python3.11 compatibility not executed.",
+    "Provider readbacks retained as metadata/flags/hashes; provider prose remains private.",
+    "No source change or confirmed plugin defect attribution established by A-013."
+  ],
+  "evidence_publication": {
+    "status": "pending",
+    "owner": "coordinator",
+    "observed_prior_evidence_commit": "226244c57c315b0f51ca287194e5633afc7ab954",
+    "remote": "origin",
+    "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+  },
+  "assessed_at": "2026-10-06T08:56:17.095490+00:00"
+}

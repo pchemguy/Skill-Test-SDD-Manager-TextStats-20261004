@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "001_8e2d3a5",
+  "phase": "P3",
+  "case_id": "A-008",
+  "attempt": 1,
+  "role": "coordinator",
+  "last_completed_action": "JSON suspension reconciled against live refs and hosted state; explicit Resume consumed stop",
+  "pending_operation": {
+    "kind": "preparation",
+    "status": "in_progress",
+    "description": "A-008 feature preparation"
+  },
+  "next_action": "Fresh feature preparation consumer then independent assessment",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "integration_branch": "main",
+    "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "merge_parents": [
+      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+      "b398e258cefc03dbc47630b83967db961a376eae"
+    ],
+    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
+    "evidence_commit": "06c6f5dd82cbaad8d6588ff207af894885515031"
+  },
+  "evidence_paths": [
+    "INPUTS.json",
+    "STOP-AFTER-CURRENT.json",
+    "COVERAGE.json",
+    "SUSPENSION.md",
+    "DIAGNOSTIC-REPORT.md",
+    "FIXTURE-DETACHMENT.json",
+    "suspension-recovery/CREDENTIAL-TRIAL.json",
+    "RECOVERY-PUBLICATION.json",
+    "runs/A-004/1/ASSESSMENT.json",
+    "runs/A-004/1/LOCAL-TASK-COMMIT.bundle",
+    "runs/A-005/1/CONSUMER-RESULT.md",
+    "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json",
+    "runs/A-005/1/rechecks/1/INTERVENTION.md",
+    "SUSPENSION-20261004-163642.json",
+    "runs/A-006/1/CONSUMER-RESULT.md",
+    "runs/A-006/1/JOURNAL.md",
+    "runs/A-006/1/independent-assessment/ASSESSMENT.json",
+    "runs/A-006/2/REQUEST.md",
+    "runs/A-006/2/CONTINUATION.json",
+    "runs/A-020/1/REQUEST.md",
+    "runs/A-020/1/INJECTION.json",
+    "runs/A-007/1/REQUEST.md",
+    "runs/A-007/1/CONSUMER-RESULT.md",
+    "runs/A-007/1/JOURNAL.md",
+    "SUSPENSION-JSON-2.1.md",
+    "runs/A-007/1/independent-assessment/ASSESSMENT.json"
+  ],
+  "updated_at": "2026-10-05T02:59:15.702095+00:00",
+  "case_results": [
+    {
+      "case_id": "A-006",
+      "attempt": 2,
+      "status": "Passed",
+      "reason": "Independent final assessment after completePhase1",
+      "assessment_path": "runs/A-006/2/independent-assessment/ASSESSMENT.json",
+      "assisted": true
+    },
+    {
+      "case_id": "A-020",
+      "attempt": 1,
+      "status": "Passed",
+      "reason": "Independent local-only preservation trial from A003retainedobjects",
+      "assessment_path": "runs/A-020/1/independent-assessment/ASSESSMENT.json"
+    },
+    {
+      "case_id": "A-007",
+      "attempt": 1,
+      "status": "Passed",
+      "assisted": true,
+      "assessment_path": "runs/A-007/1/independent-assessment/ASSESSMENT.json"
+    }
+  ],
+  "suspended": false,
+  "active_cases": [
+    {
+      "case_id": "A-008",
+      "role": "consumer",
+      "status": "Running"
+    },
+    {
+      "case_id": "A-015",
+      "role": "consumer",
+      "status": "Running",
+      "scope": "isolated local-remote staged-work trial"
+    },
+    {
+      "case_id": "A-026",
+      "role": "assessor",
+      "status": "Running",
+      "scope": "verification only; missing pre-existing-failure variant"
+    }
+  ]
+}

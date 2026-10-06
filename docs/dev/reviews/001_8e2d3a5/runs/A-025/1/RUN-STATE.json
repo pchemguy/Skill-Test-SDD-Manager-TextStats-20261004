@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-025",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent actual lifecycle checks",
+  "pending_operation": null,
+  "next_action": "Publish assessment",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "merge_parents": [
+      "d0087ff75e485cab832a28d6b501150eaf2ed249"
+    ]
+  },
+  "evidence_paths": [
+    "OBSERVATIONS.json"
+  ]
+}

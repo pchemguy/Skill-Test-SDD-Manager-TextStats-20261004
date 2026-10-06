@@ -1,0 +1,38 @@
+{
+  "before": {
+    "issue": 14,
+    "title": "[T-014] Complete stdin failure and interaction acceptance",
+    "state": "open",
+    "unique_marker": true,
+    "comment_count": 0,
+    "matching_completion_comments": 0,
+    "close_keys": [
+      "state",
+      "state_reason"
+    ],
+    "verified_commit_in_comment": true
+  },
+  "initial": {
+    "chunk_id": "b0df6c",
+    "wall_time_seconds": 1.001318337,
+    "session_id": 82308,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion": {
+    "chunk_id": "d24253",
+    "wall_time_seconds": 5.001385304,
+    "exit_code": 0,
+    "original_token_count": 440,
+    "output": "{\"at\": \"2026-10-06T04:20:38.812483+00:00\", \"method\": \"POST\", \"resource\": \"issues/14/comments\", \"exit_code\": 0, \"stdout_sha256\": \"43b60fbb22ac9d7066d01181276dd470d4048be13a99b6a2302019b8efcf0351\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue14-comment.json\", \"payload_sha256\": \"57c58195bb1218b680ccdbd1401db98d64d07bdfc36f2f4e8caaebd31d8f6e3c\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 201, \"result\": {\"id\": 6009262960, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/14#issuecomment-6009262960\", \"returned_owned_matches\": {}}}\n{\"at\": \"2026-10-06T04:20:43.685078+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/14\", \"exit_code\": 0, \"stdout_sha256\": \"bca6d00591c75c95c488d08f45e3ab8d705e142738083a591e8acc7e68c30c38\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue14-close.json\", \"payload_sha256\": \"db99f3203e2d3068933110610bcc0af6629dc86a808b19f289174b65e7ff929b\", \"payload_keys\": [\"state\", \"state_reason\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703073919, \"number\": 14, \"title\": \"[T-014] Complete stdin failure and interaction acceptance\", \"state\": \"closed\", \"state_reason\": \"completed\", \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/14\", \"milestone\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {\"state\": true, \"state_reason\": true}}}\n"
+  },
+  "readback": {
+    "issue": 14,
+    "title": "[T-014] Complete stdin failure and interaction acceptance",
+    "state": "closed",
+    "state_reason": "completed",
+    "body_preserved": true,
+    "comment_count": 1,
+    "matching_completion_comments": 1
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "time": "2026-10-05T03:21:33.063549+00:00",
+  "head": {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "2dae60081452d72482bd431475d8f0b88d2d9d8c\n",
+    "stderr": ""
+  },
+  "status": {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "parents": {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "rev-list",
+      "--parents",
+      "-n",
+      "1",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "2dae60081452d72482bd431475d8f0b88d2d9d8c d009899e39790c39be32ae77e7fe8294bf60d04c\n",
+    "stderr": ""
+  },
+  "remote": {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "ls-remote",
+      "/workspace/scratch/textstats-staged-remote-20261005.git",
+      "refs/heads/trial/a015-staged-recovery"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "2dae60081452d72482bd431475d8f0b88d2d9d8c\trefs/heads/trial/a015-staged-recovery\n",
+    "stderr": ""
+  },
+  "changed": {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "diff",
+      "--name-only",
+      "d009899e39790c39be32ae77e7fe8294bf60d04c",
+      "2dae60081452d72482bd431475d8f0b88d2d9d8c"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "README.md\ndocs/dev/TASKS.md\ntests/__init__.py\ntests/unit/__init__.py\ntests/unit/test_core.py\ntextstats/__init__.py\ntextstats/core.py\n",
+    "stderr": ""
+  },
+  "exact_staged_commit": {
+    "README.md": {
+      "expected": "a5c9f62b1b167b651186e0c9422001143f9b4cb6aaa8f8435957e8512f6e001f",
+      "actual": "a5c9f62b1b167b651186e0c9422001143f9b4cb6aaa8f8435957e8512f6e001f",
+      "equal": true
+    },
+    "docs/dev/TASKS.md": {
+      "expected": "c6af14e0a593c5504c206166d15d7a8ef1dbcc6936093ecaaf7cd6b2eb71a6fb",
+      "actual": "c6af14e0a593c5504c206166d15d7a8ef1dbcc6936093ecaaf7cd6b2eb71a6fb",
+      "equal": true
+    },
+    "tests/__init__.py": {
+      "expected": "e544cfe8c5530d704938107569891066f706429ef68cb8a1b996f99768516faf",
+      "actual": "e544cfe8c5530d704938107569891066f706429ef68cb8a1b996f99768516faf",
+      "equal": true
+    },
+    "tests/unit/__init__.py": {
+      "expected": "00e6f3ba6e15bda89b8cd58d2c4c81101464da0da5b860b0ac2a3df150fc2721",
+      "actual": "00e6f3ba6e15bda89b8cd58d2c4c81101464da0da5b860b0ac2a3df150fc2721",
+      "equal": true
+    },
+    "tests/unit/test_core.py": {
+      "expected": "c926935a3a16f59222526e274d5152962270278e3da160978763c56630708f51",
+      "actual": "c926935a3a16f59222526e274d5152962270278e3da160978763c56630708f51",
+      "equal": true
+    },
+    "textstats/__init__.py": {
+      "expected": "fc6bfaa1ad737c5abce51579f8d39482996c49130c0aae1e314fd39c53b0884d",
+      "actual": "fc6bfaa1ad737c5abce51579f8d39482996c49130c0aae1e314fd39c53b0884d",
+      "equal": true
+    },
+    "textstats/core.py": {
+      "expected": "4ecb2fd92815f1f68257b9a340318a89acdbce0c02fd660b9dbbbfd5d0f50a8b",
+      "actual": "4ecb2fd92815f1f68257b9a340318a89acdbce0c02fd660b9dbbbfd5d0f50a8b",
+      "equal": true
+    }
+  },
+  "export_integrity": {
+    "staged-files/README.md": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "workfiles/README.md": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "staged-files/docs/dev/TASKS.md": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "workfiles/docs/dev/TASKS.md": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "staged-files/tests/__init__.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "workfiles/tests/__init__.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "staged-files/tests/unit/__init__.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "workfiles/tests/unit/__init__.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "staged-files/tests/unit/test_core.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "workfiles/tests/unit/test_core.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "staged-files/textstats/__init__.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "workfiles/textstats/__init__.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "staged-files/textstats/core.py": {
+      "exists": true,
+      "hash_equal": true
+    },
+    "workfiles/textstats/core.py": {
+      "exists": true,
+      "hash_equal": true
+    }
+  },
+  "index_export_equal": true,
+  "unit": {
+    "args": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) ... ok\ntest_api_calls_are_silent (tests.unit.test_core.CountTextTests.test_api_calls_are_silent) ... ok\ntest_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) ... ok\ntest_input_is_unchanged (tests.unit.test_core.CountTextTests.test_input_is_unchanged) ... ok\ntest_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) ... ok\ntest_strip_bom_is_keyword_only_and_defaults_true (tests.unit.test_core.CountTextTests.test_strip_bom_is_keyword_only_and_defaults_true) ... ok\ntest_unicode_whitespace_splits_words (tests.unit.test_core.CountTextTests.test_unicode_whitespace_splits_words) ... ok\ntest_fields_cannot_be_changed (tests.unit.test_core.TextStatsTests.test_fields_cannot_be_changed) ... ok\ntest_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) ... ok\ntest_noninteger_fields_are_rejected (tests.unit.test_core.TextStatsTests.test_noninteger_fields_are_rejected) ... ok\ntest_values_are_nonnegative_integers (tests.unit.test_core.TextStatsTests.test_values_are_nonnegative_integers) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.001s\n\nOK\n"
+  },
+  "literal_vectors": [
+    {
+      "input": "",
+      "strip_bom": true,
+      "expected": [
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "input": "alpha beta",
+      "strip_bom": true,
+      "expected": [
+        1,
+        2
+      ],
+      "actual": [
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "input": "alpha\n",
+      "strip_bom": true,
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "input": "\n",
+      "strip_bom": true,
+      "expected": [
+        1,
+        0
+      ],
+      "actual": [
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "input": "alpha\r\nbeta\rgamma\n",
+      "strip_bom": true,
+      "expected": [
+        3,
+        3
+      ],
+      "actual": [
+        3,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "input": "alpha\n\n",
+      "strip_bom": true,
+      "expected": [
+        2,
+        1
+      ],
+      "actual": [
+        2,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "input": " \t",
+      "strip_bom": true,
+      "expected": [
+        1,
+        0
+      ],
+      "actual": [
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "input": "alpha\u2028beta",
+      "strip_bom": true,
+      "expected": [
+        1,
+        2
+      ],
+      "actual": [
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "input": "\ufeff",
+      "strip_bom": true,
+      "expected": [
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "input": "\ufeff",
+      "strip_bom": false,
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "input": "\ufeff\ufeff",
+      "strip_bom": true,
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "input": "a\u000bb\fc\u0085d\u2028e\u2029f",
+      "strip_bom": true,
+      "expected": [
+        1,
+        6
+      ],
+      "actual": [
+        1,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "input": "\r\n\r\n",
+      "strip_bom": true,
+      "expected": [
+        2,
+        0
+      ],
+      "actual": [
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "input": "a\ufeffb",
+      "strip_bom": true,
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1
+      ],
+      "passed": true
+    }
+  ],
+  "future_tasks": [
+    "- [ ] Phase 1 \u2014 Named-file utility",
+    "- [ ] Milestone 1.1 \u2014 Named-file counting MVP",
+    "- [x] T-001 \u2014 Establish immutable statistics and pure text counting",
+    "- [ ] T-002 \u2014 Integrate strict UTF-8 named-file API",
+    "- [ ] T-003 \u2014 Deliver the useful named-file module CLI",
+    "- [ ] T-004 \u2014 Review, test and report milestone 1.1",
+    "- [ ] Milestone 1.2 \u2014 Reliable documented distribution",
+    "- [ ] T-005 \u2014 Harden named-file API failure and resource behavior",
+    "- [ ] T-006 \u2014 Complete CLI diagnostics and public documentation",
+    "- [ ] T-007 \u2014 Establish isolated source-distribution acceptance",
+    "- [ ] T-008 \u2014 Review, test and report milestone 1.2",
+    "- [ ] Milestone 1.3 \u2014 Phase 1 review",
+    "- [ ] T-009 \u2014 Review, test and report phase 1",
+    "- [ ] Phase 2 \u2014 Output and source extensions",
+    "- [ ] Milestone 2.1 \u2014 JSON output",
+    "- [ ] T-010 \u2014 Add JSON rendering with preserved named-file behavior",
+    "- [ ] T-011 \u2014 Document and verify the JSON distribution boundary",
+    "- [ ] T-012 \u2014 Review, test and report milestone 2.1",
+    "- [ ] Milestone 2.2 \u2014 UTF-8 stdin and final release",
+    "- [ ] T-013 \u2014 Integrate borrowed binary stdin acquisition",
+    "- [ ] T-014 \u2014 Complete stdin failure and interaction acceptance",
+    "- [ ] T-015 \u2014 Complete source documentation and final distribution checks",
+    "- [ ] T-016 \u2014 Review, test and report milestone 2.2",
+    "- [ ] Milestone 2.3 \u2014 Phase 2 and final review",
+    "- [ ] T-017 \u2014 Review, test and report phase 2 and the complete product"
+  ],
+  "pinned_source_unchanged": true,
+  "no_additional_tasks": true
+}

@@ -1,0 +1,4 @@
+{
+  "title": "sdd-2.3-Phase-2-and-final-review",
+  "description": "Dedicated single phase code review/testing/report outcome after current delivery milestones complete/close and historical 2.1 retirement is reconciled. Exit: complete main SPEC acceptance, cross-source/BOM regressions, nonempty suites, runnable documentation and extracted-source distribution checks pass; blockers repaired; prior findings retained; phase report and final implementation report aggregate unresolved admissible TODOs and resolution references. Explicit verified phase integration and publication conclude the authorized full implementation when separately requested.\n\nCurrent accepted text-only amendment: f04f1c3da9fe6cabf92f506a422d6aa3e146078c; retained named-file exits verified unit22/integration13 and public/extracted-source checks. JSON is retired historical scope; stdin/final work remains pending. Stable milestone identity 2.3 preserved; historical reports remain unchanged."
+}

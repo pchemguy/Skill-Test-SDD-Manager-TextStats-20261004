@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-003",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent hosted projection blocked assessment",
+  "pending_operation": {
+    "kind": "api",
+    "status": "blocked",
+    "description": "Native GitHub phase label and milestone projection methods unavailable",
+    "identity": {
+      "repository": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git"
+    }
+  },
+  "next_action": "Publish independent assessment",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "merge_parents": [
+      "d0087ff75e485cab832a28d6b501150eaf2ed249"
+    ]
+  },
+  "evidence_paths": [
+    "OBSERVATIONS-1.json",
+    "HOSTED-READBACK-1.json",
+    "HOSTED-READBACK-2.json"
+  ]
+}

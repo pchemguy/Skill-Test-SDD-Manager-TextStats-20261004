@@ -1,0 +1,249 @@
+{
+  "refs": {
+    "product_branch": "feature/002_ea97182-line-ranges",
+    "product_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "remote": "origin",
+    "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+    "remote_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c"
+  },
+  "status": {
+    "args": [
+      "git",
+      "-C",
+      "/workspace/scratch/textstats-live-20261004",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "?? -json-9l969okj/\n",
+    "stderr": ""
+  },
+  "main": {
+    "args": [
+      "git",
+      "-C",
+      "/workspace/scratch/textstats-live-20261004",
+      "rev-parse",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "59debb649545125dd3aa00377ea115451b594271\n",
+    "stderr": ""
+  },
+  "remote": {
+    "args": [
+      "git",
+      "-C",
+      "/workspace/scratch/textstats-live-20261004",
+      "ls-remote",
+      "--heads",
+      "origin",
+      "feature/002_ea97182-line-ranges",
+      "phase/2-output-and-source-extensions",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "5b61f65bdbc1418a289633eb15b53ac190d68b2c\trefs/heads/feature/002_ea97182-line-ranges\n59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\nea97182d2d6a3984599238312a13e78d54d3221a\trefs/heads/phase/2-output-and-source-extensions\n",
+    "stderr": ""
+  },
+  "diff": {
+    "args": [
+      "git",
+      "-C",
+      "/workspace/scratch/textstats-live-20261004",
+      "diff",
+      "--name-status",
+      "ea97182d2d6a3984599238312a13e78d54d3221a",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "A\tdocs/dev/FEATURE-PLAN-REVIEW-REPORT.md\nA\tdocs/dev/FEATURE-PLAN.md\nA\tdocs/dev/FEATURE-SPEC-REVIEW-REPORT.md\nA\tdocs/dev/FEATURE-SPEC.md\nA\tdocs/dev/FEATURE-TASKS-REVIEW-REPORT.md\nA\tdocs/dev/FEATURE-TASKS.md\nA\tdocs/dev/features/002_ea97182/README.md\n",
+    "stderr": ""
+  },
+  "log": {
+    "args": [
+      "git",
+      "-C",
+      "/workspace/scratch/textstats-live-20261004",
+      "log",
+      "--format=%H %P %s",
+      "ea97182d2d6a3984599238312a13e78d54d3221a..HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "5b61f65bdbc1418a289633eb15b53ac190d68b2c 0b4247291c8510b8e8eb62f9658477300da63967 Derive range feature tasks and correct acceptance coverage\n0b4247291c8510b8e8eb62f9658477300da63967 8fb78f26dc78b53af885cd5f7695b097c9712b5f Plan bounded named-file range delivery and review its dependencies\n8fb78f26dc78b53af885cd5f7695b097c9712b5f ea97182d2d6a3984599238312a13e78d54d3221a Specify named-file line range feature and review its contracts\n",
+    "stderr": ""
+  },
+  "diffcheck": {
+    "args": [
+      "git",
+      "-C",
+      "/workspace/scratch/textstats-live-20261004",
+      "diff",
+      "--check",
+      "ea97182d2d6a3984599238312a13e78d54d3221a",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "fixture_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+  "report_identity_checks": [
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "FEATURE-PLAN.md",
+      "expected": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+      "actual": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+      "match": true
+    },
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "FEATURE-SPEC.md",
+      "expected": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+      "actual": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+      "match": true
+    },
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "expected": "bc194a3f729794c3156357813db75630470e9c4d07f48277c924e6c7498ec1e6",
+      "actual": "bc194a3f729794c3156357813db75630470e9c4d07f48277c924e6c7498ec1e6",
+      "match": true
+    },
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "PLAN.md",
+      "expected": "8ff3ef53f126a79987490f28ad2f554842630c096c13f441111b55d796279bb8",
+      "actual": "8ff3ef53f126a79987490f28ad2f554842630c096c13f441111b55d796279bb8",
+      "match": true
+    },
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "layout.md",
+      "expected": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+      "actual": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+      "match": true
+    },
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "ARCHITECTURE.md",
+      "expected": "0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c",
+      "actual": "0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c",
+      "match": true
+    },
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "DECOMPOSITION.md",
+      "expected": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+      "actual": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+      "match": true
+    },
+    {
+      "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "path": "TASKS.md",
+      "expected": "3523f6c900f776a0b1d90ce389295dc63650c9b54c5379121d6e85449a1fe9c1",
+      "actual": "3523f6c900f776a0b1d90ce389295dc63650c9b54c5379121d6e85449a1fe9c1",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "FEATURE-TASKS.md",
+      "expected": "7734ece5dec88c86e04b6163b06c49dd78236d23fa1337fc04e4a988554de73b",
+      "actual": "7734ece5dec88c86e04b6163b06c49dd78236d23fa1337fc04e4a988554de73b",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "FEATURE-PLAN.md",
+      "expected": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+      "actual": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "expected": "df68f887aada16b7f822c5952852a1fc89c245231704596d242fe536fde10dcc",
+      "actual": "df68f887aada16b7f822c5952852a1fc89c245231704596d242fe536fde10dcc",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "FEATURE-SPEC.md",
+      "expected": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+      "actual": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "expected": "bc194a3f729794c3156357813db75630470e9c4d07f48277c924e6c7498ec1e6",
+      "actual": "bc194a3f729794c3156357813db75630470e9c4d07f48277c924e6c7498ec1e6",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "TASKS.md",
+      "expected": "3523f6c900f776a0b1d90ce389295dc63650c9b54c5379121d6e85449a1fe9c1",
+      "actual": "3523f6c900f776a0b1d90ce389295dc63650c9b54c5379121d6e85449a1fe9c1",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "layout.md",
+      "expected": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+      "actual": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+      "match": true
+    },
+    {
+      "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "path": "DECOMPOSITION.md",
+      "expected": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+      "actual": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+      "match": true
+    },
+    {
+      "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "path": "FEATURE-SPEC.md",
+      "expected": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+      "actual": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+      "match": true
+    },
+    {
+      "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "path": "PROJECT.md",
+      "expected": "85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24",
+      "actual": "85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24",
+      "match": true
+    },
+    {
+      "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "path": "ARCHITECTURE.md",
+      "expected": "0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c",
+      "actual": "0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c",
+      "match": true
+    },
+    {
+      "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "path": "DECOMPOSITION.md",
+      "expected": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+      "actual": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+      "match": true
+    },
+    {
+      "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "path": "SPEC.md",
+      "expected": "8cfd533f70463882dac3acf12930f17e22f5cd0d57266815fad02aae977c77eb",
+      "actual": "8cfd533f70463882dac3acf12930f17e22f5cd0d57266815fad02aae977c77eb",
+      "match": true
+    },
+    {
+      "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "path": "features/002_ea97182/README.md",
+      "expected": "a1b81bc6c130e03020d03591c751dd6cdc4251a348927f814aee52bb2999c86e",
+      "actual": "a1b81bc6c130e03020d03591c751dd6cdc4251a348927f814aee52bb2999c86e",
+      "match": true
+    }
+  ]
+}

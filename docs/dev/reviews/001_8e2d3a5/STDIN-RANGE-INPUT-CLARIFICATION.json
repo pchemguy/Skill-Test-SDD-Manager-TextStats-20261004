@@ -1,0 +1,13 @@
+{
+  "finding": "INPUT-STDIN-RANGE-001",
+  "recorded_at": "2026-10-05T18:53:58.748354+00:00",
+  "original_brief_path": "/workspace/scratch/textstats-live-harness-20261004/harness/cases/consumer/preparation.md",
+  "original_brief_sha256": "54074af951298328dc8eccd166747f7939fd69de4a9e325eeee9f7dd224c4080",
+  "original_scope": "Named-file range feature delivery; source-independent compatibility with future stdin is a design constraint, stdin acquisition/delivery belongs later milestone.",
+  "observed_product_checkpoint": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+  "observed_original_statement": "Both output modes and BOM policies apply to whole-input stdin; --lines with INPUT - is unsupported.",
+  "original_statement_present": true,
+  "diagnostic": "Product derived an explicit no-stdin-range final boundary from a brief that stated future compatibility without an explicit later composition command. Later independent acceptance requires retained range/BOM semantics on stdin. Do not silently edit current removal scope or frozen contracts; give a concrete ordinary later stdin request and retain clarification as assistance. Source/input/consumer attribution remains unresolved until final independent diagnostics.",
+  "planned_selected_clarification": "At the later stdin milestone, apply retained range selection to stdin too using the same syntax/validation, complete strict UTF-8 decode, single BOM normalization, original terminators and EOF semantics. Update affected governing owners/current QC before production consumes them. The earlier named-file feature boundary did not deliver stdin but must not cap this later selected stdin outcome.",
+  "stopping_boundary": "No A013 dispatch until A012 independent published amendment gate; no extra A012 implementation or current governing edit by coordinator."
+}

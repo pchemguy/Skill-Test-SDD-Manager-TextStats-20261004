@@ -1,0 +1,11 @@
+{
+  "preparation_commit": "40a192353dc97227714a602e9eb301d46fd97c4a",
+  "all_report_hashes_match_preparation": true,
+  "governing_material_files_unchanged": true,
+  "task_contract_scope_dependencies_unchanged": true,
+  "task_differences": [],
+  "owner_count": 22,
+  "all_checked": true,
+  "unique": true,
+  "ready_semantic_assessment": "Current owners supply stdin range/BOM/complete-decode/source-error/lifetime and docs/distribution coverage; final review remains a separate owning task. Exact latest hashes match published governing checkpoint. Status and evidence additions do not alter reviewed decomposition, dependencies or contracts."
+}

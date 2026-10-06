@@ -1,0 +1,102 @@
+[
+  {
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_expected_errors_are_identified_and_atomic (tests.unit.test_cli.CliFailureTests.test_expected_errors_are_identified_and_atomic) ... ok\ntest_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok\ntest_fields_are_immutable (tests.unit.test_core.StatisticsTests.test_fields_are_immutable) ... ok\ntest_negative_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected) ... ok\ntest_noninteger_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_noninteger_counts_are_rejected) ... ok\ntest_public_statistics_value (tests.unit.test_core.StatisticsTests.test_public_statistics_value) ... ok\ntest_zero_counts_are_valid (tests.unit.test_core.StatisticsTests.test_zero_counts_are_valid) ... ok\ntest_api_is_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_api_is_silent_and_input_unchanged) ... ok\ntest_count_text_is_public (tests.unit.test_core.TextCountingTests.test_count_text_is_public) ... ok\ntest_default_bom_policy_and_keyword_only_option (tests.unit.test_core.TextCountingTests.test_default_bom_policy_and_keyword_only_option) ... ok\ntest_only_one_initial_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_initial_bom_is_removed) ... ok\ntest_specification_samples (tests.unit.test_core.TextCountingTests.test_specification_samples) ... ok\ntest_terminator_boundaries (tests.unit.test_core.TextCountingTests.test_terminator_boundaries) ... ok\ntest_unicode_whitespace_is_not_a_line_terminator (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_is_not_a_line_terminator) ... ok\ntest_open_failure_is_silent_and_preserves_exception (tests.unit.test_file_api.FileFailureTests.test_open_failure_is_silent_and_preserves_exception) ... ok\ntest_read_decode_and_close_failure_are_atomic_and_close_owned_handle (tests.unit.test_file_api.FileFailureTests.test_read_decode_and_close_failure_are_atomic_and_close_owned_handle) ... ok\ntest_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok\ntest_owned_handle_closes_on_range_success_and_failure (tests.unit.test_ranges.RangeResourceTests.test_owned_handle_closes_on_range_success_and_failure) ... ok\ntest_invalid_usage_before_either_acquisition (tests.unit.test_ranges.RangeValidationTests.test_invalid_usage_before_either_acquisition) ... ok\ntest_normalization_once_and_whole_api (tests.unit.test_ranges.SelectionTests.test_normalization_once_and_whole_api) ... ok\ntest_selection_contract (tests.unit.test_ranges.SelectionTests.test_selection_contract) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.042s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_json_counts_types_bom_orders_and_text_default (tests.integration.test_cli.JsonModuleTests.test_json_counts_types_bom_orders_and_text_default) ... ok\ntest_json_errors_remain_atomic_and_identify_input (tests.integration.test_cli.JsonModuleTests.test_json_errors_remain_atomic_and_identify_input) ... ok\ntest_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok\ntest_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok\ntest_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok\ntest_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok\ntest_expected_file_failures (tests.integration.test_cli.ModuleFailureTests.test_expected_file_failures) ... ok\ntest_extracted_package_public_docs_and_module_contract (tests.integration.test_distribution.SourceDistributionTests.test_extracted_package_public_docs_and_module_contract) ... ok\ntest_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok\ntest_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok\ntest_real_missing_directory_and_malformed_files_are_silent_and_unchanged (tests.integration.test_file_api.FileFailureIntegrationTests.test_real_missing_directory_and_malformed_files_are_silent_and_unchanged) ... ok\ntest_huge_leading_zero_bom_dash_and_failures (tests.integration.test_ranges.RangeModuleTests.test_huge_leading_zero_bom_dash_and_failures) ... ok\ntest_supplied_rows_formats_spellings_and_order (tests.integration.test_ranges.RangeModuleTests.test_supplied_rows_formats_spellings_and_order) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 10.883s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "make",
+      "dist",
+      "DIST_DIR=/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution",
+      "PYTHON=python3"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-20261004",
+    "returncode": 0,
+    "stdout": "mkdir -p \"/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution\"\npython3 -m tarfile -c \"/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/textstats.tar.gz\" textstats/*.py README.md Makefile AI_DISCLOSURE.md SDD-MANAGER.md docs tests/__init__.py tests/unit/*.py tests/integration/*.py\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/extracted",
+      "--suite",
+      "distribution",
+      "--output",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-distribution.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-COMMANDS-distribution.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/extracted",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/extracted",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-ranges.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-COMMANDS-ranges.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/extracted",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/extracted",
+      "--suite",
+      "ranges-json",
+      "--output",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-ranges-json.json",
+      "--provenance",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/EXTRACTED-COMMANDS-ranges-json.json"
+    ],
+    "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/distribution/extracted",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "time": "2026-10-04T20:27:47.294376+00:00",
+  "head": "5719983f2d11266dba58bc8b149505c2519df4cb",
+  "parents": [
+    "d009899e39790c39be32ae77e7fe8294bf60d04c"
+  ],
+  "branch": "trial/a020-preservation",
+  "main": "59debb649545125dd3aa00377ea115451b594271",
+  "status": "AM notes/local-retained.txt\n?? notes/untracked-retained.txt\n",
+  "paths": [
+    "README.md",
+    "docs/dev/TASKS.md",
+    "tests/__init__.py",
+    "tests/unit/__init__.py",
+    "tests/unit/test_core.py",
+    "textstats/__init__.py",
+    "textstats/core.py"
+  ],
+  "sentinels": {
+    "notes/local-retained.txt": {
+      "sha256": "4970aa122bf10f99fa0a9d57d6d6a5395f274dc4e5e4d6b06f5a7e78f238e83d",
+      "mode": 420,
+      "index": "100644 e67b2942395976ee170f73df244934e7f3f1ab77 0\tnotes/local-retained.txt\n",
+      "staged_sha256": "2277c4156d3b0459bea6b09ca06d307ac62a494d4914d8c27cf4413708d31b72"
+    },
+    "notes/untracked-retained.txt": {
+      "sha256": "b6a8002f014da482385075e3fb010603833a60f168f685861439ed7717e5afe4",
+      "mode": 420,
+      "index": ""
+    }
+  },
+  "preserved_exactly": true,
+  "main_preserved": true,
+  "owned_index_delta": "notes/local-retained.txt\n",
+  "owned_worktree_delta": "notes/local-retained.txt\n",
+  "checked_tasks": [
+    "- [x] T-001 \u2014 Establish immutable statistics and pure text counting"
+  ],
+  "plugin_pin": {
+    "commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+    "files": 111,
+    "mismatches": []
+  }
+}

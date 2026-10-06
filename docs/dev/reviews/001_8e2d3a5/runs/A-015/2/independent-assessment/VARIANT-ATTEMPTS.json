@@ -1,0 +1,5 @@
+{
+  "first_adapter_attempt": "AttributeError: core.assess does not exist; no assessment output generated",
+  "second_adapter_attempt": "core.assessment invoked, unchanged contract checks",
+  "source_modified": false
+}

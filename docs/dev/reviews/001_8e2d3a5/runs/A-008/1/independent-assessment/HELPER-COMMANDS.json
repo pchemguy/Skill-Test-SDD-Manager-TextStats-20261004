@@ -1,0 +1,56 @@
+[
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-008.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/ORIGINAL-DETERMINISTIC.json"
+    ],
+    "returncode": 2,
+    "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"invalid_schema\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-008.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/ORIGINAL-DETERMINISTIC.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "",
+    "input_intervention": "Removed coordinator-only extra fields suspended/active_cases in assessor-local checkpoint to meet harness schema; product unchanged."
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-006/2/checker-variant/assess_git_owners.py",
+      "--inputs",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/INPUTS.json",
+      "--run-state",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/RUN-STATE.json",
+      "--contract",
+      "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-008.json",
+      "--output",
+      "/workspace/scratch/textstats-live-harness-20261004/assessments/A-008-1/VARIANT-DETERMINISTIC.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "variant_sha256": "10c4cce8ed9e275d0d36b207578ca8399104c818858d8364d490bb47020875c8",
+    "intervention": "Existing disclosed CHK002 Git candidate-inventory variant after original duplicate ownership failure."
+  }
+]

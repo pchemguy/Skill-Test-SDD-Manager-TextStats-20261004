@@ -1,0 +1,89 @@
+[
+  {
+    "resource": "milestones/7",
+    "exit_code": 0,
+    "http_status": 200,
+    "number": 7,
+    "id": 18320787,
+    "title": "sdd-2.4-Named-file-line-ranges",
+    "state": "open",
+    "milestone_number": null,
+    "labels": []
+  },
+  {
+    "resource": "milestones/8",
+    "exit_code": 0,
+    "http_status": 200,
+    "number": 8,
+    "id": 18320791,
+    "title": "sdd-2.5-Range-feature-review",
+    "state": "open",
+    "milestone_number": null,
+    "labels": []
+  },
+  {
+    "resource": "issues/18",
+    "exit_code": 0,
+    "http_status": 200,
+    "number": 18,
+    "id": 5709579322,
+    "title": "[T-018] Establish normalized logical-line selection seam",
+    "state": "open",
+    "milestone_number": 7,
+    "labels": [
+      "sdd-phase-2-Output-and-source-extensions"
+    ]
+  },
+  {
+    "resource": "issues/19",
+    "exit_code": 0,
+    "http_status": 200,
+    "number": 19,
+    "id": 5709580976,
+    "title": "[T-019] Integrate validated named-file range text and JSON commands",
+    "state": "open",
+    "milestone_number": 7,
+    "labels": [
+      "sdd-phase-2-Output-and-source-extensions"
+    ]
+  },
+  {
+    "resource": "issues/20",
+    "exit_code": 0,
+    "http_status": 200,
+    "number": 20,
+    "id": 5709582158,
+    "title": "[T-020] Document ranges and verify extracted-source acceptance",
+    "state": "open",
+    "milestone_number": 7,
+    "labels": [
+      "sdd-phase-2-Output-and-source-extensions"
+    ]
+  },
+  {
+    "resource": "issues/21",
+    "exit_code": 0,
+    "http_status": 200,
+    "number": 21,
+    "id": 5709583581,
+    "title": "[T-021] Review, test and report range milestone 2.4",
+    "state": "open",
+    "milestone_number": 7,
+    "labels": [
+      "sdd-phase-2-Output-and-source-extensions"
+    ]
+  },
+  {
+    "resource": "issues/22",
+    "exit_code": 0,
+    "http_status": 200,
+    "number": 22,
+    "id": 5709585290,
+    "title": "[T-022] Review, test and report the named-file range feature",
+    "state": "open",
+    "milestone_number": 8,
+    "labels": [
+      "sdd-phase-2-Output-and-source-extensions"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-010",
+      "status": "Passed",
+      "assessment_path": "../../../runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "merge_parents": [
+          "ea97182d2d6a3984599238312a13e78d54d3221a",
+          "d518cc23650018542e43d8fb5a63f44a4d283518"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "5027c2deb84abc4550dd967bc8719f740172120d",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Use isolated existing worktree /workspace/scratch/textstats-acceptance-change-worktree-20261005, branch trial/a022-acceptance-change at0e4741465c3e086d2ab95c5af73ca89371c16fac. The named-file range feature is delivered, T-019 is checked, and phase2 remains incomplete. Inspect current product authorities and evidence. Only this isolated trial is selected: governing acceptance incorporation and next-work orientation; no production/test edits or implementation. Authorized publication destination is absolute local bare URL /workspace/scratch/textstats-acceptance-change-remote-20261005.git; publish owned document results there with exact ref readback. Do not use origin for publication, mutate shared origin/config, integrate into live branches, or perform hosted operations. Follow product AGENTS and immutable textstats-run-resources/plugin/skills at019eb354cf0921ebd6056e6579763ac33d0baec2. Before authority decisions read pinned sdd-manage/references/revision-authorization.md. Actual human full campaign GO and Resume authorize this bounded isolated trial; local-only scope controls effects. No clones/reset/stash/cleanup/forcepush, credential/helper source inspection, frozen-package edits or /pyenv access.",
+    "acceptance_change": "Expand the named-file --lines START:END endpoint grammar from ASCII decimal digits to all Unicode decimal digits (Unicode category Nd), including mixed ASCII/Unicode decimal endpoints and leading zeros. For example --lines \u0661:\u0662 selects inclusive lines1\u20132 and --lines \uff11:\uff12 does likewise. Preserve positivity, START<=END, full-input strict UTF-8 decode, BOM policy, existing EOF semantics, single option and usage-before-input; retain rejection of signs, spaces and non-decimal numerals such as \u00b2. This revises the delivered CLI acceptance associated with the existing T-019 owner; only incorporate the revised acceptance and report next executable work now."
+  }
+}

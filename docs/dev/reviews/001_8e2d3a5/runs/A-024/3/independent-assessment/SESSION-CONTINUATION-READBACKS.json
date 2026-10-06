@@ -1,0 +1,73 @@
+{
+  "readbacks": [
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-access-tools-20261005/tracking-access.py",
+        "GET",
+        "issues/4"
+      ],
+      "cwd": "/workspace/scratch/textstats-access-worktree-20261005",
+      "exit": 0,
+      "result": {
+        "transport": "curl",
+        "http_status": 200,
+        "result": {
+          "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/4",
+          "id": 5700124593,
+          "number": 4,
+          "title": "[T-004] Review, test and report milestone 1.1",
+          "state": "closed",
+          "state_reason": "completed"
+        }
+      },
+      "stderr_empty": true,
+      "stdout_sha256": "79bc0b705539d6dc0613332f8620836fc17657401754bb8110e26a596cb622a8"
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-access-tools-20261005/tracking-access.py",
+        "GET",
+        "milestones/1"
+      ],
+      "cwd": "/workspace/scratch/textstats-access-worktree-20261005",
+      "exit": 0,
+      "result": {
+        "transport": "curl",
+        "http_status": 200,
+        "result": {
+          "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/1",
+          "id": 18303256,
+          "number": 1,
+          "title": "sdd-1.1-Named-file-counting-MVP",
+          "open_issues": 0,
+          "closed_issues": 4,
+          "state": "closed"
+        }
+      },
+      "stderr_empty": true,
+      "stdout_sha256": "de8bfc7127521146518d09a514e79f70aa43095cef878710c87cbe3ada0c99e6"
+    }
+  ],
+  "assessor_added_events": [
+    {
+      "timestamp": "2026-10-05T13:28:59.870500+00:00",
+      "method": "GET",
+      "resource": "issues/4",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    },
+    {
+      "timestamp": "2026-10-05T13:29:08.254136+00:00",
+      "method": "GET",
+      "resource": "milestones/1",
+      "mode": "restored",
+      "sent": true,
+      "http_status": 200,
+      "exit_status": 0
+    }
+  ]
+}

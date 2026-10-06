@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-10-05T13:22:13.175008+00:00",
+  "assessment_path": "docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/ASSESSMENT.json",
+  "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
+  "remote_ref": "refs/heads/revision/001_8e2d3a5-live-acceptance",
+  "remote_commit": "e8463fb0c8ff998be58883424ffacddd6f80796c",
+  "remote_observation_exit": 0,
+  "local_assessment_sha256": "c07da6aff6c185a9eae75b34d8ba838f4d35f6394260f12f3671f91431337739",
+  "published_object_read_exit": 0,
+  "published_bytes_equal": true
+}

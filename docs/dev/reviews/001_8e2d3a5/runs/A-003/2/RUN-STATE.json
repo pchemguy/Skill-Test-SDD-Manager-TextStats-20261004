@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-003",
+  "attempt": 2,
+  "role": "assessor",
+  "last_completed_action": "Final native tracking and current preparation readiness readback",
+  "pending_operation": null,
+  "next_action": "Publish independent assessment",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "merge_parents": [
+      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+    ]
+  },
+  "evidence_paths": [
+    "GIT-OBSERVATIONS.json",
+    "CONNECTOR-ISSUES.json",
+    "INDEPENDENT-CHECKS.json"
+  ]
+}

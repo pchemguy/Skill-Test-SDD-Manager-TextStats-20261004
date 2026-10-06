@@ -1,0 +1,10 @@
+{
+  "head": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "published_product_main": "59debb649545125dd3aa00377ea115451b594271",
+  "reconstructible_objects": "retained head is ancestor of published actual Phase 1 merge; no dirty product bytes",
+  "destination": "/workspace/scratch/textstats-rejected-remote-20261005.git",
+  "destination_ref": "refs/heads/trial/a018-rejected-publication",
+  "pending_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "remote_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+  "scope": "local-only rejecting hook; no hosted claim"
+}

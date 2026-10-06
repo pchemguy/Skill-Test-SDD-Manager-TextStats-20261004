@@ -1,0 +1,17 @@
+{
+  "human_instruction": "Resume",
+  "consumed_at": "2026-10-05T18:28:23.062723+00:00",
+  "original_stop": {
+    "instruction": "Perform conrolled suspension",
+    "normalized_instruction": "Perform controlled suspension",
+    "requested_at": "2026-10-05T16:51:45+03:00",
+    "status": "reached; dispatch suspended",
+    "reached_at": "2026-10-05T13:59:19.776352+00:00",
+    "boundary": "Published feature integration; unfinished independent A010 acceptance preserved",
+    "next_action": "Remain suspended until explicit human Resume; then reconcile exact state and finish existing assessment before dependent work",
+    "native_process_qualification": "Workers stopped. Two earlier read-only assessor subprocess effects are unknown; no safe identity/control retained. No full native process quiescence claim."
+  },
+  "product_ref_verified": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+  "evidence_ref_verified": "dddadd025843b8b7b7f689f18652ea047238965e",
+  "limits": "Two older readonly subprocess outcomes remain unknown; no replay or full quiescence claim."
+}

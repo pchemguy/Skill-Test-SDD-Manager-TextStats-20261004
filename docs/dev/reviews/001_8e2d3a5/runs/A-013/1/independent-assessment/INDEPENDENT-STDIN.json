@@ -1,0 +1,70 @@
+[
+  {
+    "name": "mixed",
+    "status": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": "",
+    "reads": 1,
+    "closed": false,
+    "passed": true
+  },
+  {
+    "name": "keep",
+    "status": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": "",
+    "reads": 1,
+    "closed": false,
+    "passed": true
+  },
+  {
+    "name": "read-error",
+    "status": 1,
+    "stdout": "",
+    "stderr": "textstats: stdin: independent read failure\n",
+    "reads": 1,
+    "closed": false,
+    "passed": true
+  },
+  {
+    "name": "decode-after",
+    "status": 1,
+    "stdout": "",
+    "stderr": "textstats: stdin: 'utf-8' codec can't decode byte 0xff in position 3: invalid start byte\n",
+    "reads": 1,
+    "closed": false,
+    "passed": true
+  },
+  {
+    "name": "invalid-before",
+    "status": 2,
+    "stdout": "",
+    "stderr": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n",
+    "reads": 0,
+    "closed": false,
+    "passed": true
+  },
+  {
+    "name": "json-before",
+    "status": 2,
+    "stdout": "",
+    "stderr": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: unrecognized arguments: --json\n",
+    "reads": 0,
+    "closed": false,
+    "passed": true
+  },
+  {
+    "locale": "C",
+    "status": 0,
+    "stdout": "lines=1 words=2\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "locale": "C.UTF-8",
+    "status": 0,
+    "stdout": "lines=1 words=2\n",
+    "stderr": "",
+    "passed": true
+  }
+]

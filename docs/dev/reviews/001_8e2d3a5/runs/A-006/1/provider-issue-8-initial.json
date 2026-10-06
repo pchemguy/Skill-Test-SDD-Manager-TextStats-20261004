@@ -1,0 +1,45 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "structuredContent": {
+      "issue": {
+        "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/8",
+        "title": "[T-008] Review, test and report milestone 1.2",
+        "issue_number": 8,
+        "body_sha256": "574d99635fcc7e88918799e761562ddf30de13020155546883f0613d2bfc732d",
+        "task_markers": [
+          "sdd-forge:task-id=T-008"
+        ],
+        "state": "open",
+        "user": {
+          "login": "pchemguy",
+          "name": "pchemguy",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "id": 39730837
+        },
+        "assignees": null,
+        "labels": [
+          {
+            "name": "sdd-phase-1-Named-file-utility",
+            "color": "1d76db",
+            "description_sha256": "1d10e5e13dcb525725652cbd824d6dc4ba7d45e53a176d6d5435804d013cdef3"
+          }
+        ],
+        "milestone": 2,
+        "state_reason": null,
+        "comments": 0,
+        "created_at": "2026-10-04T14:20:53Z",
+        "updated_at": "2026-10-04T14:20:53Z",
+        "closed_at": null,
+        "display_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/8",
+        "display_title": "[T-008] Review, test and report milestone 1.2"
+      },
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/8",
+      "title": "[T-008] Review, test and report milestone 1.2",
+      "display_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/8",
+      "display_title": "[T-008] Review, test and report milestone 1.2"
+    },
+    "isError": false
+  }
+}

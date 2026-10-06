@@ -1,0 +1,7 @@
+{
+  "chunk_id": "44356e",
+  "wall_time_seconds": 2.027e-05,
+  "exit_code": 0,
+  "original_token_count": 209,
+  "output": "{\"transport\": \"curl\", \"http_status\": 200, \"result\": {\"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/3\", \"id\": 18303268, \"number\": 3, \"title\": \"sdd-1.3-Phase-1-review\", \"description_sha256\": \"0fdb02b760e43ed1b245ceae4b451b208885dbd9a790642b8bec67531135b790\", \"open_issues\": 1, \"closed_issues\": 0, \"state\": \"open\"}}\n"
+}

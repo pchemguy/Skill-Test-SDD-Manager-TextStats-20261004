@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-017",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent final actual task checks",
+  "pending_operation": null,
+  "next_action": "Publish final Blocked lifecycle assessment",
+  "checkpoint_refs": {
+    "product_branch": "trial/a017-required-check",
+    "product_commit": "81399c76355c2a9e3320bf77ddc3f297a8b6ba9a",
+    "remote": "/workspace/scratch/textstats-required-check-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a017-required-check",
+    "remote_commit": "81399c76355c2a9e3320bf77ddc3f297a8b6ba9a"
+  },
+  "evidence_paths": [
+    "baseline.json",
+    "first-owned-edit.json",
+    "independent-required-test.json"
+  ]
+}

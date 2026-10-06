@@ -1,0 +1,165 @@
+{
+  "assessed_at": "2026-10-04T16:22:13.758967+00:00",
+  "variant_exact": true,
+  "observations_exact": true,
+  "source_pin_unchanged": true,
+  "pinned_file_count": 111,
+  "a006_sha256": "cd85b2355aaaee4027b73dc049397a15ecdffa1b787f460bfcae4c34efed322a",
+  "scope_anchors": {
+    "scenario": "Deliver Phase 1 milestone 1.1 as useful named-file API/CLI counting. Milestone 1.2 establishes failure handling, API/module docs, README and distribution exits. Integrate Phase 1 only when all exits pass.",
+    "plan": [
+      [
+        9,
+        "Scope: immutable public value, count_text/count_file, exact text/BOM semantics, named-file UTF-8 success, and useful module CLI with one input, help, --keep-bom and -- handling. API and CLI agree on counts. Establish real, discoverable unit/integration checks alongside the slice. Included contracts: S-1/S-2, S-3 success and owned success-handle lifecycle, S-4 success/help/option validation. Required failure hardening and release documentation/distribution conclude in 1.2; JSON and stdin conclude in phase 2."
+      ],
+      [
+        15,
+        "Prerequisite: 1.1 complete. Scope: all file/decode/resource and CLI diagnostic failures, invalid invocation before acquisition, public API/module docs, runnable README and source distribution checks. Included contracts: complete S-3/S-4 and phase 1 S-7. Keep the 1.1 path working throughout."
+      ],
+      [
+        17,
+        "Exit: missing/unreadable/malformed inputs, failure silence and status/diagnostics, handle closure, unchanged input and no partial success are verified; nonempty product unit/integration suites pass independently; documented examples work; an isolated extracted source package runs python -m textstats. Workflow fixtures remain a separate suite. Final milestone code review/testing/repair/report is required. Demonstrate useful failure diagnostics and the extracted-package invocation to inform release readiness."
+      ]
+    ],
+    "t006": "Useful input-identifying diagnostics/statuses/no traceback owned by T-006 in milestone 1.2."
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD",
+        "main"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "159c662e06405b1fbf696e8e9d9d5d47024187be\n4c275cc46fc0163c9e1e50871d3cc33c4c38567e\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "phase/1-named-file-utility\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/phase/1-named-file-utility"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e\trefs/heads/main\n159c662e06405b1fbf696e8e9d9d5d47024187be\trefs/heads/phase/1-named-file-utility\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "--",
+        "textstats",
+        "tests",
+        "textstats-run-resources",
+        "docs/dev/PLAN.md",
+        "docs/dev/TASKS.md",
+        "docs/dev/reports/phases/1/1.1.md"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+        "GET",
+        "milestones/1"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-20261004",
+      "returncode": 0,
+      "stdout": "{\"transport\": \"curl\", \"http_status\": 200, \"result\": {\"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/1\", \"id\": 18303256, \"number\": 1, \"title\": \"sdd-1.1-Named-file-counting-MVP\", \"description\": \"Scope: immutable public value, count_text/count_file, exact text/BOM semantics, named-file UTF-8 success, and useful module CLI with one input, help, --keep-bom and -- handling. API and CLI agree on counts. Establish real, discoverable unit/integration checks alongside the slice. Included contracts: S-1/S-2, S-3 success and owned success-handle lifecycle, S-4 success/help/option validation. Required failure hardening and release documentation/distribution conclude in 1.2; JSON and stdin conclude in phase 2.\\n\\nPrerequisite: reviewed preparation inputs and Python 3.11+. Exit: users can count a named UTF-8 file through the public API and actual module entry; exact stdout/stderr/status, path forms, BOM and terminator examples pass; input is unchanged. Final milestone code review, relevant tests, blocker repairs and committed report are mandatory. Demonstrate a normal file, a BOM file and a dash-prefixed filename. This informs the human's continue/amend/simplify/stop decision about usefulness and command syntax; routine authorized work needs no renewed approval.\\n\\nSources: docs/dev/PLAN.md; docs/dev/TASKS.md. Planned work; no task is implemented.\", \"open_issues\": 0, \"closed_issues\": 4, \"state\": \"closed\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+        "--inputs",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-005-1/INPUTS.json",
+        "--run-state",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-005-1/RUN-STATE.json",
+        "--contract",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/CONTRACT.json",
+        "--evidence",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/INDEPENDENT-VALID-LITERALS.json",
+        "--output",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/INDEPENDENT-VALID-ASSESSMENT.json"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-harness-20261004",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+        "--inputs",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-005-1/INPUTS.json",
+        "--run-state",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-005-1/RUN-STATE.json",
+        "--contract",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/CONTRACT.json",
+        "--evidence",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/INDEPENDENT-WRONG-COUNT-LITERALS.json",
+        "--output",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/INDEPENDENT-WRONG-COUNT-ASSESSMENT.json"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-harness-20261004",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+        "--inputs",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-005-1/INPUTS.json",
+        "--run-state",
+        "/workspace/scratch/textstats-live-harness-20261004/assessments/A-005-1/RUN-STATE.json",
+        "--contract",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/CONTRACT.json",
+        "--evidence",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/INDEPENDENT-WRONG-USAGE-LITERALS.json",
+        "--output",
+        "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-005/1/rechecks/1/INDEPENDENT-WRONG-USAGE-ASSESSMENT.json"
+      ],
+      "cwd": "/workspace/scratch/textstats-live-harness-20261004",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

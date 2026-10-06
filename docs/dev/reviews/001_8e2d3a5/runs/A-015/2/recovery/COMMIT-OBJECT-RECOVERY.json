@@ -1,0 +1,10 @@
+{
+  "commit": "2dae60081452d72482bd431475d8f0b88d2d9d8c",
+  "bundle": "LOCAL-TASK-COMMIT.bundle",
+  "sha256": "0776d20338d8ff7fdfc4833044d593a07743db4461c5d104bf933acd95a2b74c",
+  "verify_returncode": 0,
+  "verify_stdout": "The bundle contains this ref:\n2dae60081452d72482bd431475d8f0b88d2d9d8c refs/heads/trial/a015-staged-recovery\nThe bundle requires this ref:\nd009899e39790c39be32ae77e7fe8294bf60d04c \nThe bundle uses this hash algorithm: sha1\n",
+  "verify_stderr": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-015/2/recovery/LOCAL-TASK-COMMIT.bundle is okay\n",
+  "prerequisite": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "scope": "Coordinator recovery evidence; no live task-ref push"
+}

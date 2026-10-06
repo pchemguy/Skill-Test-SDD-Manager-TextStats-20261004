@@ -1,0 +1,35 @@
+{
+  "structuredContent": {
+    "comments": [
+      {
+        "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/4#issuecomment-5981891613",
+        "body_sha256": "33e4bf6a4b83726590d5e1a72f5c1d5cb570dc8a3d1a3535e9fb655e3f09db28",
+        "body_withheld": "Provider body omitted from published evidence; independently inspected in original private capture.",
+        "evidence_links": [],
+        "user": {
+          "login": "pchemguy",
+          "name": "pchemguy",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "id": 39730837
+        },
+        "id": 5981891613,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">T-004 milestone 1.1 review complete on phase/1-named-file-utility at <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/commit/7bfadcb685e1cc313e2b9baab4deddd0f34c1832/hovercard\" href=\"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/commit/7bfadcb685e1cc313e2b9baab4deddd0f34c1832\"><tt>7bfadcb</tt></a>, pushed and remote verified. Report: docs/dev/reports/phases/1/1.1.md. All delivered modules/tests reviewed; no in-scope findings or TODOs. Fresh unit 14/integration 6 tests and normal/BOM/dash API/module demonstration pass, help and diff check pass. PLAN 1.1 exits satisfied; phase 1/reliability/distribution remain incomplete. TASKS status committed.</p>"
+      }
+    ],
+    "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/4",
+    "title": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004 Issue #4 comments",
+    "display_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/4",
+    "display_title": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004 Issue #4 comments"
+  },
+  "isError": false
+}

@@ -1,0 +1,7 @@
+{
+  "actor": "coordinator",
+  "at": "2026-10-05T08:23:08.722990+00:00",
+  "scope": "Only GET-only bounded facility MODE changed denial -> restored after original freeze/independent observation/published evidence",
+  "credentials_or_original_helper_touched": false,
+  "product_ref_index_changes": false
+}

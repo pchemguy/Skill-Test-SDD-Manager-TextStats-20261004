@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "run_id": "001_8e2d3a5",
+  "phase": "P3",
+  "case_id": "A-010",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Consumer frozen before implementation; independently assessing preserved document checkpoint",
+  "pending_operation": {
+    "kind": "api",
+    "status": "blocked",
+    "description": "Managed range projection rejected by automatic approval review before first implementation task"
+  },
+  "next_action": "Preserve Blocked assessment",
+  "checkpoint_refs": {
+    "product_branch": "feature/002_ea97182-line-ranges",
+    "product_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "remote": "origin",
+    "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+    "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
+    "evidence_commit": "dd0e7954ad15d336bdc9dc1b300e9ab7c8954753",
+    "merge_parents": [
+      "152fb8f6ab316e4bd893aeea8d2dc03b96fbb3a9"
+    ]
+  },
+  "evidence_paths": [
+    "INPUTS.json",
+    "STOP-AFTER-CURRENT.json",
+    "COVERAGE.json",
+    "SUSPENSION.md",
+    "DIAGNOSTIC-REPORT.md",
+    "FIXTURE-DETACHMENT.json",
+    "suspension-recovery/CREDENTIAL-TRIAL.json",
+    "RECOVERY-PUBLICATION.json",
+    "runs/A-004/1/ASSESSMENT.json",
+    "runs/A-004/1/LOCAL-TASK-COMMIT.bundle",
+    "runs/A-005/1/CONSUMER-RESULT.md",
+    "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json",
+    "runs/A-005/1/rechecks/1/INTERVENTION.md",
+    "SUSPENSION-20261004-163642.json",
+    "runs/A-006/1/CONSUMER-RESULT.md",
+    "runs/A-006/1/JOURNAL.md",
+    "runs/A-006/1/independent-assessment/ASSESSMENT.json",
+    "runs/A-006/2/REQUEST.md",
+    "runs/A-006/2/CONTINUATION.json",
+    "runs/A-020/1/REQUEST.md",
+    "runs/A-020/1/INJECTION.json",
+    "runs/A-007/1/REQUEST.md",
+    "runs/A-007/1/CONSUMER-RESULT.md",
+    "runs/A-007/1/JOURNAL.md",
+    "SUSPENSION-JSON-2.1.md",
+    "runs/A-007/1/independent-assessment/ASSESSMENT.json",
+    "CONTINUATION-20261005.json",
+    "COORDINATION.json",
+    "runs/A-008/1/independent-assessment/ASSESSMENT.json",
+    "runs/A-015/1/independent-assessment/ASSESSMENT.json",
+    "STOP-AFTER-JSON-CONSUMED-20261005.json",
+    "SUSPENSION-20261005-032346.json",
+    "runs/A-015/2/recovery/LOCAL-TASK-COMMIT.bundle",
+    "runs/A-016/1/RECOVERY.json",
+    "runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle",
+    "SUSPENSION-PUBLICATION-20261005.json",
+    "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json",
+    "runs/A-010/1/REQUEST.md"
+  ],
+  "updated_at": "2026-10-05T08:06:21.626274+00:00",
+  "case_results": [
+    {
+      "case_id": "A-006",
+      "attempt": 2,
+      "status": "Passed",
+      "reason": "Independent final assessment after completePhase1",
+      "assessment_path": "runs/A-006/2/independent-assessment/ASSESSMENT.json",
+      "assisted": true
+    },
+    {
+      "case_id": "A-020",
+      "attempt": 1,
+      "status": "Passed",
+      "reason": "Independent local-only preservation trial from A003retainedobjects",
+      "assessment_path": "runs/A-020/1/independent-assessment/ASSESSMENT.json"
+    },
+    {
+      "case_id": "A-007",
+      "attempt": 1,
+      "status": "Passed",
+      "assisted": true,
+      "assessment_path": "runs/A-007/1/independent-assessment/ASSESSMENT.json"
+    },
+    {
+      "case_id": "A-008",
+      "attempt": 1,
+      "status": "Passed",
+      "assisted": true,
+      "assessment_path": "runs/A-008/1/independent-assessment/ASSESSMENT.json"
+    },
+    {
+      "case_id": "A-026",
+      "attempt": 1,
+      "status": "Blocked",
+      "assessment_path": "runs/A-026/1/independent-assessment/ASSESSMENT.json",
+      "reason": "No actual pre-existing failing baseline; empty selection/no-mutation achieved separately; original helper hosted-read rejection retained"
+    },
+    {
+      "case_id": "A-009",
+      "attempt": 1,
+      "status": "Passed",
+      "assessment_path": "runs/A-009/1/independent-assessment/ASSESSMENT.json",
+      "assisted": true
+    },
+    {
+      "case_id": "A-015",
+      "attempt": 2,
+      "status": "Passed",
+      "assessment_path": "runs/A-015/2/independent-assessment/ASSESSMENT.json",
+      "assisted": true
+    },
+    {
+      "case_id": "A-016",
+      "attempt": 1,
+      "status": "Passed",
+      "assessment_path": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
+      "assisted": true,
+      "first_attempt_status": "Blocked",
+      "reason": "Fresh local publication recovery independently assessed; original Blocked stop retained",
+      "current_assessment": "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json"
+    }
+  ]
+}

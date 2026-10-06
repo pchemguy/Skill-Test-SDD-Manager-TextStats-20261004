@@ -1,0 +1,122 @@
+{
+  "changed_tracked_paths": [
+    "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+    "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+    "docs/dev/FEATURE-TASKS.md",
+    "docs/dev/PLAN-REVIEW-REPORT.md",
+    "docs/dev/PLAN.md",
+    "docs/dev/TASKS-REVIEW-REPORT.md",
+    "docs/dev/TASKS.md",
+    "docs/dev/features/002_ea97182/README.md"
+  ],
+  "exact_transferred_task_scope_equal": {
+    "T-018": true,
+    "T-019": true,
+    "T-020": true,
+    "T-021": true,
+    "T-022": true
+  },
+  "main_task_entries": [
+    {
+      "id": "T-001",
+      "checked": true
+    },
+    {
+      "id": "T-002",
+      "checked": true
+    },
+    {
+      "id": "T-003",
+      "checked": true
+    },
+    {
+      "id": "T-004",
+      "checked": true
+    },
+    {
+      "id": "T-005",
+      "checked": true
+    },
+    {
+      "id": "T-006",
+      "checked": true
+    },
+    {
+      "id": "T-007",
+      "checked": true
+    },
+    {
+      "id": "T-008",
+      "checked": true
+    },
+    {
+      "id": "T-009",
+      "checked": true
+    },
+    {
+      "id": "T-010",
+      "checked": true
+    },
+    {
+      "id": "T-011",
+      "checked": true
+    },
+    {
+      "id": "T-012",
+      "checked": true
+    },
+    {
+      "id": "T-013",
+      "checked": false
+    },
+    {
+      "id": "T-014",
+      "checked": false
+    },
+    {
+      "id": "T-015",
+      "checked": false
+    },
+    {
+      "id": "T-016",
+      "checked": false
+    },
+    {
+      "id": "T-017",
+      "checked": false
+    },
+    {
+      "id": "T-018",
+      "checked": false
+    },
+    {
+      "id": "T-019",
+      "checked": false
+    },
+    {
+      "id": "T-020",
+      "checked": false
+    },
+    {
+      "id": "T-021",
+      "checked": false
+    },
+    {
+      "id": "T-022",
+      "checked": false
+    }
+  ],
+  "feature_pointer_executable_entries": [],
+  "unique_ids": true,
+  "provider_metadata_equal": [
+    true,
+    true,
+    true
+  ],
+  "unknown_fixture_unchanged": true,
+  "pin_unchanged": true,
+  "qc_hashes_current": true,
+  "needed_feature_sources_retained": true,
+  "implementation_reports_absent": true
+}

@@ -1,0 +1,20 @@
+{
+  "operation": "write_stdin session51706 polling original frozen assess.py invocation",
+  "reason": "Unified exec process failed: This action was rejected due to unacceptable risk. Reason: The local assessment command unexpectedly triggers a GitHub connection, but the transcript does not establish what local evidence or other data is sent; disclosure to the untrusted destination is therefore unauthorized and potentially sensitive. Do not bypass this rejection through a workaround or indirect execution. Continue with a safer alternative, or carry out checks to prove that the action is authorized or low risk before trying again. Complete unaffected work without asking for confirmation. Report anything that remains blocked, clarify why it was blocked by auto-review, inform the user of the risk and ask for approval.",
+  "original_output_observed_before_reassessment": false,
+  "original_invocation": [
+    "python3",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/scripts/assess.py",
+    "--inputs",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/INPUTS.json",
+    "--run-state",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/ASSESSOR-RUN-STATE.json",
+    "--contract",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-010.json",
+    "--evidence",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/LITERALS.json",
+    "--output",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/independent-assessment/DETERMINISTIC-ORIGINAL.json"
+  ],
+  "supported_same_helper_reassessment": "New evidence output; actual standing full-campaign GO/currentResume and inspected sole network operation git ls-remote --symref origin were supplied; reassessment actual result Checks failed retained. Pinned revision-authorization policy explicitly read after reassessment; ordering limitation retained. No alternate transport or platform exemption used."
+}

@@ -1,0 +1,10 @@
+{
+  "case_id": "A-015",
+  "fork": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "worktree": "/workspace/scratch/textstats-staged-worktree-20261005",
+  "branch": "trial/a015-staged-recovery",
+  "remote": "/workspace/scratch/textstats-staged-remote-20261005.git",
+  "kind": "Controlled pre-commit runtime hold after real consumer staging; parent interruption pending",
+  "setup": "Existing-repository worktree, empty disposable bare remote seeded by actual prerequisite. No clone or shared Git config change. Command-local git options via shim preserve normal /usr/local/bin/git facility.",
+  "trigger_observed": false
+}

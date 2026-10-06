@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "issues": [
+    {
+      "number": 13,
+      "title": "[T-013] Integrate borrowed binary stdin acquisition",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:04:51Z",
+      "comments": 0,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 14,
+      "title": "[T-014] Complete stdin failure and interaction acceptance",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:06:59Z",
+      "comments": 0,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 15,
+      "title": "[T-015] Complete source documentation and final distribution checks",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:07:05Z",
+      "comments": 0,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 16,
+      "title": "[T-016] Review, test and report milestone 2.2",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:07:11Z",
+      "comments": 0,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 17,
+      "title": "[T-017] Review, test and report phase 2 and the complete product",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 6,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:07:17Z",
+      "comments": 0,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 19,
+      "title": "[T-019] Integrate validated named-file range text commands",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:07:23Z",
+      "comments": 1,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 20,
+      "title": "[T-020] Document ranges and verify extracted-source acceptance",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:07:29Z",
+      "comments": 1,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 21,
+      "title": "[T-021] Review, test and report range milestone 2.4",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:07:36Z",
+      "comments": 1,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 22,
+      "title": "[T-022] Review, test and report the named-file range feature",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 8,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:07:43Z",
+      "comments": 1,
+      "title_matches": true,
+      "body_matches": true,
+      "opening_markers": 1,
+      "body_available": true
+    },
+    {
+      "number": 10,
+      "title": "[T-010] Add JSON rendering with preserved named-file behavior",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 4,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:08:21Z",
+      "comments": 2
+    },
+    {
+      "number": 11,
+      "title": "[T-011] Document and verify the JSON distribution boundary",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 4,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:08:27Z",
+      "comments": 2
+    },
+    {
+      "number": 12,
+      "title": "[T-012] Review, test and report milestone 2.1",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 4,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T19:08:35Z",
+      "comments": 2
+    },
+    {
+      "number": 18,
+      "title": "[T-018] Establish normalized logical-line selection seam",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "labels": [
+        {
+          "name": "sdd-phase-2-Output-and-source-extensions",
+          "color": "1d76db"
+        }
+      ],
+      "updated_at": "2026-10-05T13:22:58Z",
+      "comments": 1
+    }
+  ],
+  "provider_bodies_withheld": true
+}

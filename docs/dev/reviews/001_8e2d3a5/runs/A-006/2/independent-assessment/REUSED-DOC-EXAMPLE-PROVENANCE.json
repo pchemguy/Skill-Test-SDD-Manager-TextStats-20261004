@@ -1,0 +1,196 @@
+[
+  {
+    "time": "2026-10-04T16:41:58.689337+00:00",
+    "document": "README.md",
+    "block": 0,
+    "language": "python",
+    "source": "from textstats import TextStats, count_text\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(2, 3)\n",
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-1/extracted",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "local_links": [
+      {
+        "target": "SDD-MANAGER.md",
+        "exists": true
+      },
+      {
+        "target": "AI_DISCLOSURE.md",
+        "exists": true
+      },
+      {
+        "target": "docs/api.md",
+        "exists": true
+      },
+      {
+        "target": "docs/module.md",
+        "exists": true
+      },
+      {
+        "target": "docs/dev/PROJECT.md",
+        "exists": true
+      },
+      {
+        "target": "docs/dev/SPEC.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "time": "2026-10-04T16:41:58.850727+00:00",
+    "document": "README.md",
+    "block": 1,
+    "language": "sh",
+    "source": "printf 'alpha beta\\ngamma\\n' > sample.txt\npython -m textstats sample.txt\n# lines=2 words=3\npython -m textstats --help\nprintf '\\357\\273\\277\\n' > bom.txt\npython -m textstats bom.txt\n# lines=1 words=0\npython -m textstats --keep-bom bom.txt\n# lines=1 words=1\nprintf 'alpha\\n' > ./-sample.txt\npython -m textstats -- -sample.txt\n# lines=1 words=1\n",
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-1/extracted",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\nusage: textstats [-h] [--keep-bom] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT       named UTF-8 input file\n\noptions:\n  -h, --help  show this help message and exit\n  --keep-bom  retain a leading BOM\nlines=1 words=0\nlines=1 words=1\nlines=1 words=1\n",
+    "stderr": "",
+    "expected_status": 0,
+    "local_links": [
+      {
+        "target": "SDD-MANAGER.md",
+        "exists": true
+      },
+      {
+        "target": "AI_DISCLOSURE.md",
+        "exists": true
+      },
+      {
+        "target": "docs/api.md",
+        "exists": true
+      },
+      {
+        "target": "docs/module.md",
+        "exists": true
+      },
+      {
+        "target": "docs/dev/PROJECT.md",
+        "exists": true
+      },
+      {
+        "target": "docs/dev/SPEC.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "time": "2026-10-04T16:41:58.964854+00:00",
+    "document": "README.md",
+    "block": 3,
+    "language": "sh",
+    "source": "make dist\nmkdir -p dist/extracted\npython -m tarfile -e dist/textstats.tar.gz dist/extracted\ncd dist/extracted\npython -m textstats --help\n",
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-1/extracted",
+    "returncode": 0,
+    "stdout": "mkdir -p \"dist\"\npython -m tarfile -c \"dist/textstats.tar.gz\" textstats/*.py README.md Makefile AI_DISCLOSURE.md SDD-MANAGER.md docs tests/__init__.py tests/unit/*.py tests/integration/*.py\nusage: textstats [-h] [--keep-bom] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT       named UTF-8 input file\n\noptions:\n  -h, --help  show this help message and exit\n  --keep-bom  retain a leading BOM\n",
+    "stderr": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tarfile.py:3026: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n  tf.extractall(path=curdir, filter=args.filter)\n",
+    "expected_status": 0,
+    "local_links": [
+      {
+        "target": "SDD-MANAGER.md",
+        "exists": true
+      },
+      {
+        "target": "AI_DISCLOSURE.md",
+        "exists": true
+      },
+      {
+        "target": "docs/api.md",
+        "exists": true
+      },
+      {
+        "target": "docs/module.md",
+        "exists": true
+      },
+      {
+        "target": "docs/dev/PROJECT.md",
+        "exists": true
+      },
+      {
+        "target": "docs/dev/SPEC.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "time": "2026-10-04T16:41:58.994479+00:00",
+    "document": "docs/api.md",
+    "block": 0,
+    "language": "python",
+    "source": "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(lines=2, words=3)\nassert count_text(\"\\ufeff\\n\", strip_bom=False) == TextStats(1, 1)\n",
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-1/extracted",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "local_links": [
+      {
+        "target": "module.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "time": "2026-10-04T16:41:59.029601+00:00",
+    "document": "docs/api.md",
+    "block": 1,
+    "language": "python",
+    "source": "from pathlib import Path\nfrom tempfile import TemporaryDirectory\nfrom textstats import TextStats, count_file\n\nwith TemporaryDirectory() as directory:\n    path = Path(directory) / \"sample.txt\"\n    path.write_bytes(b\"alpha beta\\r\\ngamma\\r\")\n    assert count_file(path) == TextStats(2, 3)\n    assert path.read_bytes() == b\"alpha beta\\r\\ngamma\\r\"\n",
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-1/extracted",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "local_links": [
+      {
+        "target": "module.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "time": "2026-10-04T16:41:59.210173+00:00",
+    "document": "docs/module.md",
+    "block": 0,
+    "language": "sh",
+    "source": "python -m textstats --help\nprintf 'alpha beta\\ngamma\\n' > sample.txt\npython -m textstats sample.txt\n# lines=2 words=3\nprintf '\\357\\273\\277\\n' > bom.txt\npython -m textstats bom.txt\n# lines=1 words=0\npython -m textstats --keep-bom bom.txt\n# lines=1 words=1\nprintf 'alpha\\n' > ./-sample.txt\npython -m textstats -- -sample.txt\n# lines=1 words=1\n",
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-1/extracted",
+    "returncode": 0,
+    "stdout": "usage: textstats [-h] [--keep-bom] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT       named UTF-8 input file\n\noptions:\n  -h, --help  show this help message and exit\n  --keep-bom  retain a leading BOM\nlines=2 words=3\nlines=1 words=0\nlines=1 words=1\nlines=1 words=1\n",
+    "stderr": "",
+    "expected_status": 0,
+    "local_links": [
+      {
+        "target": "api.md",
+        "exists": true
+      },
+      {
+        "target": "../README.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "time": "2026-10-04T16:41:59.248110+00:00",
+    "document": "docs/module.md",
+    "block": 1,
+    "language": "sh",
+    "source": "python -m textstats nonexistent.txt\n# status 1; stderr identifies nonexistent.txt; stdout is empty\n",
+    "cwd": "/workspace/scratch/textstats-live-harness-20261004/assessments/A-006-1/extracted",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: 'nonexistent.txt': [Errno 2] No such file or directory: 'nonexistent.txt'\n",
+    "expected_status": 1,
+    "local_links": [
+      {
+        "target": "api.md",
+        "exists": true
+      },
+      {
+        "target": "../README.md",
+        "exists": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+test_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok
+test_fields_are_immutable (tests.unit.test_core.StatisticsTests.test_fields_are_immutable) ... ok
+test_negative_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected) ... ok
+test_noninteger_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_noninteger_counts_are_rejected) ... ok
+test_public_statistics_value (tests.unit.test_core.StatisticsTests.test_public_statistics_value) ... ok
+test_zero_counts_are_valid (tests.unit.test_core.StatisticsTests.test_zero_counts_are_valid) ... ok
+test_api_is_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_api_is_silent_and_input_unchanged) ... ok
+test_count_text_is_public (tests.unit.test_core.TextCountingTests.test_count_text_is_public) ... ok
+test_default_bom_policy_and_keyword_only_option (tests.unit.test_core.TextCountingTests.test_default_bom_policy_and_keyword_only_option) ... ok
+test_only_one_initial_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_initial_bom_is_removed) ... ok
+test_specification_samples (tests.unit.test_core.TextCountingTests.test_specification_samples) ... ok
+test_terminator_boundaries (tests.unit.test_core.TextCountingTests.test_terminator_boundaries) ... ok
+test_unicode_whitespace_is_not_a_line_terminator (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_is_not_a_line_terminator) ... ok
+test_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.004s
+
+OK

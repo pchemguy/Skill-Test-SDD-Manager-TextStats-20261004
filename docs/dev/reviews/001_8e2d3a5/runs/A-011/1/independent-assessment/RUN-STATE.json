@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P3",
+  "case_id": "A-011",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Consumer assessment complete; independent checks",
+  "pending_operation": null,
+  "next_action": "Coordinator publishes assessed evidence",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "merge_parents": [
+      "ea97182d2d6a3984599238312a13e78d54d3221a",
+      "d518cc23650018542e43d8fb5a63f44a4d283518"
+    ],
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+  },
+  "evidence_paths": []
+}

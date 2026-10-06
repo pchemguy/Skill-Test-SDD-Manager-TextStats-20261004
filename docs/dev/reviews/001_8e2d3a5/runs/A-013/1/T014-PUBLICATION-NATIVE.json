@@ -1,0 +1,39 @@
+{
+  "initial": {
+    "chunk_id": "7ff58b",
+    "wall_time_seconds": 1.001046391,
+    "session_id": 7627,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion": {
+    "chunk_id": "f3fa91",
+    "wall_time_seconds": 5.000710335,
+    "exit_code": 0,
+    "original_token_count": 45,
+    "output": "To https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git\n   ac1acf0..93fff29  93fff297a249a8109118195e1405e62ee3845bd7 -> phase/2-output-and-source-extensions\n"
+  },
+  "exact_readback": {
+    "chunk_id": "ead288",
+    "wall_time_seconds": 10.001089179,
+    "exit_code": 0,
+    "original_token_count": 59,
+    "output": "59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\n93fff297a249a8109118195e1405e62ee3845bd7\trefs/heads/phase/2-output-and-source-extensions\ncc073e431c5a24d434b08807f47c59c0a76e2ff7\trefs/heads/revision/001_8e2d3a5-live-acceptance\n"
+  },
+  "progress_evidence_publication": {
+    "initial": {
+      "chunk_id": "206916",
+      "wall_time_seconds": 1.001104093,
+      "session_id": 70753,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "completion": {
+      "chunk_id": "252eca",
+      "wall_time_seconds": 5.00075335,
+      "exit_code": 0,
+      "original_token_count": 45,
+      "output": "To https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git\n   0cebfe9..cc073e4  cc073e431c5a24d434b08807f47c59c0a76e2ff7 -> revision/001_8e2d3a5-live-acceptance\n"
+    }
+  }
+}

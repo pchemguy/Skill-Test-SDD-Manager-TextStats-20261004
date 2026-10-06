@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "python",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-016/1/continuation/independent-assessment/local_url_assessment.py",
+    "--harness",
+    "/workspace/scratch/textstats-live-harness-20261004/harness",
+    "--inputs",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-017/1/independent-assessment/INPUTS.json",
+    "--run-state",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-017/1/independent-assessment/FINAL-RUN-STATE.json",
+    "--contract",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-017.json",
+    "--output",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-017/1/independent-assessment/FINAL-ADAPTED-HELPER.json"
+  ],
+  "returncode": 0,
+  "stdout": "{\"status\": \"Checks passed\", \"exit_code\": 0}\n",
+  "stderr": ""
+}

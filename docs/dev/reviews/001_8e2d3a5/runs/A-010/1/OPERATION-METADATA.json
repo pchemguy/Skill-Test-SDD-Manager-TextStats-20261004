@@ -1,0 +1,38 @@
+{
+  "status": "Frozen; evidence-only metadata reconstruction from previously submitted commands",
+  "repository": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
+  "second_rejected_operation": {
+    "method": "POST",
+    "resource": "milestones",
+    "milestone_title": "sdd-2.4-Named-file-line-ranges",
+    "payload_file_template": "<temporary directory>/milestone.json",
+    "existing_payload_file_path": null,
+    "actual_runtime_payload_file_path": "unknown; temporary directory path was to be generated inside rejected command; not retained or observed",
+    "intended_json_sha256": "3ae94ec493182ccadb20c0f1f6e29b862b82b8bd25a772589f2cc406a55e0bdd",
+    "hash_provenance": "Reconstructed exactly from submitted Python json.dumps(body) command with default separators and ASCII serialization, UTF-8 bytes; not a hash of an observed existing payload file",
+    "request_result": "Automatic approval review rejection; final provider readback established no milestone creation"
+  },
+  "initial_rejected_batch": {
+    "method": "POST",
+    "resources": [
+      "milestones",
+      "issues"
+    ],
+    "payload_file_template": "<temporary directory>/body.json",
+    "existing_payload_file_path": null,
+    "first_intended_milestone_title": "sdd-2.4-Named-file-line-ranges",
+    "first_intended_milestone_json_sha256": "a3cf78f0c64d52c52fa2e48e17f9c3f7a17f4d1769e4b3413895540c6f27ce14",
+    "hash_provenance": "Reconstructed from submitted command context only; no actual payload file observed",
+    "additional_intended_milestone_title": "sdd-2.5-Range-feature-review",
+    "intended_task_ids": [
+      "T-018",
+      "T-019",
+      "T-020",
+      "T-021",
+      "T-022"
+    ],
+    "issue_payload_sha256": null,
+    "issue_hash_limitation": "Bodies were to be derived at runtime from TASKS; not retained or observed, and no new product reads are performed in this follow-up",
+    "request_result": "Automatic approval review rejection; final provider readback established no range milestones or task issues"
+  }
+}

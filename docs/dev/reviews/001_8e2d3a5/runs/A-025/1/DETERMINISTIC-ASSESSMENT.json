@@ -1,0 +1,21 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "retained-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Effective-ignore negation is actually observed; already staged synthetic credential is blocked for scoped remediation.",
+    "Only synthetic non-secret fixture bytes are used. No real credential staging/transcript/copy; unrelated state preserved; compare index and effective ignore result."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}

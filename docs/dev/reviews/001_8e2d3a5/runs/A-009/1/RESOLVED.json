@@ -1,0 +1,31 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-008",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-008/1/independent-assessment/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "feature/002_ea97182-line-ranges",
+        "product_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+        "remote": "origin",
+        "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+        "remote_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c"
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "20b27fa68805439a5f928bd7b4479c491b958f21",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-008/1/independent-assessment/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Existing product checkout /workspace/scratch/textstats-live-20261004 is on published feature/002_ea97182-line-ranges at5b61f65bdbc1418a289633eb15b53ac190d68b2c, targeting paused phase/2-output-and-source-extensions at ea97182d2d6a3984599238312a13e78d54d3221a; main59debb649545125dd3aa00377ea115451b594271 unchanged. Prepared active FEATURE-SPEC/PLAN/TASKS and adjacent reviews, package docs/dev/features/002_ea97182/README.md. T-018\u2013T-022 unchecked, no implementation/projection yet. Tracked/index clean; preserve unexplained untracked -json-9l969okj/sample.txt unchanged/excluded. Follow product AGENTS and pinned textstats-run-resources/plugin/skills immutable019eb354cf0921ebd6056e6579763ac33d0baec2. User Resume continues designated pchemguy/Skill-Test-SDD-Manager-TextStats-20261004 workflow under existing GO and supplied repository-scoped read/write grant; prescribed scoped commits/pushes/evidence payloads authorized, no redundant permission question. Read revision-authorization before authority decisions; reviews end at commits, execution owns pushes, no platformbypass or unchangeddeniedretry. No clones, sharedtrialbranch/ref/configmutation, reset/blanketcleanup or /pyenv. Normal Git and protected adapter python /workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py METHOD repository-relative-resource [existingnonsecretbodyfile] available; no leading slash or credential/helper-source inspection/exposure. Omit provider body/description prose from published evidence. Selected SPEC-only incorporation request; preserve remaining work and report outside impacts, stop before implementation."
+  }
+}

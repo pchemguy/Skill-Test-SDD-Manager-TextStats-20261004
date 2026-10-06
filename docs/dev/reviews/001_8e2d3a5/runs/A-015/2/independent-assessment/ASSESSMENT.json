@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "case_id": "A-015",
+  "attempt": 2,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assistance": "Coordinator tooling correction after separately preserved attempt 1 Blocked; bounded controlled precommit hold/restoration; no consumer task repair",
+  "checkpoint_refs": {
+    "product_branch": "trial/a015-staged-recovery",
+    "product_commit": "2dae60081452d72482bd431475d8f0b88d2d9d8c",
+    "remote": "/workspace/scratch/textstats-staged-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a015-staged-recovery",
+    "remote_commit": "2dae60081452d72482bd431475d8f0b88d2d9d8c"
+  },
+  "findings": [
+    "Actual consumer completed T-001 checks/checklist and staged seven owned paths before held commit. Independent trigger observation recorded unchanged d009899 HEAD, zero unstaged diff, exact stage blobs and actual GREEN/VERIFY raw 11-test OK output.",
+    "Native agent interruption followed by owner-context native session Ctrl-C returned exit 130; parent process namespace/control limitations retained. No existing commit was released. Original files/index preserved before future-only hook restoration.",
+    "A separate fresh continuation inspected staged diffs, retained checks and local destination refs, reused verified unchanged work, committed same seven staged blobs without reimplementation, published retained completion to explicit authorized local URL, verified equality, and stopped before T-002. Independent final commit bytes equal all original trigger hashes.",
+    "Independent frozen-state unit discovery executed 11 passing tests and 14 manually chosen literal count vectors passed. T-001 alone checked; all other task/parent checkboxes remain incomplete. No T-002 acquisition, CLI, integration or phase merge exists.",
+    "Recovery staged/workfile exports and complete index text match independent trigger identity exactly. Export preservation demonstrates retained bytes; no cross-machine restoration executed.",
+    "Original shipped deterministic helper blocked repository_identity_mismatch because explicit authorized local URL is absent from configured remotes. Original result retained; disclosed in-memory repository identity adapter uses actual explicit-URL readback with unchanged three contract checks, all Passed. This is harness identity support limitation, not tested-plugin edit.",
+    "Runnable assessor-only adapter now retains the actual in-memory repository replacement logic with original core.py SHA-256 guard and restored function binding. Re-execution passed unchanged contract. Meaningful sensitivity independently failed incorrect expected HEAD and publication against a real empty disposable local bare destination; product/local publication refs and shared configuration untouched."
+  ],
+  "evidence": [
+    "TRIGGER-OBSERVATIONS.json",
+    "FINAL-OBSERVATIONS.json",
+    "INDEPENDENT-COMMANDS.json",
+    "ORIGINAL-HELPER-RESULT.json",
+    "LOCAL-URL-DETERMINISTIC-ASSESSMENT.json",
+    "VARIANT-ATTEMPTS.json",
+    "INPUTS.json",
+    "RUN-STATE.json",
+    "local_url_assessment.py",
+    "AUDITABLE-LOCAL-URL-ASSESSMENT.json",
+    "VARIANT-SENSITIVITY.json",
+    "SENSITIVITY-WRONG-HEAD-STATE.json",
+    "SENSITIVITY-WRONG-HEAD.json",
+    "SENSITIVITY-NONCONTAINMENT.json"
+  ],
+  "interventions": [
+    "Attempt 1 original origin-URL shim failed to exclusively override multivalue URL; consumer stopped after auto-review rejection/readback, before product edits. Attempt 1 retained Blocked.",
+    "Coordinator temporary named-remote probes were not final facility; attempt 2 hooks-only shim and explicit absolute URL authorized in fresh request.",
+    "Controlled precommit hold injected after actual consumer staging. Parent agent interrupt succeeded; native process cancellation completed in owner context after parent namespace limitations. Future-only hook restoration preserved staged state.",
+    "Original helper retained before disclosed explicit-local-URL observation adapter; mistaken first adapter function lookup retained, no output/state mutation.",
+    "Coordinator requested variant audit before publication; retained executable adapter/metadata and narrow wrong-HEAD/noncontainment sensitivity evidence without changing source/consumer state."
+  ],
+  "limits": [
+    "Passed denotes actual controlled staged-work recovery with a disposable local Git remote; no live GitHub hosting, API/issue closure, credentials or remote hosted lifecycle was exercised. Hosted T-001 association/closure remains pending under explicit request.",
+    "Separate fresh consumer context used; broad filesystem exposure prevents strict isolation certification.",
+    "Full native transcript unavailable; actual snapshots, raw checks, native-control outcomes and consumer-authored journals provide bounded evidence, not complete command auditing.",
+    "Uncontrolled unannounced termination, cross-machine reconstruction and backend milestone-report interruption variants were not run.",
+    "Assessment publication is coordinator-owned and pending at authoring; product local remote equality independently verified."
+  ],
+  "coverage": "Controlled local Git staged-work interruption and fresh same-task commit/publication recovery"
+}

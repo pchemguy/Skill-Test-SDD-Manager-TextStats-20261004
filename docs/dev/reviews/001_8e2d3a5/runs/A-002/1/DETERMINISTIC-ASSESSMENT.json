@@ -1,0 +1,21 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "unchanged-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Returned task/milestone identities and prerequisites agree with actual owners and readiness.",
+    "Selection performs no source/task edits, tests, pushes or branch creation; compare before/after refs, index, files and command log."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}

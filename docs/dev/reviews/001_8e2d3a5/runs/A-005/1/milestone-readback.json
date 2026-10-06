@@ -1,0 +1,12 @@
+{
+  "transport": "curl",
+  "http_status": 200,
+  "result": {
+    "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/1",
+    "number": 1,
+    "title": "sdd-1.1-Named-file-counting-MVP",
+    "open_issues": 0,
+    "closed_issues": 4,
+    "state": "closed"
+  }
+}

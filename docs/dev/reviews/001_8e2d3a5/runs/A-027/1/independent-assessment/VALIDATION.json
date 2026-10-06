@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "catalog_ids_exact": true,
+  "all_local_report_links_resolve": [
+    {
+      "target": "../../../A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md",
+      "exists": true
+    },
+    {
+      "target": "../../../../AUTHORIZATION-AMENDMENT-SUPPLEMENT.md",
+      "exists": true
+    },
+    {
+      "target": "RECONCILIATION.json",
+      "exists": true
+    }
+  ],
+  "all_selected_assessments_published_bytes_equal": true,
+  "source111_hashes_match": true,
+  "fresh_ref_commands_all_exit0": true,
+  "a013_gate_verified": true,
+  "hosted_metadata_totals": {
+    "issues_closed_completed": 22,
+    "milestones_closed_zero_open": 8
+  },
+  "report_placeholders_absent": true,
+  "no_product_or_provider_mutation": true,
+  "own_publication_pending": true
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "Controlled pre-push hold after actual consumer task completion commit",
+  "fork": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "branch": "trial/a016-publication-recovery",
+  "workspace": "/workspace/scratch/textstats-unpublished-worktree-20261005",
+  "publication_destination": "/workspace/scratch/textstats-unpublished-remote-20261005.git",
+  "trigger_observed": false,
+  "local_only": true,
+  "no_clone": true,
+  "no_shared_config_change": true
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "case_id": "A-011",
+  "attempt": 1,
+  "destination_branch": "revision/001_8e2d3a5-live-acceptance",
+  "status": "prepared, not published by assessor",
+  "paths": [
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/AFTER-CONSUMER-SNAPSHOT.json",
+      "sha256": "62e3eedc06760deec7adc8ba97267b3e4c900ea1a407eac739d38e482765332c"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/BINDINGS-REJECTED-1.json",
+      "sha256": "77c44aa05245689990870e733ae14980bdb63227ab9b121dbb2e8475a2a26c9e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/BINDINGS.json",
+      "sha256": "d6adecd79cd760816af26032f345409af07ecf54ac7bd0ab8f581e85b274bd1d"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/CONSUMER-RESULT.md",
+      "sha256": "b1d3d6655e98878eeff9765b88861f14a611ba621a8316ee464f42906b935717"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/COORDINATOR-SHARED-REF-INTERVENTION.json",
+      "sha256": "2e28dcb75f35fb1a426db0d0d86c0610cf9d0a64ef82ada8e0d339bb27b5cb30"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/JOURNAL.md",
+      "sha256": "61a379a80fbf31ed53beab8ca6bac8561808d0b0eb717797a9a8ad29fb97818f"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/RENDER-REJECTED-1.json",
+      "sha256": "958120ba3d38fee5d59695916b06650b1e73443a048da6ba6228e44b839767d1"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/RENDER-RESULT.json",
+      "sha256": "285dad7cc7579320a04bd81f93a4adf196579e0bf682050124879dd168150248"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/REQUEST.md",
+      "sha256": "aebe22dc4abc4b9e2197f974340d4d1e23be66bbba784ea3d736dbc7972bf887"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/START-SNAPSHOT.json",
+      "sha256": "d8a2b2163e56c45d3e5ef4a1d035adb6a26cab8ead2c8127bc1e5f8c6a1d5968"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "4323551e2840b8add675c0f76b391b4720789925b3628ef7bbc7788bf9aebcaa"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/ASSESSMENT.md",
+      "sha256": "a54ed236e318d21e3ab462c986138e92ab198d9dd1087f69ca0afbcfd776296e"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/COMMAND-RESULTS.json",
+      "sha256": "de8a470efe74629bbffcb6b72891bc969cc99be5f46b7b31c1cb26b5cb790e25"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/CONSUMER-NATIVE-RESULTS.json",
+      "sha256": "46bc68c0bfb9c3dd6eab654949c30ff1d64804059367038fb90f6ac69f899fec"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/INPUTS.json",
+      "sha256": "06e3659f7c5b704db80f4e7b2c8b6135677014e086ec524826ad21e23e3bb456"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/LIVE-OBSERVATION.json",
+      "sha256": "e4f76e8f1b1b1ff55abaec16e1db05006f4d9582ceb3445ba66e7f519f703278"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/RUN-STATE.json",
+      "sha256": "e9602bc8c23424f3760a6b6e04b3ba01ba302d540f43cb55a5881d3f2b29b9b1"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/STATE-COMPARISON.json",
+      "sha256": "011a354d7cf1a48d4cfc15f9200d68da638546e31a431fc0fffb37e18718c9c1"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/original-deterministic.json",
+      "sha256": "6822ede221492ff42c961efee83c42e99b1f442d341c9401f3e65290aa3fb92a"
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/variant-deterministic.json",
+      "sha256": "57b8318f9e70948f216fb7f12271db485ffbd20e7808ef98c60f79b6ae785da2"
+    }
+  ],
+  "manifest_path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/PUBLISH-MANIFEST.json"
+}

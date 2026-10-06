@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "case_id": "A-006",
+  "attempt": 2,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "reason": "All unchanged full A-006 literal and lifecycle criteria independently established after explicit Resume. Disclosed CHK-002 checker correction used; original failure and attempt1 user suspension retained.",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "integration_branch": "main",
+    "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "merge_parents": [
+      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+      "b398e258cefc03dbc47630b83967db961a376eae"
+    ]
+  },
+  "source_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "original_contract_sha256": "cd85b2355aaaee4027b73dc049397a15ecdffa1b787f460bfcae4c34efed322a",
+  "phase_branch": "phase/1-named-file-utility",
+  "phase_commit": "b398e258cefc03dbc47630b83967db961a376eae",
+  "task_report_commit": "cb9d56ab4060483cd2240cb9553f43f850196968",
+  "independent_checks": {
+    "unit_tests": 17,
+    "integration_tests": 9,
+    "skips": 0,
+    "runtime": "Python3.12.14",
+    "api": "Passed",
+    "baseline": "Passed",
+    "distribution": "Passed from actual current extracted source package, import root verified",
+    "docs_readme_examples": "Passed, reused actual unchanged checks with Git byte-equivalence justification",
+    "git_clean": true,
+    "two_parent_integration": true,
+    "live_main_equality_and_phase_containment": true,
+    "pinned_git_objects_and_disk_files": 111,
+    "source_mismatches": 0,
+    "governing_docs_and_AGENTS_unchanged": true,
+    "phase2_tasks_unchanged_unchecked": true,
+    "phase2_hosted_objects_absent": true
+  },
+  "required_agent_checks": [
+    {
+      "criterion": "All phase exits including failures/docs/README/extracted-source module invocation pass at actual working and prospective merged states.",
+      "status": "Passed"
+    },
+    {
+      "criterion": "Parent completion is justified by all child exits. Explicit two-parent merge reaches integration and remote containment; no phase 2 task execution.",
+      "status": "Passed"
+    },
+    {
+      "criterion": "All delivery milestones close before the dedicated phase review task runs. Its committed/pushed docs/dev/reports/phases/<actual-phase-id>/PHASE-REPORT.md records phase code review, checks, repairs, exits and TODO provenance; its issue closes before the final review milestone.",
+      "status": "Passed"
+    },
+    {
+      "criterion": "Phase 2 hosted objects remain absent until phase 1 integration/publication and an authorized phase 2 activation. Uncertain milestone closure blocks advancement until readback.",
+      "status": "Passed"
+    }
+  ],
+  "lifecycle": {
+    "delivery_milestones_closed_before_T009": true,
+    "issue9_closed_before_milestone3": "Independent midflight GET observed issue9closed/milestone3open; later complete final closure readback",
+    "phase_report_contains": "Code review, fresh checks, exit coverage, historical repairs, prior milestone TODO None, integration result",
+    "prospective_merge": "Consumer retained no-ff/no-commit command then unit17/integration9 and staged whitespace success before commit; only phase-report append differs from phase parent",
+    "phase2_activation_or_execution": false,
+    "provider_issues": "1\u20139 closed/completed",
+    "provider_milestones": "1\u20133 closed,0open,4/4/1closed"
+  },
+  "original_helper": {
+    "status": "Checks failed",
+    "artifact": "ORIGINAL-FULL-DETERMINISTIC-ASSESSMENT.json",
+    "sole_failure": "duplicate_task_ownership due ignored generated archive copy (CHK-002)"
+  },
+  "disclosed_variant": {
+    "status": "Checks passed",
+    "artifact": "VARIANT-FULL-DETERMINISTIC-ASSESSMENT.json",
+    "contract_changed": false,
+    "independent_audit": "CHECKER-VARIANT-INDEPENDENT-AUDIT.json",
+    "description": "Only default active-document inventory changed to Git cached plus nonignored untracked. Explicit additions/parser/protections/allotherchecks remain original."
+  },
+  "retained_history": {
+    "attempt1": "Blocked at intentional human suspension after independently verified milestone1.2; not retroactively Passed",
+    "prior_assistance": "Visible failed-example feedback and premature claim correction retained in attempt1",
+    "checker_finding": "CHK-002 retained, independently sensitivity-tested correction; no product or pinned-source cleanup/repair"
+  },
+  "limits": [
+    "Broad shared filesystem access prevents strict filesystem isolation certification.",
+    "Structured journals/command results do not constitute a complete native transcript; the prospective snapshot raced completion and its raw MERGE_HEAD absence is retained.",
+    "Actual3.12.14 execution does not prove3.11 runtime.",
+    "No Phase2 or full-product acceptance claimed."
+  ],
+  "evidence_publication": "Local pending coordinator publication; publish before dependent execution",
+  "next_action": "Remain stopped beforePhase2; coordinator publishes this assessed prerequisite and only then dispatches authorized remaining workflow",
+  "assessed_at": "2026-10-04T20:26:38.334879+00:00"
+}

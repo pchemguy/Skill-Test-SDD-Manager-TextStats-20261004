@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P3",
+  "case_id": "A-012",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent reached-ref observation",
+  "pending_operation": null,
+  "next_action": "Coordinator evidence publication",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+    "merge_parents": [
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+      "70e78a4136bc040bcab0a6db50ced03b9736ae33"
+    ],
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12"
+  },
+  "evidence_paths": []
+}

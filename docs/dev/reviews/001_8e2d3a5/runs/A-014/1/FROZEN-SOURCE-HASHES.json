@@ -1,0 +1,7 @@
+{
+  "harness/cases/assessor/COMMON.md": "1701a1a6f98c85c4f24e8074980143d41bd7c482800b58fd94d0a66ca8a536bf",
+  "harness/cases/assessor/A-014.md": "d64296eb3a951f9421c3a3e4c914c6cfee77cc9bb948430f3aa01f1009c71122",
+  "harness/cases/assessor/A-014.json": "b3083e5073d00eb88a8cf03107a00960cf3321390eafec247448827918655d1f",
+  "harness/scripts/assess.py": "8937bf3feec620c76859277602f2bbb73aa9532831307f8e652a1987e1bea7f4",
+  "harness/scripts/core.py": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80"
+}

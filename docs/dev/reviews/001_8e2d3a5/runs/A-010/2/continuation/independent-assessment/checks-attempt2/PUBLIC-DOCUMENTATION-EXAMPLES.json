@@ -1,0 +1,599 @@
+{
+  "status": "Passed",
+  "documents": [
+    "README.md",
+    "docs/api.md",
+    "docs/module.md"
+  ],
+  "blocks": [
+    {
+      "document": "README.md",
+      "block": 0,
+      "language": "python",
+      "code": "from textstats import TextStats, count_text\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(2, 3)\n",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-c",
+            "from textstats import TextStats, count_text\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(2, 3)\n"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "README.md",
+      "block": 1,
+      "language": "sh",
+      "code": "printf 'alpha beta\\ngamma\\n' > sample.txt\npython -m textstats sample.txt\n# lines=2 words=3\npython -m textstats --json sample.txt\n# {\"lines\": 2, \"words\": 3}\npython -m textstats --json sample.txt | python -c 'import json, sys; print(json.load(sys.stdin)[\"words\"])'\n# 3\npython -m textstats --help\nprintf '\\357\\273\\277\\n' > bom.txt\npython -m textstats bom.txt\n# lines=1 words=0\npython -m textstats --keep-bom bom.txt\n# lines=1 words=1\npython -m textstats --json --keep-bom bom.txt\n# {\"lines\": 1, \"words\": 1}\npython -m textstats --keep-bom --json bom.txt\n# {\"lines\": 1, \"words\": 1}\nprintf 'alpha\\n' > ./-sample.txt\npython -m textstats -- -sample.txt\n# lines=1 words=1\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf 'alpha beta\\ngamma\\n' > sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=2 words=3\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "{\"lines\": 2, \"words\": 3}\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json sample.txt | python -c 'import json, sys; print(json.load(sys.stdin)[\"words\"])'"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "3\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --help"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --json             emit JSON counts\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf '\\357\\273\\277\\n' > bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=1 words=0\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --keep-bom bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=1 words=1\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json --keep-bom bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "{\"lines\": 1, \"words\": 1}\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --keep-bom --json bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "{\"lines\": 1, \"words\": 1}\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf 'alpha\\n' > ./-sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats -- -sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=1 words=1\n",
+          "stderr": ""
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "README.md",
+      "block": 2,
+      "language": "sh",
+      "code": "python -m unittest discover -s tests/unit -t . -v\npython -m unittest discover -s tests/integration -t . -v\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m unittest discover -s tests/unit -t . -v"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "test_expected_errors_are_identified_and_atomic (tests.unit.test_cli.CliFailureTests.test_expected_errors_are_identified_and_atomic) ... ok\ntest_usage_errors_and_help_never_acquire (tests.unit.test_cli.CliValidationTests.test_usage_errors_and_help_never_acquire) ... ok\ntest_fields_are_immutable (tests.unit.test_core.StatisticsTests.test_fields_are_immutable) ... ok\ntest_negative_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected) ... ok\ntest_noninteger_counts_are_rejected (tests.unit.test_core.StatisticsTests.test_noninteger_counts_are_rejected) ... ok\ntest_public_statistics_value (tests.unit.test_core.StatisticsTests.test_public_statistics_value) ... ok\ntest_zero_counts_are_valid (tests.unit.test_core.StatisticsTests.test_zero_counts_are_valid) ... ok\ntest_api_is_silent_and_input_unchanged (tests.unit.test_core.TextCountingTests.test_api_is_silent_and_input_unchanged) ... ok\ntest_count_text_is_public (tests.unit.test_core.TextCountingTests.test_count_text_is_public) ... ok\ntest_default_bom_policy_and_keyword_only_option (tests.unit.test_core.TextCountingTests.test_default_bom_policy_and_keyword_only_option) ... ok\ntest_only_one_initial_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_initial_bom_is_removed) ... ok\ntest_specification_samples (tests.unit.test_core.TextCountingTests.test_specification_samples) ... ok\ntest_terminator_boundaries (tests.unit.test_core.TextCountingTests.test_terminator_boundaries) ... ok\ntest_unicode_whitespace_is_not_a_line_terminator (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_is_not_a_line_terminator) ... ok\ntest_open_failure_is_silent_and_preserves_exception (tests.unit.test_file_api.FileFailureTests.test_open_failure_is_silent_and_preserves_exception) ... ok\ntest_read_decode_and_close_failure_are_atomic_and_close_owned_handle (tests.unit.test_file_api.FileFailureTests.test_read_decode_and_close_failure_are_atomic_and_close_owned_handle) ... ok\ntest_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok\ntest_owned_handle_closes_on_range_success_and_failure (tests.unit.test_ranges.RangeResourceTests.test_owned_handle_closes_on_range_success_and_failure) ... ok\ntest_invalid_usage_before_either_acquisition (tests.unit.test_ranges.RangeValidationTests.test_invalid_usage_before_either_acquisition) ... ok\ntest_normalization_once_and_whole_api (tests.unit.test_ranges.SelectionTests.test_normalization_once_and_whole_api) ... ok\ntest_selection_contract (tests.unit.test_ranges.SelectionTests.test_selection_contract) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.025s\n\nOK\n"
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m unittest discover -s tests/integration -t . -v"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "test_json_counts_types_bom_orders_and_text_default (tests.integration.test_cli.JsonModuleTests.test_json_counts_types_bom_orders_and_text_default) ... ok\ntest_json_errors_remain_atomic_and_identify_input (tests.integration.test_cli.JsonModuleTests.test_json_errors_remain_atomic_and_identify_input) ... ok\ntest_help (tests.integration.test_cli.ModuleCliTests.test_help) ... ok\ntest_invalid_invocations (tests.integration.test_cli.ModuleCliTests.test_invalid_invocations) ... ok\ntest_keep_bom_and_dash_prefixed_filename (tests.integration.test_cli.ModuleCliTests.test_keep_bom_and_dash_prefixed_filename) ... ok\ntest_named_files_counts_and_api_agreement (tests.integration.test_cli.ModuleCliTests.test_named_files_counts_and_api_agreement) ... ok\ntest_expected_file_failures (tests.integration.test_cli.ModuleFailureTests.test_expected_file_failures) ... ok\ntest_extracted_package_public_docs_and_module_contract (tests.integration.test_distribution.SourceDistributionTests.test_extracted_package_public_docs_and_module_contract) ... ok\ntest_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok\ntest_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok\ntest_real_missing_directory_and_malformed_files_are_silent_and_unchanged (tests.integration.test_file_api.FileFailureIntegrationTests.test_real_missing_directory_and_malformed_files_are_silent_and_unchanged) ... ok\ntest_huge_leading_zero_bom_dash_and_failures (tests.integration.test_ranges.RangeModuleTests.test_huge_leading_zero_bom_dash_and_failures) ... ok\ntest_supplied_rows_formats_spellings_and_order (tests.integration.test_ranges.RangeModuleTests.test_supplied_rows_formats_spellings_and_order) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 7.159s\n\nOK\n"
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "README.md",
+      "block": 3,
+      "language": "sh",
+      "code": "make dist\nmkdir -p dist/extracted\npython -m tarfile -e dist/textstats.tar.gz dist/extracted\ncd dist/extracted\npython -m textstats --help\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "make dist"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "mkdir -p \"dist\"\npython -m tarfile -c \"dist/textstats.tar.gz\" textstats/*.py README.md Makefile AI_DISCLOSURE.md SDD-MANAGER.md docs tests/__init__.py tests/unit/*.py tests/integration/*.py\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "mkdir -p dist/extracted"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m tarfile -e dist/textstats.tar.gz dist/extracted"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tarfile.py:3026: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n  tf.extractall(path=curdir, filter=args.filter)\n"
+        },
+        {
+          "command": "cd dist/extracted",
+          "resolved_cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted"
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --help"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+          "returncode": 0,
+          "stdout": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --json             emit JSON counts\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+          "stderr": ""
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "README.md",
+      "block": 4,
+      "language": "sh",
+      "code": "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt\npython -m textstats --lines 2:3 ranges.txt\n# lines=2 words=3\npython -m textstats --json --lines=2:3 ranges.txt\n# {\"lines\": 2, \"words\": 3}\npython -m textstats --lines 4:99 ranges.txt\n# lines=0 words=0\npython -m textstats --lines=2:1 ranges.txt\n# status 2; empty stdout; useful stderr; no file acquisition\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --lines 2:3 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+          "returncode": 0,
+          "stdout": "lines=2 words=3\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json --lines=2:3 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+          "returncode": 0,
+          "stdout": "{\"lines\": 2, \"words\": 3}\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --lines 4:99 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+          "returncode": 0,
+          "stdout": "lines=0 words=0\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --lines=2:1 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace/dist/extracted",
+          "returncode": 2,
+          "stdout": "",
+          "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n"
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "docs/api.md",
+      "block": 0,
+      "language": "python",
+      "code": "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(lines=2, words=3)\nassert count_text(\"\\ufeff\\n\", strip_bom=False) == TextStats(1, 1)\n",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-c",
+            "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(lines=2, words=3)\nassert count_text(\"\\ufeff\\n\", strip_bom=False) == TextStats(1, 1)\n"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "docs/api.md",
+      "block": 1,
+      "language": "python",
+      "code": "from pathlib import Path\nfrom tempfile import TemporaryDirectory\nfrom textstats import TextStats, count_file\n\nwith TemporaryDirectory() as directory:\n    path = Path(directory) / \"sample.txt\"\n    path.write_bytes(b\"alpha beta\\r\\ngamma\\r\")\n    assert count_file(path) == TextStats(2, 3)\n    assert path.read_bytes() == b\"alpha beta\\r\\ngamma\\r\"\n",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-c",
+            "from pathlib import Path\nfrom tempfile import TemporaryDirectory\nfrom textstats import TextStats, count_file\n\nwith TemporaryDirectory() as directory:\n    path = Path(directory) / \"sample.txt\"\n    path.write_bytes(b\"alpha beta\\r\\ngamma\\r\")\n    assert count_file(path) == TextStats(2, 3)\n    assert path.read_bytes() == b\"alpha beta\\r\\ngamma\\r\"\n"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "docs/module.md",
+      "block": 0,
+      "language": "sh",
+      "code": "python -m textstats --help\nprintf 'alpha beta\\ngamma\\n' > sample.txt\npython -m textstats sample.txt\n# lines=2 words=3\nprintf '\\357\\273\\277\\n' > bom.txt\npython -m textstats bom.txt\n# lines=1 words=0\npython -m textstats --keep-bom bom.txt\n# lines=1 words=1\nprintf 'alpha\\n' > ./-sample.txt\npython -m textstats -- -sample.txt\n# lines=1 words=1\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --help"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --json             emit JSON counts\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf 'alpha beta\\ngamma\\n' > sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=2 words=3\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf '\\357\\273\\277\\n' > bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=1 words=0\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --keep-bom bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=1 words=1\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf 'alpha\\n' > ./-sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats -- -sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=1 words=1\n",
+          "stderr": ""
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "docs/module.md",
+      "block": 1,
+      "language": "sh",
+      "code": "python -m textstats --json sample.txt\n# {\"lines\": 2, \"words\": 3}\npython -m textstats --json sample.txt | python -c 'import json, sys; print(json.load(sys.stdin)[\"words\"])'\n# 3\npython -m textstats --json --keep-bom bom.txt\n# {\"lines\": 1, \"words\": 1}\npython -m textstats --keep-bom --json bom.txt\n# {\"lines\": 1, \"words\": 1}\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json sample.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "{\"lines\": 2, \"words\": 3}\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json sample.txt | python -c 'import json, sys; print(json.load(sys.stdin)[\"words\"])'"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "3\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json --keep-bom bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "{\"lines\": 1, \"words\": 1}\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --keep-bom --json bom.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "{\"lines\": 1, \"words\": 1}\n",
+          "stderr": ""
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "docs/module.md",
+      "block": 2,
+      "language": "sh",
+      "code": "python -m textstats nonexistent.txt\n# status 1; stderr identifies nonexistent.txt; stdout is empty\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats nonexistent.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": "textstats: 'nonexistent.txt': [Errno 2] No such file or directory: 'nonexistent.txt'\n"
+        }
+      ],
+      "status": "Passed"
+    },
+    {
+      "document": "docs/module.md",
+      "block": 3,
+      "language": "sh",
+      "code": "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt\npython -m textstats --lines 2:3 ranges.txt\n# lines=2 words=3\npython -m textstats --json --lines=2:3 ranges.txt\n# {\"lines\": 2, \"words\": 3}\npython -m textstats --lines 4:99 ranges.txt\n# lines=0 words=0\npython -m textstats --lines=2:1 ranges.txt\n# status 2; empty stdout; useful stderr; no file acquisition\n",
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --lines 2:3 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=2 words=3\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --json --lines=2:3 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "{\"lines\": 2, \"words\": 3}\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --lines 4:99 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 0,
+          "stdout": "lines=0 words=0\n",
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "bash",
+            "-c",
+            "python -m textstats --lines=2:1 ranges.txt"
+          ],
+          "cwd": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+          "returncode": 2,
+          "stdout": "",
+          "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n"
+        }
+      ],
+      "status": "Passed"
+    }
+  ],
+  "workspace": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-010/2/continuation/independent-assessment/checks-attempt2/documentation-workspace",
+  "note": "Exact current public fenced examples executed in tracked-file copy to preserve unrelated samples and generated distribution in product. Bash blocks run linewise, preserving cd; literal comments independently compared; test suites nonempty passed."
+}

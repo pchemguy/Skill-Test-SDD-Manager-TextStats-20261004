@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "case_id": "A-009",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "consumer_first_attempt_status": "Passed",
+  "first_attempt_status": "Passed",
+  "assistance_scope": "Existing disclosed CHK002 checker variant only; no consumer coaching/retry, product repair or pinned source edit. Canonical coordinator checkpoint already valid schema; assessor-local reached checkpoint uses actual HEAD.",
+  "checkpoint_refs": {
+    "product_branch": "feature/002_ea97182-line-ranges",
+    "product_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "remote": "origin",
+    "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+    "remote_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247"
+  },
+  "source_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "checks": [
+    {
+      "id": "selected-scope",
+      "status": "Passed",
+      "reason": "Only docs/dev/SPEC.md and its adjacent SPEC-REVIEW-REPORT.md changed in commit and working content. All157 original tracked artifacts were compared; unselected PLAN/TASKS, feature sources/reports/package and implementation bytes unchanged."
+    },
+    {
+      "id": "incorporated-contract",
+      "status": "Passed",
+      "reason": "Main S-8 carries accepted R-1\u2013R-4 syntax, unbounded ASCII decimal validation, complete decode, BOM-once, exact CRLF/CR/LF selection, JSON/default/error/resource guarantees and objective examples. S-4/S-5/S-7 updated coherently; no new public API or stdin range delivery. Existing S-1\u2013S-3 unchanged."
+    },
+    {
+      "id": "selected-document-qc",
+      "status": "Passed",
+      "reason": "Adjacent main report preserves initial review and appends Revision1 with5 correct current artifact/governing hashes, whole-root S-1\u2013S-8 design coverage and Ready restricted to selected conformance. Historical initial review identities retained. No implementation readiness claim."
+    },
+    {
+      "id": "unselected-impacts",
+      "status": "Passed",
+      "reason": "Report and final result explicitly identify main PLAN/TASKS and reports, feature upstream identity/equivalence, checked whole-input/JSON parent acceptance and preparation-era boundary wording as deferred reassessments; dependent execution/projection blocked until authorized scope. No unselected report/status edit."
+    },
+    {
+      "id": "ownership-and-retention",
+      "status": "Passed",
+      "reason": "Actual tracked task inventories retain22 unique IDs. T018\u201322 sole active FEATURE-TASKS range owners unchecked; T013\u201317 incomplete. Feature review/report links unchanged under docs/dev/features/002_ea97182; no implementation reports, archive, task transfer or phase completion."
+    },
+    {
+      "id": "publication-preservation",
+      "status": "Passed",
+      "reason": "Independent ls-remote exact53da8a9 matches HEAD; single-parent selected checkpoint. phase ea97182 and main59debb unchanged. Index/tracked clean and unknown BOM fixture same f1945cd6 hash.111 pinned package hashes match. Sanitized provider readback unchanged17issues/6milestones/12labels; no projected feature objects or closure."
+    }
+  ],
+  "deterministic_original": "Checks failed: duplicate_task_ownership CHK002. Original result and command retained; known ignored generated TASKS remains untouched. Final-head/publication checks pass.",
+  "deterministic_variant": "Checks passed using existing disclosed Git candidate-inventory variant SHA25610c4cce8ed9e275d0d36b207578ca8399104c818858d8364d490bb47020875c8 after original invocation.",
+  "coverage_limits": [
+    "No full native command transcript; consumer journal and independent actual Git/file/provider observations bound chronology conclusions.",
+    "No hard filesystem isolation; fresh context does not certify assessor assets inaccessible.",
+    "No behavioral tests run for document-only checkpoint; no product runtime acceptance claim.",
+    "Provider metadata was independently read; protected body/description prose omitted. Dedicated pulls endpoint not re-probed after previously observed unsupported facility.",
+    "Assessor artifacts local pending coordinator publication; user requested controlled suspension after this checkpoint, no dependent A010 started."
+  ],
+  "evidence_paths": [
+    "VARIANT-DETERMINISTIC.json",
+    "start-observation.json",
+    "INDEPENDENT-OWNERS.json",
+    "FINAL-PROVIDER-READBACK.json",
+    "START-PROVIDER-READBACK.json",
+    "INPUTS.json",
+    "HELPER-COMMANDS.json",
+    "FINAL-STATE.json",
+    "ORIGINAL-DETERMINISTIC.json",
+    "RUN-STATE.json",
+    "PINNED-SOURCE.json"
+  ],
+  "finding_dispositions": {
+    "CHK-002": "Known confirmed checker false positive from ignored generated TASKS discovery; actual tracked22 owners unique, existing variant retained separately.",
+    "plugin": "No confirmed SDD Manager defect established by A009.",
+    "consumer": "First attempt satisfied selected incorporation and QC; no consumer assistance."
+  }
+}

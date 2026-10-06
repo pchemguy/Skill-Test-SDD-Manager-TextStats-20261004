@@ -1,0 +1,77 @@
+[
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues?state=all&per_page=100"
+    ],
+    "returncode": 0,
+    "stdout_bytes": 26652,
+    "stdout_sha256": "3b1df4bce787c8e32958ed6b15bde8fe9a867c56df5d8eab00ab487f20e4b8e7",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_kind": "dict",
+    "safe_keys": [
+      "http_status",
+      "result",
+      "transport"
+    ]
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "milestones?state=all&per_page=100"
+    ],
+    "returncode": 0,
+    "stdout_bytes": 6239,
+    "stdout_sha256": "442c831ecb5dec6f252c50d649dd84dbc51e4daa67bf76e2d3f91d86c01b32c9",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_kind": "dict",
+    "safe_keys": [
+      "http_status",
+      "result",
+      "transport"
+    ]
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "labels?per_page=100"
+    ],
+    "returncode": 0,
+    "stdout_bytes": 1522,
+    "stdout_sha256": "5a59118d650f4d097fc984511e136f63a9201b09c81f64293df88e04c7cbc44f",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_kind": "dict",
+    "safe_keys": [
+      "http_status",
+      "result",
+      "transport"
+    ]
+  },
+  {
+    "args": [
+      "python",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "pulls?state=all&per_page=100"
+    ],
+    "returncode": 2,
+    "stdout_bytes": 49,
+    "stdout_sha256": "a3a4e95c49c5ff16308dc5cb7c15b3fd31040feb3f2bc87b296ff6e037b886dc",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_kind": "dict",
+    "safe_keys": [
+      "error",
+      "transport"
+    ]
+  }
+]

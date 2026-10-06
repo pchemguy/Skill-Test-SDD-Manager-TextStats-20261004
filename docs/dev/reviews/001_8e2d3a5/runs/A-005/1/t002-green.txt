@@ -1,0 +1,8 @@
+test_success_closes_owned_handle (tests.unit.test_file_api.FileLifecycleTests.test_success_closes_owned_handle) ... ok
+test_public_export_and_signature (tests.integration.test_file_api.FileApiTests.test_public_export_and_signature) ... ok
+test_real_files_paths_bom_terminators_and_silence (tests.integration.test_file_api.FileApiTests.test_real_files_paths_bom_terminators_and_silence) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.005s
+
+OK

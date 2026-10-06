@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "root": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-013/1/independent-assessment",
+  "files": [
+    {
+      "path": "ASSESSMENT.json",
+      "sha256": "03f84679751e135276fa8b16e974a6250b7ab29f2e3c3e2629ca3c7b289f5700",
+      "bytes": 7594
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "sha256": "41834479d4cb9e33f777a8362a1d982bd0aacad82e72705d1e9e03d773aeea2a",
+      "bytes": 6382
+    },
+    {
+      "path": "COMMAND-RESULTS.json",
+      "sha256": "0c0d02c43dd062a3c390043f9c5c6f28dc8983bedea17e5bbf63caa3ea5c7f3e",
+      "bytes": 44408
+    },
+    {
+      "path": "CONNECTOR-READBACK.json",
+      "sha256": "764c99956533f1ec548e8a310dfbd563ffe2a6512b3ebb5a468a15f86f30470e",
+      "bytes": 4907
+    },
+    {
+      "path": "CONSUMER-EVIDENCE-RETENTION.json",
+      "sha256": "8186ac7be35312e40743eb283cc74b8bd4f3e0179ad98777d40da15be041f176",
+      "bytes": 10553
+    },
+    {
+      "path": "CONSUMER-NATIVE-RESULTS.json",
+      "sha256": "984cc71bfc9dc21555c15b5097c33eccaa1457932f8bd92533a8095c3f039bfb",
+      "bytes": 6850
+    },
+    {
+      "path": "DISTRIBUTION-MANIFEST.json",
+      "sha256": "a972a7df3fa2c3db940a23b0b3e081649cb48796bb7c99d58c5a58e1fd6dc8cc",
+      "bytes": 7684
+    },
+    {
+      "path": "DOC-EXAMPLES.json",
+      "sha256": "87252fdd9e46cad8c007f38aaad9977e1186d5a93a5e819556c7c1fdc38629f7",
+      "bytes": 9277
+    },
+    {
+      "path": "FINALIZATION-NATIVE.json",
+      "sha256": "7b168ef9e3b5f5091d33a05b461f39e8a75c6250605b5e091b50c90b99148ecc",
+      "bytes": 9397
+    },
+    {
+      "path": "FINALIZATION-RESUME.md",
+      "sha256": "61b06f31e527d412b7e9b7a54fb5eb60b464f20a0e635fdd96d7fe9d1cfc62b9",
+      "bytes": 1148
+    },
+    {
+      "path": "INDEPENDENT-STDIN.json",
+      "sha256": "1348c1c24713a7ffa48170a0a813fce575d3f62bbd85084c51b1635385702a6e",
+      "bytes": 1514
+    },
+    {
+      "path": "INPUTS.json",
+      "sha256": "f68b5c11c1974d3dcd2fac15f0b8df5ac5624933b852aa298442f737d8877689",
+      "bytes": 240
+    },
+    {
+      "path": "LIFECYCLE-COMMITS.json",
+      "sha256": "403970bb773732a24c9c8e31144757b07347e4ec877f4396da3c0761f6d4d136",
+      "bytes": 6672
+    },
+    {
+      "path": "LITERALS.json",
+      "sha256": "3aa4e7fb97afcb2c4ba671ef80eed8baa340298e1e7febc541c1d68512744b5c",
+      "bytes": 11774
+    },
+    {
+      "path": "LIVE-HOSTED.json",
+      "sha256": "0f267cc71b67204c601f2ff6e9efa2036f41448c723a365759f3f86dbc49c883",
+      "bytes": 6630
+    },
+    {
+      "path": "LIVE-OBSERVATION.json",
+      "sha256": "0c89609737bdc71de96db0860bbf5e188a7343f0d319e453fc634ef07720f7d2",
+      "bytes": 25558
+    },
+    {
+      "path": "LOCAL-LINKS.json",
+      "sha256": "23a8fb5df93a57928ed08955c3a9b00ff01b0dbfdb912b64441de1c776087064",
+      "bytes": 10112
+    },
+    {
+      "path": "PINNED-SOURCE.json",
+      "sha256": "fe8827ae4a73d5901e0c5b6965507cd8ea92cd2ce46db7c08554f5e09f399049",
+      "bytes": 185
+    },
+    {
+      "path": "QC-CURRENCY-RESOLUTION.json",
+      "sha256": "c1fb1066d53ac595b2ffbebdaf109ef86a7570cf7def80eb01326666a10775a1",
+      "bytes": 645
+    },
+    {
+      "path": "QC-IDENTITIES.json",
+      "sha256": "95456fb53f5bb1f08b2afc422be448f948a8dffe2a1d02c2acc7f637a2af722a",
+      "bytes": 69618
+    },
+    {
+      "path": "RUN-STATE.json",
+      "sha256": "45a9abd20ae429a7c57066671de737385abc630bdbe6deea23fdd008b072286f",
+      "bytes": 796
+    },
+    {
+      "path": "api-commands.json",
+      "sha256": "b5983c7e721f47d69a5fab03cb1969f9ee7c5e4e09e9eb594b24c555ddb5b295",
+      "bytes": 6207
+    },
+    {
+      "path": "api.json",
+      "sha256": "f104844ccb8159b3dcb0d51056aa88b96ceb16b457bf58b18e2ab72abe4108ef",
+      "bytes": 2980
+    },
+    {
+      "path": "baseline-commands.json",
+      "sha256": "57c8dc014aa8f33f96872747443af01254a6ce89e7c6fac72aa0d7a876bacd57",
+      "bytes": 10299
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "20eda200cc8a34deabe50182c9bbf3e70ef46d2182e79981d54222d0a6432ad6",
+      "bytes": 1682
+    },
+    {
+      "path": "check.py",
+      "sha256": "a066c1d35c60e48c78cf5293620981d439285b70f666791735a84f313a5c9f6a",
+      "bytes": 4529
+    },
+    {
+      "path": "distribution/textstats.tar.gz",
+      "sha256": "ba55fb78957eb8e3f47b3d5973b9c2ac61921fe881e825601e247ab35c1a1393",
+      "bytes": 79705
+    },
+    {
+      "path": "distribution-commands.json",
+      "sha256": "08b12a084798df4c1ff07e38cfcf89917cdd7867a2638f7765a0fbf795a035d9",
+      "bytes": 2383
+    },
+    {
+      "path": "distribution.json",
+      "sha256": "0751fe65c72dc99646dec991fda56b4e4bca0ff20c139f785d391a4485543abd",
+      "bytes": 238
+    },
+    {
+      "path": "extra.py",
+      "sha256": "979a747ede2c4e4c650b3c521f400b350e20b64ff715106b82e9d6c0c12e5f08",
+      "bytes": 6479
+    },
+    {
+      "path": "original-deterministic.json",
+      "sha256": "5651931bc8461c0b482d38c91fd033a6fd640167a664979f6cdbfdaeb2ec1f40",
+      "bytes": 2301
+    },
+    {
+      "path": "original-final-deterministic.json",
+      "sha256": "7e9d46fd03c481934088c6516ca745586ade7d6464e738447bf005d34019f28c",
+      "bytes": 2305
+    },
+    {
+      "path": "ranges-commands.json",
+      "sha256": "f0367a748838cfbe9beace1afa10c6376bb4dd656d950bcccd26a5bb8d9c3e43",
+      "bytes": 30163
+    },
+    {
+      "path": "ranges.json",
+      "sha256": "93deb51bf3deec14f99700716051391042ee3ed6b12ff69dfa832b3069ed439b",
+      "bytes": 4845
+    },
+    {
+      "path": "removal-commands.json",
+      "sha256": "c48e4bc461bbe40f657fb29b3e199197afe5e21a7d2d3bac57562cf17bd5bc58",
+      "bytes": 3945
+    },
+    {
+      "path": "removal.json",
+      "sha256": "1c93e9e6105b7de9dd91ecccedae619b3fd8debd27937af9c37e58c6ff966f9f",
+      "bytes": 587
+    },
+    {
+      "path": "stdin-commands.json",
+      "sha256": "02180b88a536139890086873f731f0ef93ab78159eaf01be67c578d862f75616",
+      "bytes": 8879
+    },
+    {
+      "path": "stdin.json",
+      "sha256": "8114a70454a1dee2c771eead0eee7b446a264a2d8b1b69169f710ff389df2a7e",
+      "bytes": 1672
+    },
+    {
+      "path": "variant-deterministic.json",
+      "sha256": "6164c3762e8fa775bfb72757dc8e383c891cf81c6749f57563a9964b7c3978f6",
+      "bytes": 2305
+    },
+    {
+      "path": "variant-final-deterministic.json",
+      "sha256": "7364a3e321def5531f6719764e68bf6f86009a1085ab664c009345e8b13f156a",
+      "bytes": 2309
+    }
+  ],
+  "exclude": [
+    "extracted/**",
+    "**/__pycache__/**",
+    "PUBLISH-MANIFEST.json (self)"
+  ],
+  "publication_owner": "coordinator",
+  "publication_status": "pending",
+  "note": "Manifest hashes exact assessor publication artifacts, including actual distribution/textstats.tar.gz and DISTRIBUTION-MANIFEST.json. Original consumer artifacts remain referenced in sibling attempt records."
+}

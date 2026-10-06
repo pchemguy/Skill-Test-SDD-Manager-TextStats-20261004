@@ -1,0 +1,69 @@
+[
+  {
+    "time": "2026-10-04T20:15:28.673551+00:00",
+    "method": "GET",
+    "resource": "issues/9",
+    "returncode": 0,
+    "result": {
+      "transport": "curl",
+      "http_status": 200,
+      "result": {
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/9",
+        "id": 5700128035,
+        "number": 9,
+        "title": "[T-009] Review, test and report phase 1",
+        "labels": [
+          {
+            "id": 12538641934,
+            "name": "sdd-phase-1-Named-file-utility",
+            "color": "1d76db",
+            "description": {
+              "sha256": "1d10e5e13dcb525725652cbd824d6dc4ba7d45e53a176d6d5435804d013cdef3",
+              "withheld": true
+            }
+          }
+        ],
+        "state": "closed",
+        "milestone": {
+          "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/3",
+          "id": 18303268,
+          "number": 3,
+          "title": "sdd-1.3-Phase-1-review",
+          "description": {
+            "sha256": "0fdb02b760e43ed1b245ceae4b451b208885dbd9a790642b8bec67531135b790",
+            "withheld": true
+          },
+          "open_issues": 0,
+          "closed_issues": 1,
+          "state": "open"
+        },
+        "state_reason": "completed"
+      }
+    },
+    "stderr": ""
+  },
+  {
+    "time": "2026-10-04T20:15:32.715918+00:00",
+    "method": "GET",
+    "resource": "milestones/3",
+    "returncode": 0,
+    "result": {
+      "transport": "curl",
+      "http_status": 200,
+      "result": {
+        "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/3",
+        "id": 18303268,
+        "number": 3,
+        "title": "sdd-1.3-Phase-1-review",
+        "description": {
+          "sha256": "0fdb02b760e43ed1b245ceae4b451b208885dbd9a790642b8bec67531135b790",
+          "withheld": true
+        },
+        "open_issues": 0,
+        "closed_issues": 1,
+        "state": "open"
+      }
+    },
+    "stderr": ""
+  }
+]

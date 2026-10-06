@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "case_id": "A-015",
+  "attempt": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "checkpoint_refs": {
+    "product_branch": "trial/a015-staged-recovery",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c"
+  },
+  "findings": [
+    "Actual stage interruption prerequisite was never reached: independently observed clean index/worktree, unchanged HEAD, unchecked T-001 and absent hold marker. No task tests or edits ran.",
+    "Retained consumer journal records startup push auto-review rejection and subsequent read-only destination inspection returning GitHub instead of the authorized disposable local remote. Consumer stopped without retry, credentials, config changes or alternate execution.",
+    "Original wrapper preserved in attempt evidence uses command-local remote.origin.url; coordinator identified multivalue URL override as isolated tooling fault. A temporary named-remote variant was separately probed; final fresh attempt instead uses explicit absolute local URL with hooks-only shim. Original attempt remains Blocked; a corrected fresh attempt cannot retroactively pass it."
+  ],
+  "evidence": [
+    "OBSERVATIONS.json",
+    "../../../textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-015/1/JOURNAL.md"
+  ],
+  "limits": [
+    "No native complete transcript; retained journal is consumer-authored and independent observations corroborate durable state, not every claimed action.",
+    "Broad filesystem exposure prevents strict isolation certification.",
+    "No staged-work interruption or recovery lifecycle executed in this attempt.",
+    "Local disposable remote trial does not certify live GitHub lifecycle."
+  ],
+  "interventions": [
+    "Coordinator corrects command-local Git shim outside the consumer after this pre-trigger block; separate fresh attempt required."
+  ],
+  "coverage": "Pre-trigger destination refusal only; staged-work recovery Blocked"
+}

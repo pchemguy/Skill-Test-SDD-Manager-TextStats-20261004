@@ -1,0 +1,21 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Owned task/amendment commit excludes every unrelated staged/unstaged path; exact content, modes and index intent remain.",
+    "No blanket staging/reset/stash; inspect parent-to-commit diff and before/after index blobs, not only clean-tree claim."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}

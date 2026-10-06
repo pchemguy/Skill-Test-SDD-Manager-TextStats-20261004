@@ -1,0 +1,29 @@
+{
+  "finding": "PUB-007",
+  "recorded_at": "2026-10-05T19:00:19.496988+00:00",
+  "original_delegated_rejection": {
+    "session": 45892,
+    "reason": "This pushes a new commit and repository contents to an external GitHub destination; the exact repository, branch, payload, and publication effect are supported only by untrusted agent context, not trusted user authorization."
+  },
+  "exact_operation": [
+    "git",
+    "push",
+    "origin",
+    "f04f1c3da9fe6cabf92f506a422d6aa3e146078c:refs/heads/revision/003_0e47414-remove-json"
+  ],
+  "material_primary_context": "Actual trusted human Full workflows must include pushes and latest Resume; retained designated full campaign and separate assessed JSON removal command, inspected12ownedpaths/actualchecks/cleantrackedcommit/oldrefdenial. SameordinaryGit, policyrereadbefored decision native4ebc27. Not token-only authority/unchangeddeniedretry/alternate account or transport.",
+  "actual_result": {
+    "native_chunk": "c5dd44",
+    "exit_code": 0,
+    "published_commit": "f04f1c3da9fe6cabf92f506a422d6aa3e146078c"
+  },
+  "exact_post_readback": {
+    "native_chunk": "7e3f7e",
+    "exit_code": 0,
+    "ref": "refs/heads/revision/003_0e47414-remove-json",
+    "commit": "f04f1c3da9fe6cabf92f506a422d6aa3e146078c"
+  },
+  "reported_actual_checks": "Meaningful correctedRED/GREEN; unit22/integration13 no skips;9publicblocks/source extraction/directreview. Independent case acceptance not yet run.",
+  "consumer_effect_scope": "Continue exact existing amendment hosted reconciliation, report/push, two-parent integration into paused phase2 and STOP; no stdin/finaltask continuation.",
+  "qualification": "Original delegated rejection and parent assistance retained; complete handoff alone did not demonstrate native trusted-user-authority propagation into a fresh worker."
+}

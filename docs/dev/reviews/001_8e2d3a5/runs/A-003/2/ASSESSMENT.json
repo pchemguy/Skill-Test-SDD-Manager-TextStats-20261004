@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "case_id": "A-003",
+  "attempt": 2,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "merge_parents": [
+      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+    ]
+  },
+  "actual_checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "merge_parents": [
+      "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+    ]
+  },
+  "start_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+  "plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "assessed_at": "2026-10-04T14:31:13.250916+00:00",
+  "reason": "Eligible phase 1 native projection, repeat identity reuse, publication and current preparation QC independently verified. Assisted restoration retains first attempt Blocked.",
+  "interventions": [
+    "Attempt 1 coordinator supplied a broader unavailable-API constraint; user-directed public and protected curl probes restored repository-scoped native REST transport for fresh attempt 2.",
+    "Attempt 2 coordinator clarified third protected-adapter argument must be an existing nonsecret JSON file after inline JSON failed before HTTP. Consumer reobserved labels before corrected write.",
+    "Adapter issue readback intentionally omitted bodies; consumer obtained full bodies through available connector reads. Assessor independently repeated all nine reads."
+  ],
+  "limitations": [
+    "Full native consumer transcript and strict filesystem isolation unavailable; no isolation certification.",
+    "Ten pre-existing default labels were preserved. No pre-existing foreign issue body, comment, assignee or milestone existed; preservation of such user material was not exercised.",
+    "Consumer sanitized command journal supports creation/reconciliation sequence; independent provider readbacks establish actual final state. Dedicated interruption/client acceptance remains outside this case."
+  ],
+  "evidence_paths": [
+    "COMMAND-SEQUENCE-SUPPORT.json",
+    "CONNECTOR-ISSUES.json",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "DETERMINISTIC-COMMAND.json",
+    "FINAL-STABILITY-CHECK.json",
+    "GIT-OBSERVATIONS.json",
+    "HANDOFF-REQUEST.md",
+    "HANDOFF-RESOLVED.json",
+    "HANDOFF-RESULT.md",
+    "INDEPENDENT-CHECKS.json",
+    "INPUTS.json",
+    "NATIVE-ISSUES.json",
+    "NATIVE-LABELS.json",
+    "NATIVE-MILESTONES.json",
+    "PINNED-PACKAGE-VERIFICATION.json",
+    "RUN-STATE.json"
+  ]
+}

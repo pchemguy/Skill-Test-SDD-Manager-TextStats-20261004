@@ -1,0 +1,18 @@
+{
+  "stage": "independent-read-only-start",
+  "head": "ea97182d2d6a3984599238312a13e78d54d3221a",
+  "branch": "phase/2-output-and-source-extensions",
+  "status": "?? -json-9l969okj/\n",
+  "main": "59debb649545125dd3aa00377ea115451b594271",
+  "index_sha256": "16f67efb4ac7fd677d89a7d80c07d275c541a56a0196b1481d640ebcffc0cdac",
+  "fixture": {
+    "path": "-json-9l969okj/sample.txt",
+    "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+    "bytes": 3
+  },
+  "limits": [
+    "No full native tool transcript",
+    "No hard filesystem isolation",
+    "No behavioral tests or product edits during consumer work"
+  ]
+}

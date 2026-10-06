@@ -1,0 +1,107 @@
+[
+  {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "2dae60081452d72482bd431475d8f0b88d2d9d8c\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "rev-list",
+      "--parents",
+      "-n",
+      "1",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "2dae60081452d72482bd431475d8f0b88d2d9d8c d009899e39790c39be32ae77e7fe8294bf60d04c\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "ls-remote",
+      "/workspace/scratch/textstats-staged-remote-20261005.git",
+      "refs/heads/trial/a015-staged-recovery"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "2dae60081452d72482bd431475d8f0b88d2d9d8c\trefs/heads/trial/a015-staged-recovery\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "diff",
+      "--name-only",
+      "d009899e39790c39be32ae77e7fe8294bf60d04c",
+      "2dae60081452d72482bd431475d8f0b88d2d9d8c"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "README.md\ndocs/dev/TASKS.md\ntests/__init__.py\ntests/unit/__init__.py\ntests/unit/test_core.py\ntextstats/__init__.py\ntextstats/core.py\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) ... ok\ntest_api_calls_are_silent (tests.unit.test_core.CountTextTests.test_api_calls_are_silent) ... ok\ntest_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) ... ok\ntest_input_is_unchanged (tests.unit.test_core.CountTextTests.test_input_is_unchanged) ... ok\ntest_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) ... ok\ntest_strip_bom_is_keyword_only_and_defaults_true (tests.unit.test_core.CountTextTests.test_strip_bom_is_keyword_only_and_defaults_true) ... ok\ntest_unicode_whitespace_splits_words (tests.unit.test_core.CountTextTests.test_unicode_whitespace_splits_words) ... ok\ntest_fields_cannot_be_changed (tests.unit.test_core.TextStatsTests.test_fields_cannot_be_changed) ... ok\ntest_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) ... ok\ntest_noninteger_fields_are_rejected (tests.unit.test_core.TextStatsTests.test_noninteger_fields_are_rejected) ... ok\ntest_values_are_nonnegative_integers (tests.unit.test_core.TextStatsTests.test_values_are_nonnegative_integers) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.001s\n\nOK\n"
+  },
+  {
+    "args": [
+      "/usr/local/bin/git",
+      "-C",
+      "/workspace/scratch/textstats-staged-worktree-20261005",
+      "diff",
+      "--name-only",
+      "d009899e39790c39be32ae77e7fe8294bf60d04c",
+      "2dae60081452d72482bd431475d8f0b88d2d9d8c",
+      "--",
+      "textstats-run-resources"
+    ],
+    "cwd": "/workspace/scratch/textstats-staged-worktree-20261005",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

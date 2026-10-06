@@ -1,0 +1,150 @@
+{
+  "status": "Passed",
+  "probes": [
+    {
+      "kind": "usage-before-read",
+      "argv": [],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: the following arguments are required: INPUT\n"
+    },
+    {
+      "kind": "usage-before-read",
+      "argv": [
+        "x",
+        "y"
+      ],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: unrecognized arguments: y\n"
+    },
+    {
+      "kind": "usage-before-read",
+      "argv": [
+        "--unknown",
+        "x"
+      ],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: unrecognized arguments: --unknown\n"
+    },
+    {
+      "kind": "usage-before-read",
+      "argv": [
+        "--lines",
+        "0:1",
+        "x"
+      ],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n"
+    },
+    {
+      "kind": "usage-before-read",
+      "argv": [
+        "--lines",
+        "2:1",
+        "x"
+      ],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n"
+    },
+    {
+      "kind": "usage-before-read",
+      "argv": [
+        "--lines",
+        "1:1",
+        "--lines",
+        "1:1",
+        "x"
+      ],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: --lines may be specified only once\n"
+    },
+    {
+      "kind": "usage-before-read",
+      "argv": [
+        "--lines",
+        "1:",
+        "x"
+      ],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines must be positive ASCII START:END\n"
+    },
+    {
+      "kind": "usage-before-read",
+      "argv": [
+        "--lines",
+        "\u0661:2",
+        "x"
+      ],
+      "status": 2,
+      "open_calls": 0,
+      "stdout": "",
+      "stderr": "usage: textstats [-h] [--json] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines must be positive ASCII START:END\n"
+    },
+    {
+      "kind": "success",
+      "events": [
+        "enter",
+        "read",
+        "close"
+      ],
+      "closed": true,
+      "exception": null,
+      "stdout": "",
+      "stderr": "",
+      "open_args": "call('independent-owned.txt', 'rb')"
+    },
+    {
+      "kind": "read-error",
+      "events": [
+        "enter",
+        "read",
+        "close"
+      ],
+      "closed": true,
+      "exception": "OSError",
+      "stdout": "",
+      "stderr": "",
+      "open_args": "call('independent-owned.txt', 'rb')"
+    },
+    {
+      "kind": "decode-error",
+      "events": [
+        "enter",
+        "read",
+        "close"
+      ],
+      "closed": true,
+      "exception": "UnicodeDecodeError",
+      "stdout": "",
+      "stderr": "",
+      "open_args": "call('independent-owned.txt', 'rb')"
+    },
+    {
+      "kind": "cli-read-error",
+      "status": 1,
+      "closed": true,
+      "stdout": "",
+      "stderr": "textstats: 'independent-owned.txt': independent read failure\n"
+    },
+    {
+      "kind": "cli-decode-error",
+      "status": 1,
+      "closed": true,
+      "stdout": "",
+      "stderr": "textstats: 'independent-owned.txt': 'utf-8' codec can't decode byte 0xff in position 6: invalid start byte\n"
+    }
+  ]
+}

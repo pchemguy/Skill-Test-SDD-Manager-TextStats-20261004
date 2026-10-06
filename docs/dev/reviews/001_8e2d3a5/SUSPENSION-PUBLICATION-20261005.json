@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-10-05T03:32:04.414600+00:00",
+  "checkpoint_commit": "2595e3097bb43fe81f7d262bdebd0a1bfe7a04b5",
+  "repository": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
+  "evidence_ref": "refs/heads/revision/001_8e2d3a5-live-acceptance",
+  "remote_readback": "2595e3097bb43fe81f7d262bdebd0a1bfe7a04b5\trefs/heads/revision/001_8e2d3a5-live-acceptance",
+  "recovery_bundles": [
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-015/2/recovery/LOCAL-TASK-COMMIT.bundle",
+      "published_sha256": "0776d20338d8ff7fdfc4833044d593a07743db4461c5d104bf933acd95a2b74c",
+      "exact_bytes_in_checkpoint": true
+    },
+    {
+      "path": "docs/dev/reviews/001_8e2d3a5/runs/A-016/1/recovery/LOCAL-TASK-COMMIT.bundle",
+      "published_sha256": "6aa8446f99cd470aa17d28f29e2acd840780ab9c70a6e95e1a350139dadefab0",
+      "exact_bytes_in_checkpoint": true
+    }
+  ],
+  "all_workers_stopped": true,
+  "A016_task_ref_published": false,
+  "resume_requires_explicit_instruction": true
+}

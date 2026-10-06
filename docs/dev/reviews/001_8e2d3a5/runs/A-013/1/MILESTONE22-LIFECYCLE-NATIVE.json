@@ -1,0 +1,126 @@
+{
+  "issue16_before": {
+    "issue": 16,
+    "title": "[T-016] Review, test and report milestone 2.2",
+    "state": "open",
+    "unique_marker": true,
+    "comment_count": 0,
+    "matching_completion_comments": 0,
+    "close_keys": [
+      "state",
+      "state_reason"
+    ],
+    "milestone_keys": [
+      "state"
+    ],
+    "report_tip_in_comment": true,
+    "report_commit_in_comment": false
+  },
+  "issue16_native": {
+    "initial": {
+      "chunk_id": "e1abd1",
+      "wall_time_seconds": 1.000616765,
+      "session_id": 81015,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "completion": {
+      "chunk_id": "b1c5e8",
+      "wall_time_seconds": 5.001270428,
+      "session_id": 81015,
+      "original_token_count": 180,
+      "output": "{\"at\": \"2026-10-06T04:27:22.361905+00:00\", \"method\": \"POST\", \"resource\": \"issues/16/comments\", \"exit_code\": 0, \"stdout_sha256\": \"600280ffe82373f8305fefc07403316a1f91296a50d0d90b450a3383c8ddb6bd\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue16-comment.json\", \"payload_sha256\": \"ea0e7aa8dc50c76dee2dec90a6303ee617c3bb874d825f7f9e349161b15d9020\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 201, \"result\": {\"id\": 6009331256, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/16#issuecomment-6009331256\", \"returned_owned_matches\": {}}}\n"
+    },
+    "completion_final": {
+      "chunk_id": "5eebd4",
+      "wall_time_seconds": 5.00085195,
+      "exit_code": 0,
+      "original_token_count": 257,
+      "output": "{\"at\": \"2026-10-06T04:27:28.201499+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/16\", \"exit_code\": 0, \"stdout_sha256\": \"97aedb8a9cce2ee509874d0bcb028d6fefc3d7332aee81bb3d146ce1daa84984\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue16-close.json\", \"payload_sha256\": \"db99f3203e2d3068933110610bcc0af6629dc86a808b19f289174b65e7ff929b\", \"payload_keys\": [\"state\", \"state_reason\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703075665, \"number\": 16, \"title\": \"[T-016] Review, test and report milestone 2.2\", \"state\": \"closed\", \"state_reason\": \"completed\", \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/16\", \"milestone\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {\"state\": true, \"state_reason\": true}}}\n"
+    }
+  },
+  "closure_gate": {
+    "native": "aece22",
+    "exit_code": 0,
+    "membership": [
+      {
+        "number": 16,
+        "id": 5703075665,
+        "title": "[T-016] Review, test and report milestone 2.2",
+        "state": "closed",
+        "state_reason": "completed",
+        "milestone": 5,
+        "is_pull_request": false
+      },
+      {
+        "number": 15,
+        "id": 5703074842,
+        "title": "[T-015] Complete source documentation and final distribution checks",
+        "state": "closed",
+        "state_reason": "completed",
+        "milestone": 5,
+        "is_pull_request": false
+      },
+      {
+        "number": 14,
+        "id": 5703073919,
+        "title": "[T-014] Complete stdin failure and interaction acceptance",
+        "state": "closed",
+        "state_reason": "completed",
+        "milestone": 5,
+        "is_pull_request": false
+      },
+      {
+        "number": 13,
+        "id": 5703073183,
+        "title": "[T-013] Integrate borrowed binary stdin acquisition",
+        "state": "closed",
+        "state_reason": "completed",
+        "milestone": 5,
+        "is_pull_request": false
+      }
+    ],
+    "comment16_count": 1,
+    "comment16_match": 1,
+    "milestone": {
+      "number": 5,
+      "id": 18309642,
+      "title": "sdd-2.2-UTF-8-stdin-and-final-release",
+      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 4
+    }
+  },
+  "milestone_closure_native": {
+    "initial": {
+      "chunk_id": "683f9e",
+      "wall_time_seconds": 1.001399644,
+      "session_id": 44841,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "completion": {
+      "chunk_id": "ecfa17",
+      "wall_time_seconds": 5.001001423,
+      "exit_code": 0,
+      "original_token_count": 206,
+      "output": "{\"at\": \"2026-10-06T04:28:10.311940+00:00\", \"method\": \"PATCH\", \"resource\": \"milestones/5\", \"exit_code\": 0, \"stdout_sha256\": \"9a140b48bace47647d48cfc5f7a7c6752a68aca89167e95bb6ac8f9879e5b07f\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/milestone5-close.json\", \"payload_sha256\": \"24e6fa35706e3b33811050a0ff927771ee260c8b37dbedb4582f8abe9dc0160d\", \"payload_keys\": [\"state\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"closed\", \"open_issues\": 0, \"closed_issues\": 4, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/5\", \"returned_owned_matches\": {\"state\": true}}}\n"
+    }
+  },
+  "milestone_readback_native": {
+    "initial": {
+      "chunk_id": "f701d5",
+      "wall_time_seconds": 1.000990692,
+      "session_id": 41527,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "completion": {
+      "chunk_id": "a950ba",
+      "wall_time_seconds": 5.000404347,
+      "exit_code": 0,
+      "original_token_count": 146,
+      "output": "{\"at\": \"2026-10-06T04:28:22.414897+00:00\", \"method\": \"GET\", \"resource\": \"milestones/5\", \"exit_code\": 0, \"stdout_sha256\": \"9a140b48bace47647d48cfc5f7a7c6752a68aca89167e95bb6ac8f9879e5b07f\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"closed\", \"open_issues\": 0, \"closed_issues\": 4, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/5\"}}\n"
+    }
+  }
+}

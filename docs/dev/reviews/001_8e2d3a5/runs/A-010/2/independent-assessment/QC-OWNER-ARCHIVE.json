@@ -1,0 +1,254 @@
+{
+  "SPEC": {
+    "latest_revision": "3 \u2014 Final range incorporation and archive conformance",
+    "identities": [
+      {
+        "name": "PROJECT.md",
+        "reported": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988",
+        "actual": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988",
+        "matches": true
+      },
+      {
+        "name": "ARCHITECTURE.md",
+        "reported": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a",
+        "actual": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a",
+        "matches": true
+      },
+      {
+        "name": "DECOMPOSITION.md",
+        "reported": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15",
+        "actual": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15",
+        "matches": true
+      },
+      {
+        "name": "SPEC.md",
+        "reported": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+        "actual": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+        "matches": true
+      },
+      {
+        "name": "PLAN.md",
+        "reported": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629",
+        "actual": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629",
+        "matches": true
+      },
+      {
+        "name": "layout.md",
+        "reported": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32",
+        "actual": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32",
+        "matches": true
+      },
+      {
+        "name": "TASKS.md",
+        "reported": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de",
+        "actual": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de",
+        "matches": true
+      }
+    ]
+  },
+  "PLAN": {
+    "latest_revision": "3 \u2014 Final range incorporation and archive conformance",
+    "identities": [
+      {
+        "name": "PROJECT.md",
+        "reported": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988",
+        "actual": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988",
+        "matches": true
+      },
+      {
+        "name": "ARCHITECTURE.md",
+        "reported": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a",
+        "actual": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a",
+        "matches": true
+      },
+      {
+        "name": "DECOMPOSITION.md",
+        "reported": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15",
+        "actual": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15",
+        "matches": true
+      },
+      {
+        "name": "SPEC.md",
+        "reported": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+        "actual": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+        "matches": true
+      },
+      {
+        "name": "PLAN.md",
+        "reported": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629",
+        "actual": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629",
+        "matches": true
+      },
+      {
+        "name": "layout.md",
+        "reported": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32",
+        "actual": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32",
+        "matches": true
+      },
+      {
+        "name": "TASKS.md",
+        "reported": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de",
+        "actual": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de",
+        "matches": true
+      }
+    ]
+  },
+  "TASKS": {
+    "latest_revision": "4 \u2014 Final range incorporation and archive conformance",
+    "identities": [
+      {
+        "name": "PROJECT.md",
+        "reported": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988",
+        "actual": "289e8cd7356ac224beb073a3edb352adb73d2c48d636e1ce5fbe1791bdbc4988",
+        "matches": true
+      },
+      {
+        "name": "ARCHITECTURE.md",
+        "reported": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a",
+        "actual": "4cf11af91266438fbc1baf69ca51d64400eb0f64ce82fc0b48e5ba61d720ca0a",
+        "matches": true
+      },
+      {
+        "name": "DECOMPOSITION.md",
+        "reported": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15",
+        "actual": "bdccc4d9365d2733a4f2f168dcd8a15d17b7f93ac4dece431e5e1cdd455e1e15",
+        "matches": true
+      },
+      {
+        "name": "SPEC.md",
+        "reported": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+        "actual": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+        "matches": true
+      },
+      {
+        "name": "PLAN.md",
+        "reported": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629",
+        "actual": "e1aa667a8bea06ed9feb9211697a9d70ac3f75b688f1f877ee4d38443cd8c629",
+        "matches": true
+      },
+      {
+        "name": "layout.md",
+        "reported": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32",
+        "actual": "abab95bf824a28080034bdcca7737acdfe48e74f665521139a118918fa6bff32",
+        "matches": true
+      },
+      {
+        "name": "TASKS.md",
+        "reported": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de",
+        "actual": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de",
+        "matches": true
+      }
+    ]
+  },
+  "broken_local_links": [],
+  "owners": {
+    "docs/dev/TASKS.md": [
+      [
+        "x",
+        "T-001"
+      ],
+      [
+        "x",
+        "T-002"
+      ],
+      [
+        "x",
+        "T-003"
+      ],
+      [
+        "x",
+        "T-004"
+      ],
+      [
+        "x",
+        "T-005"
+      ],
+      [
+        "x",
+        "T-006"
+      ],
+      [
+        "x",
+        "T-007"
+      ],
+      [
+        "x",
+        "T-008"
+      ],
+      [
+        "x",
+        "T-009"
+      ],
+      [
+        "x",
+        "T-010"
+      ],
+      [
+        "x",
+        "T-011"
+      ],
+      [
+        "x",
+        "T-012"
+      ],
+      [
+        " ",
+        "T-013"
+      ],
+      [
+        " ",
+        "T-014"
+      ],
+      [
+        " ",
+        "T-015"
+      ],
+      [
+        " ",
+        "T-016"
+      ],
+      [
+        " ",
+        "T-017"
+      ],
+      [
+        "x",
+        "T-018"
+      ],
+      [
+        "x",
+        "T-019"
+      ],
+      [
+        "x",
+        "T-020"
+      ],
+      [
+        "x",
+        "T-021"
+      ],
+      [
+        "x",
+        "T-022"
+      ]
+    ],
+    "docs/dev/features/002_ea97182/FEATURE-TASKS.md": []
+  },
+  "tracked_reports": {
+    "docs/dev/features/002_ea97182/2.4.md": "630d94bf1e4d69368c329b05d2968b88ed3fd335301ffa1e00fd7c3db58ab3e1",
+    "docs/dev/features/002_ea97182/FEATURE-PLAN-REVIEW-REPORT.md": "40bc5abdd0139d1b9c084dcdecfeb9940b3f4ad2bf7deca7bc9279b7432e3dd7",
+    "docs/dev/features/002_ea97182/FEATURE-PLAN.md": "f2deac1776918a83fadc5779db601c75ee81efa7a1e4ff6d87e96a8b0d2c6398",
+    "docs/dev/features/002_ea97182/FEATURE-SPEC-REVIEW-REPORT.md": "ef039d1d5b3f5a3c2ecf73754b2873d1435b5264e63164d313360199f524a7e3",
+    "docs/dev/features/002_ea97182/FEATURE-SPEC.md": "3ea5af202942b72ac743c400a5cc810932d65e2e9f66e046b2911da5d511fe08",
+    "docs/dev/features/002_ea97182/FEATURE-TASKS-REVIEW-REPORT.md": "23c779b2effa874428e311dd11e74a4202ae90e0a57bc4f0baf0bb2fed09b958",
+    "docs/dev/features/002_ea97182/FEATURE-TASKS.md": "5fa674945d145e00e76f0a90ae7a8f6ee0b701fa711ed89f2e35cd61117e16b0",
+    "docs/dev/features/002_ea97182/IMPLEMENTATION-REPORT.md": "304d6a7007281a9b1d078bd97fa280feaf32c48bc286b2017038193e984df782",
+    "docs/dev/features/002_ea97182/PHASE-REPORT.md": "de0900dd513199936f5e9726373ffbf2680b5ed66c666f9ec1a5cc4d2246152b",
+    "docs/dev/features/002_ea97182/README.md": "d2dc7a1e1c1ae2dad047e3fa4def813999fadcc10677f98ab554168bc4167634"
+  },
+  "archive_adjacency": {
+    "FEATURE-SPEC": true,
+    "FEATURE-PLAN": true,
+    "FEATURE-TASKS": true
+  }
+}

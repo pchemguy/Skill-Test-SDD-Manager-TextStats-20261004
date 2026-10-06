@@ -1,0 +1,8 @@
+{
+  "actor": "coordinator",
+  "restored_at": "2026-10-05T03:13:01.747878+00:00",
+  "effect": "Controlled hook allows future commits after actual native command cancellation, no existing command released",
+  "verified_state": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "index_exact": true,
+  "product_file_changes": false
+}

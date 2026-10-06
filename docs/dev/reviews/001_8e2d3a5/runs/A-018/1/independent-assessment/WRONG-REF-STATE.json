@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P4",
+  "case_id": "A-018",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent final fresh continuation snapshot",
+  "pending_operation": null,
+  "next_action": "Publish independent assessment",
+  "checkpoint_refs": {
+    "product_branch": "trial/a018-rejected-publication",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "remote": "/workspace/scratch/textstats-rejected-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a018-nonexistent",
+    "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be"
+  },
+  "evidence_paths": [
+    "FINAL-SNAPSHOT.json"
+  ]
+}

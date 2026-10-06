@@ -1,0 +1,12 @@
+{
+  "instruction": "Perform controlled suspension",
+  "requested_at": "2026-10-05T06:23:46+03:00",
+  "status": "consumed by explicit Resume",
+  "active_cases_at_request": [
+    "A-009",
+    "A-015",
+    "A-016"
+  ],
+  "next_action": "Remain suspended until explicit human Resume",
+  "consumed_at": "2026-10-05T07:56:15.505355+00:00"
+}

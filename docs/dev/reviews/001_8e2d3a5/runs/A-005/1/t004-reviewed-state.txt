@@ -1,0 +1,8 @@
+f2260a2 Deliver useful named-file module CLI (T-003)
+ README.md                     |  2 +-
+ docs/dev/TASKS.md             |  3 ++-
+ tests/integration/test_cli.py | 56 +++++++++++++++++++++++++++++++++++++++++++
+ tests/unit/test_cli.py        | 22 +++++++++++++++++
+ textstats/__main__.py         |  6 +++++
+ textstats/cli.py              | 28 ++++++++++++++++++++++
+ 6 files changed, 115 insertions(+), 2 deletions(-)

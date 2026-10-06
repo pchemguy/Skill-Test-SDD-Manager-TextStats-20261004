@@ -1,0 +1,29 @@
+{
+  "initial": {
+    "chunk_id": "3dd6c8",
+    "wall_time_seconds": 1.000171138,
+    "session_id": 79741,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion": {
+    "chunk_id": "568fa3",
+    "wall_time_seconds": 5.000914396,
+    "exit_code": 0,
+    "original_token_count": 45,
+    "output": "To https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git\n   2c8f9ec..40a1923  40a192353dc97227714a602e9eb301d46fd97c4a -> phase/2-output-and-source-extensions\n"
+  },
+  "readback": {
+    "chunk_id": "d6ba8c",
+    "wall_time_seconds": 10.001274153,
+    "exit_code": 0,
+    "original_token_count": 37,
+    "output": "59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\n40a192353dc97227714a602e9eb301d46fd97c4a\trefs/heads/phase/2-output-and-source-extensions\n"
+  },
+  "owned_readiness_hashes": {
+    "native": "3c8e3b",
+    "exit_code": 0,
+    "hashes": 21
+  },
+  "observed_process_create_failure": "First readonly inspection exec-server disconnected before process creation, repeated readonly succeeded264d9f"
+}

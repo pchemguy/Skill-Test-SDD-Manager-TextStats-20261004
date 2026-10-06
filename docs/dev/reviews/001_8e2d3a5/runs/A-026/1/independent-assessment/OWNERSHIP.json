@@ -1,0 +1,92 @@
+{
+  "documents": [
+    "docs/dev/TASKS.md"
+  ],
+  "owners": {
+    "T-001": {
+      "document": "docs/dev/TASKS.md",
+      "line": 16,
+      "status": "Checked"
+    },
+    "T-002": {
+      "document": "docs/dev/TASKS.md",
+      "line": 21,
+      "status": "Checked"
+    },
+    "T-003": {
+      "document": "docs/dev/TASKS.md",
+      "line": 26,
+      "status": "Checked"
+    },
+    "T-004": {
+      "document": "docs/dev/TASKS.md",
+      "line": 31,
+      "status": "Checked"
+    },
+    "T-005": {
+      "document": "docs/dev/TASKS.md",
+      "line": 36,
+      "status": "Unchecked"
+    },
+    "T-006": {
+      "document": "docs/dev/TASKS.md",
+      "line": 40,
+      "status": "Unchecked"
+    },
+    "T-007": {
+      "document": "docs/dev/TASKS.md",
+      "line": 44,
+      "status": "Unchecked"
+    },
+    "T-008": {
+      "document": "docs/dev/TASKS.md",
+      "line": 48,
+      "status": "Unchecked"
+    },
+    "T-009": {
+      "document": "docs/dev/TASKS.md",
+      "line": 52,
+      "status": "Unchecked"
+    },
+    "T-010": {
+      "document": "docs/dev/TASKS.md",
+      "line": 60,
+      "status": "Unchecked"
+    },
+    "T-011": {
+      "document": "docs/dev/TASKS.md",
+      "line": 64,
+      "status": "Unchecked"
+    },
+    "T-012": {
+      "document": "docs/dev/TASKS.md",
+      "line": 68,
+      "status": "Unchecked"
+    },
+    "T-013": {
+      "document": "docs/dev/TASKS.md",
+      "line": 72,
+      "status": "Unchecked"
+    },
+    "T-014": {
+      "document": "docs/dev/TASKS.md",
+      "line": 76,
+      "status": "Unchecked"
+    },
+    "T-015": {
+      "document": "docs/dev/TASKS.md",
+      "line": 80,
+      "status": "Unchecked"
+    },
+    "T-016": {
+      "document": "docs/dev/TASKS.md",
+      "line": 84,
+      "status": "Unchecked"
+    },
+    "T-017": {
+      "document": "docs/dev/TASKS.md",
+      "line": 88,
+      "status": "Unchecked"
+    }
+  }
+}

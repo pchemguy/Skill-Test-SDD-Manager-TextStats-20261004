@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-06T04:33:01.217737+00:00",
+  "method": "PATCH",
+  "resource": "issues/17",
+  "exit_code": 0,
+  "stdout_sha256": "bf26c8c3464128338d80ea771b95a8eb138df8df69a9f88fd818149c0f71a111",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "payload_path": "docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue17-close.json",
+  "payload_sha256": "db99f3203e2d3068933110610bcc0af6629dc86a808b19f289174b65e7ff929b",
+  "payload_keys": [
+    "state",
+    "state_reason"
+  ],
+  "response_json": true,
+  "transport": "curl",
+  "http_status": 200,
+  "result": {
+    "id": 5703078349,
+    "number": 17,
+    "title": "[T-017] Review, test and report phase 2 and the complete product",
+    "state": "closed",
+    "state_reason": "completed",
+    "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/17",
+    "milestone": {
+      "id": 18309655,
+      "number": 6,
+      "title": "sdd-2.3-Phase-2-and-final-review",
+      "state": "open"
+    },
+    "label_names": [
+      "sdd-phase-2-Output-and-source-extensions"
+    ],
+    "returned_owned_matches": {
+      "state": true,
+      "state_reason": true
+    }
+  }
+}

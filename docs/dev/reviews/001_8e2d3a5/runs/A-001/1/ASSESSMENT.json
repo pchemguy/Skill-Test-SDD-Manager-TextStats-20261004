@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "case_id": "A-001",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "attempt": 1,
+  "first_attempt_status": "Passed",
+  "assisted": false,
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "merge_parents": [
+      "d0087ff75e485cab832a28d6b501150eaf2ed249"
+    ]
+  },
+  "findings": [
+    {
+      "id": "A001-E01",
+      "severity": "nonblocking",
+      "location": "consumer RESULT.md Actual actions and checks; AI_DISCLOSURE.md:10,12",
+      "observation": "Consumer claims git diff --check passed at all checkpoints. Independent baseline-to-final committed diff check exits 2 for trailing whitespace at disclosure lines 10 and 12. Disclosure is byte-identical to required pinned asset.",
+      "consequence": "Unqualified whitespace-check claim cannot establish a clean committed preparation diff; no acceptance contract requires changing required asset bytes.",
+      "proposal": "Future evidence should state exact command/range and distinguish clean working-tree checks from committed-range checks; retain required template bytes.",
+      "evidence": [
+        "STRUCTURE-CHECKS.json",
+        "INITIAL-CHECKS.json",
+        "RESULT.md"
+      ]
+    }
+  ],
+  "evidence": [
+    "COMMITTED-OBSERVATIONS.json",
+    "INPUTS.json",
+    "LIVE-READBACK.json",
+    "RUN-STATE.json",
+    "REQUEST.md",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "INITIAL-CHECKS.json",
+    "SOURCE-COMPARISON.json",
+    "STRUCTURE-CHECKS.json",
+    "PREPARATION.md",
+    "RESULT.md"
+  ],
+  "limitations": [
+    "Complete native consumer transcript unavailable; journal is supporting evidence.",
+    "Broad shared filesystem access prevents consumer isolation certification.",
+    "Transient hosting history and intermediate push timing not independently certified."
+  ],
+  "conclusion": "All A-001 reached-state preparation and lifecycle acceptance criteria satisfied; one nonblocking verification-claim discrepancy retained."
+}

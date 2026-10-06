@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-05T13:14:29.370694+00:00",
+  "actor": "coordinator",
+  "prior_mode": "restored",
+  "mode": "unavailable-session",
+  "effect": "bounded safe GET facility classifies pre-send credential_session_unavailable; no protected session or credential changed",
+  "wrapper_sha256": "850248b068b422ca67dff375ec1cba2d342a348ab007a85eb1809edfebc57b22",
+  "events_before_count": 10,
+  "product_HEAD": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+  "status": ""
+}

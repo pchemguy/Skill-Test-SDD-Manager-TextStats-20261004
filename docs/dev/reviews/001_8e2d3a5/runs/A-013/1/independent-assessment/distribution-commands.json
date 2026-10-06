@@ -1,0 +1,56 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-7tf0fa5n",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-013/1/independent-assessment/extracted",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-013/1/independent-assessment/extracted/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoL3RleHRzdGF0cy1saXZlLWV2aWRlbmNlLTIwMjYxMDA0L2RvY3MvZGV2L3Jldmlld3MvMDAxXzhlMmQzYTUvcnVucy9BLTAxMy8xL2luZGVwZW5kZW50LWFzc2Vzc21lbnQvZXh0cmFjdGVkL3RleHRzdGF0cy9fX2luaXRfXy5weQo="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "extracted-entry.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-7tf0fa5n",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-013/1/independent-assessment/extracted",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "before_sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "input_sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "name": "extracted-entry.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-013/1/independent-assessment/extracted",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "distribution"
+}

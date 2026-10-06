@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_repository": "/workspace/scratch/textstats-transfer-remote-20261005.git",
+  "local_checkout": "/workspace/scratch/textstats-transfer-worktree-20261005",
+  "plugin_revision": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "source_mode": "committed",
+  "scope": {
+    "cases": [
+      "A-021"
+    ]
+  },
+  "profile": "local-only"
+}

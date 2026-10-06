@@ -1,0 +1,31 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-007",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-007/1/independent-assessment/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+        "integration_branch": "main",
+        "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "ea97182d2d6a3984599238312a13e78d54d3221a"
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "06c6f5dd82cbaad8d6588ff207af894885515031",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-007/1/independent-assessment/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Existing checkout /workspace/scratch/textstats-live-20261004 is paused on published phase/2-output-and-source-extensions at ea97182d2d6a3984599238312a13e78d54d3221a. Main remains published 59debb649545125dd3aa00377ea115451b594271. T-010\u2013T-012 are complete; milestone sdd-2.1-JSON-output (#4) closed, issues10\u201312 completed. T-013\u2013T-017 remain incomplete/open; no stdin implementation or Phase2 integration. Tracked/index clean; unexplained untracked -json-9l969okj/sample.txt must remain preserved and excluded. Follow product AGENTS and pinned textstats-run-resources/plugin/skills, immutable source019eb354cf0921ebd6056e6579763ac33d0baec2. No clones, resets or unrelated branch/worktree mutations. The user has resumed the full live acceptance workflow for designated pchemguy/Skill-Test-SDD-Manager-TextStats-20261004 with the standing GO and supplied repository-scoped read/write grant; prescribed scoped commits, pushes and hosted effects are authorized without repeating permission questions. Read sdd-manage/references/revision-authorization.md before authority decisions. Reviews end at commits; pushes are execution operations. No platform bypass; preserve exact rejection and actual-state facts, retry only supported same-channel context with materially new authority/evidence. Normal Git and protected API transport available: python /workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py METHOD RESOURCE [EXISTING_NONSECRET_BODY_JSON_FILE], resource repository-relative with no leading slash. Do not inspect adapter source/credentials or expose token. Omit provider body/description prose from evidence; use sanitized IDs, metadata, hashes and links. This request prepares the feature only and stops before implementation."
+  }
+}

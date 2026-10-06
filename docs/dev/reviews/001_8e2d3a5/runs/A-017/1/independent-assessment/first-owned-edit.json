@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-05T13:20:59.685937+00:00",
+  "implementation_paths": [
+    "textstats/core.py",
+    "textstats/__init__.py"
+  ],
+  "contents": {
+    "textstats/core.py": "\"\"\"Pure text statistics, independent of input acquisition or process state.\"\"\"\n\nfrom dataclasses import dataclass\n\n\n@dataclass(frozen=True)\nclass TextStats:\n    \"\"\"Immutable nonnegative integer counts of logical lines and words.\n\n    Raises:\n        TypeError: A field is not an integer count (including booleans).\n        ValueError: A field is negative.\n    \"\"\"\n\n    lines: int\n    words: int\n\n    def __post_init__(self) -> None:\n        for value in (self.lines, self.words):\n            if not isinstance(value, int) or isinstance(value, bool):\n                raise TypeError(\"counts must be integers\")\n            if value < 0:\n                raise ValueError(\"counts must be nonnegative\")\n\n\ndef count_text(text: str, *, strip_bom: bool = True) -> TextStats:\n    \"\"\"Count CRLF/CR/LF lines and Unicode-whitespace-separated words.\n\n    Args:\n        text: Caller-owned text; never changed.\n        strip_bom: Remove exactly one leading U+FEFF before counting.\n\n    Returns:\n        Immutable statistics. Empty normalized text has zero lines; a final\n        unterminated segment adds one line. Other Unicode separators affect\n        words only. Retained BOMs are ordinary non-whitespace characters.\n\n    This pure function emits no output and acquires no resources.\n    \"\"\"\n    if strip_bom and text.startswith(\"\\ufeff\"):\n        text = text[1:]\n    # Subtract paired CRLFs so each pair contributes only one terminator.\n    lines = text.count(\"\\r\") + text.count(\"\\n\") - text.count(\"\\r\\n\")\n    if text and not text.endswith((\"\\r\", \"\\n\")):\n        lines += 1\n    return TextStats(lines, len(text.split()))\n",
+    "textstats/__init__.py": "\"\"\"Public immutable statistics and pure text counting for Python callers.\"\"\"\n\nfrom .core import TextStats, count_text\n\n__all__ = [\"TextStats\", \"count_text\"]\n"
+  },
+  "status": "? tests/\n? textstats/\n"
+}

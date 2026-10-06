@@ -1,0 +1,38 @@
+{
+  "finding": "PUB-006",
+  "recorded_at": "2026-10-05T18:53:13.213344+00:00",
+  "original_delegated_rejection": {
+    "session": 80376,
+    "reason": "This publishes a new commit and repository content to an unverified GitHub destination; the exact repository, branch, payload, and publication side effect are not authorized by trusted user text."
+  },
+  "exact_operation": [
+    "git",
+    "push",
+    "origin",
+    "b7a4a7e47f512e541b670d0c6f02b2bd5746afc2:refs/heads/revision/003_0e47414-remove-json"
+  ],
+  "supported_new_context": {
+    "actual_human_standing_instruction": "Full workflows must include pushes",
+    "latest_human_instruction": "Resume",
+    "retained_designated_repository": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
+    "current_selected_effect": "Assessed JSON removal governing preparation and later paused-phase amendment integration; no stdin resume",
+    "exact_owned_scope": "11 committed docs/dev Markdown paths, no production change or two unstaged test edits",
+    "verification": "21 independently matching current QC input hashes; native b058c9 commit whitespace check exit0; original amendment ref absent readbacks392b14 and748797",
+    "policy_read_before_authority": "Pinned sdd-manage/references/revision-authorization.md",
+    "material_difference": "Primary session carries retained actual human standing request and established scope alongside exact payload/ref/check/readback. Same ordinary Git destination/account/transport. Platform decision retained; no claimed exemption."
+  },
+  "actual_reassessment": {
+    "native_chunk": "a31d79",
+    "exit_code": 0,
+    "effect": "New amendment ref published exact existing commit"
+  },
+  "exact_post_readback": {
+    "native_chunk": "3984b5",
+    "exit_code": 0,
+    "commit": "b7a4a7e47f512e541b670d0c6f02b2bd5746afc2",
+    "ref": "refs/heads/revision/003_0e47414-remove-json"
+  },
+  "process_defect": "Consumer began two test-first edits before HOLD arrived while preparation publication blocked. Preserved uncommitted, excluded from pushed payload, no production edit; original mock errors and true RED failure retained. Resume only after publication resolution.",
+  "consumer_handoff": "Resume same amendment from retained tests; no duplicate prep publication; stop after verified paused-phase integration.",
+  "limits": "Original platform denial not erased. Credential capability not arbitrary payload authorization, no bypass/unchanged denied retry/transport change."
+}

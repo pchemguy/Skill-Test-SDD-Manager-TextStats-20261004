@@ -1,0 +1,35 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-012",
+      "status": "Passed",
+      "assessment_path": "../../../runs/A-012/1/independent-assessment/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+        "merge_parents": [
+          "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+          "70e78a4136bc040bcab0a6db50ced03b9736ae33"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12"
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "0cebfe97b82269e7c28b43aa84bbbf3d163d353a",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-012/1/independent-assessment/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Use existing product checkout /workspace/scratch/textstats-live-20261004 and immutable textstats-run-resources/plugin/skills pinned019eb354cf0921ebd6056e6579763ac33d0baec2. JSON removal is integrated/published into phase/2-output-and-source-extensions at2c8f9ec3c888075be64149ac3d4751939802ee12; amendment revision/003_0e47414-remove-json retained70e78a4136bc040bcab0a6db50ced03b9736ae33. Main remains59debb649545125dd3aa00377ea115451b594271. Independently accepted removal prerequisite will be published before this selected request executes. Current text/counting/BOM/named-file ranges retained; historical JSON2.1/T-010\u2013T-012 are retired completed history, not remaining work. Pending owning tasks T-013\u2013T-017 complete stdin2.2 and final review2.3.\n\nExplicit later stdin requirement: apply retained range selection to stdin too, using the same ASCII endpoint syntax/validation, complete strict UTF-8 decode, single BOM normalization, original terminators and EOF semantics. Update affected governing owners/current QC before production consumes them. Earlier named-file feature did not deliver stdin; this separately selected later stdin outcome includes range composition. Read bytes until EOF independently of locale, preserve borrowed stdin lifetime, identify stdin read/decode failures with status1 and empty success stdout. Preserve named files, literal ./-, removed--json rejection and exact text output. This is an explicit product-input clarification, recorded as assistance; no third phase.\n\nActual human Resume continues full campaign in established pchemguy/Skill-Test-SDD-Manager-TextStats-20261004; standing Full workflows must include pushes authorizes prescribed scoped commits/publication, maintained hosted operations and completed phase integration. Read pinned sdd-manage/references/revision-authorization.md before authority decisions. Review ends on commit; execution owns push. Retain platform controls; no unchanged denied retry or transport/account bypass, exact unknown-effect readback before retry. Runtime delegated tools do not inherit primary native trusted human authority: for each verified required publication or hosted mutation, prepare exact commit/ref or authored payload/identity, owned diff, checks and current readback, request PRIMARY EXECUTION handoff and HOLD dependent advance until actual receipt/readback. Normal local Git/tests/docs remain yours. Primary uses the same ordinary Git/protected adapter under actual human scope; no exemption or interactive reapproval.\n\nProduct tracked/index clean; preserve unrelated -json-9l969okj/sample.txt hashf1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5. Separate local acceptance-change trial is outside this live request; do not use or merge it. No clones/reset/stash/blanket staging/cleanup/forcepush/frozen edits or /pyenv. Follow product AGENTS. Existing normal Git and protected adapter are available; invoke only, never inspect adapter source or credentials. Provider prose private; retain safe metadata/marker/hash/check facts only. Preserve full native results/session IDs and wait actual completion. Stop after completed phase integration/publication, no additional phase or source-plugin change.\n"
+  }
+}

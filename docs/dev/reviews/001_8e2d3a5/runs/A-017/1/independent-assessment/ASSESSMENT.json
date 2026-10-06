@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "case_id": "A-017",
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "cause": "missing_qualifying_required_acceptance_failure",
+  "checkpoint_refs": {
+    "start_product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "product_branch": "trial/a017-required-check",
+    "remote": "/workspace/scratch/textstats-required-check-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a017-required-check"
+  },
+  "observations": {
+    "actual_owned_work_observed": true,
+    "required_test_introduced_after_owned_work": true,
+    "independent_required_test_returncode": 0,
+    "consumer_visible_nonzero_required_check_observed": false,
+    "controlled_interruption_performed": false,
+    "fresh_failed_check_continuation": "Not run",
+    "commit_hold_is_failure_trigger": false
+  },
+  "coverage_limits": [
+    "Only local disposable remote; no hosted reads/writes",
+    "Full native transcript and hard filesystem isolation unavailable",
+    "Original helper exits 2 repository_identity_mismatch; audited explicit-local-URL adapter separately returns Checks passed",
+    "No product defect or guaranteed failure injected; no test expectation exceeds S-1/S-2/T-001"
+  ],
+  "evidence": [
+    "baseline.json",
+    "first-owned-edit.json",
+    "required-test-source.py",
+    "required-test-provenance.md",
+    "pre-injection.json",
+    "independent-required-test.json",
+    "COMMIT-HOLD-OBSERVATIONS.json",
+    "ORIGINAL-HELPER-COMMAND.json",
+    "ADAPTED-HELPER.json"
+  ]
+}

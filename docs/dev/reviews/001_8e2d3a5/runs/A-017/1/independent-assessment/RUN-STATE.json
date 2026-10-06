@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-017",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent required T001 test passed",
+  "pending_operation": null,
+  "next_action": "Observe consumer commit hold; qualifying failure absent",
+  "checkpoint_refs": {
+    "product_branch": "trial/a017-required-check",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "remote": "/workspace/scratch/textstats-required-check-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a017-required-check",
+    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c"
+  },
+  "evidence_paths": [
+    "baseline.json",
+    "first-owned-edit.json",
+    "independent-required-test.json"
+  ]
+}

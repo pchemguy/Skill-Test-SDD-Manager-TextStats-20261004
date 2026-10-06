@@ -1,0 +1,63 @@
+{
+  "suspended": false,
+  "active_cases": [],
+  "new_work_allowed": "None: STOP, supported available campaign scope exhausted",
+  "a018_pending_publication": {
+    "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "destination_ref": "refs/heads/trial/a018-rejected-publication",
+    "state": "Resolved: exact local publication and independent Passed evidence retained"
+  },
+  "a024": {
+    "variant": "all three controlled classifications",
+    "status": "Independent final Blocked with partial support",
+    "pending": null,
+    "qualification": "Native protected handoff/token eligibility unverified; exact bounded restored readbacks complete, original faults retained"
+  },
+  "a010_projection": {
+    "status": "Confirmed after new explicit human retry",
+    "source_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "evidence": "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
+    "implementation_started": true
+  },
+  "stopped_case": {
+    "case_id": "A-027",
+    "attempt": 1,
+    "remaining": "None within supported available campaign scope"
+  },
+  "native_process_status": {
+    "workers": "All retained consumer and assessor contexts completed; primary completion records finalized",
+    "unknown_readonly_assessor_effects": [
+      "original helper session51706 poll rejected",
+      "earlier inline final-capture session identity discarded"
+    ],
+    "all_process_quiescence_verified": false
+  },
+  "a022": {
+    "status": "Independent Passed; local-only doctrial a25a954",
+    "assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+    "runtime_acceptance": "Pending; no trial implementation authorized/executed",
+    "publication": "5effa5d010948e0a133d76af2f5d2ee861acfc82 exact live evidence ref verified"
+  },
+  "a012": {
+    "active": "Passedassisted, evidencepublished0cebfe9",
+    "implementation_publication": "f04f1c3 exact verified retained",
+    "report_publication": "c5d9015 exact verified native13e521",
+    "integration_target": "phase/2-output-and-source-extensions at0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "pending_paths": [],
+    "qualification": "Tracked/index clean on resume; unrelated sample preserved; previous checkpoint lag corrected from actual Git, no replay of implementation/hosted writes",
+    "integration_publication": "2c8f9ec3c888075be64149ac3d4751939802ee12 exact remote00a535",
+    "result": "runs/A-012/1/CONSUMER-RESULT.md"
+  },
+  "a013": {
+    "active": "IndependentPassedassisted, publishedeb95a6c",
+    "input": "runs/A-013/1/REQUEST.md",
+    "predecessor_evidence": "0cebfe97b82269e7c28b43aa84bbbf3d163d353a",
+    "assistance": "Explicit later stdin-range requirement; primary execution publication handoff",
+    "main_publication": "68c85bexit0 / exactb4dedb d3f206a"
+  },
+  "a027": {
+    "active": "Independent Passed assisted; report published 39d63589cb721326338b89e14ec56cf636aa5dda",
+    "gate": "Exact published assessment/report bytes verified; campaign STOP",
+    "outputs": "runs/A-027/1/independent-assessment only"
+  }
+}

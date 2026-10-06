@@ -1,0 +1,213 @@
+diff --git a/README.md b/README.md
+index 81c1c6c..fc3289e 100644
+--- a/README.md
++++ b/README.md
+@@ -4,4 +4,4 @@ SDD Manager TextStats testing
+ 
+ Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
+ 
+-TextStats is in preparation; production code is not yet implemented. See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
++TextStats currently provides the immutable `TextStats` value and pure `count_text` API. Named-file acquisition and the module CLI remain planned. See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index fb13cdd..84db102 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -1,6 +1,6 @@
+ # TextStats executable task hierarchy
+ 
+-Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. These are planned tasks: none is implemented, verified or complete. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
++Derived from reviewed [SPEC.md](SPEC.md), [PLAN.md](PLAN.md), [layout.md](layout.md) and [DECOMPOSITION.md](DECOMPOSITION.md). [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md) records preparation readiness. T-001 is implemented and verified; remaining tasks are planned and unchecked. Maintained GitHub tracking is enabled for this repository; phase 1 is projected and ready for separately authorized implementation. Future phase 2 remains unprojected. Future range implementation is separately requested and has no executable owner here.
+ 
+ ## Hosted tracking
+ 
+@@ -12,10 +12,11 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
+ 
+ - [ ] Phase 1 — Named-file utility
+     - [ ] Milestone 1.1 — Named-file counting MVP
+-        - [ ] T-001 — Establish immutable statistics and pure text counting
++        - [x] T-001 — Establish immutable statistics and pure text counting
+             Scope: textstats/core.py, initial public facade, tests/unit/ discovery packages and semantic/value tests. Depends on: reviewed preparation inputs.
+             Outcome: direct TextStats/count_text imports, immutable nonnegative fields and exact BOM/CRLF/CR/LF/Unicode-word semantics (S-1/S-2).
+             Evidence: nonempty unit discovery; all SPEC sample rows, retained/interior/double BOM, silence and immutability/nonnegative checks. Keep pure core independent of acquisition/process state.
++            Completion evidence (2026-10-05): Python 3.12.14; `PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v` passed 11 tests, no skips/warnings. Independent loader collection confirmed 11 tests. RED against importable unimplemented counting/validation scaffold collected 11 tests and failed (5 validation failures, 25 not-implemented subtest errors); GREEN and separate acceptance verification passed. Module/API docstrings reviewed, README delivered-status statement aligned, pure core imports only dataclasses/re. All S-2 sample rows and extra CR/LF/Unicode/BOM boundaries, silent calls, unchanged input, immutable/nonnegative integer values and keyword-only BOM default are covered. File/CLI/distribution checks remain with T-002 and later. Explicit trial branch override: `trial/a015-staged-recovery`, starting checkpoint `d009899e39790c39be32ae77e7fe8294bf60d04c`; publication limited to `/workspace/scratch/textstats-staged-remote-20261005.git`. Hosted T-001 issue association/closure remains pending: request excludes hosted maintenance and credentials. Phase 1 and milestone 1.1 remain incomplete; pause before T-002 with no integration.
+         - [ ] T-002 — Integrate strict UTF-8 named-file API
+             Scope: textstats/io.py, facade exports, focused unit/file integration checks and tests/integration/ discovery packages. Depends on: T-001.
+             Outcome: count_file supports str/PathLike, preserves input terminators, delegates counts and closes its success-path owned handle (S-3 success).
+diff --git a/tests/__init__.py b/tests/__init__.py
+new file mode 100644
+index 0000000..b8ca5cb
+--- /dev/null
++++ b/tests/__init__.py
+@@ -0,0 +1 @@
++"""Discoverable product tests."""
+diff --git a/tests/unit/__init__.py b/tests/unit/__init__.py
+new file mode 100644
+index 0000000..4a87a0a
+--- /dev/null
++++ b/tests/unit/__init__.py
+@@ -0,0 +1 @@
++"""Unit acceptance for pure product components."""
+diff --git a/tests/unit/test_core.py b/tests/unit/test_core.py
+new file mode 100644
+index 0000000..761a6ad
+--- /dev/null
++++ b/tests/unit/test_core.py
+@@ -0,0 +1,89 @@
++"""S-1/S-2 acceptance using independently specified expected counts."""
++
++from contextlib import redirect_stderr, redirect_stdout
++from dataclasses import FrozenInstanceError
++import inspect
++import io
++import unittest
++
++from textstats import TextStats, count_text
++
++
++class TextStatsTests(unittest.TestCase):
++    def test_values_are_nonnegative_integers(self):
++        stats = TextStats(0, 2)
++        self.assertEqual((stats.lines, stats.words), (0, 2))
++        self.assertIs(type(stats.lines), int)
++        self.assertIs(type(stats.words), int)
++
++    def test_negative_construction_is_rejected(self):
++        for counts in [(-1, 0), (0, -1), (-1, -1)]:
++            with self.subTest(counts=counts), self.assertRaises(ValueError):
++                TextStats(*counts)
++
++    def test_noninteger_fields_are_rejected(self):
++        for counts in [(1.5, 0), (0, "2")]:
++            with self.subTest(counts=counts), self.assertRaises(TypeError):
++                TextStats(*counts)
++
++    def test_fields_cannot_be_changed(self):
++        stats = TextStats(1, 2)
++        for field in ["lines", "words"]:
++            with self.subTest(field=field), self.assertRaises(FrozenInstanceError):
++                setattr(stats, field, 9)
++
++
++class CountTextTests(unittest.TestCase):
++    def test_all_spec_sample_rows(self):
++        rows = [("", True, 0, 0), ("alpha beta", True, 1, 2),
++                ("alpha\n", True, 1, 1), ("\n", True, 1, 0),
++                ("alpha\r\nbeta\rgamma\n", True, 3, 3),
++                ("alpha\n\n", True, 2, 1), (" \t", True, 1, 0),
++                ("alpha\u2028beta", True, 1, 2),
++                ("\ufeff", True, 0, 0), ("\ufeff", False, 1, 1),
++                ("\ufeff\ufeff", True, 1, 1)]
++        for text, strip, lines, words in rows:
++            with self.subTest(text=repr(text), strip=strip):
++                self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
++
++    def test_only_cr_and_lf_terminate_lines(self):
++        for text, expected in [("\r\n", (1, 0)), ("\r", (1, 0)),
++                               ("a\rb", (2, 2)), ("\r\n\r\n", (2, 0)),
++                               ("a\r\n\nb", (3, 2)),
++                               ("a\v\f\x85\u2029b", (1, 2))]:
++            with self.subTest(text=repr(text)):
++                self.assertEqual(count_text(text), TextStats(*expected))
++
++    def test_unicode_whitespace_splits_words(self):
++        self.assertEqual(count_text("one\u00a0two\u2003三\t四"), TextStats(1, 4))
++
++    def test_bom_policy_preserves_interior_and_second_bom(self):
++        for text, strip, expected in [("a\ufeffb", True, (1, 1)),
++                                      ("a \ufeff b", True, (1, 3)),
++                                      ("\ufeff\ufeff\n", True, (1, 1)),
++                                      ("\ufeff\n", False, (1, 1)),
++                                      ("\ufeff\n", True, (1, 0))]:
++            with self.subTest(text=repr(text), strip=strip):
++                self.assertEqual(count_text(text, strip_bom=strip), TextStats(*expected))
++
++    def test_input_is_unchanged(self):
++        original = "\ufeffalpha\r\nbeta\r"
++        self.assertEqual(count_text(original), TextStats(2, 2))
++        self.assertEqual(original, "\ufeffalpha\r\nbeta\r")
++
++    def test_api_calls_are_silent(self):
++        stdout, stderr = io.StringIO(), io.StringIO()
++        with redirect_stdout(stdout), redirect_stderr(stderr):
++            TextStats(0, 0)
++            count_text("alpha")
++            count_text("\ufeff", strip_bom=False)
++            with self.assertRaises(ValueError):
++                TextStats(-1, 0)
++        self.assertEqual((stdout.getvalue(), stderr.getvalue()), ("", ""))
++
++    def test_strip_bom_is_keyword_only_and_defaults_true(self):
++        parameter = inspect.signature(count_text).parameters["strip_bom"]
++        self.assertEqual(parameter.kind, inspect.Parameter.KEYWORD_ONLY)
++        self.assertIs(parameter.default, True)
++        with self.assertRaises(TypeError):
++            count_text("", False)
+diff --git a/textstats/__init__.py b/textstats/__init__.py
+new file mode 100644
+index 0000000..c8d7001
+--- /dev/null
++++ b/textstats/__init__.py
+@@ -0,0 +1,5 @@
++"""Public immutable statistics and whole-string counting API."""
++
++from .core import TextStats, count_text
++
++__all__ = ["TextStats", "count_text"]
+diff --git a/textstats/core.py b/textstats/core.py
+new file mode 100644
+index 0000000..45d8362
+--- /dev/null
++++ b/textstats/core.py
+@@ -0,0 +1,52 @@
++"""Pure string statistics with no acquisition, rendering or process state."""
++
++from dataclasses import dataclass
++import re
++
++
++@dataclass(frozen=True)
++class TextStats:
++    """Immutable nonnegative integer line and word totals.
++
++    Attributes:
++        lines: Number of CRLF, CR and LF logical lines.
++        words: Number of Unicode-whitespace-separated words.
++
++    Raises:
++        TypeError: A count is not an integer.
++        ValueError: A count is negative.
++    """
++
++    lines: int
++    words: int
++
++    def __post_init__(self) -> None:
++        for name, value in (("lines", self.lines), ("words", self.words)):
++            if not isinstance(value, int):
++                raise TypeError(f"{name} must be an integer")
++            if value < 0:
++                raise ValueError(f"{name} must be nonnegative")
++
++
++def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
++    """Count a whole string silently, leaving the caller's input unchanged.
++
++    CRLF is one terminator; lone CR and LF also terminate lines. A nonempty
++    final unterminated segment counts once. Other Unicode separators affect
++    words via str.split(), but do not terminate lines. A retained BOM is an
++    ordinary non-whitespace character.
++
++    Args:
++        text: Complete decoded caller text.
++        strip_bom: Remove exactly one initial U+FEFF when true (the default).
++            Interior BOMs and a second initial BOM remain.
++
++    Returns:
++        Immutable nonnegative integer line and word totals.
++    """
++    if strip_bom and text.startswith("\ufeff"):
++        text = text[1:]
++    lines = len(re.findall(r"\r\n|\r|\n", text))
++    if text and not text.endswith(("\r", "\n")):
++        lines += 1
++    return TextStats(lines=lines, words=len(text.split()))

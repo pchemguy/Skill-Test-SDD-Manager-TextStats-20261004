@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "run_id": "001_8e2d3a5",
+  "phase": "P2",
+  "case_id": "A-006",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independently verified delivered milestone1.2 at user suspension",
+  "pending_operation": {
+    "kind": "task",
+    "status": "blocked",
+    "description": "Explicit user-directed suspension prevents starting T-009 and completing phase1 integration"
+  },
+  "next_action": "Wait for explicit continuation; then T-009 phase review followed by complete phase gate and integration",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+    "merge_parents": [
+      "3256b953383f9c8218e62a4c051d73e3ccd081bf"
+    ]
+  },
+  "evidence_paths": [
+    "INDEPENDENT-COMMANDS.json",
+    "FINAL-PROVIDER.json",
+    "FROZEN-SOURCE-HASHES.json"
+  ]
+}

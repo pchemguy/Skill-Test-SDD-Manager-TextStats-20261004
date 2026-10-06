@@ -1,0 +1,5 @@
+{
+  "original_native": "2f53fb exit1/assertion after diffcheckexit2",
+  "scope": "Immutable RED-T013.log quoted test output lines1/13 have trailing whitespace",
+  "disposition": "Retain exact raw test output; exclude only this immutable log from remaining whitespace scan, no product failure inferred"
+}

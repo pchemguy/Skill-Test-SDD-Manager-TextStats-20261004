@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "final-head",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "published",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "required_agent_checks": [
+    "Before interruption actual task checks and checklist completion are observed, with staged owned bytes but no task commit.",
+    "Fresh continuation identifies same completed pending work, preserves task/test identity, avoids reimplementation, scopes commit/check evidence and publishes before any next task."
+  ],
+  "variant_disclosure": "In-memory repository() adapter binds independently authorized explicit absolute local remote and actual readback. Original helper failure retained. Shipped helper/package untouched; only configured-remote identity lookup replaced; contract/ownership/publication checks unchanged."
+}

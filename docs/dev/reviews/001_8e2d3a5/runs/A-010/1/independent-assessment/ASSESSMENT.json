@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "case_id": "A-010",
+  "attempt": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "consumer_first_attempt_status": "Blocked",
+  "assistance_scope": "Known disclosed CHK002 ownership variant after original result; assessor-local checkpoint schema repair, no consumer coaching/retry or product repair. Consumer performed own QC identity restoration before platform-blocked stop.",
+  "checkpoint_refs": {
+    "product_branch": "feature/002_ea97182-line-ranges",
+    "product_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "remote": "origin",
+    "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+    "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+    "merge_parents": [
+      "152fb8f6ab316e4bd893aeea8d2dc03b96fbb3a9"
+    ]
+  },
+  "source_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "checks": [
+    {
+      "id": "preserved-document-checkpoint",
+      "status": "Passed",
+      "reason": "Exactly9owned documentation paths changed across152fb8f and89664adb;148other tracked bytes unchanged. Main PLAN adds bounded2.4/2.5, keeps accepted numbering and main phase incomplete; TASKS sole22unique owners. Five transferred task scopes/dependencies/evidence byte-equal; feature pointer non-executable. No runtime implementation."
+    },
+    {
+      "id": "document-qc",
+      "status": "Passed",
+      "reason": "Current main PLAN/TASKS and affected feature QC reports independently reviewed; all25current recorded input hashes match actual files. Retained original identity sections and review observations, appended revisions/count exclusions/grouped contract coverage. Narrow feature dependency remains named-file delivery independent of unfinished stdin; whole-project completion still blocked. Existing historical reviewed task/parent acceptance explicitly marked reassessment pending."
+    },
+    {
+      "id": "retention",
+      "status": "Passed",
+      "reason": "Needed active feature SPEC/PLAN and all3adjacent preparation reports retained; TASKS pointer links valid. No premature archive or claimed implementation report. Unknown BOM fixture byte-identical f1945cd6;111pin hashes match."
+    },
+    {
+      "id": "publication",
+      "status": "Passed",
+      "reason": "Independent live origin confirms feature89664adb46b70e66d99445e28a04e8f53760fa02. Tracked/index clean, phase ea97182 and main59debb unchanged. Both document commits present; reached HEAD has one parent152fb8f."
+    },
+    {
+      "id": "hosted-projection",
+      "status": "Blocked",
+      "reason": "Two automatic approval review rejections recorded in consumer journal: first milestone/issue POST batch lacked trusted explicit destination/payload authorization; second bounded POST milestones reassessment treated inline authority claims as untrusted and required trusted user message for exact payload/destination after prior rejection. Independent all-state HTTP200 metadata unchanged17issues/6milestones/12labels; no2.4/2.5/T018\u201322 objects. No provider body/description retained."
+    },
+    {
+      "id": "range-delivery",
+      "status": "Blocked",
+      "reason": "Maintained active-phase projection is prerequisite before first task; no local-only exception. T018\u201322 remain unchecked, no range code/tests/public docs/distribution delivery, no milestone/feature implementation reports or hosted closure. Literal captures and broad product tests intentionally Not run at this document-only blocked checkpoint; deterministic missing evidence is not observed output failure."
+    },
+    {
+      "id": "feature-integration",
+      "status": "Blocked",
+      "reason": "No two-parent feature merge or paused-phase publication; feature remains one-parent document checkpoint and phase target unchanged. Deterministic merge-parents equality only matches actual single-parent observation and does not satisfy independent two-parent criterion."
+    }
+  ],
+  "deterministic_original": "Checks failed: ignored generated TASKS discovery CHK002;5missing literal evidence keys. Two prior schema rejection commands retained.",
+  "deterministic_variant": "Checks failed: Git-aware candidate inventory makes ownership pass;5missing literal evidence keys retained.",
+  "coverage_limits": [
+    "Fresh consumer context and independent assessor used, but shared broad filesystem access cannot certify assessor materials inaccessible. Consumer reports only selected ordinary inputs read.",
+    "Native full command/approval transcript unavailable; journals, operation metadata and independent Git/file/provider observations establish reached facts, bound chronology and actual rejection wording attribution.",
+    "No product runtime, distribution or range acceptance claimed for blocked document-only checkpoint; five required literal evidence keys absent intentionally.",
+    "Protected adapter source/credentials never read; scoped provider metadata only. Provider body/description prose excluded; pulls facility not tested.",
+    "Rejection payload hashes reconstructed from submitted command context by consumer, not independently observed payload files; exact runtime payload paths and additional batch issue payload hashes unavailable.",
+    "Assessor evidence copied locally without commit/push; coordinator publication pending."
+  ],
+  "finding_dispositions": {
+    "platform": "Observed automatic approval review blocker; no authenticated provider write success or unknown final effect.",
+    "CHK-002": "Known confirmed ignored-generated owner discovery false positive, independent22unique owner inventory and retained variant demonstrate it.",
+    "checkpoint": "Canonical nested A016 current_assessment violates strict schema. First two assessor original-helper rejection commands retained; new assessor-only checkpoint omits unrelated case_results. Product unaffected.",
+    "plugin": "No confirmed SDD Manager defect established by A010; execution/integration untested due platform prerequisite.",
+    "consumer": "Preserved genuine accepted documentation checkpoint and stopped blocked before implementation, with initial report identity loss corrected in second commit; original commit retained."
+  },
+  "operation_metadata": "OPERATION-METADATA.json",
+  "evidence_paths": [
+    "VARIANT-DETERMINISTIC.json",
+    "OPERATION-METADATA.json",
+    "FINAL-PINNED-SOURCE.json",
+    "FINAL-OBSERVATION.json",
+    "FINAL-PROVIDER-READBACK.json",
+    "PINNED-SOURCE.json",
+    "snapshot.py",
+    "INPUTS.json",
+    "JOURNAL.md",
+    "DOCUMENT-QC-IDENTITIES.json",
+    "INDEPENDENT-OWNERS-QC.json",
+    "HELPER-COMMANDS.json",
+    "RUN-STATE-ASSESSOR.json",
+    "finalize_assessment.py",
+    "CONSUMER-RESULT.md",
+    "REQUEST.md",
+    "ORIGINAL-DETERMINISTIC-REACHED.json",
+    "RUN-STATE-VALID.json",
+    "final_snapshot.py",
+    "START-PROVIDER-READBACK.json",
+    "RUN-STATE.json",
+    "START-OBSERVATION.json",
+    "LITERAL-EVIDENCE-NOT-RUN.json"
+  ]
+}

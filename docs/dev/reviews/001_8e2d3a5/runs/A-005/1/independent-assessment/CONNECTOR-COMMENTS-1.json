@@ -1,0 +1,38 @@
+{
+  "structuredContent": {
+    "comments": [
+      {
+        "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/1#issuecomment-5981759898",
+        "body_sha256": "9db795b8953f22c0ff5f247f437a01b0a34e142f6a37eaa718358901a0de8547",
+        "body_withheld": "Provider body omitted from published evidence; independently inspected in original private capture.",
+        "evidence_links": [
+          "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/commit/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+          "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/blob/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76/docs/dev/TASKS.md"
+        ],
+        "user": {
+          "login": "pchemguy",
+          "name": "pchemguy",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "id": 39730837
+        },
+        "id": 5981759898,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">T-001 completion: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/commit/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76/hovercard\" href=\"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/commit/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76\"><tt>9b24dbd</tt></a></p>\n<p dir=\"auto\">Committed task and check evidence: <a href=\"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/blob/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76/docs/dev/TASKS.md\">https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/blob/9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76/docs/dev/TASKS.md</a></p>"
+      }
+    ],
+    "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/1",
+    "title": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004 Issue #1 comments",
+    "display_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/1",
+    "display_title": "pchemguy/Skill-Test-SDD-Manager-TextStats-20261004 Issue #1 comments"
+  },
+  "isError": false
+}

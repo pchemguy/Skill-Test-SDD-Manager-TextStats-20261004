@@ -1,0 +1,177 @@
+[
+  {
+    "report": "PLAN-REVIEW-REPORT.md",
+    "input": "PLAN.md",
+    "recorded": "e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e",
+    "actual": "e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e",
+    "matches": true
+  },
+  {
+    "report": "PLAN-REVIEW-REPORT.md",
+    "input": "SPEC.md",
+    "recorded": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "actual": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "matches": true
+  },
+  {
+    "report": "PLAN-REVIEW-REPORT.md",
+    "input": "SPEC-REVIEW-REPORT.md",
+    "recorded": "93f0b8c602bde38ddcc5b8c1550475e12514c9cecd512b2c6e12b2d970c72534",
+    "actual": "93f0b8c602bde38ddcc5b8c1550475e12514c9cecd512b2c6e12b2d970c72534",
+    "matches": true
+  },
+  {
+    "report": "PLAN-REVIEW-REPORT.md",
+    "input": "layout.md",
+    "recorded": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+    "actual": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+    "matches": true
+  },
+  {
+    "report": "PLAN-REVIEW-REPORT.md",
+    "input": "FEATURE-PLAN.md",
+    "recorded": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+    "actual": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+    "matches": true
+  },
+  {
+    "report": "TASKS-REVIEW-REPORT.md",
+    "input": "TASKS.md",
+    "recorded": "558140529154e5ffdde1010b47a1dc6314be5cb286911cf6d81a9a5ae3512e62",
+    "actual": "558140529154e5ffdde1010b47a1dc6314be5cb286911cf6d81a9a5ae3512e62",
+    "matches": true
+  },
+  {
+    "report": "TASKS-REVIEW-REPORT.md",
+    "input": "PLAN.md",
+    "recorded": "e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e",
+    "actual": "e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e",
+    "matches": true
+  },
+  {
+    "report": "TASKS-REVIEW-REPORT.md",
+    "input": "PLAN-REVIEW-REPORT.md",
+    "recorded": "c816262a759b9c5e6701f939dd07053e181585d24a8115605c8f2594d24d62ca",
+    "actual": "c816262a759b9c5e6701f939dd07053e181585d24a8115605c8f2594d24d62ca",
+    "matches": true
+  },
+  {
+    "report": "TASKS-REVIEW-REPORT.md",
+    "input": "SPEC.md",
+    "recorded": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "actual": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "matches": true
+  },
+  {
+    "report": "TASKS-REVIEW-REPORT.md",
+    "input": "layout.md",
+    "recorded": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+    "actual": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+    "matches": true
+  },
+  {
+    "report": "TASKS-REVIEW-REPORT.md",
+    "input": "FEATURE-TASKS.md",
+    "recorded": "327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8",
+    "actual": "327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+    "input": "FEATURE-SPEC.md",
+    "recorded": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+    "actual": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+    "input": "SPEC.md",
+    "recorded": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "actual": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+    "input": "PROJECT.md",
+    "recorded": "85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24",
+    "actual": "85f1c34aee621b56642cbf0ce61120da98ac27a01f690eb5e42ad3020709dc24",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+    "input": "ARCHITECTURE.md",
+    "recorded": "0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c",
+    "actual": "0237bf724eec1f18300d68024ca3afa4e96de753479b359655308afe5618cf6c",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-SPEC-REVIEW-REPORT.md",
+    "input": "DECOMPOSITION.md",
+    "recorded": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+    "actual": "d9fa49ddb1e7a2548d7a9606482d3e5a2ca80346f52f11efb3252effe0e55a2d",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+    "input": "FEATURE-PLAN.md",
+    "recorded": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+    "actual": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+    "input": "SPEC.md",
+    "recorded": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "actual": "fc99b2e6314aeaffa1f1bbcb71df3cb64fe43dd1517664357b5cf4456659fc7d",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+    "input": "FEATURE-SPEC.md",
+    "recorded": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+    "actual": "e5c45a21e3fd9b8b9f507f5a82ac1e06f6c04c9c0673ce409a9a86bb04ccaeed",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+    "input": "PLAN.md",
+    "recorded": "e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e",
+    "actual": "e143b7d27c5b097e4404c1a1c4d2e571dfe1229446e334e61de527afe4a9207e",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-PLAN-REVIEW-REPORT.md",
+    "input": "layout.md",
+    "recorded": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+    "actual": "ffb4c1d632739889febf10515bf52e6db4596ce763ae5c4f7a66773e708a3e0d",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+    "input": "FEATURE-TASKS.md",
+    "recorded": "327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8",
+    "actual": "327ec8646733d7c40e19092d02b309c5ee98352ffadb3444df975f97c7018cd8",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+    "input": "TASKS.md",
+    "recorded": "558140529154e5ffdde1010b47a1dc6314be5cb286911cf6d81a9a5ae3512e62",
+    "actual": "558140529154e5ffdde1010b47a1dc6314be5cb286911cf6d81a9a5ae3512e62",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+    "input": "TASKS-REVIEW-REPORT.md",
+    "recorded": "9c299a81273ac9ba9db9f503de925b7f751cf49095c4fb58b73185986f47f459",
+    "actual": "9c299a81273ac9ba9db9f503de925b7f751cf49095c4fb58b73185986f47f459",
+    "matches": true
+  },
+  {
+    "report": "FEATURE-TASKS-REVIEW-REPORT.md",
+    "input": "FEATURE-PLAN.md",
+    "recorded": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+    "actual": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+    "matches": true
+  }
+]

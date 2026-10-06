@@ -1,0 +1,59 @@
+{
+  "method": "read-only live Git observation during consumer merge; no product checks run by assessor",
+  "records": [
+    {
+      "time": "2026-10-04T20:18:02.072910+00:00",
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "rev-parse",
+        "HEAD",
+        "MERGE_HEAD"
+      ],
+      "returncode": 128,
+      "stdout": "59debb649545125dd3aa00377ea115451b594271\nMERGE_HEAD\n",
+      "stderr": "fatal: ambiguous argument 'MERGE_HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n"
+    },
+    {
+      "time": "2026-10-04T20:18:02.075298+00:00",
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "main\n",
+      "stderr": ""
+    },
+    {
+      "time": "2026-10-04T20:18:02.078940+00:00",
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "time": "2026-10-04T20:18:02.081305+00:00",
+      "argv": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

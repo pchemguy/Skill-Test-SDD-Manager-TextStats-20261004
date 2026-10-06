@@ -1,0 +1,89 @@
+[
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "milestones/7"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": {
+      "id": 18320787,
+      "number": 7,
+      "state": "closed",
+      "title": "sdd-2.4-Named-file-line-ranges",
+      "open_issues": 0,
+      "closed_issues": 4
+    },
+    "stdout_sha256": "3ae05c913c7e9efa8164c074ccf96b46a535da4f84b14fb6a4c44fea6c0dac67",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "protected_prose": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues/19"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": {
+      "id": 5709580976,
+      "number": 19,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[T-019] Integrate validated named-file range text and JSON commands"
+    },
+    "stdout_sha256": "4488fe9f532f5f999b657c4e122a0603f32fa2c3770c1e100444d1ae7421f5a3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "protected_prose": "withheld"
+  },
+  {
+    "argv": [
+      "python3",
+      "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+      "GET",
+      "issues?state=all&milestone=7&per_page=100"
+    ],
+    "returncode": 0,
+    "http_status": 200,
+    "transport": "curl",
+    "metadata": [
+      {
+        "id": 5709583581,
+        "number": 21,
+        "state": "closed",
+        "state_reason": "completed",
+        "title": "[T-021] Review, test and report range milestone 2.4"
+      },
+      {
+        "id": 5709582158,
+        "number": 20,
+        "state": "closed",
+        "state_reason": "completed",
+        "title": "[T-020] Document ranges and verify extracted-source acceptance"
+      },
+      {
+        "id": 5709580976,
+        "number": 19,
+        "state": "closed",
+        "state_reason": "completed",
+        "title": "[T-019] Integrate validated named-file range text and JSON commands"
+      },
+      {
+        "id": 5709579322,
+        "number": 18,
+        "state": "closed",
+        "state_reason": "completed",
+        "title": "[T-018] Establish normalized logical-line selection seam"
+      }
+    ],
+    "stdout_sha256": "cd8191ae5d8e53291063a520b33170bfb1ff96db5969f8bec7b5f107eec1033b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "protected_prose": "withheld"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "case_id": "A-005",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "merge_parents": [
+      "fc3a0ec10728310988a7c29258b582096a53fe28"
+    ]
+  },
+  "start_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+  "plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "assessed_at": "2026-10-04T16:23:05.423194+00:00",
+  "reason": "Independently adjudicated disclosed milestone-specific checker correction aligns A-005 with frozen scenario and accepted milestone 1.1 scope. Retained actual success/API/options observations and lifecycle evidence pass; wrong success count and wrong usage status each fail the corrected checker. Original frozen baseline failure and initial Blocked result remain unchanged.",
+  "findings": {
+    "deterministic": "Independent valid variant assess exits0/all5 checks pass. Synthetic wrong named success count and wrong missing-input usage status each exit1/product-baseline fails; original frozen assessment remains Checks failed.",
+    "scope_conflict": "Resolved for this recheck by disclosed coordinator variant: only missing/decode CLI rows deferred to milestone1.2, as frozen SCENARIO:38 and accepted PLAN:9/:15/:17 plus T-006 require. API missing/decode exception/silence checks remain mandatory. A-006 retains full missing/decode no-traceback/source-identifying rows, hashcd85b2355aaaee4027b73dc049397a15ecdffa1b787f460bfcae4c34efed322a. This is an assisted milestone-boundary correction, not original-contract success or a waiver of full-phase diagnostics.",
+    "tests": "Independently ran nonempty unit14/integration6, all pass no skips. Literal API passes. Named/empty/BOM/dash and usage baseline rows pass. No redundant reruns after sufficient checks.",
+    "lifecycle": "Separate task commits T002299670c T003f2260a2 T0047bfadcb; scoped evidence clarificationfc3a0ec and reconciliation159c662. Review report committed at proper path. Independent connector issue bodies/markers and comments link actual commits/checks; all1\u20134 closed completed before consumer milestone close; readback milestone1 closed0open4closed. Milestone2/3 and issues5\u20139 remain open.",
+    "pause": "Clean index/worktree; live phase exactly159c662, local/live main unchanged4c275cc. Phase checkbox unchecked and later tasks unchecked; no integration or premature phase claim.",
+    "source": "Fresh all111 pinned hashes equal prior independent immutable Git019eb354 objects and manifest. Production/tests/PLAN/TASKS/report unchanged at retained checkpoint; current refs independently read, clean product.",
+    "review": "Retained independent review/report/check/provider findings remain valid at unchanged159c662. Proper last review task T-004 completed review, focused/regression checks, report persistence and provider closure before milestone closure. Subsequent edits only clarified review evidence/reconciled boundary. No in-scope blocker/TODO found; deferred diagnostics are mandatory next milestone."
+  },
+  "interventions": [
+    "Consumer received standing human repository GO and scoped grant as context; no observed write rejection/bypass.",
+    "Review evidence clarification distinguished inspected binary acquisition from counting-equivalent newline-test sensitivity; no production/contract edit. This assessment retains assistance rather than implying an unassisted isolated result.",
+    "Coordinator disclosed and constructed milestone1.1 checker variant excluding only the two premature CLI diagnostic rows. Independent assessor compared exact original/variant/literal selection, adjudicated scope and ran sensitivity controls before this assisted pass."
+  ],
+  "limitations": [
+    "Broad filesystem access exposes assessor assets; strict isolation cannot be certified.",
+    "Full native command transcript unavailable; retained consumer command journal/raw logs establish recorded task-level RED/GREEN/check/push order but do not independently certify every earlier event or behavior-by-behavior cycle.",
+    "Independent actual live final readback proves current state; historical push-before-close order additionally relies on retained command results and commit/issue closure times.",
+    "No product/provider mutations performed; original frozen contract/evidence retained unchanged.",
+    "Reused sufficient retained14unit/6integration runs and actual API/baseline provenance because product source/tests remain unchanged; no redundant reruns."
+  ],
+  "evidence_paths": [
+    "CONTRACT.json",
+    "INTERVENTION.md",
+    "LITERALS.json",
+    "INDEPENDENT-RECHECK.json",
+    "INDEPENDENT-VALID-LITERALS.json",
+    "INDEPENDENT-VALID-ASSESSMENT.json",
+    "INDEPENDENT-WRONG-COUNT-LITERALS.json",
+    "INDEPENDENT-WRONG-COUNT-ASSESSMENT.json",
+    "INDEPENDENT-WRONG-USAGE-LITERALS.json",
+    "INDEPENDENT-WRONG-USAGE-ASSESSMENT.json",
+    "../../independent-assessment/ASSESSMENT-FINAL.json",
+    "../../independent-assessment/INDEPENDENT-COMMANDS.json",
+    "../../independent-assessment/API-COMMANDS.json",
+    "../../independent-assessment/BASELINE-COMMANDS.json",
+    "../../independent-assessment/PINNED-GIT-OBJECT-EQUALITY.json"
+  ],
+  "revision": 3,
+  "previous_assessment": "../../independent-assessment/ASSESSMENT-FINAL.json"
+}

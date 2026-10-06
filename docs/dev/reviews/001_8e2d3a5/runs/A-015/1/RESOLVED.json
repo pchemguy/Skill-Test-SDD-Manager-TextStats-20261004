@@ -1,0 +1,34 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-003",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "merge_parents": [
+          "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+        ]
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/1-named-file-utility",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "06c6f5dd82cbaad8d6588ff207af894885515031",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Current product workspace /workspace/scratch/textstats-staged-worktree-20261005 is a local-only existing-repository worktree on authorized trial/a015-staged-recovery at d009899e39790c39be32ae77e7fe8294bf60d04c, tracked/index/worktree clean initially. T-001 is the currently authorized unfinished task; complete only it, stop before T-002. Pinned skills textstats-run-resources/plugin/skills at019eb354cf0921ebd6056e6579763ac33d0baec2; applicable product AGENTS. For all Git operations prepend PATH=/workspace/scratch/textstats-staged-tools-20261005/bin:$PATH in each shell invocation; this worktree Git tooling provides command-local origin=/workspace/scratch/textstats-staged-remote-20261005.git and configured hooks. Use trial/a015-staged-recovery only; no shared positive branch/ref mutation. This disposable local remote is the sole authorized publication destination for the trial; hosted maintenance is inactive, no GitHub/API writes or credentials. Local task commits/pushes within selected scope authorized. No clones, blanket cleanup/staging or /pyenv execution/modification. Do not edit tooling or shared configuration. Report unavailable facilities and preserve current work. Read actual pinned authorization policy before authority decisions; no bypass of platform rejection. Save actual task work evidence in your owned case evidence only."
+  }
+}

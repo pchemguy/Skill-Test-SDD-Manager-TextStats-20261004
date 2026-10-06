@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case_id": "A-003",
+  "revision": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "merge_parents": [
+      "d0087ff75e485cab832a28d6b501150eaf2ed249"
+    ]
+  },
+  "first_attempt_status": "Blocked",
+  "consumer_assisted_revision_established": false,
+  "supersedes": [
+    "ASSESSMENT.json proposal_quality",
+    "ASSESSMENT.json findings[4]",
+    "ASSESSMENT.md malformed/incomplete proposal conclusion"
+  ],
+  "proposal_quality": "Passed: completed original artifact has 9 correct issue proposals and 3 correct native milestone proposals; execution remains blocked",
+  "completed_original_result_sha256": "ab45359a34c6c56b95c8eceb6c6c4baa48725b397c251a516bed80065dfc2854",
+  "findings": [
+    "Completed retained original proposal exactly matches current TASKS titles, parentage, scope/dependencies/evidence and PLAN milestone outcomes/exits; all 9 issue and 3 native milestone checks pass.",
+    "Initial malformed-proposal conclusion was stale intermediate observation; assessor failed to reconcile final captured bytes before final assessment. Initial hardcoded milestone count was incorrect.",
+    "Root-requested assisted correction was premature; this is independent revalidation of unchanged completed original bytes, not established assisted consumer amendment.",
+    "Environment/API method limits still block actual native projection and repeat reconciliation. Proposals do not prove executed objects or identity reuse."
+  ],
+  "interventions": [
+    "Assessor reported intermediate defect as completed result defect",
+    "Root prematurely requested assisted artifact correction from stale report",
+    "Root requested independent final-original recheck; this revision corrects assessor finding",
+    "Consumer produced separate redundant assisted proposal at root request after original completion; original RESULT unchanged"
+  ],
+  "evidence": [
+    "REVISION-1-RECHECK-EVIDENCE.json",
+    "RESULT.md",
+    "ASSESSMENT-REVISION-1.md",
+    "ASSESSMENT.md",
+    "ASSESSMENT.json",
+    "PROPOSAL-CHECK.json",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "REVISION-1-REDUNDANT-PROPOSAL-RECHECK.json",
+    "CORRECTION.md",
+    "PROPOSED-HOSTED-CHANGES.corrected.md"
+  ],
+  "limits": [
+    "Native full transcript unavailable",
+    "Strict filesystem isolation unavailable",
+    "Native label/milestone inventory and lifecycle cannot be verified through exposed methods",
+    "Future corrections must be separately recorded"
+  ],
+  "later_redundant_assisted_artifact": true,
+  "later_artifact_sha256": "75a678c7877075b614d33005b7c2ef6e2849f566b9d4a5895749d0f06175e929"
+}

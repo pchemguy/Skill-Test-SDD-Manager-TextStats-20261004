@@ -1,0 +1,35 @@
+{
+  "actor": "coordinator",
+  "native_result": {
+    "chunk_id": "4154ed",
+    "exit_code": 0
+  },
+  "operation_cwd": "/workspace/scratch/textstats-live-20261004",
+  "argv_sequences": [
+    [
+      "git",
+      "init",
+      "--bare",
+      "/workspace/scratch/textstats-acceptance-change-remote-20261005.git"
+    ],
+    [
+      "git",
+      "worktree",
+      "add",
+      "-b",
+      "trial/a022-acceptance-change",
+      "/workspace/scratch/textstats-acceptance-change-worktree-20261005",
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+    ],
+    [
+      "git",
+      "push",
+      "/workspace/scratch/textstats-acceptance-change-remote-20261005.git",
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac:refs/heads/trial/a022-acceptance-change"
+    ]
+  ],
+  "observed_effect": "New shared local trial ref at existing A010 checkpoint; not an A011 consumer effect",
+  "assessment_limit": "All-ref snapshots not byte-identical; independently attribute exactly this concurrent coordinator ref. Product visible files/index/branch/HEAD identical. Separate worktree later document commits may advance its own trial ref, not A011 product branch.",
+  "fixture_record": "../A-022/1/FIXTURE.json",
+  "retained_at": "2026-10-05T18:41:11.879982+00:00"
+}

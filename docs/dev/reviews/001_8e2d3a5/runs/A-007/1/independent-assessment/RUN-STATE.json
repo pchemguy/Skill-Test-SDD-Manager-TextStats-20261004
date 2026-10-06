@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "001_8e2d3a5",
+  "phase": "P3",
+  "case_id": "A-007",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent JSON milestone observation",
+  "pending_operation": null,
+  "next_action": "Coordinator publishes assessment before dependent work",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "integration_branch": "main",
+    "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "ea97182d2d6a3984599238312a13e78d54d3221a"
+  },
+  "evidence_paths": [
+    "commands.json"
+  ]
+}

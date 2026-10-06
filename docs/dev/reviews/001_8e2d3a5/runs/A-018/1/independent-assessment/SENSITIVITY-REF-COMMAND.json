@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/local_url_assessment.py",
+    "--harness",
+    "/workspace/scratch/textstats-live-harness-20261004/harness",
+    "--inputs",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/INPUTS.json",
+    "--run-state",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/WRONG-REF-STATE.json",
+    "--contract",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/assessor/A-018.json",
+    "--output",
+    "/workspace/scratch/textstats-live-harness-20261004/assessments/A-018-1/SENSITIVITY-WRONG-REF.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"status\": \"Checks passed\", \"exit_code\": 0}\n",
+  "stderr": ""
+}

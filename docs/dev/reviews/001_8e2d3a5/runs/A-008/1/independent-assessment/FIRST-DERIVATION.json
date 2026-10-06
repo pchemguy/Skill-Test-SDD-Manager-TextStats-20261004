@@ -1,0 +1,13 @@
+{
+  "exact_input_hashes": {
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-008/1/REQUEST.md": "551611c0ed3280ba928fa30f6371849ea539b41827118174371b33a0c065d253",
+    "/workspace/scratch/textstats-live-harness-20261004/harness/cases/consumer/preparation.md": "54074af951298328dc8eccd166747f7939fd69de4a9e325eeee9f7dd224c4080"
+  },
+  "first_persisted_plan_commit": "0b4247291c8510b8e8eb62f9658477300da63967",
+  "first_plan_sha256": "fca8d080af1594d7e6664692477d7afd97bd5b78af28139cb4d3126946ff223c",
+  "first_plan_matches_frozen": true,
+  "dependency_observation": "T-012 completed named-file text/JSON is prerequisite; numerical milestone2.4 and2.5 ordering expressly does not depend on T013\u2013T017/stdin. Future stdin is source-independent design compatibility only.",
+  "precorrection_task_hash": "c6b3026adac6236a27b1722a560053290ce30432dbe4fbc62522921e5580200a",
+  "correction": "TASK-QC-1 makes unbounded decimal endpoints (beyond interpreter limits) and repeated mixed option spellings explicit acceptance cases, supporting original no arbitrary endpoint limit and missing/repeated option rejection. No upstream decision changed.",
+  "limits": "No full bytes of pre-correction task draft retained; hash+consumer first-derivation description+appended located finding survive. No full native transcript; gate sequence is independently observed through Git history and current identities, not every authoring keystroke."
+}

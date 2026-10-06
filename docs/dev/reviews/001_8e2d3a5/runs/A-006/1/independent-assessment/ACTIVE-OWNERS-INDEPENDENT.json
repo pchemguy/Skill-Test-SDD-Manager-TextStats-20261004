@@ -1,0 +1,95 @@
+{
+  "method": "independent active-root selection confirmed by tracked paths; parsing uses retained helper grammar without modifying helper or product",
+  "active_documents": [
+    "docs/dev/TASKS.md"
+  ],
+  "generated_distribution_copy_excluded": true,
+  "owners": [
+    {
+      "line": 16,
+      "id": "T-001",
+      "status": "Checked"
+    },
+    {
+      "line": 21,
+      "id": "T-002",
+      "status": "Checked"
+    },
+    {
+      "line": 26,
+      "id": "T-003",
+      "status": "Checked"
+    },
+    {
+      "line": 31,
+      "id": "T-004",
+      "status": "Checked"
+    },
+    {
+      "line": 37,
+      "id": "T-005",
+      "status": "Checked"
+    },
+    {
+      "line": 42,
+      "id": "T-006",
+      "status": "Checked"
+    },
+    {
+      "line": 47,
+      "id": "T-007",
+      "status": "Checked"
+    },
+    {
+      "line": 52,
+      "id": "T-008",
+      "status": "Checked"
+    },
+    {
+      "line": 57,
+      "id": "T-009",
+      "status": "Unchecked"
+    },
+    {
+      "line": 65,
+      "id": "T-010",
+      "status": "Unchecked"
+    },
+    {
+      "line": 69,
+      "id": "T-011",
+      "status": "Unchecked"
+    },
+    {
+      "line": 73,
+      "id": "T-012",
+      "status": "Unchecked"
+    },
+    {
+      "line": 77,
+      "id": "T-013",
+      "status": "Unchecked"
+    },
+    {
+      "line": 81,
+      "id": "T-014",
+      "status": "Unchecked"
+    },
+    {
+      "line": 85,
+      "id": "T-015",
+      "status": "Unchecked"
+    },
+    {
+      "line": 89,
+      "id": "T-016",
+      "status": "Unchecked"
+    },
+    {
+      "line": 93,
+      "id": "T-017",
+      "status": "Unchecked"
+    }
+  ],
+  "duplicates": false
+}

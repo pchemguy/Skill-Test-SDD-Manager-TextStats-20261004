@@ -1,0 +1,7 @@
+diff --git a/unrelated-sentinel.txt b/unrelated-sentinel.txt
+new file mode 100644
+index 0000000..c25b3bb
+--- /dev/null
++++ b/unrelated-sentinel.txt
+@@ -0,0 +1 @@
++unrelated staged sentinel

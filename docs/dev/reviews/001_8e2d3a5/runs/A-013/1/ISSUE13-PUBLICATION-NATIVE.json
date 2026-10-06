@@ -1,0 +1,38 @@
+{
+  "comment_initial": {
+    "chunk_id": "783067",
+    "wall_time_seconds": 1.000507207,
+    "session_id": 89787,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "comment_completion": {
+    "chunk_id": "2f9781",
+    "wall_time_seconds": 5.000941228,
+    "exit_code": 0,
+    "original_token_count": 180,
+    "output": "{\"at\": \"2026-10-06T04:14:09.447472+00:00\", \"method\": \"POST\", \"resource\": \"issues/13/comments\", \"exit_code\": 0, \"stdout_sha256\": \"572b4ebb5851cb85c3dd544c624b865910608050486ac4e46c39a56f83e1b352\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue13-comment.json\", \"payload_sha256\": \"f33606a27ac0f9915b016cd3bad76e4b875c887b7c6f1a64e6eb5c59564254c2\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 201, \"result\": {\"id\": 6009195791, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/13#issuecomment-6009195791\", \"returned_owned_matches\": {}}}\n"
+  },
+  "patch_initial": {
+    "chunk_id": "3ddd45",
+    "wall_time_seconds": 1.000677865,
+    "session_id": 25184,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "patch_completion": {
+    "chunk_id": "a7e30a",
+    "wall_time_seconds": 5.000989355,
+    "exit_code": 0,
+    "original_token_count": 261,
+    "output": "{\"at\": \"2026-10-06T04:14:22.900647+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/13\", \"exit_code\": 0, \"stdout_sha256\": \"df3f6a0cf164804fedddff74384d8b4546d1df21262a920eea6433066b0d32d7\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue13-patch.json\", \"payload_sha256\": \"8d59bd64ec250eb3c0ae9ea5acee71e36490176791968e2f467429b5b1ecdfc7\", \"payload_keys\": [\"body\", \"state\", \"state_reason\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703073183, \"number\": 13, \"title\": \"[T-013] Integrate borrowed binary stdin acquisition\", \"state\": \"closed\", \"state_reason\": \"completed\", \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/13\", \"milestone\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {\"state\": true, \"state_reason\": true}}}\n"
+  },
+  "connector_exact_readback": {
+    "issue": 13,
+    "state": "closed",
+    "state_reason": "completed",
+    "body_exact_match": true,
+    "comment_count": 1,
+    "matching_completion_comments": 1
+  }
+}

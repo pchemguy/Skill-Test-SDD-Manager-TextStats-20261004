@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-015",
+  "attempt": 2,
+  "role": "assessor",
+  "last_completed_action": "Independent actual staged-work recovery assessment",
+  "pending_operation": null,
+  "next_action": "Publish assessment",
+  "checkpoint_refs": {
+    "product_branch": "trial/a015-staged-recovery",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "remote": "/workspace/scratch/textstats-staged-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a015-staged-recovery",
+    "remote_commit": "2dae60081452d72482bd431475d8f0b88d2d9d8c"
+  },
+  "evidence_paths": [
+    "FINAL-OBSERVATIONS.json"
+  ]
+}

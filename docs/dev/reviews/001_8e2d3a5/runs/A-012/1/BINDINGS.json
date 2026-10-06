@@ -1,0 +1,35 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-011",
+      "status": "Passed",
+      "assessment_path": "../../../runs/A-011/1/independent-assessment/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "merge_parents": [
+          "ea97182d2d6a3984599238312a13e78d54d3221a",
+          "d518cc23650018542e43d8fb5a63f44a4d283518"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "a6df880aa35405f2264795dcef1297462130847d",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-011/1/independent-assessment/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Use existing product checkout /workspace/scratch/textstats-live-20261004, published phase/2-output-and-source-extensions at0e4741465c3e086d2ab95c5af73ca89371c16fac. Main remains59debb649545125dd3aa00377ea115451b594271. Named-file range feature is integrated; JSON remains implemented and stdin/final-review work remains pending. The separately completed ordinary removal impact assessment will be supplied as a permitted input file with this selected implementation command. Inspect current product authorities and scope; stop after integrating this amendment into paused phase2, without resuming stdin/final tasks or merging phase2 to main.\n\nActual human Resume continues full campaign GO in established pchemguy/Skill-Test-SDD-Manager-TextStats-20261004; standing instruction 'Full workflows must include pushes' authorizes prescribed scoped commits/publication, hosted maintenance and completed amendment integration. Follow product AGENTS and immutable textstats-run-resources/plugin/skills pinned019eb354cf0921ebd6056e6579763ac33d0baec2. Before any authority decision/rejection response read pinned sdd-manage/references/revision-authorization.md. Carry this actual human scope, exact owned payload/ref/destination and verified completion evidence in operation requests. Reviews end on commits; execution owns pushes. Preserve all platform controls: no unchanged denied retry or transport/account bypass; read exact effects before retrying unknown writes and retain rejection/context/results.\n\nTracked live tree/index are clean. Preserve unrelated untracked -json-9l969okj/sample.txt SHA256 f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5. A separate local-only acceptance-change worktree is not part of this live product request: do not modify, merge, publish or use its amended inputs. No clones/reset/stash/blanket cleanup/forcepush, shared trial branch/config mutation, frozen package/harness alteration or /pyenv work.\n\nNormal Git and existing protected adapter python /workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py METHOD repository-relative-resource [existing_nonsecret_body_json_file] are available. No leading slash; invoke adapter without reading its source or protected credential. Privately read provider responses, retaining safe metadata/hashes/marker checks only; never publish provider body/description prose. On adapter errors retain safe top-level error/cause/message/action and exit/HTTP/result status, stdout/stderr hashes; missing http_status/result is not proof of review denial. For unknown writes use exact live identity readback before bounded same-adapter retry; no duplicate comments. Preserve full native tool results/session IDs and await command completion.\n"
+  }
+}

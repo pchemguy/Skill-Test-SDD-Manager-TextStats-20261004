@@ -1,0 +1,120 @@
+{
+  "issues_before": [
+    {
+      "issue": 14,
+      "title": "[T-014] Complete stdin failure and interaction acceptance",
+      "state": "open",
+      "unique_markers": true,
+      "outside_managed_block_preserved": true,
+      "owned_keys": [
+        "body"
+      ]
+    },
+    {
+      "issue": 15,
+      "title": "[T-015] Complete source documentation and final distribution checks",
+      "state": "open",
+      "unique_markers": true,
+      "outside_managed_block_preserved": true,
+      "owned_keys": [
+        "body"
+      ]
+    },
+    {
+      "issue": 16,
+      "title": "[T-016] Review, test and report milestone 2.2",
+      "state": "open",
+      "unique_markers": true,
+      "outside_managed_block_preserved": true,
+      "owned_keys": [
+        "body"
+      ]
+    },
+    {
+      "issue": 17,
+      "title": "[T-017] Review, test and report phase 2 and the complete product",
+      "state": "open",
+      "unique_markers": true,
+      "outside_managed_block_preserved": true,
+      "owned_keys": [
+        "body"
+      ]
+    }
+  ],
+  "issues_after": [
+    {
+      "issue": 14,
+      "title": "[T-014] Complete stdin failure and interaction acceptance",
+      "state": "open",
+      "body_exact_match": true
+    },
+    {
+      "issue": 15,
+      "title": "[T-015] Complete source documentation and final distribution checks",
+      "state": "open",
+      "body_exact_match": true
+    },
+    {
+      "issue": 16,
+      "title": "[T-016] Review, test and report milestone 2.2",
+      "state": "open",
+      "body_exact_match": true
+    },
+    {
+      "issue": 17,
+      "title": "[T-017] Review, test and report phase 2 and the complete product",
+      "state": "open",
+      "body_exact_match": true
+    }
+  ],
+  "milestone_after": {
+    "number": 5,
+    "id": 18309642,
+    "title": "sdd-2.2-UTF-8-stdin-and-final-release",
+    "state": "open",
+    "description_exact_match": true,
+    "open_issues": 4,
+    "closed_issues": 0,
+    "http_status": 200,
+    "native": "fe906f"
+  },
+  "initial_transport_failure": {
+    "chunk_id": "fdea17",
+    "wall_time_seconds": 2.150058131,
+    "exit_code": 2,
+    "original_token_count": 150,
+    "output": "{\"at\": \"2026-10-06T04:15:52.259996+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/14\", \"exit_code\": 2, \"stdout_sha256\": \"8cf5e6a4c9f734a582c3a2dcd1fa7df4cde890a004b663e75533ed57e673cfd6\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue14-scope.json\", \"payload_sha256\": \"cc0d114952134e1769a731508f74dbeb7b783fef065425248e7732bdf938805a\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": null, \"error\": \"transport_failed\", \"result\": {\"result_type\": \"NoneType\"}}\n"
+  },
+  "unknown_effect_readback": {
+    "issue": 14,
+    "state": "open",
+    "title": "[T-014] Complete stdin failure and interaction acceptance",
+    "authored_body_applied": false,
+    "unique_managed_marker": true
+  },
+  "retry_completed_native": "3400fb exit0/HTTP200",
+  "remaining_effects": [
+    {
+      "chunk_id": "03f4fa",
+      "wall_time_seconds": 5.001228931,
+      "session_id": 90865,
+      "original_token_count": 248,
+      "output": "{\"at\": \"2026-10-06T04:16:41.614418+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/15\", \"exit_code\": 0, \"stdout_sha256\": \"16cc1ffa86ca382c644723cea15820c4aa4d0ccb35f399be4c28c418a673e990\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue15-scope.json\", \"payload_sha256\": \"cba7b3a77e05d98de27dd691b5e0253dd3bbb1e69f61615392b308c5c7196964\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703074842, \"number\": 15, \"title\": \"[T-015] Complete source documentation and final distribution checks\", \"state\": \"open\", \"state_reason\": null, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/15\", \"milestone\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {}}}\n"
+    },
+    {
+      "chunk_id": "095b20",
+      "wall_time_seconds": 5.001103997,
+      "session_id": 90865,
+      "original_token_count": 242,
+      "output": "{\"at\": \"2026-10-06T04:16:47.029129+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/16\", \"exit_code\": 0, \"stdout_sha256\": \"919a9715e4028c95a86ebab76548c7c1faa6982cbdd26802448b94e5686624c5\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue16-scope.json\", \"payload_sha256\": \"f9372c0b9d4508c8d0408ebea75ca1bbb44edb50f0ca8553c070d5d6d223b9b5\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703075665, \"number\": 16, \"title\": \"[T-016] Review, test and report milestone 2.2\", \"state\": \"open\", \"state_reason\": null, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/16\", \"milestone\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {}}}\n"
+    },
+    {
+      "chunk_id": "3415d7",
+      "wall_time_seconds": 5.0016904,
+      "exit_code": 0,
+      "original_token_count": 454,
+      "output": "{\"at\": \"2026-10-06T04:16:52.080990+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/17\", \"exit_code\": 0, \"stdout_sha256\": \"a63ff569a6ca890c77b02e87d781851f06248e238f8f6b5cbc95531b73643706\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue17-scope.json\", \"payload_sha256\": \"b16f3afb11be0902a5c1581096023587c76301549d0a0eb289709c727f4a1caa\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703078349, \"number\": 17, \"title\": \"[T-017] Review, test and report phase 2 and the complete product\", \"state\": \"open\", \"state_reason\": null, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/17\", \"milestone\": {\"id\": 18309655, \"number\": 6, \"title\": \"sdd-2.3-Phase-2-and-final-review\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {}}}\n{\"at\": \"2026-10-06T04:16:56.508667+00:00\", \"method\": \"PATCH\", \"resource\": \"milestones/5\", \"exit_code\": 0, \"stdout_sha256\": \"a88b530c2ff669d2f94146968e0712ff40d1def262c3f02cba13f9a087a29cb1\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/milestone5-scope.json\", \"payload_sha256\": \"a1d48a1dd8225ff5c28f6719ac6356a327911d5d50184930b6a2340b743ee062\", \"payload_keys\": [\"description\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\", \"open_issues\": 4, \"closed_issues\": 0, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/5\", \"returned_owned_matches\": {\"description\": true}}}\n"
+    }
+  ],
+  "qualification": "Milestone provider count4open0closed remains stale relative to independently closedissue13; all exact issue states authoritative, closure gate will reenumerate memberships"
+}

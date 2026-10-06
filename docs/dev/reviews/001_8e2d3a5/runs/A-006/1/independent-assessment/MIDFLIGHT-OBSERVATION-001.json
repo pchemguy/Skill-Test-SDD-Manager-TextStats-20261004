@@ -1,0 +1,91 @@
+{
+  "observed_at": "2026-10-04T16:30:39.288640+00:00",
+  "source_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "source_files": 111,
+  "source_hash_mismatches": [],
+  "behavioral_commands_run": false,
+  "consumer_editing": true,
+  "evidence_files": {
+    "RESOLVED.json": "0167627ebf6340e547b0353f8a263bb86ab0948792433c9968f6618ee59f951b",
+    "command-005.json": "60da04308cc26c60cce334d4c006532d761e24acf6072167427699ca4632b43e",
+    "provider-issue-7-initial.json": "4930a6f6a02d70bcc9ded8e8937363ba96e3c0adf452fe8be8656737911a7e3a",
+    "provider-issue-8-initial.json": "6212ee19b6d65d1dd221a536758970f604c6e6b3399a8d4eeb371ac80fa089d1",
+    "provider-issue-6-initial.json": "29bd58ef372c064bcd065a9de9bd53c5ddc31c3a641ca3782543c62029459346",
+    "command-006.json": "095248f4da1889769f3bde4399902ee9b802dfa8123d67340415a3572808438b",
+    "RUN-STATE.json": "d82785b8621cfb647ac73c69109e72033fa2fe86b8ad2e22018d38038786efd5",
+    "command-002.json": "2b386c9e852e61669cfb5c17e23a50bb4b08ebb8ef75350feac98159499b2977",
+    "command-004.json": "6bd367034cd02c8f21687fc6eb7a5a1a6b96eb6a6975a1060199148441bdcdb9",
+    "command-003.json": "1259ee5f047067931d42eda8ae16c574563d49d945022fad0aba0f27219924de",
+    "provider-issue-9-initial.json": "e2b055016a655ecaaaef0d38e989907e43d0ac61aef03549510cafe7616668f3",
+    "provider-issue-5-initial.json": "5af9bda1e959b545d4eaebaf9270413ee18a38ad350c6a3c286d5bbed1b3ad24",
+    "REQUEST.md": "73889c2233c33830c9a9632454e24911b1b9de1f292111ba49c8e6bb3e03fe1a",
+    "command-001.json": "d42d500f08a1f1edf98e510be69363c21ea8d594243647775f44dde4fa668842",
+    "JOURNAL.md": "408384013a22ea16a7131dc7b7fafdb5f2bdb3057994cfed98f2e0bd322dda14",
+    "command-004-completion.json": "6ed3d96cb9b629e6158e4a420b1e99a5179fcd3292832c7081100a57bbe4b7c4"
+  },
+  "git": {
+    "head": {
+      "args": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "386c140a85a1451d48276bae6063a3db98307710\n",
+      "stderr": ""
+    },
+    "branch": {
+      "args": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "phase/1-named-file-utility\n",
+      "stderr": ""
+    },
+    "log": {
+      "args": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "log",
+        "-10",
+        "--format=%H %P %s"
+      ],
+      "returncode": 0,
+      "stdout": "386c140a85a1451d48276bae6063a3db98307710 159c662e06405b1fbf696e8e9d9d5d47024187be Verify named-file failure atomicity and lifecycle (T-005)\n159c662e06405b1fbf696e8e9d9d5d47024187be fc3a0ec10728310988a7c29258b582096a53fe28 Reconcile verified milestone 1.1 completion and pause (T-004)\nfc3a0ec10728310988a7c29258b582096a53fe28 7bfadcb685e1cc313e2b9baab4deddd0f34c1832 Clarify binary-mode review evidence for milestone 1.1 (T-004)\n7bfadcb685e1cc313e2b9baab4deddd0f34c1832 f2260a280b80fbbceb912594943a69c6075dcf07 Review and report named-file MVP milestone 1.1 (T-004)\nf2260a280b80fbbceb912594943a69c6075dcf07 299670cbf19022fce5b12a8df1099857f1322ffb Deliver useful named-file module CLI (T-003)\n299670cbf19022fce5b12a8df1099857f1322ffb 9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 Integrate strict UTF-8 named-file API (T-002)\n9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76 d009899e39790c39be32ae77e7fe8294bf60d04c Establish immutable statistics and pure text counting (T-001)\nd009899e39790c39be32ae77e7fe8294bf60d04c 4c275cc46fc0163c9e1e50871d3cc33c4c38567e Enable maintained phase 1 GitHub tracking\n4c275cc46fc0163c9e1e50871d3cc33c4c38567e d0087ff75e485cab832a28d6b501150eaf2ed249 Prepare reviewed TextStats executable task hierarchy\nd0087ff75e485cab832a28d6b501150eaf2ed249 6058ef0968052786d38f4b10887c09f82a51b157 Prepare reviewed TextStats delivery plan and layout\n",
+      "stderr": ""
+    },
+    "status": {
+      "args": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": " M tests/integration/test_cli.py\n M tests/unit/test_cli.py\n",
+      "stderr": ""
+    },
+    "remote": {
+      "args": [
+        "git",
+        "-C",
+        "PRODUCT",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/phase/1-named-file-utility"
+      ],
+      "returncode": 0,
+      "stdout": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e\trefs/heads/main\n386c140a85a1451d48276bae6063a3db98307710\trefs/heads/phase/1-named-file-utility\n",
+      "stderr": ""
+    }
+  }
+}

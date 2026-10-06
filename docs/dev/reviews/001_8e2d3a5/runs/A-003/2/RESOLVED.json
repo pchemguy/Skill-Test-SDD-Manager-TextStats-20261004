@@ -1,0 +1,34 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-001",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-001/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "merge_parents": [
+          "d0087ff75e485cab832a28d6b501150eaf2ed249"
+        ]
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/main",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "7fc285d558ae8e39a6d26a0f3fc5d42b141595c1",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-001/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Product checkout /workspace/scratch/textstats-live-20261004 is clean on main at published commit4c275cc46fc0163c9e1e50871d3cc33c4c38567e. Follow its AGENTS and pinned skills under textstats-run-resources/plugin/skills. Maintained tracking for this dedicated GitHub repository, scoped commits/pushes and applicable integration are authorized; stop before task implementation. GitHub connector tools and protected repository-scoped curl REST transport are available. Transport: python /workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py METHOD RESOURCE [NONSECRET_BODY_JSON], supporting labels/milestones/issues for this repository only. Existing protected authentication is available and native parent GET reads returned HTTP200. Ordinary Git authentication works. Do not read credential stores or expose secrets; no browser is needed. Preserve existing user material. Reobserve current repository and hosted objects before mutations."
+  }
+}

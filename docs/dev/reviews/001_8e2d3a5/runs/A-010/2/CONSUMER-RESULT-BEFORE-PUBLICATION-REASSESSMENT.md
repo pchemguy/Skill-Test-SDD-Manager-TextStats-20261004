@@ -1,0 +1,11 @@
+# A-010 continuation result (publication checkpoint)
+
+T-018–T-022 implementation, code review, main governing-owner/QC reconciliation and historical feature-source/archive disposition are locally complete. Final commit d518cc23650018542e43d8fb5a63f44a4d283518 is not yet published. T-018–T-021 task commits are published at905d7a851124235db27f4f5a553ee39729957a44,9ade315a9f6ded1fade6f457a504f5e07e58fba5,749a89844249d3b1c5ebb04c459d7e66bcb3ed2e,3f93cd40d90001ee7e4f54b36c764d1d5067b72e.
+
+Python3.12.14 independent unit21/integration13 pass without skips; pure helper RED2 failures and real command RED73 failures observed before relevant production changes. Both range spellings/formats/options, unbounded ASCII decimals/huge zero prefixes/rejections before acquisition, BOM/CRLF/Unicode/EOF, full strict decode/late errors, unchanged whole-input API/resources/files, runnable public examples and isolated extracted package identity/range/error behavior verified. Final main/archive links and22 unique executable task IDs pass. TODO: None.
+
+Hosted #18–#21 closed/completed, milestone#7 closed0open/4closed. Initial18 unknown preHTTPexit2 retained; bounded assisted same-adapter recovery and consumer readback establish closure. Later readonly19transport_failed resolved by connector readback. No helper/credential inspection or alternate write transport. #22/#8 closure awaits final task publication.
+
+Automatic approval review rejected final git push, stating the command pushes source/docs to github.com as an unverified destination and the transcript lacks explicit repository/data-disclosure authorization. Rejection retained, no bypass/unchanged retry. Readonly confirms remote feature remains3f93cd4, pausedphase2ea97182 and main59debb6. Supported scoped authorization review is pending. No feature→phase2 merge was attempted, so integrated completion is not claimed.
+
+Tracked tree/index clean; unrelated -json-9l969okj/sample.txt remains untracked/excluded with SHA256f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5. Pinned workflow package unchanged. Main Phase2/T013–T017/stdin remain incomplete. Stop on the publication blocker unless its supported authorization is resolved; complete journal and loaded pinned hashes are in JOURNAL.md.

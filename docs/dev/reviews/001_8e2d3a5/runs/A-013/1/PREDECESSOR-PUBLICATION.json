@@ -1,0 +1,15 @@
+{
+  "case_id": "A-012",
+  "assessment": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+  "evidence_commit": "0cebfe97b82269e7c28b43aa84bbbf3d163d353a",
+  "publication_native": {
+    "initial": "6daf81 session67779",
+    "completion": "46a280 exit0",
+    "exact_readback": "4a0fdd exit0"
+  },
+  "selected_input_render": "a19dc6 exit0; live predecessor/evidence verified by frozen renderer",
+  "starting_product": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+  "current_scope": "T013\u2013T017/fullPhase2 then stop",
+  "clarification": "INPUT-CLARIFICATION.json explicitly adds later stdin range composition",
+  "primary_execution_assistance": "Same ordinary scoped Git/adapter effect; required exact receipt before dependent advance"
+}

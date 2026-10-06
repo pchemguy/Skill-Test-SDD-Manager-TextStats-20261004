@@ -1,0 +1,7 @@
+{
+  "chunk_id": "b9ae33",
+  "wall_time_seconds": 1.8227e-05,
+  "exit_code": 0,
+  "original_token_count": 301,
+  "output": "{\"transport\": \"curl\", \"http_status\": 200, \"result\": {\"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/2\", \"id\": 18303258, \"number\": 2, \"title\": \"sdd-1.2-Reliable-documented-distribution\", \"description_sha256\": \"7d4093d70123814e0eb04004430ed765d07a18dc49082ef56ac160e5b225b914\", \"open_issues\": 0, \"closed_issues\": 4, \"state\": \"closed\"}}\n"
+}

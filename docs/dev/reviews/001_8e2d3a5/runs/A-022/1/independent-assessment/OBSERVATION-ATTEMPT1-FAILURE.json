@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "stage": "manifest lookup",
+  "cause": "Assessor script used incorrect manifest key; actual key package_hashes. Git reads occurred but first script exited before persisting command records. No product effects.",
+  "stdout": "manifest keys [changed_package_paths, commit, fingerprint, manifest_path, package_file_modes, package_hashes, revision, snapshot_path, source_mode]",
+  "stderr": "RuntimeError: manifest hash map not located"
+}

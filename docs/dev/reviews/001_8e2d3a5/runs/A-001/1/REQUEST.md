@@ -1,0 +1,7 @@
+# Prepare TextStats
+
+Orient this repository and prepare the product described in the accompanying preparation brief through its task hierarchy. Stop before implementation.
+
+## Actual product current state and authorization
+
+Dedicated repository pchemguy/Skill-Test-SDD-Manager-TextStats-20261004. Eligible checkout /workspace/scratch/textstats-live-20261004 on main at 8e2d3a57af36bc42d73f2118542a8f2608bab6ae. Existing README, operating instructions and pinned package are retained. Preparation through TASKS and its routine scoped commits/pushes and applicable explicit integration are authorized. Stop before production implementation. The publication destination is origin in this repository; existing Git authentication has been recovered.

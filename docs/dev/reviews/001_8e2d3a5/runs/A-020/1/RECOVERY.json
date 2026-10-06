@@ -1,0 +1,10 @@
+{
+  "kind": "local-only task recovery evidence, not task-ref push or hosted completion",
+  "branch": "trial/a020-preservation",
+  "commit": "5719983f2d11266dba58bc8b149505c2519df4cb",
+  "prerequisite": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "bundle_sha256": "89968cb53780b625345b122ca1130fdf631e33cb583a158f51ddaec37ea61581",
+  "bundle_verified": true,
+  "foreign_index_and_working_state": "INDEX-EXPORT.txt/STAGED-DIFF.patch/WORKTREE-DIFF.patch and exact INJECTION.json staged/current/untracked contents; credentials excluded",
+  "shared_main_unchanged": "59debb649545125dd3aa00377ea115451b594271"
+}

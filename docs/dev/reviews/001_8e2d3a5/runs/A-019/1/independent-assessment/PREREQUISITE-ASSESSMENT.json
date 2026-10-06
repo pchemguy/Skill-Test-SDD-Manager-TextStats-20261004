@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "attempt": 1,
+  "status": "Blocked",
+  "assessment_kind": "independent prerequisite and facility eligibility only",
+  "runtime_disposition": "Not run",
+  "agent_behavior_assessed": false,
+  "trigger_observed": false,
+  "assessed_at": "2026-10-05T13:23:43.347510+00:00",
+  "product_repository": "/workspace/scratch/textstats-live-20261004",
+  "pinned_plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "limitations": [
+    "Full native consumer transcript unavailable; this assessment does not infer runtime behavior from journals or static policy.",
+    "Hard filesystem isolation unavailable: shared broad filesystem exposes harness/assessor material; no strict isolation certification.",
+    "No consumer dispatched, provider write, conflict/test injection, clone/worktree setup, cleanup/reset, shared configuration/ref/source mutation or credential/helper-source inspection performed."
+  ],
+  "preservation": "Prescribed actual predecessor objects retained; trigger not run because eligibility is unavailable. Frozen package all111 files equal retained actual preparation-checkpoint bytes.",
+  "evidence_paths": [
+    "GIT-POLICY-EVIDENCE.json",
+    "PREREQUISITE-TASKS.md",
+    "PREREQUISITE-PUBLICATION.json"
+  ],
+  "case_id": "A-019",
+  "reason": "The current assisted Passed A005 milestone checkpoint is usable but is an incomplete main phase. No authorized integration boundary at that exact checkpoint satisfies the pinned complete-phase integration gate; therefore the conflict/prospective-failure integration trial cannot lawfully start.",
+  "prerequisite": {
+    "case_id": "A-005",
+    "current_assessment": "runs/A-005/1/rechecks/1/ASSESSMENT.json",
+    "current_status": "Passed",
+    "assisted": true,
+    "retained_initial_assessment": "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json",
+    "retained_initial_status": "Blocked",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "product_branch": "phase/1-named-file-utility",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "integration_branch": "main",
+    "assessment_published_bytes_verified": true
+  },
+  "findings": [
+    "Committed TASKS at159c662 has milestone1.1/T001\u2013T004 complete, phase1 and milestone1.2/1.3 plus T005\u2013T009 unchecked. It explicitly pauses without integration.",
+    "Catalog/guide require actual A005 milestone before integration; sdd-implement step6 and Git workflows require main task work to integrate only a complete verified phase. Partial range completion alone cannot waive review/report/closure/exits.",
+    "Branch-management permits an explicit recorded human partial-phase override, but no such selected override is present: the generic current-integration request and full-campaign authorization do not state it.",
+    "No accepted coherent feature/revision/steering boundary exists in this exact main-phase predecessor to invoke the other-boundary policy. Scoped competing fixture edits cannot invent that workflow.",
+    "Current live main59debb649545125dd3aa00377ea115451b594271 already contains159c662 through later full-phase integration; merging into current main is already-integrated handling and does not produce the required new genuine boundary.",
+    "Silently substituting later A006 completed phase object b398e258cefc03dbc47630b83967db961a376eae would change the prescribed catalog binding; no substitution made."
+  ],
+  "missing_prerequisite": "A lawful integration boundary at the prescribed actual A005 checkpoint under the current frozen integration gate.",
+  "next_permitted_action": "Keep A019 Blocked/Not run. Coordinator may record the harness-binding versus phase-gate mismatch for separate accepted repair/new pinned run; no current integration/conflict setup is eligible."
+}

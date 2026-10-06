@@ -1,0 +1,59 @@
+{
+  "comments": [
+    {
+      "issue_number": 10,
+      "comments": [
+        {
+          "id": 5984170842,
+          "created_at": null,
+          "updated_at": null,
+          "authored_body_matches": false
+        },
+        {
+          "id": 6001236610,
+          "created_at": null,
+          "updated_at": null,
+          "authored_body_matches": true
+        }
+      ],
+      "exact_comment_count": 1
+    },
+    {
+      "issue_number": 11,
+      "comments": [
+        {
+          "id": 5984193128,
+          "created_at": null,
+          "updated_at": null,
+          "authored_body_matches": false
+        },
+        {
+          "id": 6001238337,
+          "created_at": null,
+          "updated_at": null,
+          "authored_body_matches": true
+        }
+      ],
+      "exact_comment_count": 1
+    },
+    {
+      "issue_number": 12,
+      "comments": [
+        {
+          "id": 5984209263,
+          "created_at": null,
+          "updated_at": null,
+          "authored_body_matches": false
+        },
+        {
+          "id": 6001240396,
+          "created_at": null,
+          "updated_at": null,
+          "authored_body_matches": true
+        }
+      ],
+      "exact_comment_count": 1
+    }
+  ],
+  "provider_bodies_withheld": true
+}

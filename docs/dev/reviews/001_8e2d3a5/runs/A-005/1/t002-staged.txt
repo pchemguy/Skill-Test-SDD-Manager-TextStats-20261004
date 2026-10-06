@@ -1,0 +1,146 @@
+diff --git a/README.md b/README.md
+index df0366c..8e3efb1 100644
+--- a/README.md
++++ b/README.md
+@@ -4,4 +4,4 @@ SDD Manager TextStats testing
+ 
+ Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
+ 
+-TextStats currently provides immutable `TextStats` values and pure `count_text` counting for Python 3.11+. Named-file APIs and the module CLI are planned in subsequent tasks. See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
++TextStats currently provides immutable `TextStats` values and pure `count_text` counting for Python 3.11+. The public `count_file(path, *, strip_bom=True)` API also counts named UTF-8 files without changing their bytes. The module CLI is planned in the next task. See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index c9a81b1..49105ff 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -17,10 +17,11 @@ Phase 1 working branch: `phase/1-named-file-utility`; integration target: `main`
+             Outcome: direct TextStats/count_text imports, immutable nonnegative fields and exact BOM/CRLF/CR/LF/Unicode-word semantics (S-1/S-2).
+             Evidence: nonempty unit discovery; all SPEC sample rows, retained/interior/double BOM, silence and immutability/nonnegative checks. Keep pure core independent of acquisition/process state.
+             Completion evidence (2026-10-04, Python 3.12.14, phase/1-named-file-utility; task-owned diff from d009899): `PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v` passed 12 tests with no skips. All 11 SPEC sample rows, 5 additional terminator boundaries, 7 Unicode whitespace separators, 7 BOM interactions, signature/default, silence, input preservation, frozen fields and invalid/zero counts are covered. RED observed missing TextStats export (1 failure), invalid counts (11 failing subtests), missing count_text export (1 failure), and unimplemented semantics (28 failing subtests); each became GREEN after its corresponding implementation. A separate acceptance discovery/run and direct public-import example passed; `git diff --check` was clean. Core inspection confirms only standard-library dataclass dependency and no acquisition/process behavior. Module/API docstrings reviewed; README capability statement aligned. Issue uniquely resolved as pchemguy/Skill-Test-SDD-Manager-TextStats-20261004#1 by exact title and task marker. No T-002 work, integration tests, CLI, distribution or milestone/phase review is claimed.
+-        - [ ] T-002 — Integrate strict UTF-8 named-file API
++        - [x] T-002 — Integrate strict UTF-8 named-file API
+             Scope: textstats/io.py, facade exports, focused unit/file integration checks and tests/integration/ discovery packages. Depends on: T-001.
+             Outcome: count_file supports str/PathLike, preserves input terminators, delegates counts and closes its success-path owned handle (S-3 success).
+             Evidence: direct package API import/signatures; real temporary files for BOM/newline/empty/Unicode cases; unchanged input; silent calls and success-handle closure. Required failure-path hardening follows in T-005.
++            Completion evidence (2026-10-04): focused test-first run observed 3 missing-export assertion failures before implementation, then 3 passing tests. Independent `PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests/unit -t . -v` passed 13 tests; integration discovery passed 2 tests. Real str/Path files, strict binary UTF-8 acquisition, BOM/terminator/Unicode cases, exact signatures, silence, unchanged bytes and owned success closure covered. Module/API docstrings and README capability reviewed; no failure-hardening acceptance is claimed. Issue #2 exact title/body marker uniquely confirmed; diff check clean.
+         - [ ] T-003 — Deliver the useful named-file module CLI
+             Scope: textstats/cli.py, textstats/__main__.py and integration subprocess checks. Depends on: T-001, T-002.
+             Outcome: one named input, --keep-bom, -- dash filenames and help; exact text output and option validation before acquisition (S-4 success/options).
+diff --git a/tests/integration/__init__.py b/tests/integration/__init__.py
+new file mode 100644
+index 0000000..e9e1c22
+--- /dev/null
++++ b/tests/integration/__init__.py
+@@ -0,0 +1 @@
++"""Real public API and module-entry acceptance checks."""
+diff --git a/tests/integration/test_file_api.py b/tests/integration/test_file_api.py
+new file mode 100644
+index 0000000..2a65009
+--- /dev/null
++++ b/tests/integration/test_file_api.py
+@@ -0,0 +1,40 @@
++"""Named-file success contracts against unchanged real UTF-8 bytes."""
++
++import contextlib
++import inspect
++import io
++from pathlib import Path
++import tempfile
++import unittest
++
++import textstats
++
++
++class FileApiTests(unittest.TestCase):
++    def test_public_export_and_signature(self):
++        self.assertTrue(hasattr(textstats, "count_file"), "count_file public export missing")
++        signature = inspect.signature(textstats.count_file)
++        self.assertEqual(list(signature.parameters), ["path", "strip_bom"])
++        self.assertEqual(signature.parameters["strip_bom"].kind, inspect.Parameter.KEYWORD_ONLY)
++        self.assertIs(signature.parameters["strip_bom"].default, True)
++
++    def test_real_files_paths_bom_terminators_and_silence(self):
++        self.assertTrue(hasattr(textstats, "count_file"), "count_file public export missing")
++        cases = [(b"", (0, 0)), (b"alpha beta", (1, 2)),
++                 (b"alpha\r\nbeta\rgamma\n", (3, 3)), (b"\n\n", (2, 0)),
++                 ("café\u2028tea".encode(), (1, 2)),
++                 ("\ufeff".encode(), (0, 0)), ("\ufeff\ufeff".encode(), (1, 1))]
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / "input.txt"
++            for data, counts in cases:
++                for path_arg in (path, str(path)):
++                    with self.subTest(data=data, path_type=type(path_arg)):
++                        path.write_bytes(data)
++                        out, err = io.StringIO(), io.StringIO()
++                        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                            result = textstats.count_file(path_arg)
++                        self.assertEqual(result, textstats.TextStats(*counts))
++                        self.assertEqual(path.read_bytes(), data)
++                        self.assertEqual((out.getvalue(), err.getvalue()), ("", ""))
++            path.write_bytes("\ufeff".encode())
++            self.assertEqual(textstats.count_file(path, strip_bom=False), textstats.TextStats(1, 1))
+diff --git a/tests/unit/test_file_api.py b/tests/unit/test_file_api.py
+new file mode 100644
+index 0000000..5f7e945
+--- /dev/null
++++ b/tests/unit/test_file_api.py
+@@ -0,0 +1,16 @@
++"""Owned success-path file lifecycle."""
++
++import io
++import unittest
++from unittest.mock import patch
++
++import textstats
++
++
++class FileLifecycleTests(unittest.TestCase):
++    def test_success_closes_owned_handle(self):
++        self.assertTrue(hasattr(textstats, "count_file"), "count_file public export missing")
++        handle = io.BytesIO(b"one\r\ntwo")
++        with patch("builtins.open", return_value=handle):
++            self.assertEqual(textstats.count_file("owned"), textstats.TextStats(2, 2))
++        self.assertTrue(handle.closed)
+diff --git a/textstats/__init__.py b/textstats/__init__.py
+index f5fbe1c..6096cf6 100644
+--- a/textstats/__init__.py
++++ b/textstats/__init__.py
+@@ -1,5 +1,6 @@
+ """Public interfaces for whole-input text statistics."""
+ 
+ from .core import TextStats, count_text
++from .io import count_file
+ 
+-__all__ = ["TextStats", "count_text"]
++__all__ = ["TextStats", "count_text", "count_file"]
+diff --git a/textstats/io.py b/textstats/io.py
+new file mode 100644
+index 0000000..9f6a6a6
+--- /dev/null
++++ b/textstats/io.py
+@@ -0,0 +1,26 @@
++"""Acquire complete named-file bytes without newline translation."""
++
++import os
++
++from .core import TextStats, count_text
++
++
++def count_file(path: str | os.PathLike[str], *, strip_bom: bool = True) -> TextStats:
++    """Count a UTF-8 file silently, leaving its bytes unchanged.
++
++    Args:
++        path: String or filesystem path to the named input.
++        strip_bom: Remove exactly one leading BOM before counting.
++
++    Returns:
++        Immutable line/word counts using count_text's CR/LF and Unicode rules.
++
++    Raises:
++        OSError: The file cannot be opened or read.
++        UnicodeDecodeError: Complete input is not valid UTF-8.
++
++    The owned binary handle closes before counting; no caller stream is owned.
++    """
++    with open(path, "rb") as source:
++        text = source.read().decode("utf-8")
++    return count_text(text, strip_bom=strip_bom)

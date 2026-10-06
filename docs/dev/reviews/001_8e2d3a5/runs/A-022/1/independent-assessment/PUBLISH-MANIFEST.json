@@ -1,0 +1,67 @@
+{
+  "case_id": "A-022",
+  "attempt": 1,
+  "files": [
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/ASSESSMENT.json",
+      "bytes": 5132,
+      "sha256": "cff0c41d58e0e53a49276cc3875b0a416afb09d6821da488bd0a700b591ea102"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/ASSESSMENT.md",
+      "bytes": 4382,
+      "sha256": "1f8a8071d4e81a6a3a9e5be5783b2deb8ebf22ab079cd66c17121ba1f471d342"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/INDEPENDENT-COMMANDS.json",
+      "bytes": 86543,
+      "sha256": "e6530838a70cf4f8278f7843bd90cbef286979939cb36ffcb4cda69b1103bb5b"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/INPUTS.json",
+      "bytes": 402,
+      "sha256": "2dc13d7ba37bf9aad4c7ca46f7801d3b965ab92d4db46f5cf29c0357808eae41"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/LOCAL-URL-DETERMINISTIC-ASSESSMENT.json",
+      "bytes": 1216,
+      "sha256": "2958d721e89dc43569b47ffcf0b8b5ad146c02bb55fa24c5749414aec4e985d6"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/OBSERVATION-ATTEMPT1-FAILURE.json",
+      "bytes": 457,
+      "sha256": "559e0d778032955718b477ffee9a92a7abc8f991f4c0f4e6e4febc6901d519db"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/OBSERVATION-ATTEMPT1.py",
+      "bytes": 5558,
+      "sha256": "1bc0fda3e4f187831abe9483875c2082edeb32a72e4444edf5cc7011078cc930"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/OBSERVATIONS.json",
+      "bytes": 71214,
+      "sha256": "44be06066bb3d0188b9ddde0cb2a8642880ff3fb3e40d5018bbff9c9e749e9d9"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/ORIGINAL-HELPER-RESULT.json",
+      "bytes": 1005,
+      "sha256": "b7f4363bca90a8a8e328491ac0e8c53d4c7341a79a4f8483c4ec695b690894d4"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/RUN-STATE.json",
+      "bytes": 919,
+      "sha256": "dbf60818a23c56295c7339fbd9e2337453a54d25e34ea82eace6cfd5c0eac9ec"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/SUPPLEMENTAL-COMMANDS.json",
+      "bytes": 37564,
+      "sha256": "d91957001d738599eb83825d5b34e1ed58699dd6c40bbd189084d62f21b0c1fc"
+    },
+    {
+      "path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-022/1/independent-assessment/observe.py",
+      "bytes": 5511,
+      "sha256": "e71faf70b93178cce33e5b5336d1039fb1e5a16d2a6e722183d57cdf368b55ac"
+    }
+  ],
+  "scope": "Only this run independent-assessment directory; manifest itself also included for publication."
+}

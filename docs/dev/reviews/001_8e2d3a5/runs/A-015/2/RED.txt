@@ -1,0 +1,362 @@
+test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) ... 
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="''", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha beta'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\n'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\n'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\r\\nbeta\\rgamma\\n'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\n\\n'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="' \\t'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\u2028beta'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\ufeff'", strip=True) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\ufeff'", strip=False) ... ERROR
+  test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\ufeff\\ufeff'", strip=True) ... ERROR
+test_api_calls_are_silent (tests.unit.test_core.CountTextTests.test_api_calls_are_silent) ... ERROR
+test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) ... 
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'a\\ufeffb'", strip=True) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'a \\ufeff b'", strip=True) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'\\ufeff\\ufeff\\n'", strip=True) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'\\ufeff\\n'", strip=False) ... ERROR
+  test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'\\ufeff\\n'", strip=True) ... ERROR
+test_input_is_unchanged (tests.unit.test_core.CountTextTests.test_input_is_unchanged) ... ERROR
+test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) ... 
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'\\r\\n'") ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'\\r'") ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'a\\rb'") ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'\\r\\n\\r\\n'") ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'a\\r\\n\\nb'") ... ERROR
+  test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'a\\x0b\\x0c\\x85\\u2029b'") ... ERROR
+test_strip_bom_is_keyword_only_and_defaults_true (tests.unit.test_core.CountTextTests.test_strip_bom_is_keyword_only_and_defaults_true) ... ok
+test_unicode_whitespace_splits_words (tests.unit.test_core.CountTextTests.test_unicode_whitespace_splits_words) ... ERROR
+test_fields_cannot_be_changed (tests.unit.test_core.TextStatsTests.test_fields_cannot_be_changed) ... ok
+test_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) ... 
+  test_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) (counts=(-1, 0)) ... FAIL
+  test_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) (counts=(0, -1)) ... FAIL
+  test_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) (counts=(-1, -1)) ... FAIL
+test_noninteger_fields_are_rejected (tests.unit.test_core.TextStatsTests.test_noninteger_fields_are_rejected) ... 
+  test_noninteger_fields_are_rejected (tests.unit.test_core.TextStatsTests.test_noninteger_fields_are_rejected) (counts=(1.5, 0)) ... FAIL
+  test_noninteger_fields_are_rejected (tests.unit.test_core.TextStatsTests.test_noninteger_fields_are_rejected) (counts=(0, '2')) ... FAIL
+test_values_are_nonnegative_integers (tests.unit.test_core.TextStatsTests.test_values_are_nonnegative_integers) ... ok
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="''", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha beta'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\n'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\n'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\r\\nbeta\\rgamma\\n'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\n\\n'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="' \\t'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'alpha\\u2028beta'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\ufeff'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\ufeff'", strip=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_all_spec_sample_rows (tests.unit.test_core.CountTextTests.test_all_spec_sample_rows) (text="'\\ufeff\\ufeff'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 47, in test_all_spec_sample_rows
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(lines, words))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_api_calls_are_silent (tests.unit.test_core.CountTextTests.test_api_calls_are_silent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 78, in test_api_calls_are_silent
+    count_text("alpha")
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'a\\ufeffb'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 67, in test_bom_policy_preserves_interior_and_second_bom
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'a \\ufeff b'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 67, in test_bom_policy_preserves_interior_and_second_bom
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'\\ufeff\\ufeff\\n'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 67, in test_bom_policy_preserves_interior_and_second_bom
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'\\ufeff\\n'", strip=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 67, in test_bom_policy_preserves_interior_and_second_bom
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_bom_policy_preserves_interior_and_second_bom (tests.unit.test_core.CountTextTests.test_bom_policy_preserves_interior_and_second_bom) (text="'\\ufeff\\n'", strip=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 67, in test_bom_policy_preserves_interior_and_second_bom
+    self.assertEqual(count_text(text, strip_bom=strip), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_input_is_unchanged (tests.unit.test_core.CountTextTests.test_input_is_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 71, in test_input_is_unchanged
+    self.assertEqual(count_text(original), TextStats(2, 2))
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'\\r\\n'")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 55, in test_only_cr_and_lf_terminate_lines
+    self.assertEqual(count_text(text), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'\\r'")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 55, in test_only_cr_and_lf_terminate_lines
+    self.assertEqual(count_text(text), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'a\\rb'")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 55, in test_only_cr_and_lf_terminate_lines
+    self.assertEqual(count_text(text), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'\\r\\n\\r\\n'")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 55, in test_only_cr_and_lf_terminate_lines
+    self.assertEqual(count_text(text), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'a\\r\\n\\nb'")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 55, in test_only_cr_and_lf_terminate_lines
+    self.assertEqual(count_text(text), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_only_cr_and_lf_terminate_lines (tests.unit.test_core.CountTextTests.test_only_cr_and_lf_terminate_lines) (text="'a\\x0b\\x0c\\x85\\u2029b'")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 55, in test_only_cr_and_lf_terminate_lines
+    self.assertEqual(count_text(text), TextStats(*expected))
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+ERROR: test_unicode_whitespace_splits_words (tests.unit.test_core.CountTextTests.test_unicode_whitespace_splits_words)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 58, in test_unicode_whitespace_splits_words
+    self.assertEqual(count_text("one\u00a0two\u2003三\t四"), TextStats(1, 4))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-staged-worktree-20261005/textstats/core.py", line 16, in count_text
+    raise NotImplementedError("T-001 counting not implemented")
+NotImplementedError: T-001 counting not implemented
+
+======================================================================
+FAIL: test_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) (counts=(-1, 0))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 21, in test_negative_construction_is_rejected
+    with self.subTest(counts=counts), self.assertRaises(ValueError):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) (counts=(0, -1))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 21, in test_negative_construction_is_rejected
+    with self.subTest(counts=counts), self.assertRaises(ValueError):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_negative_construction_is_rejected (tests.unit.test_core.TextStatsTests.test_negative_construction_is_rejected) (counts=(-1, -1))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 21, in test_negative_construction_is_rejected
+    with self.subTest(counts=counts), self.assertRaises(ValueError):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_noninteger_fields_are_rejected (tests.unit.test_core.TextStatsTests.test_noninteger_fields_are_rejected) (counts=(1.5, 0))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 26, in test_noninteger_fields_are_rejected
+    with self.subTest(counts=counts), self.assertRaises(TypeError):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_noninteger_fields_are_rejected (tests.unit.test_core.TextStatsTests.test_noninteger_fields_are_rejected) (counts=(0, '2'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-staged-worktree-20261005/tests/unit/test_core.py", line 26, in test_noninteger_fields_are_rejected
+    with self.subTest(counts=counts), self.assertRaises(TypeError):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: TypeError not raised
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.004s
+
+FAILED (failures=5, errors=25)

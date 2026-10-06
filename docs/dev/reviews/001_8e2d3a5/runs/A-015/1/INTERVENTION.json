@@ -1,0 +1,19 @@
+{
+  "cause": "Coordinator Git tooling did not change actual push destination as claimed",
+  "before": "Effective remote get-url --push origin remained GitHub, host rejected under local-only scope, consumer stopped before task edits; no actual interruptiontrigger",
+  "correction": "Remove URL overrides entirely. Use explicit absolute disposable remote URL for every push/readback. Shim only supplies controlled hook path to same normal Git executable, no shared config modification.",
+  "setup_probes": "Named-remote command-local URL/fetch remote -v showed local remote, but remote get-url reported no such remote; unsupported/inconsistent command-local remote discovery retained, not used.",
+  "observed_destination": "/workspace/scratch/textstats-staged-remote-20261005.git",
+  "actual_readback": {
+    "args": [
+      "/workspace/scratch/textstats-staged-tools-20261005/bin/git",
+      "ls-remote",
+      "/workspace/scratch/textstats-staged-remote-20261005.git",
+      "refs/heads/trial/a015-staged-recovery"
+    ],
+    "returncode": 0,
+    "stdout": "d009899e39790c39be32ae77e7fe8294bf60d04c\trefs/heads/trial/a015-staged-recovery\n",
+    "stderr": ""
+  },
+  "scope": "Materially safer exclusively local URL, no hosteddestination retry or platformbypass"
+}

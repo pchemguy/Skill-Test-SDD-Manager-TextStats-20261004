@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "textstats-live-20261004",
+  "phase": "P1",
+  "case_id": "A-016",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent final continuation assessment",
+  "pending_operation": null,
+  "next_action": "Publish final assessment",
+  "checkpoint_refs": {
+    "product_branch": "trial/a016-publication-recovery",
+    "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "remote": "/workspace/scratch/textstats-unpublished-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a016-publication-recovery",
+    "remote_commit": "a3e6ab199e06892bf53944ca96ccd26063e87bd8"
+  },
+  "evidence_paths": [
+    "FINAL-OBSERVATIONS.json"
+  ]
+}

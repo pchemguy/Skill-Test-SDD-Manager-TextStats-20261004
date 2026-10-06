@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "case_id": "A-004",
+  "attempt": 1,
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+    "integration_branch": "main",
+    "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/1-named-file-utility",
+    "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+    "merge_parents": [
+      "d009899e39790c39be32ae77e7fe8294bf60d04c"
+    ]
+  },
+  "start_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+  "plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "assessed_at": "2026-10-04T15:09:17.116922+00:00",
+  "reason": "T-001 implementation/tests/docs and clean local commit independently verified. Exact phase push was rejected; remote remains at predecessor and issue #1 open. Required published durable completion and associated closure unmet, so A-004 is Blocked and no dependent case may advance.",
+  "findings": {
+    "local_acceptance": "12 nonempty unit tests pass without skips; independent literal vectors/immutability/error/silence checks pass. Only seven T-001-owned files changed.",
+    "preparation": "Governing sources/reports unchanged; baseline TASKS hash agrees with Revision 1, final diff contains progress-only changes and preserves decomposition. Consumer startup current-readiness sequence supported by narrative, not full native transcript.",
+    "lifecycle": "Local commit includes checklist, verification narrative and verified issue identity. Hosted issue #1 independently fetched open with zero comments; phase milestones remain open. Consumer stopped on approval rejection without bypass or further task.",
+    "bounds": "T-002\u2013T-017 and all phase/milestone parents unchecked. No file/CLI/distribution/stdin/JSON implementation. Local/live main unchanged.",
+    "deterministic": "Actual assess.py returns 1: active ownership and final-head pass, publication fails."
+  },
+  "interventions": [
+    "Interrupted original dispatch resumed with fresh consumer; no prior task work observed.",
+    "Coordinator clarified protected adapter repository-relative RESOURCE syntax after rejected prefix forms.",
+    "Redundant startup push rejected; exact remote equality proved no outstanding startup publication.",
+    "Exact task completion push rejected by platform automatic approval review, citing missing explicit authorization for exact external push; parent directed stop, preserve commit and pending issue closure. No retries/alternate external write."
+  ],
+  "limitations": [
+    "Strict filesystem isolation and full native consumer transcript unavailable; no isolation certification.",
+    "Observed RED/GREEN sequence exists only as consumer-retained narrative/table and committed TASKS evidence, not raw independently retained consumer commands. Final tests/source independently verified; test-first causal sequence cannot be fully certified.",
+    "Focused DOCUMENT-QC follow-up fixtures were not run; current readiness equivalence checked for this actual checkpoint only.",
+    "Evidence is local pending coordinator publication; no live publication certified for these assessor bytes.",
+    "Protected all-issues GET independently returned exit 2; retained raw failure. Connector issue #1 read and successful milestone GET establish relevant hosted state; no retry needed.",
+    "Collector was invoked twice; only the second serialized command capture survives because collector output paths were overwritten. Independent retained final check evidence is valid, but the first assessor capture is unavailable."
+  ],
+  "evidence_paths": [
+    "ADAPTER-CLARIFICATION.md",
+    "CONNECTOR-ISSUE-1.json",
+    "CONSUMER-RESULT.md",
+    "DETERMINISTIC-ASSESSMENT.json",
+    "DETERMINISTIC-COMMAND.json",
+    "INDEPENDENT-COMMANDS.json",
+    "INPUTS.json",
+    "PINNED-PACKAGE-VERIFICATION.json",
+    "PREPARATION-READINESS.json",
+    "PUBLICATION-BLOCK.md",
+    "REQUEST.md",
+    "RESOLVED.json",
+    "RESUMED-DISPATCH.md",
+    "RUN-STATE.json",
+    "SOURCE-HASHES.json",
+    "collect.py",
+    "finalize.py"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "finding": "PUB-005",
+  "observed_at": "2026-10-05T18:49:10.903314+00:00",
+  "actor": "A012 consumer startup",
+  "reported_rejection": {
+    "native_session": 14967,
+    "reason": "This push transmits repository history and contents to github.com, an unverified external destination; the available user messages do not explicitly authorize this exact repository/branch publication."
+  },
+  "coordinator_policy_read_before_decision": "Product pinned sdd-manage/references/revision-authorization.md",
+  "independent_readback": {
+    "native_chunk_id": "44b20e",
+    "exit_code": 0,
+    "ref": "refs/heads/phase/2-output-and-source-extensions",
+    "commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+  },
+  "disposition": "If attempted startup tip equals observed current published tip, no pending push. Retain rejection, publication already satisfied, skip no-op replay; new verified amendment effects still require ordinary execution publication with concrete established actual human scope. Consumer confirms exact attempted effect in its journal.",
+  "authorization": "Actual full campaign GO in designated repository, standing Full workflows must include pushes, latest Resume and separate selected removal implementation handoff; not token-only or platform override.",
+  "limits": "No successful push inferred from rejected tool. Remote readback independently establishes original checkpoint publication; no transport/account change or denied retry."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "001_8e2d3a5",
+  "phase": "P4",
+  "case_id": "A-021",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Ordinary selected incorporation locally published; trigger not observed",
+  "pending_operation": null,
+  "next_action": "Record Blocked interruption coverage and stop",
+  "checkpoint_refs": {
+    "product_branch": "trial/a021-dirty-transfer",
+    "product_commit": "ddc3b875921b57557b714c20fcadb2a45707f1d3",
+    "remote": "/workspace/scratch/textstats-transfer-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a021-dirty-transfer",
+    "remote_commit": "ddc3b875921b57557b714c20fcadb2a45707f1d3"
+  },
+  "evidence_paths": [
+    "FINAL-OBSERVATIONS.json"
+  ]
+}

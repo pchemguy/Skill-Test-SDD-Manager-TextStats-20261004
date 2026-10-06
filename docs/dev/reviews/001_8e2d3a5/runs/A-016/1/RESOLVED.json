@@ -1,0 +1,34 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-003",
+      "status": "Passed",
+      "assessment_path": "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "merge_parents": [
+          "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+        ]
+      },
+      "local_checkout": "/workspace/scratch/textstats-live-20261004",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/1-named-file-utility",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "e7feb6bafa7d0e018c168dd3a9ab767f1e45b656",
+        "path": "docs/dev/reviews/001_8e2d3a5/runs/A-003/2/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Existing local-only worktree /workspace/scratch/textstats-unpublished-worktree-20261005 on authorized trial/a016-publication-recovery at d009899e39790c39be32ae77e7fe8294bf60d04c, clean initially. Authorized range T-001 only, stopbeforeT-002. Product AGENTS and pinned textstats-run-resources/plugin/skills019eb354cf0921ebd6056e6579763ac33d0baec2 apply. Every Git shell call uses PATH=/workspace/scratch/textstats-unpublished-tools-20261005/bin:$PATH, normal Git with configuredhooks; do notedittooling. Sole authorized publication destination is literal local URL /workspace/scratch/textstats-unpublished-remote-20261005.git with branchtrial/a016-publication-recovery seededbaseline. Use URLliterally forpush/readback; neverorigin/GitHub. Scoped local selectedtask commit/push authorized; hostedmaintenance inactive, no APIwrites or credentials. No clones, sharedpositivebranch/ref/configchanges, blanketcleanup/staging or /pyenv. Read pinnedrevision-authorization beforeauthoritydecisions; no platformbypass. Preserve pendingwork andreportunavailablefacilities. Save evidence only in owned case directory."
+  }
+}

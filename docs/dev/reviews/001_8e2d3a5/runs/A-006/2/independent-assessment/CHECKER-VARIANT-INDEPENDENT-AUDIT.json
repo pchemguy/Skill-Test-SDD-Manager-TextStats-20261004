@@ -1,0 +1,59 @@
+{
+  "variant_sha256": "10c4cce8ed9e275d0d36b207578ca8399104c818858d8364d490bb47020875c8",
+  "original_sha256": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80",
+  "scope": "disposable checker fixtures only; no product commands or edits",
+  "implementation_review": "Only default candidate inventory changed. Cached and nonignored untracked active task roots included; ignored generated roots excluded; explicit additive documents still included; parser/history/path/symlink/duplicate/empty protections remain original.",
+  "checks": [
+    {
+      "scenario": "ignored generated duplicate excluded",
+      "observed": "owners:T-001",
+      "detail": {
+        "documents": [
+          "docs/dev/TASKS.md"
+        ],
+        "owners": {
+          "T-001": {
+            "document": "docs/dev/TASKS.md",
+            "line": 1,
+            "status": "Unchecked"
+          }
+        }
+      }
+    },
+    {
+      "scenario": "nonignored untracked duplicate rejected",
+      "observed": "duplicate_task_ownership",
+      "detail": {
+        "error": "duplicate_task_ownership"
+      }
+    },
+    {
+      "scenario": "tracked duplicate rejected",
+      "observed": "duplicate_task_ownership",
+      "detail": {
+        "error": "duplicate_task_ownership"
+      }
+    },
+    {
+      "scenario": "explicit ignored duplicate remains in scope",
+      "observed": "duplicate_task_ownership",
+      "detail": {
+        "error": "duplicate_task_ownership"
+      }
+    },
+    {
+      "scenario": "malformed untracked root rejected",
+      "observed": "invalid_task_identifier",
+      "detail": {
+        "error": "invalid_task_identifier"
+      }
+    },
+    {
+      "scenario": "symlink owner rejected",
+      "observed": "invalid_check_path",
+      "detail": {
+        "error": "invalid_check_path"
+      }
+    }
+  ]
+}

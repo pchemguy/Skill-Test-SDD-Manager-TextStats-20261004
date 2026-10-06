@@ -1,0 +1,21 @@
+{
+  "instruction": "Perform controlled suspension",
+  "requested_at": "2026-10-05T06:23:46+03:00",
+  "observed_at": "2026-10-05T03:27:45.694526+00:00",
+  "positive_product": {
+    "branch": "feature/002_ea97182-line-ranges",
+    "commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247",
+    "phase_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+    "main_commit": "59debb649545125dd3aa00377ea115451b594271",
+    "preserved_untracked": "-json-9l969okj/sample.txt"
+  },
+  "isolated_trials": {
+    "A-015": "Completed/local published2dae600 with bundle and original staged exports",
+    "A-016": "Locally committeda3e6ab1, exact remote branchbaseline d009899; push cancelled130, bundle verified; no fresh continuation",
+    "A-020": "Local-only5719983, unrelated notes/index preserved, earlier recovery bundle retained"
+  },
+  "no_current_new_work": true,
+  "publication_status": "verified",
+  "published_checkpoint": "2595e3097bb43fe81f7d262bdebd0a1bfe7a04b5",
+  "publication_receipt": "SUSPENSION-PUBLICATION-20261005.json"
+}

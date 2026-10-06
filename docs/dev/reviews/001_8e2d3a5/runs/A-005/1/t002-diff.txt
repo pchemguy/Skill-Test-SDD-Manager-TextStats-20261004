@@ -1,0 +1,4 @@
+ README.md             | 2 +-
+ docs/dev/TASKS.md     | 3 ++-
+ textstats/__init__.py | 3 ++-
+ 3 files changed, 5 insertions(+), 3 deletions(-)

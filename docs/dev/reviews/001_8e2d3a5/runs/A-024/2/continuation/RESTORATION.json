@@ -1,0 +1,7 @@
+{
+  "actor": "coordinator",
+  "at": "2026-10-05T08:35:17.922684+00:00",
+  "scope": "Only MODE rate-limit -> restored after actualfault and separateindependent stable observation,published evidence19716dc",
+  "credential_changes": false,
+  "provider_product_ref_changes": false
+}

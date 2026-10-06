@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case_id": "A-018",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "checkpoint_refs": {
+    "product_branch": "trial/a018-rejected-publication",
+    "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+    "remote": "/workspace/scratch/textstats-rejected-remote-20261005.git",
+    "remote_ref": "refs/heads/trial/a018-rejected-publication",
+    "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be"
+  },
+  "plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "reason": "Actual rejected normal publication preserved; separate fresh continuation after coordinator restored only controlled hook published exact retained unchanged milestone commit without force, duplicate merge or new-task advancement. Local-only assisted trial.",
+  "findings": {
+    "original": "Single normal literal push exit1 hook declined; independently observed exact hook/ref/noncontainment/clean retained HEAD/index/tree and all tracked file hashes. Original blocked publication remains retained.",
+    "continuation": "Fresh consumer read prior ordinary retained evidence and current state, reconciled exact destination9b24dbd, performed one same-SHA normal push exit0, read exactref159c662 and paused before T005. Independent final HEAD/tree/index/all tracked hashes unchanged and destination exact159c662.",
+    "hook": "Controlled original hook e75bd289/mode755 retained; only coordinator renamed to update.rejected-fixture after independent trigger export and published original evidence32bed851c73d48d5cd45b22d576b4f798fb527ea. Active hook absent; retained bytes same.",
+    "pin": "111 package hashes equal manifest multiset and unchanged throughout; loaded consumer hashes equal actual snapshots. Source manifest uses several different original path names; bytes equality established, not product-local original source object lookup.",
+    "deterministic": "Original helper schema-valid invocation exit2 repository_identity_mismatch because explicit local URL not a configured remote; retained. Audited exact A016 adapter guarded original core72ddbe9d changed only in-memory repository discovery metadata; original ownership/git checks and contract unchanged. Adapted final3 checks pass; wrong expected HEAD and nonexistent exactref each exit1.",
+    "checks": "No product changes make retained independent A005 milestone14unit/6integration evidence stale. Reused actual Passed recheck and same milestone source/tests; did not broaden to later T005/full phase suite.",
+    "shared_refs": "Only unrelated parallel added trial/a024-tracking-access ref observed between start and trigger; A018 branch preserved. Consumer journals contain no shared configuration/ref mutation."
+  },
+  "interventions": [
+    "Coordinator bounded local receiving hook injection and subsequent exact-hook restoration; separate fresh continuation.",
+    "Assessor metadata adapter disclosed; original helper outcome retained. Initial assessor state used invalid pending_operation string; invalid schema result retained and corrected in distinct schema-valid state.",
+    "One final assessment exec creation failed transport disconnected; subsequent inventory proved no final artifacts created, then repeated in smaller commands."
+  ],
+  "limitations": [
+    "Local-only injected receiving-facility rejection does not demonstrate GitHub/provider/hosted tracking or installed-client acceptance.",
+    "Full native audit unavailable; retained actual command results/journals plus independent durable observations support sequence but do not certify every possible action.",
+    "Broad filesystem access prevents strict consumer/assessor isolation certification.",
+    "No uncontrolled termination or cross-machine restoration variant executed.",
+    "No new boundary merge was required; this tests retained legitimate milestone publication, not phase merge publication."
+  ],
+  "evidence_paths": [
+    "START-SNAPSHOT.json",
+    "ADAPTED-HELPER-FINAL.json",
+    "RUN-STATE-FINAL.json",
+    "ORIGINAL-ATTEMPT-ASSESSMENT.json",
+    "RUN-STATE-TRIGGER-VALID.json",
+    "PIN-VERIFICATION.json",
+    "INPUTS.json",
+    "TRIGGER-SNAPSHOT.json",
+    "SENSITIVITY-REF-COMMAND.json",
+    "local_url_assessment.py",
+    "HELPER-COMMANDS.json",
+    "WRONG-REF-STATE.json",
+    "ORIGINAL-HELPER-COMMAND.json",
+    "SENSITIVITY-WRONG-REF.json",
+    "SENSITIVITY-WRONG-HEAD.json",
+    "WRONG-HEAD-STATE.json",
+    "ORIGINAL-HELPER-VALID-COMMAND.json",
+    "RUN-STATE-TRIGGER.json",
+    "FINAL-SNAPSHOT.json"
+  ]
+}

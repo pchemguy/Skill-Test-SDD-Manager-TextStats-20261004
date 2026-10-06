@@ -1,0 +1,9 @@
+Merge completed Phase 2 output and source extensions
+
+Integrate completed phase 6006fee487829299353525fa85afb035c155d865 into refreshed main 59debb649545125dd3aa00377ea115451b594271 with an explicit two-parent merge. No conflicts; the prospective merged tree initially matched the phase tree. Include verified integration evidence in the phase and final implementation reports.
+
+Deliver strict UTF-8 binary stdin with retained line-range composition, named-file ranges, text-only CLI after JSON retirement, public docs and isolated distribution acceptance. T-013 through T-017 and milestones 2.2/2.3 are complete; all owning tasks and eight hosted milestones have verified completed gates.
+
+Validation: independent merged-state unit25/integration18 pass without skips; 13 public example fences and local links pass with expected counts/statuses, one suite fence independently covered; staged whitespace checks and sample hash pass. Python 3.12.14 executed; 3.11 compatibility inspected. README archive extraction succeeds with recorded tarfile deprecation warning. Pinned resources, retained branches and unrelated sample preserved.
+
+Publish main normally and verify the exact remote merge before STOP. No third phase.

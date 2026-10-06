@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "cases": {
+    "A-001": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "assessment": "runs/A-001/1/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-002": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "assessment": "runs/A-002/1/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-003": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-003/1/ASSESSMENT-REVISION-1.json"
+        },
+        {
+          "attempt": 2,
+          "status": "Passed",
+          "assisted": true,
+          "intervention": "User-directed curl probe/restored transport after coordinator overgeneralization",
+          "consumer": "fresh explicit-source context",
+          "assessment": "runs/A-003/2/ASSESSMENT.json"
+        }
+      ],
+      "transport_recovery": "TRANSPORT-DIAGNOSTIC.md"
+    },
+    "A-004": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "consumer": "fresh explicit-source context",
+          "assessment": "runs/A-004/1/ASSESSMENT.json",
+          "reason": "Parent publication and hosted completion; explicit human scoped credential confirmation; independent Revision2 recheck passed",
+          "current_assessment": "runs/A-004/1/rechecks/2/ASSESSMENT.json",
+          "initial_status": "Blocked",
+          "assisted": true
+        }
+      ]
+    },
+    "A-005": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "consumer": "fresh explicit-source context",
+          "initial_status": "Blocked",
+          "initial_assessment": "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json",
+          "intervention": "Visible milestone-boundary checker correction; independent recheck in progress",
+          "assisted": true,
+          "current_assessment": "runs/A-005/1/rechecks/1/ASSESSMENT.json",
+          "assessment": "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json"
+        }
+      ]
+    },
+    "A-006": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "consumer": "fresh explicit-source context",
+          "assisted": true,
+          "assessment": "runs/A-006/1/independent-assessment/ASSESSMENT.json",
+          "reason": "User-directed suspension after T-008; milestone1.2 independently verified, fullphase review/integration intentionally unstarted"
+        },
+        {
+          "attempt": 2,
+          "status": "Passed",
+          "consumer": "fresh continuation context",
+          "reason": "CompletePhase1 independentlyverified; disclosedCHK002checker correction",
+          "assisted": true,
+          "assessment": "runs/A-006/2/independent-assessment/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-007": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "consumer": "fresh explicit-sourcecontext",
+          "assisted": true,
+          "assessment": "runs/A-007/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Independent JSON/default/distribution and milestone lifecycle checks; disclosed ownership checker variant; untracked fixture preserved"
+        }
+      ]
+    },
+    "A-008": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "consumer": "fresh explicit-source context",
+          "assisted": true,
+          "assessment": "runs/A-008/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Preparation independently verified; original ownership checker and schema failures retained"
+        }
+      ]
+    },
+    "A-009": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "consumer": "fresh selected SPEC-only context",
+          "assisted": true,
+          "assessment": "runs/A-009/1/independent-assessment/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-010": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "consumer": "fresh explicit-source context",
+          "request": "runs/A-010/1/REQUEST.md",
+          "assessment": "runs/A-010/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Two automatic authorization review rejections before required hosted projection; preserved published document/owner checkpoint, no execution"
+        },
+        {
+          "attempt": 2,
+          "status": "Passed",
+          "request": "runs/A-010/2/REQUEST.md",
+          "reason": "Fresh independent remaining checks Passed; ownership helper variant disclosed, historical suspension and authority assistance retained",
+          "assessment": "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
+          "product_delivery": "Published merge0e474146 into pausedphase2; no reimplementation pending",
+          "assisted": true,
+          "current_assessment": "runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+          "initial_status": "Blocked"
+        }
+      ],
+      "projection_recovery": {
+        "status": "Confirmed",
+        "human_request_at": "2026-10-05T12:22:21+03:00",
+        "evidence": "runs/A-010/1/projection-retry-20261005-092221/AFTER.json",
+        "remaining": "Resolved by published feature implementation/integration"
+      }
+    },
+    "A-011": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "request": "runs/A-011/1/REQUEST.md",
+          "current_assessment": "runs/A-011/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-011/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Actual removal candidate scope and retained contracts are accurately assessed; no consumer governing/source/test edits, revision branch or resumed execution observed. Original ownership helper falsepositive is retained and independently resolved with the audited Git-visible-inventory assessor variant.",
+          "assisted": false
+        }
+      ]
+    },
+    "A-012": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "request": "runs/A-012/1/REQUEST.md",
+          "current_assessment": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Eventual JSON-removal amendment meets literal/lifecycle/QC/retirement/hosted/stop contracts at independently observed published two-parent phase merge. Primary supported-context Git/API publication assistance and fresh continuation were required; initial ordering defect and all denials/checker/test failures remain retained. No confirmed pinned-plugin defect attributed from these observations.",
+          "assisted": true
+        }
+      ]
+    },
+    "A-013": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "input": "runs/A-013/1/REQUEST.md",
+          "assisted": true,
+          "reason": "All five independent lifecycle criteria and final product exits are satisfied by durable consumer/assessor/native/provider evidence at exact published merge; input, publication, checker and recovery assistance retained. Full filesystem/native context isolation and installed routing are not certified.",
+          "current_assessment": "runs/A-013/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-013/1/independent-assessment/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-014": {
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-014/1/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-015": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "consumer": "fresh local-only context in existing repository worktree",
+          "assessment": "runs/A-015/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Coordinator local Git tooling destination mismatch before actual staged-work trigger"
+        },
+        {
+          "attempt": 2,
+          "status": "Passed",
+          "assisted": true,
+          "consumer": "fresh local-only context, explicit absolute local publication URL",
+          "assessment": "runs/A-015/2/independent-assessment/ASSESSMENT.json",
+          "reason": "Genuine staged interruption and exact fresh local-only recovery; original tooling failure retained"
+        }
+      ]
+    },
+    "A-016": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "assessment": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Fresh retained-commit local publication independently assessed; original controlled-suspension Blocked assessment preserved.",
+          "initial_status": "Blocked",
+          "initial_assessment": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
+          "assisted": true,
+          "current_assessment": "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-017": {
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-017/1/independent-assessment/FINAL-ASSESSMENT.json",
+          "initial_assessment": "runs/A-017/1/independent-assessment/TRIGGER-ASSESSMENT.json",
+          "ordinary_task_result": "Passed",
+          "reason": "Required valid contract test passed; genuine failing check/interruption/fresh continuation not observed"
+        }
+      ]
+    },
+    "A-018": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "request": "runs/A-018/1/REQUEST.md",
+          "scope": "disposable local-only rejected publication",
+          "initial_status": "Blocked",
+          "assisted": true,
+          "current_assessment": "runs/A-018/1/independent-assessment/ASSESSMENT.json",
+          "initial_assessment": "runs/A-018/1/rejected-attempt-assessment/ORIGINAL-ATTEMPT-ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-019": {
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-019/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+          "runtime_disposition": "Not run",
+          "reason": "The current assisted Passed A005 milestone checkpoint is usable but is an incomplete main phase. No authorized integration boundary at that exact checkpoint satisfies the pinned complete-phase integration gate; therefore the conflict/prospective-failure integration trial cannot lawfully start."
+        }
+      ]
+    },
+    "A-020": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "consumer": "fresh context in existing repository worktree; local-only",
+          "injection": "runs/A-020/1/INJECTION.json",
+          "assessment": "runs/A-020/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Exact unrelatedbytes/modes/indexintent/ownedcommit preserved; localonlyscope"
+        }
+      ]
+    },
+    "A-021": {
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "request": "runs/A-021/1/REQUEST.md",
+          "scope": "isolated local selected incorporation",
+          "assessment": "runs/A-021/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Required actual partial-transfer interruption trigger not observed; ordinary selected incorporation independently passed"
+        }
+      ]
+    },
+    "A-022": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "request": "runs/A-022/1/REQUEST.md",
+          "scope": "isolated local-only document acceptance and orientation",
+          "assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+          "current_assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+          "assisted": true,
+          "reason": "Independent doc-only checked-acceptance reassessment/orientation passed; local identity checker adapter disclosed"
+        }
+      ]
+    },
+    "A-023": {
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-023/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+          "runtime_disposition": "Not run",
+          "reason": "The assessed/published A003 actual tracked checkpoint is retained, but its hosted identities now belong to completed positive-campaign work. No safe isolated live provider namespace preserving the real project/task identities is demonstrated by the retained repository-scoped adapter or explicit facilities."
+        }
+      ]
+    },
+    "A-024": {
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "assessment": "runs/A-024/3/independent-assessment/ASSESSMENT.json",
+          "reason": "Three controlled metadata faults and fresh read continuations supported; native protected handoff/token eligibility unavailable",
+          "variants": [
+            "runs/A-024/1/independent-assessment/DENIAL-ORIGINAL-ASSESSMENT.json",
+            "runs/A-024/2/independent-assessment/RATE-LIMIT-ORIGINAL-ASSESSMENT.json",
+            "runs/A-024/3/independent-assessment/SESSION-ORIGINAL-ASSESSMENT.json"
+          ],
+          "partial_support": true
+        }
+      ]
+    },
+    "A-025": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "assessment": "runs/A-025/1/ASSESSMENT.json"
+        }
+      ]
+    },
+    "A-026": {
+      "status": "Blocked",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Blocked",
+          "consumer": "fresh local-only context in existing repository worktree",
+          "assessment": "runs/A-026/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Genuine pre-existing baseline failure unavailable; zero-test/no-mutation achieved"
+        }
+      ]
+    },
+    "A-027": {
+      "status": "Passed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Passed",
+          "input": "runs/A-027/1/REQUEST.md",
+          "reason": "Fresh independent full-campaign reporting reconciliation satisfies A027 at exact reached main after independently verified published A013 gate. Campaign remains partial acceptance (20Passed/7Blocked); all initial failures, interventions and coverage limits retained. Prior A027 context usage loss and earlier campaign assistance disclosed.",
+          "current_assessment": "runs/A-027/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-027/1/independent-assessment/ASSESSMENT.json",
+          "assisted": true
+        }
+      ]
+    }
+  }
+}

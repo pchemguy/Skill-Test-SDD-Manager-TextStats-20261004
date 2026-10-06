@@ -1,0 +1,6 @@
+{
+  "argv": "catalog_tools render A-013",
+  "returncode": 0,
+  "stdout": "{\"schema_version\": 1, \"case_id\": \"A-013\", \"rendered\": true, \"live_acceptance\": false}\n",
+  "stderr": ""
+}

@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-10-04T14:29:45.472044+00:00",
+  "checks": {
+    "hierarchy_unchanged": true,
+    "all_unchecked": true,
+    "only_metadata_paths": true,
+    "current_review_identity": true,
+    "initial_review_retained": true,
+    "upstream_unchanged": true,
+    "current_upstream_report_hashes": true,
+    "T-001": true,
+    "T-002": true,
+    "T-003": true,
+    "T-004": true,
+    "T-005": true,
+    "T-006": true,
+    "T-007": true,
+    "T-008": true,
+    "T-009": true,
+    "eligible_counts": true,
+    "foreign_defaults_unchanged": true,
+    "repeat_identity_reuse": true,
+    "second_pass_no_writes": true
+  },
+  "all_passed": true,
+  "journal_sequence_support": {
+    "events": 28,
+    "write_positions": [
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "note": "Journal commands/responses are supporting evidence, not standalone live acceptance."
+  },
+  "foreign_fixture": "Ten default labels present. No pre-existing issue body/comment/assignee or foreign milestone; preservation of such material was not exercised.",
+  "milestone_outcome_exit_checks": {
+    "1": true,
+    "2": true,
+    "3": true
+  }
+}

@@ -1,0 +1,11 @@
+# A-015 attempt 2 — Passed with tooling assistance, local Git scope
+
+The actual consumer verified T-001, checked it and staged seven owned paths while HEAD remained d009899. The controlled precommit hook held the real commit; independent trigger observation retained exact index blobs and passing check output. Runtime interruption plus owner-context native Ctrl-C stopped the pending command with exit 130; files/index remained unchanged. Future-only hook restoration preceded a separate fresh consumer.
+
+That continuation inspected actual pending work/check evidence and destination refs, reused the implementation without edits, committed the exact seven retained blobs as 2dae60081452d72482bd431475d8f0b88d2d9d8c, published to the explicitly authorized disposable local URL and stopped before T-002. Independent remote equality and clean worktree confirm the durable boundary. All trigger/commit blob hashes and staged/workfile exports match; independent unit discovery passed 11 tests and 14 literal semantic vectors passed. Future tasks/parents remain unchecked and pinned source unchanged.
+
+Attempt 1 remains Blocked before the trigger due the isolated origin URL tooling defect; its rejection/readbacks are retained. Original shipped helper failed configured-remote identity resolution for the explicit local URL. A disclosed in-memory observation adapter used the same unmodified ownership/HEAD/publication checks and passed all three; original failure and mistaken initial adapter lookup remain recorded.
+
+This result demonstrates controlled local Git recovery only. Live GitHub lifecycle, hosted closure, uncontrolled loss, cross-machine restoration and backend-report variants were not exercised. Broad filesystem exposure and unavailable full transcript limit isolation/auditing claims. Assessment publication is pending coordinator action.
+
+Variant audit retains `local_url_assessment.py` with the original core.py hash guard and the executed replacement logic. Runnable replay passed. Incorrect expected HEAD and readback from a separate real empty disposable local bare destination each caused the required deterministic failure, demonstrating sensitivity without product or shared-configuration changes.

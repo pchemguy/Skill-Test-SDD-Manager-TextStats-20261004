@@ -1,0 +1,6 @@
+{
+  "argv": "catalog_tools render A-011",
+  "returncode": 2,
+  "stdout": "{\"schema_version\": 1, \"error\": \"invalid catalog or handoff\", \"detail\": \"current-state assessor leakage\"}\n",
+  "stderr": ""
+}

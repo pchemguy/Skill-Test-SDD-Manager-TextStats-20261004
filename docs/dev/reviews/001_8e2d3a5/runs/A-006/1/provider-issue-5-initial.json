@@ -1,0 +1,45 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "structuredContent": {
+      "issue": {
+        "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/5",
+        "title": "[T-005] Harden named-file API failure and resource behavior",
+        "issue_number": 5,
+        "body_sha256": "0dff58859f4d04b85056a76f5336de64f13b32754f14ed0820c3d8c1fa4364c6",
+        "task_markers": [
+          "sdd-forge:task-id=T-005"
+        ],
+        "state": "open",
+        "user": {
+          "login": "pchemguy",
+          "name": "pchemguy",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "id": 39730837
+        },
+        "assignees": null,
+        "labels": [
+          {
+            "name": "sdd-phase-1-Named-file-utility",
+            "color": "1d76db",
+            "description_sha256": "1d10e5e13dcb525725652cbd824d6dc4ba7d45e53a176d6d5435804d013cdef3"
+          }
+        ],
+        "milestone": 2,
+        "state_reason": null,
+        "comments": 0,
+        "created_at": "2026-10-04T14:20:36Z",
+        "updated_at": "2026-10-04T14:20:36Z",
+        "closed_at": null,
+        "display_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/5",
+        "display_title": "[T-005] Harden named-file API failure and resource behavior"
+      },
+      "url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/5",
+      "title": "[T-005] Harden named-file API failure and resource behavior",
+      "display_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/5",
+      "display_title": "[T-005] Harden named-file API failure and resource behavior"
+    },
+    "isError": false
+  }
+}

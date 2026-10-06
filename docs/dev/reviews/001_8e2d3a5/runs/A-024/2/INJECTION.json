@@ -1,0 +1,9 @@
+{
+  "actor": "coordinator",
+  "at": "2026-10-05T08:29:03.756301+00:00",
+  "scope": "Separate rate-limit classification variant after denialfreshcontinuation frozen independently checked and evidencepublished5937080",
+  "actual_facility_change": "MODE restored -> rate-limit only",
+  "response": "GET-only pre-send HTTP429 metadata remaining0 retry_after120",
+  "protected_credentials_or_original_helper_changes": false,
+  "provider_write": false
+}

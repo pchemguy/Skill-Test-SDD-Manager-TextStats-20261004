@@ -1,0 +1,41 @@
+{
+  "candidates": [
+    {
+      "path": "dist/extracted/docs/dev/TASKS.md",
+      "tracked": false,
+      "in_git_inventory": false,
+      "ignore": {
+        "argv": [
+          "git",
+          "check-ignore",
+          "-v",
+          "dist/extracted/docs/dev/TASKS.md"
+        ],
+        "cwd": "/workspace/scratch/textstats-live-20261004",
+        "returncode": 0,
+        "stdout": ".gitignore:6:dist/\tdist/extracted/docs/dev/TASKS.md\n",
+        "stderr": ""
+      },
+      "sha256": "088ab14d2994ed59c096085bf68470432574e7f1447d5fc024a367ab5302803d"
+    },
+    {
+      "path": "docs/dev/TASKS.md",
+      "tracked": true,
+      "in_git_inventory": true,
+      "ignore": {
+        "argv": [
+          "git",
+          "check-ignore",
+          "-v",
+          "docs/dev/TASKS.md"
+        ],
+        "cwd": "/workspace/scratch/textstats-live-20261004",
+        "returncode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "88086b1fb8853d5357bc245fb56e5d089589a8b5b9dbcb353e08d30ddc3182de"
+    }
+  ],
+  "conclusion": "Frozen rglob includes ignored generated dist/extracted/docs/dev/TASKS.md; Git inventory contains only main executable TASKS.md. Feature TASKS is historical and independently inspected."
+}

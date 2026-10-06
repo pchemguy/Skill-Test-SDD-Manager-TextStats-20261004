@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-10-05T18:29:48.561903+00:00",
+  "operation": "write_stdin status only, known session51706",
+  "result": "Unknown process id 51706",
+  "interpretation": "Native handle unavailable. Does not prove original exit code or output; no replay, guessed PID, broadkill or success inferred.",
+  "other_old_effect": "Earlier inline final capture session identity lost; status remains unknown.",
+  "durable_product_state": "Published0e474146 unchanged; tracked tree/index clean; BOM-only untracked fixture preserved."
+}
