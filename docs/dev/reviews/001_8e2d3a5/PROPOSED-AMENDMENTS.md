@@ -136,3 +136,22 @@ Objective recheck: the README distinguishes observed labels from documented beha
 Add the standard MIT text at repository-root `LICENSE`, with `Copyright (c) 2026 PChemGuy`, matching the plugin manifest's author identity. Link it from the README. Preserve the existing `skills/sdd-tdd/LICENSE` and upstream attribution; a root license does not replace third-party notices. The user directly requested this repository metadata change separately from future harness and policy implementation.
 
 Objective recheck: the root text matches the standard MIT terms, the README link resolves, existing third-party license bytes are unchanged, and the scoped commit is published to the established plugin development branch. No current acceptance-branch merge is included in this action.
+
+### B2-005 — Brief README testing overview and maintained test repository list
+
+Add a concise **Testing with TextStats** section to the plugin root `README.md`. Explain that TextStats exercises SDD Manager through a small sample product, fresh consumers, independent assessors, Git/GitHub workflows and interruption/recovery scenarios. Distinguish live acceptance from harness self-tests; do not imply that every listed campaign passed all cases or that source loading proves installed-client behavior.
+
+Link to [the TextStats README](https://github.com/pchemguy/Skill-SDD-Manager/blob/feature/architecture-revision/acceptance/textstats/README.md) for invocation prompts, prerequisites, profiles, execution and reporting details. In the actual plugin README use the relative link `acceptance/textstats/README.md`, so navigation follows the checked-out branch/version. Keep the overview short rather than duplicating the detailed instructions or embedding a second acceptance prompt.
+
+Include a running list of prior dedicated test repositories, initially:
+
+- [Skill-Test-SDD-Manager-TextStats-20261003](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261003)
+- [Skill-Test-SDD-Manager-TextStats-20261004](https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004)
+
+Retain earlier entries when adding later campaigns. Repository links provide discoverability, not assumed results; link a campaign's final report when a verified location is known. Do not infer a tested version, run date, full pass or integration status solely from its repository name. Avoid making this historical list the default destination for a fresh run.
+
+Suggested concise README wording:
+
+> SDD Manager is tested through TextStats, a small sample project used to exercise development, Git/GitHub and recovery workflows with fresh consumers and independent assessors. Live campaign reports record the tested source, actual coverage and remaining limitations; harness self-tests check the test infrastructure. See [TextStats acceptance testing](acceptance/textstats/README.md) for setup, profiles and running instructions.
+
+Follow that paragraph with the maintained repository list above. Objective recheck: the overview and local README link are present, both initial repository URLs are retained, adding a later repository preserves earlier entries, and no unsupported acceptance verdict or automatic destination selection is introduced.
