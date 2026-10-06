@@ -294,3 +294,8 @@ Previous worker no longer available. Actual state is clean tracked/index and rep
 ## A-012 independent boundary — 2026-10-06T04:06:04.875238+00:00
 
 [A-012 assessment](runs/A-012/1/independent-assessment/ASSESSMENT.json): **Passed**. Eventual JSON-removal amendment meets literal/lifecycle/QC/retirement/hosted/stop contracts at independently observed published two-parent phase merge. Primary supported-context Git/API publication assistance and fresh continuation were required; initial ordering defect and all denials/checker/test failures remain retained. No confirmed pinned-plugin defect attributed from these observations. Next: Publish A012 evidence then explicitly resume stdin/final phase continuation
+
+
+## A013 live continuation — stdin input and transport observations
+
+Explicit separately selected stdin range composition corrected derived no-stdin-range owners before production; governing40a1923 published with21currentQC hashes independently matched. T013 byte EOF/strict decoding/borrowed lifetime/sharedrange selection ac1acf0 published before issue13 evidence and completed closure; exact authoredbody and oneuniquecomment verified. Four pending briefs and milestone5 descriptor reconciled from current accepted owners. First issue14 scopePATCH returned transport_failed/noHTTP, exactreadbacknotapplied; bounded same-adapter retry200 and remaining4effects200, exact currentownedpayloads verified. No platform-denial attribution from missingcause, no alternatetransport or duplicateeffect. Provider milestone5 counter still4open0closed despite exact13closed; membership/closure gate must reconcile this discrepancy, not silently claim currentcounter truth. See runs/A-013/1/SCOPE-RECONCILIATION-NATIVE.json.

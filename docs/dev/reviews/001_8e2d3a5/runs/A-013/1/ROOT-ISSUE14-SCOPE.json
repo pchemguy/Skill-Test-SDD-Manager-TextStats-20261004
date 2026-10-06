@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-06T04:15:52.259996+00:00",
+  "method": "PATCH",
+  "resource": "issues/14",
+  "exit_code": 2,
+  "stdout_sha256": "8cf5e6a4c9f734a582c3a2dcd1fa7df4cde890a004b663e75533ed57e673cfd6",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "payload_path": "docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue14-scope.json",
+  "payload_sha256": "cc0d114952134e1769a731508f74dbeb7b783fef065425248e7732bdf938805a",
+  "payload_keys": [
+    "body"
+  ],
+  "response_json": true,
+  "transport": "curl",
+  "http_status": null,
+  "error": "transport_failed",
+  "result": {
+    "result_type": "NoneType"
+  }
+}

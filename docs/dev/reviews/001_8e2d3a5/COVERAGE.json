@@ -189,8 +189,16 @@
       ]
     },
     "A-013": {
-      "status": "Pending",
-      "attempts": []
+      "status": "Running",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "Running",
+          "input": "runs/A-013/1/REQUEST.md",
+          "assisted": true,
+          "reason": "Explicit later stdin-range input and primary execution publication handoff"
+        }
+      ]
     },
     "A-014": {
       "status": "Blocked",

@@ -1,0 +1,346 @@
+test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) ... 
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'alpha beta\r\ngamma\r') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'caf\xc3\xa9\xe2\x80\xa8tea\n') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'\xef\xbb\xbf\n') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--keep-bom'], data=b'\xef\xbb\xbf\n') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines', '2:3'], data=b'a\n\xef\xbb\xbf\nlast two') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=2:3'], data=b'a\r\nb c\rd\n') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=2:99'], data=b'a\n\n') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=9999999999999999999999999999999999999999999999999999'], data=b'a\n') ... FAIL
+  test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=1:1'], data=b'\xef\xbb\xbf\xef\xbb\xbf') ... FAIL
+test_literal_dash_file_is_distinct_from_stdin (tests.integration.test_stdin.StdinModuleTests.test_literal_dash_file_is_distinct_from_stdin) ... ok
+test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) ... 
+  test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'', options=[]) ... FAIL
+  test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'alpha beta\r\ngamma\r', options=[]) ... FAIL
+  test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'caf\xc3\xa9\xe2\x80\xa8tea\n', options=[]) ... FAIL
+  test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'\xef\xbb\xbf\n', options=[]) ... FAIL
+  test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'a\n\xef\xbb\xbf\nlast two', options=['--lines', '2:3']) ... FAIL
+  test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'a\r\nb c\rd\n', options=['--lines=2:3']) ... FAIL
+  test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'a\n', options=['--lines=4:99']) ... FAIL
+test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) ... FAIL
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'alpha beta\r\ngamma\r')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 59, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 59, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'caf\xc3\xa9\xe2\x80\xa8tea\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 59, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=[], data=b'\xef\xbb\xbf\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 59, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--keep-bom'], data=b'\xef\xbb\xbf\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 59, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines', '2:3'], data=b'a\n\xef\xbb\xbf\nlast two')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 61, in main
+    text = _normalize_text(_read_text(args.input), strip_bom=not args.keep_bom)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=2:3'], data=b'a\r\nb c\rd\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 61, in main
+    text = _normalize_text(_read_text(args.input), strip_bom=not args.keep_bom)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=2:99'], data=b'a\n\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 61, in main
+    text = _normalize_text(_read_text(args.input), strip_bom=not args.keep_bom)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=9999999999999999999999999999999999999999999999999999'], data=b'a\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 61, in main
+    text = _normalize_text(_read_text(args.input), strip_bom=not args.keep_bom)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_borrowed_binary_input_and_selection (tests.unit.test_stdin.StdinSuccessTests.test_borrowed_binary_input_and_selection) (options=['--lines=1:1'], data=b'\xef\xbb\xbf\xef\xbb\xbf')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/unit/test_stdin.py", line 32, in test_borrowed_binary_input_and_selection
+    status = main([*options, '-'])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/textstats-live-20261004/textstats/cli.py", line 61, in main
+    text = _normalize_text(_read_text(args.input), strip_bom=not args.keep_bom)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: named-file acquisition
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'', options=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 28, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=0 words=0\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=0 words=0\n', b'')
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'alpha beta\r\ngamma\r', options=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 28, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=2 words=3\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=2 words=3\n', b'')
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'caf\xc3\xa9\xe2\x80\xa8tea\n', options=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 28, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=1 words=2\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=1 words=2\n', b'')
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'\xef\xbb\xbf\n', options=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 28, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=1 words=0\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=1 words=0\n', b'')
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'a\n\xef\xbb\xbf\nlast two', options=['--lines', '2:3'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 28, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=2 words=3\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=2 words=3\n', b'')
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'a\r\nb c\rd\n', options=['--lines=2:3'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 28, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=2 words=3\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=2 words=3\n', b'')
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom) (data=b'a\n', options=['--lines=4:99'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 28, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, expected, b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=0 words=0\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=0 words=0\n', b'')
+
+======================================================================
+FAIL: test_success_bytes_locale_ranges_and_bom (tests.integration.test_stdin.StdinModuleTests.test_success_bytes_locale_ranges_and_bom)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/textstats-live-20261004/tests/integration/test_stdin.py", line 31, in test_success_bytes_locale_ranges_and_bom
+    self.assertEqual((run.returncode, run.stdout, run.stderr), (0, b'lines=1 words=1\n', b''))
+AssertionError: Tuples differ: (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n") != (0, b'lines=1 words=1\n', b'')
+
+First differing element 0:
+1
+0
+
+- (1, b'', b"textstats: '-': [Errno 2] No such file or directory: '-'\n")
++ (0, b'lines=1 words=1\n', b'')
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.282s
+
+FAILED (failures=18)

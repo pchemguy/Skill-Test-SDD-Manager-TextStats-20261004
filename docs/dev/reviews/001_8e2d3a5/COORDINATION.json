@@ -1,7 +1,7 @@
 {
   "suspended": false,
   "active_cases": [
-    "A-012 independent assessment"
+    "A-013 stdin/final consumer"
   ],
   "new_work_allowed": "Remaining full authorized campaign; dependent selection after independent published gates",
   "a018_pending_publication": {
@@ -27,7 +27,7 @@
     "remaining": "Evidence publication only"
   },
   "native_process_status": {
-    "workers": "A012 continuation completed and stopped; fresh independent assessor active",
+    "workers": "A012consumer/assessor completed; fresh stdin/final consumer active",
     "unknown_readonly_assessor_effects": [
       "original helper session51706 poll rejected",
       "earlier inline final-capture session identity discarded"
@@ -41,7 +41,7 @@
     "publication": "5effa5d010948e0a133d76af2f5d2ee861acfc82 exact live evidence ref verified"
   },
   "a012": {
-    "active": "Consumer stopped after exact published amendment merge; independent assessment active",
+    "active": "Passedassisted, evidencepublished0cebfe9",
     "implementation_publication": "f04f1c3 exact verified retained",
     "report_publication": "c5d9015 exact verified native13e521",
     "integration_target": "phase/2-output-and-source-extensions at0e4741465c3e086d2ab95c5af73ca89371c16fac",
@@ -49,5 +49,11 @@
     "qualification": "Tracked/index clean on resume; unrelated sample preserved; previous checkpoint lag corrected from actual Git, no replay of implementation/hosted writes",
     "integration_publication": "2c8f9ec3c888075be64149ac3d4751939802ee12 exact remote00a535",
     "result": "runs/A-012/1/CONSUMER-RESULT.md"
+  },
+  "a013": {
+    "active": "Fresh ordinary consumer",
+    "input": "runs/A-013/1/REQUEST.md",
+    "predecessor_evidence": "0cebfe97b82269e7c28b43aa84bbbf3d163d353a",
+    "assistance": "Explicit later stdin-range requirement; primary execution publication handoff"
   }
 }

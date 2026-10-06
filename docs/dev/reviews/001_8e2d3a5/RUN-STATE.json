@@ -2,30 +2,29 @@
   "schema_version": 1,
   "run_id": "001_8e2d3a5",
   "phase": "P3",
-  "case_id": "A-012",
+  "case_id": "A-013",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "A-012 independently Passed; evidence publication pending",
+  "role": "consumer",
+  "last_completed_action": "T013 issue evidence/closure verified; four pending briefs and milestone5 exactscope reconciled after retained transport recovery",
   "pending_operation": {
-    "kind": "checkpoint",
+    "kind": "task",
     "status": "in_progress",
-    "description": "Publish independent A-012 evidence before next dependent work"
+    "description": "T014 stdin errors/interactions; provider milestone5 counter4open0closed stale vs exact13closed, membership will be reenumerated before closure"
   },
-  "next_action": "Publish A012 evidence then explicitly resume stdin/final phase continuation",
+  "next_action": "Complete authorized stdin/final exits and phase integration, independently assess before finaldiagnostics",
   "checkpoint_refs": {
     "product_branch": "phase/2-output-and-source-extensions",
-    "product_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+    "product_commit": "ac1acf026ab4226f52301bb878b8cb9870d3cdae",
     "integration_branch": "phase/2-output-and-source-extensions",
-    "integration_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+    "integration_commit": "ac1acf026ab4226f52301bb878b8cb9870d3cdae",
     "merge_parents": [
-      "0e4741465c3e086d2ab95c5af73ca89371c16fac",
-      "70e78a4136bc040bcab0a6db50ced03b9736ae33"
+      "40a192353dc97227714a602e9eb301d46fd97c4a"
     ],
     "remote": "origin",
     "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
-    "remote_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+    "remote_commit": "ac1acf026ab4226f52301bb878b8cb9870d3cdae",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "bf219d82e837492b40094708e82b489184d485dd"
+    "evidence_commit": "0cebfe97b82269e7c28b43aa84bbbf3d163d353a"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -73,7 +72,7 @@
     "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
     "STOP-CONSUMED-20261005-RESUME.json"
   ],
-  "updated_at": "2026-10-06T04:06:04.875238+00:00",
+  "updated_at": "2026-10-06T04:18:49.431550+00:00",
   "case_results": [
     {
       "case_id": "A-006",

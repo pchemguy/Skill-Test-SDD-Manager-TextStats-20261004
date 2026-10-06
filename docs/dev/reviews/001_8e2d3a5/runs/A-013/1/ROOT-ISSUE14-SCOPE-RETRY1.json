@@ -1,0 +1,34 @@
+{
+  "at": "2026-10-06T04:16:23.252450+00:00",
+  "method": "PATCH",
+  "resource": "issues/14",
+  "exit_code": 0,
+  "stdout_sha256": "92d960ab963d30924e00d18574db45ab128678cff77682acb9df466785794921",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "payload_path": "docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue14-scope.json",
+  "payload_sha256": "cc0d114952134e1769a731508f74dbeb7b783fef065425248e7732bdf938805a",
+  "payload_keys": [
+    "body"
+  ],
+  "response_json": true,
+  "transport": "curl",
+  "http_status": 200,
+  "result": {
+    "id": 5703073919,
+    "number": 14,
+    "title": "[T-014] Complete stdin failure and interaction acceptance",
+    "state": "open",
+    "state_reason": null,
+    "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/14",
+    "milestone": {
+      "id": 18309642,
+      "number": 5,
+      "title": "sdd-2.2-UTF-8-stdin-and-final-release",
+      "state": "open"
+    },
+    "label_names": [
+      "sdd-phase-2-Output-and-source-extensions"
+    ],
+    "returned_owned_matches": {}
+  }
+}
