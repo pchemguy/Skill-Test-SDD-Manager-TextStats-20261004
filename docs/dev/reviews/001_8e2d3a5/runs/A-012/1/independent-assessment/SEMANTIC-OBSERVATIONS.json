@@ -1,0 +1,186 @@
+{
+  "unchanged_retained_sources": {
+    "textstats/core.py": true,
+    "textstats/io.py": true,
+    "textstats/__init__.py": true,
+    "docs/api.md": true,
+    "docs/dev/features": true,
+    "docs/dev/reports/phases/2/2.1.md": true
+  },
+  "task_ids_unique": true,
+  "pending_tasks": [
+    {
+      "id": "T-013",
+      "checked": false
+    },
+    {
+      "id": "T-014",
+      "checked": false
+    },
+    {
+      "id": "T-015",
+      "checked": false
+    },
+    {
+      "id": "T-016",
+      "checked": false
+    },
+    {
+      "id": "T-017",
+      "checked": false
+    }
+  ],
+  "json_historical_heading": true,
+  "public_local_links": [
+    {
+      "source": "README.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/api.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/module.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/dev/PROJECT.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/dev/SPEC.md",
+      "exists": true
+    },
+    {
+      "source": "docs/module.md",
+      "target": "api.md",
+      "exists": true
+    },
+    {
+      "source": "docs/module.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "source": "docs/api.md",
+      "target": "module.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/SPEC.md",
+      "target": "PROJECT.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/SPEC.md",
+      "target": "DECOMPOSITION.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "SPEC.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "layout.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "SPEC.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "PLAN.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "layout.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "DECOMPOSITION.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "TASKS-REVIEW-REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/1.1.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/1.2.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/PHASE-REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/2/revisions/003_0e47414/REVISION-REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/2/2.1.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_ea97182/2.4.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_ea97182/2.4.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_ea97182/PHASE-REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_ea97182/IMPLEMENTATION-REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_ea97182/README.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_ea97182/PHASE-REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_ea97182/IMPLEMENTATION-REPORT.md",
+      "exists": true
+    }
+  ]
+}

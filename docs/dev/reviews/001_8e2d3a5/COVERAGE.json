@@ -175,12 +175,16 @@
       ]
     },
     "A-012": {
-      "status": "Running",
+      "status": "Passed",
       "attempts": [
         {
           "attempt": 1,
-          "status": "Running",
-          "request": "runs/A-012/1/REQUEST.md"
+          "status": "Passed",
+          "request": "runs/A-012/1/REQUEST.md",
+          "current_assessment": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+          "assessment": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+          "reason": "Eventual JSON-removal amendment meets literal/lifecycle/QC/retirement/hosted/stop contracts at independently observed published two-parent phase merge. Primary supported-context Git/API publication assistance and fresh continuation were required; initial ordering defect and all denials/checker/test failures remain retained. No confirmed pinned-plugin defect attributed from these observations.",
+          "assisted": true
         }
       ]
     },

@@ -1,0 +1,167 @@
+[
+  {
+    "report": "SPEC-REVIEW-REPORT",
+    "identities": [
+      {
+        "path": "docs/dev/PROJECT.md",
+        "declared_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+        "preparation_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+        "matches_preparation": true,
+        "current_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527"
+      },
+      {
+        "path": "docs/dev/ARCHITECTURE.md",
+        "declared_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+        "preparation_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+        "matches_preparation": true,
+        "current_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa"
+      },
+      {
+        "path": "docs/dev/DECOMPOSITION.md",
+        "declared_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+        "preparation_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+        "matches_preparation": true,
+        "current_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c"
+      },
+      {
+        "path": "docs/dev/SPEC.md",
+        "declared_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+        "preparation_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+        "matches_preparation": true,
+        "current_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3"
+      },
+      {
+        "path": "docs/dev/PLAN.md",
+        "declared_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+        "preparation_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+        "matches_preparation": true,
+        "current_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f"
+      },
+      {
+        "path": "docs/dev/TASKS.md",
+        "declared_sha256": "4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f",
+        "preparation_sha256": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+        "matches_preparation": false,
+        "current_sha256": "4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f"
+      },
+      {
+        "path": "docs/dev/layout.md",
+        "declared_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+        "preparation_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+        "matches_preparation": true,
+        "current_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c"
+      }
+    ],
+    "history_retained": false
+  },
+  {
+    "report": "PLAN-REVIEW-REPORT",
+    "identities": [
+      {
+        "path": "docs/dev/PROJECT.md",
+        "declared_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+        "preparation_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+        "matches_preparation": true,
+        "current_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527"
+      },
+      {
+        "path": "docs/dev/ARCHITECTURE.md",
+        "declared_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+        "preparation_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+        "matches_preparation": true,
+        "current_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa"
+      },
+      {
+        "path": "docs/dev/DECOMPOSITION.md",
+        "declared_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+        "preparation_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+        "matches_preparation": true,
+        "current_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c"
+      },
+      {
+        "path": "docs/dev/SPEC.md",
+        "declared_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+        "preparation_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+        "matches_preparation": true,
+        "current_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3"
+      },
+      {
+        "path": "docs/dev/PLAN.md",
+        "declared_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+        "preparation_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+        "matches_preparation": true,
+        "current_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f"
+      },
+      {
+        "path": "docs/dev/TASKS.md",
+        "declared_sha256": "4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f",
+        "preparation_sha256": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+        "matches_preparation": false,
+        "current_sha256": "4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f"
+      },
+      {
+        "path": "docs/dev/layout.md",
+        "declared_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+        "preparation_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+        "matches_preparation": true,
+        "current_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c"
+      }
+    ],
+    "history_retained": false
+  },
+  {
+    "report": "TASKS-REVIEW-REPORT",
+    "identities": [
+      {
+        "path": "docs/dev/PROJECT.md",
+        "declared_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+        "preparation_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527",
+        "matches_preparation": true,
+        "current_sha256": "23ad8f583e821004e74dfafe815c5be78cc1c0734790d95ef3e06c37c66d1527"
+      },
+      {
+        "path": "docs/dev/ARCHITECTURE.md",
+        "declared_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+        "preparation_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa",
+        "matches_preparation": true,
+        "current_sha256": "d956e2c505971def1b5a6463d478f10264601de8f72afe2cec45ee993012aeaa"
+      },
+      {
+        "path": "docs/dev/DECOMPOSITION.md",
+        "declared_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+        "preparation_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c",
+        "matches_preparation": true,
+        "current_sha256": "c378dcc1247436d0d67a80dcf49d6a781335674ba489dcd50da2086f8c98fd1c"
+      },
+      {
+        "path": "docs/dev/SPEC.md",
+        "declared_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+        "preparation_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3",
+        "matches_preparation": true,
+        "current_sha256": "2d0d904bc337c66919b45927ed0b784295ca67b190598d2e7bdf4bc9123fe8e3"
+      },
+      {
+        "path": "docs/dev/PLAN.md",
+        "declared_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+        "preparation_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f",
+        "matches_preparation": true,
+        "current_sha256": "58c03a18e862ffdd7bd7cd6cd6a5a89ae8194da5614ae95872580b1ef057703f"
+      },
+      {
+        "path": "docs/dev/TASKS.md",
+        "declared_sha256": "4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f",
+        "preparation_sha256": "537a8547cab0f5d6a65204c18f100209fd90af587cf012cfc2e4234bbaa9ff47",
+        "matches_preparation": false,
+        "current_sha256": "4731343bcbfe8d9992648df48fd6782ff0ec98a79a2703ffba336ed02e6cd45f"
+      },
+      {
+        "path": "docs/dev/layout.md",
+        "declared_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+        "preparation_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c",
+        "matches_preparation": true,
+        "current_sha256": "815e6a65252b15d4941cf1abff9b2c3e0119cb0a8d692689dd4dbe35c2c5929c"
+      }
+    ],
+    "history_retained": false
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "issue_readback": [
+    {
+      "number": 13,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "open",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 14,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "open",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 15,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "open",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 16,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "open",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 17,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "open",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 19,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "closed",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 20,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "closed",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 21,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "closed",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 22,
+      "title_match": true,
+      "body_exact_match": true,
+      "state": "closed",
+      "marker_count": 1,
+      "provider_body_withheld": true
+    }
+  ],
+  "retirement_comments_before": [
+    {
+      "number": 10,
+      "comment_count": 1,
+      "existing_current_marker": 0,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 11,
+      "comment_count": 1,
+      "existing_current_marker": 0,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 12,
+      "comment_count": 1,
+      "existing_current_marker": 0,
+      "provider_body_withheld": true
+    }
+  ],
+  "retirement_comments_after": [
+    {
+      "number": 10,
+      "comment_count": 2,
+      "exact_current_retirement_marker": 1,
+      "body_exact_match": true,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 11,
+      "comment_count": 2,
+      "exact_current_retirement_marker": 1,
+      "body_exact_match": true,
+      "provider_body_withheld": true
+    },
+    {
+      "number": 12,
+      "comment_count": 2,
+      "exact_current_retirement_marker": 1,
+      "body_exact_match": true,
+      "provider_body_withheld": true
+    }
+  ],
+  "issue13_before": {
+    "state": "open",
+    "title": "[T-013] Integrate borrowed binary stdin acquisition",
+    "opening_markers": 1,
+    "closing_markers": 1,
+    "foreign_after": 0,
+    "foreign_before": 0,
+    "current_amendment_marker": false,
+    "provider_body_withheld": true
+  },
+  "readonly_connector_attempt_limit": "Initial fetch_issue_comments calls used repository_full_name; tool returned structured error. Correct documented repo_full_name used subsequently; complete actual comment text established before any POST. No failed read inferred absent marker.",
+  "provider_bodies_descriptions_withheld": true
+}

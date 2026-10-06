@@ -1,7 +1,7 @@
 {
   "suspended": false,
   "active_cases": [
-    "A-012 commanded amendment consumer"
+    "A-012 independent assessment"
   ],
   "new_work_allowed": "Remaining full authorized campaign; dependent selection after independent published gates",
   "a018_pending_publication": {
@@ -27,7 +27,7 @@
     "remaining": "Evidence publication only"
   },
   "native_process_status": {
-    "workers": "Historical suspended contexts stopped; fresh A012 consumer active",
+    "workers": "A012 continuation completed and stopped; fresh independent assessor active",
     "unknown_readonly_assessor_effects": [
       "original helper session51706 poll rejected",
       "earlier inline final-capture session identity discarded"
@@ -41,18 +41,13 @@
     "publication": "5effa5d010948e0a133d76af2f5d2ee861acfc82 exact live evidence ref verified"
   },
   "a012": {
-    "prep_publication": "Exact b7a4a7e verified after supported sameGit root context",
-    "active": "Same consumer behavioral/tests/docs work",
-    "local_dirty_observed_native": "7ab0d0 exit0",
-    "pending_paths": [
-      "README.md",
-      "docs/module.md",
-      "tests/integration/test_cli.py",
-      "tests/integration/test_distribution.py",
-      "tests/integration/test_ranges.py",
-      "tests/unit/test_cli.py",
-      "textstats/cli.py"
-    ],
-    "qualification": "These unfinished source files remain local; no remote-recoverable export completeness claim. Original two early edits before HOLD retained as process defect."
+    "active": "Consumer stopped after exact published amendment merge; independent assessment active",
+    "implementation_publication": "f04f1c3 exact verified retained",
+    "report_publication": "c5d9015 exact verified native13e521",
+    "integration_target": "phase/2-output-and-source-extensions at0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "pending_paths": [],
+    "qualification": "Tracked/index clean on resume; unrelated sample preserved; previous checkpoint lag corrected from actual Git, no replay of implementation/hosted writes",
+    "integration_publication": "2c8f9ec3c888075be64149ac3d4751939802ee12 exact remote00a535",
+    "result": "runs/A-012/1/CONSUMER-RESULT.md"
   }
 }

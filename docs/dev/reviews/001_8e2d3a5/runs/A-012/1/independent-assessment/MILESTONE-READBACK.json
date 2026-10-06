@@ -1,0 +1,165 @@
+{
+  "observations": [
+    {
+      "number": 4,
+      "returncode": 0,
+      "http_status": 200,
+      "response_keys": [
+        "transport",
+        "http_status",
+        "result"
+      ],
+      "result_keys": [
+        "html_url",
+        "id",
+        "number",
+        "title",
+        "description",
+        "open_issues",
+        "closed_issues",
+        "state"
+      ],
+      "metadata": {
+        "id": 18309637,
+        "number": 4,
+        "title": "sdd-2.1-Retired-historical-JSON-output",
+        "state": "closed",
+        "open_issues": 0,
+        "closed_issues": 3
+      },
+      "title_match": true,
+      "description_match": true,
+      "stdout_sha256": "a8d4701778675d43a31770e44bcd15c3faeb701b0599da83f3729427062dfa04",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "number": 5,
+      "returncode": 0,
+      "http_status": 200,
+      "response_keys": [
+        "transport",
+        "http_status",
+        "result"
+      ],
+      "result_keys": [
+        "html_url",
+        "id",
+        "number",
+        "title",
+        "description",
+        "open_issues",
+        "closed_issues",
+        "state"
+      ],
+      "metadata": {
+        "id": 18309642,
+        "number": 5,
+        "title": "sdd-2.2-UTF-8-stdin-and-final-release",
+        "state": "open",
+        "open_issues": 4,
+        "closed_issues": 0
+      },
+      "title_match": true,
+      "description_match": true,
+      "stdout_sha256": "ccae97a890a52dc435ff14dc1d2173ece11c579c4606f032632bc7eddf8e69c9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "number": 6,
+      "returncode": 0,
+      "http_status": 200,
+      "response_keys": [
+        "transport",
+        "http_status",
+        "result"
+      ],
+      "result_keys": [
+        "html_url",
+        "id",
+        "number",
+        "title",
+        "description",
+        "open_issues",
+        "closed_issues",
+        "state"
+      ],
+      "metadata": {
+        "id": 18309655,
+        "number": 6,
+        "title": "sdd-2.3-Phase-2-and-final-review",
+        "state": "open",
+        "open_issues": 1,
+        "closed_issues": 0
+      },
+      "title_match": true,
+      "description_match": true,
+      "stdout_sha256": "6ab462cb0bee0535b81e9559a4fc683b5a5cfc2a6fd83c6a900a2dbd703cab74",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "number": 7,
+      "returncode": 0,
+      "http_status": 200,
+      "response_keys": [
+        "transport",
+        "http_status",
+        "result"
+      ],
+      "result_keys": [
+        "html_url",
+        "id",
+        "number",
+        "title",
+        "description",
+        "open_issues",
+        "closed_issues",
+        "state"
+      ],
+      "metadata": {
+        "id": 18320787,
+        "number": 7,
+        "title": "sdd-2.4-Named-file-line-ranges",
+        "state": "closed",
+        "open_issues": 0,
+        "closed_issues": 4
+      },
+      "title_match": true,
+      "description_match": true,
+      "stdout_sha256": "d59c5b5005f69d9ab15cf9a1ebb2e391994828dbb34bad44a29fe7ee5acfd49b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "number": 8,
+      "returncode": 0,
+      "http_status": 200,
+      "response_keys": [
+        "transport",
+        "http_status",
+        "result"
+      ],
+      "result_keys": [
+        "html_url",
+        "id",
+        "number",
+        "title",
+        "description",
+        "open_issues",
+        "closed_issues",
+        "state"
+      ],
+      "metadata": {
+        "id": 18320791,
+        "number": 8,
+        "title": "sdd-2.5-Range-feature-review",
+        "state": "closed",
+        "open_issues": 0,
+        "closed_issues": 1
+      },
+      "title_match": true,
+      "description_match": true,
+      "stdout_sha256": "6cd264b6bc9222b2f20276eaf909d79547df1ee1aad019a41923de0d9da14cd7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "provider_prose_withheld": true
+}

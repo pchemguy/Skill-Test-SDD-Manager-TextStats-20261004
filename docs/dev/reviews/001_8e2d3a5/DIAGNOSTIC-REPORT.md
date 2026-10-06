@@ -275,3 +275,22 @@ The human Resume consumed the reached controlled suspension, retaining original 
 ## PUB005/PUB006 — A012 publication interventions
 
 Redundant startup push rejected; exact existing checkpoint publication established by readonly equality, no replay needed. New preparation b7a4a7e delegated push separately rejected for trusted human destination/payload authority. [Supported primary-context reassessment](runs/A-012/1/PREPARATION-PUBLICATION-REASSESSMENT.json) supplied retained actual human push/Resume/campaign scope, exact11owneddocs/21QC hashes/absent-ref readback; same ordinary Git push succeeded and exact ref verified. Original rejections retained. Consumer two test-first edits began before HOLD arrived while publication blocked; preserved outside pushed commit and process defect disclosed. No new production work authorized around that gate; continuation resumes only after resolved publication.
+
+
+## PUB007 — delegated authority propagation limit
+
+New f04f1c3 implementation push was rejected despite concrete worker handoff/context because platform classified it as untrusted agent context. [Primary-session supported reassessment](runs/A-012/1/IMPLEMENTATION-PUBLICATION-REASSESSMENT.json) supplied actual retained human instruction and exact bounded observed effect through same ordinary Git; success and exact readback verified. No transport/account switch or override. Proposal P004 needs an explicit runtime trust distinction: ordinary prompt handoff may not transfer host-recognized human authorization; native trusted propagation or a primary execution owner must publish prescribed worker results, with verified receipt before dependent work. This is a scoped execution publication stage, never a review skill. Static wording alone cannot certify platform acceptance.
+
+
+## PUB-008 — Hosted primary execution recovery
+
+Delegated issue13 PATCH native79472 was rejected because exact payload/destination authorization was carried only by untrusted worker context. Exact live readback established no effect. Primary session supplied retained actual human full-campaign scope and concrete payload/identity through the supported ordinary adapter request. Native d8886f returned200; later sequential16effects completed exit0 (4bef95):8issue PATCH,5milestone PATCH,3retirement-comment POST. Exact nine briefs/five milestone payloads and three unique comments independently reread. States and stable IDs preserved. This is assisted execution; neither credentials nor policy text override platform rejection. See runs/A-012/1/ROOT-HOSTED-RECONCILIATION.json, ROOT-CONNECTOR-READBACK.json and ROOT-MILESTONE-READBACK.json.
+
+## 2026-10-06 resumed amendment boundary
+
+Previous worker no longer available. Actual state is clean tracked/index and report c5d9015. Primary ordinary execution published this retained report (ecbd8d exit0), exact live readback13e521; fresh bounded consumer resumes only paused-phase amendment integration. Cursor lag corrected from Git, no repeated implementation or hosted write. Concrete plugin amendments are retained in AUTHORIZATION-AMENDMENT-SUPPLEMENT.md; frozen source remains untouched.
+
+
+## A-012 independent boundary — 2026-10-06T04:06:04.875238+00:00
+
+[A-012 assessment](runs/A-012/1/independent-assessment/ASSESSMENT.json): **Passed**. Eventual JSON-removal amendment meets literal/lifecycle/QC/retirement/hosted/stop contracts at independently observed published two-parent phase merge. Primary supported-context Git/API publication assistance and fresh continuation were required; initial ordering defect and all denials/checker/test failures remain retained. No confirmed pinned-plugin defect attributed from these observations. Next: Publish A012 evidence then explicitly resume stdin/final phase continuation

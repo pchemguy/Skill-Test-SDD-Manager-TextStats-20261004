@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-06T03:57:08.574526+00:00",
+  "actual_human_request": "Resume",
+  "previous_context": "Unavailable in live agent inventory",
+  "action": "Fresh same-amendment consumer after exact retained report publication",
+  "policy_read_native": "82c1b1 exit0",
+  "inspection_native": [
+    "b26da6 exit0",
+    "13e521 exit0"
+  ],
+  "publication": {
+    "commit": "c5d9015adeb3c78a3e3f1821a83a08a9a3af8dcd",
+    "ref": "refs/heads/revision/003_0e47414-remove-json",
+    "initial_native": "6baca6 session63926",
+    "completion_native": "ecbd8d exit0",
+    "readback_native": "13e521 exit0",
+    "scope": "One REVISION-REPORT.md,8insertions2deletions"
+  },
+  "mistake": "Native880bde Git reads used harness cwd and returned not-a-repository. Corrected product cwd b26da6; no effects.",
+  "unknown_historical_readonly_effects": "Retained; no claim of full quiescence",
+  "checkpoint_repair": "Old cursor b7 prep corrected from observed c5 report/ref; retained history unchanged"
+}

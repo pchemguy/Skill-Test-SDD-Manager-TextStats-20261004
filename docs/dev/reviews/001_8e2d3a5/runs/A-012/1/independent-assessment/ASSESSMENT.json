@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "case_id": "A-012",
+  "attempt": 1,
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "reason": "Eventual JSON-removal amendment meets literal/lifecycle/QC/retirement/hosted/stop contracts at independently observed published two-parent phase merge. Primary supported-context Git/API publication assistance and fresh continuation were required; initial ordering defect and all denials/checker/test failures remain retained. No confirmed pinned-plugin defect attributed from these observations.",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+    "integration_branch": "phase/2-output-and-source-extensions",
+    "integration_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+    "merge_parents": [
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+      "70e78a4136bc040bcab0a6db50ced03b9736ae33"
+    ],
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12"
+  },
+  "assessed_at": "2026-10-06T04:05:31.320519+00:00",
+  "initial_outcome": "Failed ordering observation and blocked delegated publication; eventual assisted acceptance",
+  "required_agent_checks": [
+    {
+      "criterion": "Existing amendment identity, direct subtraction, retained records",
+      "status": "Passed",
+      "evidence": "revision/003_0e47414-remove-json and docs/dev/reports/phases/2/revisions/003_0e47414/REVISION-REPORT.md match baseline0e47414 and stable003; 18 paths are amendment-owned, no feature overlay. Core/io/facade/API guide and all archived feature/history reports byte unchanged."
+    },
+    {
+      "criterion": "Exact runtime removal and retention",
+      "status": "Passed",
+      "evidence": "Independent capture api/baseline/ranges/removal all literal contract checks pass. Unit22/integration13 independently pass with no skips; removed-option unit doubles instrument both acquisition routes, literal --json path passes. Captured extracted distribution matches expected literal; archive identity/hash retained. Thirty independent public-document commands match expected statuses; links valid."
+    },
+    {
+      "criterion": "Explicit paused-phase integration and stop",
+      "status": "Passed",
+      "evidence": "Live origin confirms phase2c8f9ec and amendment70e78a; parents exactly0e47414/70e78a. Merge differs from second parent only by integration report. Main remains59debb649545125dd3aa00377ea115451b594271. T013\u2013T017 unchecked, hosted open; no stdin/final implementation or Phase2-to-main integration."
+    },
+    {
+      "criterion": "Historical retirement and current maintained scope",
+      "status": "Passed",
+      "evidence": "S5 reserved/retired, PLAN2.1 retired, T010\u2013T012 completed historical rather than new retirement completion; remaining executable delivery text-only. T019\u2013T022 current acceptance explicitly reassessed. Fresh readonly connector nine issue titles/bodies exactly match authored payloads; milestones4\u20138 title/description exactly match; states/counts preserved. Historical10\u201312 retain closed/completed, each has exactly one matching retirement comment plus original comment; stable IDs retained."
+    },
+    {
+      "criterion": "Affected preparation QC and ordering",
+      "status": "Passed",
+      "evidence": "Preparation b7a4a7e contains directly amended governing owners plus owner SPEC Revision4, PLAN Revision4, TASKS Revision5 before production f04f1c3. Historical report sections retained; current exact hashes independently match all7 roots, counts/dependencies/review exclusions and current coverage semantically checked. TASKS hash changed only for completion evidence, explicitly explained by retained currency note. Production waited for preparation publication. Two early test edits before preparation push resolution remain a failed ordering observation; eventual verification does not erase it."
+    }
+  ],
+  "deterministic_results": {
+    "original": {
+      "path": "original-deterministic.json",
+      "exit_code": 1,
+      "status": "Checks failed",
+      "cause": "Ignored distribution copies duplicate TASKS ownership"
+    },
+    "audited_variant": {
+      "path": "variant-deterministic.json",
+      "exit_code": 0,
+      "status": "Checks passed",
+      "source": "../../../A-006/2/checker-variant/assess_git_owners.py",
+      "original_core_sha256": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80"
+    },
+    "distribution_expected_equals_actual": true
+  },
+  "assistance": [
+    "Primary supplied concrete actual human Resume/full-workflows-push scope plus owned verified effect through supported same-operation context for preparation and implementation publication and issue13 PATCH rejection. No credential substitution, unchanged denied replay, alternate transport/account or bypass observed.",
+    "Original worker unavailable; separate continuation retained original JOURNAL unchanged and only appended CONTINUATION-JOURNAL/result, completed report checks and explicit merge; verified publications handed to primary."
+  ],
+  "preserved_failures": [
+    "Startup push automatic rejection; preparation/implementation delegated push denials and issue13 automatic rejection preserved in original records.",
+    "Two test edits began before preparation publication recovered; no production before resolved.",
+    "Initial focused test3 observed1 failure/5 MagicMock errors; corrected RED3 observed6 behavioral failures before GREEN; retained as test-development history, not passing evidence.",
+    "Original ownership helper falsepositive retained; audited unchanged variant independently rerun."
+  ],
+  "scope_gaps": [
+    "Python3.12.14 observed; Python3.11 not executed.",
+    "Explicit pinned skill source loading, no installed-client routing/activation claim.",
+    "Native journal exports retain returned results/session IDs, including truncation. Hard filesystem isolation and full native transcript completeness not certified.",
+    "Hosted observations retain sanitized metadata/exact-match flags/hashes, provider bodies/descriptions omitted. During assessor processing connector label descriptions briefly appeared in native tool output; removed from persisted metadata before publication. This limited assessor handling observation does not indicate secret leakage or consumer defect.",
+    "No assessor hosted writes, product edits or push. Evidence publication pending coordinator; pending stdin/final task execution outside A012."
+  ],
+  "isolation_certified": false,
+  "full_native_transcript_certified": false,
+  "untracked_sample_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+  "original_journal": {
+    "size": 459168,
+    "sha256": "11ce6c59ceb382ac0110a8d2b50d98a2b4a4eb59d8ae0e86fd141c091d7c6cd5"
+  },
+  "publication": {
+    "status": "pending coordinator",
+    "manifest": "PUBLISH-MANIFEST.json"
+  }
+}

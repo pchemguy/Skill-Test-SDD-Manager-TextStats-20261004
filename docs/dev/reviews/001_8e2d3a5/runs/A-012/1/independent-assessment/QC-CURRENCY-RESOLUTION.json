@@ -1,0 +1,20 @@
+{
+  "reports": [
+    {
+      "report": "SPEC-REVIEW-REPORT",
+      "historical_body_retained": true,
+      "current_hashes_match": true
+    },
+    {
+      "report": "PLAN-REVIEW-REPORT",
+      "historical_body_retained": true,
+      "current_hashes_match": true
+    },
+    {
+      "report": "TASKS-REVIEW-REPORT",
+      "historical_body_retained": true,
+      "current_hashes_match": true
+    }
+  ],
+  "initial_observation_limitation": "QC-IDENTITIES intentionally compares current task hash to original preparation snapshot; completion-only evidence changes after preparation explain the single TASKS difference. Original full-body history test included the deliberately replaced Current gate; compare historical sections separately. Preparation report task hash537a8547 matches preparation; current4731343 matches current TASKS and appended currency note."
+}

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "python",
+    "/workspace/scratch/textstats-live-20261004/.git/textstats-hosting-curl.py",
+    "PATCH",
+    "issues/13",
+    "/workspace/scratch/textstats-live-evidence-20261004/docs/dev/reviews/001_8e2d3a5/runs/A-012/1/issue-13-payload.json"
+  ],
+  "returncode": 0,
+  "http_status": 200,
+  "transport": "curl",
+  "metadata": {
+    "id": 5703073183,
+    "number": 13,
+    "title": "[T-013] Integrate borrowed binary stdin acquisition",
+    "state": "open",
+    "state_reason": null,
+    "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/13"
+  },
+  "safe_error": {},
+  "stdout_sha256": "920e987ac40afb0dd19e1c66b24ab331257166fe7a5affb77bd2923734d90f23",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "provider_body_description_withheld": true
+}

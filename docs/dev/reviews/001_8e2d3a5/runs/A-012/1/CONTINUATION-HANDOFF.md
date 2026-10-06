@@ -1,0 +1,11 @@
+# Same amendment merge continuation — 2026-10-06
+
+Fresh consumer /root/json_removal_merge_continuation, fork_turns none. Previous context unavailable in live inventory.
+
+Continue existing JSON removal amendment only, in /workspace/scratch/textstats-live-20261004. Read product AGENTS and pinned sdd-orient/sdd-steer/sdd-manage Git workflows; mandatory revision-authorization BEFORE authority decisions. Selected request: implement assessed JSON removal preserving text/counting/BOM/named-file ranges, conclude and integrate amendment into paused phase2 then STOP. Actual human Resume and retained Full workflows must include pushes continue established scope/repository. No stdin/final tasks or phase2-to-main integration.
+
+Amendment branch revision/003_0e47414-remove-json HEAD c5d9015adeb3c78a3e3f1821a83a08a9a3af8dcd has complete implementation and hosted reconciliation. Permitted retained inputs: current product REVISION-REPORT and A012 REQUEST/ASSESSED-JSON-REMOVAL only. Previous JOURNAL.md preserved; new CONTINUATION-JOURNAL.md retains full native results/session IDs; emit CONSUMER-RESULT.md when done. Primary push completed nativeecbd8d exit0; exact remote13e521 confirms c5 amendment and phase target0e4741465c3e086d2ab95c5af73ca89371c16fac. Main59debb649545125dd3aa00377ea115451b594271; tracked/index clean; preserve unrelated sample hash f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5.
+
+Resume same explicit two-parent integration and required working/prospective/committed checks, accurate report as needed; no duplicate amendment. Runtime worker tools do not inherit native trusted human authority. Prepare exact verified commit/ref/owned diff and request PRIMARY EXECUTION publication; HOLD dependent advance pending exact readback. Permitted tool handoff does not override platform review or authorize bypass. Local Git/checks owned by consumer. No clones/reset/stash/blanket staging/cleanup/forcepush/frozen edits or /pyenv. Never read adapter/credentials; provider prose private. No access to other campaign/coordinator/assessor files.
+
+Follow-up: preserve prior JOURNAL bytes. Report updates before integration must be committed and published first under pinned protocol; handoff applies to report commits too. No extra implementation or testing beyond relevant required integration checks.

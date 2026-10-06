@@ -1,0 +1,302 @@
+[
+  {
+    "source": "README.md",
+    "block": 0,
+    "command": "from textstats import TextStats, count_text\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(2, 3)",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "printf 'alpha beta\\ngamma\\n' > sample.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "python -m textstats sample.txt",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "python -m textstats --help",
+    "returncode": 0,
+    "stdout": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "printf '\\357\\273\\277\\n' > bom.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "python -m textstats bom.txt",
+    "returncode": 0,
+    "stdout": "lines=1 words=0\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "python -m textstats --keep-bom bom.txt",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "printf 'alpha\\n' > ./-sample.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 1,
+    "command": "python -m textstats -- -sample.txt",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 4,
+    "command": "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 4,
+    "command": "python -m textstats --lines 2:3 ranges.txt",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 4,
+    "command": "python -m textstats --lines=2:3 ranges.txt",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 4,
+    "command": "python -m textstats --lines 4:99 ranges.txt",
+    "returncode": 0,
+    "stdout": "lines=0 words=0\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "README.md",
+    "block": 4,
+    "command": "python -m textstats --lines=2:1 ranges.txt",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n",
+    "expected_status": 2,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "python -m textstats --help",
+    "returncode": 0,
+    "stdout": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount lines and words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 input file\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading BOM\n  --lines START:END  select inclusive named-file logical lines\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "printf 'alpha beta\\ngamma\\n' > sample.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "python -m textstats sample.txt",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "printf '\\357\\273\\277\\n' > bom.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "python -m textstats bom.txt",
+    "returncode": 0,
+    "stdout": "lines=1 words=0\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "python -m textstats --keep-bom bom.txt",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "printf 'alpha\\n' > ./-sample.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 0,
+    "command": "python -m textstats -- -sample.txt",
+    "returncode": 0,
+    "stdout": "lines=1 words=1\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 1,
+    "command": "python -m textstats nonexistent.txt",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: 'nonexistent.txt': [Errno 2] No such file or directory: 'nonexistent.txt'\n",
+    "expected_status": 1,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 2,
+    "command": "printf 'alpha beta\\nbeta\\nlast two' > ranges.txt",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 2,
+    "command": "python -m textstats --lines 2:3 ranges.txt",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 2,
+    "command": "python -m textstats --lines=2:3 ranges.txt",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 2,
+    "command": "python -m textstats --lines 4:99 ranges.txt",
+    "returncode": 0,
+    "stdout": "lines=0 words=0\n",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/module.md",
+    "block": 2,
+    "command": "python -m textstats --lines=2:1 ranges.txt",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "usage: textstats [-h] [--keep-bom] [--lines START:END] INPUT\ntextstats: error: argument --lines: lines require 1 <= START <= END\n",
+    "expected_status": 2,
+    "status_matches": true
+  },
+  {
+    "source": "docs/api.md",
+    "block": 0,
+    "command": "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\ngamma\\r\") == TextStats(lines=2, words=3)\nassert count_text(\"\\ufeff\\n\", strip_bom=False) == TextStats(1, 1)",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  },
+  {
+    "source": "docs/api.md",
+    "block": 1,
+    "command": "from pathlib import Path\nfrom tempfile import TemporaryDirectory\nfrom textstats import TextStats, count_file\n\nwith TemporaryDirectory() as directory:\n    path = Path(directory) / \"sample.txt\"\n    path.write_bytes(b\"alpha beta\\r\\ngamma\\r\")\n    assert count_file(path) == TextStats(2, 3)\n    assert path.read_bytes() == b\"alpha beta\\r\\ngamma\\r\"",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_status": 0,
+    "status_matches": true
+  }
+]

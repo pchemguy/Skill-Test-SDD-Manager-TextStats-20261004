@@ -1,0 +1,6 @@
+{
+  "path": "runs/A-012/1/JOURNAL.md",
+  "sha256": "11ce6c59ceb382ac0110a8d2b50d98a2b4a4eb59d8ae0e86fd141c091d7c6cd5",
+  "size": 459168,
+  "reason": "Previous context JOURNAL retained; fresh continuation appends separate file"
+}

@@ -1,0 +1,4 @@
+{
+  "title": "sdd-2.1-Retired-historical-JSON-output",
+  "description": "Stable milestone 2.1 and T-010\u2013T-012 retain completed historical evidence; their JSON delivery is retired by the accepted scope. Current delivery requires text output only. The steering amendment reassesses retained S-1\u2013S-4/S-7/S-8 acceptance; historical JSON acceptance does not govern remaining work.\n\nCurrent accepted text-only amendment: f04f1c3da9fe6cabf92f506a422d6aa3e146078c; retained named-file exits verified unit22/integration13 and public/extracted-source checks. JSON is retired historical scope; stdin/final work remains pending. Stable milestone identity 2.1 preserved; historical reports remain unchanged."
+}

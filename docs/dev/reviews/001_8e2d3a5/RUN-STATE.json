@@ -5,26 +5,27 @@
   "case_id": "A-012",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A012 prepared governing owners committed b7a4a7e and published after supported primary-context reassessment",
+  "last_completed_action": "A-012 independently Passed; evidence publication pending",
   "pending_operation": {
-    "kind": "task",
+    "kind": "checkpoint",
     "status": "in_progress",
-    "description": "Same A012 steering amendment behavioral/tests/docs work, before amendment completion/integration. Product dirty paths remain local, no remote-recovery completeness claim."
+    "description": "Publish independent A-012 evidence before next dependent work"
   },
-  "next_action": "Fresh commanded JSON removal; stop consumer after amendment integration",
+  "next_action": "Publish A012 evidence then explicitly resume stdin/final phase continuation",
   "checkpoint_refs": {
-    "product_branch": "revision/003_0e47414-remove-json",
-    "product_commit": "b7a4a7e47f512e541b670d0c6f02b2bd5746afc2",
+    "product_branch": "phase/2-output-and-source-extensions",
+    "product_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
     "integration_branch": "phase/2-output-and-source-extensions",
-    "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+    "integration_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
     "merge_parents": [
-      "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+      "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+      "70e78a4136bc040bcab0a6db50ced03b9736ae33"
     ],
     "remote": "origin",
-    "remote_ref": "refs/heads/revision/003_0e47414-remove-json",
-    "remote_commit": "b7a4a7e47f512e541b670d0c6f02b2bd5746afc2",
+    "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+    "remote_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "5effa5d010948e0a133d76af2f5d2ee861acfc82"
+    "evidence_commit": "bf219d82e837492b40094708e82b489184d485dd"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -72,7 +73,7 @@
     "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
     "STOP-CONSUMED-20261005-RESUME.json"
   ],
-  "updated_at": "2026-10-05T18:55:54.250855+00:00",
+  "updated_at": "2026-10-06T04:06:04.875238+00:00",
   "case_results": [
     {
       "case_id": "A-006",
@@ -206,6 +207,14 @@
       "status": "Passed",
       "assessment_path": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
       "reason": "Bounded isolated acceptance incorporation and next-work orientation; runtime acceptance remains pending; local checker adapter disclosed",
+      "assisted": true
+    },
+    {
+      "case_id": "A-012",
+      "attempt": 1,
+      "status": "Passed",
+      "assessment_path": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+      "reason": "Eventual JSON-removal amendment meets literal/lifecycle/QC/retirement/hosted/stop contracts at independently observed published two-parent phase merge. Primary supported-context Git/API publication assistance and fresh continuation were required; initial ordering defect and all denials/checker/test failures remain retained. No confirmed pinned-plugin defect attributed from these observations.",
       "assisted": true
     }
   ]
