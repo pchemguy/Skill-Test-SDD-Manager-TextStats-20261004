@@ -1,7 +1,7 @@
 {
   "suspended": false,
   "active_cases": [],
-  "new_work_allowed": "Final evidence publication/readback and stop only; available campaign scope exhausted",
+  "new_work_allowed": "None: STOP, supported available campaign scope exhausted",
   "a018_pending_publication": {
     "commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
     "destination_ref": "refs/heads/trial/a018-rejected-publication",
@@ -22,10 +22,10 @@
   "stopped_case": {
     "case_id": "A-027",
     "attempt": 1,
-    "remaining": "Final evidence publication/readback and STOP checkpoint only"
+    "remaining": "None within supported available campaign scope"
   },
   "native_process_status": {
-    "workers": "All retained consumer and assessor contexts completed; primary final evidence publication only",
+    "workers": "All retained consumer and assessor contexts completed; primary completion records finalized",
     "unknown_readonly_assessor_effects": [
       "original helper session51706 poll rejected",
       "earlier inline final-capture session identity discarded"
@@ -56,8 +56,8 @@
     "main_publication": "68c85bexit0 / exactb4dedb d3f206a"
   },
   "a027": {
-    "active": "Independent Passed assisted; final publication pending",
-    "gate": "A013 independently accepted and published; A027 independently completed",
+    "active": "Independent Passed assisted; report published 39d63589cb721326338b89e14ec56cf636aa5dda",
+    "gate": "Exact published assessment/report bytes verified; campaign STOP",
     "outputs": "runs/A-027/1/independent-assessment only"
   }
 }

@@ -5,13 +5,9 @@
   "case_id": "A-027",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A-027 independently Passed; evidence publication pending",
-  "pending_operation": {
-    "kind": "checkpoint",
-    "status": "in_progress",
-    "description": "Publish independent A-027 evidence before next dependent work"
-  },
-  "next_action": "Publish final diagnostics, verify stopped checkpoint, and stop exhausted campaign scope",
+  "last_completed_action": "A027 independent Passed assisted report published at 39d63589cb721326338b89e14ec56cf636aa5dda; exact destination and manifest containment verified",
+  "pending_operation": null,
+  "next_action": "STOP: supported available campaign scope exhausted; no pending product or hosted work. Preserve blocked coverage and historical unknown readonly effects.",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
@@ -25,7 +21,7 @@
     "remote_ref": "refs/heads/main",
     "remote_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
     "evidence_branch": "revision/001_8e2d3a5-live-acceptance",
-    "evidence_commit": "eb95a6cc769ddf077b645179d8c1c04989a489da"
+    "evidence_commit": "39d63589cb721326338b89e14ec56cf636aa5dda"
   },
   "evidence_paths": [
     "INPUTS.json",
@@ -71,9 +67,14 @@
     "runs/A-010/2/HOSTED-BEFORE.json",
     "SUSPENSION-20261005-135145.json",
     "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
-    "STOP-CONSUMED-20261005-RESUME.json"
+    "STOP-CONSUMED-20261005-RESUME.json",
+    "FINAL-PUBLICATION.json",
+    "STOP-CHECKPOINT.json",
+    "FINAL-COMPLETION-RECONCILIATION.json",
+    "FINAL-LIVE-HOSTED-OBSERVATION.json",
+    "runs/A-027/1/independent-assessment/ASSESSMENT.json"
   ],
-  "updated_at": "2026-10-06T09:04:17.043730+00:00",
+  "updated_at": "2026-10-06T09:05:47.784197+00:00",
   "case_results": [
     {
       "case_id": "A-006",

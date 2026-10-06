@@ -81,3 +81,8 @@ The tracked live product and index are unchanged/clean at main d3; preserved unr
 ## Coordinator promotion and completion boundary
 
 This canonical copy preserves the independently assessed report in `runs/A-027/1/independent-assessment/FINAL-DIAGNOSTIC-REPORT.md` unchanged. Editorial changes fix coverage emphasis, relocate links, and distinguish the later coordinator input clarification from literal user-authored input. The prior progressive report is retained byte-for-byte in `DIAGNOSTIC-REPORT-PROGRESSIVE-HISTORY.md`; the acceptance helper append is retained in `A027-ACCEPTANCE-BOUNDARY-HISTORY.md`. A-027 is independently Passed with assistance. Final publication and exact destination verification are execution-owned; see `FINAL-PUBLICATION.json` and the final `STOP-CHECKPOINT.json` once published.
+
+
+## Verified final publication and STOP — 2026-10-06T09:05:47.784197+00:00
+
+The independent report and seven manifest payloads were published at **39d63589cb721326338b89e14ec56cf636aa5dda** and matched byte-for-byte. Exact live evidence ref and product main readback succeeded. This supersedes the assessment-time pending-publication wording above without altering the independent artifacts. [Publication receipt](FINAL-PUBLICATION.json) retains full native initial, partial and completion results. [STOP checkpoint](STOP-CHECKPOINT.json) records exhausted scope, 20 Passed / seven Blocked, clean tracked product/index and preserved unrelated sample. All visible consumer/assessor contexts are completed; historical unknown readonly effects remain unproved. No further product, hosted or plugin source work is selected. The containing final checkpoint commit is ordinarily published and read back by primary execution.
