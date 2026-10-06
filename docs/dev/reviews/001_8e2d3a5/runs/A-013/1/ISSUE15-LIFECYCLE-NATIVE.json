@@ -1,0 +1,47 @@
+{
+  "before": {
+    "issue": 15,
+    "title": "[T-015] Complete source documentation and final distribution checks",
+    "state": "open",
+    "unique_marker": true,
+    "comment_count": 0,
+    "matching_completion_comments": 0,
+    "close_keys": [
+      "state",
+      "state_reason"
+    ],
+    "verified_commit_in_comment": true
+  },
+  "native": {
+    "initial": {
+      "chunk_id": "82db67",
+      "wall_time_seconds": 1.00132232,
+      "session_id": 19426,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "completion": {
+      "chunk_id": "40f4ed",
+      "wall_time_seconds": 5.001860393,
+      "session_id": 19426,
+      "original_token_count": 180,
+      "output": "{\"at\": \"2026-10-06T04:23:32.103190+00:00\", \"method\": \"POST\", \"resource\": \"issues/15/comments\", \"exit_code\": 0, \"stdout_sha256\": \"fdbc18de51f29f1ad987088ae7c70d602a17cf800a388f13f60a72532bb315ff\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue15-comment.json\", \"payload_sha256\": \"e6e6b01c17b7975fa0643fd4e11bbe4ce69876b1971ed6eb6d1214205703e63c\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 201, \"result\": {\"id\": 6009292113, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/15#issuecomment-6009292113\", \"returned_owned_matches\": {}}}\n"
+    },
+    "completion_final": {
+      "chunk_id": "9b697b",
+      "wall_time_seconds": 5.00050275,
+      "exit_code": 0,
+      "original_token_count": 263,
+      "output": "{\"at\": \"2026-10-06T04:23:38.859130+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/15\", \"exit_code\": 0, \"stdout_sha256\": \"642331108cfd99a42adb43e5a754b124d92fde446b320b6d783426eeb504c035\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue15-close.json\", \"payload_sha256\": \"db99f3203e2d3068933110610bcc0af6629dc86a808b19f289174b65e7ff929b\", \"payload_keys\": [\"state\", \"state_reason\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703074842, \"number\": 15, \"title\": \"[T-015] Complete source documentation and final distribution checks\", \"state\": \"closed\", \"state_reason\": \"completed\", \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/15\", \"milestone\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {\"state\": true, \"state_reason\": true}}}\n"
+    }
+  },
+  "readback": {
+    "issue": 15,
+    "title": "[T-015] Complete source documentation and final distribution checks",
+    "state": "closed",
+    "state_reason": "completed",
+    "body_preserved": true,
+    "comment_count": 1,
+    "matching_completion_comments": 1
+  }
+}

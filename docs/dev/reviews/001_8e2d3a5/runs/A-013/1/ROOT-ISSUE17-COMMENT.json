@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-06T04:32:56.330840+00:00",
+  "method": "POST",
+  "resource": "issues/17/comments",
+  "exit_code": 0,
+  "stdout_sha256": "081c7256e9c65090c4f50e446cea9ded9a5bdeedd38a45d2642b94e5ba5716ba",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "payload_path": "docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue17-comment.json",
+  "payload_sha256": "11b06e6fe7d2faf9ab8d08fb838f1a8108d66bbdcd170a45c5fdcab4e6eb435d",
+  "payload_keys": [
+    "body"
+  ],
+  "response_json": true,
+  "transport": "curl",
+  "http_status": 201,
+  "result": {
+    "id": 6009387343,
+    "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/17#issuecomment-6009387343",
+    "returned_owned_matches": {}
+  }
+}

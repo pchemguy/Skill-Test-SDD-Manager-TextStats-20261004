@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-06T04:28:10.311940+00:00",
+  "method": "PATCH",
+  "resource": "milestones/5",
+  "exit_code": 0,
+  "stdout_sha256": "9a140b48bace47647d48cfc5f7a7c6752a68aca89167e95bb6ac8f9879e5b07f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "payload_path": "docs/dev/reviews/001_8e2d3a5/runs/A-013/1/milestone5-close.json",
+  "payload_sha256": "24e6fa35706e3b33811050a0ff927771ee260c8b37dbedb4582f8abe9dc0160d",
+  "payload_keys": [
+    "state"
+  ],
+  "response_json": true,
+  "transport": "curl",
+  "http_status": 200,
+  "result": {
+    "id": 18309642,
+    "number": 5,
+    "title": "sdd-2.2-UTF-8-stdin-and-final-release",
+    "state": "closed",
+    "open_issues": 0,
+    "closed_issues": 4,
+    "html_url": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/milestone/5",
+    "returned_owned_matches": {
+      "state": true
+    }
+  }
+}

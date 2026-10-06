@@ -1,0 +1,38 @@
+{
+  "initial_batch": {
+    "chunk_id": "f00e7c",
+    "wall_time_seconds": 1.000287911,
+    "session_id": 22255,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "failure_completion": {
+    "chunk_id": "fdea17",
+    "wall_time_seconds": 2.150058131,
+    "exit_code": 2,
+    "original_token_count": 150,
+    "output": "{\"at\": \"2026-10-06T04:15:52.259996+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/14\", \"exit_code\": 2, \"stdout_sha256\": \"8cf5e6a4c9f734a582c3a2dcd1fa7df4cde890a004b663e75533ed57e673cfd6\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue14-scope.json\", \"payload_sha256\": \"cc0d114952134e1769a731508f74dbeb7b783fef065425248e7732bdf938805a\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": null, \"error\": \"transport_failed\", \"result\": {\"result_type\": \"NoneType\"}}\n"
+  },
+  "retry_initial": {
+    "chunk_id": "6e94df",
+    "wall_time_seconds": 1.00123593,
+    "session_id": 4979,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "retry_completion": {
+    "chunk_id": "3400fb",
+    "wall_time_seconds": 5.001062601,
+    "exit_code": 0,
+    "original_token_count": 245,
+    "output": "{\"at\": \"2026-10-06T04:16:23.252450+00:00\", \"method\": \"PATCH\", \"resource\": \"issues/14\", \"exit_code\": 0, \"stdout_sha256\": \"92d960ab963d30924e00d18574db45ab128678cff77682acb9df466785794921\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"payload_path\": \"docs/dev/reviews/001_8e2d3a5/runs/A-013/1/issue14-scope.json\", \"payload_sha256\": \"cc0d114952134e1769a731508f74dbeb7b783fef065425248e7732bdf938805a\", \"payload_keys\": [\"body\"], \"response_json\": true, \"transport\": \"curl\", \"http_status\": 200, \"result\": {\"id\": 5703073919, \"number\": 14, \"title\": \"[T-014] Complete stdin failure and interaction acceptance\", \"state\": \"open\", \"state_reason\": null, \"html_url\": \"https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004/issues/14\", \"milestone\": {\"id\": 18309642, \"number\": 5, \"title\": \"sdd-2.2-UTF-8-stdin-and-final-release\", \"state\": \"open\"}, \"label_names\": [\"sdd-phase-2-Output-and-source-extensions\"], \"returned_owned_matches\": {}}}\n"
+  },
+  "remaining_initial": {
+    "chunk_id": "5339a6",
+    "wall_time_seconds": 1.001387382,
+    "session_id": 90865,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "provenance": "Native metadata retained from actual returned results; stdout reconstructed by original wrapper JSON serialization from retained safe metadata files. This supplements missing structured export, not a claim of independent full-native-transcript certification."
+}

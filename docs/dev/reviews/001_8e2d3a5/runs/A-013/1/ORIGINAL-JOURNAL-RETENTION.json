@@ -1,0 +1,6 @@
+{
+  "sha256": "5153f2085e444fd6b5588ac5b219da2ba2b225e65a2dd7a7d1a821f0ffae75d8",
+  "bytes": 580629,
+  "last_durable_native": "2828ca/phaseboundary6006fee",
+  "scope": "Previous worker disappeared; later prospective/merge reports exist but full native/check completion export absent; freshcommittedcheck will be retained separately"
+}

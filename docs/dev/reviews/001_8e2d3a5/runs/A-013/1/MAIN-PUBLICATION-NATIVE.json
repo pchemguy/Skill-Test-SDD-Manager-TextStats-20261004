@@ -1,0 +1,30 @@
+{
+  "initial": {
+    "chunk_id": "93d6eb",
+    "wall_time_seconds": 1.000984029,
+    "session_id": 77149,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion": {
+    "chunk_id": "571d05",
+    "wall_time_seconds": 5.001655996,
+    "session_id": 77149,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion_final": {
+    "chunk_id": "68c85b",
+    "wall_time_seconds": 5.000551643,
+    "exit_code": 0,
+    "original_token_count": 37,
+    "output": "To https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git\n   59debb6..d3f206a  d3f206a1970504c2fc2aff3e8965e630eeab8c81 -> main\n"
+  },
+  "readback": {
+    "chunk_id": "b4dedb",
+    "wall_time_seconds": 10.009650146,
+    "exit_code": 0,
+    "original_token_count": 58,
+    "output": "d3f206a1970504c2fc2aff3e8965e630eeab8c81\trefs/heads/main\n6006fee487829299353525fa85afb035c155d865\trefs/heads/phase/2-output-and-source-extensions\n70e78a4136bc040bcab0a6db50ced03b9736ae33\trefs/heads/revision/003_0e47414-remove-json\n"
+  }
+}

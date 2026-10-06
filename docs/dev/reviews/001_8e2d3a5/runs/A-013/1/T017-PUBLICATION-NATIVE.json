@@ -1,0 +1,30 @@
+{
+  "initial": {
+    "chunk_id": "7a16f8",
+    "wall_time_seconds": 1.001391681,
+    "session_id": 29726,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "partial": {
+    "chunk_id": "6a441a",
+    "wall_time_seconds": 5.001661697,
+    "session_id": 29726,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion": {
+    "chunk_id": "d03489",
+    "wall_time_seconds": 5.00068251,
+    "exit_code": 0,
+    "original_token_count": 45,
+    "output": "To https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git\n   82f988b..e4d8fb8  e4d8fb86d28d1fc01f2d4f3d7a4f33dc4c81f4eb -> phase/2-output-and-source-extensions\n"
+  },
+  "readback": {
+    "chunk_id": "c2caac",
+    "wall_time_seconds": 10.000765183,
+    "exit_code": 0,
+    "original_token_count": 37,
+    "output": "59debb649545125dd3aa00377ea115451b594271\trefs/heads/main\ne4d8fb86d28d1fc01f2d4f3d7a4f33dc4c81f4eb\trefs/heads/phase/2-output-and-source-extensions\n"
+  }
+}

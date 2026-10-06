@@ -299,3 +299,11 @@ Previous worker no longer available. Actual state is clean tracked/index and rep
 ## A013 live continuation — stdin input and transport observations
 
 Explicit separately selected stdin range composition corrected derived no-stdin-range owners before production; governing40a1923 published with21currentQC hashes independently matched. T013 byte EOF/strict decoding/borrowed lifetime/sharedrange selection ac1acf0 published before issue13 evidence and completed closure; exact authoredbody and oneuniquecomment verified. Four pending briefs and milestone5 descriptor reconciled from current accepted owners. First issue14 scopePATCH returned transport_failed/noHTTP, exactreadbacknotapplied; bounded same-adapter retry200 and remaining4effects200, exact currentownedpayloads verified. No platform-denial attribution from missingcause, no alternatetransport or duplicateeffect. Provider milestone5 counter still4open0closed despite exact13closed; membership/closure gate must reconcile this discrepancy, not silently claim currentcounter truth. See runs/A-013/1/SCOPE-RECONCILIATION-NATIVE.json.
+
+
+A013 milestone2.2: T013–T016 individually verified/published and issueevidence/closure checked; T016explicit code review, tests and committed2.2report separate. Report initialEOFblank retained in368a0d8 then focusedwhitespacefix82f988b beforepublication. Beforemilestoneclosure completeactualmembershipaece22 exactly13–16closed/completed/noPRforeign and oneT016evidencecomment; providercounterresolved0open4closed. Closurestate-only200 followedfreshreadbacka950ba confirmsnative5closed0/4. Previousstaleaggregate notoverwritten. FinalT017stillpending beforemainintegration.
+
+
+## A013 retained merge continuation after context loss
+
+Previous worker unavailable in liveinventory during human statusupdates. Readonly command interrupted by user retained as unknown readresult only; subsequentfe40a0 observes cleantrackedmain d3f206a two-parent59debb6/6006fee; exactremote d594a0 mainstill59debb6 andphase6006fee. OriginalJOURNAL endsatphaseboundary6006 and remains bytepreserved; previous worker message reported prospective45a18d/6f1239pass but their fullnative exports and committedcheck completion are absent. Fresh consumer continues committedverification/publication of retainedmerge, no repeatedmerge/implementation/hostedwrite. Native/hardFS/completenesslimits remain.

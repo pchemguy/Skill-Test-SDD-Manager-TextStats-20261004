@@ -1,7 +1,7 @@
 {
   "suspended": false,
   "active_cases": [
-    "A-013 stdin/final consumer"
+    "A013 independentassessment"
   ],
   "new_work_allowed": "Remaining full authorized campaign; dependent selection after independent published gates",
   "a018_pending_publication": {
@@ -27,7 +27,7 @@
     "remaining": "Evidence publication only"
   },
   "native_process_status": {
-    "workers": "A012consumer/assessor completed; fresh stdin/final consumer active",
+    "workers": "ConsumerfinalizesSTOP; fresh independentassessoractive",
     "unknown_readonly_assessor_effects": [
       "original helper session51706 poll rejected",
       "earlier inline final-capture session identity discarded"
@@ -51,9 +51,10 @@
     "result": "runs/A-012/1/CONSUMER-RESULT.md"
   },
   "a013": {
-    "active": "Fresh ordinary consumer",
+    "active": "Publishedmaind3; fresh independentassessment",
     "input": "runs/A-013/1/REQUEST.md",
     "predecessor_evidence": "0cebfe97b82269e7c28b43aa84bbbf3d163d353a",
-    "assistance": "Explicit later stdin-range requirement; primary execution publication handoff"
+    "assistance": "Explicit later stdin-range requirement; primary execution publication handoff",
+    "main_publication": "68c85bexit0 / exactb4dedb d3f206a"
   }
 }
