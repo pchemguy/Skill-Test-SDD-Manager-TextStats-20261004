@@ -19,7 +19,7 @@ python -m textstats -- -sample.txt
 
 ## Input and options
 
-Syntax: `python -m textstats [--keep-bom] [--lines START:END] INPUT`. Exactly one named UTF-8 file is required. `--` permits dash-prefixed filenames. `--keep-bom` retains all leading BOM characters; otherwise exactly one initial BOM is removed. CRLF/CR/LF lines and Unicode whitespace words follow the [API rules](api.md). Files stay unchanged. `--json` is an unknown option (status 2 before acquisition); a literal `--json` filename is accessible after `--`. Stdin input remains planned for milestone 2.2; INPUT currently names a file.
+Syntax: `python -m textstats [--keep-bom] [--lines START:END] INPUT`. Exactly one named UTF-8 file or `-` for binary stdin is required. `--` permits dash-prefixed filenames. `--keep-bom` retains all leading BOM characters; otherwise exactly one initial BOM is removed. CRLF/CR/LF lines and Unicode whitespace words follow the [API rules](api.md). Files stay unchanged. `--json` is an unknown option (status 2 before acquisition); a literal `--json` filename is accessible after `--`. INPUT `-` reads borrowed stdin bytes until EOF and decodes strict UTF-8 independently of locale; stdin stays open. `./-` names a literal file called `-`.
 
 ## Output and status
 
@@ -46,6 +46,6 @@ python -m textstats --lines=2:1 ranges.txt
 # status 2; empty stdout; useful stderr; no file acquisition
 ```
 
-`--lines START:END` and `--lines=START:END` select inclusive one-based logical lines of a named file. Endpoints must be positive ASCII decimals with START <= END; leading zeros and arbitrarily long endpoints are accepted. Missing/open endpoints, signs, whitespace, Unicode digits, zero, reversed bounds, extra colons and repeated range options are usage errors (status 2) before input is read. Selection intersects available lines; beyond EOF may yield empty counts. Only CRLF, CR and LF terminate lines, and original contents/terminators are preserved.
+`--lines START:END` and `--lines=START:END` select inclusive one-based logical lines of a named file or stdin. Endpoints must be positive ASCII decimals with START <= END; leading zeros and arbitrarily long endpoints are accepted. Missing/open endpoints, signs, whitespace, Unicode digits, zero, reversed bounds, extra colons and repeated range options are usage errors (status 2) before input is read. Selection intersects available lines; beyond EOF may yield empty counts. Only CRLF, CR and LF terminate lines, and original contents/terminators are preserved.
 
-The entire file is strictly decoded before selection, so bad UTF-8 after END still fails (status 1). Apply the default one-leading-BOM removal or `--keep-bom` once to complete text before line numbering. An interior BOM exposed at the selection start stays ordinary non-whitespace. `--lines` and `--keep-bom` compose in either order before `--`. Public APIs always count the whole input; they have no range parameter. Stdin remains scheduled for milestone 2.2; stdin ranges are unsupported.
+The entire input is strictly decoded before selection, so bad UTF-8 after END still fails (status 1). Apply the default one-leading-BOM removal or `--keep-bom` once to complete text before line numbering. An interior BOM exposed at the selection start stays ordinary non-whitespace. `--lines` and `--keep-bom` compose in either order before `--`. Public APIs always count the whole input; they have no range parameter. Stdin uses the same range grammar, complete decoding, single BOM policy and preserved logical-line semantics.

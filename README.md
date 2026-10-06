@@ -4,7 +4,7 @@ SDD Manager TextStats testing
 
 Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
 
-TextStats counts lines and words in strings and named UTF-8 files on Python 3.11+, using only the standard library. Its immutable results and silent API are described in the [API guide](docs/api.md); options, errors and statuses are in the [module guide](docs/module.md). Text output is available for named files; stdin remains planned for milestone 2.2. See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
+TextStats counts lines and words in strings and named UTF-8 files on Python 3.11+, using only the standard library. Its immutable results and silent API are described in the [API guide](docs/api.md); options, errors and statuses are in the [module guide](docs/module.md). Text output accepts named files and borrowed binary stdin (`INPUT -`). See the [project brief](docs/dev/PROJECT.md) and [specification](docs/dev/SPEC.md).
 
 ## Quick start
 
@@ -75,6 +75,6 @@ python -m textstats --lines=2:1 ranges.txt
 # status 2; empty stdout; useful stderr; no file acquisition
 ```
 
-`--lines START:END` and `--lines=START:END` select inclusive one-based logical lines of a named file. Endpoints must be positive ASCII decimals with START <= END; leading zeros and arbitrarily long endpoints are accepted. Missing/open endpoints, signs, whitespace, Unicode digits, zero, reversed bounds, extra colons and repeated range options are usage errors (status 2) before input is read. Selection intersects available lines; beyond EOF may yield empty counts. Only CRLF, CR and LF terminate lines, and original contents/terminators are preserved.
+`--lines START:END` and `--lines=START:END` select inclusive one-based logical lines of a named file or stdin. Endpoints must be positive ASCII decimals with START <= END; leading zeros and arbitrarily long endpoints are accepted. Missing/open endpoints, signs, whitespace, Unicode digits, zero, reversed bounds, extra colons and repeated range options are usage errors (status 2) before input is read. Selection intersects available lines; beyond EOF may yield empty counts. Only CRLF, CR and LF terminate lines, and original contents/terminators are preserved.
 
-The entire file is strictly decoded before selection, so bad UTF-8 after END still fails (status 1). Apply the default one-leading-BOM removal or `--keep-bom` once to complete text before line numbering. An interior BOM exposed at the selection start stays ordinary non-whitespace. `--lines` and `--keep-bom` compose in either order before `--`. Public APIs always count the whole input; they have no range parameter. Stdin remains scheduled for milestone 2.2; stdin ranges are unsupported.
+The entire input is strictly decoded before selection, so bad UTF-8 after END still fails (status 1). Apply the default one-leading-BOM removal or `--keep-bom` once to complete text before line numbering. An interior BOM exposed at the selection start stays ordinary non-whitespace. `--lines` and `--keep-bom` compose in either order before `--`. Public APIs always count the whole input; they have no range parameter. Stdin uses the same range grammar, complete decoding, single BOM policy and preserved logical-line semantics.
