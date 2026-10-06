@@ -136,3 +136,116 @@ Objective recheck: the README distinguishes observed labels from documented beha
 Add the standard MIT text at repository-root `LICENSE`, with `Copyright (c) 2026 PChemGuy`, matching the plugin manifest's author identity. Link it from the README. Preserve the existing `skills/sdd-tdd/LICENSE` and upstream attribution; a root license does not replace third-party notices. The user directly requested this repository metadata change separately from future harness and policy implementation.
 
 Objective recheck: the root text matches the standard MIT terms, the README link resolves, existing third-party license bytes are unchanged, and the scoped commit is published to the established plugin development branch. No current acceptance-branch merge is included in this action.
+
+## Batch 3: invocation intent, outstanding acceptance and coordinator entry
+
+### Review basis and findings
+
+Reviewed the plugin repository's `acceptance/textstats/README.md`, `AGENTS.md`, input example and input schema at `ac579c549cc0f3371fde742b3119ad25932a305c`. This is a documentation/contract review, not a new acceptance execution.
+
+| Finding | Observation and consequence | Required amendment |
+| --- | --- | --- |
+| INV-001 | The README's copyable prompt explicitly selects full supported scope and does not name an existing run or outstanding units. It is suitable for regular full acceptance, not an instruction to finish a particular outstanding campaign. | Retain a clearly labelled fresh full-run prompt; add separate existing-run and targeted follow-up prompts. |
+| INV-002 | The generic unchecked live-acceptance follow-up still reads as an unexecuted universal task, despite actual campaign evidence. A successful partial campaign and remaining coverage need distinct status. | Replace the blanket checkbox with an evidence-backed status summary and a bounded outstanding queue; do not claim all required coverage passed. |
+| INV-003 | AGENTS defaults to full scope and says inspect existing records before choosing fresh versus resume. It does not explicitly prevent the word "outstanding" from falling through to full default scope or define changed-source follow-up. | Resolve invocation intent before applying scope defaults; distinguish same-run continuation from a new targeted campaign. |
+| INV-004 | The prompt blanket-labels unavailable facilities Blocked/Not run, without the required/optional distinction proposed in Batch 1. Its no-change conclusion can obscure separately recorded harness/policy amendments. | Separate required and optional dispositions, plugin defects, harness/input corrections and user-directed proposals. |
+| INV-005 | README P5 and AGENTS end at diagnosis/verified stop; neither describes the final evidence merge proposed in Batch 2. | Include final evidence integration/publication in future full-workflow completion while respecting explicit unmerged boundaries. |
+
+### B3-001 — Refocus the README without removing the regular acceptance prompt
+
+Replace the ambiguous "Follow-up: live acceptance on a dedicated test repository" section with an acceptance status section and an invocation guide. State which source/harness/profile was tested, link the actual diagnostic evidence, distinguish completed required checks from remaining required coverage and optional extensions, and identify separately pending final integration. Historical campaigns do not become expected outputs for consumers.
+
+For this campaign, record the original 20 Passed / seven Blocked result as historical coverage. Explain that the outstanding work is harness amendment implementation and subsequent targeted acceptance, plus the separately requested future evidence merge. It is not an instruction to restart the completed positive product workflow. Do not mark the whole bundle's acceptance universally complete or permanently outstanding regardless of evidence.
+
+Keep all three copyable prompts below. Label their placeholders and effects explicitly. The prompts are proposed replacements for use after the matching Batch 1/2 coordinator rules are implemented; they do not instruct a rerun now.
+
+#### Prompt A — Fresh regular full acceptance
+
+```text
+Start a new full live acceptance campaign for SDD Manager using
+<SDD-Manager-checkout>/acceptance/textstats/.
+Use the dedicated test repository <repository URL or existing checkout path>.
+Read the bundle's AGENTS.md and linked setup, execution, recovery and diagnostic procedures.
+Inspect existing repository/campaign state, then allocate a distinct campaign without overwriting it.
+Pin the tested plugin and harness to recorded full source identities.
+Use full-github and the full required core scope. Execute optional extended scenarios only when
+selected and their declared facilities are available; report their results separately.
+Use fresh consumers and independent assessors; keep assessor expectations out of consumer handoffs.
+Use existing authentication first; request missing repository identity before setup writes and
+protected credentials only after actual required access is unavailable.
+Preserve interruptions and independently assessed evidence; publish checkpoints before dependents.
+Publish the diagnostic report with original attempts, assistance, required/optional coverage,
+issues, actions, and separate plugin, harness and user-directed amendment proposals.
+Do not modify the pinned tested package during the run.
+Finish by verifying and merging the completed acceptance evidence branch into the established main,
+publishing main and verifying destination containment, unless an explicit stopping boundary prevents it.
+```
+
+#### Prompt B — Continue outstanding work in an existing interrupted campaign
+
+```text
+Resume existing SDD Manager acceptance campaign <run_id> in the dedicated test repository
+<repository URL or existing checkout path>, using its retained pinned TextStats bundle.
+Campaign records are at <campaign path>; the evidence branch/ref is <existing evidence ref>.
+Read AGENTS.md and reconcile INPUTS, RUN-STATE, RESUME, coverage, actual files/index/Git refs,
+published assessments and relevant hosted effects before running setup or retrying an operation.
+Continue only the remaining previously authorized scope, subject to <current explicit boundary or none>.
+Reuse the campaign's plugin/harness pins and existing authentication; do not substitute current HEAD.
+Do not repeat completed preparation, implementation, hosted writes or already-published assessments.
+Read back uncertain effects before a bounded retry. Use fresh consumers and independent assessors
+for outstanding executable units, keeping assessor expectations out of consumer handoffs.
+Retain original attempts and report required gaps separately from optional unavailable extensions.
+If scope is exhausted, report that fact and stop; do not reinterpret Blocked cases as automatic reruns.
+Finish only eligible pending report/publication/integration work under the retained scope.
+Respect explicit unmerged boundaries; do not infer permission to merge the current campaign from this template.
+```
+
+#### Prompt C — Targeted acceptance of repaired outstanding coverage
+
+```text
+Run targeted follow-up acceptance for implemented amendments <accepted amendment IDs/plan> using
+<SDD-Manager-checkout>/acceptance/textstats/ in <dedicated repository URL or checkout>.
+The prior campaign is <run_id and published evidence ref/commit>; preserve its results unchanged.
+Read AGENTS.md and the accepted amendment scope. Pin the revised plugin/harness identities and
+allocate a distinct follow-up campaign; do not resume an old run under a different tested-source pin.
+Execute only <explicit required case/variant IDs> and <explicit optional variants or none>, plus
+<explicit affected regression units>. Reuse independently verified eligible predecessor objects
+where compatible; do not automatically replay the full product workflow or repair missing prerequisites.
+Preflight the amended contracts, actual prerequisites and facilities. Missing required setup is a
+specific preparation blocker; unavailable optional scenarios are Not run and non-blocking.
+Use full-github for the selected live scope, existing authentication, fresh consumers and independent
+assessors. Report the targeted scope; the profile alone does not establish full-campaign acceptance.
+Publish original/new attempts, literal evidence, required results, optional results and remaining gaps.
+Do not modify the newly pinned tested package during the run.
+Finish the follow-up by verified evidence-branch integration and main publication unless the selected
+scope has an explicit earlier stopping boundary. Do not merge the prior campaign without its separate instruction.
+```
+
+The existing input schema supports `run_id` for continuation and `scope.cases`/`scope.phases` for selection, but has no explicit invocation mode, variant selection or regression selection fields. Do not present the new concepts as currently valid JSON keys. Implementation must either derive intent unambiguously from the prompt and existing supported fields or extend the schema, examples, renderer/preflight and compatibility tests together. An omitted field must not silently become a full follow-up selection.
+
+### B3-002 — Make AGENTS resolve intent before defaults
+
+Add an invocation-intent decision before the full-scope default:
+
+1. **Fresh full acceptance:** explicitly requested new regular campaign; allocate new identity after discovering existing state. Full scope is the default only for this intent.
+2. **Existing-run continuation:** recover the named or uniquely identified campaign, unchanged pins, actual pending state and remaining authorized scope. Reachable completed boundaries are retained, not replayed.
+3. **Targeted follow-up:** require a defined outstanding queue, implemented amendments/new pins where applicable, selected units and prerequisite reuse strategy. Create a new campaign when the tested source changes. An old case's Blocked status does not by itself authorize its rerun, prerequisite implementation or a broader campaign.
+4. **Status/review/proposal request:** inspect and report or author the requested records; do not launch consumers or acceptance fixtures by implication.
+
+An "outstanding" or "resume" request is never interpreted as a fresh full run merely because the default scope is empty/full. First use the supplied context and available records to resolve identity and scope. If several campaigns or materially different remaining actions are possible, ask only for the unresolved identity/selection before dependent writes. Continue independent read-only discovery. A repository already established in the current request/session or retained continuation does not need to be requested again; credentials remain protected.
+
+Keep the existing strengths: ordered document loading, fresh consumer/assessor roles, no assessor material in consumer handoffs, authentication only after observed failure, immutable tested package, retained attempts and state reconciliation before retry. Align the entry with Batch 1's per-variant optional policy and Batch 2's final merge requirement. Optional gaps do not gate required work; required unresolved checks remain explicit. The current campaign's specific instruction to defer merging must survive generic completion wording.
+
+### B3-003 — Verify README/AGENTS invocation behavior
+
+Update `SETUP.md`, `EXECUTION.md`, `RECOVERY.md`, `DIAGNOSTICS.md`, role templates, supported input fields and intent/preflight helpers as needed so README and AGENTS do not promise contradictory behavior. Add meaningful regression scenarios:
+
+- A fresh full invocation allocates a distinct campaign and does not overwrite existing records.
+- A named interrupted run resumes its same pin/pending operation without preparation or hosted-write replay.
+- A completed run with no remaining authorized work returns completion; seven retained Blocked grades do not start seven automatic retries.
+- A revised-source targeted request creates a new campaign and executes only its explicit units/regressions, reusing eligible prerequisites without expanding scope.
+- Ambiguous outstanding-work identity is resolved before mutations, while sufficient retained context avoids redundant questions.
+- Required and optional outcomes are counted separately; controlled evidence does not become live recovery acceptance.
+- Future normal completion integrates final evidence; an explicit unmerged boundary prevents the current campaign merge.
+
+Review all copyable examples for placeholder safety and schema validity. These checks validate invocation/control behavior; only actual consumer/assessor execution establishes runtime acceptance. Do not implement or dispatch the proposed follow-up solely because this review document exists.
